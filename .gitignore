@@ -60,3 +60,28 @@ Temporary Items
 
 # GMRT build directory
 Build
+cache/
+output/
+
+# IDE & AI Assistant configurations
+.amp/
+.claude.json
+.cline/
+.codex/
+.copilot/
+.cursor/
+.factory/
+.gamemaker-mcp/
+.gemini/
+.goose/
+.grok/
+.junie/
+.kiro/
+.lmstudio/
+.opencode/
+.qodo/
+.qwen/
+.vscode/
+.warp/
+.windsurf/
+mcp-config.json
