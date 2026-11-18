@@ -1,0 +1,1034 @@
+{
+  "source_image": "Medieval Fantasy Bedroom Asset Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_room_diorama_complete.png",
+      "original_x": 13,
+      "original_y": 12,
+      "width": 552,
+      "height": 510,
+      "area": 263052
+    },
+    {
+      "id": 2,
+      "filename": "002_single_bed_red_crest.png",
+      "original_x": 628,
+      "original_y": 30,
+      "width": 91,
+      "height": 176,
+      "area": 13866
+    },
+    {
+      "id": 3,
+      "filename": "003_single_bed_blue_crest.png",
+      "original_x": 751,
+      "original_y": 31,
+      "width": 89,
+      "height": 175,
+      "area": 13443
+    },
+    {
+      "id": 4,
+      "filename": "004_single_bed_green_cover.png",
+      "original_x": 877,
+      "original_y": 30,
+      "width": 90,
+      "height": 176,
+      "area": 13610
+    },
+    {
+      "id": 5,
+      "filename": "005_single_bed_beige_cover.png",
+      "original_x": 998,
+      "original_y": 30,
+      "width": 86,
+      "height": 176,
+      "area": 12983
+    },
+    {
+      "id": 6,
+      "filename": "006_two_door_wooden_wardrobe.png",
+      "original_x": 1253,
+      "original_y": 23,
+      "width": 118,
+      "height": 189,
+      "area": 18163
+    },
+    {
+      "id": 7,
+      "filename": "007_tall_wooden_bookshelf_potted_plant.png",
+      "original_x": 1390,
+      "original_y": 23,
+      "width": 125,
+      "height": 184,
+      "area": 17758
+    },
+    {
+      "id": 8,
+      "filename": "008_reinforced_wooden_chest.png",
+      "original_x": 1116,
+      "original_y": 76,
+      "width": 118,
+      "height": 83,
+      "area": 8818
+    },
+    {
+      "id": 9,
+      "filename": "009_study_desk_chair_books_candle.png",
+      "original_x": 599,
+      "original_y": 234,
+      "width": 155,
+      "height": 146,
+      "area": 14652
+    },
+    {
+      "id": 10,
+      "filename": "010_writing_desk_quill_scroll_candle.png",
+      "original_x": 784,
+      "original_y": 243,
+      "width": 158,
+      "height": 123,
+      "area": 12400
+    },
+    {
+      "id": 11,
+      "filename": "011_single_candlestick_lamp_post.png",
+      "original_x": 966,
+      "original_y": 243,
+      "width": 48,
+      "height": 116,
+      "area": 3536
+    },
+    {
+      "id": 12,
+      "filename": "012_two_drawer_nightstand.png",
+      "original_x": 1038,
+      "original_y": 247,
+      "width": 73,
+      "height": 111,
+      "area": 6703
+    },
+    {
+      "id": 13,
+      "filename": "013_three_drawer_wooden_dresser.png",
+      "original_x": 1147,
+      "original_y": 243,
+      "width": 111,
+      "height": 122,
+      "area": 11138
+    },
+    {
+      "id": 14,
+      "filename": "014_wooden_trunk_chest_closed.png",
+      "original_x": 1291,
+      "original_y": 266,
+      "width": 134,
+      "height": 83,
+      "area": 10155
+    },
+    {
+      "id": 15,
+      "filename": "015_four_legged_wooden_stool.png",
+      "original_x": 1452,
+      "original_y": 271,
+      "width": 56,
+      "height": 66,
+      "area": 2479
+    },
+    {
+      "id": 16,
+      "filename": "016_apothecary_curio_cabinet_bottles.png",
+      "original_x": 720,
+      "original_y": 397,
+      "width": 135,
+      "height": 135,
+      "area": 15783
+    },
+    {
+      "id": 17,
+      "filename": "017_small_bookshelf_double_shelf.png",
+      "original_x": 881,
+      "original_y": 399,
+      "width": 85,
+      "height": 133,
+      "area": 9080
+    },
+    {
+      "id": 18,
+      "filename": "018_full_length_standing_mirror.png",
+      "original_x": 1001,
+      "original_y": 395,
+      "width": 79,
+      "height": 140,
+      "area": 9428
+    },
+    {
+      "id": 19,
+      "filename": "019_wall_hanging_banner_red_long.png",
+      "original_x": 1291,
+      "original_y": 401,
+      "width": 61,
+      "height": 141,
+      "area": 4835
+    },
+    {
+      "id": 20,
+      "filename": "020_velvet_armchair_wood_frame.png",
+      "original_x": 1448,
+      "original_y": 374,
+      "width": 65,
+      "height": 111,
+      "area": 5398
+    },
+    {
+      "id": 21,
+      "filename": "021_small_two_tier_bookshelf.png",
+      "original_x": 604,
+      "original_y": 407,
+      "width": 94,
+      "height": 125,
+      "area": 9193
+    },
+    {
+      "id": 22,
+      "filename": "022_red_crest_shield_wall_decor.png",
+      "original_x": 1116,
+      "original_y": 408,
+      "width": 78,
+      "height": 123,
+      "area": 6551
+    },
+    {
+      "id": 23,
+      "filename": "023_full_suit_of_armor_statue.png",
+      "original_x": 1213,
+      "original_y": 402,
+      "width": 64,
+      "height": 140,
+      "area": 4954
+    },
+    {
+      "id": 24,
+      "filename": "024_wooden_coat_rack_stand.png",
+      "original_x": 1365,
+      "original_y": 411,
+      "width": 56,
+      "height": 119,
+      "area": 3531
+    },
+    {
+      "id": 25,
+      "filename": "025_arched_stone_window_plain.png",
+      "original_x": 19,
+      "original_y": 543,
+      "width": 104,
+      "height": 127,
+      "area": 11596
+    },
+    {
+      "id": 26,
+      "filename": "026_stone_window_red_curtains.png",
+      "original_x": 168,
+      "original_y": 544,
+      "width": 117,
+      "height": 140,
+      "area": 13836
+    },
+    {
+      "id": 27,
+      "filename": "027_stone_window_blue_curtains.png",
+      "original_x": 318,
+      "original_y": 544,
+      "width": 121,
+      "height": 141,
+      "area": 14892
+    },
+    {
+      "id": 28,
+      "filename": "028_large_wall_tapestry_gold_crest.png",
+      "original_x": 1416,
+      "original_y": 524,
+      "width": 108,
+      "height": 185,
+      "area": 15555
+    },
+    {
+      "id": 29,
+      "filename": "029_landscape_mountain_painting_frame.png",
+      "original_x": 487,
+      "original_y": 557,
+      "width": 164,
+      "height": 101,
+      "area": 15096
+    },
+    {
+      "id": 30,
+      "filename": "030_female_portrait_painting_frame.png",
+      "original_x": 687,
+      "original_y": 559,
+      "width": 54,
+      "height": 83,
+      "area": 3938
+    },
+    {
+      "id": 31,
+      "filename": "031_male_portrait_painting_frame.png",
+      "original_x": 770,
+      "original_y": 567,
+      "width": 57,
+      "height": 65,
+      "area": 3518
+    },
+    {
+      "id": 32,
+      "filename": "032_blue_lion_crest_shield.png",
+      "original_x": 876,
+      "original_y": 571,
+      "width": 72,
+      "height": 88,
+      "area": 4736
+    },
+    {
+      "id": 33,
+      "filename": "033_potted_indoor_ficus_tree.png",
+      "original_x": 976,
+      "original_y": 560,
+      "width": 59,
+      "height": 142,
+      "area": 4871
+    },
+    {
+      "id": 34,
+      "filename": "034_wall_sconce_candle_bracket.png",
+      "original_x": 1067,
+      "original_y": 558,
+      "width": 54,
+      "height": 143,
+      "area": 3595
+    },
+    {
+      "id": 35,
+      "filename": "035_three_arm_brass_candelabra.png",
+      "original_x": 1162,
+      "original_y": 562,
+      "width": 90,
+      "height": 136,
+      "area": 7336
+    },
+    {
+      "id": 36,
+      "filename": "036_small_wall_candle_sconce.png",
+      "original_x": 1275,
+      "original_y": 566,
+      "width": 37,
+      "height": 102,
+      "area": 2187
+    },
+    {
+      "id": 37,
+      "filename": "037_single_standing_candle_holder.png",
+      "original_x": 1333,
+      "original_y": 575,
+      "width": 48,
+      "height": 81,
+      "area": 2588
+    },
+    {
+      "id": 38,
+      "filename": "038_ornamental_table_globe_astrolabe.png",
+      "original_x": 633,
+      "original_y": 693,
+      "width": 48,
+      "height": 92,
+      "area": 2972
+    },
+    {
+      "id": 39,
+      "filename": "039_glowing_divination_crystal_ball.png",
+      "original_x": 709,
+      "original_y": 691,
+      "width": 54,
+      "height": 93,
+      "area": 3543
+    },
+    {
+      "id": 40,
+      "filename": "040_lit_glass_brass_lantern.png",
+      "original_x": 793,
+      "original_y": 658,
+      "width": 89,
+      "height": 133,
+      "area": 6389
+    },
+    {
+      "id": 41,
+      "filename": "041_white_flower_porcelain_vase.png",
+      "original_x": 23,
+      "original_y": 704,
+      "width": 66,
+      "height": 93,
+      "area": 4081
+    },
+    {
+      "id": 42,
+      "filename": "042_clay_earthenware_jug.png",
+      "original_x": 120,
+      "original_y": 717,
+      "width": 54,
+      "height": 63,
+      "area": 2437
+    },
+    {
+      "id": 43,
+      "filename": "043_carved_stone_chalice_urn.png",
+      "original_x": 205,
+      "original_y": 713,
+      "width": 52,
+      "height": 75,
+      "area": 2713
+    },
+    {
+      "id": 44,
+      "filename": "044_potted_white_daisies.png",
+      "original_x": 299,
+      "original_y": 707,
+      "width": 72,
+      "height": 92,
+      "area": 4499
+    },
+    {
+      "id": 45,
+      "filename": "045_potted_blue_hydrangeas.png",
+      "original_x": 412,
+      "original_y": 701,
+      "width": 75,
+      "height": 96,
+      "area": 4302
+    },
+    {
+      "id": 46,
+      "filename": "046_small_hanging_birdcage.png",
+      "original_x": 531,
+      "original_y": 703,
+      "width": 61,
+      "height": 93,
+      "area": 3538
+    },
+    {
+      "id": 47,
+      "filename": "047_potion_flask_red_elixir.png",
+      "original_x": 910,
+      "original_y": 704,
+      "width": 31,
+      "height": 85,
+      "area": 1757
+    },
+    {
+      "id": 48,
+      "filename": "048_potion_flask_blue_mana.png",
+      "original_x": 957,
+      "original_y": 738,
+      "width": 32,
+      "height": 51,
+      "area": 1196
+    },
+    {
+      "id": 49,
+      "filename": "049_potion_flask_green_herbal.png",
+      "original_x": 1020,
+      "original_y": 729,
+      "width": 29,
+      "height": 60,
+      "area": 1204
+    },
+    {
+      "id": 50,
+      "filename": "050_small_ring_trinket_box.png",
+      "original_x": 1068,
+      "original_y": 729,
+      "width": 30,
+      "height": 59,
+      "area": 1270
+    },
+    {
+      "id": 51,
+      "filename": "051_ornate_red_treasure_chest.png",
+      "original_x": 1118,
+      "original_y": 729,
+      "width": 28,
+      "height": 59,
+      "area": 1217
+    },
+    {
+      "id": 52,
+      "filename": "052_wooden_lockbox_chest.png",
+      "original_x": 1168,
+      "original_y": 744,
+      "width": 33,
+      "height": 33,
+      "area": 876
+    },
+    {
+      "id": 53,
+      "filename": "053_small_burlap_herb_pouch.png",
+      "original_x": 1225,
+      "original_y": 718,
+      "width": 106,
+      "height": 73,
+      "area": 6640
+    },
+    {
+      "id": 54,
+      "filename": "054_potion_phial_orange.png",
+      "original_x": 1357,
+      "original_y": 716,
+      "width": 70,
+      "height": 76,
+      "area": 4609
+    },
+    {
+      "id": 55,
+      "filename": "055_potion_phial_teal.png",
+      "original_x": 1453,
+      "original_y": 722,
+      "width": 62,
+      "height": 76,
+      "area": 3266
+    },
+    {
+      "id": 56,
+      "filename": "056_ornamental_carpet_red_rectangular.png",
+      "original_x": 20,
+      "original_y": 814,
+      "width": 181,
+      "height": 148,
+      "area": 25503
+    },
+    {
+      "id": 57,
+      "filename": "057_ornamental_carpet_blue_rectangular.png",
+      "original_x": 223,
+      "original_y": 814,
+      "width": 187,
+      "height": 148,
+      "area": 26369
+    },
+    {
+      "id": 58,
+      "filename": "058_round_compass_rose_rug.png",
+      "original_x": 430,
+      "original_y": 814,
+      "width": 150,
+      "height": 142,
+      "area": 16684
+    },
+    {
+      "id": 59,
+      "filename": "059_ornamental_carpet_green_rectangular.png",
+      "original_x": 596,
+      "original_y": 813,
+      "width": 133,
+      "height": 152,
+      "area": 19408
+    },
+    {
+      "id": 60,
+      "filename": "060_closed_wooden_crate.png",
+      "original_x": 768,
+      "original_y": 815,
+      "width": 76,
+      "height": 73,
+      "area": 5051
+    },
+    {
+      "id": 61,
+      "filename": "061_pewter_coffee_mug.png",
+      "original_x": 866,
+      "original_y": 827,
+      "width": 53,
+      "height": 51,
+      "area": 1772
+    },
+    {
+      "id": 62,
+      "filename": "062_open_reading_book.png",
+      "original_x": 946,
+      "original_y": 838,
+      "width": 65,
+      "height": 33,
+      "area": 1820
+    },
+    {
+      "id": 63,
+      "filename": "063_rolled_diploma_scroll.png",
+      "original_x": 1026,
+      "original_y": 834,
+      "width": 41,
+      "height": 34,
+      "area": 1152
+    },
+    {
+      "id": 64,
+      "filename": "064_sealed_parchment_scroll.png",
+      "original_x": 1087,
+      "original_y": 819,
+      "width": 36,
+      "height": 49,
+      "area": 1389
+    },
+    {
+      "id": 65,
+      "filename": "065_inkpot_and_quill_stand.png",
+      "original_x": 1170,
+      "original_y": 813,
+      "width": 52,
+      "height": 82,
+      "area": 2183
+    },
+    {
+      "id": 66,
+      "filename": "066_potion_bottle_thin_red.png",
+      "original_x": 1296,
+      "original_y": 821,
+      "width": 34,
+      "height": 69,
+      "area": 1567
+    },
+    {
+      "id": 67,
+      "filename": "067_potion_bottle_thin_green.png",
+      "original_x": 1376,
+      "original_y": 823,
+      "width": 35,
+      "height": 68,
+      "area": 1080
+    },
+    {
+      "id": 68,
+      "filename": "068_vertical_banner_stand_red.png",
+      "original_x": 1461,
+      "original_y": 825,
+      "width": 59,
+      "height": 176,
+      "area": 3892
+    },
+    {
+      "id": 69,
+      "filename": "069_potted_indoor_plant_ceramic.png",
+      "original_x": 888,
+      "original_y": 906,
+      "width": 69,
+      "height": 99,
+      "area": 3947
+    },
+    {
+      "id": 70,
+      "filename": "070_blue_ornamental_kite_shield.png",
+      "original_x": 985,
+      "original_y": 897,
+      "width": 65,
+      "height": 98,
+      "area": 4853
+    },
+    {
+      "id": 71,
+      "filename": "071_wizard_staff_blue_orb.png",
+      "original_x": 1078,
+      "original_y": 896,
+      "width": 44,
+      "height": 107,
+      "area": 2175
+    },
+    {
+      "id": 72,
+      "filename": "072_small_perfume_flask.png",
+      "original_x": 1241,
+      "original_y": 847,
+      "width": 28,
+      "height": 48,
+      "area": 952
+    },
+    {
+      "id": 73,
+      "filename": "073_open_wooden_crate_side.png",
+      "original_x": 768,
+      "original_y": 920,
+      "width": 80,
+      "height": 81,
+      "area": 5784
+    },
+    {
+      "id": 74,
+      "filename": "074_white_candle_unlit.png",
+      "original_x": 1157,
+      "original_y": 924,
+      "width": 24,
+      "height": 76,
+      "area": 1105
+    },
+    {
+      "id": 75,
+      "filename": "075_white_candle_lit.png",
+      "original_x": 1213,
+      "original_y": 931,
+      "width": 31,
+      "height": 70,
+      "area": 1310
+    },
+    {
+      "id": 76,
+      "filename": "076_blue_lion_small_shield.png",
+      "original_x": 1283,
+      "original_y": 934,
+      "width": 56,
+      "height": 70,
+      "area": 2901
+    },
+    {
+      "id": 77,
+      "filename": "077_sheathed_shortsword.png",
+      "original_x": 1359,
+      "original_y": 921,
+      "width": 52,
+      "height": 78,
+      "area": 1469
+    },
+    {
+      "id": 78,
+      "filename": "078_stone_brick_floor_tile_01.png",
+      "original_x": 22,
+      "original_y": 325,
+      "width": 101,
+      "height": 100,
+      "area": 10100
+    },
+    {
+      "id": 79,
+      "filename": "079_stone_brick_floor_tile_02.png",
+      "original_x": 145,
+      "original_y": 325,
+      "width": 101,
+      "height": 100,
+      "area": 10100
+    },
+    {
+      "id": 80,
+      "filename": "080_stone_brick_floor_tile_03.png",
+      "original_x": 268,
+      "original_y": 325,
+      "width": 101,
+      "height": 100,
+      "area": 10100
+    },
+    {
+      "id": 81,
+      "filename": "081_stone_brick_floor_tile_04.png",
+      "original_x": 391,
+      "original_y": 325,
+      "width": 101,
+      "height": 100,
+      "area": 10100
+    },
+    {
+      "id": 82,
+      "filename": "082_stone_brick_floor_tile_05.png",
+      "original_x": 514,
+      "original_y": 325,
+      "width": 102,
+      "height": 100,
+      "area": 10200
+    },
+    {
+      "id": 83,
+      "filename": "083_wooden_plank_floor_horizontal_01.png",
+      "original_x": 640,
+      "original_y": 325,
+      "width": 102,
+      "height": 100,
+      "area": 10200
+    },
+    {
+      "id": 84,
+      "filename": "084_wooden_plank_floor_vertical_01.png",
+      "original_x": 763,
+      "original_y": 325,
+      "width": 103,
+      "height": 100,
+      "area": 10300
+    },
+    {
+      "id": 85,
+      "filename": "085_wooden_plank_floor_vertical_02.png",
+      "original_x": 887,
+      "original_y": 325,
+      "width": 103,
+      "height": 100,
+      "area": 10300
+    },
+    {
+      "id": 86,
+      "filename": "086_wooden_plank_floor_horizontal_02.png",
+      "original_x": 1012,
+      "original_y": 325,
+      "width": 103,
+      "height": 100,
+      "area": 10300
+    },
+    {
+      "id": 87,
+      "filename": "087_wooden_plank_floor_vertical_03.png",
+      "original_x": 1137,
+      "original_y": 325,
+      "width": 103,
+      "height": 100,
+      "area": 10300
+    },
+    {
+      "id": 88,
+      "filename": "088_timber_plaster_wall_straight_01.png",
+      "original_x": 21,
+      "original_y": 25,
+      "width": 103,
+      "height": 120,
+      "area": 12360
+    },
+    {
+      "id": 89,
+      "filename": "089_timber_plaster_wall_diagonal_left.png",
+      "original_x": 147,
+      "original_y": 25,
+      "width": 94,
+      "height": 120,
+      "area": 11280
+    },
+    {
+      "id": 90,
+      "filename": "090_timber_plaster_wall_diagonal_right.png",
+      "original_x": 264,
+      "original_y": 25,
+      "width": 100,
+      "height": 120,
+      "area": 12000
+    },
+    {
+      "id": 91,
+      "filename": "091_timber_plaster_wall_cross_brace.png",
+      "original_x": 387,
+      "original_y": 25,
+      "width": 101,
+      "height": 120,
+      "area": 12120
+    },
+    {
+      "id": 92,
+      "filename": "092_timber_plaster_wall_double_post.png",
+      "original_x": 511,
+      "original_y": 25,
+      "width": 109,
+      "height": 120,
+      "area": 13080
+    },
+    {
+      "id": 93,
+      "filename": "093_timber_plaster_wall_corner_exterior.png",
+      "original_x": 644,
+      "original_y": 25,
+      "width": 124,
+      "height": 125,
+      "area": 15500
+    },
+    {
+      "id": 94,
+      "filename": "094_timber_plaster_wall_corner_double.png",
+      "original_x": 801,
+      "original_y": 25,
+      "width": 176,
+      "height": 125,
+      "area": 22000
+    },
+    {
+      "id": 95,
+      "filename": "095_stone_column_pillar_01.png",
+      "original_x": 1012,
+      "original_y": 25,
+      "width": 32,
+      "height": 120,
+      "area": 3840
+    },
+    {
+      "id": 96,
+      "filename": "096_wooden_post_pillar_01.png",
+      "original_x": 1076,
+      "original_y": 25,
+      "width": 32,
+      "height": 120,
+      "area": 3840
+    },
+    {
+      "id": 97,
+      "filename": "097_wooden_post_pillar_light.png",
+      "original_x": 1140,
+      "original_y": 25,
+      "width": 32,
+      "height": 120,
+      "area": 3840
+    },
+    {
+      "id": 98,
+      "filename": "098_wooden_post_pillar_dark.png",
+      "original_x": 1204,
+      "original_y": 25,
+      "width": 32,
+      "height": 120,
+      "area": 3840
+    },
+    {
+      "id": 99,
+      "filename": "099_timber_plaster_wall_straight_02.png",
+      "original_x": 21,
+      "original_y": 170,
+      "width": 103,
+      "height": 127,
+      "area": 13081
+    },
+    {
+      "id": 100,
+      "filename": "100_timber_plaster_wall_diagonal_split.png",
+      "original_x": 147,
+      "original_y": 170,
+      "width": 93,
+      "height": 127,
+      "area": 11811
+    },
+    {
+      "id": 101,
+      "filename": "101_timber_plaster_wall_diagonal_long.png",
+      "original_x": 263,
+      "original_y": 170,
+      "width": 102,
+      "height": 127,
+      "area": 12954
+    },
+    {
+      "id": 102,
+      "filename": "102_timber_plaster_wall_angled_brace.png",
+      "original_x": 387,
+      "original_y": 170,
+      "width": 101,
+      "height": 127,
+      "area": 12827
+    },
+    {
+      "id": 103,
+      "filename": "103_timber_plaster_wall_wide_timber.png",
+      "original_x": 511,
+      "original_y": 170,
+      "width": 109,
+      "height": 127,
+      "area": 13843
+    },
+    {
+      "id": 104,
+      "filename": "104_timber_plaster_wall_corner_convex.png",
+      "original_x": 644,
+      "original_y": 170,
+      "width": 124,
+      "height": 130,
+      "area": 16120
+    },
+    {
+      "id": 105,
+      "filename": "105_timber_plaster_wall_corner_angled.png",
+      "original_x": 801,
+      "original_y": 170,
+      "width": 176,
+      "height": 130,
+      "area": 22880
+    },
+    {
+      "id": 106,
+      "filename": "106_stone_column_pillar_02.png",
+      "original_x": 1012,
+      "original_y": 170,
+      "width": 32,
+      "height": 127,
+      "area": 4064
+    },
+    {
+      "id": 107,
+      "filename": "107_wooden_post_pillar_02.png",
+      "original_x": 1076,
+      "original_y": 170,
+      "width": 32,
+      "height": 127,
+      "area": 4064
+    },
+    {
+      "id": 108,
+      "filename": "108_stone_column_pillar_03.png",
+      "original_x": 1140,
+      "original_y": 170,
+      "width": 32,
+      "height": 127,
+      "area": 4064
+    },
+    {
+      "id": 109,
+      "filename": "109_wooden_post_pillar_03.png",
+      "original_x": 1205,
+      "original_y": 170,
+      "width": 31,
+      "height": 127,
+      "area": 3937
+    },
+    {
+      "id": 110,
+      "filename": "110_half_wall_timber_frame_01.png",
+      "original_x": 11,
+      "original_y": 450,
+      "width": 90,
+      "height": 105,
+      "area": 9450
+    },
+    {
+      "id": 111,
+      "filename": "111_half_wall_timber_frame_02.png",
+      "original_x": 134,
+      "original_y": 450,
+      "width": 102,
+      "height": 110,
+      "area": 11220
+    },
+    {
+      "id": 112,
+      "filename": "112_half_wall_timber_frame_03.png",
+      "original_x": 259,
+      "original_y": 450,
+      "width": 102,
+      "height": 110,
+      "area": 11220
+    },
+    {
+      "id": 113,
+      "filename": "113_stone_brick_wainscot_wall.png",
+      "original_x": 403,
+      "original_y": 450,
+      "width": 128,
+      "height": 71,
+      "area": 9088
+    },
+    {
+      "id": 114,
+      "filename": "114_sibling_bedroom_diorama_wide.png",
+      "original_x": 0,
+      "original_y": 0,
+      "width": 1376,
+      "height": 768,
+      "area": 1056768,
+      "description": "Expanded wide bedroom diorama scene for younger sibling (Unity reference layout)"
+    }
+  ]
+}

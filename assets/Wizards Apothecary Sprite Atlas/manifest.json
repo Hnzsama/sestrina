@@ -1,0 +1,637 @@
+{
+  "source_image": "Wizard\u2019s Apothecary Sprite Atlas.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_apothecary_cottage.png",
+      "original_x": 17,
+      "original_y": 8,
+      "width": 447,
+      "height": 396,
+      "area": 129653
+    },
+    {
+      "id": 2,
+      "filename": "002_stone_fireplace.png",
+      "original_x": 461,
+      "original_y": 26,
+      "width": 163,
+      "height": 222,
+      "area": 24622
+    },
+    {
+      "id": 3,
+      "filename": "003_cauldron_purple_bubbling.png",
+      "original_x": 636,
+      "original_y": 20,
+      "width": 136,
+      "height": 225,
+      "area": 21403
+    },
+    {
+      "id": 4,
+      "filename": "004_magic_bubble_purple.png",
+      "original_x": 716,
+      "original_y": 24,
+      "width": 8,
+      "height": 10,
+      "area": 53
+    },
+    {
+      "id": 5,
+      "filename": "005_alchemy_distillation_table.png",
+      "original_x": 782,
+      "original_y": 36,
+      "width": 170,
+      "height": 223,
+      "area": 19286
+    },
+    {
+      "id": 6,
+      "filename": "006_bookshelf_arcane_large.png",
+      "original_x": 964,
+      "original_y": 8,
+      "width": 175,
+      "height": 248,
+      "area": 33559
+    },
+    {
+      "id": 7,
+      "filename": "007_potion_cabinet_bottles.png",
+      "original_x": 1162,
+      "original_y": 38,
+      "width": 158,
+      "height": 220,
+      "area": 27399
+    },
+    {
+      "id": 8,
+      "filename": "008_armillary_sphere_pedestal.png",
+      "original_x": 1338,
+      "original_y": 26,
+      "width": 106,
+      "height": 227,
+      "area": 10410
+    },
+    {
+      "id": 9,
+      "filename": "009_floating_crystal_pedestal.png",
+      "original_x": 1441,
+      "original_y": 76,
+      "width": 91,
+      "height": 182,
+      "area": 12364
+    },
+    {
+      "id": 10,
+      "filename": "010_lectern_open_spellbook.png",
+      "original_x": 477,
+      "original_y": 270,
+      "width": 130,
+      "height": 157,
+      "area": 13489
+    },
+    {
+      "id": 11,
+      "filename": "011_divination_altar_table.png",
+      "original_x": 629,
+      "original_y": 259,
+      "width": 276,
+      "height": 170,
+      "area": 28906
+    },
+    {
+      "id": 12,
+      "filename": "012_wizard_ornate_chair.png",
+      "original_x": 943,
+      "original_y": 266,
+      "width": 107,
+      "height": 178,
+      "area": 14780
+    },
+    {
+      "id": 13,
+      "filename": "013_hanging_dried_herbs_rack.png",
+      "original_x": 1322,
+      "original_y": 267,
+      "width": 182,
+      "height": 128,
+      "area": 13000
+    },
+    {
+      "id": 14,
+      "filename": "014_round_table_tea_set.png",
+      "original_x": 1090,
+      "original_y": 287,
+      "width": 124,
+      "height": 152,
+      "area": 10862
+    },
+    {
+      "id": 15,
+      "filename": "015_tall_wooden_stool.png",
+      "original_x": 1246,
+      "original_y": 334,
+      "width": 46,
+      "height": 88,
+      "area": 2514
+    },
+    {
+      "id": 16,
+      "filename": "016_wizard_canopy_bed.png",
+      "original_x": 21,
+      "original_y": 408,
+      "width": 192,
+      "height": 245,
+      "area": 35153
+    },
+    {
+      "id": 17,
+      "filename": "017_vine_sprig.png",
+      "original_x": 141,
+      "original_y": 414,
+      "width": 24,
+      "height": 36,
+      "area": 269
+    },
+    {
+      "id": 18,
+      "filename": "018_arched_wooden_door.png",
+      "original_x": 237,
+      "original_y": 423,
+      "width": 109,
+      "height": 208,
+      "area": 18297
+    },
+    {
+      "id": 19,
+      "filename": "019_potion_display_cabinet.png",
+      "original_x": 1303,
+      "original_y": 414,
+      "width": 208,
+      "height": 238,
+      "area": 37430
+    },
+    {
+      "id": 20,
+      "filename": "020_wooden_dresser_drawers.png",
+      "original_x": 365,
+      "original_y": 458,
+      "width": 138,
+      "height": 171,
+      "area": 19602
+    },
+    {
+      "id": 21,
+      "filename": "021_standing_oval_mirror.png",
+      "original_x": 526,
+      "original_y": 444,
+      "width": 82,
+      "height": 191,
+      "area": 12448
+    },
+    {
+      "id": 22,
+      "filename": "022_window_purple_curtains.png",
+      "original_x": 624,
+      "original_y": 452,
+      "width": 159,
+      "height": 195,
+      "area": 22109
+    },
+    {
+      "id": 23,
+      "filename": "023_potted_mana_plant_blue.png",
+      "original_x": 803,
+      "original_y": 453,
+      "width": 91,
+      "height": 187,
+      "area": 9053
+    },
+    {
+      "id": 24,
+      "filename": "024_mana_petal_particle.png",
+      "original_x": 871,
+      "original_y": 470,
+      "width": 12,
+      "height": 9,
+      "area": 68
+    },
+    {
+      "id": 25,
+      "filename": "025_wall_shelf_books_flowers.png",
+      "original_x": 912,
+      "original_y": 460,
+      "width": 124,
+      "height": 178,
+      "area": 15547
+    },
+    {
+      "id": 26,
+      "filename": "026_crescent_moon_banner.png",
+      "original_x": 1055,
+      "original_y": 473,
+      "width": 118,
+      "height": 162,
+      "area": 11532
+    },
+    {
+      "id": 27,
+      "filename": "027_hanging_cage_glowing_bird.png",
+      "original_x": 1196,
+      "original_y": 453,
+      "width": 96,
+      "height": 182,
+      "area": 10867
+    },
+    {
+      "id": 28,
+      "filename": "028_wooden_crate_closed.png",
+      "original_x": 250,
+      "original_y": 656,
+      "width": 91,
+      "height": 88,
+      "area": 7330
+    },
+    {
+      "id": 29,
+      "filename": "029_woven_basket_herbs.png",
+      "original_x": 520,
+      "original_y": 655,
+      "width": 87,
+      "height": 92,
+      "area": 6168
+    },
+    {
+      "id": 30,
+      "filename": "030_mortar_and_pestle_stone.png",
+      "original_x": 820,
+      "original_y": 661,
+      "width": 90,
+      "height": 111,
+      "area": 6525
+    },
+    {
+      "id": 31,
+      "filename": "031_stone_wizard_bust.png",
+      "original_x": 935,
+      "original_y": 659,
+      "width": 102,
+      "height": 117,
+      "area": 8489
+    },
+    {
+      "id": 32,
+      "filename": "032_hanging_brass_lantern.png",
+      "original_x": 1156,
+      "original_y": 663,
+      "width": 64,
+      "height": 109,
+      "area": 4710
+    },
+    {
+      "id": 33,
+      "filename": "033_potion_bottles_row.png",
+      "original_x": 33,
+      "original_y": 668,
+      "width": 188,
+      "height": 111,
+      "area": 13614
+    },
+    {
+      "id": 34,
+      "filename": "034_magic_chest_crescent_moon.png",
+      "original_x": 373,
+      "original_y": 664,
+      "width": 114,
+      "height": 99,
+      "area": 9940
+    },
+    {
+      "id": 35,
+      "filename": "035_mortar_crushed_herbs.png",
+      "original_x": 635,
+      "original_y": 684,
+      "width": 70,
+      "height": 79,
+      "area": 4194
+    },
+    {
+      "id": 36,
+      "filename": "036_burlap_sack_tied.png",
+      "original_x": 723,
+      "original_y": 672,
+      "width": 79,
+      "height": 100,
+      "area": 5465
+    },
+    {
+      "id": 37,
+      "filename": "037_wooden_barrel.png",
+      "original_x": 1058,
+      "original_y": 666,
+      "width": 78,
+      "height": 106,
+      "area": 6975
+    },
+    {
+      "id": 38,
+      "filename": "038_magic_lantern_purple_glow.png",
+      "original_x": 1241,
+      "original_y": 670,
+      "width": 84,
+      "height": 122,
+      "area": 7087
+    },
+    {
+      "id": 39,
+      "filename": "039_crystal_ball_golden_stand.png",
+      "original_x": 1351,
+      "original_y": 684,
+      "width": 78,
+      "height": 124,
+      "area": 6621
+    },
+    {
+      "id": 40,
+      "filename": "040_astrolabe_brass_wheel.png",
+      "original_x": 1437,
+      "original_y": 692,
+      "width": 84,
+      "height": 116,
+      "area": 4332
+    },
+    {
+      "id": 41,
+      "filename": "041_potted_bonsai_pedestal.png",
+      "original_x": 16,
+      "original_y": 796,
+      "width": 97,
+      "height": 195,
+      "area": 11308
+    },
+    {
+      "id": 42,
+      "filename": "042_small_wooden_chest.png",
+      "original_x": 133,
+      "original_y": 795,
+      "width": 96,
+      "height": 61,
+      "area": 5337
+    },
+    {
+      "id": 43,
+      "filename": "043_ornate_purple_trunk.png",
+      "original_x": 257,
+      "original_y": 772,
+      "width": 99,
+      "height": 81,
+      "area": 7116
+    },
+    {
+      "id": 44,
+      "filename": "044_iron_banded_wooden_chest.png",
+      "original_x": 385,
+      "original_y": 781,
+      "width": 103,
+      "height": 68,
+      "area": 6278
+    },
+    {
+      "id": 45,
+      "filename": "045_lavender_bundle_left.png",
+      "original_x": 507,
+      "original_y": 764,
+      "width": 50,
+      "height": 96,
+      "area": 2808
+    },
+    {
+      "id": 46,
+      "filename": "046_lavender_bundle_right.png",
+      "original_x": 562,
+      "original_y": 763,
+      "width": 52,
+      "height": 97,
+      "area": 2462
+    },
+    {
+      "id": 47,
+      "filename": "047_blue_bellflower_stem.png",
+      "original_x": 616,
+      "original_y": 779,
+      "width": 40,
+      "height": 82,
+      "area": 1758
+    },
+    {
+      "id": 48,
+      "filename": "048_brown_cap_mushroom.png",
+      "original_x": 685,
+      "original_y": 794,
+      "width": 42,
+      "height": 60,
+      "area": 1375
+    },
+    {
+      "id": 49,
+      "filename": "049_red_toadstool_mushroom.png",
+      "original_x": 743,
+      "original_y": 796,
+      "width": 43,
+      "height": 58,
+      "area": 1558
+    },
+    {
+      "id": 50,
+      "filename": "050_black_cat_familiar.png",
+      "original_x": 800,
+      "original_y": 793,
+      "width": 69,
+      "height": 66,
+      "area": 3136
+    },
+    {
+      "id": 51,
+      "filename": "051_purple_violets_cluster.png",
+      "original_x": 886,
+      "original_y": 791,
+      "width": 51,
+      "height": 63,
+      "area": 1682
+    },
+    {
+      "id": 52,
+      "filename": "052_pink_wildflower.png",
+      "original_x": 957,
+      "original_y": 809,
+      "width": 39,
+      "height": 46,
+      "area": 1064
+    },
+    {
+      "id": 53,
+      "filename": "053_three_lit_candles_plate.png",
+      "original_x": 1015,
+      "original_y": 794,
+      "width": 73,
+      "height": 63,
+      "area": 2859
+    },
+    {
+      "id": 54,
+      "filename": "054_mossy_skull.png",
+      "original_x": 1108,
+      "original_y": 792,
+      "width": 57,
+      "height": 63,
+      "area": 2676
+    },
+    {
+      "id": 55,
+      "filename": "055_open_spellbook_grimoire.png",
+      "original_x": 1212,
+      "original_y": 816,
+      "width": 105,
+      "height": 79,
+      "area": 7616
+    },
+    {
+      "id": 56,
+      "filename": "056_cauldron_green_bubbling.png",
+      "original_x": 128,
+      "original_y": 883,
+      "width": 138,
+      "height": 121,
+      "area": 13485
+    },
+    {
+      "id": 57,
+      "filename": "057_earthenware_jug_ivy.png",
+      "original_x": 294,
+      "original_y": 877,
+      "width": 88,
+      "height": 113,
+      "area": 7930
+    },
+    {
+      "id": 58,
+      "filename": "058_wildflower_bouquet_vase.png",
+      "original_x": 399,
+      "original_y": 871,
+      "width": 65,
+      "height": 90,
+      "area": 4091
+    },
+    {
+      "id": 59,
+      "filename": "059_empty_wooden_crate.png",
+      "original_x": 486,
+      "original_y": 887,
+      "width": 89,
+      "height": 80,
+      "area": 6410
+    },
+    {
+      "id": 60,
+      "filename": "060_sleeping_cat_cushion.png",
+      "original_x": 599,
+      "original_y": 882,
+      "width": 104,
+      "height": 71,
+      "area": 5087
+    },
+    {
+      "id": 61,
+      "filename": "061_wooden_spinning_wheel.png",
+      "original_x": 720,
+      "original_y": 878,
+      "width": 80,
+      "height": 90,
+      "area": 4788
+    },
+    {
+      "id": 62,
+      "filename": "062_open_book_ribbon.png",
+      "original_x": 827,
+      "original_y": 888,
+      "width": 100,
+      "height": 82,
+      "area": 7551
+    },
+    {
+      "id": 63,
+      "filename": "063_rolled_parchment_scroll.png",
+      "original_x": 946,
+      "original_y": 877,
+      "width": 56,
+      "height": 101,
+      "area": 4095
+    },
+    {
+      "id": 64,
+      "filename": "064_stack_of_magic_books.png",
+      "original_x": 1018,
+      "original_y": 878,
+      "width": 65,
+      "height": 103,
+      "area": 5567
+    },
+    {
+      "id": 65,
+      "filename": "065_single_lit_candle_holder.png",
+      "original_x": 1143,
+      "original_y": 868,
+      "width": 24,
+      "height": 57,
+      "area": 897
+    },
+    {
+      "id": 66,
+      "filename": "066_ritual_circle_torches_altar.png",
+      "original_x": 1335,
+      "original_y": 825,
+      "width": 191,
+      "height": 178,
+      "area": 26364
+    },
+    {
+      "id": 67,
+      "filename": "067_carved_wooden_pipe.png",
+      "original_x": 801,
+      "original_y": 974,
+      "width": 186,
+      "height": 30,
+      "area": 2636
+    },
+    {
+      "id": 68,
+      "filename": "068_green_crystal_cluster.png",
+      "original_x": 1105,
+      "original_y": 914,
+      "width": 89,
+      "height": 78,
+      "area": 4462
+    },
+    {
+      "id": 69,
+      "filename": "069_purple_crystal_cluster.png",
+      "original_x": 1222,
+      "original_y": 909,
+      "width": 101,
+      "height": 79,
+      "area": 4948
+    },
+    {
+      "id": 70,
+      "filename": "070_wooden_scroll_case.png",
+      "original_x": 481,
+      "original_y": 979,
+      "width": 210,
+      "height": 19,
+      "area": 3117
+    }
+  ]
+}

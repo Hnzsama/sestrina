@@ -1,4 +1,4 @@
-/// @description Draw GUI Event - VN Full-Height Standing Characters & Aesthetic Dialogue UI
+/// @description Draw GUI Event - VN Full-Height Standing Characters & JRPG Indigo Frosted Glass Dialogue UI
 
 var _gui_w = display_get_gui_width();
 var _gui_h = display_get_gui_height();
@@ -12,13 +12,12 @@ if (current_dialogue == noone || !global.dialogue_active) {
     exit;
 }
 
-
 var _lines = current_dialogue.lines;
 if (current_line_index >= array_length(_lines)) exit;
 var _line = _lines[current_line_index];
 
 // ==========================================
-// 2. Helper Render Full-Height Standing 2D Anime Character
+// 1. Helper Render Full-Height Standing 2D Anime Character
 // ==========================================
 var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh) {
     var _base_y = _gh;
@@ -97,37 +96,27 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
 
     } else if (_type == "goran") {
         // ==========================================
-        // PANDAI BESI GORAN (Muscular Blacksmith)
+        // PANDAI BESI GORAN (Goran Blacksmith Masterpack Portrait)
         // ==========================================
-        var _c_apron = _is_active ? make_color_rgb(120, 65, 35) : make_color_rgb(70, 35, 20);
-        var _c_skin  = _is_active ? make_color_rgb(240, 195, 170) : make_color_rgb(160, 125, 105);
-        var _c_hair  = _is_active ? make_color_rgb(80, 50, 30) : make_color_rgb(45, 25, 15);
+        var _spr = sPortrait_Goran;
+        if (variable_struct_exists(_curr, "emote") && _curr.emote == "exclamation") {
+            _spr = sPortrait_Goran_Confident;
+        }
+        var _p_scale = 1.85;
+        var _pw = 128 * _p_scale;
+        var _ph = 128 * _p_scale;
+        var _px = _cx - _pw / 2;
+        var _py = 145;
         
-        // Tubuh Berotot & Celemek Kulit
-        draw_set_color(_c_apron);
-        draw_roundrect_ext(_cx - 70, 260, _cx + 70, _gh, 16, 16, false);
-        draw_set_color(make_color_rgb(40, 40, 45));
-        draw_rectangle(_cx - 65, 380, _cx + 65, 400, false); // Sabuk kulit besi
-        
-        // Lengan Kekar
-        draw_set_color(_c_skin);
-        draw_circle(_cx - 75, 310, 24, false);
-        draw_circle(_cx + 75, 310, 24, false);
-        draw_roundrect_ext(_cx - 90, 310, _cx - 60, 440, 12, 12, false);
-        draw_roundrect_ext(_cx + 60, 310, _cx + 90, 440, 12, 12, false);
-        
-        // Kepala, Janggut & Ikat Kepala
-        draw_set_color(_c_skin);
-        draw_ellipse(_cx - 40, 140, _cx + 40, 230, false);
-        draw_set_color(_c_hair);
-        draw_ellipse(_cx - 42, 180, _cx + 42, 250, false); // Janggut lebat
-        draw_set_color(make_color_rgb(200, 50, 50)); // Ikat kepala merah
-        draw_rectangle(_cx - 42, 145, _cx + 42, 160, false);
-        
-        // Mata Bertekad
+        // Bayangan lembut potret
+        draw_set_alpha(0.35);
         draw_set_color(c_black);
-        draw_circle(_cx - 15, 175, 3, false);
-        draw_circle(_cx + 15, 175, 3, false);
+        draw_ellipse(_px - 10, _py + _ph - 20, _px + _pw + 10, _py + _ph + 15, false);
+        draw_set_alpha(1.0);
+        
+        // Gambar sprite potret VN asli Goran
+        var _col = _is_active ? c_white : make_color_rgb(140, 145, 160);
+        draw_sprite_ext(_spr, 0, _px, _py, _p_scale, _p_scale, 0, _col, 1.0);
         
     } else if (_type == "elysia") {
         // ==========================================
@@ -190,7 +179,7 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
         draw_set_color(_c_plate);
         draw_roundrect_ext(_cx - 40, 130, _cx + 40, 230, 14, 14, false);
         draw_set_color(make_color_rgb(30, 35, 45));
-        draw_rectangle(_cx - 30, 175, _cx + 30, 185, false); // Celah Visor Helm
+        draw_rectangle(_cx - 30, 175, _cx + 30, 185, false);
         
         // Bulu Helm Merah
         draw_set_color(_c_red);
@@ -198,65 +187,102 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
         
     } else {
         // ==========================================
-        // KARAKTER KANAN: DARK-HAIRED GIRL IN WHITE DRESS (Sestrina)
         // ==========================================
-        var _c_dress = _is_active ? make_color_rgb(240, 248, 255) : make_color_rgb(150, 155, 165);
-        var _c_ribbon= _is_active ? make_color_rgb(130, 190, 255) : make_color_rgb(80, 120, 160);
-        var _c_hair  = _is_active ? make_color_rgb(45, 55, 80) : make_color_rgb(25, 30, 45);
-        var _c_skin  = _is_active ? make_color_rgb(255, 228, 215) : make_color_rgb(170, 150, 140);
+        // KARAKTER KANAN: ADIK SESTRINA (White Hair, Red Ribbons & Pinafore Dress)
+        // ==========================================
+        var _c_blouse = _is_active ? make_color_rgb(248, 248, 255) : make_color_rgb(170, 175, 185);
+        var _c_dress  = _is_active ? make_color_rgb(52, 38, 54) : make_color_rgb(32, 22, 34);
+        var _c_ribbon = _is_active ? make_color_rgb(215, 30, 50) : make_color_rgb(130, 20, 32);
+        var _c_hair   = _is_active ? make_color_rgb(235, 238, 248) : make_color_rgb(160, 165, 180);
+        var _c_skin   = _is_active ? make_color_rgb(255, 238, 232) : make_color_rgb(180, 160, 155);
+        var _c_eye    = _is_active ? make_color_rgb(220, 25, 45) : make_color_rgb(120, 15, 25);
 
-        // 1. Gaun Putih Panjang Transparan
+        // 1. Rok Lipit Plum Tua (Pleated Pinafore Skirt)
         draw_set_color(_c_dress);
-        draw_triangle(_cx - 60, 310, _cx - 110, _gh, _cx + 90, _gh, false);
-        draw_triangle(_cx + 40, 310, _cx + 120, _gh, _cx - 40, _gh, false);
+        draw_triangle(_cx - 65, 340, _cx - 120, _gh, _cx + 100, _gh, false);
+        draw_triangle(_cx + 45, 340, _cx + 130, _gh, _cx - 45, _gh, false);
 
-        // Pita Biru Pinggang
-        draw_set_color(_c_ribbon);
-        draw_roundrect_ext(_cx - 35, 360, _cx + 35, 375, 6, 6, false);
-
-        // Kaki Anggun
-        draw_set_color(_c_skin);
-        draw_roundrect_ext(_cx - 35, 480, _cx - 10, _gh, 10, 10, false);
-        draw_roundrect_ext(_cx + 5, 480, _cx + 30, _gh, 10, 10, false);
-        draw_set_color(_c_ribbon);
-        draw_line_width(_cx - 35, 650, _cx - 10, 640, 2);
-        draw_line_width(_cx + 5, 650, _cx + 30, 640, 2);
-
-        // 2. Tubuh & Gaun Atas
+        // Korset Pinggang Tinggi (High Corset Waist)
         draw_set_color(_c_dress);
-        draw_ellipse(_cx - 42, 260, _cx + 42, 380, false);
+        draw_roundrect_ext(_cx - 42, 310, _cx + 42, 370, 8, 8, false);
+        // Kancing Ganda Mawar
+        draw_set_color(make_color_rgb(245, 180, 195));
+        draw_circle(_cx - 16, 330, 3, false);
+        draw_circle(_cx + 16, 330, 3, false);
+        draw_circle(_cx - 16, 350, 3, false);
+        draw_circle(_cx + 16, 350, 3, false);
 
-        // Lengan & Tangan Menempel di Dada
+        // 2. Blus Putih Berenda & Tali Suspender Ruffle
+        draw_set_color(_c_blouse);
+        draw_ellipse(_cx - 40, 250, _cx + 40, 330, false);
+        // Tali Suspender Gaun
+        draw_set_color(_c_dress);
+        draw_line_width(_cx - 24, 250, _cx - 20, 320, 6);
+        draw_line_width(_cx + 24, 250, _cx + 20, 320, 6);
+
+        // Pita Merah Besar di Leher
+        draw_set_color(_c_ribbon);
+        draw_triangle(_cx - 30, 235, _cx, 248, _cx - 15, 260, false);
+        draw_triangle(_cx + 30, 235, _cx, 248, _cx + 15, 260, false);
+        draw_circle(_cx, 246, 6, false);
+        draw_line_width(_cx - 10, 250, _cx - 18, 280, 3);
+        draw_line_width(_cx + 10, 250, _cx + 18, 280, 3);
+
+        // Lengan Putih Mengembang & Tangan Menempel di Depan
+        draw_set_color(_c_blouse);
+        draw_roundrect_ext(_cx - 55, 260, _cx - 25, 350, 10, 10, false);
+        draw_roundrect_ext(_cx + 25, 260, _cx + 55, 350, 10, 10, false);
         draw_set_color(_c_skin);
-        draw_roundrect_ext(_cx - 45, 270, _cx - 20, 360, 8, 8, false);
-        draw_roundrect_ext(_cx + 10, 290, _cx + 35, 340, 8, 8, false);
+        draw_circle(_cx - 15, 345, 7, false);
+        draw_circle(_cx + 15, 345, 7, false);
 
-        // 3. Leher & Wajah Cantik
+        // 3. Leher & Wajah Cantik Melankolis
         draw_set_color(_c_skin);
-        draw_ellipse(_cx - 32, 145, _cx + 32, 220, false);
+        draw_ellipse(_cx - 32, 145, _cx + 32, 225, false);
 
-        // Mata Anime Biru Lembut
-        draw_set_color(_is_active ? make_color_rgb(70, 130, 210) : make_color_rgb(40, 75, 120));
-        draw_circle(_cx - 12, 178, 4.5, false);
-        draw_circle(_cx + 12, 178, 4.5, false);
+        // Mata Anime Merah Rubi (Ruby Eyes)
+        draw_set_color(_c_eye);
+        draw_circle(_cx - 13, 178, 5.5, false);
+        draw_circle(_cx + 13, 178, 5.5, false);
         draw_set_color(c_black);
-        draw_circle(_cx - 12, 178, 2, false);
-        draw_circle(_cx + 12, 178, 2, false);
-
-        // 4. Rambut Hitam/Navy Panjang Mengalir
-        draw_set_color(_c_hair);
-        draw_circle(_cx, 135, 46, false);
-        draw_triangle(_cx - 45, 135, _cx - 85, _gh - 100, _cx - 10, 300, false);
-        draw_triangle(_cx + 40, 135, _cx + 80, _gh - 100, _cx + 10, 300, false);
-        // Hiasan Rambut Putih Kanan
+        draw_circle(_cx - 13, 178, 2.5, false);
+        draw_circle(_cx + 13, 178, 2.5, false);
         draw_set_color(c_white);
-        draw_line_width(_cx + 32, 140, _cx + 45, 160, 3);
-        draw_line_width(_cx + 38, 145, _cx + 25, 165, 2);
+        draw_circle(_cx - 11, 176, 1.8, false); // kilau mata
+        draw_circle(_cx + 15, 176, 1.8, false);
+
+        // Rona Pipi Lembut
+        draw_set_color(make_color_rgb(255, 170, 180));
+        draw_ellipse(_cx - 24, 188, _cx - 10, 196, false);
+        draw_ellipse(_cx + 10, 188, _cx + 24, 196, false);
+
+        // 4. Rambut Perak Putih & Kuncir Kuda Kembar (Twintails)
+        // Kuncir Kiri
+        draw_set_color(_c_hair);
+        draw_triangle(_cx - 35, 140, _cx - 95, _gh - 50, _cx - 30, 320, false);
+        // Kuncir Kanan
+        draw_triangle(_cx + 35, 140, _cx + 95, _gh - 50, _cx + 30, 320, false);
+
+        // Kubah Rambut Atas & Poni
+        draw_circle(_cx, 135, 46, false);
+        // Poni Tengah & Samping dengan Aksen Merah di Ujung Dalam
+        draw_triangle(_cx - 30, 135, _cx - 36, 195, _cx - 15, 150, false);
+        draw_triangle(_cx + 30, 135, _cx + 36, 195, _cx + 15, 150, false);
+        draw_set_color(_c_ribbon);
+        draw_circle(_cx - 33, 192, 3, false); // aksen merah ujung poni
+        draw_circle(_cx + 33, 192, 3, false);
+
+        // Pita Merah Kuncir Kiri & Kanan
+        draw_set_color(_c_ribbon);
+        draw_ellipse(_cx - 44, 130, _cx - 28, 148, false);
+        draw_line_width(_cx - 38, 144, _cx - 52, 175, 3);
+        draw_ellipse(_cx + 28, 130, _cx + 44, 148, false);
+        draw_line_width(_cx + 38, 144, _cx + 52, 175, 3);
     }
 };
 
 // ==========================================
-// 3. Render Karakter 2D di Sisi Hitam Kiri & Kanan
+// 2. Render Standing Character Portraits di Kiri & Kanan
 // ==========================================
 if (_line.left_portrait != noone) {
     var _is_left_active = (_line.side_active == "left");
@@ -269,41 +295,138 @@ if (_line.right_portrait != noone) {
 }
 
 // ==========================================
-// 4. Box Dialog Utama (Aesthetic Curved Banner)
+// 2B. Render Emotion Reaction Bubble di atas Karakter Aktif (Reference: reactionbubble.png)
 // ==========================================
-var _box_x1 = 260;
-var _box_y1 = _gui_h - 220;
-var _box_x2 = _gui_w - 260;
-var _box_y2 = _gui_h - 35;
+var _draw_emotion_bubble = function(_bx, _by, _emote_type, _scale, _timer) {
+    if (_emote_type == "" || _scale <= 0.05) return;
+    
+    var _bounce = _scale;
+    if (_bounce < 1.0) {
+        _bounce = _scale * 1.15;
+    }
+    
+    var _rad = 24 * _bounce;
+    var _bob = sin(_timer * 3) * 3;
+    var _cy = _by + _bob;
+    
+    // Bayangan Balon
+    draw_set_alpha(0.35);
+    draw_set_color(make_color_rgb(10, 15, 30));
+    draw_circle(_bx, _cy + 5, _rad + 2, false);
+    
+    // Latar Putih Balon Bulat
+    draw_set_alpha(0.96);
+    draw_set_color(c_white);
+    draw_circle(_bx, _cy, _rad, false);
+    
+    // Ekor Balon Segitiga Menunjuk ke Kepala
+    draw_triangle(_bx - 6 * _bounce, _cy + _rad - 4, _bx + 6 * _bounce, _cy + _rad - 4, _bx - 3 * _bounce, _cy + _rad + 14 * _bounce, false);
+    
+    // Outline Balon Gelap Bersih
+    draw_set_color(make_color_rgb(45, 55, 75));
+    draw_circle(_bx, _cy, _rad, true);
+    draw_line(_bx - 6 * _bounce, _cy + _rad - 4, _bx - 3 * _bounce, _cy + _rad + 14 * _bounce);
+    draw_line(_bx + 6 * _bounce, _cy + _rad - 4, _bx - 3 * _bounce, _cy + _rad + 14 * _bounce);
+    
+    // Ikon Emosi
+    draw_set_alpha(1.0);
+    if (_emote_type == "sweat") {
+        // Tetesan Air Keringat Biru Segar dengan Kilau (Reference: reactionbubble.png)
+        var _sx = _bx;
+        var _sy = _cy + 2;
+        draw_set_color(make_color_rgb(40, 150, 245));
+        draw_triangle(_sx, _sy - 13 * _bounce, _sx - 9 * _bounce, _sy + 6 * _bounce, _sx + 9 * _bounce, _sy + 6 * _bounce, false);
+        draw_circle(_sx, _sy + 5 * _bounce, 8.5 * _bounce, false);
+        // Kilau Putih Lengkung
+        draw_set_color(c_white);
+        draw_ellipse(_sx - 5 * _bounce, _sy - 2 * _bounce, _sx - 1 * _bounce, _sy + 5 * _bounce, false);
+    } else if (_emote_type == "exclamation") {
+        // Tanda Seru Merah Menyala (!)
+        var _ex = _bx;
+        var _ey = _cy;
+        draw_set_color(make_color_rgb(235, 45, 55));
+        draw_roundrect_ext(_ex - 3.5 * _bounce, _ey - 13 * _bounce, _ex + 3.5 * _bounce, _ey + 3 * _bounce, 4, 4, false);
+        draw_circle(_ex, _ey + 9 * _bounce, 3.5 * _bounce, false);
+        draw_set_color(make_color_rgb(255, 230, 140));
+        draw_circle(_ex, _ey - 10 * _bounce, 2 * _bounce, false);
+    } else if (_emote_type == "dots") {
+        // Tiga Titik Hening Berdenyut (...)
+        var _dx = _bx;
+        var _dy = _cy;
+        draw_set_color(make_color_rgb(60, 75, 110));
+        for (var _d = -1; _d <= 1; _d++) {
+            var _wave = sin(_timer * 4 + _d * 1.5) * 3 * _bounce;
+            draw_circle(_dx + _d * 10 * _bounce, _dy + _wave, 3.2 * _bounce, false);
+        }
+    } else if (_emote_type == "question") {
+        // Tanda Tanya Indigo (?)
+        draw_set_color(make_color_rgb(65, 80, 200));
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_middle);
+        draw_text_transformed(_bx, _cy - 2, "?", 1.6 * _bounce, 1.6 * _bounce, 0);
+    }
+};
 
-// Curved Glassmorphism Dialogue Banner
+if (variable_struct_exists(_line, "emote") && _line.emote != "") {
+    if (_line.side_active == "left") {
+        _draw_emotion_bubble(210 + 50, 75, _line.emote, emote_scale, emote_timer);
+    } else {
+        _draw_emotion_bubble(_gui_w - 210 - 50, 75, _line.emote, emote_scale, emote_timer);
+    }
+}
+
+// Jika mode sembunyikan UI sedang aktif [H], jangan gambar kotak teks
+if (variable_instance_exists(id, "ui_hidden") && ui_hidden) {
+    draw_set_alpha(0.85);
+    draw_set_color(make_color_rgb(180, 210, 255));
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(_gui_w / 2, _gui_h - 40, "✦ Antarmuka Tersembunyi (Tekan [H] atau [Space] untuk kembali) ✦");
+    draw_set_alpha(1.0);
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    exit;
+}
+
+// ==========================================
+// 3. Box Dialog Utama (Curved Pill Deep Indigo Glass - Reference: importantNPCdialog.png)
+// ==========================================
+var _box_x1 = 250;
+var _box_y1 = _gui_h - 225;
+var _box_x2 = _gui_w - 250;
+var _box_y2 = _gui_h - 32;
+
+// Curved Frosted Glass Dialogue Banner
 draw_set_alpha(0.92);
-draw_set_color(make_color_rgb(42, 52, 78));
-draw_roundrect_ext(_box_x1, _box_y1, _box_x2, _box_y2, 28, 28, false);
+draw_set_color(make_color_rgb(22, 32, 60));
+draw_roundrect_ext(_box_x1, _box_y1, _box_x2, _box_y2, 30, 30, false);
 
-// Outer Blue Glow Border
+// Double Neon Lavender Glow Border
 draw_set_alpha(0.95);
-draw_set_color(make_color_rgb(120, 165, 235));
-draw_roundrect_ext(_box_x1, _box_y1, _box_x2, _box_y2, 28, 28, true);
+draw_set_color(make_color_rgb(145, 175, 255));
+draw_roundrect_ext(_box_x1, _box_y1, _box_x2, _box_y2, 30, 30, true);
+draw_set_color(make_color_rgb(60, 80, 140));
+draw_roundrect_ext(_box_x1 + 2, _box_y1 + 2, _box_x2 - 2, _box_y2 - 2, 28, 28, true);
 
 // ==========================================
-// 5. Speaker Name Tab (Pill Tab Kiri Atas Box)
+// 4. Speaker Name Pill Tab (Kiri Atas Box)
 // ==========================================
 if (_line.speaker != "") {
-    var _tab_x1 = _box_x1 + 30;
+    var _tab_x1 = _box_x1 + 32;
     var _tab_y1 = _box_y1 - 32;
-    var _tab_w = max(160, string_width(_line.speaker) + 50);
+    var _tab_w = max(170, string_width(_line.speaker) + 54);
     var _tab_x2 = _tab_x1 + _tab_w;
     var _tab_y2 = _box_y1 + 10;
 
-    // Tab Background
+    // Tab Background Deep Indigo Glass
     draw_set_alpha(0.96);
-    draw_set_color(make_color_rgb(28, 38, 62));
-    draw_roundrect_ext(_tab_x1, _tab_y1, _tab_x2, _tab_y2, 20, 20, false);
+    draw_set_color(make_color_rgb(26, 38, 70));
+    draw_roundrect_ext(_tab_x1, _tab_y1, _tab_x2, _tab_y2, 22, 22, false);
     
     // Tab Glow Border
-    draw_set_color(make_color_rgb(130, 185, 255));
-    draw_roundrect_ext(_tab_x1, _tab_y1, _tab_x2, _tab_y2, 20, 20, true);
+    draw_set_color(make_color_rgb(145, 185, 255));
+    draw_roundrect_ext(_tab_x1, _tab_y1, _tab_x2, _tab_y2, 22, 22, true);
 
     // Speaker Name Text
     draw_set_alpha(1.0);
@@ -314,18 +437,27 @@ if (_line.speaker != "") {
 }
 
 // ==========================================
-// 6. Tombol Kontrol VN di Kanan Atas Box (▶▶ ▍▍ ▤ ✖)
+// 5. Tombol Kontrol VN di Kanan Atas Box (⏩ Fast, ▶ Auto, ≡ Log, ✖ Hide)
 // ==========================================
-var _btn_x = _box_x2 - 120;
+var _btn_x = _box_x2 - 135;
 var _btn_y = _box_y1 + 18;
-draw_set_alpha(0.75);
-draw_set_color(make_color_rgb(190, 215, 245));
+draw_set_alpha(0.85);
+
+var _auto_on = variable_instance_exists(id, "auto_mode") ? auto_mode : false;
+var _vn_str = (_auto_on ? "⏩   ▶(ON)   ≡   ✖" : "⏩   ▶   ≡   ✖");
+
+draw_set_color(_auto_on ? make_color_rgb(120, 240, 180) : make_color_rgb(195, 220, 255));
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(_btn_x, _btn_y, "▶▶   ▍▍   ▤   ✖");
+draw_text(_btn_x, _btn_y, _vn_str);
+
+// Hotkey hint subtle
+draw_set_alpha(0.5);
+draw_set_color(make_color_rgb(150, 175, 215));
+draw_text(_btn_x, _btn_y + 16, "[Tab] Skip  [A] Auto  [H] Hide");
 
 // ==========================================
-// 7. Isi Teks Dialog Typewriter
+// 6. Isi Teks Dialog Typewriter
 // ==========================================
 draw_set_alpha(1.0);
 draw_set_color(make_color_rgb(245, 250, 255));
@@ -333,21 +465,21 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 var _sub_text = string_copy(_line.text, 1, floor(char_index));
-var _text_x = _box_x1 + 40;
-var _text_y = _box_y1 + 45;
-var _max_w = (_box_x2 - _box_x1) - 80;
+var _text_x = _box_x1 + 44;
+var _text_y = _box_y1 + 46;
+var _max_w = (_box_x2 - _box_x1) - 88;
 
 draw_text_ext(_text_x, _text_y, _sub_text, 28, _max_w);
 
 // ==========================================
-// 8. Panah Indikator Lanjut di Tengah Bawah Box (▼)
+// 7. Panah Indikator Lanjut di Tengah Bawah Box (▼)
 // ==========================================
 if (is_finished_typing) {
     var _arr_alpha = 0.5 + 0.5 * sin(blink_timer * 6);
     draw_set_alpha(_arr_alpha);
-    draw_set_color(make_color_rgb(160, 205, 255));
+    draw_set_color(make_color_rgb(160, 210, 255));
     var _mid_x = (_box_x1 + _box_x2) / 2;
-    var _arr_y = _box_y2 - 14 + sin(blink_timer * 6) * 3;
+    var _arr_y = _box_y2 - 15 + sin(blink_timer * 6) * 3;
     draw_triangle(_mid_x - 8, _arr_y - 6, _mid_x + 8, _arr_y - 6, _mid_x, _arr_y + 4, false);
 }
 

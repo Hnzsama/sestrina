@@ -1,13 +1,13 @@
 /// @description Draw Event oDecorPotionShop (Mana Seed RPG Elysia's Masterpiece Apothecary)
 
-var _x1 = 440;
+var _x1 = 64;
 var _y1 = 40;
-var _x2 = 840;
+var _x2 = 1216;
 var _y2 = 680;
 var _cx = 640;
 
-// 1. Latar Luar Ruangan (Void Frame)
-draw_set_color(make_color_rgb(10, 12, 16));
+// 1. Latar Belakang Luar Apotek (Outer Wall Frame)
+draw_set_color(make_color_rgb(18, 14, 22));
 draw_rectangle(0, 0, room_width, room_height, false);
 
 // 2. Lantai Kayu Bersih Mana Seed (dari sTile_Interior 0, 96)
@@ -94,17 +94,12 @@ for (var _b = 0; _b < 6; _b++) {
 }
 draw_set_alpha(1.0);
 
-// 5. Peralatan Laboratorium di Belakang Elysia
-// Alat Distilasi Kaca Alembic di Kiri
-var _dst_x = _cx - 65;
-var _dst_y = 190;
-draw_set_color(make_color_rgb(75, 48, 32));
-draw_roundrect_ext(_dst_x - 16, _dst_y + 16, _dst_x + 16, _dst_y + 34, 4, 4, false);
-// Labu Ungu & Selang Spiral
-draw_set_color(make_color_rgb(190, 95, 245));
-draw_circle(_dst_x - 5, _dst_y + 10, 7, false);
-draw_set_color(make_color_rgb(120, 240, 210));
-draw_circle(_dst_x + 8, _dst_y + 14, 4, false);
+// 5. Stasiun Alkimia Bertingkat Nyata dari sStation_Alchemy di Kiri Belakang
+draw_sprite_part_ext(sStation_Alchemy, 0, 0, 0, 64, 64, _cx - 110, 155, 1.15, 1.15, c_white, 1.0);
+
+// Pot Bunga & Tanaman Obat Segar (sProp_OutdoorDecor)
+draw_sprite_part(sProp_OutdoorDecor, 0, 0, 64, 32, 32, _x1 + 35, 120);
+draw_sprite_part(sProp_OutdoorDecor, 0, 32, 64, 32, 32, _x1 + 65, 120);
 
 // Rak Buku Grimoire Ramuan di Kanan Belakang
 draw_sprite_part(sFurnishings, 0, 96, 0, 32, 80, _cx + 45, 150);

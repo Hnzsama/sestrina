@@ -1,0 +1,268 @@
+{
+  "source_image": "Fantasy RPG Town Tileset Collection.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_town_house_blue_roof.png",
+      "original_x": 35,
+      "original_y": 13,
+      "width": 192,
+      "height": 268,
+      "area": 33758
+    },
+    {
+      "id": 2,
+      "filename": "002_town_house_red_roof.png",
+      "original_x": 258,
+      "original_y": 40,
+      "width": 191,
+      "height": 249,
+      "area": 31029
+    },
+    {
+      "id": 3,
+      "filename": "003_town_house_purple_roof.png",
+      "original_x": 465,
+      "original_y": 38,
+      "width": 179,
+      "height": 255,
+      "area": 32920
+    },
+    {
+      "id": 4,
+      "filename": "004_inn_tavern_building.png",
+      "original_x": 658,
+      "original_y": 26,
+      "width": 262,
+      "height": 276,
+      "area": 48255
+    },
+    {
+      "id": 5,
+      "filename": "005_cafe_shop_building.png",
+      "original_x": 924,
+      "original_y": 67,
+      "width": 230,
+      "height": 227,
+      "area": 35943
+    },
+    {
+      "id": 6,
+      "filename": "006_grand_royal_castle.png",
+      "original_x": 1192,
+      "original_y": 23,
+      "width": 319,
+      "height": 292,
+      "area": 67317
+    },
+    {
+      "id": 7,
+      "filename": "007_blacksmith_forge_shop.png",
+      "original_x": 21,
+      "original_y": 294,
+      "width": 229,
+      "height": 238,
+      "area": 35091
+    },
+    {
+      "id": 8,
+      "filename": "008_bakery_shop.png",
+      "original_x": 272,
+      "original_y": 313,
+      "width": 223,
+      "height": 225,
+      "area": 34863
+    },
+    {
+      "id": 9,
+      "filename": "009_magic_potion_shop.png",
+      "original_x": 523,
+      "original_y": 315,
+      "width": 198,
+      "height": 231,
+      "area": 30261
+    },
+    {
+      "id": 10,
+      "filename": "010_clinic_hospital_building.png",
+      "original_x": 750,
+      "original_y": 327,
+      "width": 196,
+      "height": 212,
+      "area": 27781
+    },
+    {
+      "id": 11,
+      "filename": "011_stone_windmill.png",
+      "original_x": 988,
+      "original_y": 312,
+      "width": 184,
+      "height": 232,
+      "area": 22030
+    },
+    {
+      "id": 12,
+      "filename": "012_round_guard_watchtower.png",
+      "original_x": 1198,
+      "original_y": 324,
+      "width": 111,
+      "height": 231,
+      "area": 14565
+    },
+    {
+      "id": 13,
+      "filename": "013_coastal_lighthouse.png",
+      "original_x": 1364,
+      "original_y": 323,
+      "width": 142,
+      "height": 228,
+      "area": 14712
+    },
+    {
+      "id": 14,
+      "filename": "014_watermill_house.png",
+      "original_x": 19,
+      "original_y": 555,
+      "width": 256,
+      "height": 234,
+      "area": 36995
+    },
+    {
+      "id": 15,
+      "filename": "015_sawmill_waterwheel_house.png",
+      "original_x": 284,
+      "original_y": 578,
+      "width": 233,
+      "height": 206,
+      "area": 33805
+    },
+    {
+      "id": 16,
+      "filename": "016_magic_academy_palace.png",
+      "original_x": 815,
+      "original_y": 558,
+      "width": 232,
+      "height": 244,
+      "area": 36829
+    },
+    {
+      "id": 17,
+      "filename": "017_cathedral_church.png",
+      "original_x": 1067,
+      "original_y": 553,
+      "width": 220,
+      "height": 254,
+      "area": 32557
+    },
+    {
+      "id": 18,
+      "filename": "018_horse_stable_barn.png",
+      "original_x": 538,
+      "original_y": 604,
+      "width": 256,
+      "height": 190,
+      "area": 34098
+    },
+    {
+      "id": 19,
+      "filename": "019_ground_patch_detail.png",
+      "original_x": 650,
+      "original_y": 727,
+      "width": 29,
+      "height": 5,
+      "area": 78
+    },
+    {
+      "id": 20,
+      "filename": "020_stone_castle_gate.png",
+      "original_x": 1303,
+      "original_y": 614,
+      "width": 226,
+      "height": 204,
+      "area": 32084
+    },
+    {
+      "id": 21,
+      "filename": "021_stone_tower_belfry.png",
+      "original_x": 16,
+      "original_y": 807,
+      "width": 154,
+      "height": 185,
+      "area": 15304
+    },
+    {
+      "id": 22,
+      "filename": "022_wooden_lookout_tower.png",
+      "original_x": 190,
+      "original_y": 811,
+      "width": 94,
+      "height": 176,
+      "area": 8613
+    },
+    {
+      "id": 23,
+      "filename": "023_stone_water_well.png",
+      "original_x": 327,
+      "original_y": 861,
+      "width": 98,
+      "height": 129,
+      "area": 8854
+    },
+    {
+      "id": 24,
+      "filename": "024_mine_entrance_rails.png",
+      "original_x": 454,
+      "original_y": 827,
+      "width": 271,
+      "height": 166,
+      "area": 26872
+    },
+    {
+      "id": 25,
+      "filename": "025_military_scout_tent.png",
+      "original_x": 748,
+      "original_y": 842,
+      "width": 162,
+      "height": 135,
+      "area": 12492
+    },
+    {
+      "id": 26,
+      "filename": "026_circus_festival_tent.png",
+      "original_x": 941,
+      "original_y": 817,
+      "width": 230,
+      "height": 170,
+      "area": 21410
+    },
+    {
+      "id": 27,
+      "filename": "027_wooden_farm_shed.png",
+      "original_x": 1191,
+      "original_y": 847,
+      "width": 197,
+      "height": 140,
+      "area": 18235
+    },
+    {
+      "id": 28,
+      "filename": "028_market_stall_booth.png",
+      "original_x": 1404,
+      "original_y": 859,
+      "width": 81,
+      "height": 127,
+      "area": 6735
+    },
+    {
+      "id": 29,
+      "filename": "029_market_lamp_signpost.png",
+      "original_x": 1480,
+      "original_y": 895,
+      "width": 38,
+      "height": 91,
+      "area": 1323
+    }
+  ]
+}

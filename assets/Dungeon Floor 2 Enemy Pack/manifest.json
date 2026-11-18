@@ -1,0 +1,583 @@
+{
+  "source_image": "Dungeon Floor 2 Enemy Pack.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_header_divider_left.png",
+      "original_x": 280,
+      "original_y": 28,
+      "width": 192,
+      "height": 34,
+      "area": 1561
+    },
+    {
+      "id": 2,
+      "filename": "002_title_banner_dungeon_floor_2_enemy_pack.png",
+      "original_x": 483,
+      "original_y": 16,
+      "width": 570,
+      "height": 63,
+      "area": 34208
+    },
+    {
+      "id": 3,
+      "filename": "003_header_divider_right.png",
+      "original_x": 1064,
+      "original_y": 28,
+      "width": 192,
+      "height": 33,
+      "area": 1537
+    },
+    {
+      "id": 4,
+      "filename": "004_label_orc.png",
+      "original_x": 232,
+      "original_y": 112,
+      "width": 218,
+      "height": 55,
+      "area": 11289
+    },
+    {
+      "id": 5,
+      "filename": "005_label_imp.png",
+      "original_x": 1031,
+      "original_y": 112,
+      "width": 219,
+      "height": 55,
+      "area": 11322
+    },
+    {
+      "id": 6,
+      "filename": "006_orc_portrait_large.png",
+      "original_x": 18,
+      "original_y": 177,
+      "width": 233,
+      "height": 262,
+      "area": 36357
+    },
+    {
+      "id": 7,
+      "filename": "007_orc_idle_frame_01.png",
+      "original_x": 280,
+      "original_y": 187,
+      "width": 103,
+      "height": 100,
+      "area": 6955
+    },
+    {
+      "id": 8,
+      "filename": "008_orc_idle_frame_02.png",
+      "original_x": 407,
+      "original_y": 187,
+      "width": 99,
+      "height": 100,
+      "area": 6563
+    },
+    {
+      "id": 9,
+      "filename": "009_orc_idle_frame_03.png",
+      "original_x": 531,
+      "original_y": 187,
+      "width": 99,
+      "height": 98,
+      "area": 6593
+    },
+    {
+      "id": 10,
+      "filename": "010_orc_idle_frame_04.png",
+      "original_x": 657,
+      "original_y": 188,
+      "width": 88,
+      "height": 100,
+      "area": 5862
+    },
+    {
+      "id": 11,
+      "filename": "011_imp_portrait_large.png",
+      "original_x": 796,
+      "original_y": 201,
+      "width": 209,
+      "height": 211,
+      "area": 21586
+    },
+    {
+      "id": 12,
+      "filename": "012_imp_fly_frame_01.png",
+      "original_x": 1049,
+      "original_y": 188,
+      "width": 88,
+      "height": 91,
+      "area": 5080
+    },
+    {
+      "id": 13,
+      "filename": "013_imp_fly_frame_02.png",
+      "original_x": 1168,
+      "original_y": 190,
+      "width": 93,
+      "height": 90,
+      "area": 5335
+    },
+    {
+      "id": 14,
+      "filename": "014_imp_fly_frame_03.png",
+      "original_x": 1284,
+      "original_y": 185,
+      "width": 97,
+      "height": 92,
+      "area": 5684
+    },
+    {
+      "id": 15,
+      "filename": "015_imp_fly_frame_04.png",
+      "original_x": 1407,
+      "original_y": 187,
+      "width": 87,
+      "height": 93,
+      "area": 4740
+    },
+    {
+      "id": 16,
+      "filename": "016_orc_walk_frame_05.png",
+      "original_x": 288,
+      "original_y": 293,
+      "width": 95,
+      "height": 99,
+      "area": 6059
+    },
+    {
+      "id": 17,
+      "filename": "017_orc_walk_frame_06.png",
+      "original_x": 409,
+      "original_y": 294,
+      "width": 89,
+      "height": 99,
+      "area": 5865
+    },
+    {
+      "id": 18,
+      "filename": "018_orc_walk_frame_07.png",
+      "original_x": 531,
+      "original_y": 293,
+      "width": 86,
+      "height": 100,
+      "area": 5901
+    },
+    {
+      "id": 19,
+      "filename": "019_orc_attack_frame_08.png",
+      "original_x": 621,
+      "original_y": 297,
+      "width": 142,
+      "height": 204,
+      "area": 11854
+    },
+    {
+      "id": 20,
+      "filename": "020_imp_fly_frame_05.png",
+      "original_x": 1049,
+      "original_y": 298,
+      "width": 73,
+      "height": 94,
+      "area": 4319
+    },
+    {
+      "id": 21,
+      "filename": "021_imp_fly_frame_06.png",
+      "original_x": 1167,
+      "original_y": 300,
+      "width": 94,
+      "height": 86,
+      "area": 5099
+    },
+    {
+      "id": 22,
+      "filename": "022_imp_fly_frame_07.png",
+      "original_x": 1299,
+      "original_y": 296,
+      "width": 75,
+      "height": 108,
+      "area": 4177
+    },
+    {
+      "id": 23,
+      "filename": "023_imp_fly_frame_08.png",
+      "original_x": 1408,
+      "original_y": 300,
+      "width": 85,
+      "height": 93,
+      "area": 4262
+    },
+    {
+      "id": 24,
+      "filename": "024_orc_attack_frame_09.png",
+      "original_x": 283,
+      "original_y": 403,
+      "width": 105,
+      "height": 94,
+      "area": 5972
+    },
+    {
+      "id": 25,
+      "filename": "025_orc_attack_frame_10.png",
+      "original_x": 403,
+      "original_y": 404,
+      "width": 102,
+      "height": 95,
+      "area": 6145
+    },
+    {
+      "id": 26,
+      "filename": "026_orc_attack_frame_11.png",
+      "original_x": 529,
+      "original_y": 404,
+      "width": 123,
+      "height": 95,
+      "area": 6103
+    },
+    {
+      "id": 27,
+      "filename": "027_imp_attack_frame_09.png",
+      "original_x": 1025,
+      "original_y": 408,
+      "width": 129,
+      "height": 90,
+      "area": 4623
+    },
+    {
+      "id": 28,
+      "filename": "028_imp_attack_frame_10.png",
+      "original_x": 1171,
+      "original_y": 410,
+      "width": 92,
+      "height": 86,
+      "area": 3792
+    },
+    {
+      "id": 29,
+      "filename": "029_imp_attack_frame_11.png",
+      "original_x": 1269,
+      "original_y": 415,
+      "width": 123,
+      "height": 83,
+      "area": 4762
+    },
+    {
+      "id": 30,
+      "filename": "030_imp_fireball_projectile.png",
+      "original_x": 1381,
+      "original_y": 419,
+      "width": 115,
+      "height": 67,
+      "area": 4023
+    },
+    {
+      "id": 31,
+      "filename": "031_imp_sparkle_particle.png",
+      "original_x": 1481,
+      "original_y": 465,
+      "width": 11,
+      "height": 11,
+      "area": 62
+    },
+    {
+      "id": 32,
+      "filename": "032_ghost_portrait_large.png",
+      "original_x": 15,
+      "original_y": 594,
+      "width": 253,
+      "height": 349,
+      "area": 49434
+    },
+    {
+      "id": 33,
+      "filename": "033_label_ghost.png",
+      "original_x": 232,
+      "original_y": 561,
+      "width": 218,
+      "height": 53,
+      "area": 10862
+    },
+    {
+      "id": 34,
+      "filename": "034_label_animated_armor.png",
+      "original_x": 1004,
+      "original_y": 561,
+      "width": 299,
+      "height": 53,
+      "area": 15203
+    },
+    {
+      "id": 35,
+      "filename": "035_ghost_float_frame_01.png",
+      "original_x": 307,
+      "original_y": 630,
+      "width": 83,
+      "height": 94,
+      "area": 4734
+    },
+    {
+      "id": 36,
+      "filename": "036_ghost_float_frame_02.png",
+      "original_x": 418,
+      "original_y": 628,
+      "width": 83,
+      "height": 93,
+      "area": 4203
+    },
+    {
+      "id": 37,
+      "filename": "037_ghost_float_frame_03.png",
+      "original_x": 536,
+      "original_y": 630,
+      "width": 77,
+      "height": 87,
+      "area": 4111
+    },
+    {
+      "id": 38,
+      "filename": "038_ghost_float_frame_04.png",
+      "original_x": 648,
+      "original_y": 630,
+      "width": 77,
+      "height": 95,
+      "area": 4360
+    },
+    {
+      "id": 39,
+      "filename": "039_animated_armor_portrait_large.png",
+      "original_x": 800,
+      "original_y": 621,
+      "width": 224,
+      "height": 301,
+      "area": 38006
+    },
+    {
+      "id": 40,
+      "filename": "040_animated_armor_aura_particle_1.png",
+      "original_x": 820,
+      "original_y": 642,
+      "width": 11,
+      "height": 22,
+      "area": 123
+    },
+    {
+      "id": 41,
+      "filename": "041_animated_armor_aura_particle_2.png",
+      "original_x": 887,
+      "original_y": 600,
+      "width": 16,
+      "height": 26,
+      "area": 212
+    },
+    {
+      "id": 42,
+      "filename": "042_animated_armor_aura_particle_3.png",
+      "original_x": 961,
+      "original_y": 608,
+      "width": 9,
+      "height": 12,
+      "area": 63
+    },
+    {
+      "id": 43,
+      "filename": "043_animated_armor_idle_frame_01.png",
+      "original_x": 1060,
+      "original_y": 627,
+      "width": 88,
+      "height": 95,
+      "area": 5500
+    },
+    {
+      "id": 44,
+      "filename": "044_animated_armor_idle_frame_02.png",
+      "original_x": 1177,
+      "original_y": 626,
+      "width": 86,
+      "height": 94,
+      "area": 5129
+    },
+    {
+      "id": 45,
+      "filename": "045_animated_armor_idle_frame_03.png",
+      "original_x": 1294,
+      "original_y": 626,
+      "width": 86,
+      "height": 94,
+      "area": 5391
+    },
+    {
+      "id": 46,
+      "filename": "046_animated_armor_idle_frame_04.png",
+      "original_x": 1413,
+      "original_y": 626,
+      "width": 80,
+      "height": 95,
+      "area": 5296
+    },
+    {
+      "id": 47,
+      "filename": "047_ghost_float_frame_05.png",
+      "original_x": 307,
+      "original_y": 734,
+      "width": 79,
+      "height": 86,
+      "area": 4214
+    },
+    {
+      "id": 48,
+      "filename": "048_ghost_float_frame_06.png",
+      "original_x": 421,
+      "original_y": 727,
+      "width": 74,
+      "height": 100,
+      "area": 4282
+    },
+    {
+      "id": 49,
+      "filename": "049_ghost_float_frame_07.png",
+      "original_x": 537,
+      "original_y": 726,
+      "width": 74,
+      "height": 105,
+      "area": 4452
+    },
+    {
+      "id": 50,
+      "filename": "050_ghost_float_frame_08.png",
+      "original_x": 654,
+      "original_y": 732,
+      "width": 73,
+      "height": 91,
+      "area": 3936
+    },
+    {
+      "id": 51,
+      "filename": "051_animated_armor_walk_frame_05.png",
+      "original_x": 1060,
+      "original_y": 730,
+      "width": 88,
+      "height": 95,
+      "area": 5533
+    },
+    {
+      "id": 52,
+      "filename": "052_animated_armor_walk_frame_06.png",
+      "original_x": 1177,
+      "original_y": 728,
+      "width": 86,
+      "height": 97,
+      "area": 5225
+    },
+    {
+      "id": 53,
+      "filename": "053_animated_armor_walk_frame_07.png",
+      "original_x": 1294,
+      "original_y": 729,
+      "width": 85,
+      "height": 95,
+      "area": 5187
+    },
+    {
+      "id": 54,
+      "filename": "054_animated_armor_walk_frame_08.png",
+      "original_x": 1413,
+      "original_y": 728,
+      "width": 76,
+      "height": 96,
+      "area": 4682
+    },
+    {
+      "id": 55,
+      "filename": "055_ghost_cast_spell_frame_09.png",
+      "original_x": 313,
+      "original_y": 833,
+      "width": 87,
+      "height": 107,
+      "area": 4637
+    },
+    {
+      "id": 56,
+      "filename": "056_ghost_cast_spell_frame_10.png",
+      "original_x": 423,
+      "original_y": 835,
+      "width": 75,
+      "height": 103,
+      "area": 4211
+    },
+    {
+      "id": 57,
+      "filename": "057_ghost_skull_summon_frame_11.png",
+      "original_x": 500,
+      "original_y": 840,
+      "width": 116,
+      "height": 123,
+      "area": 5825
+    },
+    {
+      "id": 58,
+      "filename": "058_ghost_shockwave_frame_12.png",
+      "original_x": 638,
+      "original_y": 842,
+      "width": 112,
+      "height": 90,
+      "area": 5836
+    },
+    {
+      "id": 59,
+      "filename": "059_animated_armor_slash_frame_09.png",
+      "original_x": 1056,
+      "original_y": 832,
+      "width": 85,
+      "height": 98,
+      "area": 5042
+    },
+    {
+      "id": 60,
+      "filename": "060_animated_armor_slash_frame_10.png",
+      "original_x": 1150,
+      "original_y": 833,
+      "width": 115,
+      "height": 115,
+      "area": 6862
+    },
+    {
+      "id": 61,
+      "filename": "061_animated_armor_slash_frame_11.png",
+      "original_x": 1281,
+      "original_y": 839,
+      "width": 94,
+      "height": 105,
+      "area": 6494
+    },
+    {
+      "id": 62,
+      "filename": "062_animated_armor_vortex_frame_12.png",
+      "original_x": 1382,
+      "original_y": 833,
+      "width": 132,
+      "height": 120,
+      "area": 10895
+    },
+    {
+      "id": 63,
+      "filename": "063_animated_armor_slash_particle_1.png",
+      "original_x": 1394,
+      "original_y": 851,
+      "width": 8,
+      "height": 14,
+      "area": 72
+    },
+    {
+      "id": 64,
+      "filename": "064_animated_armor_slash_particle_2.png",
+      "original_x": 1499,
+      "original_y": 855,
+      "width": 8,
+      "height": 18,
+      "area": 81
+    }
+  ]
+}

@@ -1,0 +1,5668 @@
+{
+  "source_image": "Dungeon Floor 2 Pixel Art Asset Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_tiles_floors_asset.png",
+      "original_x": 29,
+      "original_y": 9,
+      "width": 344,
+      "height": 52,
+      "area": 1525
+    },
+    {
+      "id": 2,
+      "filename": "002_tiles_floors_asset.png",
+      "original_x": 76,
+      "original_y": 23,
+      "width": 54,
+      "height": 23,
+      "area": 577
+    },
+    {
+      "id": 3,
+      "filename": "003_tiles_floors_asset.png",
+      "original_x": 131,
+      "original_y": 29,
+      "width": 65,
+      "height": 22,
+      "area": 743
+    },
+    {
+      "id": 4,
+      "filename": "004_tiles_floors_asset.png",
+      "original_x": 206,
+      "original_y": 34,
+      "width": 16,
+      "height": 4,
+      "area": 60
+    },
+    {
+      "id": 5,
+      "filename": "005_tiles_floors_asset.png",
+      "original_x": 232,
+      "original_y": 22,
+      "width": 27,
+      "height": 23,
+      "area": 298
+    },
+    {
+      "id": 6,
+      "filename": "006_tiles_floors_asset.png",
+      "original_x": 260,
+      "original_y": 29,
+      "width": 44,
+      "height": 17,
+      "area": 402
+    },
+    {
+      "id": 7,
+      "filename": "007_tiles_floors_asset.png",
+      "original_x": 315,
+      "original_y": 23,
+      "width": 15,
+      "height": 22,
+      "area": 170
+    },
+    {
+      "id": 8,
+      "filename": "008_tiles_floors_asset.png",
+      "original_x": 30,
+      "original_y": 72,
+      "width": 12,
+      "height": 27,
+      "area": 110
+    },
+    {
+      "id": 9,
+      "filename": "009_tiles_floors_asset.png",
+      "original_x": 53,
+      "original_y": 77,
+      "width": 43,
+      "height": 16,
+      "area": 334
+    },
+    {
+      "id": 10,
+      "filename": "010_tiles_floors_asset.png",
+      "original_x": 104,
+      "original_y": 78,
+      "width": 14,
+      "height": 15,
+      "area": 146
+    },
+    {
+      "id": 11,
+      "filename": "011_tiles_floors_asset.png",
+      "original_x": 126,
+      "original_y": 77,
+      "width": 56,
+      "height": 16,
+      "area": 438
+    },
+    {
+      "id": 12,
+      "filename": "012_tiles_floors_asset.png",
+      "original_x": 182,
+      "original_y": 72,
+      "width": 24,
+      "height": 28,
+      "area": 119
+    },
+    {
+      "id": 13,
+      "filename": "013_walls_structures_asset.png",
+      "original_x": 508,
+      "original_y": 66,
+      "width": 12,
+      "height": 28,
+      "area": 105
+    },
+    {
+      "id": 14,
+      "filename": "014_walls_structures_asset.png",
+      "original_x": 530,
+      "original_y": 73,
+      "width": 21,
+      "height": 15,
+      "area": 153
+    },
+    {
+      "id": 15,
+      "filename": "015_walls_structures_asset.png",
+      "original_x": 551,
+      "original_y": 72,
+      "width": 31,
+      "height": 16,
+      "area": 287
+    },
+    {
+      "id": 16,
+      "filename": "016_walls_structures_asset.png",
+      "original_x": 590,
+      "original_y": 73,
+      "width": 14,
+      "height": 15,
+      "area": 135
+    },
+    {
+      "id": 17,
+      "filename": "017_walls_structures_asset.png",
+      "original_x": 612,
+      "original_y": 73,
+      "width": 97,
+      "height": 15,
+      "area": 692
+    },
+    {
+      "id": 18,
+      "filename": "018_walls_structures_asset.png",
+      "original_x": 720,
+      "original_y": 67,
+      "width": 12,
+      "height": 27,
+      "area": 102
+    },
+    {
+      "id": 19,
+      "filename": "019_walls_structures_asset.png",
+      "original_x": 768,
+      "original_y": 83,
+      "width": 15,
+      "height": 15,
+      "area": 97
+    },
+    {
+      "id": 20,
+      "filename": "020_walls_structures_asset.png",
+      "original_x": 796,
+      "original_y": 80,
+      "width": 7,
+      "height": 22,
+      "area": 77
+    },
+    {
+      "id": 21,
+      "filename": "021_walls_structures_asset.png",
+      "original_x": 839,
+      "original_y": 99,
+      "width": 15,
+      "height": 10,
+      "area": 49
+    },
+    {
+      "id": 22,
+      "filename": "022_walls_structures_asset.png",
+      "original_x": 858,
+      "original_y": 89,
+      "width": 34,
+      "height": 57,
+      "area": 723
+    },
+    {
+      "id": 23,
+      "filename": "023_walls_structures_asset.png",
+      "original_x": 859,
+      "original_y": 74,
+      "width": 17,
+      "height": 12,
+      "area": 93
+    },
+    {
+      "id": 24,
+      "filename": "024_walls_structures_asset.png",
+      "original_x": 879,
+      "original_y": 78,
+      "width": 74,
+      "height": 35,
+      "area": 760
+    },
+    {
+      "id": 25,
+      "filename": "025_walls_structures_asset.png",
+      "original_x": 936,
+      "original_y": 86,
+      "width": 44,
+      "height": 70,
+      "area": 718
+    },
+    {
+      "id": 26,
+      "filename": "026_walls_structures_asset.png",
+      "original_x": 937,
+      "original_y": 77,
+      "width": 11,
+      "height": 8,
+      "area": 54
+    },
+    {
+      "id": 27,
+      "filename": "027_walls_structures_asset.png",
+      "original_x": 952,
+      "original_y": 75,
+      "width": 10,
+      "height": 10,
+      "area": 64
+    },
+    {
+      "id": 28,
+      "filename": "028_section_header_doors_gates.png",
+      "original_x": 1059,
+      "original_y": 64,
+      "width": 138,
+      "height": 29,
+      "area": 305
+    },
+    {
+      "id": 29,
+      "filename": "029_doors_gates_asset.png",
+      "original_x": 1082,
+      "original_y": 73,
+      "width": 53,
+      "height": 15,
+      "area": 381
+    },
+    {
+      "id": 30,
+      "filename": "030_doors_gates_asset.png",
+      "original_x": 1142,
+      "original_y": 73,
+      "width": 14,
+      "height": 15,
+      "area": 150
+    },
+    {
+      "id": 31,
+      "filename": "031_doors_gates_asset.png",
+      "original_x": 1164,
+      "original_y": 73,
+      "width": 23,
+      "height": 15,
+      "area": 188
+    },
+    {
+      "id": 32,
+      "filename": "032_doors_gates_asset.png",
+      "original_x": 1188,
+      "original_y": 74,
+      "width": 26,
+      "height": 14,
+      "area": 196
+    },
+    {
+      "id": 33,
+      "filename": "033_doors_gates_asset.png",
+      "original_x": 1212,
+      "original_y": 64,
+      "width": 25,
+      "height": 23,
+      "area": 111
+    },
+    {
+      "id": 34,
+      "filename": "034_tiles_floors_asset.png",
+      "original_x": 33,
+      "original_y": 114,
+      "width": 32,
+      "height": 16,
+      "area": 113
+    },
+    {
+      "id": 35,
+      "filename": "035_tiles_floors_asset.png",
+      "original_x": 68,
+      "original_y": 114,
+      "width": 32,
+      "height": 12,
+      "area": 135
+    },
+    {
+      "id": 36,
+      "filename": "036_tiles_floors_asset.png",
+      "original_x": 109,
+      "original_y": 121,
+      "width": 7,
+      "height": 23,
+      "area": 46
+    },
+    {
+      "id": 37,
+      "filename": "037_tiles_floors_asset.png",
+      "original_x": 120,
+      "original_y": 123,
+      "width": 13,
+      "height": 14,
+      "area": 93
+    },
+    {
+      "id": 38,
+      "filename": "038_tiles_floors_asset.png",
+      "original_x": 124,
+      "original_y": 138,
+      "width": 38,
+      "height": 26,
+      "area": 231
+    },
+    {
+      "id": 39,
+      "filename": "039_tiles_floors_asset.png",
+      "original_x": 148,
+      "original_y": 116,
+      "width": 11,
+      "height": 8,
+      "area": 38
+    },
+    {
+      "id": 40,
+      "filename": "040_tiles_floors_asset.png",
+      "original_x": 158,
+      "original_y": 116,
+      "width": 13,
+      "height": 17,
+      "area": 90
+    },
+    {
+      "id": 41,
+      "filename": "041_tiles_floors_asset.png",
+      "original_x": 186,
+      "original_y": 115,
+      "width": 12,
+      "height": 10,
+      "area": 40
+    },
+    {
+      "id": 42,
+      "filename": "042_tiles_floors_asset.png",
+      "original_x": 280,
+      "original_y": 113,
+      "width": 50,
+      "height": 9,
+      "area": 140
+    },
+    {
+      "id": 43,
+      "filename": "043_tiles_floors_asset.png",
+      "original_x": 339,
+      "original_y": 110,
+      "width": 70,
+      "height": 18,
+      "area": 287
+    },
+    {
+      "id": 44,
+      "filename": "044_tiles_floors_asset.png",
+      "original_x": 339,
+      "original_y": 131,
+      "width": 6,
+      "height": 30,
+      "area": 58
+    },
+    {
+      "id": 45,
+      "filename": "045_tiles_floors_asset.png",
+      "original_x": 371,
+      "original_y": 138,
+      "width": 9,
+      "height": 9,
+      "area": 42
+    },
+    {
+      "id": 46,
+      "filename": "046_tiles_floors_asset.png",
+      "original_x": 418,
+      "original_y": 110,
+      "width": 70,
+      "height": 68,
+      "area": 1961
+    },
+    {
+      "id": 47,
+      "filename": "047_walls_structures_asset.png",
+      "original_x": 508,
+      "original_y": 113,
+      "width": 53,
+      "height": 70,
+      "area": 1185
+    },
+    {
+      "id": 48,
+      "filename": "048_walls_structures_asset.png",
+      "original_x": 566,
+      "original_y": 114,
+      "width": 75,
+      "height": 48,
+      "area": 813
+    },
+    {
+      "id": 49,
+      "filename": "049_walls_structures_asset.png",
+      "original_x": 612,
+      "original_y": 132,
+      "width": 5,
+      "height": 19,
+      "area": 60
+    },
+    {
+      "id": 50,
+      "filename": "050_walls_structures_asset.png",
+      "original_x": 647,
+      "original_y": 114,
+      "width": 96,
+      "height": 52,
+      "area": 1834
+    },
+    {
+      "id": 51,
+      "filename": "051_walls_structures_asset.png",
+      "original_x": 753,
+      "original_y": 104,
+      "width": 74,
+      "height": 61,
+      "area": 1395
+    },
+    {
+      "id": 52,
+      "filename": "052_walls_structures_asset.png",
+      "original_x": 838,
+      "original_y": 116,
+      "width": 16,
+      "height": 21,
+      "area": 164
+    },
+    {
+      "id": 53,
+      "filename": "053_walls_structures_asset.png",
+      "original_x": 839,
+      "original_y": 132,
+      "width": 5,
+      "height": 16,
+      "area": 37
+    },
+    {
+      "id": 54,
+      "filename": "054_walls_structures_asset.png",
+      "original_x": 913,
+      "original_y": 133,
+      "width": 12,
+      "height": 19,
+      "area": 112
+    },
+    {
+      "id": 55,
+      "filename": "055_walls_structures_asset.png",
+      "original_x": 978,
+      "original_y": 117,
+      "width": 15,
+      "height": 17,
+      "area": 74
+    },
+    {
+      "id": 56,
+      "filename": "056_walls_structures_asset.png",
+      "original_x": 1009,
+      "original_y": 134,
+      "width": 31,
+      "height": 46,
+      "area": 504
+    },
+    {
+      "id": 57,
+      "filename": "057_doors_gates_asset.png",
+      "original_x": 1074,
+      "original_y": 112,
+      "width": 32,
+      "height": 20,
+      "area": 216
+    },
+    {
+      "id": 58,
+      "filename": "058_doors_gates_asset.png",
+      "original_x": 1088,
+      "original_y": 112,
+      "width": 72,
+      "height": 70,
+      "area": 1394
+    },
+    {
+      "id": 59,
+      "filename": "059_doors_gates_asset.png",
+      "original_x": 1170,
+      "original_y": 113,
+      "width": 81,
+      "height": 106,
+      "area": 1296
+    },
+    {
+      "id": 60,
+      "filename": "060_doors_gates_asset.png",
+      "original_x": 1186,
+      "original_y": 136,
+      "width": 59,
+      "height": 48,
+      "area": 693
+    },
+    {
+      "id": 61,
+      "filename": "061_doors_gates_asset.png",
+      "original_x": 1263,
+      "original_y": 110,
+      "width": 83,
+      "height": 29,
+      "area": 1092
+    },
+    {
+      "id": 62,
+      "filename": "062_doors_gates_asset.png",
+      "original_x": 1358,
+      "original_y": 112,
+      "width": 16,
+      "height": 21,
+      "area": 169
+    },
+    {
+      "id": 63,
+      "filename": "063_doors_gates_asset.png",
+      "original_x": 1377,
+      "original_y": 115,
+      "width": 41,
+      "height": 27,
+      "area": 243
+    },
+    {
+      "id": 64,
+      "filename": "064_doors_gates_asset.png",
+      "original_x": 1392,
+      "original_y": 139,
+      "width": 7,
+      "height": 12,
+      "area": 52
+    },
+    {
+      "id": 65,
+      "filename": "065_section_header_doors_gates.png",
+      "original_x": 1403,
+      "original_y": 110,
+      "width": 115,
+      "height": 29,
+      "area": 1285
+    },
+    {
+      "id": 66,
+      "filename": "066_tiles_floors_asset.png",
+      "original_x": 33,
+      "original_y": 149,
+      "width": 9,
+      "height": 28,
+      "area": 78
+    },
+    {
+      "id": 67,
+      "filename": "067_tiles_floors_asset.png",
+      "original_x": 52,
+      "original_y": 171,
+      "width": 9,
+      "height": 7,
+      "area": 39
+    },
+    {
+      "id": 68,
+      "filename": "068_tiles_floors_asset.png",
+      "original_x": 109,
+      "original_y": 148,
+      "width": 12,
+      "height": 28,
+      "area": 104
+    },
+    {
+      "id": 69,
+      "filename": "069_tiles_floors_asset.png",
+      "original_x": 186,
+      "original_y": 161,
+      "width": 6,
+      "height": 15,
+      "area": 39
+    },
+    {
+      "id": 70,
+      "filename": "070_tiles_floors_asset.png",
+      "original_x": 288,
+      "original_y": 144,
+      "width": 13,
+      "height": 8,
+      "area": 62
+    },
+    {
+      "id": 71,
+      "filename": "071_tiles_floors_asset.png",
+      "original_x": 349,
+      "original_y": 147,
+      "width": 14,
+      "height": 12,
+      "area": 47
+    },
+    {
+      "id": 72,
+      "filename": "072_tiles_floors_asset.png",
+      "original_x": 385,
+      "original_y": 148,
+      "width": 13,
+      "height": 17,
+      "area": 51
+    },
+    {
+      "id": 73,
+      "filename": "073_tiles_floors_asset.png",
+      "original_x": 464,
+      "original_y": 159,
+      "width": 14,
+      "height": 12,
+      "area": 75
+    },
+    {
+      "id": 74,
+      "filename": "074_walls_structures_asset.png",
+      "original_x": 612,
+      "original_y": 153,
+      "width": 9,
+      "height": 22,
+      "area": 88
+    },
+    {
+      "id": 75,
+      "filename": "075_walls_structures_asset.png",
+      "original_x": 678,
+      "original_y": 169,
+      "width": 9,
+      "height": 14,
+      "area": 36
+    },
+    {
+      "id": 76,
+      "filename": "076_walls_structures_asset.png",
+      "original_x": 731,
+      "original_y": 155,
+      "width": 9,
+      "height": 8,
+      "area": 52
+    },
+    {
+      "id": 77,
+      "filename": "077_walls_structures_asset.png",
+      "original_x": 759,
+      "original_y": 174,
+      "width": 14,
+      "height": 8,
+      "area": 45
+    },
+    {
+      "id": 78,
+      "filename": "078_walls_structures_asset.png",
+      "original_x": 806,
+      "original_y": 148,
+      "width": 18,
+      "height": 15,
+      "area": 90
+    },
+    {
+      "id": 79,
+      "filename": "079_walls_structures_asset.png",
+      "original_x": 806,
+      "original_y": 171,
+      "width": 19,
+      "height": 11,
+      "area": 68
+    },
+    {
+      "id": 80,
+      "filename": "080_walls_structures_asset.png",
+      "original_x": 848,
+      "original_y": 158,
+      "width": 32,
+      "height": 25,
+      "area": 274
+    },
+    {
+      "id": 81,
+      "filename": "081_walls_structures_asset.png",
+      "original_x": 854,
+      "original_y": 143,
+      "width": 7,
+      "height": 13,
+      "area": 45
+    },
+    {
+      "id": 82,
+      "filename": "082_walls_structures_asset.png",
+      "original_x": 864,
+      "original_y": 150,
+      "width": 12,
+      "height": 12,
+      "area": 74
+    },
+    {
+      "id": 83,
+      "filename": "083_walls_structures_asset.png",
+      "original_x": 907,
+      "original_y": 165,
+      "width": 20,
+      "height": 18,
+      "area": 195
+    },
+    {
+      "id": 84,
+      "filename": "084_walls_structures_asset.png",
+      "original_x": 935,
+      "original_y": 153,
+      "width": 13,
+      "height": 15,
+      "area": 82
+    },
+    {
+      "id": 85,
+      "filename": "085_walls_structures_asset.png",
+      "original_x": 948,
+      "original_y": 161,
+      "width": 16,
+      "height": 10,
+      "area": 46
+    },
+    {
+      "id": 86,
+      "filename": "086_walls_structures_asset.png",
+      "original_x": 969,
+      "original_y": 164,
+      "width": 21,
+      "height": 23,
+      "area": 214
+    },
+    {
+      "id": 87,
+      "filename": "087_doors_gates_asset.png",
+      "original_x": 1078,
+      "original_y": 161,
+      "width": 8,
+      "height": 42,
+      "area": 121
+    },
+    {
+      "id": 88,
+      "filename": "088_doors_gates_asset.png",
+      "original_x": 1238,
+      "original_y": 158,
+      "width": 6,
+      "height": 58,
+      "area": 87
+    },
+    {
+      "id": 89,
+      "filename": "089_doors_gates_asset.png",
+      "original_x": 1266,
+      "original_y": 153,
+      "width": 9,
+      "height": 57,
+      "area": 123
+    },
+    {
+      "id": 90,
+      "filename": "090_doors_gates_asset.png",
+      "original_x": 1285,
+      "original_y": 150,
+      "width": 12,
+      "height": 46,
+      "area": 235
+    },
+    {
+      "id": 91,
+      "filename": "091_doors_gates_asset.png",
+      "original_x": 1314,
+      "original_y": 162,
+      "width": 11,
+      "height": 37,
+      "area": 126
+    },
+    {
+      "id": 92,
+      "filename": "092_doors_gates_asset.png",
+      "original_x": 1334,
+      "original_y": 144,
+      "width": 5,
+      "height": 65,
+      "area": 81
+    },
+    {
+      "id": 93,
+      "filename": "093_doors_gates_asset.png",
+      "original_x": 1361,
+      "original_y": 153,
+      "width": 4,
+      "height": 49,
+      "area": 99
+    },
+    {
+      "id": 94,
+      "filename": "094_doors_gates_asset.png",
+      "original_x": 1404,
+      "original_y": 150,
+      "width": 4,
+      "height": 45,
+      "area": 81
+    },
+    {
+      "id": 95,
+      "filename": "095_doors_gates_asset.png",
+      "original_x": 1432,
+      "original_y": 142,
+      "width": 10,
+      "height": 11,
+      "area": 40
+    },
+    {
+      "id": 96,
+      "filename": "096_doors_gates_asset.png",
+      "original_x": 1445,
+      "original_y": 143,
+      "width": 71,
+      "height": 90,
+      "area": 931
+    },
+    {
+      "id": 97,
+      "filename": "097_doors_gates_asset.png",
+      "original_x": 1502,
+      "original_y": 152,
+      "width": 13,
+      "height": 64,
+      "area": 183
+    },
+    {
+      "id": 98,
+      "filename": "098_tiles_floors_asset.png",
+      "original_x": 33,
+      "original_y": 200,
+      "width": 8,
+      "height": 18,
+      "area": 43
+    },
+    {
+      "id": 99,
+      "filename": "099_tiles_floors_asset.png",
+      "original_x": 68,
+      "original_y": 188,
+      "width": 15,
+      "height": 9,
+      "area": 37
+    },
+    {
+      "id": 100,
+      "filename": "100_tiles_floors_asset.png",
+      "original_x": 113,
+      "original_y": 189,
+      "width": 29,
+      "height": 31,
+      "area": 383
+    },
+    {
+      "id": 101,
+      "filename": "101_tiles_floors_asset.png",
+      "original_x": 133,
+      "original_y": 213,
+      "width": 16,
+      "height": 12,
+      "area": 97
+    },
+    {
+      "id": 102,
+      "filename": "102_tiles_floors_asset.png",
+      "original_x": 146,
+      "original_y": 192,
+      "width": 27,
+      "height": 28,
+      "area": 353
+    },
+    {
+      "id": 103,
+      "filename": "103_tiles_floors_asset.png",
+      "original_x": 186,
+      "original_y": 189,
+      "width": 15,
+      "height": 11,
+      "area": 89
+    },
+    {
+      "id": 104,
+      "filename": "104_tiles_floors_asset.png",
+      "original_x": 186,
+      "original_y": 189,
+      "width": 66,
+      "height": 63,
+      "area": 1725
+    },
+    {
+      "id": 105,
+      "filename": "105_tiles_floors_asset.png",
+      "original_x": 218,
+      "original_y": 189,
+      "width": 15,
+      "height": 7,
+      "area": 38
+    },
+    {
+      "id": 106,
+      "filename": "106_tiles_floors_asset.png",
+      "original_x": 262,
+      "original_y": 188,
+      "width": 6,
+      "height": 29,
+      "area": 51
+    },
+    {
+      "id": 107,
+      "filename": "107_tiles_floors_asset.png",
+      "original_x": 313,
+      "original_y": 188,
+      "width": 17,
+      "height": 14,
+      "area": 48
+    },
+    {
+      "id": 108,
+      "filename": "108_tiles_floors_asset.png",
+      "original_x": 326,
+      "original_y": 205,
+      "width": 4,
+      "height": 28,
+      "area": 44
+    },
+    {
+      "id": 109,
+      "filename": "109_tiles_floors_asset.png",
+      "original_x": 339,
+      "original_y": 188,
+      "width": 32,
+      "height": 14,
+      "area": 125
+    },
+    {
+      "id": 110,
+      "filename": "110_tiles_floors_asset.png",
+      "original_x": 339,
+      "original_y": 202,
+      "width": 8,
+      "height": 51,
+      "area": 117
+    },
+    {
+      "id": 111,
+      "filename": "111_tiles_floors_asset.png",
+      "original_x": 351,
+      "original_y": 198,
+      "width": 38,
+      "height": 35,
+      "area": 378
+    },
+    {
+      "id": 112,
+      "filename": "112_tiles_floors_asset.png",
+      "original_x": 386,
+      "original_y": 188,
+      "width": 24,
+      "height": 33,
+      "area": 247
+    },
+    {
+      "id": 113,
+      "filename": "113_tiles_floors_asset.png",
+      "original_x": 390,
+      "original_y": 217,
+      "width": 20,
+      "height": 18,
+      "area": 74
+    },
+    {
+      "id": 114,
+      "filename": "114_tiles_floors_asset.png",
+      "original_x": 427,
+      "original_y": 195,
+      "width": 12,
+      "height": 14,
+      "area": 85
+    },
+    {
+      "id": 115,
+      "filename": "115_tiles_floors_asset.png",
+      "original_x": 427,
+      "original_y": 215,
+      "width": 30,
+      "height": 32,
+      "area": 640
+    },
+    {
+      "id": 116,
+      "filename": "116_tiles_floors_asset.png",
+      "original_x": 451,
+      "original_y": 195,
+      "width": 29,
+      "height": 31,
+      "area": 537
+    },
+    {
+      "id": 117,
+      "filename": "117_walls_structures_asset.png",
+      "original_x": 513,
+      "original_y": 210,
+      "width": 11,
+      "height": 11,
+      "area": 49
+    },
+    {
+      "id": 118,
+      "filename": "118_walls_structures_asset.png",
+      "original_x": 521,
+      "original_y": 214,
+      "width": 12,
+      "height": 10,
+      "area": 51
+    },
+    {
+      "id": 119,
+      "filename": "119_walls_structures_asset.png",
+      "original_x": 528,
+      "original_y": 198,
+      "width": 29,
+      "height": 15,
+      "area": 264
+    },
+    {
+      "id": 120,
+      "filename": "120_walls_structures_asset.png",
+      "original_x": 534,
+      "original_y": 214,
+      "width": 49,
+      "height": 64,
+      "area": 754
+    },
+    {
+      "id": 121,
+      "filename": "121_walls_structures_asset.png",
+      "original_x": 569,
+      "original_y": 200,
+      "width": 18,
+      "height": 12,
+      "area": 132
+    },
+    {
+      "id": 122,
+      "filename": "122_walls_structures_asset.png",
+      "original_x": 585,
+      "original_y": 209,
+      "width": 23,
+      "height": 40,
+      "area": 426
+    },
+    {
+      "id": 123,
+      "filename": "123_walls_structures_asset.png",
+      "original_x": 617,
+      "original_y": 198,
+      "width": 110,
+      "height": 147,
+      "area": 2677
+    },
+    {
+      "id": 124,
+      "filename": "124_walls_structures_asset.png",
+      "original_x": 736,
+      "original_y": 202,
+      "width": 32,
+      "height": 22,
+      "area": 140
+    },
+    {
+      "id": 125,
+      "filename": "125_walls_structures_asset.png",
+      "original_x": 769,
+      "original_y": 215,
+      "width": 13,
+      "height": 24,
+      "area": 104
+    },
+    {
+      "id": 126,
+      "filename": "126_walls_structures_asset.png",
+      "original_x": 772,
+      "original_y": 202,
+      "width": 73,
+      "height": 20,
+      "area": 270
+    },
+    {
+      "id": 127,
+      "filename": "127_walls_structures_asset.png",
+      "original_x": 858,
+      "original_y": 195,
+      "width": 42,
+      "height": 41,
+      "area": 619
+    },
+    {
+      "id": 128,
+      "filename": "128_walls_structures_asset.png",
+      "original_x": 898,
+      "original_y": 194,
+      "width": 83,
+      "height": 58,
+      "area": 1471
+    },
+    {
+      "id": 129,
+      "filename": "129_walls_structures_asset.png",
+      "original_x": 980,
+      "original_y": 203,
+      "width": 23,
+      "height": 32,
+      "area": 338
+    },
+    {
+      "id": 130,
+      "filename": "130_doors_gates_asset.png",
+      "original_x": 1088,
+      "original_y": 190,
+      "width": 12,
+      "height": 26,
+      "area": 75
+    },
+    {
+      "id": 131,
+      "filename": "131_doors_gates_asset.png",
+      "original_x": 1098,
+      "original_y": 186,
+      "width": 48,
+      "height": 30,
+      "area": 449
+    },
+    {
+      "id": 132,
+      "filename": "132_doors_gates_asset.png",
+      "original_x": 1140,
+      "original_y": 190,
+      "width": 6,
+      "height": 14,
+      "area": 42
+    },
+    {
+      "id": 133,
+      "filename": "133_doors_gates_asset.png",
+      "original_x": 1179,
+      "original_y": 188,
+      "width": 4,
+      "height": 19,
+      "area": 47
+    },
+    {
+      "id": 134,
+      "filename": "134_doors_gates_asset.png",
+      "original_x": 1187,
+      "original_y": 186,
+      "width": 63,
+      "height": 45,
+      "area": 532
+    },
+    {
+      "id": 135,
+      "filename": "135_doors_gates_asset.png",
+      "original_x": 1226,
+      "original_y": 186,
+      "width": 10,
+      "height": 23,
+      "area": 59
+    },
+    {
+      "id": 136,
+      "filename": "136_doors_gates_asset.png",
+      "original_x": 1280,
+      "original_y": 214,
+      "width": 49,
+      "height": 15,
+      "area": 169
+    },
+    {
+      "id": 137,
+      "filename": "137_doors_gates_asset.png",
+      "original_x": 1360,
+      "original_y": 219,
+      "width": 15,
+      "height": 10,
+      "area": 51
+    },
+    {
+      "id": 138,
+      "filename": "138_doors_gates_asset.png",
+      "original_x": 1376,
+      "original_y": 196,
+      "width": 29,
+      "height": 24,
+      "area": 286
+    },
+    {
+      "id": 139,
+      "filename": "139_doors_gates_asset.png",
+      "original_x": 1430,
+      "original_y": 218,
+      "width": 13,
+      "height": 12,
+      "area": 37
+    },
+    {
+      "id": 140,
+      "filename": "140_tiles_floors_asset.png",
+      "original_x": 109,
+      "original_y": 223,
+      "width": 24,
+      "height": 27,
+      "area": 313
+    },
+    {
+      "id": 141,
+      "filename": "141_tiles_floors_asset.png",
+      "original_x": 144,
+      "original_y": 238,
+      "width": 13,
+      "height": 12,
+      "area": 58
+    },
+    {
+      "id": 142,
+      "filename": "142_tiles_floors_asset.png",
+      "original_x": 152,
+      "original_y": 226,
+      "width": 22,
+      "height": 19,
+      "area": 132
+    },
+    {
+      "id": 143,
+      "filename": "143_tiles_floors_asset.png",
+      "original_x": 163,
+      "original_y": 242,
+      "width": 11,
+      "height": 8,
+      "area": 36
+    },
+    {
+      "id": 144,
+      "filename": "144_tiles_floors_asset.png",
+      "original_x": 186,
+      "original_y": 241,
+      "width": 9,
+      "height": 12,
+      "area": 55
+    },
+    {
+      "id": 145,
+      "filename": "145_tiles_floors_asset.png",
+      "original_x": 225,
+      "original_y": 220,
+      "width": 12,
+      "height": 12,
+      "area": 46
+    },
+    {
+      "id": 146,
+      "filename": "146_tiles_floors_asset.png",
+      "original_x": 343,
+      "original_y": 249,
+      "width": 26,
+      "height": 6,
+      "area": 47
+    },
+    {
+      "id": 147,
+      "filename": "147_tiles_floors_asset.png",
+      "original_x": 350,
+      "original_y": 220,
+      "width": 13,
+      "height": 14,
+      "area": 62
+    },
+    {
+      "id": 148,
+      "filename": "148_tiles_floors_asset.png",
+      "original_x": 361,
+      "original_y": 236,
+      "width": 13,
+      "height": 9,
+      "area": 45
+    },
+    {
+      "id": 149,
+      "filename": "149_tiles_floors_asset.png",
+      "original_x": 375,
+      "original_y": 236,
+      "width": 14,
+      "height": 19,
+      "area": 62
+    },
+    {
+      "id": 150,
+      "filename": "150_tiles_floors_asset.png",
+      "original_x": 389,
+      "original_y": 248,
+      "width": 20,
+      "height": 7,
+      "area": 53
+    },
+    {
+      "id": 151,
+      "filename": "151_tiles_floors_asset.png",
+      "original_x": 391,
+      "original_y": 234,
+      "width": 8,
+      "height": 11,
+      "area": 46
+    },
+    {
+      "id": 152,
+      "filename": "152_tiles_floors_asset.png",
+      "original_x": 464,
+      "original_y": 233,
+      "width": 13,
+      "height": 9,
+      "area": 51
+    },
+    {
+      "id": 153,
+      "filename": "153_walls_structures_asset.png",
+      "original_x": 509,
+      "original_y": 230,
+      "width": 22,
+      "height": 45,
+      "area": 440
+    },
+    {
+      "id": 154,
+      "filename": "154_walls_structures_asset.png",
+      "original_x": 599,
+      "original_y": 257,
+      "width": 9,
+      "height": 12,
+      "area": 61
+    },
+    {
+      "id": 155,
+      "filename": "155_walls_structures_asset.png",
+      "original_x": 662,
+      "original_y": 233,
+      "width": 17,
+      "height": 68,
+      "area": 312
+    },
+    {
+      "id": 156,
+      "filename": "156_walls_structures_asset.png",
+      "original_x": 678,
+      "original_y": 234,
+      "width": 11,
+      "height": 13,
+      "area": 39
+    },
+    {
+      "id": 157,
+      "filename": "157_walls_structures_asset.png",
+      "original_x": 687,
+      "original_y": 249,
+      "width": 4,
+      "height": 27,
+      "area": 65
+    },
+    {
+      "id": 158,
+      "filename": "158_walls_structures_asset.png",
+      "original_x": 690,
+      "original_y": 226,
+      "width": 33,
+      "height": 117,
+      "area": 1066
+    },
+    {
+      "id": 159,
+      "filename": "159_walls_structures_asset.png",
+      "original_x": 741,
+      "original_y": 225,
+      "width": 11,
+      "height": 19,
+      "area": 111
+    },
+    {
+      "id": 160,
+      "filename": "160_walls_structures_asset.png",
+      "original_x": 748,
+      "original_y": 248,
+      "width": 6,
+      "height": 22,
+      "area": 58
+    },
+    {
+      "id": 161,
+      "filename": "161_walls_structures_asset.png",
+      "original_x": 757,
+      "original_y": 229,
+      "width": 9,
+      "height": 30,
+      "area": 147
+    },
+    {
+      "id": 162,
+      "filename": "162_walls_structures_asset.png",
+      "original_x": 816,
+      "original_y": 228,
+      "width": 5,
+      "height": 18,
+      "area": 40
+    },
+    {
+      "id": 163,
+      "filename": "163_walls_structures_asset.png",
+      "original_x": 817,
+      "original_y": 249,
+      "width": 8,
+      "height": 24,
+      "area": 84
+    },
+    {
+      "id": 164,
+      "filename": "164_walls_structures_asset.png",
+      "original_x": 826,
+      "original_y": 247,
+      "width": 9,
+      "height": 24,
+      "area": 113
+    },
+    {
+      "id": 165,
+      "filename": "165_walls_structures_asset.png",
+      "original_x": 834,
+      "original_y": 225,
+      "width": 5,
+      "height": 16,
+      "area": 46
+    },
+    {
+      "id": 166,
+      "filename": "166_walls_structures_asset.png",
+      "original_x": 859,
+      "original_y": 239,
+      "width": 35,
+      "height": 58,
+      "area": 1075
+    },
+    {
+      "id": 167,
+      "filename": "167_walls_structures_asset.png",
+      "original_x": 860,
+      "original_y": 227,
+      "width": 9,
+      "height": 11,
+      "area": 47
+    },
+    {
+      "id": 168,
+      "filename": "168_walls_structures_asset.png",
+      "original_x": 964,
+      "original_y": 237,
+      "width": 17,
+      "height": 10,
+      "area": 43
+    },
+    {
+      "id": 169,
+      "filename": "169_walls_structures_asset.png",
+      "original_x": 982,
+      "original_y": 237,
+      "width": 37,
+      "height": 56,
+      "area": 998
+    },
+    {
+      "id": 170,
+      "filename": "170_walls_structures_asset.png",
+      "original_x": 1004,
+      "original_y": 220,
+      "width": 14,
+      "height": 16,
+      "area": 76
+    },
+    {
+      "id": 171,
+      "filename": "171_walls_structures_asset.png",
+      "original_x": 1024,
+      "original_y": 238,
+      "width": 9,
+      "height": 19,
+      "area": 62
+    },
+    {
+      "id": 172,
+      "filename": "172_section_header_doors_gates.png",
+      "original_x": 1068,
+      "original_y": 248,
+      "width": 135,
+      "height": 23,
+      "area": 992
+    },
+    {
+      "id": 173,
+      "filename": "173_doors_gates_asset.png",
+      "original_x": 1077,
+      "original_y": 220,
+      "width": 11,
+      "height": 9,
+      "area": 43
+    },
+    {
+      "id": 174,
+      "filename": "174_section_header_doors_gates.png",
+      "original_x": 1216,
+      "original_y": 251,
+      "width": 101,
+      "height": 9,
+      "area": 203
+    },
+    {
+      "id": 175,
+      "filename": "175_doors_gates_asset.png",
+      "original_x": 1339,
+      "original_y": 250,
+      "width": 65,
+      "height": 47,
+      "area": 682
+    },
+    {
+      "id": 176,
+      "filename": "176_doors_gates_asset.png",
+      "original_x": 1381,
+      "original_y": 221,
+      "width": 18,
+      "height": 4,
+      "area": 46
+    },
+    {
+      "id": 177,
+      "filename": "177_doors_gates_asset.png",
+      "original_x": 1387,
+      "original_y": 250,
+      "width": 54,
+      "height": 48,
+      "area": 505
+    },
+    {
+      "id": 178,
+      "filename": "178_doors_gates_asset.png",
+      "original_x": 1402,
+      "original_y": 222,
+      "width": 12,
+      "height": 8,
+      "area": 39
+    },
+    {
+      "id": 179,
+      "filename": "179_tiles_floors_asset.png",
+      "original_x": 33,
+      "original_y": 262,
+      "width": 67,
+      "height": 48,
+      "area": 1227
+    },
+    {
+      "id": 180,
+      "filename": "180_tiles_floors_asset.png",
+      "original_x": 109,
+      "original_y": 262,
+      "width": 65,
+      "height": 63,
+      "area": 1416
+    },
+    {
+      "id": 181,
+      "filename": "181_tiles_floors_asset.png",
+      "original_x": 168,
+      "original_y": 290,
+      "width": 6,
+      "height": 32,
+      "area": 73
+    },
+    {
+      "id": 182,
+      "filename": "182_tiles_floors_asset.png",
+      "original_x": 187,
+      "original_y": 264,
+      "width": 64,
+      "height": 12,
+      "area": 208
+    },
+    {
+      "id": 183,
+      "filename": "183_tiles_floors_asset.png",
+      "original_x": 187,
+      "original_y": 278,
+      "width": 51,
+      "height": 47,
+      "area": 627
+    },
+    {
+      "id": 184,
+      "filename": "184_tiles_floors_asset.png",
+      "original_x": 209,
+      "original_y": 264,
+      "width": 22,
+      "height": 5,
+      "area": 64
+    },
+    {
+      "id": 185,
+      "filename": "185_tiles_floors_asset.png",
+      "original_x": 241,
+      "original_y": 299,
+      "width": 10,
+      "height": 15,
+      "area": 43
+    },
+    {
+      "id": 186,
+      "filename": "186_section_header_tiles_floors.png",
+      "original_x": 263,
+      "original_y": 265,
+      "width": 108,
+      "height": 11,
+      "area": 377
+    },
+    {
+      "id": 187,
+      "filename": "187_section_header_tiles_floors.png",
+      "original_x": 263,
+      "original_y": 280,
+      "width": 107,
+      "height": 35,
+      "area": 377
+    },
+    {
+      "id": 188,
+      "filename": "188_tiles_floors_asset.png",
+      "original_x": 297,
+      "original_y": 280,
+      "width": 9,
+      "height": 27,
+      "area": 76
+    },
+    {
+      "id": 189,
+      "filename": "189_tiles_floors_asset.png",
+      "original_x": 326,
+      "original_y": 279,
+      "width": 5,
+      "height": 28,
+      "area": 65
+    },
+    {
+      "id": 190,
+      "filename": "190_tiles_floors_asset.png",
+      "original_x": 348,
+      "original_y": 280,
+      "width": 5,
+      "height": 27,
+      "area": 61
+    },
+    {
+      "id": 191,
+      "filename": "191_tiles_floors_asset.png",
+      "original_x": 354,
+      "original_y": 280,
+      "width": 5,
+      "height": 25,
+      "area": 38
+    },
+    {
+      "id": 192,
+      "filename": "192_tiles_floors_asset.png",
+      "original_x": 395,
+      "original_y": 266,
+      "width": 68,
+      "height": 58,
+      "area": 2642
+    },
+    {
+      "id": 193,
+      "filename": "193_tiles_floors_asset.png",
+      "original_x": 476,
+      "original_y": 264,
+      "width": 11,
+      "height": 10,
+      "area": 61
+    },
+    {
+      "id": 194,
+      "filename": "194_walls_structures_asset.png",
+      "original_x": 510,
+      "original_y": 285,
+      "width": 9,
+      "height": 14,
+      "area": 83
+    },
+    {
+      "id": 195,
+      "filename": "195_walls_structures_asset.png",
+      "original_x": 521,
+      "original_y": 282,
+      "width": 11,
+      "height": 32,
+      "area": 146
+    },
+    {
+      "id": 196,
+      "filename": "196_walls_structures_asset.png",
+      "original_x": 586,
+      "original_y": 262,
+      "width": 11,
+      "height": 14,
+      "area": 66
+    },
+    {
+      "id": 197,
+      "filename": "197_walls_structures_asset.png",
+      "original_x": 586,
+      "original_y": 294,
+      "width": 11,
+      "height": 7,
+      "area": 44
+    },
+    {
+      "id": 198,
+      "filename": "198_walls_structures_asset.png",
+      "original_x": 639,
+      "original_y": 293,
+      "width": 22,
+      "height": 10,
+      "area": 43
+    },
+    {
+      "id": 199,
+      "filename": "199_walls_structures_asset.png",
+      "original_x": 748,
+      "original_y": 280,
+      "width": 18,
+      "height": 17,
+      "area": 95
+    },
+    {
+      "id": 200,
+      "filename": "200_walls_structures_asset.png",
+      "original_x": 854,
+      "original_y": 297,
+      "width": 15,
+      "height": 27,
+      "area": 139
+    },
+    {
+      "id": 201,
+      "filename": "201_walls_structures_asset.png",
+      "original_x": 880,
+      "original_y": 289,
+      "width": 33,
+      "height": 18,
+      "area": 224
+    },
+    {
+      "id": 202,
+      "filename": "202_walls_structures_asset.png",
+      "original_x": 1024,
+      "original_y": 264,
+      "width": 9,
+      "height": 10,
+      "area": 53
+    },
+    {
+      "id": 203,
+      "filename": "203_doors_gates_asset.png",
+      "original_x": 1105,
+      "original_y": 274,
+      "width": 11,
+      "height": 63,
+      "area": 237
+    },
+    {
+      "id": 204,
+      "filename": "204_doors_gates_asset.png",
+      "original_x": 1120,
+      "original_y": 285,
+      "width": 28,
+      "height": 37,
+      "area": 313
+    },
+    {
+      "id": 205,
+      "filename": "205_doors_gates_asset.png",
+      "original_x": 1145,
+      "original_y": 273,
+      "width": 18,
+      "height": 64,
+      "area": 214
+    },
+    {
+      "id": 206,
+      "filename": "206_doors_gates_asset.png",
+      "original_x": 1193,
+      "original_y": 293,
+      "width": 6,
+      "height": 16,
+      "area": 46
+    },
+    {
+      "id": 207,
+      "filename": "207_doors_gates_asset.png",
+      "original_x": 1230,
+      "original_y": 270,
+      "width": 7,
+      "height": 54,
+      "area": 103
+    },
+    {
+      "id": 208,
+      "filename": "208_doors_gates_asset.png",
+      "original_x": 1241,
+      "original_y": 272,
+      "width": 8,
+      "height": 28,
+      "area": 65
+    },
+    {
+      "id": 209,
+      "filename": "209_doors_gates_asset.png",
+      "original_x": 1252,
+      "original_y": 283,
+      "width": 11,
+      "height": 40,
+      "area": 92
+    },
+    {
+      "id": 210,
+      "filename": "210_doors_gates_asset.png",
+      "original_x": 1260,
+      "original_y": 283,
+      "width": 8,
+      "height": 41,
+      "area": 60
+    },
+    {
+      "id": 211,
+      "filename": "211_doors_gates_asset.png",
+      "original_x": 1284,
+      "original_y": 270,
+      "width": 6,
+      "height": 54,
+      "area": 106
+    },
+    {
+      "id": 212,
+      "filename": "212_doors_gates_asset.png",
+      "original_x": 1293,
+      "original_y": 267,
+      "width": 8,
+      "height": 53,
+      "area": 92
+    },
+    {
+      "id": 213,
+      "filename": "213_doors_gates_asset.png",
+      "original_x": 1304,
+      "original_y": 276,
+      "width": 11,
+      "height": 57,
+      "area": 101
+    },
+    {
+      "id": 214,
+      "filename": "214_doors_gates_asset.png",
+      "original_x": 1371,
+      "original_y": 289,
+      "width": 4,
+      "height": 33,
+      "area": 47
+    },
+    {
+      "id": 215,
+      "filename": "215_doors_gates_asset.png",
+      "original_x": 1377,
+      "original_y": 275,
+      "width": 31,
+      "height": 41,
+      "area": 370
+    },
+    {
+      "id": 216,
+      "filename": "216_doors_gates_asset.png",
+      "original_x": 1467,
+      "original_y": 271,
+      "width": 30,
+      "height": 6,
+      "area": 58
+    },
+    {
+      "id": 217,
+      "filename": "217_doors_gates_asset.png",
+      "original_x": 1469,
+      "original_y": 278,
+      "width": 26,
+      "height": 33,
+      "area": 397
+    },
+    {
+      "id": 218,
+      "filename": "218_tiles_floors_asset.png",
+      "original_x": 33,
+      "original_y": 301,
+      "width": 66,
+      "height": 23,
+      "area": 307
+    },
+    {
+      "id": 219,
+      "filename": "219_tiles_floors_asset.png",
+      "original_x": 45,
+      "original_y": 319,
+      "width": 47,
+      "height": 5,
+      "area": 69
+    },
+    {
+      "id": 220,
+      "filename": "220_tiles_floors_asset.png",
+      "original_x": 300,
+      "original_y": 317,
+      "width": 12,
+      "height": 6,
+      "area": 47
+    },
+    {
+      "id": 221,
+      "filename": "221_walls_structures_asset.png",
+      "original_x": 511,
+      "original_y": 305,
+      "width": 7,
+      "height": 13,
+      "area": 51
+    },
+    {
+      "id": 222,
+      "filename": "222_walls_structures_asset.png",
+      "original_x": 511,
+      "original_y": 327,
+      "width": 13,
+      "height": 7,
+      "area": 51
+    },
+    {
+      "id": 223,
+      "filename": "223_walls_structures_asset.png",
+      "original_x": 527,
+      "original_y": 324,
+      "width": 9,
+      "height": 10,
+      "area": 39
+    },
+    {
+      "id": 224,
+      "filename": "224_walls_structures_asset.png",
+      "original_x": 582,
+      "original_y": 324,
+      "width": 25,
+      "height": 13,
+      "area": 102
+    },
+    {
+      "id": 225,
+      "filename": "225_walls_structures_asset.png",
+      "original_x": 587,
+      "original_y": 304,
+      "width": 12,
+      "height": 11,
+      "area": 42
+    },
+    {
+      "id": 226,
+      "filename": "226_walls_structures_asset.png",
+      "original_x": 660,
+      "original_y": 304,
+      "width": 20,
+      "height": 21,
+      "area": 121
+    },
+    {
+      "id": 227,
+      "filename": "227_walls_structures_asset.png",
+      "original_x": 739,
+      "original_y": 325,
+      "width": 24,
+      "height": 11,
+      "area": 64
+    },
+    {
+      "id": 228,
+      "filename": "228_walls_structures_asset.png",
+      "original_x": 756,
+      "original_y": 304,
+      "width": 11,
+      "height": 20,
+      "area": 101
+    },
+    {
+      "id": 229,
+      "filename": "229_walls_structures_asset.png",
+      "original_x": 766,
+      "original_y": 306,
+      "width": 14,
+      "height": 38,
+      "area": 282
+    },
+    {
+      "id": 230,
+      "filename": "230_walls_structures_asset.png",
+      "original_x": 805,
+      "original_y": 301,
+      "width": 36,
+      "height": 34,
+      "area": 322
+    },
+    {
+      "id": 231,
+      "filename": "231_walls_structures_asset.png",
+      "original_x": 863,
+      "original_y": 310,
+      "width": 54,
+      "height": 34,
+      "area": 423
+    },
+    {
+      "id": 232,
+      "filename": "232_walls_structures_asset.png",
+      "original_x": 877,
+      "original_y": 306,
+      "width": 12,
+      "height": 11,
+      "area": 53
+    },
+    {
+      "id": 233,
+      "filename": "233_walls_structures_asset.png",
+      "original_x": 942,
+      "original_y": 334,
+      "width": 15,
+      "height": 8,
+      "area": 47
+    },
+    {
+      "id": 234,
+      "filename": "234_walls_structures_asset.png",
+      "original_x": 944,
+      "original_y": 317,
+      "width": 13,
+      "height": 9,
+      "area": 49
+    },
+    {
+      "id": 235,
+      "filename": "235_walls_structures_asset.png",
+      "original_x": 983,
+      "original_y": 306,
+      "width": 16,
+      "height": 15,
+      "area": 85
+    },
+    {
+      "id": 236,
+      "filename": "236_walls_structures_asset.png",
+      "original_x": 993,
+      "original_y": 321,
+      "width": 28,
+      "height": 11,
+      "area": 61
+    },
+    {
+      "id": 237,
+      "filename": "237_doors_gates_asset.png",
+      "original_x": 1072,
+      "original_y": 311,
+      "width": 5,
+      "height": 20,
+      "area": 37
+    },
+    {
+      "id": 238,
+      "filename": "238_doors_gates_asset.png",
+      "original_x": 1116,
+      "original_y": 330,
+      "width": 28,
+      "height": 20,
+      "area": 120
+    },
+    {
+      "id": 239,
+      "filename": "239_doors_gates_asset.png",
+      "original_x": 1186,
+      "original_y": 312,
+      "width": 4,
+      "height": 19,
+      "area": 41
+    },
+    {
+      "id": 240,
+      "filename": "240_doors_gates_asset.png",
+      "original_x": 1240,
+      "original_y": 302,
+      "width": 9,
+      "height": 23,
+      "area": 58
+    },
+    {
+      "id": 241,
+      "filename": "241_doors_gates_asset.png",
+      "original_x": 1272,
+      "original_y": 301,
+      "width": 9,
+      "height": 37,
+      "area": 58
+    },
+    {
+      "id": 242,
+      "filename": "242_doors_gates_asset.png",
+      "original_x": 1349,
+      "original_y": 337,
+      "width": 17,
+      "height": 14,
+      "area": 69
+    },
+    {
+      "id": 243,
+      "filename": "243_doors_gates_asset.png",
+      "original_x": 1352,
+      "original_y": 301,
+      "width": 4,
+      "height": 21,
+      "area": 39
+    },
+    {
+      "id": 244,
+      "filename": "244_doors_gates_asset.png",
+      "original_x": 1468,
+      "original_y": 332,
+      "width": 20,
+      "height": 21,
+      "area": 153
+    },
+    {
+      "id": 245,
+      "filename": "245_furniture_props_asset.png",
+      "original_x": 30,
+      "original_y": 351,
+      "width": 25,
+      "height": 29,
+      "area": 132
+    },
+    {
+      "id": 246,
+      "filename": "246_furniture_props_asset.png",
+      "original_x": 55,
+      "original_y": 357,
+      "width": 11,
+      "height": 15,
+      "area": 76
+    },
+    {
+      "id": 247,
+      "filename": "247_furniture_props_asset.png",
+      "original_x": 67,
+      "original_y": 357,
+      "width": 76,
+      "height": 15,
+      "area": 514
+    },
+    {
+      "id": 248,
+      "filename": "248_furniture_props_asset.png",
+      "original_x": 151,
+      "original_y": 357,
+      "width": 14,
+      "height": 15,
+      "area": 150
+    },
+    {
+      "id": 249,
+      "filename": "249_furniture_props_asset.png",
+      "original_x": 174,
+      "original_y": 357,
+      "width": 52,
+      "height": 19,
+      "area": 376
+    },
+    {
+      "id": 250,
+      "filename": "250_furniture_props_asset.png",
+      "original_x": 235,
+      "original_y": 350,
+      "width": 19,
+      "height": 30,
+      "area": 124
+    },
+    {
+      "id": 251,
+      "filename": "251_mine_mining_asset.png",
+      "original_x": 563,
+      "original_y": 369,
+      "width": 30,
+      "height": 17,
+      "area": 108
+    },
+    {
+      "id": 252,
+      "filename": "252_mine_mining_asset.png",
+      "original_x": 636,
+      "original_y": 374,
+      "width": 8,
+      "height": 10,
+      "area": 40
+    },
+    {
+      "id": 253,
+      "filename": "253_mine_mining_asset.png",
+      "original_x": 655,
+      "original_y": 371,
+      "width": 43,
+      "height": 15,
+      "area": 373
+    },
+    {
+      "id": 254,
+      "filename": "254_mine_mining_asset.png",
+      "original_x": 705,
+      "original_y": 371,
+      "width": 14,
+      "height": 15,
+      "area": 143
+    },
+    {
+      "id": 255,
+      "filename": "255_mine_mining_asset.png",
+      "original_x": 727,
+      "original_y": 371,
+      "width": 64,
+      "height": 23,
+      "area": 568
+    },
+    {
+      "id": 256,
+      "filename": "256_mine_mining_asset.png",
+      "original_x": 801,
+      "original_y": 371,
+      "width": 9,
+      "height": 13,
+      "area": 49
+    },
+    {
+      "id": 257,
+      "filename": "257_section_header_decorations.png",
+      "original_x": 1049,
+      "original_y": 371,
+      "width": 106,
+      "height": 15,
+      "area": 795
+    },
+    {
+      "id": 258,
+      "filename": "258_decorations_asset.png",
+      "original_x": 1161,
+      "original_y": 365,
+      "width": 11,
+      "height": 26,
+      "area": 89
+    },
+    {
+      "id": 259,
+      "filename": "259_doors_gates_asset.png",
+      "original_x": 1230,
+      "original_y": 342,
+      "width": 69,
+      "height": 6,
+      "area": 143
+    },
+    {
+      "id": 260,
+      "filename": "260_section_header_furniture_props.png",
+      "original_x": 26,
+      "original_y": 395,
+      "width": 118,
+      "height": 42,
+      "area": 3469
+    },
+    {
+      "id": 261,
+      "filename": "261_furniture_props_asset.png",
+      "original_x": 160,
+      "original_y": 396,
+      "width": 107,
+      "height": 46,
+      "area": 2042
+    },
+    {
+      "id": 262,
+      "filename": "262_furniture_props_asset.png",
+      "original_x": 232,
+      "original_y": 396,
+      "width": 21,
+      "height": 8,
+      "area": 60
+    },
+    {
+      "id": 263,
+      "filename": "263_furniture_props_asset.png",
+      "original_x": 289,
+      "original_y": 395,
+      "width": 50,
+      "height": 60,
+      "area": 963
+    },
+    {
+      "id": 264,
+      "filename": "264_furniture_props_asset.png",
+      "original_x": 335,
+      "original_y": 393,
+      "width": 14,
+      "height": 17,
+      "area": 65
+    },
+    {
+      "id": 265,
+      "filename": "265_section_header_furniture_props.png",
+      "original_x": 392,
+      "original_y": 408,
+      "width": 126,
+      "height": 24,
+      "area": 504
+    },
+    {
+      "id": 266,
+      "filename": "266_section_header_furniture_props.png",
+      "original_x": 397,
+      "original_y": 389,
+      "width": 116,
+      "height": 17,
+      "area": 412
+    },
+    {
+      "id": 267,
+      "filename": "267_furniture_props_asset.png",
+      "original_x": 426,
+      "original_y": 404,
+      "width": 67,
+      "height": 7,
+      "area": 172
+    },
+    {
+      "id": 268,
+      "filename": "268_furniture_props_asset.png",
+      "original_x": 502,
+      "original_y": 404,
+      "width": 9,
+      "height": 11,
+      "area": 47
+    },
+    {
+      "id": 269,
+      "filename": "269_furniture_props_asset.png",
+      "original_x": 548,
+      "original_y": 397,
+      "width": 20,
+      "height": 11,
+      "area": 66
+    },
+    {
+      "id": 270,
+      "filename": "270_furniture_props_asset.png",
+      "original_x": 549,
+      "original_y": 411,
+      "width": 8,
+      "height": 25,
+      "area": 61
+    },
+    {
+      "id": 271,
+      "filename": "271_mine_mining_asset.png",
+      "original_x": 564,
+      "original_y": 413,
+      "width": 6,
+      "height": 22,
+      "area": 65
+    },
+    {
+      "id": 272,
+      "filename": "272_mine_mining_asset.png",
+      "original_x": 573,
+      "original_y": 415,
+      "width": 29,
+      "height": 29,
+      "area": 501
+    },
+    {
+      "id": 273,
+      "filename": "273_section_header_mine_mining.png",
+      "original_x": 768,
+      "original_y": 405,
+      "width": 107,
+      "height": 19,
+      "area": 1225
+    },
+    {
+      "id": 274,
+      "filename": "274_mine_mining_asset.png",
+      "original_x": 886,
+      "original_y": 411,
+      "width": 32,
+      "height": 24,
+      "area": 224
+    },
+    {
+      "id": 275,
+      "filename": "275_mine_mining_asset.png",
+      "original_x": 919,
+      "original_y": 414,
+      "width": 12,
+      "height": 43,
+      "area": 82
+    },
+    {
+      "id": 276,
+      "filename": "276_decorations_asset.png",
+      "original_x": 956,
+      "original_y": 412,
+      "width": 26,
+      "height": 33,
+      "area": 385
+    },
+    {
+      "id": 277,
+      "filename": "277_decorations_asset.png",
+      "original_x": 1032,
+      "original_y": 411,
+      "width": 64,
+      "height": 9,
+      "area": 173
+    },
+    {
+      "id": 278,
+      "filename": "278_decorations_asset.png",
+      "original_x": 1128,
+      "original_y": 407,
+      "width": 10,
+      "height": 8,
+      "area": 37
+    },
+    {
+      "id": 279,
+      "filename": "279_decorations_asset.png",
+      "original_x": 1204,
+      "original_y": 404,
+      "width": 13,
+      "height": 17,
+      "area": 86
+    },
+    {
+      "id": 280,
+      "filename": "280_decorations_asset.png",
+      "original_x": 1252,
+      "original_y": 408,
+      "width": 23,
+      "height": 39,
+      "area": 321
+    },
+    {
+      "id": 281,
+      "filename": "281_decorations_asset.png",
+      "original_x": 1276,
+      "original_y": 412,
+      "width": 47,
+      "height": 45,
+      "area": 723
+    },
+    {
+      "id": 282,
+      "filename": "282_decorations_asset.png",
+      "original_x": 1323,
+      "original_y": 411,
+      "width": 19,
+      "height": 34,
+      "area": 251
+    },
+    {
+      "id": 283,
+      "filename": "283_decorations_asset.png",
+      "original_x": 1344,
+      "original_y": 412,
+      "width": 23,
+      "height": 49,
+      "area": 463
+    },
+    {
+      "id": 284,
+      "filename": "284_decorations_asset.png",
+      "original_x": 1367,
+      "original_y": 396,
+      "width": 15,
+      "height": 43,
+      "area": 194
+    },
+    {
+      "id": 285,
+      "filename": "285_decorations_asset.png",
+      "original_x": 1481,
+      "original_y": 411,
+      "width": 29,
+      "height": 22,
+      "area": 138
+    },
+    {
+      "id": 286,
+      "filename": "286_furniture_props_asset.png",
+      "original_x": 59,
+      "original_y": 442,
+      "width": 25,
+      "height": 7,
+      "area": 56
+    },
+    {
+      "id": 287,
+      "filename": "287_furniture_props_asset.png",
+      "original_x": 164,
+      "original_y": 445,
+      "width": 5,
+      "height": 25,
+      "area": 54
+    },
+    {
+      "id": 288,
+      "filename": "288_furniture_props_asset.png",
+      "original_x": 241,
+      "original_y": 450,
+      "width": 9,
+      "height": 8,
+      "area": 38
+    },
+    {
+      "id": 289,
+      "filename": "289_furniture_props_asset.png",
+      "original_x": 289,
+      "original_y": 451,
+      "width": 46,
+      "height": 21,
+      "area": 171
+    },
+    {
+      "id": 290,
+      "filename": "290_furniture_props_asset.png",
+      "original_x": 392,
+      "original_y": 439,
+      "width": 18,
+      "height": 12,
+      "area": 46
+    },
+    {
+      "id": 291,
+      "filename": "291_furniture_props_asset.png",
+      "original_x": 430,
+      "original_y": 430,
+      "width": 7,
+      "height": 7,
+      "area": 36
+    },
+    {
+      "id": 292,
+      "filename": "292_furniture_props_asset.png",
+      "original_x": 442,
+      "original_y": 428,
+      "width": 40,
+      "height": 9,
+      "area": 77
+    },
+    {
+      "id": 293,
+      "filename": "293_furniture_props_asset.png",
+      "original_x": 496,
+      "original_y": 439,
+      "width": 13,
+      "height": 14,
+      "area": 39
+    },
+    {
+      "id": 294,
+      "filename": "294_mine_mining_asset.png",
+      "original_x": 643,
+      "original_y": 428,
+      "width": 85,
+      "height": 50,
+      "area": 482
+    },
+    {
+      "id": 295,
+      "filename": "295_mine_mining_asset.png",
+      "original_x": 769,
+      "original_y": 434,
+      "width": 13,
+      "height": 27,
+      "area": 181
+    },
+    {
+      "id": 296,
+      "filename": "296_mine_mining_asset.png",
+      "original_x": 784,
+      "original_y": 430,
+      "width": 11,
+      "height": 16,
+      "area": 60
+    },
+    {
+      "id": 297,
+      "filename": "297_mine_mining_asset.png",
+      "original_x": 845,
+      "original_y": 430,
+      "width": 29,
+      "height": 45,
+      "area": 399
+    },
+    {
+      "id": 298,
+      "filename": "298_mine_mining_asset.png",
+      "original_x": 905,
+      "original_y": 449,
+      "width": 11,
+      "height": 52,
+      "area": 377
+    },
+    {
+      "id": 299,
+      "filename": "299_mine_mining_asset.png",
+      "original_x": 948,
+      "original_y": 437,
+      "width": 11,
+      "height": 11,
+      "area": 36
+    },
+    {
+      "id": 300,
+      "filename": "300_decorations_asset.png",
+      "original_x": 950,
+      "original_y": 450,
+      "width": 7,
+      "height": 12,
+      "area": 43
+    },
+    {
+      "id": 301,
+      "filename": "301_decorations_asset.png",
+      "original_x": 978,
+      "original_y": 423,
+      "width": 14,
+      "height": 13,
+      "area": 94
+    },
+    {
+      "id": 302,
+      "filename": "302_decorations_asset.png",
+      "original_x": 994,
+      "original_y": 446,
+      "width": 10,
+      "height": 18,
+      "area": 97
+    },
+    {
+      "id": 303,
+      "filename": "303_decorations_asset.png",
+      "original_x": 998,
+      "original_y": 429,
+      "width": 11,
+      "height": 14,
+      "area": 79
+    },
+    {
+      "id": 304,
+      "filename": "304_decorations_asset.png",
+      "original_x": 1046,
+      "original_y": 430,
+      "width": 7,
+      "height": 39,
+      "area": 89
+    },
+    {
+      "id": 305,
+      "filename": "305_decorations_asset.png",
+      "original_x": 1056,
+      "original_y": 447,
+      "width": 27,
+      "height": 42,
+      "area": 388
+    },
+    {
+      "id": 306,
+      "filename": "306_decorations_asset.png",
+      "original_x": 1087,
+      "original_y": 425,
+      "width": 5,
+      "height": 68,
+      "area": 110
+    },
+    {
+      "id": 307,
+      "filename": "307_decorations_asset.png",
+      "original_x": 1119,
+      "original_y": 432,
+      "width": 31,
+      "height": 42,
+      "area": 603
+    },
+    {
+      "id": 308,
+      "filename": "308_decorations_asset.png",
+      "original_x": 1154,
+      "original_y": 442,
+      "width": 7,
+      "height": 14,
+      "area": 39
+    },
+    {
+      "id": 309,
+      "filename": "309_decorations_asset.png",
+      "original_x": 1197,
+      "original_y": 424,
+      "width": 20,
+      "height": 18,
+      "area": 67
+    },
+    {
+      "id": 310,
+      "filename": "310_decorations_asset.png",
+      "original_x": 1197,
+      "original_y": 443,
+      "width": 26,
+      "height": 26,
+      "area": 358
+    },
+    {
+      "id": 311,
+      "filename": "311_decorations_asset.png",
+      "original_x": 1276,
+      "original_y": 452,
+      "width": 43,
+      "height": 90,
+      "area": 2011
+    },
+    {
+      "id": 312,
+      "filename": "312_decorations_asset.png",
+      "original_x": 1394,
+      "original_y": 421,
+      "width": 72,
+      "height": 46,
+      "area": 2077
+    },
+    {
+      "id": 313,
+      "filename": "313_decorations_asset.png",
+      "original_x": 1478,
+      "original_y": 444,
+      "width": 30,
+      "height": 31,
+      "area": 500
+    },
+    {
+      "id": 314,
+      "filename": "314_furniture_props_asset.png",
+      "original_x": 22,
+      "original_y": 497,
+      "width": 47,
+      "height": 62,
+      "area": 1328
+    },
+    {
+      "id": 315,
+      "filename": "315_furniture_props_asset.png",
+      "original_x": 90,
+      "original_y": 493,
+      "width": 12,
+      "height": 9,
+      "area": 54
+    },
+    {
+      "id": 316,
+      "filename": "316_furniture_props_asset.png",
+      "original_x": 105,
+      "original_y": 492,
+      "width": 36,
+      "height": 10,
+      "area": 93
+    },
+    {
+      "id": 317,
+      "filename": "317_furniture_props_asset.png",
+      "original_x": 400,
+      "original_y": 486,
+      "width": 20,
+      "height": 35,
+      "area": 246
+    },
+    {
+      "id": 318,
+      "filename": "318_furniture_props_asset.png",
+      "original_x": 458,
+      "original_y": 476,
+      "width": 83,
+      "height": 96,
+      "area": 2597
+    },
+    {
+      "id": 319,
+      "filename": "319_mine_mining_asset.png",
+      "original_x": 574,
+      "original_y": 498,
+      "width": 21,
+      "height": 7,
+      "area": 46
+    },
+    {
+      "id": 320,
+      "filename": "320_mine_mining_asset.png",
+      "original_x": 726,
+      "original_y": 476,
+      "width": 31,
+      "height": 18,
+      "area": 64
+    },
+    {
+      "id": 321,
+      "filename": "321_mine_mining_asset.png",
+      "original_x": 771,
+      "original_y": 460,
+      "width": 10,
+      "height": 16,
+      "area": 50
+    },
+    {
+      "id": 322,
+      "filename": "322_mine_mining_asset.png",
+      "original_x": 862,
+      "original_y": 478,
+      "width": 9,
+      "height": 10,
+      "area": 43
+    },
+    {
+      "id": 323,
+      "filename": "323_decorations_asset.png",
+      "original_x": 975,
+      "original_y": 473,
+      "width": 22,
+      "height": 35,
+      "area": 357
+    },
+    {
+      "id": 324,
+      "filename": "324_decorations_asset.png",
+      "original_x": 1046,
+      "original_y": 473,
+      "width": 33,
+      "height": 54,
+      "area": 186
+    },
+    {
+      "id": 325,
+      "filename": "325_decorations_asset.png",
+      "original_x": 1080,
+      "original_y": 497,
+      "width": 12,
+      "height": 17,
+      "area": 56
+    },
+    {
+      "id": 326,
+      "filename": "326_decorations_asset.png",
+      "original_x": 1204,
+      "original_y": 473,
+      "width": 12,
+      "height": 35,
+      "area": 225
+    },
+    {
+      "id": 327,
+      "filename": "327_decorations_asset.png",
+      "original_x": 1340,
+      "original_y": 471,
+      "width": 49,
+      "height": 38,
+      "area": 1006
+    },
+    {
+      "id": 328,
+      "filename": "328_decorations_asset.png",
+      "original_x": 1406,
+      "original_y": 470,
+      "width": 34,
+      "height": 34,
+      "area": 466
+    },
+    {
+      "id": 329,
+      "filename": "329_decorations_asset.png",
+      "original_x": 1442,
+      "original_y": 478,
+      "width": 14,
+      "height": 22,
+      "area": 167
+    },
+    {
+      "id": 330,
+      "filename": "330_decorations_asset.png",
+      "original_x": 1480,
+      "original_y": 471,
+      "width": 26,
+      "height": 26,
+      "area": 274
+    },
+    {
+      "id": 331,
+      "filename": "331_furniture_props_asset.png",
+      "original_x": 109,
+      "original_y": 524,
+      "width": 10,
+      "height": 16,
+      "area": 45
+    },
+    {
+      "id": 332,
+      "filename": "332_furniture_props_asset.png",
+      "original_x": 157,
+      "original_y": 533,
+      "width": 87,
+      "height": 28,
+      "area": 736
+    },
+    {
+      "id": 333,
+      "filename": "333_furniture_props_asset.png",
+      "original_x": 212,
+      "original_y": 502,
+      "width": 28,
+      "height": 10,
+      "area": 61
+    },
+    {
+      "id": 334,
+      "filename": "334_furniture_props_asset.png",
+      "original_x": 265,
+      "original_y": 503,
+      "width": 50,
+      "height": 21,
+      "area": 341
+    },
+    {
+      "id": 335,
+      "filename": "335_furniture_props_asset.png",
+      "original_x": 267,
+      "original_y": 526,
+      "width": 47,
+      "height": 36,
+      "area": 674
+    },
+    {
+      "id": 336,
+      "filename": "336_furniture_props_asset.png",
+      "original_x": 337,
+      "original_y": 527,
+      "width": 96,
+      "height": 20,
+      "area": 749
+    },
+    {
+      "id": 337,
+      "filename": "337_furniture_props_asset.png",
+      "original_x": 340,
+      "original_y": 505,
+      "width": 20,
+      "height": 24,
+      "area": 136
+    },
+    {
+      "id": 338,
+      "filename": "338_furniture_props_asset.png",
+      "original_x": 363,
+      "original_y": 502,
+      "width": 34,
+      "height": 31,
+      "area": 521
+    },
+    {
+      "id": 339,
+      "filename": "339_furniture_props_asset.png",
+      "original_x": 403,
+      "original_y": 523,
+      "width": 12,
+      "height": 10,
+      "area": 64
+    },
+    {
+      "id": 340,
+      "filename": "340_mine_mining_asset.png",
+      "original_x": 559,
+      "original_y": 507,
+      "width": 13,
+      "height": 10,
+      "area": 41
+    },
+    {
+      "id": 341,
+      "filename": "341_mine_mining_asset.png",
+      "original_x": 559,
+      "original_y": 534,
+      "width": 7,
+      "height": 17,
+      "area": 44
+    },
+    {
+      "id": 342,
+      "filename": "342_mine_mining_asset.png",
+      "original_x": 562,
+      "original_y": 538,
+      "width": 42,
+      "height": 32,
+      "area": 527
+    },
+    {
+      "id": 343,
+      "filename": "343_mine_mining_asset.png",
+      "original_x": 576,
+      "original_y": 513,
+      "width": 18,
+      "height": 11,
+      "area": 103
+    },
+    {
+      "id": 344,
+      "filename": "344_mine_mining_asset.png",
+      "original_x": 595,
+      "original_y": 501,
+      "width": 16,
+      "height": 24,
+      "area": 119
+    },
+    {
+      "id": 345,
+      "filename": "345_mine_mining_asset.png",
+      "original_x": 626,
+      "original_y": 504,
+      "width": 28,
+      "height": 18,
+      "area": 95
+    },
+    {
+      "id": 346,
+      "filename": "346_mine_mining_asset.png",
+      "original_x": 639,
+      "original_y": 515,
+      "width": 48,
+      "height": 24,
+      "area": 188
+    },
+    {
+      "id": 347,
+      "filename": "347_mine_mining_asset.png",
+      "original_x": 663,
+      "original_y": 533,
+      "width": 13,
+      "height": 7,
+      "area": 39
+    },
+    {
+      "id": 348,
+      "filename": "348_mine_mining_asset.png",
+      "original_x": 732,
+      "original_y": 506,
+      "width": 47,
+      "height": 61,
+      "area": 888
+    },
+    {
+      "id": 349,
+      "filename": "349_mine_mining_asset.png",
+      "original_x": 770,
+      "original_y": 529,
+      "width": 17,
+      "height": 16,
+      "area": 109
+    },
+    {
+      "id": 350,
+      "filename": "350_mine_mining_asset.png",
+      "original_x": 788,
+      "original_y": 515,
+      "width": 8,
+      "height": 10,
+      "area": 36
+    },
+    {
+      "id": 351,
+      "filename": "351_mine_mining_asset.png",
+      "original_x": 802,
+      "original_y": 509,
+      "width": 47,
+      "height": 56,
+      "area": 883
+    },
+    {
+      "id": 352,
+      "filename": "352_mine_mining_asset.png",
+      "original_x": 850,
+      "original_y": 523,
+      "width": 11,
+      "height": 21,
+      "area": 83
+    },
+    {
+      "id": 353,
+      "filename": "353_mine_mining_asset.png",
+      "original_x": 883,
+      "original_y": 504,
+      "width": 25,
+      "height": 63,
+      "area": 399
+    },
+    {
+      "id": 354,
+      "filename": "354_mine_mining_asset.png",
+      "original_x": 912,
+      "original_y": 507,
+      "width": 22,
+      "height": 60,
+      "area": 335
+    },
+    {
+      "id": 355,
+      "filename": "355_decorations_asset.png",
+      "original_x": 959,
+      "original_y": 524,
+      "width": 22,
+      "height": 18,
+      "area": 154
+    },
+    {
+      "id": 356,
+      "filename": "356_decorations_asset.png",
+      "original_x": 979,
+      "original_y": 513,
+      "width": 8,
+      "height": 15,
+      "area": 55
+    },
+    {
+      "id": 357,
+      "filename": "357_decorations_asset.png",
+      "original_x": 982,
+      "original_y": 524,
+      "width": 31,
+      "height": 18,
+      "area": 153
+    },
+    {
+      "id": 358,
+      "filename": "358_decorations_asset.png",
+      "original_x": 1079,
+      "original_y": 539,
+      "width": 19,
+      "height": 10,
+      "area": 99
+    },
+    {
+      "id": 359,
+      "filename": "359_decorations_asset.png",
+      "original_x": 1110,
+      "original_y": 502,
+      "width": 46,
+      "height": 67,
+      "area": 1596
+    },
+    {
+      "id": 360,
+      "filename": "360_decorations_asset.png",
+      "original_x": 1169,
+      "original_y": 501,
+      "width": 35,
+      "height": 63,
+      "area": 722
+    },
+    {
+      "id": 361,
+      "filename": "361_decorations_asset.png",
+      "original_x": 1223,
+      "original_y": 509,
+      "width": 18,
+      "height": 42,
+      "area": 264
+    },
+    {
+      "id": 362,
+      "filename": "362_decorations_asset.png",
+      "original_x": 1289,
+      "original_y": 538,
+      "width": 7,
+      "height": 17,
+      "area": 74
+    },
+    {
+      "id": 363,
+      "filename": "363_decorations_asset.png",
+      "original_x": 1309,
+      "original_y": 536,
+      "width": 8,
+      "height": 14,
+      "area": 39
+    },
+    {
+      "id": 364,
+      "filename": "364_decorations_asset.png",
+      "original_x": 1337,
+      "original_y": 512,
+      "width": 33,
+      "height": 57,
+      "area": 734
+    },
+    {
+      "id": 365,
+      "filename": "365_decorations_asset.png",
+      "original_x": 1370,
+      "original_y": 514,
+      "width": 23,
+      "height": 18,
+      "area": 232
+    },
+    {
+      "id": 366,
+      "filename": "366_decorations_asset.png",
+      "original_x": 1373,
+      "original_y": 534,
+      "width": 12,
+      "height": 18,
+      "area": 77
+    },
+    {
+      "id": 367,
+      "filename": "367_decorations_asset.png",
+      "original_x": 1402,
+      "original_y": 532,
+      "width": 13,
+      "height": 46,
+      "area": 275
+    },
+    {
+      "id": 368,
+      "filename": "368_decorations_asset.png",
+      "original_x": 1420,
+      "original_y": 532,
+      "width": 19,
+      "height": 42,
+      "area": 287
+    },
+    {
+      "id": 369,
+      "filename": "369_decorations_asset.png",
+      "original_x": 1444,
+      "original_y": 532,
+      "width": 22,
+      "height": 46,
+      "area": 189
+    },
+    {
+      "id": 370,
+      "filename": "370_decorations_asset.png",
+      "original_x": 1470,
+      "original_y": 532,
+      "width": 23,
+      "height": 44,
+      "area": 233
+    },
+    {
+      "id": 371,
+      "filename": "371_decorations_asset.png",
+      "original_x": 1485,
+      "original_y": 506,
+      "width": 28,
+      "height": 12,
+      "area": 66
+    },
+    {
+      "id": 372,
+      "filename": "372_decorations_asset.png",
+      "original_x": 1488,
+      "original_y": 502,
+      "width": 11,
+      "height": 5,
+      "area": 42
+    },
+    {
+      "id": 373,
+      "filename": "373_decorations_asset.png",
+      "original_x": 1496,
+      "original_y": 532,
+      "width": 23,
+      "height": 45,
+      "area": 270
+    },
+    {
+      "id": 374,
+      "filename": "374_furniture_props_asset.png",
+      "original_x": 92,
+      "original_y": 543,
+      "width": 7,
+      "height": 16,
+      "area": 46
+    },
+    {
+      "id": 375,
+      "filename": "375_furniture_props_asset.png",
+      "original_x": 359,
+      "original_y": 553,
+      "width": 33,
+      "height": 16,
+      "area": 154
+    },
+    {
+      "id": 376,
+      "filename": "376_furniture_props_asset.png",
+      "original_x": 394,
+      "original_y": 553,
+      "width": 18,
+      "height": 13,
+      "area": 70
+    },
+    {
+      "id": 377,
+      "filename": "377_furniture_props_asset.png",
+      "original_x": 516,
+      "original_y": 544,
+      "width": 11,
+      "height": 15,
+      "area": 41
+    },
+    {
+      "id": 378,
+      "filename": "378_mine_mining_asset.png",
+      "original_x": 553,
+      "original_y": 565,
+      "width": 18,
+      "height": 9,
+      "area": 50
+    },
+    {
+      "id": 379,
+      "filename": "379_mine_mining_asset.png",
+      "original_x": 772,
+      "original_y": 555,
+      "width": 22,
+      "height": 16,
+      "area": 131
+    },
+    {
+      "id": 380,
+      "filename": "380_mine_mining_asset.png",
+      "original_x": 849,
+      "original_y": 551,
+      "width": 22,
+      "height": 17,
+      "area": 130
+    },
+    {
+      "id": 381,
+      "filename": "381_decorations_asset.png",
+      "original_x": 950,
+      "original_y": 551,
+      "width": 19,
+      "height": 19,
+      "area": 131
+    },
+    {
+      "id": 382,
+      "filename": "382_decorations_asset.png",
+      "original_x": 990,
+      "original_y": 546,
+      "width": 14,
+      "height": 27,
+      "area": 192
+    },
+    {
+      "id": 383,
+      "filename": "383_decorations_asset.png",
+      "original_x": 1013,
+      "original_y": 549,
+      "width": 15,
+      "height": 15,
+      "area": 71
+    },
+    {
+      "id": 384,
+      "filename": "384_decorations_asset.png",
+      "original_x": 1054,
+      "original_y": 559,
+      "width": 37,
+      "height": 20,
+      "area": 135
+    },
+    {
+      "id": 385,
+      "filename": "385_decorations_asset.png",
+      "original_x": 1065,
+      "original_y": 556,
+      "width": 7,
+      "height": 10,
+      "area": 38
+    },
+    {
+      "id": 386,
+      "filename": "386_decorations_asset.png",
+      "original_x": 1193,
+      "original_y": 571,
+      "width": 11,
+      "height": 7,
+      "area": 41
+    },
+    {
+      "id": 387,
+      "filename": "387_decorations_asset.png",
+      "original_x": 1225,
+      "original_y": 571,
+      "width": 14,
+      "height": 8,
+      "area": 37
+    },
+    {
+      "id": 388,
+      "filename": "388_decorations_asset.png",
+      "original_x": 1228,
+      "original_y": 559,
+      "width": 8,
+      "height": 8,
+      "area": 38
+    },
+    {
+      "id": 389,
+      "filename": "389_decorations_asset.png",
+      "original_x": 1269,
+      "original_y": 551,
+      "width": 15,
+      "height": 23,
+      "area": 136
+    },
+    {
+      "id": 390,
+      "filename": "390_decorations_asset.png",
+      "original_x": 1285,
+      "original_y": 550,
+      "width": 45,
+      "height": 29,
+      "area": 379
+    },
+    {
+      "id": 391,
+      "filename": "391_decorations_asset.png",
+      "original_x": 1351,
+      "original_y": 571,
+      "width": 11,
+      "height": 7,
+      "area": 38
+    },
+    {
+      "id": 392,
+      "filename": "392_section_header_traps_hazards.png",
+      "original_x": 21,
+      "original_y": 594,
+      "width": 170,
+      "height": 32,
+      "area": 460
+    },
+    {
+      "id": 393,
+      "filename": "393_traps_hazards_asset.png",
+      "original_x": 45,
+      "original_y": 603,
+      "width": 13,
+      "height": 15,
+      "area": 74
+    },
+    {
+      "id": 394,
+      "filename": "394_traps_hazards_asset.png",
+      "original_x": 59,
+      "original_y": 607,
+      "width": 38,
+      "height": 15,
+      "area": 304
+    },
+    {
+      "id": 395,
+      "filename": "395_traps_hazards_asset.png",
+      "original_x": 105,
+      "original_y": 603,
+      "width": 14,
+      "height": 15,
+      "area": 152
+    },
+    {
+      "id": 396,
+      "filename": "396_traps_hazards_asset.png",
+      "original_x": 128,
+      "original_y": 603,
+      "width": 73,
+      "height": 15,
+      "area": 583
+    },
+    {
+      "id": 397,
+      "filename": "397_traps_hazards_asset.png",
+      "original_x": 196,
+      "original_y": 594,
+      "width": 30,
+      "height": 32,
+      "area": 170
+    },
+    {
+      "id": 398,
+      "filename": "398_traps_hazards_asset.png",
+      "original_x": 545,
+      "original_y": 612,
+      "width": 22,
+      "height": 17,
+      "area": 89
+    },
+    {
+      "id": 399,
+      "filename": "399_treasure_rewards_asset.png",
+      "original_x": 661,
+      "original_y": 614,
+      "width": 8,
+      "height": 10,
+      "area": 47
+    },
+    {
+      "id": 400,
+      "filename": "400_treasure_rewards_asset.png",
+      "original_x": 680,
+      "original_y": 610,
+      "width": 13,
+      "height": 15,
+      "area": 75
+    },
+    {
+      "id": 401,
+      "filename": "401_treasure_rewards_asset.png",
+      "original_x": 694,
+      "original_y": 615,
+      "width": 68,
+      "height": 10,
+      "area": 505
+    },
+    {
+      "id": 402,
+      "filename": "402_treasure_rewards_asset.png",
+      "original_x": 769,
+      "original_y": 610,
+      "width": 14,
+      "height": 15,
+      "area": 144
+    },
+    {
+      "id": 403,
+      "filename": "403_treasure_rewards_asset.png",
+      "original_x": 791,
+      "original_y": 610,
+      "width": 77,
+      "height": 16,
+      "area": 601
+    },
+    {
+      "id": 404,
+      "filename": "404_treasure_rewards_asset.png",
+      "original_x": 876,
+      "original_y": 603,
+      "width": 12,
+      "height": 28,
+      "area": 102
+    },
+    {
+      "id": 405,
+      "filename": "405_nature_caves_asset.png",
+      "original_x": 1122,
+      "original_y": 610,
+      "width": 8,
+      "height": 10,
+      "area": 38
+    },
+    {
+      "id": 406,
+      "filename": "406_nature_caves_asset.png",
+      "original_x": 1138,
+      "original_y": 608,
+      "width": 62,
+      "height": 16,
+      "area": 466
+    },
+    {
+      "id": 407,
+      "filename": "407_nature_caves_asset.png",
+      "original_x": 1207,
+      "original_y": 609,
+      "width": 14,
+      "height": 15,
+      "area": 139
+    },
+    {
+      "id": 408,
+      "filename": "408_nature_caves_asset.png",
+      "original_x": 1229,
+      "original_y": 608,
+      "width": 43,
+      "height": 16,
+      "area": 300
+    },
+    {
+      "id": 409,
+      "filename": "409_nature_caves_asset.png",
+      "original_x": 1279,
+      "original_y": 608,
+      "width": 82,
+      "height": 16,
+      "area": 667
+    },
+    {
+      "id": 410,
+      "filename": "410_nature_caves_asset.png",
+      "original_x": 1365,
+      "original_y": 609,
+      "width": 11,
+      "height": 20,
+      "area": 72
+    },
+    {
+      "id": 411,
+      "filename": "411_traps_hazards_asset.png",
+      "original_x": 24,
+      "original_y": 650,
+      "width": 89,
+      "height": 63,
+      "area": 976
+    },
+    {
+      "id": 412,
+      "filename": "412_traps_hazards_asset.png",
+      "original_x": 54,
+      "original_y": 651,
+      "width": 4,
+      "height": 20,
+      "area": 44
+    },
+    {
+      "id": 413,
+      "filename": "413_traps_hazards_asset.png",
+      "original_x": 65,
+      "original_y": 644,
+      "width": 13,
+      "height": 33,
+      "area": 108
+    },
+    {
+      "id": 414,
+      "filename": "414_traps_hazards_asset.png",
+      "original_x": 85,
+      "original_y": 650,
+      "width": 19,
+      "height": 30,
+      "area": 113
+    },
+    {
+      "id": 415,
+      "filename": "415_traps_hazards_asset.png",
+      "original_x": 130,
+      "original_y": 647,
+      "width": 71,
+      "height": 63,
+      "area": 795
+    },
+    {
+      "id": 416,
+      "filename": "416_traps_hazards_asset.png",
+      "original_x": 145,
+      "original_y": 648,
+      "width": 32,
+      "height": 51,
+      "area": 369
+    },
+    {
+      "id": 417,
+      "filename": "417_traps_hazards_asset.png",
+      "original_x": 163,
+      "original_y": 648,
+      "width": 12,
+      "height": 22,
+      "area": 81
+    },
+    {
+      "id": 418,
+      "filename": "418_traps_hazards_asset.png",
+      "original_x": 185,
+      "original_y": 647,
+      "width": 8,
+      "height": 17,
+      "area": 63
+    },
+    {
+      "id": 419,
+      "filename": "419_traps_hazards_asset.png",
+      "original_x": 226,
+      "original_y": 653,
+      "width": 69,
+      "height": 50,
+      "area": 674
+    },
+    {
+      "id": 420,
+      "filename": "420_traps_hazards_asset.png",
+      "original_x": 339,
+      "original_y": 640,
+      "width": 9,
+      "height": 33,
+      "area": 134
+    },
+    {
+      "id": 421,
+      "filename": "421_traps_hazards_asset.png",
+      "original_x": 352,
+      "original_y": 640,
+      "width": 17,
+      "height": 15,
+      "area": 78
+    },
+    {
+      "id": 422,
+      "filename": "422_traps_hazards_asset.png",
+      "original_x": 361,
+      "original_y": 660,
+      "width": 6,
+      "height": 35,
+      "area": 82
+    },
+    {
+      "id": 423,
+      "filename": "423_traps_hazards_asset.png",
+      "original_x": 383,
+      "original_y": 640,
+      "width": 9,
+      "height": 33,
+      "area": 117
+    },
+    {
+      "id": 424,
+      "filename": "424_traps_hazards_asset.png",
+      "original_x": 396,
+      "original_y": 640,
+      "width": 10,
+      "height": 20,
+      "area": 74
+    },
+    {
+      "id": 425,
+      "filename": "425_traps_hazards_asset.png",
+      "original_x": 429,
+      "original_y": 648,
+      "width": 71,
+      "height": 61,
+      "area": 1078
+    },
+    {
+      "id": 426,
+      "filename": "426_traps_hazards_asset.png",
+      "original_x": 482,
+      "original_y": 643,
+      "width": 32,
+      "height": 27,
+      "area": 199
+    },
+    {
+      "id": 427,
+      "filename": "427_traps_hazards_asset.png",
+      "original_x": 511,
+      "original_y": 645,
+      "width": 13,
+      "height": 11,
+      "area": 57
+    },
+    {
+      "id": 428,
+      "filename": "428_treasure_rewards_asset.png",
+      "original_x": 587,
+      "original_y": 643,
+      "width": 17,
+      "height": 12,
+      "area": 47
+    },
+    {
+      "id": 429,
+      "filename": "429_treasure_rewards_asset.png",
+      "original_x": 591,
+      "original_y": 630,
+      "width": 22,
+      "height": 22,
+      "area": 85
+    },
+    {
+      "id": 430,
+      "filename": "430_treasure_rewards_asset.png",
+      "original_x": 667,
+      "original_y": 651,
+      "width": 63,
+      "height": 62,
+      "area": 1669
+    },
+    {
+      "id": 431,
+      "filename": "431_treasure_rewards_asset.png",
+      "original_x": 755,
+      "original_y": 650,
+      "width": 80,
+      "height": 42,
+      "area": 1526
+    },
+    {
+      "id": 432,
+      "filename": "432_treasure_rewards_asset.png",
+      "original_x": 864,
+      "original_y": 649,
+      "width": 61,
+      "height": 67,
+      "area": 2046
+    },
+    {
+      "id": 433,
+      "filename": "433_treasure_rewards_asset.png",
+      "original_x": 948,
+      "original_y": 649,
+      "width": 80,
+      "height": 67,
+      "area": 1920
+    },
+    {
+      "id": 434,
+      "filename": "434_treasure_rewards_asset.png",
+      "original_x": 1049,
+      "original_y": 649,
+      "width": 53,
+      "height": 66,
+      "area": 1383
+    },
+    {
+      "id": 435,
+      "filename": "435_nature_caves_asset.png",
+      "original_x": 1133,
+      "original_y": 660,
+      "width": 10,
+      "height": 27,
+      "area": 127
+    },
+    {
+      "id": 436,
+      "filename": "436_nature_caves_asset.png",
+      "original_x": 1145,
+      "original_y": 641,
+      "width": 15,
+      "height": 54,
+      "area": 249
+    },
+    {
+      "id": 437,
+      "filename": "437_nature_caves_asset.png",
+      "original_x": 1214,
+      "original_y": 652,
+      "width": 9,
+      "height": 28,
+      "area": 121
+    },
+    {
+      "id": 438,
+      "filename": "438_nature_caves_asset.png",
+      "original_x": 1241,
+      "original_y": 655,
+      "width": 69,
+      "height": 72,
+      "area": 2730
+    },
+    {
+      "id": 439,
+      "filename": "439_nature_caves_asset.png",
+      "original_x": 1318,
+      "original_y": 653,
+      "width": 51,
+      "height": 35,
+      "area": 988
+    },
+    {
+      "id": 440,
+      "filename": "440_nature_caves_asset.png",
+      "original_x": 1398,
+      "original_y": 648,
+      "width": 52,
+      "height": 31,
+      "area": 838
+    },
+    {
+      "id": 441,
+      "filename": "441_nature_caves_asset.png",
+      "original_x": 1467,
+      "original_y": 653,
+      "width": 38,
+      "height": 27,
+      "area": 523
+    },
+    {
+      "id": 442,
+      "filename": "442_traps_hazards_asset.png",
+      "original_x": 43,
+      "original_y": 673,
+      "width": 15,
+      "height": 31,
+      "area": 177
+    },
+    {
+      "id": 443,
+      "filename": "443_traps_hazards_asset.png",
+      "original_x": 85,
+      "original_y": 678,
+      "width": 15,
+      "height": 25,
+      "area": 138
+    },
+    {
+      "id": 444,
+      "filename": "444_traps_hazards_asset.png",
+      "original_x": 194,
+      "original_y": 676,
+      "width": 7,
+      "height": 13,
+      "area": 45
+    },
+    {
+      "id": 445,
+      "filename": "445_traps_hazards_asset.png",
+      "original_x": 215,
+      "original_y": 672,
+      "width": 45,
+      "height": 37,
+      "area": 392
+    },
+    {
+      "id": 446,
+      "filename": "446_traps_hazards_asset.png",
+      "original_x": 320,
+      "original_y": 661,
+      "width": 88,
+      "height": 71,
+      "area": 1331
+    },
+    {
+      "id": 447,
+      "filename": "447_traps_hazards_asset.png",
+      "original_x": 383,
+      "original_y": 680,
+      "width": 4,
+      "height": 22,
+      "area": 41
+    },
+    {
+      "id": 448,
+      "filename": "448_traps_hazards_asset.png",
+      "original_x": 402,
+      "original_y": 666,
+      "width": 7,
+      "height": 56,
+      "area": 362
+    },
+    {
+      "id": 449,
+      "filename": "449_traps_hazards_asset.png",
+      "original_x": 444,
+      "original_y": 696,
+      "width": 22,
+      "height": 25,
+      "area": 102
+    },
+    {
+      "id": 450,
+      "filename": "450_treasure_rewards_asset.png",
+      "original_x": 598,
+      "original_y": 665,
+      "width": 22,
+      "height": 37,
+      "area": 338
+    },
+    {
+      "id": 451,
+      "filename": "451_treasure_rewards_asset.png",
+      "original_x": 756,
+      "original_y": 688,
+      "width": 74,
+      "height": 26,
+      "area": 567
+    },
+    {
+      "id": 452,
+      "filename": "452_treasure_rewards_asset.png",
+      "original_x": 768,
+      "original_y": 693,
+      "width": 14,
+      "height": 10,
+      "area": 44
+    },
+    {
+      "id": 453,
+      "filename": "453_nature_caves_asset.png",
+      "original_x": 1134,
+      "original_y": 692,
+      "width": 6,
+      "height": 14,
+      "area": 52
+    },
+    {
+      "id": 454,
+      "filename": "454_nature_caves_asset.png",
+      "original_x": 1143,
+      "original_y": 699,
+      "width": 8,
+      "height": 11,
+      "area": 44
+    },
+    {
+      "id": 455,
+      "filename": "455_nature_caves_asset.png",
+      "original_x": 1163,
+      "original_y": 681,
+      "width": 11,
+      "height": 52,
+      "area": 237
+    },
+    {
+      "id": 456,
+      "filename": "456_nature_caves_asset.png",
+      "original_x": 1177,
+      "original_y": 666,
+      "width": 17,
+      "height": 44,
+      "area": 195
+    },
+    {
+      "id": 457,
+      "filename": "457_nature_caves_asset.png",
+      "original_x": 1201,
+      "original_y": 692,
+      "width": 10,
+      "height": 37,
+      "area": 153
+    },
+    {
+      "id": 458,
+      "filename": "458_nature_caves_asset.png",
+      "original_x": 1212,
+      "original_y": 676,
+      "width": 21,
+      "height": 20,
+      "area": 165
+    },
+    {
+      "id": 459,
+      "filename": "459_nature_caves_asset.png",
+      "original_x": 1341,
+      "original_y": 696,
+      "width": 14,
+      "height": 27,
+      "area": 202
+    },
+    {
+      "id": 460,
+      "filename": "460_nature_caves_asset.png",
+      "original_x": 1365,
+      "original_y": 669,
+      "width": 16,
+      "height": 10,
+      "area": 73
+    },
+    {
+      "id": 461,
+      "filename": "461_nature_caves_asset.png",
+      "original_x": 1409,
+      "original_y": 682,
+      "width": 22,
+      "height": 27,
+      "area": 219
+    },
+    {
+      "id": 462,
+      "filename": "462_nature_caves_asset.png",
+      "original_x": 1480,
+      "original_y": 686,
+      "width": 17,
+      "height": 25,
+      "area": 209
+    },
+    {
+      "id": 463,
+      "filename": "463_traps_hazards_asset.png",
+      "original_x": 24,
+      "original_y": 732,
+      "width": 90,
+      "height": 66,
+      "area": 3253
+    },
+    {
+      "id": 464,
+      "filename": "464_traps_hazards_asset.png",
+      "original_x": 132,
+      "original_y": 726,
+      "width": 93,
+      "height": 73,
+      "area": 1490
+    },
+    {
+      "id": 465,
+      "filename": "465_traps_hazards_asset.png",
+      "original_x": 152,
+      "original_y": 722,
+      "width": 17,
+      "height": 28,
+      "area": 100
+    },
+    {
+      "id": 466,
+      "filename": "466_traps_hazards_asset.png",
+      "original_x": 184,
+      "original_y": 722,
+      "width": 6,
+      "height": 21,
+      "area": 58
+    },
+    {
+      "id": 467,
+      "filename": "467_traps_hazards_asset.png",
+      "original_x": 204,
+      "original_y": 737,
+      "width": 21,
+      "height": 47,
+      "area": 363
+    },
+    {
+      "id": 468,
+      "filename": "468_traps_hazards_asset.png",
+      "original_x": 207,
+      "original_y": 723,
+      "width": 7,
+      "height": 31,
+      "area": 96
+    },
+    {
+      "id": 469,
+      "filename": "469_traps_hazards_asset.png",
+      "original_x": 267,
+      "original_y": 736,
+      "width": 21,
+      "height": 16,
+      "area": 157
+    },
+    {
+      "id": 470,
+      "filename": "470_traps_hazards_asset.png",
+      "original_x": 424,
+      "original_y": 709,
+      "width": 13,
+      "height": 17,
+      "area": 77
+    },
+    {
+      "id": 471,
+      "filename": "471_traps_hazards_asset.png",
+      "original_x": 540,
+      "original_y": 712,
+      "width": 10,
+      "height": 23,
+      "area": 86
+    },
+    {
+      "id": 472,
+      "filename": "472_traps_hazards_asset.png",
+      "original_x": 541,
+      "original_y": 740,
+      "width": 6,
+      "height": 24,
+      "area": 74
+    },
+    {
+      "id": 473,
+      "filename": "473_treasure_rewards_asset.png",
+      "original_x": 553,
+      "original_y": 728,
+      "width": 11,
+      "height": 23,
+      "area": 49
+    },
+    {
+      "id": 474,
+      "filename": "474_treasure_rewards_asset.png",
+      "original_x": 557,
+      "original_y": 702,
+      "width": 7,
+      "height": 19,
+      "area": 95
+    },
+    {
+      "id": 475,
+      "filename": "475_treasure_rewards_asset.png",
+      "original_x": 675,
+      "original_y": 730,
+      "width": 32,
+      "height": 24,
+      "area": 421
+    },
+    {
+      "id": 476,
+      "filename": "476_treasure_rewards_asset.png",
+      "original_x": 765,
+      "original_y": 738,
+      "width": 29,
+      "height": 50,
+      "area": 816
+    },
+    {
+      "id": 477,
+      "filename": "477_treasure_rewards_asset.png",
+      "original_x": 815,
+      "original_y": 730,
+      "width": 23,
+      "height": 31,
+      "area": 301
+    },
+    {
+      "id": 478,
+      "filename": "478_treasure_rewards_asset.png",
+      "original_x": 898,
+      "original_y": 734,
+      "width": 41,
+      "height": 57,
+      "area": 1183
+    },
+    {
+      "id": 479,
+      "filename": "479_treasure_rewards_asset.png",
+      "original_x": 954,
+      "original_y": 739,
+      "width": 34,
+      "height": 55,
+      "area": 680
+    },
+    {
+      "id": 480,
+      "filename": "480_nature_caves_asset.png",
+      "original_x": 1054,
+      "original_y": 740,
+      "width": 42,
+      "height": 52,
+      "area": 1408
+    },
+    {
+      "id": 481,
+      "filename": "481_nature_caves_asset.png",
+      "original_x": 1133,
+      "original_y": 726,
+      "width": 26,
+      "height": 20,
+      "area": 190
+    },
+    {
+      "id": 482,
+      "filename": "482_nature_caves_asset.png",
+      "original_x": 1140,
+      "original_y": 713,
+      "width": 10,
+      "height": 11,
+      "area": 47
+    },
+    {
+      "id": 483,
+      "filename": "483_nature_caves_asset.png",
+      "original_x": 1158,
+      "original_y": 730,
+      "width": 10,
+      "height": 14,
+      "area": 65
+    },
+    {
+      "id": 484,
+      "filename": "484_nature_caves_asset.png",
+      "original_x": 1196,
+      "original_y": 730,
+      "width": 8,
+      "height": 13,
+      "area": 41
+    },
+    {
+      "id": 485,
+      "filename": "485_nature_caves_asset.png",
+      "original_x": 1204,
+      "original_y": 730,
+      "width": 10,
+      "height": 14,
+      "area": 50
+    },
+    {
+      "id": 486,
+      "filename": "486_nature_caves_asset.png",
+      "original_x": 1375,
+      "original_y": 721,
+      "width": 33,
+      "height": 35,
+      "area": 264
+    },
+    {
+      "id": 487,
+      "filename": "487_nature_caves_asset.png",
+      "original_x": 1442,
+      "original_y": 722,
+      "width": 27,
+      "height": 27,
+      "area": 351
+    },
+    {
+      "id": 488,
+      "filename": "488_nature_caves_asset.png",
+      "original_x": 1469,
+      "original_y": 734,
+      "width": 18,
+      "height": 14,
+      "area": 81
+    },
+    {
+      "id": 489,
+      "filename": "489_nature_caves_asset.png",
+      "original_x": 1472,
+      "original_y": 725,
+      "width": 6,
+      "height": 10,
+      "area": 37
+    },
+    {
+      "id": 490,
+      "filename": "490_nature_caves_asset.png",
+      "original_x": 1495,
+      "original_y": 718,
+      "width": 15,
+      "height": 16,
+      "area": 108
+    },
+    {
+      "id": 491,
+      "filename": "491_traps_hazards_asset.png",
+      "original_x": 179,
+      "original_y": 773,
+      "width": 19,
+      "height": 16,
+      "area": 123
+    },
+    {
+      "id": 492,
+      "filename": "492_section_header_traps_hazards.png",
+      "original_x": 257,
+      "original_y": 755,
+      "width": 117,
+      "height": 39,
+      "area": 1621
+    },
+    {
+      "id": 493,
+      "filename": "493_traps_hazards_asset.png",
+      "original_x": 411,
+      "original_y": 762,
+      "width": 26,
+      "height": 14,
+      "area": 89
+    },
+    {
+      "id": 494,
+      "filename": "494_traps_hazards_asset.png",
+      "original_x": 414,
+      "original_y": 749,
+      "width": 17,
+      "height": 12,
+      "area": 69
+    },
+    {
+      "id": 495,
+      "filename": "495_traps_hazards_asset.png",
+      "original_x": 433,
+      "original_y": 749,
+      "width": 31,
+      "height": 19,
+      "area": 127
+    },
+    {
+      "id": 496,
+      "filename": "496_traps_hazards_asset.png",
+      "original_x": 484,
+      "original_y": 762,
+      "width": 31,
+      "height": 14,
+      "area": 115
+    },
+    {
+      "id": 497,
+      "filename": "497_traps_hazards_asset.png",
+      "original_x": 490,
+      "original_y": 749,
+      "width": 16,
+      "height": 10,
+      "area": 51
+    },
+    {
+      "id": 498,
+      "filename": "498_traps_hazards_asset.png",
+      "original_x": 500,
+      "original_y": 778,
+      "width": 10,
+      "height": 19,
+      "area": 54
+    },
+    {
+      "id": 499,
+      "filename": "499_treasure_rewards_asset.png",
+      "original_x": 552,
+      "original_y": 762,
+      "width": 94,
+      "height": 38,
+      "area": 2154
+    },
+    {
+      "id": 500,
+      "filename": "500_treasure_rewards_asset.png",
+      "original_x": 626,
+      "original_y": 753,
+      "width": 14,
+      "height": 17,
+      "area": 72
+    },
+    {
+      "id": 501,
+      "filename": "501_treasure_rewards_asset.png",
+      "original_x": 686,
+      "original_y": 765,
+      "width": 22,
+      "height": 16,
+      "area": 264
+    },
+    {
+      "id": 502,
+      "filename": "502_treasure_rewards_asset.png",
+      "original_x": 708,
+      "original_y": 742,
+      "width": 11,
+      "height": 7,
+      "area": 38
+    },
+    {
+      "id": 503,
+      "filename": "503_treasure_rewards_asset.png",
+      "original_x": 734,
+      "original_y": 749,
+      "width": 21,
+      "height": 32,
+      "area": 228
+    },
+    {
+      "id": 504,
+      "filename": "504_treasure_rewards_asset.png",
+      "original_x": 806,
+      "original_y": 766,
+      "width": 19,
+      "height": 26,
+      "area": 244
+    },
+    {
+      "id": 505,
+      "filename": "505_treasure_rewards_asset.png",
+      "original_x": 848,
+      "original_y": 750,
+      "width": 35,
+      "height": 38,
+      "area": 869
+    },
+    {
+      "id": 506,
+      "filename": "506_treasure_rewards_asset.png",
+      "original_x": 1000,
+      "original_y": 746,
+      "width": 40,
+      "height": 36,
+      "area": 708
+    },
+    {
+      "id": 507,
+      "filename": "507_nature_caves_asset.png",
+      "original_x": 1125,
+      "original_y": 767,
+      "width": 32,
+      "height": 26,
+      "area": 272
+    },
+    {
+      "id": 508,
+      "filename": "508_nature_caves_asset.png",
+      "original_x": 1142,
+      "original_y": 774,
+      "width": 22,
+      "height": 23,
+      "area": 135
+    },
+    {
+      "id": 509,
+      "filename": "509_nature_caves_asset.png",
+      "original_x": 1170,
+      "original_y": 768,
+      "width": 10,
+      "height": 13,
+      "area": 65
+    },
+    {
+      "id": 510,
+      "filename": "510_nature_caves_asset.png",
+      "original_x": 1184,
+      "original_y": 759,
+      "width": 16,
+      "height": 20,
+      "area": 170
+    },
+    {
+      "id": 511,
+      "filename": "511_nature_caves_asset.png",
+      "original_x": 1207,
+      "original_y": 759,
+      "width": 12,
+      "height": 16,
+      "area": 87
+    },
+    {
+      "id": 512,
+      "filename": "512_nature_caves_asset.png",
+      "original_x": 1208,
+      "original_y": 779,
+      "width": 12,
+      "height": 18,
+      "area": 86
+    },
+    {
+      "id": 513,
+      "filename": "513_nature_caves_asset.png",
+      "original_x": 1244,
+      "original_y": 764,
+      "width": 17,
+      "height": 17,
+      "area": 159
+    },
+    {
+      "id": 514,
+      "filename": "514_nature_caves_asset.png",
+      "original_x": 1257,
+      "original_y": 745,
+      "width": 33,
+      "height": 25,
+      "area": 446
+    },
+    {
+      "id": 515,
+      "filename": "515_nature_caves_asset.png",
+      "original_x": 1265,
+      "original_y": 771,
+      "width": 10,
+      "height": 13,
+      "area": 87
+    },
+    {
+      "id": 516,
+      "filename": "516_nature_caves_asset.png",
+      "original_x": 1285,
+      "original_y": 768,
+      "width": 15,
+      "height": 9,
+      "area": 70
+    },
+    {
+      "id": 517,
+      "filename": "517_nature_caves_asset.png",
+      "original_x": 1313,
+      "original_y": 774,
+      "width": 14,
+      "height": 21,
+      "area": 87
+    },
+    {
+      "id": 518,
+      "filename": "518_nature_caves_asset.png",
+      "original_x": 1318,
+      "original_y": 758,
+      "width": 27,
+      "height": 19,
+      "area": 202
+    },
+    {
+      "id": 519,
+      "filename": "519_nature_caves_asset.png",
+      "original_x": 1360,
+      "original_y": 750,
+      "width": 18,
+      "height": 11,
+      "area": 111
+    },
+    {
+      "id": 520,
+      "filename": "520_nature_caves_asset.png",
+      "original_x": 1368,
+      "original_y": 762,
+      "width": 12,
+      "height": 10,
+      "area": 43
+    },
+    {
+      "id": 521,
+      "filename": "521_nature_caves_asset.png",
+      "original_x": 1381,
+      "original_y": 764,
+      "width": 23,
+      "height": 15,
+      "area": 133
+    },
+    {
+      "id": 522,
+      "filename": "522_nature_caves_asset.png",
+      "original_x": 1410,
+      "original_y": 759,
+      "width": 16,
+      "height": 14,
+      "area": 41
+    },
+    {
+      "id": 523,
+      "filename": "523_nature_caves_asset.png",
+      "original_x": 1449,
+      "original_y": 777,
+      "width": 10,
+      "height": 10,
+      "area": 41
+    },
+    {
+      "id": 524,
+      "filename": "524_nature_caves_asset.png",
+      "original_x": 1460,
+      "original_y": 754,
+      "width": 11,
+      "height": 20,
+      "area": 149
+    },
+    {
+      "id": 525,
+      "filename": "525_nature_caves_asset.png",
+      "original_x": 1472,
+      "original_y": 772,
+      "width": 13,
+      "height": 15,
+      "area": 93
+    },
+    {
+      "id": 526,
+      "filename": "526_nature_caves_asset.png",
+      "original_x": 1477,
+      "original_y": 778,
+      "width": 18,
+      "height": 14,
+      "area": 99
+    },
+    {
+      "id": 527,
+      "filename": "527_special_elements_asset.png",
+      "original_x": 19,
+      "original_y": 816,
+      "width": 12,
+      "height": 19,
+      "area": 67
+    },
+    {
+      "id": 528,
+      "filename": "528_special_elements_asset.png",
+      "original_x": 441,
+      "original_y": 792,
+      "width": 26,
+      "height": 5,
+      "area": 63
+    },
+    {
+      "id": 529,
+      "filename": "529_special_elements_asset.png",
+      "original_x": 453,
+      "original_y": 781,
+      "width": 11,
+      "height": 8,
+      "area": 45
+    },
+    {
+      "id": 530,
+      "filename": "530_special_elements_asset.png",
+      "original_x": 484,
+      "original_y": 785,
+      "width": 13,
+      "height": 9,
+      "area": 44
+    },
+    {
+      "id": 531,
+      "filename": "531_miscellaneous_asset.png",
+      "original_x": 531,
+      "original_y": 781,
+      "width": 18,
+      "height": 17,
+      "area": 78
+    },
+    {
+      "id": 532,
+      "filename": "532_ground_details_asset.png",
+      "original_x": 1177,
+      "original_y": 784,
+      "width": 17,
+      "height": 9,
+      "area": 68
+    },
+    {
+      "id": 533,
+      "filename": "533_ground_details_asset.png",
+      "original_x": 1251,
+      "original_y": 784,
+      "width": 27,
+      "height": 9,
+      "area": 92
+    },
+    {
+      "id": 534,
+      "filename": "534_ground_details_asset.png",
+      "original_x": 1329,
+      "original_y": 783,
+      "width": 14,
+      "height": 15,
+      "area": 97
+    },
+    {
+      "id": 535,
+      "filename": "535_ground_details_asset.png",
+      "original_x": 1375,
+      "original_y": 780,
+      "width": 11,
+      "height": 13,
+      "area": 86
+    },
+    {
+      "id": 536,
+      "filename": "536_special_elements_asset.png",
+      "original_x": 19,
+      "original_y": 859,
+      "width": 130,
+      "height": 126,
+      "area": 1264
+    },
+    {
+      "id": 537,
+      "filename": "537_special_elements_asset.png",
+      "original_x": 34,
+      "original_y": 822,
+      "width": 63,
+      "height": 19,
+      "area": 526
+    },
+    {
+      "id": 538,
+      "filename": "538_special_elements_asset.png",
+      "original_x": 104,
+      "original_y": 822,
+      "width": 65,
+      "height": 15,
+      "area": 510
+    },
+    {
+      "id": 539,
+      "filename": "539_special_elements_asset.png",
+      "original_x": 170,
+      "original_y": 823,
+      "width": 16,
+      "height": 14,
+      "area": 115
+    },
+    {
+      "id": 540,
+      "filename": "540_special_elements_asset.png",
+      "original_x": 187,
+      "original_y": 845,
+      "width": 62,
+      "height": 110,
+      "area": 2579
+    },
+    {
+      "id": 541,
+      "filename": "541_special_elements_asset.png",
+      "original_x": 194,
+      "original_y": 823,
+      "width": 8,
+      "height": 12,
+      "area": 50
+    },
+    {
+      "id": 542,
+      "filename": "542_special_elements_asset.png",
+      "original_x": 277,
+      "original_y": 848,
+      "width": 41,
+      "height": 28,
+      "area": 489
+    },
+    {
+      "id": 543,
+      "filename": "543_special_elements_asset.png",
+      "original_x": 337,
+      "original_y": 844,
+      "width": 52,
+      "height": 22,
+      "area": 806
+    },
+    {
+      "id": 544,
+      "filename": "544_special_elements_asset.png",
+      "original_x": 415,
+      "original_y": 835,
+      "width": 67,
+      "height": 28,
+      "area": 291
+    },
+    {
+      "id": 545,
+      "filename": "545_miscellaneous_asset.png",
+      "original_x": 545,
+      "original_y": 828,
+      "width": 8,
+      "height": 11,
+      "area": 40
+    },
+    {
+      "id": 546,
+      "filename": "546_section_header_miscellaneous.png",
+      "original_x": 560,
+      "original_y": 826,
+      "width": 122,
+      "height": 15,
+      "area": 987
+    },
+    {
+      "id": 547,
+      "filename": "547_miscellaneous_asset.png",
+      "original_x": 744,
+      "original_y": 855,
+      "width": 46,
+      "height": 62,
+      "area": 813
+    },
+    {
+      "id": 548,
+      "filename": "548_miscellaneous_asset.png",
+      "original_x": 815,
+      "original_y": 858,
+      "width": 41,
+      "height": 59,
+      "area": 809
+    },
+    {
+      "id": 549,
+      "filename": "549_miscellaneous_asset.png",
+      "original_x": 880,
+      "original_y": 857,
+      "width": 22,
+      "height": 23,
+      "area": 155
+    },
+    {
+      "id": 550,
+      "filename": "550_miscellaneous_asset.png",
+      "original_x": 903,
+      "original_y": 857,
+      "width": 64,
+      "height": 42,
+      "area": 498
+    },
+    {
+      "id": 551,
+      "filename": "551_miscellaneous_asset.png",
+      "original_x": 992,
+      "original_y": 848,
+      "width": 66,
+      "height": 138,
+      "area": 1755
+    },
+    {
+      "id": 552,
+      "filename": "552_miscellaneous_asset.png",
+      "original_x": 1010,
+      "original_y": 836,
+      "width": 15,
+      "height": 12,
+      "area": 40
+    },
+    {
+      "id": 553,
+      "filename": "553_miscellaneous_asset.png",
+      "original_x": 1026,
+      "original_y": 838,
+      "width": 17,
+      "height": 10,
+      "area": 45
+    },
+    {
+      "id": 554,
+      "filename": "554_section_header_miscellaneous.png",
+      "original_x": 1091,
+      "original_y": 833,
+      "width": 104,
+      "height": 21,
+      "area": 855
+    },
+    {
+      "id": 555,
+      "filename": "555_ground_details_asset.png",
+      "original_x": 1239,
+      "original_y": 825,
+      "width": 65,
+      "height": 16,
+      "area": 491
+    },
+    {
+      "id": 556,
+      "filename": "556_ground_details_asset.png",
+      "original_x": 1311,
+      "original_y": 826,
+      "width": 61,
+      "height": 15,
+      "area": 535
+    },
+    {
+      "id": 557,
+      "filename": "557_ground_details_asset.png",
+      "original_x": 1376,
+      "original_y": 821,
+      "width": 10,
+      "height": 18,
+      "area": 36
+    },
+    {
+      "id": 558,
+      "filename": "558_ground_details_asset.png",
+      "original_x": 1400,
+      "original_y": 850,
+      "width": 20,
+      "height": 12,
+      "area": 155
+    },
+    {
+      "id": 559,
+      "filename": "559_ground_details_asset.png",
+      "original_x": 1443,
+      "original_y": 855,
+      "width": 73,
+      "height": 17,
+      "area": 478
+    },
+    {
+      "id": 560,
+      "filename": "560_ground_details_asset.png",
+      "original_x": 1456,
+      "original_y": 847,
+      "width": 61,
+      "height": 8,
+      "area": 174
+    },
+    {
+      "id": 561,
+      "filename": "561_special_elements_asset.png",
+      "original_x": 32,
+      "original_y": 872,
+      "width": 102,
+      "height": 101,
+      "area": 3281
+    },
+    {
+      "id": 562,
+      "filename": "562_special_elements_asset.png",
+      "original_x": 283,
+      "original_y": 879,
+      "width": 25,
+      "height": 72,
+      "area": 988
+    },
+    {
+      "id": 563,
+      "filename": "563_special_elements_asset.png",
+      "original_x": 343,
+      "original_y": 872,
+      "width": 40,
+      "height": 99,
+      "area": 2001
+    },
+    {
+      "id": 564,
+      "filename": "564_special_elements_asset.png",
+      "original_x": 421,
+      "original_y": 882,
+      "width": 35,
+      "height": 50,
+      "area": 738
+    },
+    {
+      "id": 565,
+      "filename": "565_special_elements_asset.png",
+      "original_x": 472,
+      "original_y": 883,
+      "width": 47,
+      "height": 76,
+      "area": 2075
+    },
+    {
+      "id": 566,
+      "filename": "566_miscellaneous_asset.png",
+      "original_x": 550,
+      "original_y": 865,
+      "width": 24,
+      "height": 38,
+      "area": 191
+    },
+    {
+      "id": 567,
+      "filename": "567_miscellaneous_asset.png",
+      "original_x": 577,
+      "original_y": 869,
+      "width": 21,
+      "height": 25,
+      "area": 118
+    },
+    {
+      "id": 568,
+      "filename": "568_miscellaneous_asset.png",
+      "original_x": 608,
+      "original_y": 865,
+      "width": 25,
+      "height": 31,
+      "area": 379
+    },
+    {
+      "id": 569,
+      "filename": "569_miscellaneous_asset.png",
+      "original_x": 662,
+      "original_y": 868,
+      "width": 10,
+      "height": 21,
+      "area": 58
+    },
+    {
+      "id": 570,
+      "filename": "570_miscellaneous_asset.png",
+      "original_x": 671,
+      "original_y": 867,
+      "width": 30,
+      "height": 51,
+      "area": 365
+    },
+    {
+      "id": 571,
+      "filename": "571_miscellaneous_asset.png",
+      "original_x": 697,
+      "original_y": 866,
+      "width": 24,
+      "height": 51,
+      "area": 303
+    },
+    {
+      "id": 572,
+      "filename": "572_miscellaneous_asset.png",
+      "original_x": 881,
+      "original_y": 885,
+      "width": 84,
+      "height": 35,
+      "area": 657
+    },
+    {
+      "id": 573,
+      "filename": "573_miscellaneous_asset.png",
+      "original_x": 1037,
+      "original_y": 899,
+      "width": 17,
+      "height": 34,
+      "area": 133
+    },
+    {
+      "id": 574,
+      "filename": "574_miscellaneous_asset.png",
+      "original_x": 1098,
+      "original_y": 864,
+      "width": 16,
+      "height": 33,
+      "area": 209
+    },
+    {
+      "id": 575,
+      "filename": "575_miscellaneous_asset.png",
+      "original_x": 1099,
+      "original_y": 896,
+      "width": 5,
+      "height": 28,
+      "area": 85
+    },
+    {
+      "id": 576,
+      "filename": "576_ground_details_asset.png",
+      "original_x": 1105,
+      "original_y": 896,
+      "width": 13,
+      "height": 31,
+      "area": 188
+    },
+    {
+      "id": 577,
+      "filename": "577_ground_details_asset.png",
+      "original_x": 1147,
+      "original_y": 900,
+      "width": 33,
+      "height": 32,
+      "area": 254
+    },
+    {
+      "id": 578,
+      "filename": "578_ground_details_asset.png",
+      "original_x": 1180,
+      "original_y": 860,
+      "width": 13,
+      "height": 20,
+      "area": 108
+    },
+    {
+      "id": 579,
+      "filename": "579_ground_details_asset.png",
+      "original_x": 1252,
+      "original_y": 861,
+      "width": 20,
+      "height": 12,
+      "area": 92
+    },
+    {
+      "id": 580,
+      "filename": "580_ground_details_asset.png",
+      "original_x": 1257,
+      "original_y": 891,
+      "width": 15,
+      "height": 11,
+      "area": 69
+    },
+    {
+      "id": 581,
+      "filename": "581_ground_details_asset.png",
+      "original_x": 1292,
+      "original_y": 860,
+      "width": 20,
+      "height": 17,
+      "area": 141
+    },
+    {
+      "id": 582,
+      "filename": "582_ground_details_asset.png",
+      "original_x": 1296,
+      "original_y": 891,
+      "width": 9,
+      "height": 10,
+      "area": 43
+    },
+    {
+      "id": 583,
+      "filename": "583_ground_details_asset.png",
+      "original_x": 1330,
+      "original_y": 891,
+      "width": 21,
+      "height": 14,
+      "area": 168
+    },
+    {
+      "id": 584,
+      "filename": "584_ground_details_asset.png",
+      "original_x": 1443,
+      "original_y": 875,
+      "width": 45,
+      "height": 13,
+      "area": 205
+    },
+    {
+      "id": 585,
+      "filename": "585_ground_details_asset.png",
+      "original_x": 1463,
+      "original_y": 898,
+      "width": 20,
+      "height": 13,
+      "area": 160
+    },
+    {
+      "id": 586,
+      "filename": "586_ground_details_asset.png",
+      "original_x": 1482,
+      "original_y": 896,
+      "width": 35,
+      "height": 30,
+      "area": 487
+    },
+    {
+      "id": 587,
+      "filename": "587_special_elements_asset.png",
+      "original_x": 73,
+      "original_y": 911,
+      "width": 21,
+      "height": 24,
+      "area": 251
+    },
+    {
+      "id": 588,
+      "filename": "588_special_elements_asset.png",
+      "original_x": 166,
+      "original_y": 907,
+      "width": 35,
+      "height": 81,
+      "area": 870
+    },
+    {
+      "id": 589,
+      "filename": "589_special_elements_asset.png",
+      "original_x": 236,
+      "original_y": 908,
+      "width": 20,
+      "height": 47,
+      "area": 373
+    },
+    {
+      "id": 590,
+      "filename": "590_special_elements_asset.png",
+      "original_x": 304,
+      "original_y": 928,
+      "width": 5,
+      "height": 17,
+      "area": 39
+    },
+    {
+      "id": 591,
+      "filename": "591_miscellaneous_asset.png",
+      "original_x": 552,
+      "original_y": 917,
+      "width": 34,
+      "height": 34,
+      "area": 379
+    },
+    {
+      "id": 592,
+      "filename": "592_miscellaneous_asset.png",
+      "original_x": 581,
+      "original_y": 907,
+      "width": 30,
+      "height": 34,
+      "area": 491
+    },
+    {
+      "id": 593,
+      "filename": "593_miscellaneous_asset.png",
+      "original_x": 609,
+      "original_y": 933,
+      "width": 11,
+      "height": 10,
+      "area": 38
+    },
+    {
+      "id": 594,
+      "filename": "594_miscellaneous_asset.png",
+      "original_x": 610,
+      "original_y": 907,
+      "width": 41,
+      "height": 31,
+      "area": 403
+    },
+    {
+      "id": 595,
+      "filename": "595_miscellaneous_asset.png",
+      "original_x": 687,
+      "original_y": 909,
+      "width": 17,
+      "height": 6,
+      "area": 56
+    },
+    {
+      "id": 596,
+      "filename": "596_miscellaneous_asset.png",
+      "original_x": 766,
+      "original_y": 936,
+      "width": 56,
+      "height": 42,
+      "area": 272
+    },
+    {
+      "id": 597,
+      "filename": "597_miscellaneous_asset.png",
+      "original_x": 858,
+      "original_y": 934,
+      "width": 11,
+      "height": 44,
+      "area": 130
+    },
+    {
+      "id": 598,
+      "filename": "598_miscellaneous_asset.png",
+      "original_x": 871,
+      "original_y": 935,
+      "width": 94,
+      "height": 42,
+      "area": 516
+    },
+    {
+      "id": 599,
+      "filename": "599_miscellaneous_asset.png",
+      "original_x": 959,
+      "original_y": 934,
+      "width": 11,
+      "height": 11,
+      "area": 59
+    },
+    {
+      "id": 600,
+      "filename": "600_miscellaneous_asset.png",
+      "original_x": 1050,
+      "original_y": 933,
+      "width": 4,
+      "height": 28,
+      "area": 39
+    },
+    {
+      "id": 601,
+      "filename": "601_miscellaneous_asset.png",
+      "original_x": 1083,
+      "original_y": 932,
+      "width": 46,
+      "height": 44,
+      "area": 328
+    },
+    {
+      "id": 602,
+      "filename": "602_ground_details_asset.png",
+      "original_x": 1146,
+      "original_y": 935,
+      "width": 40,
+      "height": 50,
+      "area": 445
+    },
+    {
+      "id": 603,
+      "filename": "603_ground_details_asset.png",
+      "original_x": 1231,
+      "original_y": 920,
+      "width": 17,
+      "height": 17,
+      "area": 136
+    },
+    {
+      "id": 604,
+      "filename": "604_ground_details_asset.png",
+      "original_x": 1266,
+      "original_y": 925,
+      "width": 15,
+      "height": 11,
+      "area": 40
+    },
+    {
+      "id": 605,
+      "filename": "605_ground_details_asset.png",
+      "original_x": 1335,
+      "original_y": 915,
+      "width": 25,
+      "height": 17,
+      "area": 191
+    },
+    {
+      "id": 606,
+      "filename": "606_special_elements_asset.png",
+      "original_x": 202,
+      "original_y": 974,
+      "width": 28,
+      "height": 13,
+      "area": 123
+    },
+    {
+      "id": 607,
+      "filename": "607_special_elements_asset.png",
+      "original_x": 230,
+      "original_y": 962,
+      "width": 25,
+      "height": 21,
+      "area": 143
+    },
+    {
+      "id": 608,
+      "filename": "608_special_elements_asset.png",
+      "original_x": 232,
+      "original_y": 940,
+      "width": 9,
+      "height": 25,
+      "area": 94
+    },
+    {
+      "id": 609,
+      "filename": "609_special_elements_asset.png",
+      "original_x": 281,
+      "original_y": 952,
+      "width": 28,
+      "height": 30,
+      "area": 178
+    },
+    {
+      "id": 610,
+      "filename": "610_special_elements_asset.png",
+      "original_x": 337,
+      "original_y": 962,
+      "width": 37,
+      "height": 24,
+      "area": 257
+    },
+    {
+      "id": 611,
+      "filename": "611_special_elements_asset.png",
+      "original_x": 370,
+      "original_y": 941,
+      "width": 12,
+      "height": 11,
+      "area": 50
+    },
+    {
+      "id": 612,
+      "filename": "612_special_elements_asset.png",
+      "original_x": 468,
+      "original_y": 965,
+      "width": 38,
+      "height": 26,
+      "area": 305
+    },
+    {
+      "id": 613,
+      "filename": "613_miscellaneous_asset.png",
+      "original_x": 559,
+      "original_y": 963,
+      "width": 38,
+      "height": 25,
+      "area": 171
+    },
+    {
+      "id": 614,
+      "filename": "614_miscellaneous_asset.png",
+      "original_x": 596,
+      "original_y": 949,
+      "width": 35,
+      "height": 21,
+      "area": 164
+    },
+    {
+      "id": 615,
+      "filename": "615_miscellaneous_asset.png",
+      "original_x": 641,
+      "original_y": 941,
+      "width": 30,
+      "height": 40,
+      "area": 222
+    },
+    {
+      "id": 616,
+      "filename": "616_miscellaneous_asset.png",
+      "original_x": 689,
+      "original_y": 943,
+      "width": 37,
+      "height": 45,
+      "area": 617
+    },
+    {
+      "id": 617,
+      "filename": "617_miscellaneous_asset.png",
+      "original_x": 754,
+      "original_y": 963,
+      "width": 15,
+      "height": 20,
+      "area": 76
+    },
+    {
+      "id": 618,
+      "filename": "618_miscellaneous_asset.png",
+      "original_x": 782,
+      "original_y": 945,
+      "width": 34,
+      "height": 27,
+      "area": 168
+    },
+    {
+      "id": 619,
+      "filename": "619_miscellaneous_asset.png",
+      "original_x": 797,
+      "original_y": 976,
+      "width": 22,
+      "height": 16,
+      "area": 57
+    },
+    {
+      "id": 620,
+      "filename": "620_miscellaneous_asset.png",
+      "original_x": 813,
+      "original_y": 953,
+      "width": 16,
+      "height": 18,
+      "area": 68
+    },
+    {
+      "id": 621,
+      "filename": "621_miscellaneous_asset.png",
+      "original_x": 872,
+      "original_y": 948,
+      "width": 20,
+      "height": 17,
+      "area": 92
+    },
+    {
+      "id": 622,
+      "filename": "622_ground_details_asset.png",
+      "original_x": 1230,
+      "original_y": 971,
+      "width": 10,
+      "height": 10,
+      "area": 48
+    },
+    {
+      "id": 623,
+      "filename": "623_ground_details_asset.png",
+      "original_x": 1237,
+      "original_y": 958,
+      "width": 20,
+      "height": 13,
+      "area": 66
+    },
+    {
+      "id": 624,
+      "filename": "624_ground_details_asset.png",
+      "original_x": 1364,
+      "original_y": 957,
+      "width": 32,
+      "height": 30,
+      "area": 277
+    },
+    {
+      "id": 625,
+      "filename": "625_ground_details_asset.png",
+      "original_x": 1398,
+      "original_y": 951,
+      "width": 36,
+      "height": 36,
+      "area": 358
+    },
+    {
+      "id": 626,
+      "filename": "626_ground_details_asset.png",
+      "original_x": 1451,
+      "original_y": 943,
+      "width": 16,
+      "height": 23,
+      "area": 94
+    },
+    {
+      "id": 627,
+      "filename": "627_ground_details_asset.png",
+      "original_x": 1454,
+      "original_y": 970,
+      "width": 24,
+      "height": 22,
+      "area": 187
+    },
+    {
+      "id": 628,
+      "filename": "628_ground_details_asset.png",
+      "original_x": 1476,
+      "original_y": 940,
+      "width": 21,
+      "height": 23,
+      "area": 109
+    },
+    {
+      "id": 629,
+      "filename": "629_ground_details_asset.png",
+      "original_x": 1489,
+      "original_y": 959,
+      "width": 11,
+      "height": 9,
+      "area": 42
+    }
+  ]
+}

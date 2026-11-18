@@ -1,0 +1,1690 @@
+{
+  "source_image": "Fantasy RPG NPC Sprite Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_label_guards.png",
+      "original_x": 138,
+      "original_y": 19,
+      "width": 116,
+      "height": 39,
+      "area": 4140
+    },
+    {
+      "id": 2,
+      "filename": "002_label_knights.png",
+      "original_x": 653,
+      "original_y": 19,
+      "width": 182,
+      "height": 39,
+      "area": 6488
+    },
+    {
+      "id": 3,
+      "filename": "003_label_knights.png",
+      "original_x": 1230,
+      "original_y": 19,
+      "width": 116,
+      "height": 39,
+      "area": 4089
+    },
+    {
+      "id": 4,
+      "filename": "004_npc_gate_guards.png",
+      "original_x": 335,
+      "original_y": 58,
+      "width": 76,
+      "height": 151,
+      "area": 5546
+    },
+    {
+      "id": 5,
+      "filename": "005_npc_gate_guards.png",
+      "original_x": 404,
+      "original_y": 58,
+      "width": 27,
+      "height": 151,
+      "area": 1584
+    },
+    {
+      "id": 6,
+      "filename": "006_npc_gate_guards.png",
+      "original_x": 433,
+      "original_y": 51,
+      "width": 64,
+      "height": 166,
+      "area": 6386
+    },
+    {
+      "id": 7,
+      "filename": "007_npc_gate_guards.png",
+      "original_x": 524,
+      "original_y": 51,
+      "width": 433,
+      "height": 177,
+      "area": 44094
+    },
+    {
+      "id": 8,
+      "filename": "008_npc_knights.png",
+      "original_x": 967,
+      "original_y": 55,
+      "width": 61,
+      "height": 144,
+      "area": 5384
+    },
+    {
+      "id": 9,
+      "filename": "009_npc_knights.png",
+      "original_x": 1139,
+      "original_y": 69,
+      "width": 44,
+      "height": 73,
+      "area": 2187
+    },
+    {
+      "id": 10,
+      "filename": "010_npc_knights.png",
+      "original_x": 1201,
+      "original_y": 70,
+      "width": 41,
+      "height": 73,
+      "area": 2033
+    },
+    {
+      "id": 11,
+      "filename": "011_npc_knights.png",
+      "original_x": 1374,
+      "original_y": 70,
+      "width": 40,
+      "height": 73,
+      "area": 2010
+    },
+    {
+      "id": 12,
+      "filename": "012_npc_knights.png",
+      "original_x": 1427,
+      "original_y": 62,
+      "width": 87,
+      "height": 149,
+      "area": 6962
+    },
+    {
+      "id": 13,
+      "filename": "013_npc_guards.png",
+      "original_x": 29,
+      "original_y": 73,
+      "width": 53,
+      "height": 71,
+      "area": 2169
+    },
+    {
+      "id": 14,
+      "filename": "014_npc_guards.png",
+      "original_x": 102,
+      "original_y": 73,
+      "width": 36,
+      "height": 70,
+      "area": 1872
+    },
+    {
+      "id": 15,
+      "filename": "015_npc_guards.png",
+      "original_x": 155,
+      "original_y": 73,
+      "width": 35,
+      "height": 70,
+      "area": 1805
+    },
+    {
+      "id": 16,
+      "filename": "016_npc_guards.png",
+      "original_x": 209,
+      "original_y": 73,
+      "width": 40,
+      "height": 69,
+      "area": 1833
+    },
+    {
+      "id": 17,
+      "filename": "017_npc_gate_guards.png",
+      "original_x": 269,
+      "original_y": 74,
+      "width": 38,
+      "height": 68,
+      "area": 1873
+    },
+    {
+      "id": 18,
+      "filename": "018_npc_knights.png",
+      "original_x": 1042,
+      "original_y": 87,
+      "width": 72,
+      "height": 130,
+      "area": 6369
+    },
+    {
+      "id": 19,
+      "filename": "019_npc_knights.png",
+      "original_x": 1261,
+      "original_y": 78,
+      "width": 37,
+      "height": 63,
+      "area": 1790
+    },
+    {
+      "id": 20,
+      "filename": "020_npc_knights.png",
+      "original_x": 1320,
+      "original_y": 72,
+      "width": 35,
+      "height": 71,
+      "area": 1836
+    },
+    {
+      "id": 21,
+      "filename": "021_npc_guards.png",
+      "original_x": 32,
+      "original_y": 157,
+      "width": 48,
+      "height": 68,
+      "area": 2060
+    },
+    {
+      "id": 22,
+      "filename": "022_npc_guards.png",
+      "original_x": 102,
+      "original_y": 157,
+      "width": 36,
+      "height": 67,
+      "area": 1795
+    },
+    {
+      "id": 23,
+      "filename": "023_npc_guards.png",
+      "original_x": 154,
+      "original_y": 157,
+      "width": 38,
+      "height": 67,
+      "area": 1832
+    },
+    {
+      "id": 24,
+      "filename": "024_npc_gate_guards.png",
+      "original_x": 213,
+      "original_y": 157,
+      "width": 34,
+      "height": 67,
+      "area": 1855
+    },
+    {
+      "id": 25,
+      "filename": "025_npc_gate_guards.png",
+      "original_x": 269,
+      "original_y": 156,
+      "width": 37,
+      "height": 67,
+      "area": 1814
+    },
+    {
+      "id": 26,
+      "filename": "026_npc_knights.png",
+      "original_x": 1139,
+      "original_y": 154,
+      "width": 44,
+      "height": 69,
+      "area": 2028
+    },
+    {
+      "id": 27,
+      "filename": "027_npc_knights.png",
+      "original_x": 1201,
+      "original_y": 154,
+      "width": 42,
+      "height": 69,
+      "area": 1925
+    },
+    {
+      "id": 28,
+      "filename": "028_npc_knights.png",
+      "original_x": 1263,
+      "original_y": 155,
+      "width": 36,
+      "height": 68,
+      "area": 1795
+    },
+    {
+      "id": 29,
+      "filename": "029_npc_knights.png",
+      "original_x": 1319,
+      "original_y": 154,
+      "width": 36,
+      "height": 70,
+      "area": 1814
+    },
+    {
+      "id": 30,
+      "filename": "030_npc_knights.png",
+      "original_x": 1374,
+      "original_y": 154,
+      "width": 42,
+      "height": 70,
+      "area": 1904
+    },
+    {
+      "id": 31,
+      "filename": "031_label_royal_guards.png",
+      "original_x": 108,
+      "original_y": 248,
+      "width": 160,
+      "height": 36,
+      "area": 5254
+    },
+    {
+      "id": 32,
+      "filename": "032_label_priest.png",
+      "original_x": 539,
+      "original_y": 249,
+      "width": 94,
+      "height": 36,
+      "area": 3044
+    },
+    {
+      "id": 33,
+      "filename": "033_label_villager.png",
+      "original_x": 930,
+      "original_y": 249,
+      "width": 164,
+      "height": 36,
+      "area": 5444
+    },
+    {
+      "id": 34,
+      "filename": "034_label_villager.png",
+      "original_x": 1301,
+      "original_y": 249,
+      "width": 97,
+      "height": 36,
+      "area": 3135
+    },
+    {
+      "id": 35,
+      "filename": "035_npc_royal_guards.png",
+      "original_x": 21,
+      "original_y": 291,
+      "width": 58,
+      "height": 74,
+      "area": 2446
+    },
+    {
+      "id": 36,
+      "filename": "036_npc_royal_guards.png",
+      "original_x": 99,
+      "original_y": 291,
+      "width": 39,
+      "height": 146,
+      "area": 3937
+    },
+    {
+      "id": 37,
+      "filename": "037_npc_royal_guards.png",
+      "original_x": 151,
+      "original_y": 292,
+      "width": 37,
+      "height": 145,
+      "area": 3919
+    },
+    {
+      "id": 38,
+      "filename": "038_npc_royal_guards.png",
+      "original_x": 207,
+      "original_y": 296,
+      "width": 39,
+      "height": 139,
+      "area": 3773
+    },
+    {
+      "id": 39,
+      "filename": "039_npc_royal_guards.png",
+      "original_x": 267,
+      "original_y": 292,
+      "width": 37,
+      "height": 144,
+      "area": 3893
+    },
+    {
+      "id": 40,
+      "filename": "040_npc_priest.png",
+      "original_x": 331,
+      "original_y": 276,
+      "width": 78,
+      "height": 140,
+      "area": 5733
+    },
+    {
+      "id": 41,
+      "filename": "041_npc_priest.png",
+      "original_x": 406,
+      "original_y": 271,
+      "width": 21,
+      "height": 139,
+      "area": 1413
+    },
+    {
+      "id": 42,
+      "filename": "042_npc_priest.png",
+      "original_x": 457,
+      "original_y": 287,
+      "width": 53,
+      "height": 156,
+      "area": 5323
+    },
+    {
+      "id": 43,
+      "filename": "043_npc_priest.png",
+      "original_x": 524,
+      "original_y": 294,
+      "width": 45,
+      "height": 73,
+      "area": 2119
+    },
+    {
+      "id": 44,
+      "filename": "044_npc_merchant_npc.png",
+      "original_x": 588,
+      "original_y": 292,
+      "width": 43,
+      "height": 75,
+      "area": 2126
+    },
+    {
+      "id": 45,
+      "filename": "045_npc_merchant_npc.png",
+      "original_x": 645,
+      "original_y": 302,
+      "width": 39,
+      "height": 65,
+      "area": 1948
+    },
+    {
+      "id": 46,
+      "filename": "046_npc_merchant_npc.png",
+      "original_x": 701,
+      "original_y": 293,
+      "width": 41,
+      "height": 75,
+      "area": 2179
+    },
+    {
+      "id": 47,
+      "filename": "047_npc_merchant_npc.png",
+      "original_x": 782,
+      "original_y": 282,
+      "width": 82,
+      "height": 137,
+      "area": 7125
+    },
+    {
+      "id": 48,
+      "filename": "048_npc_villager.png",
+      "original_x": 881,
+      "original_y": 294,
+      "width": 39,
+      "height": 68,
+      "area": 1973
+    },
+    {
+      "id": 49,
+      "filename": "049_npc_villager.png",
+      "original_x": 943,
+      "original_y": 295,
+      "width": 38,
+      "height": 67,
+      "area": 1806
+    },
+    {
+      "id": 50,
+      "filename": "050_npc_villager.png",
+      "original_x": 1002,
+      "original_y": 299,
+      "width": 38,
+      "height": 64,
+      "area": 1861
+    },
+    {
+      "id": 51,
+      "filename": "051_npc_villager.png",
+      "original_x": 1060,
+      "original_y": 299,
+      "width": 39,
+      "height": 65,
+      "area": 1885
+    },
+    {
+      "id": 52,
+      "filename": "052_npc_villager.png",
+      "original_x": 1124,
+      "original_y": 289,
+      "width": 82,
+      "height": 141,
+      "area": 8268
+    },
+    {
+      "id": 53,
+      "filename": "053_npc_villager.png",
+      "original_x": 1250,
+      "original_y": 296,
+      "width": 38,
+      "height": 64,
+      "area": 1808
+    },
+    {
+      "id": 54,
+      "filename": "054_npc_villager.png",
+      "original_x": 1315,
+      "original_y": 296,
+      "width": 39,
+      "height": 133,
+      "area": 3651
+    },
+    {
+      "id": 55,
+      "filename": "055_npc_villager.png",
+      "original_x": 1380,
+      "original_y": 296,
+      "width": 41,
+      "height": 134,
+      "area": 3753
+    },
+    {
+      "id": 56,
+      "filename": "056_npc_villager.png",
+      "original_x": 1456,
+      "original_y": 296,
+      "width": 45,
+      "height": 142,
+      "area": 4525
+    },
+    {
+      "id": 57,
+      "filename": "057_npc_royal_guards.png",
+      "original_x": 22,
+      "original_y": 361,
+      "width": 57,
+      "height": 76,
+      "area": 2358
+    },
+    {
+      "id": 58,
+      "filename": "058_npc_priest.png",
+      "original_x": 527,
+      "original_y": 374,
+      "width": 40,
+      "height": 71,
+      "area": 2044
+    },
+    {
+      "id": 59,
+      "filename": "059_npc_merchant_npc.png",
+      "original_x": 588,
+      "original_y": 375,
+      "width": 40,
+      "height": 69,
+      "area": 1999
+    },
+    {
+      "id": 60,
+      "filename": "060_npc_merchant_npc.png",
+      "original_x": 646,
+      "original_y": 374,
+      "width": 39,
+      "height": 70,
+      "area": 2008
+    },
+    {
+      "id": 61,
+      "filename": "061_npc_merchant_npc.png",
+      "original_x": 700,
+      "original_y": 374,
+      "width": 40,
+      "height": 71,
+      "area": 2140
+    },
+    {
+      "id": 62,
+      "filename": "062_npc_villager.png",
+      "original_x": 881,
+      "original_y": 372,
+      "width": 40,
+      "height": 66,
+      "area": 1880
+    },
+    {
+      "id": 63,
+      "filename": "063_npc_villager.png",
+      "original_x": 943,
+      "original_y": 373,
+      "width": 38,
+      "height": 64,
+      "area": 1788
+    },
+    {
+      "id": 64,
+      "filename": "064_npc_villager.png",
+      "original_x": 1003,
+      "original_y": 375,
+      "width": 39,
+      "height": 64,
+      "area": 1773
+    },
+    {
+      "id": 65,
+      "filename": "065_npc_villager.png",
+      "original_x": 1059,
+      "original_y": 375,
+      "width": 41,
+      "height": 64,
+      "area": 1937
+    },
+    {
+      "id": 66,
+      "filename": "066_npc_villager.png",
+      "original_x": 1249,
+      "original_y": 363,
+      "width": 39,
+      "height": 64,
+      "area": 1792
+    },
+    {
+      "id": 67,
+      "filename": "067_label_child.png",
+      "original_x": 113,
+      "original_y": 455,
+      "width": 73,
+      "height": 35,
+      "area": 2302
+    },
+    {
+      "id": 68,
+      "filename": "068_label_blacksmith.png",
+      "original_x": 1312,
+      "original_y": 454,
+      "width": 111,
+      "height": 36,
+      "area": 3655
+    },
+    {
+      "id": 69,
+      "filename": "069_npc_child.png",
+      "original_x": 32,
+      "original_y": 483,
+      "width": 41,
+      "height": 121,
+      "area": 3095
+    },
+    {
+      "id": 70,
+      "filename": "070_npc_child.png",
+      "original_x": 88,
+      "original_y": 492,
+      "width": 35,
+      "height": 111,
+      "area": 2479
+    },
+    {
+      "id": 71,
+      "filename": "071_npc_child.png",
+      "original_x": 141,
+      "original_y": 494,
+      "width": 33,
+      "height": 108,
+      "area": 2395
+    },
+    {
+      "id": 72,
+      "filename": "072_npc_child.png",
+      "original_x": 189,
+      "original_y": 495,
+      "width": 35,
+      "height": 106,
+      "area": 2394
+    },
+    {
+      "id": 73,
+      "filename": "073_npc_old_man.png",
+      "original_x": 245,
+      "original_y": 488,
+      "width": 39,
+      "height": 113,
+      "area": 2632
+    },
+    {
+      "id": 74,
+      "filename": "074_npc_old_man.png",
+      "original_x": 348,
+      "original_y": 493,
+      "width": 36,
+      "height": 59,
+      "area": 1475
+    },
+    {
+      "id": 75,
+      "filename": "075_label_old_woman.png",
+      "original_x": 426,
+      "original_y": 462,
+      "width": 107,
+      "height": 36,
+      "area": 3491
+    },
+    {
+      "id": 76,
+      "filename": "076_npc_scholar.png",
+      "original_x": 669,
+      "original_y": 498,
+      "width": 33,
+      "height": 109,
+      "area": 2757
+    },
+    {
+      "id": 77,
+      "filename": "077_label_scholar.png",
+      "original_x": 718,
+      "original_y": 462,
+      "width": 127,
+      "height": 36,
+      "area": 4164
+    },
+    {
+      "id": 78,
+      "filename": "078_npc_blacksmith.png",
+      "original_x": 866,
+      "original_y": 499,
+      "width": 51,
+      "height": 98,
+      "area": 3574
+    },
+    {
+      "id": 79,
+      "filename": "079_npc_blacksmith.png",
+      "original_x": 969,
+      "original_y": 482,
+      "width": 35,
+      "height": 62,
+      "area": 1528
+    },
+    {
+      "id": 80,
+      "filename": "080_label_blacksmith.png",
+      "original_x": 1021,
+      "original_y": 459,
+      "width": 97,
+      "height": 36,
+      "area": 3056
+    },
+    {
+      "id": 81,
+      "filename": "081_npc_blacksmith.png",
+      "original_x": 1024,
+      "original_y": 503,
+      "width": 30,
+      "height": 104,
+      "area": 2326
+    },
+    {
+      "id": 82,
+      "filename": "082_npc_blacksmith.png",
+      "original_x": 1072,
+      "original_y": 504,
+      "width": 31,
+      "height": 103,
+      "area": 2341
+    },
+    {
+      "id": 83,
+      "filename": "083_npc_blacksmith.png",
+      "original_x": 1121,
+      "original_y": 504,
+      "width": 31,
+      "height": 102,
+      "area": 2278
+    },
+    {
+      "id": 84,
+      "filename": "084_npc_blacksmith.png",
+      "original_x": 1164,
+      "original_y": 503,
+      "width": 44,
+      "height": 87,
+      "area": 3059
+    },
+    {
+      "id": 85,
+      "filename": "085_npc_blacksmith.png",
+      "original_x": 1243,
+      "original_y": 482,
+      "width": 58,
+      "height": 122,
+      "area": 3493
+    },
+    {
+      "id": 86,
+      "filename": "086_npc_blacksmith.png",
+      "original_x": 1318,
+      "original_y": 499,
+      "width": 31,
+      "height": 49,
+      "area": 1174
+    },
+    {
+      "id": 87,
+      "filename": "087_npc_blacksmith.png",
+      "original_x": 1364,
+      "original_y": 498,
+      "width": 31,
+      "height": 50,
+      "area": 1131
+    },
+    {
+      "id": 88,
+      "filename": "088_npc_blacksmith.png",
+      "original_x": 1411,
+      "original_y": 498,
+      "width": 32,
+      "height": 50,
+      "area": 1191
+    },
+    {
+      "id": 89,
+      "filename": "089_npc_blacksmith.png",
+      "original_x": 1453,
+      "original_y": 495,
+      "width": 63,
+      "height": 107,
+      "area": 4458
+    },
+    {
+      "id": 90,
+      "filename": "090_npc_old_woman.png",
+      "original_x": 408,
+      "original_y": 506,
+      "width": 32,
+      "height": 51,
+      "area": 1201
+    },
+    {
+      "id": 91,
+      "filename": "091_npc_old_woman.png",
+      "original_x": 465,
+      "original_y": 507,
+      "width": 30,
+      "height": 50,
+      "area": 1215
+    },
+    {
+      "id": 92,
+      "filename": "092_npc_old_woman.png",
+      "original_x": 519,
+      "original_y": 506,
+      "width": 31,
+      "height": 50,
+      "area": 1212
+    },
+    {
+      "id": 93,
+      "filename": "093_npc_old_woman.png",
+      "original_x": 566,
+      "original_y": 512,
+      "width": 61,
+      "height": 92,
+      "area": 3783
+    },
+    {
+      "id": 94,
+      "filename": "094_npc_scholar.png",
+      "original_x": 723,
+      "original_y": 507,
+      "width": 30,
+      "height": 101,
+      "area": 2273
+    },
+    {
+      "id": 95,
+      "filename": "095_npc_scholar.png",
+      "original_x": 775,
+      "original_y": 508,
+      "width": 29,
+      "height": 48,
+      "area": 1142
+    },
+    {
+      "id": 96,
+      "filename": "096_npc_blacksmith.png",
+      "original_x": 825,
+      "original_y": 507,
+      "width": 29,
+      "height": 100,
+      "area": 2194
+    },
+    {
+      "id": 97,
+      "filename": "097_npc_blacksmith.png",
+      "original_x": 970,
+      "original_y": 550,
+      "width": 33,
+      "height": 55,
+      "area": 1375
+    },
+    {
+      "id": 98,
+      "filename": "098_npc_old_man.png",
+      "original_x": 351,
+      "original_y": 554,
+      "width": 31,
+      "height": 57,
+      "area": 1319
+    },
+    {
+      "id": 99,
+      "filename": "099_npc_old_woman.png",
+      "original_x": 409,
+      "original_y": 561,
+      "width": 31,
+      "height": 51,
+      "area": 1201
+    },
+    {
+      "id": 100,
+      "filename": "100_npc_old_woman.png",
+      "original_x": 464,
+      "original_y": 562,
+      "width": 33,
+      "height": 50,
+      "area": 1212
+    },
+    {
+      "id": 101,
+      "filename": "101_npc_old_woman.png",
+      "original_x": 520,
+      "original_y": 561,
+      "width": 30,
+      "height": 51,
+      "area": 1187
+    },
+    {
+      "id": 102,
+      "filename": "102_npc_scholar.png",
+      "original_x": 775,
+      "original_y": 560,
+      "width": 30,
+      "height": 49,
+      "area": 1122
+    },
+    {
+      "id": 103,
+      "filename": "103_npc_blacksmith.png",
+      "original_x": 1317,
+      "original_y": 555,
+      "width": 32,
+      "height": 51,
+      "area": 1205
+    },
+    {
+      "id": 104,
+      "filename": "104_npc_blacksmith.png",
+      "original_x": 1363,
+      "original_y": 555,
+      "width": 31,
+      "height": 50,
+      "area": 1163
+    },
+    {
+      "id": 105,
+      "filename": "105_npc_blacksmith.png",
+      "original_x": 1410,
+      "original_y": 555,
+      "width": 34,
+      "height": 51,
+      "area": 1233
+    },
+    {
+      "id": 106,
+      "filename": "106_label_alchemist.png",
+      "original_x": 106,
+      "original_y": 623,
+      "width": 111,
+      "height": 36,
+      "area": 3615
+    },
+    {
+      "id": 107,
+      "filename": "107_label_wizard.png",
+      "original_x": 446,
+      "original_y": 629,
+      "width": 88,
+      "height": 35,
+      "area": 2774
+    },
+    {
+      "id": 108,
+      "filename": "108_label_thief.png",
+      "original_x": 743,
+      "original_y": 628,
+      "width": 72,
+      "height": 34,
+      "area": 2240
+    },
+    {
+      "id": 109,
+      "filename": "109_label_hunter.png",
+      "original_x": 1039,
+      "original_y": 628,
+      "width": 79,
+      "height": 35,
+      "area": 2499
+    },
+    {
+      "id": 110,
+      "filename": "110_label_hunter.png",
+      "original_x": 1333,
+      "original_y": 627,
+      "width": 90,
+      "height": 33,
+      "area": 2789
+    },
+    {
+      "id": 111,
+      "filename": "111_npc_alchemist.png",
+      "original_x": 26,
+      "original_y": 668,
+      "width": 43,
+      "height": 120,
+      "area": 3554
+    },
+    {
+      "id": 112,
+      "filename": "112_npc_alchemist.png",
+      "original_x": 88,
+      "original_y": 671,
+      "width": 36,
+      "height": 56,
+      "area": 1541
+    },
+    {
+      "id": 113,
+      "filename": "113_npc_alchemist.png",
+      "original_x": 146,
+      "original_y": 670,
+      "width": 35,
+      "height": 57,
+      "area": 1473
+    },
+    {
+      "id": 114,
+      "filename": "114_npc_alchemist.png",
+      "original_x": 198,
+      "original_y": 671,
+      "width": 34,
+      "height": 56,
+      "area": 1452
+    },
+    {
+      "id": 115,
+      "filename": "115_npc_wizard.png",
+      "original_x": 256,
+      "original_y": 662,
+      "width": 81,
+      "height": 121,
+      "area": 6368
+    },
+    {
+      "id": 116,
+      "filename": "116_npc_wizard.png",
+      "original_x": 367,
+      "original_y": 671,
+      "width": 47,
+      "height": 120,
+      "area": 3433
+    },
+    {
+      "id": 117,
+      "filename": "117_npc_wizard.png",
+      "original_x": 425,
+      "original_y": 677,
+      "width": 44,
+      "height": 53,
+      "area": 1384
+    },
+    {
+      "id": 118,
+      "filename": "118_npc_bard.png",
+      "original_x": 479,
+      "original_y": 679,
+      "width": 42,
+      "height": 51,
+      "area": 1349
+    },
+    {
+      "id": 119,
+      "filename": "119_npc_bard.png",
+      "original_x": 534,
+      "original_y": 679,
+      "width": 30,
+      "height": 51,
+      "area": 1174
+    },
+    {
+      "id": 120,
+      "filename": "120_npc_bard.png",
+      "original_x": 582,
+      "original_y": 660,
+      "width": 68,
+      "height": 124,
+      "area": 6085
+    },
+    {
+      "id": 121,
+      "filename": "121_npc_thief.png",
+      "original_x": 687,
+      "original_y": 672,
+      "width": 44,
+      "height": 117,
+      "area": 3107
+    },
+    {
+      "id": 122,
+      "filename": "122_npc_thief.png",
+      "original_x": 746,
+      "original_y": 675,
+      "width": 38,
+      "height": 55,
+      "area": 1430
+    },
+    {
+      "id": 123,
+      "filename": "123_npc_hunter.png",
+      "original_x": 805,
+      "original_y": 674,
+      "width": 36,
+      "height": 57,
+      "area": 1431
+    },
+    {
+      "id": 124,
+      "filename": "124_npc_hunter.png",
+      "original_x": 856,
+      "original_y": 663,
+      "width": 73,
+      "height": 120,
+      "area": 5365
+    },
+    {
+      "id": 125,
+      "filename": "125_npc_hunter.png",
+      "original_x": 963,
+      "original_y": 671,
+      "width": 43,
+      "height": 115,
+      "area": 3263
+    },
+    {
+      "id": 126,
+      "filename": "126_npc_hunter.png",
+      "original_x": 1023,
+      "original_y": 678,
+      "width": 35,
+      "height": 52,
+      "area": 1209
+    },
+    {
+      "id": 127,
+      "filename": "127_npc_hunter.png",
+      "original_x": 1070,
+      "original_y": 679,
+      "width": 37,
+      "height": 51,
+      "area": 1177
+    },
+    {
+      "id": 128,
+      "filename": "128_npc_hunter.png",
+      "original_x": 1122,
+      "original_y": 679,
+      "width": 30,
+      "height": 51,
+      "area": 1122
+    },
+    {
+      "id": 129,
+      "filename": "129_npc_hunter.png",
+      "original_x": 1165,
+      "original_y": 676,
+      "width": 45,
+      "height": 105,
+      "area": 2773
+    },
+    {
+      "id": 130,
+      "filename": "130_npc_hunter.png",
+      "original_x": 1253,
+      "original_y": 659,
+      "width": 50,
+      "height": 129,
+      "area": 4137
+    },
+    {
+      "id": 131,
+      "filename": "131_npc_hunter.png",
+      "original_x": 1315,
+      "original_y": 671,
+      "width": 39,
+      "height": 54,
+      "area": 1338
+    },
+    {
+      "id": 132,
+      "filename": "132_npc_hunter.png",
+      "original_x": 1363,
+      "original_y": 671,
+      "width": 39,
+      "height": 54,
+      "area": 1310
+    },
+    {
+      "id": 133,
+      "filename": "133_npc_hunter.png",
+      "original_x": 1411,
+      "original_y": 670,
+      "width": 42,
+      "height": 55,
+      "area": 1475
+    },
+    {
+      "id": 134,
+      "filename": "134_npc_hunter.png",
+      "original_x": 1464,
+      "original_y": 668,
+      "width": 65,
+      "height": 117,
+      "area": 4827
+    },
+    {
+      "id": 135,
+      "filename": "135_npc_alchemist.png",
+      "original_x": 89,
+      "original_y": 733,
+      "width": 35,
+      "height": 56,
+      "area": 1470
+    },
+    {
+      "id": 136,
+      "filename": "136_npc_alchemist.png",
+      "original_x": 146,
+      "original_y": 735,
+      "width": 32,
+      "height": 54,
+      "area": 1372
+    },
+    {
+      "id": 137,
+      "filename": "137_npc_alchemist.png",
+      "original_x": 199,
+      "original_y": 735,
+      "width": 32,
+      "height": 55,
+      "area": 1395
+    },
+    {
+      "id": 138,
+      "filename": "138_npc_wizard.png",
+      "original_x": 426,
+      "original_y": 734,
+      "width": 37,
+      "height": 55,
+      "area": 1305
+    },
+    {
+      "id": 139,
+      "filename": "139_npc_bard.png",
+      "original_x": 483,
+      "original_y": 734,
+      "width": 32,
+      "height": 55,
+      "area": 1304
+    },
+    {
+      "id": 140,
+      "filename": "140_npc_bard.png",
+      "original_x": 534,
+      "original_y": 735,
+      "width": 32,
+      "height": 55,
+      "area": 1296
+    },
+    {
+      "id": 141,
+      "filename": "141_npc_thief.png",
+      "original_x": 746,
+      "original_y": 734,
+      "width": 37,
+      "height": 55,
+      "area": 1362
+    },
+    {
+      "id": 142,
+      "filename": "142_npc_hunter.png",
+      "original_x": 807,
+      "original_y": 734,
+      "width": 36,
+      "height": 55,
+      "area": 1317
+    },
+    {
+      "id": 143,
+      "filename": "143_npc_hunter.png",
+      "original_x": 1025,
+      "original_y": 736,
+      "width": 33,
+      "height": 52,
+      "area": 1212
+    },
+    {
+      "id": 144,
+      "filename": "144_npc_hunter.png",
+      "original_x": 1070,
+      "original_y": 736,
+      "width": 36,
+      "height": 52,
+      "area": 1173
+    },
+    {
+      "id": 145,
+      "filename": "145_npc_hunter.png",
+      "original_x": 1122,
+      "original_y": 737,
+      "width": 30,
+      "height": 52,
+      "area": 1100
+    },
+    {
+      "id": 146,
+      "filename": "146_npc_hunter.png",
+      "original_x": 1317,
+      "original_y": 734,
+      "width": 38,
+      "height": 56,
+      "area": 1372
+    },
+    {
+      "id": 147,
+      "filename": "147_npc_hunter.png",
+      "original_x": 1363,
+      "original_y": 733,
+      "width": 39,
+      "height": 56,
+      "area": 1314
+    },
+    {
+      "id": 148,
+      "filename": "148_npc_hunter.png",
+      "original_x": 1411,
+      "original_y": 733,
+      "width": 42,
+      "height": 57,
+      "area": 1415
+    },
+    {
+      "id": 149,
+      "filename": "149_npc_hunter.png",
+      "original_x": 856,
+      "original_y": 764,
+      "width": 6,
+      "height": 12,
+      "area": 50
+    },
+    {
+      "id": 150,
+      "filename": "150_label_monster_hunter.png",
+      "original_x": 29,
+      "original_y": 812,
+      "width": 311,
+      "height": 36,
+      "area": 10347
+    },
+    {
+      "id": 151,
+      "filename": "151_label_cat_familiar.png",
+      "original_x": 450,
+      "original_y": 818,
+      "width": 118,
+      "height": 35,
+      "area": 3884
+    },
+    {
+      "id": 152,
+      "filename": "152_label_trader.png",
+      "original_x": 710,
+      "original_y": 817,
+      "width": 58,
+      "height": 35,
+      "area": 1799
+    },
+    {
+      "id": 153,
+      "filename": "153_label_beggar.png",
+      "original_x": 932,
+      "original_y": 816,
+      "width": 92,
+      "height": 36,
+      "area": 3003
+    },
+    {
+      "id": 154,
+      "filename": "154_label_beggar.png",
+      "original_x": 1149,
+      "original_y": 818,
+      "width": 85,
+      "height": 35,
+      "area": 2725
+    },
+    {
+      "id": 155,
+      "filename": "155_label_beggar.png",
+      "original_x": 1373,
+      "original_y": 818,
+      "width": 86,
+      "height": 35,
+      "area": 2767
+    },
+    {
+      "id": 156,
+      "filename": "156_npc_monster_hunter.png",
+      "original_x": 22,
+      "original_y": 856,
+      "width": 65,
+      "height": 129,
+      "area": 4587
+    },
+    {
+      "id": 157,
+      "filename": "157_npc_monster_hunter.png",
+      "original_x": 105,
+      "original_y": 858,
+      "width": 54,
+      "height": 128,
+      "area": 3911
+    },
+    {
+      "id": 158,
+      "filename": "158_npc_monster_hunter.png",
+      "original_x": 172,
+      "original_y": 863,
+      "width": 53,
+      "height": 124,
+      "area": 3896
+    },
+    {
+      "id": 159,
+      "filename": "159_npc_monster_hunter.png",
+      "original_x": 238,
+      "original_y": 858,
+      "width": 47,
+      "height": 130,
+      "area": 3601
+    },
+    {
+      "id": 160,
+      "filename": "160_npc_guard_dog.png",
+      "original_x": 300,
+      "original_y": 859,
+      "width": 53,
+      "height": 126,
+      "area": 3881
+    },
+    {
+      "id": 161,
+      "filename": "161_npc_cat_familiar.png",
+      "original_x": 409,
+      "original_y": 876,
+      "width": 39,
+      "height": 39,
+      "area": 1023
+    },
+    {
+      "id": 162,
+      "filename": "162_npc_cat_familiar.png",
+      "original_x": 470,
+      "original_y": 868,
+      "width": 30,
+      "height": 47,
+      "area": 1084
+    },
+    {
+      "id": 163,
+      "filename": "163_npc_cat_familiar.png",
+      "original_x": 527,
+      "original_y": 868,
+      "width": 31,
+      "height": 47,
+      "area": 1077
+    },
+    {
+      "id": 164,
+      "filename": "164_npc_chicken.png",
+      "original_x": 581,
+      "original_y": 870,
+      "width": 34,
+      "height": 44,
+      "area": 1008
+    },
+    {
+      "id": 165,
+      "filename": "165_npc_chicken.png",
+      "original_x": 659,
+      "original_y": 867,
+      "width": 42,
+      "height": 40,
+      "area": 1028
+    },
+    {
+      "id": 166,
+      "filename": "166_npc_trader.png",
+      "original_x": 721,
+      "original_y": 867,
+      "width": 33,
+      "height": 41,
+      "area": 971
+    },
+    {
+      "id": 167,
+      "filename": "167_npc_trader.png",
+      "original_x": 780,
+      "original_y": 866,
+      "width": 44,
+      "height": 41,
+      "area": 1125
+    },
+    {
+      "id": 168,
+      "filename": "168_npc_beggar.png",
+      "original_x": 897,
+      "original_y": 867,
+      "width": 36,
+      "height": 41,
+      "area": 980
+    },
+    {
+      "id": 169,
+      "filename": "169_npc_beggar.png",
+      "original_x": 963,
+      "original_y": 862,
+      "width": 34,
+      "height": 45,
+      "area": 993
+    },
+    {
+      "id": 170,
+      "filename": "170_npc_beggar.png",
+      "original_x": 1028,
+      "original_y": 862,
+      "width": 35,
+      "height": 44,
+      "area": 994
+    },
+    {
+      "id": 171,
+      "filename": "171_npc_beggar.png",
+      "original_x": 1108,
+      "original_y": 865,
+      "width": 44,
+      "height": 122,
+      "area": 4053
+    },
+    {
+      "id": 172,
+      "filename": "172_npc_beggar.png",
+      "original_x": 1169,
+      "original_y": 866,
+      "width": 46,
+      "height": 121,
+      "area": 3628
+    },
+    {
+      "id": 173,
+      "filename": "173_npc_beggar.png",
+      "original_x": 1231,
+      "original_y": 868,
+      "width": 40,
+      "height": 59,
+      "area": 1752
+    },
+    {
+      "id": 174,
+      "filename": "174_npc_beggar.png",
+      "original_x": 1334,
+      "original_y": 867,
+      "width": 38,
+      "height": 121,
+      "area": 3626
+    },
+    {
+      "id": 175,
+      "filename": "175_npc_beggar.png",
+      "original_x": 1400,
+      "original_y": 866,
+      "width": 36,
+      "height": 122,
+      "area": 3606
+    },
+    {
+      "id": 176,
+      "filename": "176_npc_beggar.png",
+      "original_x": 1465,
+      "original_y": 867,
+      "width": 37,
+      "height": 120,
+      "area": 3618
+    },
+    {
+      "id": 177,
+      "filename": "177_npc_cat_familiar.png",
+      "original_x": 409,
+      "original_y": 930,
+      "width": 31,
+      "height": 44,
+      "area": 1002
+    },
+    {
+      "id": 178,
+      "filename": "178_npc_cat_familiar.png",
+      "original_x": 468,
+      "original_y": 928,
+      "width": 31,
+      "height": 46,
+      "area": 1069
+    },
+    {
+      "id": 179,
+      "filename": "179_npc_cat_familiar.png",
+      "original_x": 527,
+      "original_y": 931,
+      "width": 32,
+      "height": 44,
+      "area": 1002
+    },
+    {
+      "id": 180,
+      "filename": "180_npc_chicken.png",
+      "original_x": 582,
+      "original_y": 930,
+      "width": 35,
+      "height": 43,
+      "area": 1039
+    },
+    {
+      "id": 181,
+      "filename": "181_npc_chicken.png",
+      "original_x": 670,
+      "original_y": 927,
+      "width": 35,
+      "height": 43,
+      "area": 1007
+    },
+    {
+      "id": 182,
+      "filename": "182_npc_trader.png",
+      "original_x": 730,
+      "original_y": 926,
+      "width": 34,
+      "height": 44,
+      "area": 1126
+    },
+    {
+      "id": 183,
+      "filename": "183_npc_trader.png",
+      "original_x": 789,
+      "original_y": 925,
+      "width": 37,
+      "height": 44,
+      "area": 1088
+    },
+    {
+      "id": 184,
+      "filename": "184_npc_beggar.png",
+      "original_x": 897,
+      "original_y": 927,
+      "width": 37,
+      "height": 44,
+      "area": 1079
+    },
+    {
+      "id": 185,
+      "filename": "185_npc_beggar.png",
+      "original_x": 960,
+      "original_y": 924,
+      "width": 37,
+      "height": 48,
+      "area": 1108
+    },
+    {
+      "id": 186,
+      "filename": "186_npc_beggar.png",
+      "original_x": 1028,
+      "original_y": 924,
+      "width": 36,
+      "height": 48,
+      "area": 1139
+    },
+    {
+      "id": 187,
+      "filename": "187_npc_beggar.png",
+      "original_x": 1232,
+      "original_y": 930,
+      "width": 36,
+      "height": 56,
+      "area": 1381
+    }
+  ]
+}

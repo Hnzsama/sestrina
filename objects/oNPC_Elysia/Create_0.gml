@@ -16,10 +16,10 @@ interact_action = function() {
     var _d = dialogue_create();
     
     if (!has_given_potions) {
-        _d.add("Elysia", "Ah, kau yang datang membawa kabar tentang Sestrina? Aku sudah memeriksa gulungan kuno perpustakaan.", "elysia", "protagonist", "left");
-        _d.add("Protagonist", "Apakah ada obat penawar untuk kutukan yang menimpanya, Elysia?", "elysia", "protagonist", "right");
-        _d.add("Elysia", "Satu-satunya penawar adalah 'Bunga Cahaya Abadi' di dasar Katakombe, dijaga oleh Golem Penjaga Kuno.", "elysia", "protagonist", "left");
-        _d.add("Elysia", "Bawalah Ramuan ini [C], dan kupinjamkan Grimoire Sihir: Tekan [X] untuk menembakkan Bola Api (Fireball) dengan Mana (MP)!", "elysia", "protagonist", "left");
+        _d.add("Elysia", "Ah, kau yang datang membawa kabar tentang Sestrina? Aku sudah memeriksa gulungan kuno perpustakaan.", "elysia", "protagonist", "left", "question");
+        _d.add("Protagonist", "Apakah ada obat penawar untuk kutukan yang menimpanya, Elysia?", "elysia", "protagonist", "right", "dots");
+        _d.add("Elysia", "Satu-satunya penawar adalah 'Bunga Cahaya Abadi' di dasar Katakombe, dijaga oleh Golem Penjaga Kuno.", "elysia", "protagonist", "left", "exclamation");
+        _d.add("Elysia", "Bawalah Ramuan ini [C], dan kupinjamkan Grimoire Sihir: Tekan [X] untuk menembakkan Bola Api (Fireball) dengan Mana (MP)!", "elysia", "protagonist", "left", "exclamation");
         _d.start(function() {
             has_given_potions = true;
             global.player_potions = max(global.player_potions, 3);

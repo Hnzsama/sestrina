@@ -8,6 +8,7 @@ slash_damage = 20;
 combo_index = 1; // 1: Quick Slash, 2: Amber Cleave, 3: Celestial Spin Finisher
 knockback_power = 12;
 hit_list = ds_list_create();
+sparks = [];
 
 depth = -500;
 

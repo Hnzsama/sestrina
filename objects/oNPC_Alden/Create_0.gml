@@ -1,4 +1,4 @@
-/// @description Inisialisasi Kapten Alden di Altdorf Square
+/// @description Inisialisasi Kapten Alden di Altdorf Square (Forgotten Sanctum Lore)
 
 event_inherited();
 interact_range = 45;
@@ -15,19 +15,20 @@ interact_action = function() {
     var _d = dialogue_create();
     
     if (global.quest_stage < 2) {
-        _d.add("Kapten Alden", "Salam, ksatria muda! Kudengar adikmu Sestrina jatuh sakit oleh kutukan kuno?", "alden", "protagonist", "left");
-        _d.add("Protagonist", "Benar, Kapten. Aku butuh jalan menuju Katakombe Kuno untuk mencari Bunga Cahaya Abadi.", "alden", "protagonist", "right");
-        _d.add("Kapten Alden", "Hutan di selatan dijaga oleh monster berkeliaran. Kunjungi dulu Goran di Toko Senjata (Kiri) dan Elysia di Toko Ramuan (Kanan) sebelum berangkat!", "alden", "protagonist", "left");
+        _d.add("Kapten Alden", "Salam, petualang muda! Kudengar adikmu menderita kebocoran mana fatal akibat Overclock sihir?", "alden", "protagonist", "left", "question");
+        _d.add("Protagonist", "Benar, Kapten. Aliran sihirnya rusak parah. Aku harus menembus Katakombe menuju Forgotten Sanctum untuk mengambil The Lost Remedy.", "alden", "protagonist", "right", "dots");
+        _d.add("Kapten Alden", "Forgotten Sanctum... Tempat suci purba itu dijaga oleh legiun Corrupted Sentinels dan Legendary Guardian. Banyak petualang tak pernah kembali.", "alden", "protagonist", "left", "exclamation");
+        _d.add("Kapten Alden", "Persiapkan senjatamu di Bengkel Goran (Kiri) dan ramuan di Apotek Elysia (Kanan) sebelum melangkah ke Hutan Selatan!", "alden", "protagonist", "left", "exclamation");
         _d.start(function() {
             if (global.quest_stage == 0) {
                 scr_set_quest(1, "Persiapan Perjalanan", "Temui Goran (Toko Senjata) & Elysia (Apotek)");
             }
         });
     } else if (global.quest_stage == 2) {
-        _d.add("Kapten Alden", "Kau sudah memiliki pedang dan ramuan. Gerbang selatan menuju Hutan Reruntuhan kini terbuka. Berhati-hatilah!", "alden", "protagonist", "left");
+        _d.add("Kapten Alden", "Pedang tempa dan ramuanmu sudah siap. Gerbang selatan menuju Hutan Reruntuhan kini terbuka. Tembuslah Katakombe dan bawa pulang The Lost Remedy!", "alden", "protagonist", "left");
         _d.start();
     } else {
-        _d.add("Kapten Alden", "Semoga dewa pelindung menyertai langkahmu menyelamatkan Sestrina!", "alden", "protagonist", "left");
+        _d.add("Kapten Alden", "Waktu adikmu terus berjalan. Semoga dewa pelindung menyertai tekadmu menyelamatkan Sestrina!", "alden", "protagonist", "left");
         _d.start();
     }
 };

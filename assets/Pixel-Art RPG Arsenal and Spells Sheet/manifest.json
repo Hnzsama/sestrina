@@ -1,0 +1,151 @@
+{
+  "source_image": "Pixel-Art RPG Arsenal and Spells Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_iron_sword_weapon.png",
+      "original_x": 27,
+      "original_y": 20,
+      "width": 546,
+      "height": 318,
+      "area": 72541
+    },
+    {
+      "id": 2,
+      "filename": "002_battle_axe_weapon.png",
+      "original_x": 351,
+      "original_y": 49,
+      "width": 241,
+      "height": 289,
+      "area": 55944
+    },
+    {
+      "id": 3,
+      "filename": "003_weapons_header_mage_staff.png",
+      "original_x": 593,
+      "original_y": 9,
+      "width": 349,
+      "height": 329,
+      "area": 69755
+    },
+    {
+      "id": 4,
+      "filename": "004_elven_bow_weapon.png",
+      "original_x": 944,
+      "original_y": 58,
+      "width": 254,
+      "height": 280,
+      "area": 54713
+    },
+    {
+      "id": 5,
+      "filename": "005_demon_greatsword_weapon.png",
+      "original_x": 962,
+      "original_y": 20,
+      "width": 558,
+      "height": 319,
+      "area": 67133
+    },
+    {
+      "id": 6,
+      "filename": "006_health_potion_item.png",
+      "original_x": 67,
+      "original_y": 385,
+      "width": 207,
+      "height": 263,
+      "area": 45473
+    },
+    {
+      "id": 7,
+      "filename": "007_frame_divider_line_left.png",
+      "original_x": 143,
+      "original_y": 362,
+      "width": 430,
+      "height": 29,
+      "area": 1238
+    },
+    {
+      "id": 8,
+      "filename": "008_mana_potion_item.png",
+      "original_x": 370,
+      "original_y": 397,
+      "width": 199,
+      "height": 251,
+      "area": 42324
+    },
+    {
+      "id": 9,
+      "filename": "009_potions_header_stamina_potion.png",
+      "original_x": 593,
+      "original_y": 352,
+      "width": 349,
+      "height": 297,
+      "area": 56053
+    },
+    {
+      "id": 10,
+      "filename": "010_frame_divider_line_right.png",
+      "original_x": 961,
+      "original_y": 361,
+      "width": 398,
+      "height": 30,
+      "area": 1179
+    },
+    {
+      "id": 11,
+      "filename": "011_strength_elixir_item.png",
+      "original_x": 969,
+      "original_y": 399,
+      "width": 199,
+      "height": 249,
+      "area": 41523
+    },
+    {
+      "id": 12,
+      "filename": "012_defense_elixir_item.png",
+      "original_x": 1266,
+      "original_y": 390,
+      "width": 211,
+      "height": 258,
+      "area": 44696
+    },
+    {
+      "id": 13,
+      "filename": "013_arcane_bolt_spell.png",
+      "original_x": 54,
+      "original_y": 679,
+      "width": 519,
+      "height": 293,
+      "area": 58872
+    },
+    {
+      "id": 14,
+      "filename": "014_fireball_spell.png",
+      "original_x": 360,
+      "original_y": 702,
+      "width": 229,
+      "height": 270,
+      "area": 50057
+    },
+    {
+      "id": 15,
+      "filename": "015_spells_header_frost_nova.png",
+      "original_x": 593,
+      "original_y": 670,
+      "width": 349,
+      "height": 302,
+      "area": 64804
+    },
+    {
+      "id": 16,
+      "filename": "016_healing_circle_and_teleport_spell.png",
+      "original_x": 938,
+      "original_y": 679,
+      "width": 548,
+      "height": 294,
+      "area": 116314
+    }
+  ]
+}

@@ -1,13 +1,83 @@
 event_inherited(); // runs oCharacterParent's Create first
 
-sprites.down = sPlayer_down;
-sprites.up   = sPlayer_up;
-sprites.side = sPlayer_side;
-sprite_index = sprites.down;
+char_scale = 1.0;
+image_xscale = 1.0;
+image_yscale = 1.0;
+
+// =========================================================================
+// MAPPING ASET LENGKAP PROTAGONIS (Player Character Pack - Sestrina)
+// =========================================================================
+
+// 1. Bergerak & Diam (Movement & Idle)
+spr_idle = {
+    down: spr_player_idle_down,
+    up:   spr_player_idle_up,
+    side: spr_player_idle_side
+};
+
+spr_walk = {
+    down: spr_player_walk_down,
+    up:   spr_player_walk_up,
+    side: spr_player_walk_side
+};
+
+// 2. Menghindar & Berguling (Dodge Roll)
+spr_roll = {
+    down: spr_player_roll_down,
+    up:   spr_player_roll_up,
+    side: spr_player_roll_side
+};
+
+// 3. Kombo 3 Tebasan Pedang (3-Hit Attack Combo)
+spr_combo1 = {
+    down: spr_player_combo1_quick_slash_down,
+    up:   spr_player_combo1_quick_slash_up,
+    side: spr_player_combo1_quick_slash_side
+};
+
+spr_combo2 = {
+    down: spr_player_combo2_amber_cleave_down,
+    up:   spr_player_combo2_amber_cleave_up,
+    side: spr_player_combo2_amber_cleave_side
+};
+
+spr_combo3 = spr_player_combo3_spin_finisher_360; // 360 Spin Finisher
+
+// 4. Lancarkan Sihir 4-Arah (Magic Cast: Hadap Depan, Samping Kiri/Kanan, Belakang)
+spr_cast_fire = {
+    down: spr_player_cast_fireball_down,
+    side: spr_player_cast_fireball_side,
+    up:   spr_player_cast_fireball_up
+};
+
+spr_cast_frost = {
+    down: spr_player_cast_frostnova_down,
+    side: spr_player_cast_frostnova_side,
+    up:   spr_player_cast_frostnova_up
+};
+
+// 5. Minum Ramuan Pemulih 4-Arah (Potion Drink: Hadap Depan, Samping Kiri/Kanan, Belakang)
+spr_drink = {
+    down: spr_player_drink_potion_down,
+    side: spr_player_drink_potion_side,
+    up:   spr_player_drink_potion_up
+};
+
+// Backward-compatibility struct untuk oCharacterParent
+sprites.down = spr_walk.down;
+sprites.up   = spr_walk.up;
+sprites.side = spr_walk.side;
+sprite_index = spr_idle.down;
 
 attack_cooldown = 0;
 spell_cooldown = 0;
 is_attacking = 0;
+attack_dir = 270;
+
+// Sistem Animasi Aksi Khusus
+is_casting = 0;
+cast_type = 1;
+is_drinking = 0;
 
 // Sistem Dodge Roll & Invincibility Frames
 is_rolling = false;
@@ -21,10 +91,19 @@ ghost_trail = [];
 combo_step = 0;
 combo_timer = 0;
 
+// Sistem Kematian & Respawn (UAS Feature)
+is_defeated = false;
+defeat_timer = 0;
+
 // Posisikan sesuai titik spawn dari transisi ruangan
 if (variable_global_exists("spawn_x") && global.spawn_x != -1) {
     x = global.spawn_x;
     y = global.spawn_y;
     global.spawn_x = -1;
     global.spawn_y = -1;
+}
+
+// Spawn Companion Goran jika sudah masuk party
+if (variable_global_exists("party_goran") && global.party_goran && !instance_exists(oCompanion_Goran)) {
+    instance_create_depth(x - 30, y, -100, oCompanion_Goran);
 }

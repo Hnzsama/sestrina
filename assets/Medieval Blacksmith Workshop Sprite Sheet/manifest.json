@@ -1,0 +1,538 @@
+{
+  "source_image": "Medieval Blacksmith Workshop Sprite Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_double_forge_hearth_shed.png",
+      "original_x": 27,
+      "original_y": 19,
+      "width": 480,
+      "height": 405,
+      "area": 152118
+    },
+    {
+      "id": 2,
+      "filename": "002_stake_anvil_chisel.png",
+      "original_x": 720,
+      "original_y": 40,
+      "width": 58,
+      "height": 159,
+      "area": 3678
+    },
+    {
+      "id": 3,
+      "filename": "003_hanging_tools_rack.png",
+      "original_x": 924,
+      "original_y": 41,
+      "width": 212,
+      "height": 147,
+      "area": 19862
+    },
+    {
+      "id": 4,
+      "filename": "004_stone_anvil_block.png",
+      "original_x": 537,
+      "original_y": 72,
+      "width": 158,
+      "height": 142,
+      "area": 16296
+    },
+    {
+      "id": 5,
+      "filename": "005_blacksmith_sledgehammer.png",
+      "original_x": 786,
+      "original_y": 53,
+      "width": 57,
+      "height": 135,
+      "area": 3446
+    },
+    {
+      "id": 6,
+      "filename": "006_blacksmith_pliers_tongs.png",
+      "original_x": 853,
+      "original_y": 59,
+      "width": 51,
+      "height": 118,
+      "area": 2930
+    },
+    {
+      "id": 7,
+      "filename": "007_wall_shelf_bottles_jars.png",
+      "original_x": 1195,
+      "original_y": 53,
+      "width": 258,
+      "height": 135,
+      "area": 26271
+    },
+    {
+      "id": 8,
+      "filename": "008_blacksmith_tongs_type_a.png",
+      "original_x": 811,
+      "original_y": 207,
+      "width": 29,
+      "height": 106,
+      "area": 1412
+    },
+    {
+      "id": 9,
+      "filename": "009_blacksmith_tongs_type_b.png",
+      "original_x": 847,
+      "original_y": 208,
+      "width": 29,
+      "height": 101,
+      "area": 1594
+    },
+    {
+      "id": 10,
+      "filename": "010_blacksmith_tongs_type_c.png",
+      "original_x": 885,
+      "original_y": 206,
+      "width": 28,
+      "height": 107,
+      "area": 1438
+    },
+    {
+      "id": 11,
+      "filename": "011_blacksmith_tongs_type_d.png",
+      "original_x": 921,
+      "original_y": 206,
+      "width": 30,
+      "height": 107,
+      "area": 1720
+    },
+    {
+      "id": 12,
+      "filename": "012_heavy_duty_iron_pincers.png",
+      "original_x": 959,
+      "original_y": 197,
+      "width": 44,
+      "height": 114,
+      "area": 2315
+    },
+    {
+      "id": 13,
+      "filename": "013_wooden_workbench_vise_tools.png",
+      "original_x": 1028,
+      "original_y": 194,
+      "width": 290,
+      "height": 138,
+      "area": 30515
+    },
+    {
+      "id": 14,
+      "filename": "014_small_wooden_chest.png",
+      "original_x": 1346,
+      "original_y": 199,
+      "width": 94,
+      "height": 104,
+      "area": 7104
+    },
+    {
+      "id": 15,
+      "filename": "015_street_lantern_post.png",
+      "original_x": 1466,
+      "original_y": 158,
+      "width": 44,
+      "height": 186,
+      "area": 4539
+    },
+    {
+      "id": 16,
+      "filename": "016_water_quenching_bucket.png",
+      "original_x": 541,
+      "original_y": 243,
+      "width": 99,
+      "height": 91,
+      "area": 6984
+    },
+    {
+      "id": 17,
+      "filename": "017_wooden_chest_iron_straps.png",
+      "original_x": 686,
+      "original_y": 238,
+      "width": 87,
+      "height": 94,
+      "area": 7556
+    },
+    {
+      "id": 18,
+      "filename": "018_wooden_barrel.png",
+      "original_x": 550,
+      "original_y": 353,
+      "width": 80,
+      "height": 113,
+      "area": 8093
+    },
+    {
+      "id": 19,
+      "filename": "019_coal_cart_bin.png",
+      "original_x": 650,
+      "original_y": 351,
+      "width": 94,
+      "height": 114,
+      "area": 9209
+    },
+    {
+      "id": 20,
+      "filename": "020_trestle_table_leather_rolls.png",
+      "original_x": 774,
+      "original_y": 338,
+      "width": 226,
+      "height": 127,
+      "area": 20050
+    },
+    {
+      "id": 21,
+      "filename": "021_wooden_four_leg_stool.png",
+      "original_x": 1022,
+      "original_y": 358,
+      "width": 107,
+      "height": 107,
+      "area": 6835
+    },
+    {
+      "id": 22,
+      "filename": "022_wooden_work_bench.png",
+      "original_x": 1162,
+      "original_y": 353,
+      "width": 191,
+      "height": 111,
+      "area": 14582
+    },
+    {
+      "id": 23,
+      "filename": "023_wood_stump_splitting_axe.png",
+      "original_x": 1375,
+      "original_y": 323,
+      "width": 81,
+      "height": 143,
+      "area": 7895
+    },
+    {
+      "id": 24,
+      "filename": "024_molten_metal_crucible_pot.png",
+      "original_x": 28,
+      "original_y": 449,
+      "width": 103,
+      "height": 123,
+      "area": 9455
+    },
+    {
+      "id": 25,
+      "filename": "025_pouring_crucible_cup.png",
+      "original_x": 151,
+      "original_y": 466,
+      "width": 54,
+      "height": 94,
+      "area": 4015
+    },
+    {
+      "id": 26,
+      "filename": "026_gold_ingot_mold.png",
+      "original_x": 222,
+      "original_y": 461,
+      "width": 85,
+      "height": 65,
+      "area": 3550
+    },
+    {
+      "id": 27,
+      "filename": "027_ingot_metal_mold_empty.png",
+      "original_x": 435,
+      "original_y": 463,
+      "width": 92,
+      "height": 73,
+      "area": 3616
+    },
+    {
+      "id": 28,
+      "filename": "028_gold_metal_ingot_bar.png",
+      "original_x": 210,
+      "original_y": 540,
+      "width": 64,
+      "height": 58,
+      "area": 3037
+    },
+    {
+      "id": 29,
+      "filename": "029_silver_metal_ingot_bar.png",
+      "original_x": 281,
+      "original_y": 540,
+      "width": 62,
+      "height": 58,
+      "area": 2997
+    },
+    {
+      "id": 30,
+      "filename": "030_iron_metal_mold.png",
+      "original_x": 328,
+      "original_y": 475,
+      "width": 87,
+      "height": 61,
+      "area": 3546
+    },
+    {
+      "id": 31,
+      "filename": "031_coal_bucket_small.png",
+      "original_x": 364,
+      "original_y": 536,
+      "width": 68,
+      "height": 73,
+      "area": 4188
+    },
+    {
+      "id": 32,
+      "filename": "032_wooden_crate_box.png",
+      "original_x": 457,
+      "original_y": 537,
+      "width": 86,
+      "height": 71,
+      "area": 4420
+    },
+    {
+      "id": 33,
+      "filename": "033_large_wooden_table.png",
+      "original_x": 578,
+      "original_y": 502,
+      "width": 236,
+      "height": 131,
+      "area": 22848
+    },
+    {
+      "id": 34,
+      "filename": "034_tavern_table_cloth_mug_candle.png",
+      "original_x": 857,
+      "original_y": 475,
+      "width": 220,
+      "height": 139,
+      "area": 20253
+    },
+    {
+      "id": 35,
+      "filename": "035_apothecary_tools_cabinet.png",
+      "original_x": 1113,
+      "original_y": 501,
+      "width": 169,
+      "height": 216,
+      "area": 32792
+    },
+    {
+      "id": 36,
+      "filename": "036_hanging_blacksmith_banner_anvil.png",
+      "original_x": 1293,
+      "original_y": 494,
+      "width": 100,
+      "height": 202,
+      "area": 12360
+    },
+    {
+      "id": 37,
+      "filename": "037_street_lamp_lantern_post.png",
+      "original_x": 1399,
+      "original_y": 496,
+      "width": 43,
+      "height": 244,
+      "area": 5590
+    },
+    {
+      "id": 38,
+      "filename": "038_crossed_swords_set.png",
+      "original_x": 1452,
+      "original_y": 487,
+      "width": 63,
+      "height": 253,
+      "area": 4554
+    },
+    {
+      "id": 39,
+      "filename": "039_coal_sack_small.png",
+      "original_x": 31,
+      "original_y": 597,
+      "width": 64,
+      "height": 74,
+      "area": 3546
+    },
+    {
+      "id": 40,
+      "filename": "040_coal_sack_medium.png",
+      "original_x": 109,
+      "original_y": 589,
+      "width": 75,
+      "height": 84,
+      "area": 5027
+    },
+    {
+      "id": 41,
+      "filename": "041_stone_boulder_pile.png",
+      "original_x": 198,
+      "original_y": 620,
+      "width": 118,
+      "height": 85,
+      "area": 6760
+    },
+    {
+      "id": 42,
+      "filename": "042_coal_sack_tied.png",
+      "original_x": 333,
+      "original_y": 631,
+      "width": 64,
+      "height": 75,
+      "area": 3744
+    },
+    {
+      "id": 43,
+      "filename": "043_wooden_storage_crate.png",
+      "original_x": 417,
+      "original_y": 614,
+      "width": 89,
+      "height": 97,
+      "area": 7127
+    },
+    {
+      "id": 44,
+      "filename": "044_wooden_stool_block.png",
+      "original_x": 874,
+      "original_y": 633,
+      "width": 102,
+      "height": 98,
+      "area": 7107
+    },
+    {
+      "id": 45,
+      "filename": "045_wooden_stool_small.png",
+      "original_x": 1004,
+      "original_y": 634,
+      "width": 75,
+      "height": 84,
+      "area": 5119
+    },
+    {
+      "id": 46,
+      "filename": "046_spare_sword_vertical.png",
+      "original_x": 1483,
+      "original_y": 597,
+      "width": 33,
+      "height": 142,
+      "area": 1728
+    },
+    {
+      "id": 47,
+      "filename": "047_wall_hanging_banner_anvil_sword.png",
+      "original_x": 14,
+      "original_y": 709,
+      "width": 109,
+      "height": 241,
+      "area": 15831
+    },
+    {
+      "id": 48,
+      "filename": "048_long_wooden_bench.png",
+      "original_x": 543,
+      "original_y": 656,
+      "width": 228,
+      "height": 76,
+      "area": 11214
+    },
+    {
+      "id": 49,
+      "filename": "049_small_wooden_tub.png",
+      "original_x": 794,
+      "original_y": 665,
+      "width": 48,
+      "height": 52,
+      "area": 1985
+    },
+    {
+      "id": 50,
+      "filename": "050_potted_houseplant.png",
+      "original_x": 1301,
+      "original_y": 713,
+      "width": 73,
+      "height": 102,
+      "area": 4549
+    },
+    {
+      "id": 51,
+      "filename": "051_stone_brick_floor_tiles.png",
+      "original_x": 147,
+      "original_y": 729,
+      "width": 202,
+      "height": 244,
+      "area": 48717
+    },
+    {
+      "id": 52,
+      "filename": "052_wooden_plank_floor_tiles.png",
+      "original_x": 362,
+      "original_y": 729,
+      "width": 167,
+      "height": 244,
+      "area": 40558
+    },
+    {
+      "id": 53,
+      "filename": "053_red_ornamental_carpet.png",
+      "original_x": 556,
+      "original_y": 769,
+      "width": 152,
+      "height": 194,
+      "area": 29016
+    },
+    {
+      "id": 54,
+      "filename": "054_single_wooden_bed.png",
+      "original_x": 738,
+      "original_y": 781,
+      "width": 96,
+      "height": 182,
+      "area": 15792
+    },
+    {
+      "id": 55,
+      "filename": "055_wooden_nightstand_candle.png",
+      "original_x": 863,
+      "original_y": 742,
+      "width": 84,
+      "height": 120,
+      "area": 7960
+    },
+    {
+      "id": 56,
+      "filename": "056_workshop_loft_stairs_mezzanine.png",
+      "original_x": 986,
+      "original_y": 730,
+      "width": 261,
+      "height": 260,
+      "area": 47362
+    },
+    {
+      "id": 57,
+      "filename": "057_arched_stone_stairs_doorway.png",
+      "original_x": 1409,
+      "original_y": 767,
+      "width": 104,
+      "height": 223,
+      "area": 21607
+    },
+    {
+      "id": 58,
+      "filename": "058_iron_lock_wooden_chest.png",
+      "original_x": 856,
+      "original_y": 882,
+      "width": 98,
+      "height": 81,
+      "area": 7392
+    },
+    {
+      "id": 59,
+      "filename": "059_glass_window_frame.png",
+      "original_x": 1270,
+      "original_y": 838,
+      "width": 97,
+      "height": 124,
+      "area": 11382
+    }
+  ]
+}

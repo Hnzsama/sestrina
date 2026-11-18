@@ -6,9 +6,20 @@ if (instance_exists(oPlayer)) {
     if (_pdist < 55) {
         var _pulse = 0.5 + sin(glow_anim * 2.0) * 0.5;
         
+        // Cincin Interaksi Bercahaya [O] (Reference: rest bed option.png & can't get in building.png)
+        draw_set_alpha(0.75 * _pulse);
+        draw_set_color(make_color_rgb(110, 215, 255));
+        draw_ellipse(x - 12, y - 26, x + 12, y - 10, true);
+        draw_ellipse(x - 11, y - 25, x + 11, y - 11, true);
+        
+        draw_set_color(make_color_rgb(255, 240, 180));
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_middle);
+        draw_text(x, y - 18, "O");
+        
         if (required_quest_stage > 0 && global.quest_stage < required_quest_stage) {
             // Indikator Pintu Terkunci (Garis Palang Merah & Gembok)
-            draw_set_alpha(0.8 * _pulse);
+            draw_set_alpha(0.85 * _pulse);
             draw_set_color(make_color_rgb(255, 75, 75));
             draw_line_width(x - 22, y - 2, x + 22, y - 2, 3);
             draw_roundrect_ext(x - 6, y - 11, x + 6, y - 2, 2, 2, false);
@@ -17,7 +28,7 @@ if (instance_exists(oPlayer)) {
             draw_set_alpha(1.0);
         } else {
             // Panah Indikator Masuk Emas Bersinar Halus di ambang pintu
-            draw_set_alpha(0.6 * _pulse);
+            draw_set_alpha(0.7 * _pulse);
             draw_set_color(make_color_rgb(255, 230, 140));
             draw_triangle(x - 5, y + 2, x + 5, y + 2, x, y - 4, false);
             draw_set_alpha(1.0);

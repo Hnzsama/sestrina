@@ -1,0 +1,151 @@
+{
+  "source_image": "Pixel-Art RPG Arsenal and Spells Sheet.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "sprite_001.png",
+      "original_x": 27,
+      "original_y": 20,
+      "width": 546,
+      "height": 318,
+      "area": 72541
+    },
+    {
+      "id": 2,
+      "filename": "sprite_002.png",
+      "original_x": 351,
+      "original_y": 49,
+      "width": 241,
+      "height": 289,
+      "area": 55944
+    },
+    {
+      "id": 3,
+      "filename": "sprite_003.png",
+      "original_x": 593,
+      "original_y": 9,
+      "width": 349,
+      "height": 329,
+      "area": 69755
+    },
+    {
+      "id": 4,
+      "filename": "sprite_004.png",
+      "original_x": 944,
+      "original_y": 58,
+      "width": 254,
+      "height": 280,
+      "area": 54713
+    },
+    {
+      "id": 5,
+      "filename": "sprite_005.png",
+      "original_x": 962,
+      "original_y": 20,
+      "width": 558,
+      "height": 319,
+      "area": 67133
+    },
+    {
+      "id": 6,
+      "filename": "sprite_006.png",
+      "original_x": 67,
+      "original_y": 385,
+      "width": 207,
+      "height": 263,
+      "area": 45473
+    },
+    {
+      "id": 7,
+      "filename": "sprite_007.png",
+      "original_x": 143,
+      "original_y": 362,
+      "width": 430,
+      "height": 29,
+      "area": 1238
+    },
+    {
+      "id": 8,
+      "filename": "sprite_008.png",
+      "original_x": 370,
+      "original_y": 397,
+      "width": 199,
+      "height": 251,
+      "area": 42324
+    },
+    {
+      "id": 9,
+      "filename": "sprite_009.png",
+      "original_x": 593,
+      "original_y": 352,
+      "width": 349,
+      "height": 297,
+      "area": 56053
+    },
+    {
+      "id": 10,
+      "filename": "sprite_010.png",
+      "original_x": 961,
+      "original_y": 361,
+      "width": 398,
+      "height": 30,
+      "area": 1179
+    },
+    {
+      "id": 11,
+      "filename": "sprite_011.png",
+      "original_x": 969,
+      "original_y": 399,
+      "width": 199,
+      "height": 249,
+      "area": 41523
+    },
+    {
+      "id": 12,
+      "filename": "sprite_012.png",
+      "original_x": 1266,
+      "original_y": 390,
+      "width": 211,
+      "height": 258,
+      "area": 44696
+    },
+    {
+      "id": 13,
+      "filename": "sprite_013.png",
+      "original_x": 54,
+      "original_y": 679,
+      "width": 519,
+      "height": 293,
+      "area": 58872
+    },
+    {
+      "id": 14,
+      "filename": "sprite_014.png",
+      "original_x": 360,
+      "original_y": 702,
+      "width": 229,
+      "height": 270,
+      "area": 50057
+    },
+    {
+      "id": 15,
+      "filename": "sprite_015.png",
+      "original_x": 593,
+      "original_y": 670,
+      "width": 349,
+      "height": 302,
+      "area": 64804
+    },
+    {
+      "id": 16,
+      "filename": "sprite_016.png",
+      "original_x": 938,
+      "original_y": 679,
+      "width": 548,
+      "height": 294,
+      "area": 116314
+    }
+  ]
+}

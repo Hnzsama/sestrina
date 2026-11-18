@@ -1,0 +1,1078 @@
+{
+  "source_image": "Blacksmith Companion RPG Spritesheet.png",
+  "width": 1672,
+  "height": 941,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_companion_portrait_large.png",
+      "original_x": 16,
+      "original_y": 26,
+      "width": 158,
+      "height": 190,
+      "area": 17862
+    },
+    {
+      "id": 2,
+      "filename": "002_ui_label_idle.png",
+      "original_x": 240,
+      "original_y": 10,
+      "width": 73,
+      "height": 32,
+      "area": 2218
+    },
+    {
+      "id": 3,
+      "filename": "003_ui_label_run.png",
+      "original_x": 768,
+      "original_y": 10,
+      "width": 76,
+      "height": 32,
+      "area": 2306
+    },
+    {
+      "id": 4,
+      "filename": "004_ui_label_run.png",
+      "original_x": 1271,
+      "original_y": 10,
+      "width": 67,
+      "height": 32,
+      "area": 2009
+    },
+    {
+      "id": 5,
+      "filename": "005_blacksmith_idle.png",
+      "original_x": 250,
+      "original_y": 50,
+      "width": 60,
+      "height": 172,
+      "area": 6679
+    },
+    {
+      "id": 6,
+      "filename": "006_blacksmith_idle.png",
+      "original_x": 330,
+      "original_y": 51,
+      "width": 61,
+      "height": 86,
+      "area": 3812
+    },
+    {
+      "id": 7,
+      "filename": "007_blacksmith_idle.png",
+      "original_x": 411,
+      "original_y": 51,
+      "width": 60,
+      "height": 86,
+      "area": 3600
+    },
+    {
+      "id": 8,
+      "filename": "008_blacksmith_walk.png",
+      "original_x": 492,
+      "original_y": 50,
+      "width": 60,
+      "height": 85,
+      "area": 3617
+    },
+    {
+      "id": 9,
+      "filename": "009_blacksmith_walk.png",
+      "original_x": 573,
+      "original_y": 49,
+      "width": 60,
+      "height": 89,
+      "area": 3775
+    },
+    {
+      "id": 10,
+      "filename": "010_blacksmith_walk.png",
+      "original_x": 653,
+      "original_y": 49,
+      "width": 61,
+      "height": 88,
+      "area": 3699
+    },
+    {
+      "id": 11,
+      "filename": "011_blacksmith_run.png",
+      "original_x": 781,
+      "original_y": 49,
+      "width": 60,
+      "height": 75,
+      "area": 3069
+    },
+    {
+      "id": 12,
+      "filename": "012_blacksmith_run.png",
+      "original_x": 867,
+      "original_y": 47,
+      "width": 56,
+      "height": 76,
+      "area": 2849
+    },
+    {
+      "id": 13,
+      "filename": "013_blacksmith_run.png",
+      "original_x": 949,
+      "original_y": 45,
+      "width": 50,
+      "height": 77,
+      "area": 2680
+    },
+    {
+      "id": 14,
+      "filename": "014_blacksmith_run.png",
+      "original_x": 1028,
+      "original_y": 46,
+      "width": 52,
+      "height": 73,
+      "area": 2627
+    },
+    {
+      "id": 15,
+      "filename": "015_blacksmith_run.png",
+      "original_x": 1107,
+      "original_y": 45,
+      "width": 53,
+      "height": 72,
+      "area": 2726
+    },
+    {
+      "id": 16,
+      "filename": "016_blacksmith_run.png",
+      "original_x": 1188,
+      "original_y": 46,
+      "width": 50,
+      "height": 73,
+      "area": 2673
+    },
+    {
+      "id": 17,
+      "filename": "017_blacksmith_run.png",
+      "original_x": 1285,
+      "original_y": 48,
+      "width": 52,
+      "height": 76,
+      "area": 2673
+    },
+    {
+      "id": 18,
+      "filename": "018_blacksmith_run.png",
+      "original_x": 1367,
+      "original_y": 45,
+      "width": 52,
+      "height": 79,
+      "area": 2734
+    },
+    {
+      "id": 19,
+      "filename": "019_blacksmith_run.png",
+      "original_x": 1447,
+      "original_y": 43,
+      "width": 48,
+      "height": 76,
+      "area": 2558
+    },
+    {
+      "id": 20,
+      "filename": "020_blacksmith_run.png",
+      "original_x": 1524,
+      "original_y": 43,
+      "width": 54,
+      "height": 75,
+      "area": 2716
+    },
+    {
+      "id": 21,
+      "filename": "021_blacksmith_run.png",
+      "original_x": 1601,
+      "original_y": 44,
+      "width": 52,
+      "height": 77,
+      "area": 2719
+    },
+    {
+      "id": 22,
+      "filename": "022_blacksmith_idle.png",
+      "original_x": 336,
+      "original_y": 146,
+      "width": 47,
+      "height": 79,
+      "area": 2663
+    },
+    {
+      "id": 23,
+      "filename": "023_blacksmith_idle.png",
+      "original_x": 415,
+      "original_y": 146,
+      "width": 49,
+      "height": 79,
+      "area": 2621
+    },
+    {
+      "id": 24,
+      "filename": "024_blacksmith_walk.png",
+      "original_x": 495,
+      "original_y": 144,
+      "width": 55,
+      "height": 78,
+      "area": 3416
+    },
+    {
+      "id": 25,
+      "filename": "025_blacksmith_walk.png",
+      "original_x": 580,
+      "original_y": 147,
+      "width": 49,
+      "height": 78,
+      "area": 2601
+    },
+    {
+      "id": 26,
+      "filename": "026_blacksmith_walk.png",
+      "original_x": 660,
+      "original_y": 141,
+      "width": 53,
+      "height": 84,
+      "area": 3127
+    },
+    {
+      "id": 27,
+      "filename": "027_blacksmith_run.png",
+      "original_x": 783,
+      "original_y": 131,
+      "width": 53,
+      "height": 80,
+      "area": 3055
+    },
+    {
+      "id": 28,
+      "filename": "028_blacksmith_run.png",
+      "original_x": 869,
+      "original_y": 131,
+      "width": 47,
+      "height": 81,
+      "area": 2819
+    },
+    {
+      "id": 29,
+      "filename": "029_blacksmith_run.png",
+      "original_x": 952,
+      "original_y": 133,
+      "width": 46,
+      "height": 77,
+      "area": 2606
+    },
+    {
+      "id": 30,
+      "filename": "030_blacksmith_run.png",
+      "original_x": 1033,
+      "original_y": 131,
+      "width": 44,
+      "height": 80,
+      "area": 2647
+    },
+    {
+      "id": 31,
+      "filename": "031_blacksmith_run.png",
+      "original_x": 1111,
+      "original_y": 131,
+      "width": 47,
+      "height": 80,
+      "area": 2651
+    },
+    {
+      "id": 32,
+      "filename": "032_blacksmith_run.png",
+      "original_x": 1190,
+      "original_y": 132,
+      "width": 48,
+      "height": 79,
+      "area": 2772
+    },
+    {
+      "id": 33,
+      "filename": "033_blacksmith_run.png",
+      "original_x": 1292,
+      "original_y": 133,
+      "width": 45,
+      "height": 76,
+      "area": 2464
+    },
+    {
+      "id": 34,
+      "filename": "034_blacksmith_run.png",
+      "original_x": 1369,
+      "original_y": 132,
+      "width": 49,
+      "height": 78,
+      "area": 2628
+    },
+    {
+      "id": 35,
+      "filename": "035_blacksmith_run.png",
+      "original_x": 1447,
+      "original_y": 131,
+      "width": 47,
+      "height": 78,
+      "area": 2554
+    },
+    {
+      "id": 36,
+      "filename": "036_blacksmith_run.png",
+      "original_x": 1528,
+      "original_y": 133,
+      "width": 48,
+      "height": 77,
+      "area": 2544
+    },
+    {
+      "id": 37,
+      "filename": "037_blacksmith_run.png",
+      "original_x": 1606,
+      "original_y": 133,
+      "width": 47,
+      "height": 79,
+      "area": 2631
+    },
+    {
+      "id": 38,
+      "filename": "038_companion_portrait_large.png",
+      "original_x": 31,
+      "original_y": 235,
+      "width": 162,
+      "height": 32,
+      "area": 5045
+    },
+    {
+      "id": 39,
+      "filename": "039_ui_label_walk.png",
+      "original_x": 680,
+      "original_y": 233,
+      "width": 94,
+      "height": 32,
+      "area": 2850
+    },
+    {
+      "id": 40,
+      "filename": "040_blacksmith_attack.png",
+      "original_x": 826,
+      "original_y": 263,
+      "width": 85,
+      "height": 89,
+      "area": 5077
+    },
+    {
+      "id": 41,
+      "filename": "041_blacksmith_run.png",
+      "original_x": 1212,
+      "original_y": 246,
+      "width": 207,
+      "height": 128,
+      "area": 13047
+    },
+    {
+      "id": 42,
+      "filename": "042_blacksmith_attack.png",
+      "original_x": 1458,
+      "original_y": 264,
+      "width": 78,
+      "height": 112,
+      "area": 5519
+    },
+    {
+      "id": 43,
+      "filename": "043_blacksmith_attack.png",
+      "original_x": 1564,
+      "original_y": 263,
+      "width": 82,
+      "height": 102,
+      "area": 5205
+    },
+    {
+      "id": 44,
+      "filename": "044_blacksmith_forge_work.png",
+      "original_x": 28,
+      "original_y": 275,
+      "width": 90,
+      "height": 104,
+      "area": 6637
+    },
+    {
+      "id": 45,
+      "filename": "045_blacksmith_forge_work.png",
+      "original_x": 147,
+      "original_y": 275,
+      "width": 83,
+      "height": 104,
+      "area": 6047
+    },
+    {
+      "id": 46,
+      "filename": "046_blacksmith_forge_work.png",
+      "original_x": 262,
+      "original_y": 275,
+      "width": 82,
+      "height": 104,
+      "area": 6279
+    },
+    {
+      "id": 47,
+      "filename": "047_blacksmith_forge_work.png",
+      "original_x": 375,
+      "original_y": 276,
+      "width": 83,
+      "height": 103,
+      "area": 6490
+    },
+    {
+      "id": 48,
+      "filename": "048_blacksmith_attack.png",
+      "original_x": 489,
+      "original_y": 274,
+      "width": 83,
+      "height": 105,
+      "area": 6309
+    },
+    {
+      "id": 49,
+      "filename": "049_blacksmith_attack.png",
+      "original_x": 601,
+      "original_y": 273,
+      "width": 81,
+      "height": 103,
+      "area": 6156
+    },
+    {
+      "id": 50,
+      "filename": "050_blacksmith_attack.png",
+      "original_x": 714,
+      "original_y": 272,
+      "width": 79,
+      "height": 103,
+      "area": 5213
+    },
+    {
+      "id": 51,
+      "filename": "051_blacksmith_attack.png",
+      "original_x": 924,
+      "original_y": 270,
+      "width": 118,
+      "height": 104,
+      "area": 8193
+    },
+    {
+      "id": 52,
+      "filename": "052_blacksmith_attack.png",
+      "original_x": 1062,
+      "original_y": 269,
+      "width": 129,
+      "height": 108,
+      "area": 9289
+    },
+    {
+      "id": 53,
+      "filename": "053_blacksmith_skill_hammer_spin.png",
+      "original_x": 20,
+      "original_y": 442,
+      "width": 137,
+      "height": 109,
+      "area": 9511
+    },
+    {
+      "id": 54,
+      "filename": "054_ui_label_forge_work.png",
+      "original_x": 32,
+      "original_y": 395,
+      "width": 221,
+      "height": 33,
+      "area": 6935
+    },
+    {
+      "id": 55,
+      "filename": "055_blacksmith_skill_hammer_spin.png",
+      "original_x": 170,
+      "original_y": 433,
+      "width": 149,
+      "height": 125,
+      "area": 12368
+    },
+    {
+      "id": 56,
+      "filename": "056_blacksmith_skill_hammer_spin.png",
+      "original_x": 336,
+      "original_y": 434,
+      "width": 123,
+      "height": 120,
+      "area": 9750
+    },
+    {
+      "id": 57,
+      "filename": "057_blacksmith_skill_forge_slam.png",
+      "original_x": 467,
+      "original_y": 439,
+      "width": 130,
+      "height": 115,
+      "area": 9669
+    },
+    {
+      "id": 58,
+      "filename": "058_blacksmith_skill_forge_slam.png",
+      "original_x": 660,
+      "original_y": 432,
+      "width": 87,
+      "height": 110,
+      "area": 5593
+    },
+    {
+      "id": 59,
+      "filename": "059_ui_label_attack.png",
+      "original_x": 672,
+      "original_y": 394,
+      "width": 193,
+      "height": 33,
+      "area": 6055
+    },
+    {
+      "id": 60,
+      "filename": "060_blacksmith_skill_iron_wall.png",
+      "original_x": 755,
+      "original_y": 429,
+      "width": 412,
+      "height": 135,
+      "area": 32485
+    },
+    {
+      "id": 61,
+      "filename": "061_ui_label_attack.png",
+      "original_x": 1171,
+      "original_y": 395,
+      "width": 179,
+      "height": 32,
+      "area": 5595
+    },
+    {
+      "id": 62,
+      "filename": "062_blacksmith_skill_iron_wall.png",
+      "original_x": 1366,
+      "original_y": 426,
+      "width": 300,
+      "height": 123,
+      "area": 28956
+    },
+    {
+      "id": 63,
+      "filename": "063_blacksmith_skill_iron_wall.png",
+      "original_x": 990,
+      "original_y": 444,
+      "width": 7,
+      "height": 21,
+      "area": 102
+    },
+    {
+      "id": 64,
+      "filename": "064_blacksmith_skill_iron_wall.png",
+      "original_x": 1197,
+      "original_y": 449,
+      "width": 60,
+      "height": 90,
+      "area": 3683
+    },
+    {
+      "id": 65,
+      "filename": "065_blacksmith_skill_iron_wall.png",
+      "original_x": 1287,
+      "original_y": 451,
+      "width": 73,
+      "height": 88,
+      "area": 4147
+    },
+    {
+      "id": 66,
+      "filename": "066_ui_label_skill_hammer_spin.png",
+      "original_x": 26,
+      "original_y": 577,
+      "width": 146,
+      "height": 32,
+      "area": 4548
+    },
+    {
+      "id": 67,
+      "filename": "067_blacksmith_damage_hit.png",
+      "original_x": 144,
+      "original_y": 619,
+      "width": 76,
+      "height": 94,
+      "area": 4376
+    },
+    {
+      "id": 68,
+      "filename": "068_blacksmith_damage_hit.png",
+      "original_x": 257,
+      "original_y": 618,
+      "width": 84,
+      "height": 91,
+      "area": 4594
+    },
+    {
+      "id": 69,
+      "filename": "069_blacksmith_damage_hit.png",
+      "original_x": 312,
+      "original_y": 614,
+      "width": 32,
+      "height": 27,
+      "area": 364
+    },
+    {
+      "id": 70,
+      "filename": "070_blacksmith_hurt_knockback.png",
+      "original_x": 507,
+      "original_y": 614,
+      "width": 62,
+      "height": 97,
+      "area": 3749
+    },
+    {
+      "id": 71,
+      "filename": "071_ui_label_skill_forge_slam.png",
+      "original_x": 638,
+      "original_y": 577,
+      "width": 194,
+      "height": 32,
+      "area": 6093
+    },
+    {
+      "id": 72,
+      "filename": "072_blacksmith_die.png",
+      "original_x": 883,
+      "original_y": 619,
+      "width": 76,
+      "height": 87,
+      "area": 4053
+    },
+    {
+      "id": 73,
+      "filename": "073_blacksmith_skill_iron_wall.png",
+      "original_x": 1185,
+      "original_y": 577,
+      "width": 60,
+      "height": 33,
+      "area": 1818
+    },
+    {
+      "id": 74,
+      "filename": "074_blacksmith_die.png",
+      "original_x": 1207,
+      "original_y": 617,
+      "width": 64,
+      "height": 95,
+      "area": 4783
+    },
+    {
+      "id": 75,
+      "filename": "075_blacksmith_damage_hit.png",
+      "original_x": 33,
+      "original_y": 622,
+      "width": 67,
+      "height": 95,
+      "area": 4269
+    },
+    {
+      "id": 76,
+      "filename": "076_blacksmith_hurt_knockback.png",
+      "original_x": 383,
+      "original_y": 620,
+      "width": 78,
+      "height": 95,
+      "area": 4464
+    },
+    {
+      "id": 77,
+      "filename": "077_blacksmith_hurt_knockback.png",
+      "original_x": 660,
+      "original_y": 620,
+      "width": 74,
+      "height": 93,
+      "area": 4363
+    },
+    {
+      "id": 78,
+      "filename": "078_blacksmith_die.png",
+      "original_x": 759,
+      "original_y": 624,
+      "width": 81,
+      "height": 82,
+      "area": 4028
+    },
+    {
+      "id": 79,
+      "filename": "079_blacksmith_die.png",
+      "original_x": 859,
+      "original_y": 658,
+      "width": 14,
+      "height": 23,
+      "area": 190
+    },
+    {
+      "id": 80,
+      "filename": "080_blacksmith_die.png",
+      "original_x": 993,
+      "original_y": 649,
+      "width": 82,
+      "height": 63,
+      "area": 3726
+    },
+    {
+      "id": 81,
+      "filename": "081_blacksmith_die.png",
+      "original_x": 1091,
+      "original_y": 667,
+      "width": 84,
+      "height": 56,
+      "area": 3172
+    },
+    {
+      "id": 82,
+      "filename": "082_blacksmith_die.png",
+      "original_x": 1297,
+      "original_y": 628,
+      "width": 79,
+      "height": 87,
+      "area": 4473
+    },
+    {
+      "id": 83,
+      "filename": "083_ui_label_die.png",
+      "original_x": 1395,
+      "original_y": 671,
+      "width": 97,
+      "height": 46,
+      "area": 3354
+    },
+    {
+      "id": 84,
+      "filename": "084_ui_label_die.png",
+      "original_x": 1512,
+      "original_y": 676,
+      "width": 111,
+      "height": 47,
+      "area": 3788
+    },
+    {
+      "id": 85,
+      "filename": "085_ui_label_damage_hit.png",
+      "original_x": 21,
+      "original_y": 740,
+      "width": 203,
+      "height": 32,
+      "area": 6367
+    },
+    {
+      "id": 86,
+      "filename": "086_blacksmith_victory_celebrate.png",
+      "original_x": 21,
+      "original_y": 780,
+      "width": 110,
+      "height": 124,
+      "area": 7672
+    },
+    {
+      "id": 87,
+      "filename": "087_blacksmith_victory_celebrate.png",
+      "original_x": 155,
+      "original_y": 778,
+      "width": 92,
+      "height": 120,
+      "area": 6494
+    },
+    {
+      "id": 88,
+      "filename": "088_blacksmith_victory_celebrate.png",
+      "original_x": 270,
+      "original_y": 779,
+      "width": 76,
+      "height": 121,
+      "area": 5681
+    },
+    {
+      "id": 89,
+      "filename": "089_blacksmith_expression.png",
+      "original_x": 373,
+      "original_y": 778,
+      "width": 85,
+      "height": 122,
+      "area": 6002
+    },
+    {
+      "id": 90,
+      "filename": "090_blacksmith_expression.png",
+      "original_x": 478,
+      "original_y": 785,
+      "width": 86,
+      "height": 113,
+      "area": 6573
+    },
+    {
+      "id": 91,
+      "filename": "091_ui_label_hurt_knockback.png",
+      "original_x": 586,
+      "original_y": 746,
+      "width": 189,
+      "height": 33,
+      "area": 6086
+    },
+    {
+      "id": 92,
+      "filename": "092_blacksmith_vfx_icon.png",
+      "original_x": 696,
+      "original_y": 788,
+      "width": 10,
+      "height": 28,
+      "area": 244
+    },
+    {
+      "id": 93,
+      "filename": "093_blacksmith_vfx_icon.png",
+      "original_x": 752,
+      "original_y": 789,
+      "width": 35,
+      "height": 26,
+      "area": 628
+    },
+    {
+      "id": 94,
+      "filename": "094_blacksmith_vfx_icon.png",
+      "original_x": 883,
+      "original_y": 789,
+      "width": 27,
+      "height": 25,
+      "area": 475
+    },
+    {
+      "id": 95,
+      "filename": "095_blacksmith_vfx_icon.png",
+      "original_x": 959,
+      "original_y": 788,
+      "width": 27,
+      "height": 27,
+      "area": 399
+    },
+    {
+      "id": 96,
+      "filename": "096_blacksmith_vfx_icon.png",
+      "original_x": 1037,
+      "original_y": 792,
+      "width": 129,
+      "height": 131,
+      "area": 4573
+    },
+    {
+      "id": 97,
+      "filename": "097_blacksmith_die.png",
+      "original_x": 1095,
+      "original_y": 749,
+      "width": 100,
+      "height": 90,
+      "area": 4815
+    },
+    {
+      "id": 98,
+      "filename": "098_blacksmith_vfx_icon.png",
+      "original_x": 1209,
+      "original_y": 791,
+      "width": 33,
+      "height": 35,
+      "area": 626
+    },
+    {
+      "id": 99,
+      "filename": "099_blacksmith_die.png",
+      "original_x": 1263,
+      "original_y": 757,
+      "width": 76,
+      "height": 77,
+      "area": 3051
+    },
+    {
+      "id": 100,
+      "filename": "100_blacksmith_die.png",
+      "original_x": 1297,
+      "original_y": 749,
+      "width": 5,
+      "height": 11,
+      "area": 49
+    },
+    {
+      "id": 101,
+      "filename": "101_blacksmith_vfx_icon.png",
+      "original_x": 1359,
+      "original_y": 777,
+      "width": 84,
+      "height": 53,
+      "area": 2264
+    },
+    {
+      "id": 102,
+      "filename": "102_blacksmith_vfx_icon.png",
+      "original_x": 1406,
+      "original_y": 760,
+      "width": 7,
+      "height": 23,
+      "area": 109
+    },
+    {
+      "id": 103,
+      "filename": "103_blacksmith_vfx_icon.png",
+      "original_x": 1467,
+      "original_y": 796,
+      "width": 16,
+      "height": 16,
+      "area": 157
+    },
+    {
+      "id": 104,
+      "filename": "104_blacksmith_vfx_icon.png",
+      "original_x": 1473,
+      "original_y": 784,
+      "width": 97,
+      "height": 47,
+      "area": 2494
+    },
+    {
+      "id": 105,
+      "filename": "105_blacksmith_vfx_icon.png",
+      "original_x": 1478,
+      "original_y": 773,
+      "width": 17,
+      "height": 18,
+      "area": 243
+    },
+    {
+      "id": 106,
+      "filename": "106_blacksmith_vfx_icon.png",
+      "original_x": 1518,
+      "original_y": 766,
+      "width": 20,
+      "height": 21,
+      "area": 297
+    },
+    {
+      "id": 107,
+      "filename": "107_blacksmith_die.png",
+      "original_x": 1590,
+      "original_y": 753,
+      "width": 58,
+      "height": 86,
+      "area": 3823
+    },
+    {
+      "id": 108,
+      "filename": "108_blacksmith_expression.png",
+      "original_x": 597,
+      "original_y": 803,
+      "width": 62,
+      "height": 89,
+      "area": 4031
+    },
+    {
+      "id": 109,
+      "filename": "109_blacksmith_vfx_icon.png",
+      "original_x": 673,
+      "original_y": 820,
+      "width": 58,
+      "height": 72,
+      "area": 3213
+    },
+    {
+      "id": 110,
+      "filename": "110_blacksmith_vfx_icon.png",
+      "original_x": 742,
+      "original_y": 820,
+      "width": 61,
+      "height": 73,
+      "area": 3324
+    },
+    {
+      "id": 111,
+      "filename": "111_blacksmith_vfx_icon.png",
+      "original_x": 813,
+      "original_y": 820,
+      "width": 56,
+      "height": 72,
+      "area": 3082
+    },
+    {
+      "id": 112,
+      "filename": "112_blacksmith_vfx_icon.png",
+      "original_x": 879,
+      "original_y": 820,
+      "width": 58,
+      "height": 72,
+      "area": 3158
+    },
+    {
+      "id": 113,
+      "filename": "113_blacksmith_vfx_icon.png",
+      "original_x": 947,
+      "original_y": 820,
+      "width": 58,
+      "height": 72,
+      "area": 3181
+    },
+    {
+      "id": 114,
+      "filename": "114_blacksmith_vfx_icon.png",
+      "original_x": 1134,
+      "original_y": 853,
+      "width": 9,
+      "height": 41,
+      "area": 178
+    },
+    {
+      "id": 115,
+      "filename": "115_blacksmith_vfx_icon.png",
+      "original_x": 1395,
+      "original_y": 843,
+      "width": 69,
+      "height": 82,
+      "area": 4433
+    },
+    {
+      "id": 116,
+      "filename": "116_blacksmith_vfx_icon.png",
+      "original_x": 1488,
+      "original_y": 844,
+      "width": 88,
+      "height": 81,
+      "area": 4873
+    },
+    {
+      "id": 117,
+      "filename": "117_blacksmith_vfx_icon.png",
+      "original_x": 1602,
+      "original_y": 851,
+      "width": 53,
+      "height": 74,
+      "area": 3482
+    },
+    {
+      "id": 118,
+      "filename": "118_blacksmith_vfx_icon.png",
+      "original_x": 1199,
+      "original_y": 861,
+      "width": 64,
+      "height": 61,
+      "area": 2178
+    },
+    {
+      "id": 119,
+      "filename": "119_blacksmith_vfx_icon.png",
+      "original_x": 1285,
+      "original_y": 861,
+      "width": 90,
+      "height": 64,
+      "area": 4565
+    }
+  ]
+}

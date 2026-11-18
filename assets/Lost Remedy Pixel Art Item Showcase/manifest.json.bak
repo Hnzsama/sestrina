@@ -1,0 +1,322 @@
+{
+  "source_image": "Lost Remedy Pixel Art Item Showcase.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "sprite_001.png",
+      "original_x": 78,
+      "original_y": 44,
+      "width": 493,
+      "height": 503,
+      "area": 175655
+    },
+    {
+      "id": 2,
+      "filename": "sprite_002.png",
+      "original_x": 624,
+      "original_y": 62,
+      "width": 794,
+      "height": 497,
+      "area": 106412
+    },
+    {
+      "id": 3,
+      "filename": "sprite_003.png",
+      "original_x": 664,
+      "original_y": 90,
+      "width": 167,
+      "height": 166,
+      "area": 21935
+    },
+    {
+      "id": 4,
+      "filename": "sprite_004.png",
+      "original_x": 864,
+      "original_y": 116,
+      "width": 118,
+      "height": 47,
+      "area": 2494
+    },
+    {
+      "id": 5,
+      "filename": "sprite_005.png",
+      "original_x": 1003,
+      "original_y": 111,
+      "width": 221,
+      "height": 65,
+      "area": 5591
+    },
+    {
+      "id": 6,
+      "filename": "sprite_006.png",
+      "original_x": 1314,
+      "original_y": 128,
+      "width": 13,
+      "height": 23,
+      "area": 116
+    },
+    {
+      "id": 7,
+      "filename": "sprite_007.png",
+      "original_x": 865,
+      "original_y": 191,
+      "width": 102,
+      "height": 36,
+      "area": 1707
+    },
+    {
+      "id": 8,
+      "filename": "sprite_008.png",
+      "original_x": 976,
+      "original_y": 192,
+      "width": 78,
+      "height": 31,
+      "area": 1281
+    },
+    {
+      "id": 9,
+      "filename": "sprite_009.png",
+      "original_x": 662,
+      "original_y": 257,
+      "width": 347,
+      "height": 15,
+      "area": 1627
+    },
+    {
+      "id": 10,
+      "filename": "sprite_010.png",
+      "original_x": 1017,
+      "original_y": 249,
+      "width": 27,
+      "height": 27,
+      "area": 384
+    },
+    {
+      "id": 11,
+      "filename": "sprite_011.png",
+      "original_x": 1105,
+      "original_y": 299,
+      "width": 108,
+      "height": 38,
+      "area": 2037
+    },
+    {
+      "id": 12,
+      "filename": "sprite_012.png",
+      "original_x": 680,
+      "original_y": 300,
+      "width": 118,
+      "height": 31,
+      "area": 1886
+    },
+    {
+      "id": 13,
+      "filename": "sprite_013.png",
+      "original_x": 802,
+      "original_y": 300,
+      "width": 214,
+      "height": 31,
+      "area": 3004
+    },
+    {
+      "id": 14,
+      "filename": "sprite_014.png",
+      "original_x": 1022,
+      "original_y": 308,
+      "width": 80,
+      "height": 29,
+      "area": 1318
+    },
+    {
+      "id": 15,
+      "filename": "sprite_015.png",
+      "original_x": 678,
+      "original_y": 341,
+      "width": 127,
+      "height": 37,
+      "area": 2050
+    },
+    {
+      "id": 16,
+      "filename": "sprite_016.png",
+      "original_x": 815,
+      "original_y": 350,
+      "width": 124,
+      "height": 30,
+      "area": 1784
+    },
+    {
+      "id": 17,
+      "filename": "sprite_017.png",
+      "original_x": 679,
+      "original_y": 381,
+      "width": 82,
+      "height": 32,
+      "area": 1265
+    },
+    {
+      "id": 18,
+      "filename": "sprite_018.png",
+      "original_x": 769,
+      "original_y": 391,
+      "width": 79,
+      "height": 28,
+      "area": 1232
+    },
+    {
+      "id": 19,
+      "filename": "sprite_019.png",
+      "original_x": 852,
+      "original_y": 382,
+      "width": 51,
+      "height": 31,
+      "area": 831
+    },
+    {
+      "id": 20,
+      "filename": "sprite_020.png",
+      "original_x": 911,
+      "original_y": 381,
+      "width": 70,
+      "height": 32,
+      "area": 1065
+    },
+    {
+      "id": 21,
+      "filename": "sprite_021.png",
+      "original_x": 679,
+      "original_y": 423,
+      "width": 72,
+      "height": 31,
+      "area": 1172
+    },
+    {
+      "id": 22,
+      "filename": "sprite_022.png",
+      "original_x": 758,
+      "original_y": 423,
+      "width": 88,
+      "height": 31,
+      "area": 1408
+    },
+    {
+      "id": 23,
+      "filename": "sprite_023.png",
+      "original_x": 402,
+      "original_y": 500,
+      "width": 25,
+      "height": 34,
+      "area": 305
+    },
+    {
+      "id": 24,
+      "filename": "sprite_024.png",
+      "original_x": 679,
+      "original_y": 489,
+      "width": 135,
+      "height": 35,
+      "area": 2096
+    },
+    {
+      "id": 25,
+      "filename": "sprite_025.png",
+      "original_x": 37,
+      "original_y": 634,
+      "width": 237,
+      "height": 48,
+      "area": 10726
+    },
+    {
+      "id": 26,
+      "filename": "sprite_026.png",
+      "original_x": 489,
+      "original_y": 633,
+      "width": 243,
+      "height": 48,
+      "area": 11207
+    },
+    {
+      "id": 27,
+      "filename": "sprite_027.png",
+      "original_x": 986,
+      "original_y": 633,
+      "width": 528,
+      "height": 326,
+      "area": 105913
+    },
+    {
+      "id": 28,
+      "filename": "sprite_028.png",
+      "original_x": 437,
+      "original_y": 690,
+      "width": 118,
+      "height": 221,
+      "area": 16995
+    },
+    {
+      "id": 29,
+      "filename": "sprite_029.png",
+      "original_x": 567,
+      "original_y": 696,
+      "width": 120,
+      "height": 218,
+      "area": 18033
+    },
+    {
+      "id": 30,
+      "filename": "sprite_030.png",
+      "original_x": 702,
+      "original_y": 695,
+      "width": 116,
+      "height": 216,
+      "area": 16893
+    },
+    {
+      "id": 31,
+      "filename": "sprite_031.png",
+      "original_x": 59,
+      "original_y": 713,
+      "width": 193,
+      "height": 203,
+      "area": 36026
+    },
+    {
+      "id": 32,
+      "filename": "sprite_032.png",
+      "original_x": 316,
+      "original_y": 732,
+      "width": 104,
+      "height": 178,
+      "area": 11964
+    },
+    {
+      "id": 33,
+      "filename": "sprite_033.png",
+      "original_x": 441,
+      "original_y": 708,
+      "width": 13,
+      "height": 48,
+      "area": 203
+    },
+    {
+      "id": 34,
+      "filename": "sprite_034.png",
+      "original_x": 721,
+      "original_y": 712,
+      "width": 4,
+      "height": 16,
+      "area": 38
+    },
+    {
+      "id": 35,
+      "filename": "sprite_035.png",
+      "original_x": 839,
+      "original_y": 729,
+      "width": 100,
+      "height": 176,
+      "area": 11922
+    }
+  ]
+}

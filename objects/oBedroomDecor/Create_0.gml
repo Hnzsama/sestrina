@@ -1,70 +1,75 @@
-/// @description Inisialisasi Medieval RPG Bedroom Layout (Center Pillar 9:16)
+/// @description Inisialisasi Bedroom Decor & Collisions (Medieval Fantasy Bedroom Asset Sheet - Refined)
 
-depth = 10; // Pastikan berada di depan background layer
-
-var _gx1 = 440;
-var _gy1 = 40;
-var _gx2 = 840;
-var _gy2 = 680;
+depth = 50; // Behind player, above room background
 
 // Bersihkan solid boundaries lama jika ada
 if (instance_exists(oSolidParent)) {
     with (oSolidParent) instance_destroy();
 }
 
-// ==========================================
-// 1. Dinding Luar Keliling Kamar
-// ==========================================
-// Dinding Luar Atas
-var _s = instance_create_depth(_gx1, _gy1, 0, oSolidParent);
-_s.image_xscale = (_gx2 - _gx1) / 32; _s.image_yscale = 2.0;
+// 1. Dinding Atas / Utara (y = 0..185)
+var _s = instance_create_depth(200, 0, 0, oSolidParent);
+_s.image_xscale = (1080 - 200) / 32; _s.image_yscale = 185 / 32;
 
-// Dinding Luar Kiri
-_s = instance_create_depth(_gx1 - 32, _gy1, 0, oSolidParent);
-_s.image_xscale = 1; _s.image_yscale = (_gy2 - _gy1) / 32;
+// 2. Dinding Samping Kiri / Barat
+_s = instance_create_depth(0, 0, 0, oSolidParent);
+_s.image_xscale = 200 / 32; _s.image_yscale = 720 / 32;
 
-// Dinding Luar Kanan
-_s = instance_create_depth(_gx2, _gy1, 0, oSolidParent);
-_s.image_xscale = 1; _s.image_yscale = (_gy2 - _gy1) / 32;
+// 3. Dinding Samping Kanan / Timur
+_s = instance_create_depth(1080, 0, 0, oSolidParent);
+_s.image_xscale = (1280 - 1080) / 32; _s.image_yscale = 720 / 32;
 
-// Dinding Luar Bawah (Menyisakan pintu keluar di tengah)
-_s = instance_create_depth(_gx1, _gy2, 0, oSolidParent);
-_s.image_xscale = 4.0; _s.image_yscale = 1;
+// 4. Dinding Bawah Kiri Pintu
+_s = instance_create_depth(200, 645, 0, oSolidParent);
+_s.image_xscale = (590 - 200) / 32; _s.image_yscale = (720 - 645) / 32;
 
-_s = instance_create_depth(_gx2 - 130, _gy2, 0, oSolidParent);
-_s.image_xscale = 4.1; _s.image_yscale = 1;
+// 5. Dinding Bawah Kanan Pintu
+_s = instance_create_depth(690, 645, 0, oSolidParent);
+_s.image_xscale = (1080 - 690) / 32; _s.image_yscale = (720 - 645) / 32;
 
 // ==========================================
-// 2. Rintangan Perabotan Medieval RPG (Furniture Collisions)
+// Rintangan Perabotan (Furniture Collisions - Spacious Layout)
 // ==========================================
-// Perapian Batu Purba Kiri Atas
-_s = instance_create_depth(_gx1 + 18, _gy1 + 12, 0, oSolidParent);
-_s.image_xscale = 2.4; _s.image_yscale = 2.2;
+// 1. Nakas Ramuan Sestrina (Sayap Barat, x: 260..298, y = 220..270)
+_s = instance_create_depth(260, 220, 0, oSolidParent);
+_s.image_xscale = (298 - 260) / 32; _s.image_yscale = (270 - 220) / 32;
 
-// Meja Peta Taktik & Alkemis Kiri
-_s = instance_create_depth(_gx1 + 20, 125, 0, oSolidParent);
-_s.image_xscale = 3.3; _s.image_yscale = 2.0;
+// 2. Ranjang Sestrina & Peti Ujung Ranjang (x: 310..370, y = 220..370)
+_s = instance_create_depth(310, 220, 0, oSolidParent);
+_s.image_xscale = (370 - 310) / 32; _s.image_yscale = (370 - 220) / 32;
 
-// Kasur Ksatria Kakak (Kanan Atas)
-_s = instance_create_depth(_gx2 - 100, 100, 0, oSolidParent);
-_s.image_xscale = 2.5; _s.image_yscale = 2.5;
+// 3. Kursi Beludru & Bunga Aster Kakak (x: 395..440, y = 280..370)
+_s = instance_create_depth(395, 280, 0, oSolidParent);
+_s.image_xscale = (440 - 395) / 32; _s.image_yscale = (370 - 280) / 32;
 
-// Kasur Adik Sestrina (Kanan Tengah)
-_s = instance_create_depth(_gx2 - 100, 220, 0, oSolidParent);
-_s.image_xscale = 2.5; _s.image_yscale = 2.5;
+// 4. Gantungan Mantel & Pot Tanaman Barat (x: 250..295, y = 295..410)
+_s = instance_create_depth(250, 295, 0, oSolidParent);
+_s.image_xscale = (295 - 250) / 32; _s.image_yscale = (410 - 295) / 32;
 
-// Meja Lentera & Obat Adik
-_s = instance_create_depth(_gx2 - 165, 220, 0, oSolidParent);
-_s.image_xscale = 1.5; _s.image_yscale = 1.5;
+// 5. Rak Buku & Dresser Lilin Barat (x: 250..305, y = 430..570)
+_s = instance_create_depth(250, 430, 0, oSolidParent);
+_s.image_xscale = (305 - 250) / 32; _s.image_yscale = (570 - 430) / 32;
 
-// Rak Senjata Kiri Bawah
-_s = instance_create_depth(_gx1 + 20, 520, 0, oSolidParent);
-_s.image_xscale = 2.0; _s.image_yscale = 2.2;
+// 6. Tanaman Ficus Sudut Barat Daya (x: 250..295, y = 590..645)
+_s = instance_create_depth(250, 590, 0, oSolidParent);
+_s.image_xscale = (295 - 250) / 32; _s.image_yscale = (645 - 590) / 32;
 
-// Peti Besi Kiri Bawah
-_s = instance_create_depth(_gx1 + 95, 535, 0, oSolidParent);
-_s.image_xscale = 1.8; _s.image_yscale = 1.5;
+// 7. Meja Belajar Utama, Astrolabe & Kursi (Tengah, y = 195..265)
+_s = instance_create_depth(570, 195, 0, oSolidParent);
+_s.image_xscale = (710 - 570) / 32; _s.image_yscale = (265 - 195) / 32;
 
-// Rak Grimoire & Buku Sihir Kanan Bawah
-_s = instance_create_depth(_gx2 - 110, 515, 0, oSolidParent);
-_s.image_xscale = 2.8; _s.image_yscale = 2.2;
+// 8. Wardrobe, Bookshelf, Curio Cabinet & Cermin (Dinding Timur, y = 140..245)
+_s = instance_create_depth(745, 140, 0, oSolidParent);
+_s.image_xscale = (1015 - 745) / 32; _s.image_yscale = (245 - 140) / 32;
+
+// 9. Rak Buku Timur, Patung Zirah & Tongkat Sihir (x: 965..1030, y = 270..440)
+_s = instance_create_depth(965, 270, 0, oSolidParent);
+_s.image_xscale = (1030 - 965) / 32; _s.image_yscale = (440 - 270) / 32;
+
+// 10. Peti Harta, Peti Kayu & Hydrangea (Tenggara, x: 800..960, y = 470..545)
+_s = instance_create_depth(800, 470, 0, oSolidParent);
+_s.image_xscale = (960 - 800) / 32; _s.image_yscale = (545 - 470) / 32;
+
+// 11. Tanaman Ficus Tenggara (x: 970..1020, y = 580..645)
+_s = instance_create_depth(970, 580, 0, oSolidParent);
+_s.image_xscale = (1020 - 970) / 32; _s.image_yscale = (645 - 580) / 32;

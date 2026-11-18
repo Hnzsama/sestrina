@@ -1,0 +1,1006 @@
+{
+  "source_image": "Dungeon Enemy Sprite Atlas (1).png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_label_slime.png",
+      "original_x": 282,
+      "original_y": 15,
+      "width": 216,
+      "height": 56,
+      "area": 11448
+    },
+    {
+      "id": 2,
+      "filename": "002_label_skeleton.png",
+      "original_x": 1051,
+      "original_y": 14,
+      "width": 215,
+      "height": 57,
+      "area": 11447
+    },
+    {
+      "id": 3,
+      "filename": "003_ui_label_idle.png",
+      "original_x": 35,
+      "original_y": 103,
+      "width": 107,
+      "height": 42,
+      "area": 4251
+    },
+    {
+      "id": 4,
+      "filename": "004_slime_idle.png",
+      "original_x": 188,
+      "original_y": 96,
+      "width": 80,
+      "height": 61,
+      "area": 3607
+    },
+    {
+      "id": 5,
+      "filename": "005_slime_idle.png",
+      "original_x": 306,
+      "original_y": 96,
+      "width": 79,
+      "height": 61,
+      "area": 3568
+    },
+    {
+      "id": 6,
+      "filename": "006_slime_idle.png",
+      "original_x": 424,
+      "original_y": 98,
+      "width": 78,
+      "height": 59,
+      "area": 3422
+    },
+    {
+      "id": 7,
+      "filename": "007_slime_idle.png",
+      "original_x": 541,
+      "original_y": 98,
+      "width": 79,
+      "height": 59,
+      "area": 3520
+    },
+    {
+      "id": 8,
+      "filename": "008_ui_label_idle.png",
+      "original_x": 803,
+      "original_y": 103,
+      "width": 108,
+      "height": 42,
+      "area": 4242
+    },
+    {
+      "id": 9,
+      "filename": "009_skeleton_idle.png",
+      "original_x": 967,
+      "original_y": 88,
+      "width": 69,
+      "height": 79,
+      "area": 3243
+    },
+    {
+      "id": 10,
+      "filename": "010_skeleton_idle.png",
+      "original_x": 1078,
+      "original_y": 88,
+      "width": 73,
+      "height": 78,
+      "area": 3220
+    },
+    {
+      "id": 11,
+      "filename": "011_skeleton_idle.png",
+      "original_x": 1198,
+      "original_y": 88,
+      "width": 70,
+      "height": 79,
+      "area": 3289
+    },
+    {
+      "id": 12,
+      "filename": "012_skeleton_idle.png",
+      "original_x": 1320,
+      "original_y": 88,
+      "width": 67,
+      "height": 79,
+      "area": 3236
+    },
+    {
+      "id": 13,
+      "filename": "013_slime_walk.png",
+      "original_x": 188,
+      "original_y": 187,
+      "width": 80,
+      "height": 61,
+      "area": 3583
+    },
+    {
+      "id": 14,
+      "filename": "014_slime_walk.png",
+      "original_x": 306,
+      "original_y": 186,
+      "width": 79,
+      "height": 61,
+      "area": 3609
+    },
+    {
+      "id": 15,
+      "filename": "015_slime_walk.png",
+      "original_x": 425,
+      "original_y": 186,
+      "width": 77,
+      "height": 61,
+      "area": 3501
+    },
+    {
+      "id": 16,
+      "filename": "016_skeleton_walk.png",
+      "original_x": 969,
+      "original_y": 173,
+      "width": 70,
+      "height": 78,
+      "area": 3186
+    },
+    {
+      "id": 17,
+      "filename": "017_skeleton_walk.png",
+      "original_x": 1079,
+      "original_y": 173,
+      "width": 68,
+      "height": 78,
+      "area": 3016
+    },
+    {
+      "id": 18,
+      "filename": "018_skeleton_walk.png",
+      "original_x": 1198,
+      "original_y": 173,
+      "width": 72,
+      "height": 78,
+      "area": 3216
+    },
+    {
+      "id": 19,
+      "filename": "019_skeleton_walk.png",
+      "original_x": 1321,
+      "original_y": 173,
+      "width": 66,
+      "height": 78,
+      "area": 3202
+    },
+    {
+      "id": 20,
+      "filename": "020_ui_label_walk.png",
+      "original_x": 35,
+      "original_y": 194,
+      "width": 107,
+      "height": 41,
+      "area": 4180
+    },
+    {
+      "id": 21,
+      "filename": "021_slime_walk.png",
+      "original_x": 541,
+      "original_y": 190,
+      "width": 80,
+      "height": 60,
+      "area": 3645
+    },
+    {
+      "id": 22,
+      "filename": "022_ui_label_walk.png",
+      "original_x": 803,
+      "original_y": 193,
+      "width": 108,
+      "height": 42,
+      "area": 4190
+    },
+    {
+      "id": 23,
+      "filename": "023_slime_attack.png",
+      "original_x": 188,
+      "original_y": 270,
+      "width": 80,
+      "height": 65,
+      "area": 3729
+    },
+    {
+      "id": 24,
+      "filename": "024_slime_attack.png",
+      "original_x": 306,
+      "original_y": 270,
+      "width": 79,
+      "height": 63,
+      "area": 3722
+    },
+    {
+      "id": 25,
+      "filename": "025_slime_attack.png",
+      "original_x": 428,
+      "original_y": 262,
+      "width": 81,
+      "height": 70,
+      "area": 3568
+    },
+    {
+      "id": 26,
+      "filename": "026_skeleton_attack.png",
+      "original_x": 945,
+      "original_y": 260,
+      "width": 98,
+      "height": 83,
+      "area": 3963
+    },
+    {
+      "id": 27,
+      "filename": "027_skeleton_attack.png",
+      "original_x": 1064,
+      "original_y": 260,
+      "width": 94,
+      "height": 83,
+      "area": 3726
+    },
+    {
+      "id": 28,
+      "filename": "028_skeleton_attack.png",
+      "original_x": 1183,
+      "original_y": 259,
+      "width": 98,
+      "height": 84,
+      "area": 3895
+    },
+    {
+      "id": 29,
+      "filename": "029_skeleton_attack.png",
+      "original_x": 1307,
+      "original_y": 270,
+      "width": 95,
+      "height": 73,
+      "area": 3205
+    },
+    {
+      "id": 30,
+      "filename": "030_ui_label_attack.png",
+      "original_x": 35,
+      "original_y": 283,
+      "width": 107,
+      "height": 42,
+      "area": 4172
+    },
+    {
+      "id": 31,
+      "filename": "031_slime_attack.png",
+      "original_x": 538,
+      "original_y": 281,
+      "width": 90,
+      "height": 59,
+      "area": 3888
+    },
+    {
+      "id": 32,
+      "filename": "032_slime_attack.png",
+      "original_x": 655,
+      "original_y": 294,
+      "width": 12,
+      "height": 11,
+      "area": 83
+    },
+    {
+      "id": 33,
+      "filename": "033_slime_attack.png",
+      "original_x": 655,
+      "original_y": 296,
+      "width": 90,
+      "height": 44,
+      "area": 2396
+    },
+    {
+      "id": 34,
+      "filename": "034_slime_attack.png",
+      "original_x": 666,
+      "original_y": 280,
+      "width": 11,
+      "height": 14,
+      "area": 91
+    },
+    {
+      "id": 35,
+      "filename": "035_slime_attack.png",
+      "original_x": 719,
+      "original_y": 280,
+      "width": 12,
+      "height": 14,
+      "area": 104
+    },
+    {
+      "id": 36,
+      "filename": "036_slime_attack.png",
+      "original_x": 732,
+      "original_y": 291,
+      "width": 12,
+      "height": 12,
+      "area": 97
+    },
+    {
+      "id": 37,
+      "filename": "037_ui_label_attack.png",
+      "original_x": 803,
+      "original_y": 283,
+      "width": 108,
+      "height": 42,
+      "area": 4196
+    },
+    {
+      "id": 38,
+      "filename": "038_skeleton_hurt.png",
+      "original_x": 963,
+      "original_y": 357,
+      "width": 73,
+      "height": 74,
+      "area": 2990
+    },
+    {
+      "id": 39,
+      "filename": "039_skeleton_hurt.png",
+      "original_x": 1083,
+      "original_y": 357,
+      "width": 73,
+      "height": 73,
+      "area": 2597
+    },
+    {
+      "id": 40,
+      "filename": "040_ui_label_hurt.png",
+      "original_x": 35,
+      "original_y": 369,
+      "width": 107,
+      "height": 41,
+      "area": 4174
+    },
+    {
+      "id": 41,
+      "filename": "041_slime_hurt.png",
+      "original_x": 191,
+      "original_y": 362,
+      "width": 75,
+      "height": 51,
+      "area": 2737
+    },
+    {
+      "id": 42,
+      "filename": "042_slime_hurt.png",
+      "original_x": 308,
+      "original_y": 362,
+      "width": 73,
+      "height": 51,
+      "area": 2740
+    },
+    {
+      "id": 43,
+      "filename": "043_slime_hurt.png",
+      "original_x": 426,
+      "original_y": 362,
+      "width": 73,
+      "height": 51,
+      "area": 2727
+    },
+    {
+      "id": 44,
+      "filename": "044_ui_label_hurt.png",
+      "original_x": 803,
+      "original_y": 369,
+      "width": 108,
+      "height": 41,
+      "area": 4194
+    },
+    {
+      "id": 45,
+      "filename": "045_skeleton_hurt.png",
+      "original_x": 1203,
+      "original_y": 358,
+      "width": 63,
+      "height": 72,
+      "area": 2508
+    },
+    {
+      "id": 46,
+      "filename": "046_skeleton_hurt.png",
+      "original_x": 1318,
+      "original_y": 358,
+      "width": 66,
+      "height": 73,
+      "area": 2316
+    },
+    {
+      "id": 47,
+      "filename": "047_ui_label_die.png",
+      "original_x": 38,
+      "original_y": 447,
+      "width": 104,
+      "height": 42,
+      "area": 4135
+    },
+    {
+      "id": 48,
+      "filename": "048_slime_die.png",
+      "original_x": 191,
+      "original_y": 449,
+      "width": 77,
+      "height": 45,
+      "area": 2458
+    },
+    {
+      "id": 49,
+      "filename": "049_slime_die.png",
+      "original_x": 305,
+      "original_y": 451,
+      "width": 79,
+      "height": 44,
+      "area": 2493
+    },
+    {
+      "id": 50,
+      "filename": "050_slime_die.png",
+      "original_x": 424,
+      "original_y": 442,
+      "width": 75,
+      "height": 57,
+      "area": 2533
+    },
+    {
+      "id": 51,
+      "filename": "051_slime_die.png",
+      "original_x": 485,
+      "original_y": 442,
+      "width": 10,
+      "height": 12,
+      "area": 78
+    },
+    {
+      "id": 52,
+      "filename": "052_slime_die.png",
+      "original_x": 498,
+      "original_y": 451,
+      "width": 15,
+      "height": 11,
+      "area": 114
+    },
+    {
+      "id": 53,
+      "filename": "053_slime_die.png",
+      "original_x": 541,
+      "original_y": 469,
+      "width": 84,
+      "height": 28,
+      "area": 1651
+    },
+    {
+      "id": 54,
+      "filename": "054_ui_label_die.png",
+      "original_x": 806,
+      "original_y": 447,
+      "width": 105,
+      "height": 42,
+      "area": 4147
+    },
+    {
+      "id": 55,
+      "filename": "055_skeleton_die.png",
+      "original_x": 970,
+      "original_y": 444,
+      "width": 66,
+      "height": 53,
+      "area": 2177
+    },
+    {
+      "id": 56,
+      "filename": "056_skeleton_die.png",
+      "original_x": 1086,
+      "original_y": 444,
+      "width": 61,
+      "height": 53,
+      "area": 2145
+    },
+    {
+      "id": 57,
+      "filename": "057_skeleton_die.png",
+      "original_x": 1199,
+      "original_y": 447,
+      "width": 81,
+      "height": 50,
+      "area": 2065
+    },
+    {
+      "id": 58,
+      "filename": "058_skeleton_die.png",
+      "original_x": 1310,
+      "original_y": 471,
+      "width": 89,
+      "height": 27,
+      "area": 1538
+    },
+    {
+      "id": 59,
+      "filename": "059_label_giant_rat.png",
+      "original_x": 282,
+      "original_y": 523,
+      "width": 222,
+      "height": 56,
+      "area": 11802
+    },
+    {
+      "id": 60,
+      "filename": "060_slime_die.png",
+      "original_x": 505,
+      "original_y": 487,
+      "width": 17,
+      "height": 10,
+      "area": 118
+    },
+    {
+      "id": 61,
+      "filename": "061_slime_die.png",
+      "original_x": 641,
+      "original_y": 483,
+      "width": 16,
+      "height": 9,
+      "area": 112
+    },
+    {
+      "id": 62,
+      "filename": "062_label_giant_spider.png",
+      "original_x": 1050,
+      "original_y": 523,
+      "width": 222,
+      "height": 56,
+      "area": 11908
+    },
+    {
+      "id": 63,
+      "filename": "063_giant_rat_idle.png",
+      "original_x": 194,
+      "original_y": 604,
+      "width": 86,
+      "height": 54,
+      "area": 3168
+    },
+    {
+      "id": 64,
+      "filename": "064_giant_rat_idle.png",
+      "original_x": 309,
+      "original_y": 604,
+      "width": 84,
+      "height": 54,
+      "area": 3176
+    },
+    {
+      "id": 65,
+      "filename": "065_giant_rat_idle.png",
+      "original_x": 426,
+      "original_y": 604,
+      "width": 79,
+      "height": 55,
+      "area": 3104
+    },
+    {
+      "id": 66,
+      "filename": "066_giant_rat_idle.png",
+      "original_x": 540,
+      "original_y": 603,
+      "width": 93,
+      "height": 55,
+      "area": 3205
+    },
+    {
+      "id": 67,
+      "filename": "067_giant_spider_idle.png",
+      "original_x": 945,
+      "original_y": 597,
+      "width": 109,
+      "height": 76,
+      "area": 4995
+    },
+    {
+      "id": 68,
+      "filename": "068_giant_spider_idle.png",
+      "original_x": 1070,
+      "original_y": 601,
+      "width": 100,
+      "height": 72,
+      "area": 4401
+    },
+    {
+      "id": 69,
+      "filename": "069_giant_spider_idle.png",
+      "original_x": 1190,
+      "original_y": 601,
+      "width": 88,
+      "height": 72,
+      "area": 3835
+    },
+    {
+      "id": 70,
+      "filename": "070_giant_spider_idle.png",
+      "original_x": 1299,
+      "original_y": 599,
+      "width": 108,
+      "height": 74,
+      "area": 4864
+    },
+    {
+      "id": 71,
+      "filename": "071_ui_label_idle.png",
+      "original_x": 35,
+      "original_y": 613,
+      "width": 107,
+      "height": 42,
+      "area": 4177
+    },
+    {
+      "id": 72,
+      "filename": "072_ui_label_idle.png",
+      "original_x": 803,
+      "original_y": 612,
+      "width": 108,
+      "height": 43,
+      "area": 4188
+    },
+    {
+      "id": 73,
+      "filename": "073_giant_rat_walk.png",
+      "original_x": 195,
+      "original_y": 692,
+      "width": 88,
+      "height": 56,
+      "area": 3225
+    },
+    {
+      "id": 74,
+      "filename": "074_giant_rat_walk.png",
+      "original_x": 311,
+      "original_y": 692,
+      "width": 88,
+      "height": 57,
+      "area": 3260
+    },
+    {
+      "id": 75,
+      "filename": "075_giant_rat_walk.png",
+      "original_x": 429,
+      "original_y": 692,
+      "width": 85,
+      "height": 59,
+      "area": 3179
+    },
+    {
+      "id": 76,
+      "filename": "076_giant_rat_walk.png",
+      "original_x": 543,
+      "original_y": 692,
+      "width": 83,
+      "height": 59,
+      "area": 3149
+    },
+    {
+      "id": 77,
+      "filename": "077_giant_spider_walk.png",
+      "original_x": 948,
+      "original_y": 686,
+      "width": 104,
+      "height": 73,
+      "area": 4606
+    },
+    {
+      "id": 78,
+      "filename": "078_giant_spider_walk.png",
+      "original_x": 1069,
+      "original_y": 687,
+      "width": 91,
+      "height": 72,
+      "area": 4060
+    },
+    {
+      "id": 79,
+      "filename": "079_giant_spider_walk.png",
+      "original_x": 1189,
+      "original_y": 690,
+      "width": 93,
+      "height": 67,
+      "area": 3511
+    },
+    {
+      "id": 80,
+      "filename": "080_giant_spider_walk.png",
+      "original_x": 1306,
+      "original_y": 688,
+      "width": 101,
+      "height": 71,
+      "area": 4317
+    },
+    {
+      "id": 81,
+      "filename": "081_ui_label_walk.png",
+      "original_x": 35,
+      "original_y": 702,
+      "width": 107,
+      "height": 42,
+      "area": 4232
+    },
+    {
+      "id": 82,
+      "filename": "082_ui_label_walk.png",
+      "original_x": 803,
+      "original_y": 702,
+      "width": 108,
+      "height": 42,
+      "area": 4235
+    },
+    {
+      "id": 83,
+      "filename": "083_giant_spider_attack.png",
+      "original_x": 949,
+      "original_y": 774,
+      "width": 106,
+      "height": 73,
+      "area": 4504
+    },
+    {
+      "id": 84,
+      "filename": "084_giant_spider_attack.png",
+      "original_x": 1201,
+      "original_y": 774,
+      "width": 113,
+      "height": 91,
+      "area": 5172
+    },
+    {
+      "id": 85,
+      "filename": "085_ui_label_attack.png",
+      "original_x": 35,
+      "original_y": 790,
+      "width": 107,
+      "height": 42,
+      "area": 4207
+    },
+    {
+      "id": 86,
+      "filename": "086_giant_rat_attack.png",
+      "original_x": 197,
+      "original_y": 781,
+      "width": 84,
+      "height": 58,
+      "area": 3271
+    },
+    {
+      "id": 87,
+      "filename": "087_giant_rat_attack.png",
+      "original_x": 313,
+      "original_y": 783,
+      "width": 85,
+      "height": 56,
+      "area": 3086
+    },
+    {
+      "id": 88,
+      "filename": "088_giant_rat_attack.png",
+      "original_x": 437,
+      "original_y": 784,
+      "width": 82,
+      "height": 56,
+      "area": 2946
+    },
+    {
+      "id": 89,
+      "filename": "089_giant_rat_attack.png",
+      "original_x": 548,
+      "original_y": 785,
+      "width": 84,
+      "height": 56,
+      "area": 3150
+    },
+    {
+      "id": 90,
+      "filename": "090_ui_label_attack.png",
+      "original_x": 803,
+      "original_y": 790,
+      "width": 108,
+      "height": 42,
+      "area": 4201
+    },
+    {
+      "id": 91,
+      "filename": "091_giant_spider_attack.png",
+      "original_x": 1076,
+      "original_y": 778,
+      "width": 94,
+      "height": 65,
+      "area": 3578
+    },
+    {
+      "id": 92,
+      "filename": "092_giant_spider_attack.png",
+      "original_x": 1313,
+      "original_y": 786,
+      "width": 97,
+      "height": 60,
+      "area": 3422
+    },
+    {
+      "id": 93,
+      "filename": "093_giant_rat_hurt.png",
+      "original_x": 314,
+      "original_y": 860,
+      "width": 82,
+      "height": 60,
+      "area": 2903
+    },
+    {
+      "id": 94,
+      "filename": "094_giant_spider_hurt.png",
+      "original_x": 1078,
+      "original_y": 861,
+      "width": 90,
+      "height": 66,
+      "area": 3559
+    },
+    {
+      "id": 95,
+      "filename": "095_ui_label_hurt.png",
+      "original_x": 35,
+      "original_y": 874,
+      "width": 107,
+      "height": 42,
+      "area": 4180
+    },
+    {
+      "id": 96,
+      "filename": "096_giant_rat_hurt.png",
+      "original_x": 197,
+      "original_y": 866,
+      "width": 80,
+      "height": 54,
+      "area": 3073
+    },
+    {
+      "id": 97,
+      "filename": "097_giant_rat_hurt.png",
+      "original_x": 440,
+      "original_y": 862,
+      "width": 73,
+      "height": 58,
+      "area": 2618
+    },
+    {
+      "id": 98,
+      "filename": "098_giant_rat_hurt.png",
+      "original_x": 547,
+      "original_y": 871,
+      "width": 95,
+      "height": 49,
+      "area": 2768
+    },
+    {
+      "id": 99,
+      "filename": "099_ui_label_hurt.png",
+      "original_x": 803,
+      "original_y": 874,
+      "width": 108,
+      "height": 42,
+      "area": 4202
+    },
+    {
+      "id": 100,
+      "filename": "100_giant_spider_hurt.png",
+      "original_x": 952,
+      "original_y": 862,
+      "width": 97,
+      "height": 66,
+      "area": 3743
+    },
+    {
+      "id": 101,
+      "filename": "101_giant_spider_hurt.png",
+      "original_x": 1199,
+      "original_y": 870,
+      "width": 86,
+      "height": 56,
+      "area": 3175
+    },
+    {
+      "id": 102,
+      "filename": "102_giant_spider_die.png",
+      "original_x": 952,
+      "original_y": 942,
+      "width": 89,
+      "height": 59,
+      "area": 3200
+    },
+    {
+      "id": 103,
+      "filename": "103_ui_label_die.png",
+      "original_x": 38,
+      "original_y": 951,
+      "width": 104,
+      "height": 43,
+      "area": 4127
+    },
+    {
+      "id": 104,
+      "filename": "104_giant_rat_die.png",
+      "original_x": 195,
+      "original_y": 947,
+      "width": 86,
+      "height": 52,
+      "area": 2802
+    },
+    {
+      "id": 105,
+      "filename": "105_giant_rat_die.png",
+      "original_x": 310,
+      "original_y": 947,
+      "width": 92,
+      "height": 50,
+      "area": 2900
+    },
+    {
+      "id": 106,
+      "filename": "106_giant_rat_die.png",
+      "original_x": 430,
+      "original_y": 954,
+      "width": 89,
+      "height": 45,
+      "area": 2428
+    },
+    {
+      "id": 107,
+      "filename": "107_giant_rat_die.png",
+      "original_x": 547,
+      "original_y": 962,
+      "width": 90,
+      "height": 34,
+      "area": 2041
+    },
+    {
+      "id": 108,
+      "filename": "108_ui_label_die.png",
+      "original_x": 806,
+      "original_y": 951,
+      "width": 105,
+      "height": 43,
+      "area": 4161
+    },
+    {
+      "id": 109,
+      "filename": "109_giant_spider_die.png",
+      "original_x": 1073,
+      "original_y": 946,
+      "width": 93,
+      "height": 54,
+      "area": 3047
+    },
+    {
+      "id": 110,
+      "filename": "110_giant_spider_die.png",
+      "original_x": 1198,
+      "original_y": 949,
+      "width": 87,
+      "height": 51,
+      "area": 2774
+    },
+    {
+      "id": 111,
+      "filename": "111_giant_spider_die.png",
+      "original_x": 1317,
+      "original_y": 962,
+      "width": 84,
+      "height": 38,
+      "area": 1934
+    }
+  ]
+}

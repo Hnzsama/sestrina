@@ -15,8 +15,8 @@ depth = -100;
 exp_reward = 15;
 gold_reward = 8;
 
-/// @function take_damage(dmg, dir)
-take_damage = function(_dmg, _dir) {
+/// @function take_damage(dmg, dir, [is_melee])
+take_damage = function(_dmg, _dir, _is_melee = false) {
     hp -= _dmg;
     flash_timer = 8;
     

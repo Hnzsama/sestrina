@@ -2,7 +2,9 @@
 
 event_inherited();
 target_room = rm_town_square;
-target_x = 640;
-target_y = 620;
+target_x = 1280;
+target_y = 1320;
 door_title = "Altdorf Town Square";
 door_subtitle = "Kembali ke Pusat Kota";
+door_w = 72;
+door_h = 36;

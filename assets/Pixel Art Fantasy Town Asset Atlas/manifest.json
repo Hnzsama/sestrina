@@ -1,0 +1,1042 @@
+{
+  "source_image": "Pixel Art Fantasy Town Asset Atlas.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_section_header_props_furniture.png",
+      "original_x": 23,
+      "original_y": 21,
+      "width": 213,
+      "height": 28,
+      "area": 5875
+    },
+    {
+      "id": 2,
+      "filename": "002_section_header_decorations.png",
+      "original_x": 1000,
+      "original_y": 21,
+      "width": 154,
+      "height": 28,
+      "area": 4238
+    },
+    {
+      "id": 3,
+      "filename": "003_props_furniture_asset.png",
+      "original_x": 36,
+      "original_y": 75,
+      "width": 151,
+      "height": 75,
+      "area": 7470
+    },
+    {
+      "id": 4,
+      "filename": "004_props_furniture_asset.png",
+      "original_x": 217,
+      "original_y": 55,
+      "width": 158,
+      "height": 121,
+      "area": 12629
+    },
+    {
+      "id": 5,
+      "filename": "005_props_furniture_asset.png",
+      "original_x": 401,
+      "original_y": 61,
+      "width": 91,
+      "height": 91,
+      "area": 6030
+    },
+    {
+      "id": 6,
+      "filename": "006_props_furniture_asset.png",
+      "original_x": 517,
+      "original_y": 66,
+      "width": 72,
+      "height": 84,
+      "area": 4551
+    },
+    {
+      "id": 7,
+      "filename": "007_props_furniture_asset.png",
+      "original_x": 614,
+      "original_y": 51,
+      "width": 66,
+      "height": 99,
+      "area": 3622
+    },
+    {
+      "id": 8,
+      "filename": "008_decorations_asset.png",
+      "original_x": 714,
+      "original_y": 44,
+      "width": 149,
+      "height": 106,
+      "area": 12738
+    },
+    {
+      "id": 9,
+      "filename": "009_decorations_asset.png",
+      "original_x": 903,
+      "original_y": 30,
+      "width": 57,
+      "height": 260,
+      "area": 5253
+    },
+    {
+      "id": 10,
+      "filename": "010_decorations_asset.png",
+      "original_x": 1001,
+      "original_y": 61,
+      "width": 71,
+      "height": 115,
+      "area": 5100
+    },
+    {
+      "id": 11,
+      "filename": "011_decorations_asset.png",
+      "original_x": 1081,
+      "original_y": 60,
+      "width": 71,
+      "height": 116,
+      "area": 4971
+    },
+    {
+      "id": 12,
+      "filename": "012_decorations_asset.png",
+      "original_x": 1162,
+      "original_y": 60,
+      "width": 70,
+      "height": 116,
+      "area": 5138
+    },
+    {
+      "id": 13,
+      "filename": "013_decorations_asset.png",
+      "original_x": 1243,
+      "original_y": 57,
+      "width": 71,
+      "height": 119,
+      "area": 5218
+    },
+    {
+      "id": 14,
+      "filename": "014_decorations_asset.png",
+      "original_x": 1325,
+      "original_y": 38,
+      "width": 182,
+      "height": 63,
+      "area": 2694
+    },
+    {
+      "id": 15,
+      "filename": "015_props_furniture_asset.png",
+      "original_x": 33,
+      "original_y": 169,
+      "width": 141,
+      "height": 80,
+      "area": 8184
+    },
+    {
+      "id": 16,
+      "filename": "016_props_furniture_asset.png",
+      "original_x": 434,
+      "original_y": 160,
+      "width": 94,
+      "height": 96,
+      "area": 5195
+    },
+    {
+      "id": 17,
+      "filename": "017_props_furniture_asset.png",
+      "original_x": 596,
+      "original_y": 163,
+      "width": 150,
+      "height": 128,
+      "area": 14453
+    },
+    {
+      "id": 18,
+      "filename": "018_props_furniture_asset.png",
+      "original_x": 203,
+      "original_y": 196,
+      "width": 94,
+      "height": 58,
+      "area": 3750
+    },
+    {
+      "id": 19,
+      "filename": "019_props_furniture_asset.png",
+      "original_x": 323,
+      "original_y": 201,
+      "width": 43,
+      "height": 52,
+      "area": 1926
+    },
+    {
+      "id": 20,
+      "filename": "020_props_furniture_asset.png",
+      "original_x": 395,
+      "original_y": 182,
+      "width": 31,
+      "height": 35,
+      "area": 818
+    },
+    {
+      "id": 21,
+      "filename": "021_props_furniture_asset.png",
+      "original_x": 401,
+      "original_y": 218,
+      "width": 32,
+      "height": 36,
+      "area": 837
+    },
+    {
+      "id": 22,
+      "filename": "022_props_furniture_asset.png",
+      "original_x": 527,
+      "original_y": 218,
+      "width": 33,
+      "height": 36,
+      "area": 884
+    },
+    {
+      "id": 23,
+      "filename": "023_props_furniture_asset.png",
+      "original_x": 536,
+      "original_y": 182,
+      "width": 32,
+      "height": 35,
+      "area": 813
+    },
+    {
+      "id": 24,
+      "filename": "024_decorations_asset.png",
+      "original_x": 773,
+      "original_y": 179,
+      "width": 128,
+      "height": 110,
+      "area": 9423
+    },
+    {
+      "id": 25,
+      "filename": "025_decorations_asset.png",
+      "original_x": 1007,
+      "original_y": 200,
+      "width": 76,
+      "height": 135,
+      "area": 4159
+    },
+    {
+      "id": 26,
+      "filename": "026_decorations_asset.png",
+      "original_x": 1113,
+      "original_y": 201,
+      "width": 73,
+      "height": 133,
+      "area": 3837
+    },
+    {
+      "id": 27,
+      "filename": "027_decorations_asset.png",
+      "original_x": 1208,
+      "original_y": 214,
+      "width": 65,
+      "height": 112,
+      "area": 3813
+    },
+    {
+      "id": 28,
+      "filename": "028_decorations_asset.png",
+      "original_x": 1218,
+      "original_y": 226,
+      "width": 8,
+      "height": 11,
+      "area": 51
+    },
+    {
+      "id": 29,
+      "filename": "029_decorations_asset.png",
+      "original_x": 1311,
+      "original_y": 203,
+      "width": 27,
+      "height": 110,
+      "area": 1515
+    },
+    {
+      "id": 30,
+      "filename": "030_decorations_asset.png",
+      "original_x": 1371,
+      "original_y": 184,
+      "width": 65,
+      "height": 132,
+      "area": 3648
+    },
+    {
+      "id": 31,
+      "filename": "031_decorations_asset.png",
+      "original_x": 1462,
+      "original_y": 224,
+      "width": 41,
+      "height": 63,
+      "area": 1864
+    },
+    {
+      "id": 32,
+      "filename": "032_props_furniture_asset.png",
+      "original_x": 32,
+      "original_y": 278,
+      "width": 152,
+      "height": 187,
+      "area": 20173
+    },
+    {
+      "id": 33,
+      "filename": "033_props_furniture_asset.png",
+      "original_x": 204,
+      "original_y": 268,
+      "width": 179,
+      "height": 187,
+      "area": 21316
+    },
+    {
+      "id": 34,
+      "filename": "034_props_furniture_asset.png",
+      "original_x": 402,
+      "original_y": 278,
+      "width": 134,
+      "height": 183,
+      "area": 12010
+    },
+    {
+      "id": 35,
+      "filename": "035_props_furniture_asset.png",
+      "original_x": 558,
+      "original_y": 297,
+      "width": 78,
+      "height": 164,
+      "area": 8684
+    },
+    {
+      "id": 36,
+      "filename": "036_decorations_asset.png",
+      "original_x": 669,
+      "original_y": 304,
+      "width": 67,
+      "height": 156,
+      "area": 4688
+    },
+    {
+      "id": 37,
+      "filename": "037_decorations_asset.png",
+      "original_x": 761,
+      "original_y": 315,
+      "width": 86,
+      "height": 146,
+      "area": 4722
+    },
+    {
+      "id": 38,
+      "filename": "038_decorations_asset.png",
+      "original_x": 888,
+      "original_y": 310,
+      "width": 70,
+      "height": 121,
+      "area": 4441
+    },
+    {
+      "id": 39,
+      "filename": "039_decorations_asset.png",
+      "original_x": 1006,
+      "original_y": 358,
+      "width": 66,
+      "height": 96,
+      "area": 3466
+    },
+    {
+      "id": 40,
+      "filename": "040_decorations_asset.png",
+      "original_x": 1110,
+      "original_y": 362,
+      "width": 60,
+      "height": 97,
+      "area": 4195
+    },
+    {
+      "id": 41,
+      "filename": "041_decorations_asset.png",
+      "original_x": 1203,
+      "original_y": 353,
+      "width": 76,
+      "height": 87,
+      "area": 4930
+    },
+    {
+      "id": 42,
+      "filename": "042_decorations_asset.png",
+      "original_x": 1303,
+      "original_y": 349,
+      "width": 68,
+      "height": 94,
+      "area": 4568
+    },
+    {
+      "id": 43,
+      "filename": "043_decorations_asset.png",
+      "original_x": 1388,
+      "original_y": 361,
+      "width": 126,
+      "height": 70,
+      "area": 6643
+    },
+    {
+      "id": 44,
+      "filename": "044_decorations_asset.png",
+      "original_x": 846,
+      "original_y": 443,
+      "width": 138,
+      "height": 48,
+      "area": 4293
+    },
+    {
+      "id": 45,
+      "filename": "045_section_header_nature_environment.png",
+      "original_x": 23,
+      "original_y": 487,
+      "width": 244,
+      "height": 28,
+      "area": 6766
+    },
+    {
+      "id": 46,
+      "filename": "046_nature_environment_asset.png",
+      "original_x": 23,
+      "original_y": 530,
+      "width": 174,
+      "height": 199,
+      "area": 20227
+    },
+    {
+      "id": 47,
+      "filename": "047_nature_environment_asset.png",
+      "original_x": 210,
+      "original_y": 517,
+      "width": 177,
+      "height": 172,
+      "area": 17705
+    },
+    {
+      "id": 48,
+      "filename": "048_nature_environment_asset.png",
+      "original_x": 394,
+      "original_y": 505,
+      "width": 116,
+      "height": 184,
+      "area": 10898
+    },
+    {
+      "id": 49,
+      "filename": "049_nature_environment_asset.png",
+      "original_x": 517,
+      "original_y": 525,
+      "width": 152,
+      "height": 164,
+      "area": 14840
+    },
+    {
+      "id": 50,
+      "filename": "050_section_header_town_details.png",
+      "original_x": 1000,
+      "original_y": 512,
+      "width": 154,
+      "height": 28,
+      "area": 4104
+    },
+    {
+      "id": 51,
+      "filename": "051_town_details_asset.png",
+      "original_x": 694,
+      "original_y": 537,
+      "width": 71,
+      "height": 60,
+      "area": 2982
+    },
+    {
+      "id": 52,
+      "filename": "052_town_details_asset.png",
+      "original_x": 785,
+      "original_y": 538,
+      "width": 82,
+      "height": 64,
+      "area": 3760
+    },
+    {
+      "id": 53,
+      "filename": "053_town_details_asset.png",
+      "original_x": 885,
+      "original_y": 538,
+      "width": 83,
+      "height": 64,
+      "area": 3698
+    },
+    {
+      "id": 54,
+      "filename": "054_town_details_asset.png",
+      "original_x": 1008,
+      "original_y": 553,
+      "width": 63,
+      "height": 129,
+      "area": 4603
+    },
+    {
+      "id": 55,
+      "filename": "055_town_details_asset.png",
+      "original_x": 1097,
+      "original_y": 555,
+      "width": 86,
+      "height": 116,
+      "area": 7747
+    },
+    {
+      "id": 56,
+      "filename": "056_town_details_asset.png",
+      "original_x": 1203,
+      "original_y": 551,
+      "width": 70,
+      "height": 120,
+      "area": 4165
+    },
+    {
+      "id": 57,
+      "filename": "057_town_details_asset.png",
+      "original_x": 1276,
+      "original_y": 573,
+      "width": 65,
+      "height": 98,
+      "area": 2487
+    },
+    {
+      "id": 58,
+      "filename": "058_town_details_asset.png",
+      "original_x": 1359,
+      "original_y": 540,
+      "width": 123,
+      "height": 99,
+      "area": 4390
+    },
+    {
+      "id": 59,
+      "filename": "059_town_details_asset.png",
+      "original_x": 691,
+      "original_y": 619,
+      "width": 71,
+      "height": 59,
+      "area": 3073
+    },
+    {
+      "id": 60,
+      "filename": "060_town_details_asset.png",
+      "original_x": 785,
+      "original_y": 616,
+      "width": 81,
+      "height": 71,
+      "area": 3984
+    },
+    {
+      "id": 61,
+      "filename": "061_town_details_asset.png",
+      "original_x": 886,
+      "original_y": 616,
+      "width": 80,
+      "height": 71,
+      "area": 3843
+    },
+    {
+      "id": 62,
+      "filename": "062_town_details_asset.png",
+      "original_x": 1357,
+      "original_y": 633,
+      "width": 139,
+      "height": 89,
+      "area": 7510
+    },
+    {
+      "id": 63,
+      "filename": "063_nature_environment_asset.png",
+      "original_x": 174,
+      "original_y": 685,
+      "width": 98,
+      "height": 63,
+      "area": 4012
+    },
+    {
+      "id": 64,
+      "filename": "064_nature_environment_asset.png",
+      "original_x": 32,
+      "original_y": 730,
+      "width": 50,
+      "height": 70,
+      "area": 2117
+    },
+    {
+      "id": 65,
+      "filename": "065_nature_environment_asset.png",
+      "original_x": 306,
+      "original_y": 695,
+      "width": 82,
+      "height": 52,
+      "area": 2562
+    },
+    {
+      "id": 66,
+      "filename": "066_nature_environment_asset.png",
+      "original_x": 419,
+      "original_y": 707,
+      "width": 56,
+      "height": 37,
+      "area": 1387
+    },
+    {
+      "id": 67,
+      "filename": "067_nature_environment_asset.png",
+      "original_x": 499,
+      "original_y": 707,
+      "width": 61,
+      "height": 39,
+      "area": 1547
+    },
+    {
+      "id": 68,
+      "filename": "068_nature_environment_asset.png",
+      "original_x": 579,
+      "original_y": 707,
+      "width": 54,
+      "height": 40,
+      "area": 1206
+    },
+    {
+      "id": 69,
+      "filename": "069_town_details_asset.png",
+      "original_x": 656,
+      "original_y": 712,
+      "width": 57,
+      "height": 35,
+      "area": 1110
+    },
+    {
+      "id": 70,
+      "filename": "070_town_details_asset.png",
+      "original_x": 737,
+      "original_y": 706,
+      "width": 51,
+      "height": 41,
+      "area": 1175
+    },
+    {
+      "id": 71,
+      "filename": "071_town_details_asset.png",
+      "original_x": 812,
+      "original_y": 725,
+      "width": 62,
+      "height": 44,
+      "area": 1971
+    },
+    {
+      "id": 72,
+      "filename": "072_town_details_asset.png",
+      "original_x": 892,
+      "original_y": 707,
+      "width": 75,
+      "height": 66,
+      "area": 3738
+    },
+    {
+      "id": 73,
+      "filename": "073_town_details_asset.png",
+      "original_x": 1005,
+      "original_y": 702,
+      "width": 68,
+      "height": 95,
+      "area": 5481
+    },
+    {
+      "id": 74,
+      "filename": "074_town_details_asset.png",
+      "original_x": 1078,
+      "original_y": 693,
+      "width": 55,
+      "height": 52,
+      "area": 2138
+    },
+    {
+      "id": 75,
+      "filename": "075_town_details_asset.png",
+      "original_x": 1158,
+      "original_y": 698,
+      "width": 91,
+      "height": 115,
+      "area": 6413
+    },
+    {
+      "id": 76,
+      "filename": "076_town_details_asset.png",
+      "original_x": 1259,
+      "original_y": 699,
+      "width": 110,
+      "height": 76,
+      "area": 5423
+    },
+    {
+      "id": 77,
+      "filename": "077_town_details_asset.png",
+      "original_x": 1376,
+      "original_y": 738,
+      "width": 51,
+      "height": 59,
+      "area": 2597
+    },
+    {
+      "id": 78,
+      "filename": "078_town_details_asset.png",
+      "original_x": 1444,
+      "original_y": 729,
+      "width": 73,
+      "height": 72,
+      "area": 4485
+    },
+    {
+      "id": 79,
+      "filename": "079_nature_environment_asset.png",
+      "original_x": 88,
+      "original_y": 749,
+      "width": 47,
+      "height": 50,
+      "area": 1416
+    },
+    {
+      "id": 80,
+      "filename": "080_nature_environment_asset.png",
+      "original_x": 182,
+      "original_y": 764,
+      "width": 71,
+      "height": 40,
+      "area": 1754
+    },
+    {
+      "id": 81,
+      "filename": "081_nature_environment_asset.png",
+      "original_x": 293,
+      "original_y": 762,
+      "width": 54,
+      "height": 42,
+      "area": 1373
+    },
+    {
+      "id": 82,
+      "filename": "082_nature_environment_asset.png",
+      "original_x": 373,
+      "original_y": 756,
+      "width": 58,
+      "height": 48,
+      "area": 1909
+    },
+    {
+      "id": 83,
+      "filename": "083_nature_environment_asset.png",
+      "original_x": 455,
+      "original_y": 763,
+      "width": 60,
+      "height": 40,
+      "area": 1478
+    },
+    {
+      "id": 84,
+      "filename": "084_nature_environment_asset.png",
+      "original_x": 544,
+      "original_y": 766,
+      "width": 49,
+      "height": 38,
+      "area": 799
+    },
+    {
+      "id": 85,
+      "filename": "085_nature_environment_asset.png",
+      "original_x": 585,
+      "original_y": 775,
+      "width": 37,
+      "height": 30,
+      "area": 560
+    },
+    {
+      "id": 86,
+      "filename": "086_nature_environment_asset.png",
+      "original_x": 645,
+      "original_y": 766,
+      "width": 51,
+      "height": 38,
+      "area": 1171
+    },
+    {
+      "id": 87,
+      "filename": "087_town_details_asset.png",
+      "original_x": 722,
+      "original_y": 772,
+      "width": 66,
+      "height": 45,
+      "area": 1839
+    },
+    {
+      "id": 88,
+      "filename": "088_town_details_asset.png",
+      "original_x": 829,
+      "original_y": 782,
+      "width": 140,
+      "height": 46,
+      "area": 4602
+    },
+    {
+      "id": 89,
+      "filename": "089_town_details_asset.png",
+      "original_x": 1086,
+      "original_y": 752,
+      "width": 73,
+      "height": 62,
+      "area": 3778
+    },
+    {
+      "id": 90,
+      "filename": "090_town_details_asset.png",
+      "original_x": 1276,
+      "original_y": 776,
+      "width": 77,
+      "height": 33,
+      "area": 1576
+    },
+    {
+      "id": 91,
+      "filename": "091_section_header_ground_terrain.png",
+      "original_x": 23,
+      "original_y": 825,
+      "width": 278,
+      "height": 28,
+      "area": 7664
+    },
+    {
+      "id": 92,
+      "filename": "092_section_header_miscellaneous.png",
+      "original_x": 999,
+      "original_y": 829,
+      "width": 155,
+      "height": 28,
+      "area": 4233
+    },
+    {
+      "id": 93,
+      "filename": "093_ground_terrain_asset.png",
+      "original_x": 27,
+      "original_y": 869,
+      "width": 100,
+      "height": 105,
+      "area": 9966
+    },
+    {
+      "id": 94,
+      "filename": "094_ground_terrain_asset.png",
+      "original_x": 144,
+      "original_y": 869,
+      "width": 102,
+      "height": 105,
+      "area": 10025
+    },
+    {
+      "id": 95,
+      "filename": "095_ground_terrain_asset.png",
+      "original_x": 262,
+      "original_y": 869,
+      "width": 101,
+      "height": 105,
+      "area": 9969
+    },
+    {
+      "id": 96,
+      "filename": "096_ground_terrain_asset.png",
+      "original_x": 380,
+      "original_y": 868,
+      "width": 103,
+      "height": 106,
+      "area": 10335
+    },
+    {
+      "id": 97,
+      "filename": "097_ground_terrain_asset.png",
+      "original_x": 501,
+      "original_y": 870,
+      "width": 105,
+      "height": 103,
+      "area": 10370
+    },
+    {
+      "id": 98,
+      "filename": "098_ground_terrain_asset.png",
+      "original_x": 631,
+      "original_y": 869,
+      "width": 43,
+      "height": 44,
+      "area": 1264
+    },
+    {
+      "id": 99,
+      "filename": "099_miscellaneous_asset.png",
+      "original_x": 699,
+      "original_y": 874,
+      "width": 128,
+      "height": 100,
+      "area": 11129
+    },
+    {
+      "id": 100,
+      "filename": "100_miscellaneous_asset.png",
+      "original_x": 854,
+      "original_y": 866,
+      "width": 112,
+      "height": 119,
+      "area": 10557
+    },
+    {
+      "id": 101,
+      "filename": "101_miscellaneous_asset.png",
+      "original_x": 1012,
+      "original_y": 870,
+      "width": 48,
+      "height": 47,
+      "area": 1475
+    },
+    {
+      "id": 102,
+      "filename": "102_miscellaneous_asset.png",
+      "original_x": 1082,
+      "original_y": 879,
+      "width": 57,
+      "height": 36,
+      "area": 1180
+    },
+    {
+      "id": 103,
+      "filename": "103_miscellaneous_asset.png",
+      "original_x": 1159,
+      "original_y": 864,
+      "width": 47,
+      "height": 62,
+      "area": 1088
+    },
+    {
+      "id": 104,
+      "filename": "104_miscellaneous_asset.png",
+      "original_x": 1223,
+      "original_y": 868,
+      "width": 38,
+      "height": 51,
+      "area": 1639
+    },
+    {
+      "id": 105,
+      "filename": "105_miscellaneous_asset.png",
+      "original_x": 1279,
+      "original_y": 869,
+      "width": 35,
+      "height": 49,
+      "area": 1273
+    },
+    {
+      "id": 106,
+      "filename": "106_miscellaneous_asset.png",
+      "original_x": 1330,
+      "original_y": 865,
+      "width": 46,
+      "height": 56,
+      "area": 998
+    },
+    {
+      "id": 107,
+      "filename": "107_miscellaneous_asset.png",
+      "original_x": 1390,
+      "original_y": 870,
+      "width": 53,
+      "height": 48,
+      "area": 2054
+    },
+    {
+      "id": 108,
+      "filename": "108_miscellaneous_asset.png",
+      "original_x": 1459,
+      "original_y": 867,
+      "width": 53,
+      "height": 51,
+      "area": 2078
+    },
+    {
+      "id": 109,
+      "filename": "109_ground_terrain_asset.png",
+      "original_x": 635,
+      "original_y": 943,
+      "width": 34,
+      "height": 31,
+      "area": 549
+    },
+    {
+      "id": 110,
+      "filename": "110_miscellaneous_asset.png",
+      "original_x": 1006,
+      "original_y": 932,
+      "width": 60,
+      "height": 68,
+      "area": 2348
+    },
+    {
+      "id": 111,
+      "filename": "111_miscellaneous_asset.png",
+      "original_x": 1089,
+      "original_y": 930,
+      "width": 57,
+      "height": 71,
+      "area": 2499
+    },
+    {
+      "id": 112,
+      "filename": "112_miscellaneous_asset.png",
+      "original_x": 1290,
+      "original_y": 933,
+      "width": 33,
+      "height": 66,
+      "area": 1235
+    },
+    {
+      "id": 113,
+      "filename": "113_miscellaneous_asset.png",
+      "original_x": 1349,
+      "original_y": 934,
+      "width": 77,
+      "height": 66,
+      "area": 3331
+    },
+    {
+      "id": 114,
+      "filename": "114_miscellaneous_asset.png",
+      "original_x": 1468,
+      "original_y": 939,
+      "width": 47,
+      "height": 61,
+      "area": 1471
+    },
+    {
+      "id": 115,
+      "filename": "115_miscellaneous_asset.png",
+      "original_x": 1188,
+      "original_y": 949,
+      "width": 75,
+      "height": 38,
+      "area": 1753
+    }
+  ]
+}

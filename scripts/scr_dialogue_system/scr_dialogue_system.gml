@@ -11,14 +11,15 @@ function dialogue_create() {
         lines: [],
         on_finish: noone,
         
-        /// @function add(speaker, text, [left_portrait], [right_portrait], [side_active])
-        add: function(_speaker, _text, _left_portrait = noone, _right_portrait = noone, _side_active = "left") {
+        /// @function add(speaker, text, [left_portrait], [right_portrait], [side_active], [emote])
+        add: function(_speaker, _text, _left_portrait = noone, _right_portrait = noone, _side_active = "left", _emote = "") {
             array_push(lines, {
                 speaker: _speaker,
                 text: _text,
                 left_portrait: _left_portrait,
                 right_portrait: _right_portrait,
-                side_active: _side_active
+                side_active: _side_active,
+                emote: _emote
             });
             return self;
         },

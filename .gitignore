@@ -85,3 +85,5 @@ output/
 .warp/
 .windsurf/
 mcp-config.json
+# Scratch directory
+scratch/

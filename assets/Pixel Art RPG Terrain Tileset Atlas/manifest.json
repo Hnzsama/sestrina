@@ -1,0 +1,1843 @@
+{
+  "source_image": "Pixel Art RPG Terrain Tileset Atlas.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_section_header_terrain_tiles.png",
+      "original_x": 23,
+      "original_y": 15,
+      "width": 189,
+      "height": 34,
+      "area": 6236
+    },
+    {
+      "id": 2,
+      "filename": "002_section_header_road_path.png",
+      "original_x": 962,
+      "original_y": 16,
+      "width": 179,
+      "height": 35,
+      "area": 6003
+    },
+    {
+      "id": 3,
+      "filename": "003_terrain_tiles_tile.png",
+      "original_x": 20,
+      "original_y": 54,
+      "width": 68,
+      "height": 73,
+      "area": 4840
+    },
+    {
+      "id": 4,
+      "filename": "004_terrain_tiles_tile.png",
+      "original_x": 94,
+      "original_y": 53,
+      "width": 69,
+      "height": 152,
+      "area": 9920
+    },
+    {
+      "id": 5,
+      "filename": "005_terrain_tiles_tile.png",
+      "original_x": 170,
+      "original_y": 54,
+      "width": 64,
+      "height": 73,
+      "area": 4594
+    },
+    {
+      "id": 6,
+      "filename": "006_terrain_tiles_tile.png",
+      "original_x": 240,
+      "original_y": 54,
+      "width": 71,
+      "height": 73,
+      "area": 5056
+    },
+    {
+      "id": 7,
+      "filename": "007_terrain_tiles_tile.png",
+      "original_x": 318,
+      "original_y": 54,
+      "width": 73,
+      "height": 73,
+      "area": 5268
+    },
+    {
+      "id": 8,
+      "filename": "008_terrain_tiles_tile.png",
+      "original_x": 398,
+      "original_y": 54,
+      "width": 73,
+      "height": 73,
+      "area": 5239
+    },
+    {
+      "id": 9,
+      "filename": "009_terrain_tiles_tile.png",
+      "original_x": 479,
+      "original_y": 54,
+      "width": 74,
+      "height": 151,
+      "area": 10775
+    },
+    {
+      "id": 10,
+      "filename": "010_terrain_tiles_tile.png",
+      "original_x": 566,
+      "original_y": 55,
+      "width": 71,
+      "height": 69,
+      "area": 4697
+    },
+    {
+      "id": 11,
+      "filename": "011_terrain_tiles_tile.png",
+      "original_x": 649,
+      "original_y": 54,
+      "width": 77,
+      "height": 70,
+      "area": 5131
+    },
+    {
+      "id": 12,
+      "filename": "012_terrain_tiles_tile.png",
+      "original_x": 742,
+      "original_y": 55,
+      "width": 62,
+      "height": 69,
+      "area": 4194
+    },
+    {
+      "id": 13,
+      "filename": "013_terrain_tiles_tile.png",
+      "original_x": 820,
+      "original_y": 56,
+      "width": 95,
+      "height": 70,
+      "area": 6436
+    },
+    {
+      "id": 14,
+      "filename": "014_road_path_tile.png",
+      "original_x": 966,
+      "original_y": 57,
+      "width": 85,
+      "height": 89,
+      "area": 7405
+    },
+    {
+      "id": 15,
+      "filename": "015_road_path_tile.png",
+      "original_x": 1064,
+      "original_y": 57,
+      "width": 87,
+      "height": 89,
+      "area": 7651
+    },
+    {
+      "id": 16,
+      "filename": "016_road_path_tile.png",
+      "original_x": 1163,
+      "original_y": 57,
+      "width": 88,
+      "height": 90,
+      "area": 7747
+    },
+    {
+      "id": 17,
+      "filename": "017_road_path_tile.png",
+      "original_x": 1264,
+      "original_y": 58,
+      "width": 71,
+      "height": 89,
+      "area": 5116
+    },
+    {
+      "id": 18,
+      "filename": "018_road_path_tile.png",
+      "original_x": 1347,
+      "original_y": 56,
+      "width": 65,
+      "height": 66,
+      "area": 4154
+    },
+    {
+      "id": 19,
+      "filename": "019_road_path_tile.png",
+      "original_x": 1425,
+      "original_y": 55,
+      "width": 85,
+      "height": 70,
+      "area": 5809
+    },
+    {
+      "id": 20,
+      "filename": "020_terrain_tiles_tile.png",
+      "original_x": 21,
+      "original_y": 131,
+      "width": 67,
+      "height": 73,
+      "area": 4773
+    },
+    {
+      "id": 21,
+      "filename": "021_terrain_tiles_tile.png",
+      "original_x": 170,
+      "original_y": 131,
+      "width": 64,
+      "height": 74,
+      "area": 4614
+    },
+    {
+      "id": 22,
+      "filename": "022_terrain_tiles_tile.png",
+      "original_x": 240,
+      "original_y": 131,
+      "width": 71,
+      "height": 74,
+      "area": 5111
+    },
+    {
+      "id": 23,
+      "filename": "023_terrain_tiles_tile.png",
+      "original_x": 317,
+      "original_y": 131,
+      "width": 74,
+      "height": 73,
+      "area": 5228
+    },
+    {
+      "id": 24,
+      "filename": "024_terrain_tiles_tile.png",
+      "original_x": 398,
+      "original_y": 131,
+      "width": 73,
+      "height": 73,
+      "area": 5206
+    },
+    {
+      "id": 25,
+      "filename": "025_terrain_tiles_tile.png",
+      "original_x": 567,
+      "original_y": 135,
+      "width": 69,
+      "height": 65,
+      "area": 4259
+    },
+    {
+      "id": 26,
+      "filename": "026_terrain_tiles_tile.png",
+      "original_x": 652,
+      "original_y": 135,
+      "width": 74,
+      "height": 65,
+      "area": 4583
+    },
+    {
+      "id": 27,
+      "filename": "027_terrain_tiles_tile.png",
+      "original_x": 742,
+      "original_y": 135,
+      "width": 62,
+      "height": 65,
+      "area": 3933
+    },
+    {
+      "id": 28,
+      "filename": "028_terrain_tiles_tile.png",
+      "original_x": 817,
+      "original_y": 137,
+      "width": 96,
+      "height": 66,
+      "area": 6107
+    },
+    {
+      "id": 29,
+      "filename": "029_road_path_tile.png",
+      "original_x": 966,
+      "original_y": 155,
+      "width": 86,
+      "height": 57,
+      "area": 4773
+    },
+    {
+      "id": 30,
+      "filename": "030_road_path_tile.png",
+      "original_x": 1065,
+      "original_y": 157,
+      "width": 86,
+      "height": 58,
+      "area": 4859
+    },
+    {
+      "id": 31,
+      "filename": "031_road_path_tile.png",
+      "original_x": 1346,
+      "original_y": 137,
+      "width": 66,
+      "height": 85,
+      "area": 5457
+    },
+    {
+      "id": 32,
+      "filename": "032_road_path_tile.png",
+      "original_x": 1376,
+      "original_y": 137,
+      "width": 142,
+      "height": 148,
+      "area": 14781
+    },
+    {
+      "id": 33,
+      "filename": "033_road_path_tile.png",
+      "original_x": 1163,
+      "original_y": 158,
+      "width": 90,
+      "height": 57,
+      "area": 5051
+    },
+    {
+      "id": 34,
+      "filename": "034_road_path_tile.png",
+      "original_x": 1267,
+      "original_y": 160,
+      "width": 67,
+      "height": 63,
+      "area": 4106
+    },
+    {
+      "id": 35,
+      "filename": "035_terrain_tiles_tile.png",
+      "original_x": 20,
+      "original_y": 209,
+      "width": 68,
+      "height": 74,
+      "area": 4901
+    },
+    {
+      "id": 36,
+      "filename": "036_terrain_tiles_tile.png",
+      "original_x": 95,
+      "original_y": 209,
+      "width": 68,
+      "height": 74,
+      "area": 4984
+    },
+    {
+      "id": 37,
+      "filename": "037_terrain_tiles_tile.png",
+      "original_x": 170,
+      "original_y": 208,
+      "width": 64,
+      "height": 75,
+      "area": 4676
+    },
+    {
+      "id": 38,
+      "filename": "038_terrain_tiles_tile.png",
+      "original_x": 240,
+      "original_y": 208,
+      "width": 71,
+      "height": 75,
+      "area": 5222
+    },
+    {
+      "id": 39,
+      "filename": "039_terrain_tiles_tile.png",
+      "original_x": 318,
+      "original_y": 209,
+      "width": 73,
+      "height": 74,
+      "area": 5336
+    },
+    {
+      "id": 40,
+      "filename": "040_terrain_tiles_tile.png",
+      "original_x": 398,
+      "original_y": 209,
+      "width": 73,
+      "height": 74,
+      "area": 5308
+    },
+    {
+      "id": 41,
+      "filename": "041_terrain_tiles_tile.png",
+      "original_x": 479,
+      "original_y": 208,
+      "width": 75,
+      "height": 75,
+      "area": 5506
+    },
+    {
+      "id": 42,
+      "filename": "042_terrain_tiles_tile.png",
+      "original_x": 568,
+      "original_y": 212,
+      "width": 68,
+      "height": 68,
+      "area": 4496
+    },
+    {
+      "id": 43,
+      "filename": "043_terrain_tiles_tile.png",
+      "original_x": 652,
+      "original_y": 213,
+      "width": 73,
+      "height": 67,
+      "area": 4826
+    },
+    {
+      "id": 44,
+      "filename": "044_terrain_tiles_tile.png",
+      "original_x": 742,
+      "original_y": 213,
+      "width": 66,
+      "height": 69,
+      "area": 4459
+    },
+    {
+      "id": 45,
+      "filename": "045_terrain_tiles_tile.png",
+      "original_x": 832,
+      "original_y": 216,
+      "width": 74,
+      "height": 69,
+      "area": 4759
+    },
+    {
+      "id": 46,
+      "filename": "046_road_path_tile.png",
+      "original_x": 967,
+      "original_y": 223,
+      "width": 84,
+      "height": 61,
+      "area": 4889
+    },
+    {
+      "id": 47,
+      "filename": "047_road_path_tile.png",
+      "original_x": 1066,
+      "original_y": 226,
+      "width": 87,
+      "height": 56,
+      "area": 4782
+    },
+    {
+      "id": 48,
+      "filename": "048_road_path_tile.png",
+      "original_x": 1167,
+      "original_y": 226,
+      "width": 87,
+      "height": 56,
+      "area": 4754
+    },
+    {
+      "id": 49,
+      "filename": "049_road_path_tile.png",
+      "original_x": 1280,
+      "original_y": 234,
+      "width": 70,
+      "height": 51,
+      "area": 3490
+    },
+    {
+      "id": 50,
+      "filename": "050_section_header_grass_nature.png",
+      "original_x": 23,
+      "original_y": 300,
+      "width": 291,
+      "height": 35,
+      "area": 9741
+    },
+    {
+      "id": 51,
+      "filename": "051_section_header_flowers_plants.png",
+      "original_x": 554,
+      "original_y": 300,
+      "width": 213,
+      "height": 34,
+      "area": 7020
+    },
+    {
+      "id": 52,
+      "filename": "052_section_header_water_shore.png",
+      "original_x": 962,
+      "original_y": 300,
+      "width": 200,
+      "height": 35,
+      "area": 6759
+    },
+    {
+      "id": 53,
+      "filename": "053_grass_nature_tile.png",
+      "original_x": 21,
+      "original_y": 341,
+      "width": 66,
+      "height": 79,
+      "area": 4823
+    },
+    {
+      "id": 54,
+      "filename": "054_grass_nature_tile.png",
+      "original_x": 94,
+      "original_y": 341,
+      "width": 79,
+      "height": 78,
+      "area": 5846
+    },
+    {
+      "id": 55,
+      "filename": "055_grass_nature_tile.png",
+      "original_x": 183,
+      "original_y": 341,
+      "width": 78,
+      "height": 77,
+      "area": 5770
+    },
+    {
+      "id": 56,
+      "filename": "056_grass_nature_tile.png",
+      "original_x": 271,
+      "original_y": 341,
+      "width": 81,
+      "height": 78,
+      "area": 6043
+    },
+    {
+      "id": 57,
+      "filename": "057_grass_nature_tile.png",
+      "original_x": 361,
+      "original_y": 341,
+      "width": 80,
+      "height": 78,
+      "area": 5950
+    },
+    {
+      "id": 58,
+      "filename": "058_grass_nature_tile.png",
+      "original_x": 452,
+      "original_y": 341,
+      "width": 80,
+      "height": 77,
+      "area": 5901
+    },
+    {
+      "id": 59,
+      "filename": "059_flowers_plants_tile.png",
+      "original_x": 563,
+      "original_y": 345,
+      "width": 40,
+      "height": 38,
+      "area": 1072
+    },
+    {
+      "id": 60,
+      "filename": "060_flowers_plants_tile.png",
+      "original_x": 624,
+      "original_y": 343,
+      "width": 40,
+      "height": 40,
+      "area": 1201
+    },
+    {
+      "id": 61,
+      "filename": "061_flowers_plants_tile.png",
+      "original_x": 685,
+      "original_y": 344,
+      "width": 37,
+      "height": 39,
+      "area": 1126
+    },
+    {
+      "id": 62,
+      "filename": "062_flowers_plants_tile.png",
+      "original_x": 741,
+      "original_y": 343,
+      "width": 38,
+      "height": 40,
+      "area": 1059
+    },
+    {
+      "id": 63,
+      "filename": "063_flowers_plants_tile.png",
+      "original_x": 800,
+      "original_y": 343,
+      "width": 39,
+      "height": 40,
+      "area": 1158
+    },
+    {
+      "id": 64,
+      "filename": "064_flowers_plants_tile.png",
+      "original_x": 861,
+      "original_y": 341,
+      "width": 37,
+      "height": 42,
+      "area": 1057
+    },
+    {
+      "id": 65,
+      "filename": "065_water_shore_tile.png",
+      "original_x": 962,
+      "original_y": 343,
+      "width": 96,
+      "height": 93,
+      "area": 8746
+    },
+    {
+      "id": 66,
+      "filename": "066_water_shore_tile.png",
+      "original_x": 1068,
+      "original_y": 343,
+      "width": 109,
+      "height": 94,
+      "area": 10057
+    },
+    {
+      "id": 67,
+      "filename": "067_water_shore_tile.png",
+      "original_x": 1188,
+      "original_y": 342,
+      "width": 70,
+      "height": 77,
+      "area": 5284
+    },
+    {
+      "id": 68,
+      "filename": "068_water_shore_tile.png",
+      "original_x": 1268,
+      "original_y": 342,
+      "width": 77,
+      "height": 82,
+      "area": 6142
+    },
+    {
+      "id": 69,
+      "filename": "069_water_shore_tile.png",
+      "original_x": 1357,
+      "original_y": 342,
+      "width": 67,
+      "height": 82,
+      "area": 5340
+    },
+    {
+      "id": 70,
+      "filename": "070_water_shore_tile.png",
+      "original_x": 1436,
+      "original_y": 342,
+      "width": 76,
+      "height": 82,
+      "area": 6159
+    },
+    {
+      "id": 71,
+      "filename": "071_flowers_plants_tile.png",
+      "original_x": 563,
+      "original_y": 400,
+      "width": 40,
+      "height": 41,
+      "area": 1202
+    },
+    {
+      "id": 72,
+      "filename": "072_flowers_plants_tile.png",
+      "original_x": 625,
+      "original_y": 399,
+      "width": 40,
+      "height": 43,
+      "area": 1330
+    },
+    {
+      "id": 73,
+      "filename": "073_flowers_plants_tile.png",
+      "original_x": 688,
+      "original_y": 400,
+      "width": 41,
+      "height": 41,
+      "area": 1305
+    },
+    {
+      "id": 74,
+      "filename": "074_flowers_plants_tile.png",
+      "original_x": 751,
+      "original_y": 400,
+      "width": 40,
+      "height": 40,
+      "area": 1275
+    },
+    {
+      "id": 75,
+      "filename": "075_flowers_plants_tile.png",
+      "original_x": 814,
+      "original_y": 399,
+      "width": 38,
+      "height": 42,
+      "area": 1271
+    },
+    {
+      "id": 76,
+      "filename": "076_flowers_plants_tile.png",
+      "original_x": 879,
+      "original_y": 396,
+      "width": 35,
+      "height": 42,
+      "area": 1125
+    },
+    {
+      "id": 77,
+      "filename": "077_grass_nature_tile.png",
+      "original_x": 20,
+      "original_y": 430,
+      "width": 79,
+      "height": 85,
+      "area": 6321
+    },
+    {
+      "id": 78,
+      "filename": "078_grass_nature_tile.png",
+      "original_x": 109,
+      "original_y": 429,
+      "width": 75,
+      "height": 86,
+      "area": 6047
+    },
+    {
+      "id": 79,
+      "filename": "079_grass_nature_tile.png",
+      "original_x": 193,
+      "original_y": 429,
+      "width": 80,
+      "height": 87,
+      "area": 6641
+    },
+    {
+      "id": 80,
+      "filename": "080_grass_nature_tile.png",
+      "original_x": 284,
+      "original_y": 430,
+      "width": 83,
+      "height": 89,
+      "area": 7063
+    },
+    {
+      "id": 81,
+      "filename": "081_grass_nature_tile.png",
+      "original_x": 378,
+      "original_y": 430,
+      "width": 81,
+      "height": 89,
+      "area": 6924
+    },
+    {
+      "id": 82,
+      "filename": "082_grass_nature_tile.png",
+      "original_x": 471,
+      "original_y": 431,
+      "width": 62,
+      "height": 96,
+      "area": 5580
+    },
+    {
+      "id": 83,
+      "filename": "083_flowers_plants_tile.png",
+      "original_x": 563,
+      "original_y": 463,
+      "width": 55,
+      "height": 54,
+      "area": 2108
+    },
+    {
+      "id": 84,
+      "filename": "084_flowers_plants_tile.png",
+      "original_x": 630,
+      "original_y": 463,
+      "width": 59,
+      "height": 55,
+      "area": 2247
+    },
+    {
+      "id": 85,
+      "filename": "085_flowers_plants_tile.png",
+      "original_x": 703,
+      "original_y": 460,
+      "width": 48,
+      "height": 56,
+      "area": 1831
+    },
+    {
+      "id": 86,
+      "filename": "086_flowers_plants_tile.png",
+      "original_x": 768,
+      "original_y": 452,
+      "width": 41,
+      "height": 66,
+      "area": 1912
+    },
+    {
+      "id": 87,
+      "filename": "087_flowers_plants_tile.png",
+      "original_x": 824,
+      "original_y": 452,
+      "width": 45,
+      "height": 66,
+      "area": 1838
+    },
+    {
+      "id": 88,
+      "filename": "088_flowers_plants_tile.png",
+      "original_x": 878,
+      "original_y": 451,
+      "width": 40,
+      "height": 68,
+      "area": 1874
+    },
+    {
+      "id": 89,
+      "filename": "089_water_shore_tile.png",
+      "original_x": 962,
+      "original_y": 445,
+      "width": 96,
+      "height": 83,
+      "area": 7948
+    },
+    {
+      "id": 90,
+      "filename": "090_water_shore_tile.png",
+      "original_x": 1070,
+      "original_y": 447,
+      "width": 103,
+      "height": 81,
+      "area": 8337
+    },
+    {
+      "id": 91,
+      "filename": "091_water_shore_tile.png",
+      "original_x": 1185,
+      "original_y": 428,
+      "width": 72,
+      "height": 98,
+      "area": 6778
+    },
+    {
+      "id": 92,
+      "filename": "092_water_shore_tile.png",
+      "original_x": 1268,
+      "original_y": 439,
+      "width": 68,
+      "height": 87,
+      "area": 5671
+    },
+    {
+      "id": 93,
+      "filename": "093_water_shore_tile.png",
+      "original_x": 1348,
+      "original_y": 449,
+      "width": 76,
+      "height": 77,
+      "area": 4697
+    },
+    {
+      "id": 94,
+      "filename": "094_water_shore_tile.png",
+      "original_x": 1439,
+      "original_y": 449,
+      "width": 76,
+      "height": 77,
+      "area": 5687
+    },
+    {
+      "id": 95,
+      "filename": "095_section_header_decorative_ground.png",
+      "original_x": 23,
+      "original_y": 535,
+      "width": 235,
+      "height": 35,
+      "area": 7906
+    },
+    {
+      "id": 96,
+      "filename": "096_section_header_bridges_crossing.png",
+      "original_x": 547,
+      "original_y": 537,
+      "width": 235,
+      "height": 35,
+      "area": 7766
+    },
+    {
+      "id": 97,
+      "filename": "097_section_header_terrain_details.png",
+      "original_x": 988,
+      "original_y": 543,
+      "width": 189,
+      "height": 33,
+      "area": 6058
+    },
+    {
+      "id": 98,
+      "filename": "098_decorative_ground_tile.png",
+      "original_x": 22,
+      "original_y": 578,
+      "width": 76,
+      "height": 166,
+      "area": 10549
+    },
+    {
+      "id": 99,
+      "filename": "099_decorative_ground_tile.png",
+      "original_x": 86,
+      "original_y": 578,
+      "width": 57,
+      "height": 61,
+      "area": 3316
+    },
+    {
+      "id": 100,
+      "filename": "100_decorative_ground_tile.png",
+      "original_x": 153,
+      "original_y": 578,
+      "width": 55,
+      "height": 60,
+      "area": 3214
+    },
+    {
+      "id": 101,
+      "filename": "101_decorative_ground_tile.png",
+      "original_x": 218,
+      "original_y": 581,
+      "width": 59,
+      "height": 57,
+      "area": 3283
+    },
+    {
+      "id": 102,
+      "filename": "102_decorative_ground_tile.png",
+      "original_x": 287,
+      "original_y": 580,
+      "width": 44,
+      "height": 58,
+      "area": 2449
+    },
+    {
+      "id": 103,
+      "filename": "103_decorative_ground_tile.png",
+      "original_x": 341,
+      "original_y": 581,
+      "width": 46,
+      "height": 57,
+      "area": 2526
+    },
+    {
+      "id": 104,
+      "filename": "104_decorative_ground_tile.png",
+      "original_x": 399,
+      "original_y": 581,
+      "width": 45,
+      "height": 58,
+      "area": 2439
+    },
+    {
+      "id": 105,
+      "filename": "105_decorative_ground_tile.png",
+      "original_x": 455,
+      "original_y": 581,
+      "width": 62,
+      "height": 57,
+      "area": 3436
+    },
+    {
+      "id": 106,
+      "filename": "106_bridges_crossing_tile.png",
+      "original_x": 551,
+      "original_y": 581,
+      "width": 145,
+      "height": 165,
+      "area": 19958
+    },
+    {
+      "id": 107,
+      "filename": "107_bridges_crossing_tile.png",
+      "original_x": 699,
+      "original_y": 580,
+      "width": 90,
+      "height": 164,
+      "area": 13030
+    },
+    {
+      "id": 108,
+      "filename": "108_section_header_bridges_crossing.png",
+      "original_x": 816,
+      "original_y": 586,
+      "width": 153,
+      "height": 44,
+      "area": 4240
+    },
+    {
+      "id": 109,
+      "filename": "109_terrain_details_tile.png",
+      "original_x": 999,
+      "original_y": 592,
+      "width": 53,
+      "height": 36,
+      "area": 1418
+    },
+    {
+      "id": 110,
+      "filename": "110_terrain_details_tile.png",
+      "original_x": 1067,
+      "original_y": 593,
+      "width": 43,
+      "height": 31,
+      "area": 1047
+    },
+    {
+      "id": 111,
+      "filename": "111_terrain_details_tile.png",
+      "original_x": 1123,
+      "original_y": 594,
+      "width": 38,
+      "height": 26,
+      "area": 734
+    },
+    {
+      "id": 112,
+      "filename": "112_terrain_details_tile.png",
+      "original_x": 1181,
+      "original_y": 596,
+      "width": 28,
+      "height": 21,
+      "area": 452
+    },
+    {
+      "id": 113,
+      "filename": "113_terrain_details_tile.png",
+      "original_x": 1227,
+      "original_y": 586,
+      "width": 30,
+      "height": 28,
+      "area": 545
+    },
+    {
+      "id": 114,
+      "filename": "114_terrain_details_tile.png",
+      "original_x": 1271,
+      "original_y": 579,
+      "width": 60,
+      "height": 42,
+      "area": 1751
+    },
+    {
+      "id": 115,
+      "filename": "115_terrain_details_tile.png",
+      "original_x": 1343,
+      "original_y": 576,
+      "width": 50,
+      "height": 46,
+      "area": 1821
+    },
+    {
+      "id": 116,
+      "filename": "116_terrain_details_tile.png",
+      "original_x": 1406,
+      "original_y": 588,
+      "width": 28,
+      "height": 26,
+      "area": 575
+    },
+    {
+      "id": 117,
+      "filename": "117_terrain_details_tile.png",
+      "original_x": 1449,
+      "original_y": 576,
+      "width": 46,
+      "height": 49,
+      "area": 1606
+    },
+    {
+      "id": 118,
+      "filename": "118_decorative_ground_tile.png",
+      "original_x": 112,
+      "original_y": 647,
+      "width": 70,
+      "height": 97,
+      "area": 6767
+    },
+    {
+      "id": 119,
+      "filename": "119_decorative_ground_tile.png",
+      "original_x": 193,
+      "original_y": 647,
+      "width": 65,
+      "height": 97,
+      "area": 6178
+    },
+    {
+      "id": 120,
+      "filename": "120_decorative_ground_tile.png",
+      "original_x": 270,
+      "original_y": 647,
+      "width": 68,
+      "height": 97,
+      "area": 6431
+    },
+    {
+      "id": 121,
+      "filename": "121_decorative_ground_tile.png",
+      "original_x": 352,
+      "original_y": 647,
+      "width": 72,
+      "height": 96,
+      "area": 6816
+    },
+    {
+      "id": 122,
+      "filename": "122_decorative_ground_tile.png",
+      "original_x": 437,
+      "original_y": 647,
+      "width": 91,
+      "height": 97,
+      "area": 8645
+    },
+    {
+      "id": 123,
+      "filename": "123_bridges_crossing_tile.png",
+      "original_x": 806,
+      "original_y": 641,
+      "width": 166,
+      "height": 104,
+      "area": 12414
+    },
+    {
+      "id": 124,
+      "filename": "124_terrain_details_tile.png",
+      "original_x": 1005,
+      "original_y": 640,
+      "width": 35,
+      "height": 22,
+      "area": 621
+    },
+    {
+      "id": 125,
+      "filename": "125_terrain_details_tile.png",
+      "original_x": 1076,
+      "original_y": 650,
+      "width": 27,
+      "height": 31,
+      "area": 703
+    },
+    {
+      "id": 126,
+      "filename": "126_terrain_details_tile.png",
+      "original_x": 1113,
+      "original_y": 634,
+      "width": 81,
+      "height": 52,
+      "area": 2818
+    },
+    {
+      "id": 127,
+      "filename": "127_terrain_details_tile.png",
+      "original_x": 1215,
+      "original_y": 636,
+      "width": 91,
+      "height": 51,
+      "area": 3678
+    },
+    {
+      "id": 128,
+      "filename": "128_terrain_details_tile.png",
+      "original_x": 1324,
+      "original_y": 640,
+      "width": 68,
+      "height": 43,
+      "area": 2170
+    },
+    {
+      "id": 129,
+      "filename": "129_terrain_details_tile.png",
+      "original_x": 1404,
+      "original_y": 638,
+      "width": 31,
+      "height": 36,
+      "area": 873
+    },
+    {
+      "id": 130,
+      "filename": "130_terrain_details_tile.png",
+      "original_x": 1453,
+      "original_y": 643,
+      "width": 63,
+      "height": 35,
+      "area": 1776
+    },
+    {
+      "id": 131,
+      "filename": "131_terrain_details_tile.png",
+      "original_x": 1003,
+      "original_y": 670,
+      "width": 38,
+      "height": 21,
+      "area": 636
+    },
+    {
+      "id": 132,
+      "filename": "132_terrain_details_tile.png",
+      "original_x": 1048,
+      "original_y": 657,
+      "width": 17,
+      "height": 16,
+      "area": 216
+    },
+    {
+      "id": 133,
+      "filename": "133_terrain_details_tile.png",
+      "original_x": 1143,
+      "original_y": 682,
+      "width": 67,
+      "height": 58,
+      "area": 2556
+    },
+    {
+      "id": 134,
+      "filename": "134_terrain_details_tile.png",
+      "original_x": 1409,
+      "original_y": 695,
+      "width": 22,
+      "height": 44,
+      "area": 744
+    },
+    {
+      "id": 135,
+      "filename": "135_terrain_details_tile.png",
+      "original_x": 1455,
+      "original_y": 694,
+      "width": 61,
+      "height": 46,
+      "area": 2466
+    },
+    {
+      "id": 136,
+      "filename": "136_terrain_details_tile.png",
+      "original_x": 1004,
+      "original_y": 699,
+      "width": 18,
+      "height": 41,
+      "area": 672
+    },
+    {
+      "id": 137,
+      "filename": "137_terrain_details_tile.png",
+      "original_x": 1038,
+      "original_y": 705,
+      "width": 36,
+      "height": 35,
+      "area": 1020
+    },
+    {
+      "id": 138,
+      "filename": "138_terrain_details_tile.png",
+      "original_x": 1091,
+      "original_y": 708,
+      "width": 32,
+      "height": 31,
+      "area": 882
+    },
+    {
+      "id": 139,
+      "filename": "139_terrain_details_tile.png",
+      "original_x": 1221,
+      "original_y": 698,
+      "width": 42,
+      "height": 43,
+      "area": 1065
+    },
+    {
+      "id": 140,
+      "filename": "140_terrain_details_tile.png",
+      "original_x": 1279,
+      "original_y": 704,
+      "width": 40,
+      "height": 36,
+      "area": 1179
+    },
+    {
+      "id": 141,
+      "filename": "141_terrain_details_tile.png",
+      "original_x": 1338,
+      "original_y": 700,
+      "width": 53,
+      "height": 40,
+      "area": 1419
+    },
+    {
+      "id": 142,
+      "filename": "142_section_header_bushes_shrubs.png",
+      "original_x": 28,
+      "original_y": 771,
+      "width": 200,
+      "height": 34,
+      "area": 6604
+    },
+    {
+      "id": 143,
+      "filename": "143_section_header_trees_stumps.png",
+      "original_x": 446,
+      "original_y": 768,
+      "width": 249,
+      "height": 34,
+      "area": 8297
+    },
+    {
+      "id": 144,
+      "filename": "144_trees_stumps_tile.png",
+      "original_x": 716,
+      "original_y": 785,
+      "width": 87,
+      "height": 145,
+      "area": 5216
+    },
+    {
+      "id": 145,
+      "filename": "145_section_header_terrain_extras.png",
+      "original_x": 843,
+      "original_y": 767,
+      "width": 181,
+      "height": 33,
+      "area": 5806
+    },
+    {
+      "id": 146,
+      "filename": "146_section_header_cliffs_elevation.png",
+      "original_x": 1153,
+      "original_y": 763,
+      "width": 208,
+      "height": 35,
+      "area": 7071
+    },
+    {
+      "id": 147,
+      "filename": "147_bushes_shrubs_tile.png",
+      "original_x": 29,
+      "original_y": 814,
+      "width": 63,
+      "height": 64,
+      "area": 3152
+    },
+    {
+      "id": 148,
+      "filename": "148_bushes_shrubs_tile.png",
+      "original_x": 97,
+      "original_y": 816,
+      "width": 51,
+      "height": 63,
+      "area": 2298
+    },
+    {
+      "id": 149,
+      "filename": "149_bushes_shrubs_tile.png",
+      "original_x": 158,
+      "original_y": 820,
+      "width": 56,
+      "height": 58,
+      "area": 2463
+    },
+    {
+      "id": 150,
+      "filename": "150_bushes_shrubs_tile.png",
+      "original_x": 223,
+      "original_y": 813,
+      "width": 49,
+      "height": 65,
+      "area": 2443
+    },
+    {
+      "id": 151,
+      "filename": "151_bushes_shrubs_tile.png",
+      "original_x": 281,
+      "original_y": 810,
+      "width": 53,
+      "height": 66,
+      "area": 2536
+    },
+    {
+      "id": 152,
+      "filename": "152_bushes_shrubs_tile.png",
+      "original_x": 343,
+      "original_y": 813,
+      "width": 59,
+      "height": 63,
+      "area": 2934
+    },
+    {
+      "id": 153,
+      "filename": "153_trees_stumps_tile.png",
+      "original_x": 439,
+      "original_y": 817,
+      "width": 60,
+      "height": 45,
+      "area": 1790
+    },
+    {
+      "id": 154,
+      "filename": "154_trees_stumps_tile.png",
+      "original_x": 527,
+      "original_y": 816,
+      "width": 119,
+      "height": 86,
+      "area": 5901
+    },
+    {
+      "id": 155,
+      "filename": "155_trees_stumps_tile.png",
+      "original_x": 532,
+      "original_y": 817,
+      "width": 33,
+      "height": 28,
+      "area": 667
+    },
+    {
+      "id": 156,
+      "filename": "156_trees_stumps_tile.png",
+      "original_x": 665,
+      "original_y": 816,
+      "width": 31,
+      "height": 41,
+      "area": 939
+    },
+    {
+      "id": 157,
+      "filename": "157_terrain_extras_tile.png",
+      "original_x": 846,
+      "original_y": 819,
+      "width": 29,
+      "height": 23,
+      "area": 479
+    },
+    {
+      "id": 158,
+      "filename": "158_terrain_extras_tile.png",
+      "original_x": 885,
+      "original_y": 819,
+      "width": 26,
+      "height": 26,
+      "area": 423
+    },
+    {
+      "id": 159,
+      "filename": "159_terrain_extras_tile.png",
+      "original_x": 926,
+      "original_y": 819,
+      "width": 22,
+      "height": 26,
+      "area": 457
+    },
+    {
+      "id": 160,
+      "filename": "160_terrain_extras_tile.png",
+      "original_x": 963,
+      "original_y": 825,
+      "width": 16,
+      "height": 20,
+      "area": 239
+    },
+    {
+      "id": 161,
+      "filename": "161_terrain_extras_tile.png",
+      "original_x": 992,
+      "original_y": 818,
+      "width": 30,
+      "height": 28,
+      "area": 685
+    },
+    {
+      "id": 162,
+      "filename": "162_terrain_extras_tile.png",
+      "original_x": 1038,
+      "original_y": 817,
+      "width": 34,
+      "height": 29,
+      "area": 732
+    },
+    {
+      "id": 163,
+      "filename": "163_terrain_extras_tile.png",
+      "original_x": 1089,
+      "original_y": 810,
+      "width": 32,
+      "height": 35,
+      "area": 656
+    },
+    {
+      "id": 164,
+      "filename": "164_cliffs_elevation_tile.png",
+      "original_x": 1157,
+      "original_y": 803,
+      "width": 73,
+      "height": 91,
+      "area": 6349
+    },
+    {
+      "id": 165,
+      "filename": "165_cliffs_elevation_tile.png",
+      "original_x": 1248,
+      "original_y": 812,
+      "width": 88,
+      "height": 81,
+      "area": 6869
+    },
+    {
+      "id": 166,
+      "filename": "166_cliffs_elevation_tile.png",
+      "original_x": 1361,
+      "original_y": 808,
+      "width": 62,
+      "height": 85,
+      "area": 5008
+    },
+    {
+      "id": 167,
+      "filename": "167_cliffs_elevation_tile.png",
+      "original_x": 1443,
+      "original_y": 804,
+      "width": 68,
+      "height": 88,
+      "area": 5548
+    },
+    {
+      "id": 168,
+      "filename": "168_trees_stumps_tile.png",
+      "original_x": 514,
+      "original_y": 838,
+      "width": 20,
+      "height": 18,
+      "area": 237
+    },
+    {
+      "id": 169,
+      "filename": "169_trees_stumps_tile.png",
+      "original_x": 677,
+      "original_y": 877,
+      "width": 31,
+      "height": 33,
+      "area": 740
+    },
+    {
+      "id": 170,
+      "filename": "170_terrain_extras_tile.png",
+      "original_x": 848,
+      "original_y": 851,
+      "width": 43,
+      "height": 43,
+      "area": 1233
+    },
+    {
+      "id": 171,
+      "filename": "171_terrain_extras_tile.png",
+      "original_x": 905,
+      "original_y": 860,
+      "width": 57,
+      "height": 38,
+      "area": 1554
+    },
+    {
+      "id": 172,
+      "filename": "172_terrain_extras_tile.png",
+      "original_x": 979,
+      "original_y": 861,
+      "width": 45,
+      "height": 36,
+      "area": 1204
+    },
+    {
+      "id": 173,
+      "filename": "173_terrain_extras_tile.png",
+      "original_x": 1041,
+      "original_y": 860,
+      "width": 31,
+      "height": 32,
+      "area": 624
+    },
+    {
+      "id": 174,
+      "filename": "174_terrain_extras_tile.png",
+      "original_x": 1090,
+      "original_y": 861,
+      "width": 33,
+      "height": 28,
+      "area": 620
+    },
+    {
+      "id": 175,
+      "filename": "175_bushes_shrubs_tile.png",
+      "original_x": 18,
+      "original_y": 897,
+      "width": 77,
+      "height": 70,
+      "area": 4259
+    },
+    {
+      "id": 176,
+      "filename": "176_bushes_shrubs_tile.png",
+      "original_x": 108,
+      "original_y": 902,
+      "width": 77,
+      "height": 69,
+      "area": 4166
+    },
+    {
+      "id": 177,
+      "filename": "177_bushes_shrubs_tile.png",
+      "original_x": 200,
+      "original_y": 892,
+      "width": 81,
+      "height": 76,
+      "area": 4844
+    },
+    {
+      "id": 178,
+      "filename": "178_bushes_shrubs_tile.png",
+      "original_x": 287,
+      "original_y": 894,
+      "width": 56,
+      "height": 73,
+      "area": 3040
+    },
+    {
+      "id": 179,
+      "filename": "179_bushes_shrubs_tile.png",
+      "original_x": 354,
+      "original_y": 894,
+      "width": 54,
+      "height": 73,
+      "area": 2832
+    },
+    {
+      "id": 180,
+      "filename": "180_trees_stumps_tile.png",
+      "original_x": 442,
+      "original_y": 911,
+      "width": 89,
+      "height": 63,
+      "area": 4060
+    },
+    {
+      "id": 181,
+      "filename": "181_trees_stumps_tile.png",
+      "original_x": 449,
+      "original_y": 881,
+      "width": 41,
+      "height": 23,
+      "area": 763
+    },
+    {
+      "id": 182,
+      "filename": "182_trees_stumps_tile.png",
+      "original_x": 593,
+      "original_y": 905,
+      "width": 100,
+      "height": 72,
+      "area": 3560
+    },
+    {
+      "id": 183,
+      "filename": "183_trees_stumps_tile.png",
+      "original_x": 689,
+      "original_y": 915,
+      "width": 20,
+      "height": 10,
+      "area": 82
+    },
+    {
+      "id": 184,
+      "filename": "184_terrain_extras_tile.png",
+      "original_x": 845,
+      "original_y": 908,
+      "width": 39,
+      "height": 30,
+      "area": 628
+    },
+    {
+      "id": 185,
+      "filename": "185_terrain_extras_tile.png",
+      "original_x": 901,
+      "original_y": 915,
+      "width": 22,
+      "height": 18,
+      "area": 253
+    },
+    {
+      "id": 186,
+      "filename": "186_terrain_extras_tile.png",
+      "original_x": 939,
+      "original_y": 914,
+      "width": 22,
+      "height": 25,
+      "area": 435
+    },
+    {
+      "id": 187,
+      "filename": "187_terrain_extras_tile.png",
+      "original_x": 980,
+      "original_y": 914,
+      "width": 26,
+      "height": 25,
+      "area": 502
+    },
+    {
+      "id": 188,
+      "filename": "188_terrain_extras_tile.png",
+      "original_x": 1026,
+      "original_y": 909,
+      "width": 37,
+      "height": 32,
+      "area": 806
+    },
+    {
+      "id": 189,
+      "filename": "189_terrain_extras_tile.png",
+      "original_x": 1083,
+      "original_y": 906,
+      "width": 28,
+      "height": 33,
+      "area": 636
+    },
+    {
+      "id": 190,
+      "filename": "190_cliffs_elevation_tile.png",
+      "original_x": 1153,
+      "original_y": 903,
+      "width": 67,
+      "height": 79,
+      "area": 4435
+    },
+    {
+      "id": 191,
+      "filename": "191_cliffs_elevation_tile.png",
+      "original_x": 1233,
+      "original_y": 904,
+      "width": 64,
+      "height": 78,
+      "area": 4789
+    },
+    {
+      "id": 192,
+      "filename": "192_cliffs_elevation_tile.png",
+      "original_x": 1311,
+      "original_y": 903,
+      "width": 43,
+      "height": 79,
+      "area": 3281
+    },
+    {
+      "id": 193,
+      "filename": "193_cliffs_elevation_tile.png",
+      "original_x": 1368,
+      "original_y": 904,
+      "width": 40,
+      "height": 78,
+      "area": 3075
+    },
+    {
+      "id": 194,
+      "filename": "194_cliffs_elevation_tile.png",
+      "original_x": 1420,
+      "original_y": 903,
+      "width": 50,
+      "height": 73,
+      "area": 3383
+    },
+    {
+      "id": 195,
+      "filename": "195_cliffs_elevation_tile.png",
+      "original_x": 1483,
+      "original_y": 903,
+      "width": 37,
+      "height": 78,
+      "area": 2755
+    },
+    {
+      "id": 196,
+      "filename": "196_trees_stumps_tile.png",
+      "original_x": 546,
+      "original_y": 944,
+      "width": 42,
+      "height": 31,
+      "area": 782
+    },
+    {
+      "id": 197,
+      "filename": "197_trees_stumps_tile.png",
+      "original_x": 715,
+      "original_y": 936,
+      "width": 45,
+      "height": 40,
+      "area": 1377
+    },
+    {
+      "id": 198,
+      "filename": "198_trees_stumps_tile.png",
+      "original_x": 777,
+      "original_y": 938,
+      "width": 40,
+      "height": 40,
+      "area": 1004
+    },
+    {
+      "id": 199,
+      "filename": "199_terrain_extras_tile.png",
+      "original_x": 849,
+      "original_y": 953,
+      "width": 35,
+      "height": 29,
+      "area": 724
+    },
+    {
+      "id": 200,
+      "filename": "200_terrain_extras_tile.png",
+      "original_x": 898,
+      "original_y": 953,
+      "width": 34,
+      "height": 29,
+      "area": 821
+    },
+    {
+      "id": 201,
+      "filename": "201_terrain_extras_tile.png",
+      "original_x": 946,
+      "original_y": 957,
+      "width": 29,
+      "height": 25,
+      "area": 601
+    },
+    {
+      "id": 202,
+      "filename": "202_terrain_extras_tile.png",
+      "original_x": 992,
+      "original_y": 959,
+      "width": 30,
+      "height": 21,
+      "area": 497
+    },
+    {
+      "id": 203,
+      "filename": "203_terrain_extras_tile.png",
+      "original_x": 1040,
+      "original_y": 962,
+      "width": 17,
+      "height": 15,
+      "area": 97
+    },
+    {
+      "id": 204,
+      "filename": "204_terrain_extras_tile.png",
+      "original_x": 1075,
+      "original_y": 953,
+      "width": 46,
+      "height": 29,
+      "area": 844
+    }
+  ]
+}

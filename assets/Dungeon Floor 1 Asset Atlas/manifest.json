@@ -1,0 +1,1051 @@
+{
+  "source_image": "Dungeon Floor 1 Asset Atlas.png",
+  "width": 1536,
+  "height": 1024,
+  "sprites": [
+    {
+      "id": 1,
+      "filename": "001_tiles_floors_asset.png",
+      "original_x": 13,
+      "original_y": 11,
+      "width": 344,
+      "height": 53,
+      "area": 17015
+    },
+    {
+      "id": 2,
+      "filename": "002_section_header_tiles_floors.png",
+      "original_x": 28,
+      "original_y": 69,
+      "width": 178,
+      "height": 36,
+      "area": 5999
+    },
+    {
+      "id": 3,
+      "filename": "003_section_header_walls_structures.png",
+      "original_x": 514,
+      "original_y": 70,
+      "width": 225,
+      "height": 35,
+      "area": 7491
+    },
+    {
+      "id": 4,
+      "filename": "004_section_header_doors_gates.png",
+      "original_x": 1050,
+      "original_y": 70,
+      "width": 166,
+      "height": 35,
+      "area": 5532
+    },
+    {
+      "id": 5,
+      "filename": "005_tiles_floors_asset.png",
+      "original_x": 26,
+      "original_y": 112,
+      "width": 56,
+      "height": 57,
+      "area": 3071
+    },
+    {
+      "id": 6,
+      "filename": "006_tiles_floors_asset.png",
+      "original_x": 89,
+      "original_y": 112,
+      "width": 65,
+      "height": 59,
+      "area": 3645
+    },
+    {
+      "id": 7,
+      "filename": "007_tiles_floors_asset.png",
+      "original_x": 161,
+      "original_y": 111,
+      "width": 300,
+      "height": 129,
+      "area": 26014
+    },
+    {
+      "id": 8,
+      "filename": "008_walls_structures_asset.png",
+      "original_x": 509,
+      "original_y": 110,
+      "width": 238,
+      "height": 106,
+      "area": 23125
+    },
+    {
+      "id": 9,
+      "filename": "009_walls_structures_asset.png",
+      "original_x": 765,
+      "original_y": 108,
+      "width": 150,
+      "height": 110,
+      "area": 11682
+    },
+    {
+      "id": 10,
+      "filename": "010_walls_structures_asset.png",
+      "original_x": 939,
+      "original_y": 111,
+      "width": 87,
+      "height": 127,
+      "area": 7554
+    },
+    {
+      "id": 11,
+      "filename": "011_doors_gates_asset.png",
+      "original_x": 1063,
+      "original_y": 112,
+      "width": 131,
+      "height": 241,
+      "area": 22938
+    },
+    {
+      "id": 12,
+      "filename": "012_doors_gates_asset.png",
+      "original_x": 1213,
+      "original_y": 102,
+      "width": 151,
+      "height": 201,
+      "area": 19767
+    },
+    {
+      "id": 13,
+      "filename": "013_doors_gates_asset.png",
+      "original_x": 1372,
+      "original_y": 89,
+      "width": 131,
+      "height": 219,
+      "area": 26854
+    },
+    {
+      "id": 14,
+      "filename": "014_tiles_floors_asset.png",
+      "original_x": 25,
+      "original_y": 175,
+      "width": 59,
+      "height": 62,
+      "area": 3479
+    },
+    {
+      "id": 15,
+      "filename": "015_tiles_floors_asset.png",
+      "original_x": 91,
+      "original_y": 174,
+      "width": 63,
+      "height": 65,
+      "area": 3864
+    },
+    {
+      "id": 16,
+      "filename": "016_tiles_floors_asset.png",
+      "original_x": 162,
+      "original_y": 175,
+      "width": 70,
+      "height": 64,
+      "area": 4373
+    },
+    {
+      "id": 17,
+      "filename": "017_tiles_floors_asset.png",
+      "original_x": 315,
+      "original_y": 174,
+      "width": 71,
+      "height": 65,
+      "area": 4484
+    },
+    {
+      "id": 18,
+      "filename": "018_tiles_floors_asset.png",
+      "original_x": 25,
+      "original_y": 247,
+      "width": 60,
+      "height": 76,
+      "area": 4360
+    },
+    {
+      "id": 19,
+      "filename": "019_tiles_floors_asset.png",
+      "original_x": 92,
+      "original_y": 247,
+      "width": 64,
+      "height": 76,
+      "area": 4641
+    },
+    {
+      "id": 20,
+      "filename": "020_tiles_floors_asset.png",
+      "original_x": 162,
+      "original_y": 248,
+      "width": 71,
+      "height": 76,
+      "area": 5225
+    },
+    {
+      "id": 21,
+      "filename": "021_tiles_floors_asset.png",
+      "original_x": 239,
+      "original_y": 248,
+      "width": 69,
+      "height": 75,
+      "area": 5100
+    },
+    {
+      "id": 22,
+      "filename": "022_tiles_floors_asset.png",
+      "original_x": 315,
+      "original_y": 247,
+      "width": 72,
+      "height": 77,
+      "area": 5344
+    },
+    {
+      "id": 23,
+      "filename": "023_tiles_floors_asset.png",
+      "original_x": 392,
+      "original_y": 247,
+      "width": 69,
+      "height": 77,
+      "area": 3921
+    },
+    {
+      "id": 24,
+      "filename": "024_walls_structures_asset.png",
+      "original_x": 507,
+      "original_y": 227,
+      "width": 91,
+      "height": 130,
+      "area": 8996
+    },
+    {
+      "id": 25,
+      "filename": "025_walls_structures_asset.png",
+      "original_x": 617,
+      "original_y": 231,
+      "width": 114,
+      "height": 129,
+      "area": 7874
+    },
+    {
+      "id": 26,
+      "filename": "026_walls_structures_asset.png",
+      "original_x": 765,
+      "original_y": 225,
+      "width": 151,
+      "height": 132,
+      "area": 13873
+    },
+    {
+      "id": 27,
+      "filename": "027_walls_structures_asset.png",
+      "original_x": 941,
+      "original_y": 244,
+      "width": 83,
+      "height": 92,
+      "area": 6841
+    },
+    {
+      "id": 28,
+      "filename": "028_section_header_furniture_props.png",
+      "original_x": 28,
+      "original_y": 350,
+      "width": 215,
+      "height": 34,
+      "area": 7106
+    },
+    {
+      "id": 29,
+      "filename": "029_section_header_decorations.png",
+      "original_x": 845,
+      "original_y": 369,
+      "width": 152,
+      "height": 33,
+      "area": 4670
+    },
+    {
+      "id": 30,
+      "filename": "030_furniture_props_asset.png",
+      "original_x": 26,
+      "original_y": 406,
+      "width": 152,
+      "height": 57,
+      "area": 6281
+    },
+    {
+      "id": 31,
+      "filename": "031_furniture_props_asset.png",
+      "original_x": 199,
+      "original_y": 399,
+      "width": 52,
+      "height": 66,
+      "area": 2909
+    },
+    {
+      "id": 32,
+      "filename": "032_furniture_props_asset.png",
+      "original_x": 267,
+      "original_y": 406,
+      "width": 84,
+      "height": 59,
+      "area": 4521
+    },
+    {
+      "id": 33,
+      "filename": "033_furniture_props_asset.png",
+      "original_x": 369,
+      "original_y": 384,
+      "width": 47,
+      "height": 86,
+      "area": 3702
+    },
+    {
+      "id": 34,
+      "filename": "034_furniture_props_asset.png",
+      "original_x": 430,
+      "original_y": 407,
+      "width": 96,
+      "height": 78,
+      "area": 6202
+    },
+    {
+      "id": 35,
+      "filename": "035_furniture_props_asset.png",
+      "original_x": 547,
+      "original_y": 390,
+      "width": 137,
+      "height": 109,
+      "area": 11645
+    },
+    {
+      "id": 36,
+      "filename": "036_decorations_asset.png",
+      "original_x": 689,
+      "original_y": 420,
+      "width": 60,
+      "height": 119,
+      "area": 5223
+    },
+    {
+      "id": 37,
+      "filename": "037_decorations_asset.png",
+      "original_x": 749,
+      "original_y": 379,
+      "width": 57,
+      "height": 162,
+      "area": 7088
+    },
+    {
+      "id": 38,
+      "filename": "038_decorations_asset.png",
+      "original_x": 839,
+      "original_y": 407,
+      "width": 43,
+      "height": 107,
+      "area": 2930
+    },
+    {
+      "id": 39,
+      "filename": "039_decorations_asset.png",
+      "original_x": 890,
+      "original_y": 407,
+      "width": 43,
+      "height": 107,
+      "area": 2808
+    },
+    {
+      "id": 40,
+      "filename": "040_decorations_asset.png",
+      "original_x": 941,
+      "original_y": 407,
+      "width": 57,
+      "height": 131,
+      "area": 4802
+    },
+    {
+      "id": 41,
+      "filename": "041_decorations_asset.png",
+      "original_x": 1026,
+      "original_y": 407,
+      "width": 72,
+      "height": 116,
+      "area": 6162
+    },
+    {
+      "id": 42,
+      "filename": "042_decorations_asset.png",
+      "original_x": 1121,
+      "original_y": 392,
+      "width": 71,
+      "height": 166,
+      "area": 8822
+    },
+    {
+      "id": 43,
+      "filename": "043_decorations_asset.png",
+      "original_x": 1200,
+      "original_y": 416,
+      "width": 45,
+      "height": 118,
+      "area": 3810
+    },
+    {
+      "id": 44,
+      "filename": "044_decorations_asset.png",
+      "original_x": 1250,
+      "original_y": 394,
+      "width": 95,
+      "height": 135,
+      "area": 8267
+    },
+    {
+      "id": 45,
+      "filename": "045_decorations_asset.png",
+      "original_x": 1359,
+      "original_y": 390,
+      "width": 89,
+      "height": 97,
+      "area": 4320
+    },
+    {
+      "id": 46,
+      "filename": "046_decorations_asset.png",
+      "original_x": 1456,
+      "original_y": 389,
+      "width": 61,
+      "height": 171,
+      "area": 5673
+    },
+    {
+      "id": 47,
+      "filename": "047_decorations_asset.png",
+      "original_x": 1499,
+      "original_y": 397,
+      "width": 7,
+      "height": 13,
+      "area": 57
+    },
+    {
+      "id": 48,
+      "filename": "048_furniture_props_asset.png",
+      "original_x": 29,
+      "original_y": 464,
+      "width": 173,
+      "height": 116,
+      "area": 12815
+    },
+    {
+      "id": 49,
+      "filename": "049_furniture_props_asset.png",
+      "original_x": 225,
+      "original_y": 486,
+      "width": 52,
+      "height": 98,
+      "area": 3444
+    },
+    {
+      "id": 50,
+      "filename": "050_furniture_props_asset.png",
+      "original_x": 303,
+      "original_y": 487,
+      "width": 91,
+      "height": 97,
+      "area": 7603
+    },
+    {
+      "id": 51,
+      "filename": "051_furniture_props_asset.png",
+      "original_x": 417,
+      "original_y": 507,
+      "width": 65,
+      "height": 77,
+      "area": 3734
+    },
+    {
+      "id": 52,
+      "filename": "052_furniture_props_asset.png",
+      "original_x": 495,
+      "original_y": 513,
+      "width": 109,
+      "height": 80,
+      "area": 7959
+    },
+    {
+      "id": 53,
+      "filename": "053_decorations_asset.png",
+      "original_x": 1348,
+      "original_y": 527,
+      "width": 53,
+      "height": 75,
+      "area": 2147
+    },
+    {
+      "id": 54,
+      "filename": "054_decorations_asset.png",
+      "original_x": 1412,
+      "original_y": 507,
+      "width": 29,
+      "height": 95,
+      "area": 1692
+    },
+    {
+      "id": 55,
+      "filename": "055_decorations_asset.png",
+      "original_x": 629,
+      "original_y": 552,
+      "width": 170,
+      "height": 62,
+      "area": 7712
+    },
+    {
+      "id": 56,
+      "filename": "056_decorations_asset.png",
+      "original_x": 834,
+      "original_y": 543,
+      "width": 99,
+      "height": 63,
+      "area": 5934
+    },
+    {
+      "id": 57,
+      "filename": "057_decorations_asset.png",
+      "original_x": 972,
+      "original_y": 549,
+      "width": 24,
+      "height": 53,
+      "area": 834
+    },
+    {
+      "id": 58,
+      "filename": "058_decorations_asset.png",
+      "original_x": 1008,
+      "original_y": 542,
+      "width": 23,
+      "height": 60,
+      "area": 831
+    },
+    {
+      "id": 59,
+      "filename": "059_decorations_asset.png",
+      "original_x": 1041,
+      "original_y": 547,
+      "width": 63,
+      "height": 55,
+      "area": 1874
+    },
+    {
+      "id": 60,
+      "filename": "060_decorations_asset.png",
+      "original_x": 1233,
+      "original_y": 563,
+      "width": 29,
+      "height": 38,
+      "area": 581
+    },
+    {
+      "id": 61,
+      "filename": "061_decorations_asset.png",
+      "original_x": 1302,
+      "original_y": 554,
+      "width": 35,
+      "height": 48,
+      "area": 969
+    },
+    {
+      "id": 62,
+      "filename": "062_traps_hazards_asset.png",
+      "original_x": 24,
+      "original_y": 643,
+      "width": 111,
+      "height": 152,
+      "area": 10628
+    },
+    {
+      "id": 63,
+      "filename": "063_section_header_traps_hazards.png",
+      "original_x": 28,
+      "original_y": 601,
+      "width": 194,
+      "height": 34,
+      "area": 6367
+    },
+    {
+      "id": 64,
+      "filename": "064_traps_hazards_asset.png",
+      "original_x": 155,
+      "original_y": 641,
+      "width": 101,
+      "height": 90,
+      "area": 7187
+    },
+    {
+      "id": 65,
+      "filename": "065_traps_hazards_asset.png",
+      "original_x": 279,
+      "original_y": 651,
+      "width": 77,
+      "height": 58,
+      "area": 2919
+    },
+    {
+      "id": 66,
+      "filename": "066_traps_hazards_asset.png",
+      "original_x": 370,
+      "original_y": 609,
+      "width": 110,
+      "height": 127,
+      "area": 7240
+    },
+    {
+      "id": 67,
+      "filename": "067_treasure_rewards_asset.png",
+      "original_x": 614,
+      "original_y": 651,
+      "width": 89,
+      "height": 83,
+      "area": 3457
+    },
+    {
+      "id": 68,
+      "filename": "068_treasure_rewards_asset.png",
+      "original_x": 827,
+      "original_y": 639,
+      "width": 35,
+      "height": 123,
+      "area": 2478
+    },
+    {
+      "id": 69,
+      "filename": "069_section_header_treasure_rewards.png",
+      "original_x": 892,
+      "original_y": 621,
+      "width": 207,
+      "height": 33,
+      "area": 6488
+    },
+    {
+      "id": 70,
+      "filename": "070_treasure_rewards_asset.png",
+      "original_x": 1148,
+      "original_y": 642,
+      "width": 77,
+      "height": 81,
+      "area": 5377
+    },
+    {
+      "id": 71,
+      "filename": "071_treasure_rewards_asset.png",
+      "original_x": 1460,
+      "original_y": 642,
+      "width": 48,
+      "height": 66,
+      "area": 2520
+    },
+    {
+      "id": 72,
+      "filename": "072_traps_hazards_asset.png",
+      "original_x": 498,
+      "original_y": 657,
+      "width": 95,
+      "height": 78,
+      "area": 7178
+    },
+    {
+      "id": 73,
+      "filename": "073_treasure_rewards_asset.png",
+      "original_x": 722,
+      "original_y": 656,
+      "width": 87,
+      "height": 77,
+      "area": 5700
+    },
+    {
+      "id": 74,
+      "filename": "074_treasure_rewards_asset.png",
+      "original_x": 892,
+      "original_y": 666,
+      "width": 90,
+      "height": 50,
+      "area": 2706
+    },
+    {
+      "id": 75,
+      "filename": "075_treasure_rewards_asset.png",
+      "original_x": 994,
+      "original_y": 673,
+      "width": 65,
+      "height": 50,
+      "area": 2923
+    },
+    {
+      "id": 76,
+      "filename": "076_treasure_rewards_asset.png",
+      "original_x": 1067,
+      "original_y": 666,
+      "width": 64,
+      "height": 58,
+      "area": 3171
+    },
+    {
+      "id": 77,
+      "filename": "077_treasure_rewards_asset.png",
+      "original_x": 1236,
+      "original_y": 656,
+      "width": 37,
+      "height": 48,
+      "area": 1019
+    },
+    {
+      "id": 78,
+      "filename": "078_treasure_rewards_asset.png",
+      "original_x": 1285,
+      "original_y": 660,
+      "width": 43,
+      "height": 45,
+      "area": 1406
+    },
+    {
+      "id": 79,
+      "filename": "079_treasure_rewards_asset.png",
+      "original_x": 1339,
+      "original_y": 659,
+      "width": 40,
+      "height": 45,
+      "area": 1245
+    },
+    {
+      "id": 80,
+      "filename": "080_treasure_rewards_asset.png",
+      "original_x": 1388,
+      "original_y": 657,
+      "width": 45,
+      "height": 47,
+      "area": 1384
+    },
+    {
+      "id": 81,
+      "filename": "081_traps_hazards_asset.png",
+      "original_x": 155,
+      "original_y": 741,
+      "width": 100,
+      "height": 55,
+      "area": 5332
+    },
+    {
+      "id": 82,
+      "filename": "082_traps_hazards_asset.png",
+      "original_x": 290,
+      "original_y": 745,
+      "width": 61,
+      "height": 45,
+      "area": 2075
+    },
+    {
+      "id": 83,
+      "filename": "083_traps_hazards_asset.png",
+      "original_x": 388,
+      "original_y": 746,
+      "width": 88,
+      "height": 50,
+      "area": 4151
+    },
+    {
+      "id": 84,
+      "filename": "084_traps_hazards_asset.png",
+      "original_x": 522,
+      "original_y": 747,
+      "width": 49,
+      "height": 50,
+      "area": 1034
+    },
+    {
+      "id": 85,
+      "filename": "085_treasure_rewards_asset.png",
+      "original_x": 613,
+      "original_y": 750,
+      "width": 82,
+      "height": 49,
+      "area": 3640
+    },
+    {
+      "id": 86,
+      "filename": "086_treasure_rewards_asset.png",
+      "original_x": 731,
+      "original_y": 747,
+      "width": 65,
+      "height": 54,
+      "area": 3081
+    },
+    {
+      "id": 87,
+      "filename": "087_treasure_rewards_asset.png",
+      "original_x": 879,
+      "original_y": 716,
+      "width": 80,
+      "height": 82,
+      "area": 4581
+    },
+    {
+      "id": 88,
+      "filename": "088_treasure_rewards_asset.png",
+      "original_x": 980,
+      "original_y": 740,
+      "width": 39,
+      "height": 53,
+      "area": 1695
+    },
+    {
+      "id": 89,
+      "filename": "089_treasure_rewards_asset.png",
+      "original_x": 1035,
+      "original_y": 746,
+      "width": 74,
+      "height": 55,
+      "area": 3508
+    },
+    {
+      "id": 90,
+      "filename": "090_treasure_rewards_asset.png",
+      "original_x": 1135,
+      "original_y": 747,
+      "width": 26,
+      "height": 38,
+      "area": 789
+    },
+    {
+      "id": 91,
+      "filename": "091_treasure_rewards_asset.png",
+      "original_x": 1173,
+      "original_y": 747,
+      "width": 27,
+      "height": 38,
+      "area": 759
+    },
+    {
+      "id": 92,
+      "filename": "092_treasure_rewards_asset.png",
+      "original_x": 1211,
+      "original_y": 747,
+      "width": 27,
+      "height": 38,
+      "area": 780
+    },
+    {
+      "id": 93,
+      "filename": "093_treasure_rewards_asset.png",
+      "original_x": 1263,
+      "original_y": 729,
+      "width": 76,
+      "height": 58,
+      "area": 3514
+    },
+    {
+      "id": 94,
+      "filename": "094_treasure_rewards_asset.png",
+      "original_x": 1362,
+      "original_y": 715,
+      "width": 73,
+      "height": 86,
+      "area": 4639
+    },
+    {
+      "id": 95,
+      "filename": "095_treasure_rewards_asset.png",
+      "original_x": 1461,
+      "original_y": 726,
+      "width": 43,
+      "height": 72,
+      "area": 1981
+    },
+    {
+      "id": 96,
+      "filename": "096_section_header_magic_effects.png",
+      "original_x": 25,
+      "original_y": 809,
+      "width": 260,
+      "height": 35,
+      "area": 8604
+    },
+    {
+      "id": 97,
+      "filename": "097_section_header_miscellaneous.png",
+      "original_x": 856,
+      "original_y": 811,
+      "width": 146,
+      "height": 33,
+      "area": 4604
+    },
+    {
+      "id": 98,
+      "filename": "098_magic_effects_asset.png",
+      "original_x": 16,
+      "original_y": 856,
+      "width": 133,
+      "height": 128,
+      "area": 13338
+    },
+    {
+      "id": 99,
+      "filename": "099_magic_effects_asset.png",
+      "original_x": 157,
+      "original_y": 852,
+      "width": 123,
+      "height": 131,
+      "area": 9186
+    },
+    {
+      "id": 100,
+      "filename": "100_magic_effects_asset.png",
+      "original_x": 293,
+      "original_y": 865,
+      "width": 59,
+      "height": 118,
+      "area": 5426
+    },
+    {
+      "id": 101,
+      "filename": "101_magic_effects_asset.png",
+      "original_x": 367,
+      "original_y": 852,
+      "width": 78,
+      "height": 131,
+      "area": 7300
+    },
+    {
+      "id": 102,
+      "filename": "102_magic_effects_asset.png",
+      "original_x": 428,
+      "original_y": 851,
+      "width": 16,
+      "height": 23,
+      "area": 162
+    },
+    {
+      "id": 103,
+      "filename": "103_magic_effects_asset.png",
+      "original_x": 454,
+      "original_y": 867,
+      "width": 61,
+      "height": 116,
+      "area": 4896
+    },
+    {
+      "id": 104,
+      "filename": "104_magic_effects_asset.png",
+      "original_x": 479,
+      "original_y": 853,
+      "width": 7,
+      "height": 12,
+      "area": 49
+    },
+    {
+      "id": 105,
+      "filename": "105_magic_effects_asset.png",
+      "original_x": 524,
+      "original_y": 870,
+      "width": 103,
+      "height": 113,
+      "area": 8815
+    },
+    {
+      "id": 106,
+      "filename": "106_miscellaneous_asset.png",
+      "original_x": 635,
+      "original_y": 849,
+      "width": 72,
+      "height": 134,
+      "area": 6219
+    },
+    {
+      "id": 107,
+      "filename": "107_miscellaneous_asset.png",
+      "original_x": 713,
+      "original_y": 844,
+      "width": 118,
+      "height": 140,
+      "area": 15068
+    },
+    {
+      "id": 108,
+      "filename": "108_miscellaneous_asset.png",
+      "original_x": 860,
+      "original_y": 855,
+      "width": 85,
+      "height": 131,
+      "area": 7014
+    },
+    {
+      "id": 109,
+      "filename": "109_miscellaneous_asset.png",
+      "original_x": 964,
+      "original_y": 854,
+      "width": 83,
+      "height": 132,
+      "area": 7942
+    },
+    {
+      "id": 110,
+      "filename": "110_miscellaneous_asset.png",
+      "original_x": 1063,
+      "original_y": 854,
+      "width": 36,
+      "height": 132,
+      "area": 1811
+    },
+    {
+      "id": 111,
+      "filename": "111_miscellaneous_asset.png",
+      "original_x": 1120,
+      "original_y": 853,
+      "width": 43,
+      "height": 58,
+      "area": 1391
+    },
+    {
+      "id": 112,
+      "filename": "112_miscellaneous_asset.png",
+      "original_x": 1178,
+      "original_y": 855,
+      "width": 55,
+      "height": 57,
+      "area": 1600
+    },
+    {
+      "id": 113,
+      "filename": "113_miscellaneous_asset.png",
+      "original_x": 1272,
+      "original_y": 841,
+      "width": 91,
+      "height": 142,
+      "area": 4890
+    },
+    {
+      "id": 114,
+      "filename": "114_miscellaneous_asset.png",
+      "original_x": 1389,
+      "original_y": 853,
+      "width": 127,
+      "height": 134,
+      "area": 13460
+    },
+    {
+      "id": 115,
+      "filename": "115_miscellaneous_asset.png",
+      "original_x": 1112,
+      "original_y": 927,
+      "width": 77,
+      "height": 62,
+      "area": 2437
+    },
+    {
+      "id": 116,
+      "filename": "116_miscellaneous_asset.png",
+      "original_x": 1208,
+      "original_y": 929,
+      "width": 42,
+      "height": 56,
+      "area": 1993
+    }
+  ]
+}
