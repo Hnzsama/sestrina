@@ -1,5 +1,6 @@
 function scr_player_input() {
-    if (variable_global_exists("dialogue_active") && global.dialogue_active) {
+    if ((variable_global_exists("dialogue_active") && global.dialogue_active) ||
+        (variable_global_exists("main_menu_open") && global.main_menu_open)) {
         keyLeft   = false;
         keyRight  = false;
         keyDown   = false;

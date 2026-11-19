@@ -87,7 +87,7 @@ if (variable_global_exists("leave_confirm_active") && global.leave_confirm_activ
 // =========================================================================
 // B. BUKA / TUTUP PETA DISTRIK ISOMETRIK [M] (Reference: map.png & choosing are.png)
 // =========================================================================
-if (!global.dialogue_active && global.shop_menu_open == "" && !global.stat_menu_open) {
+if (!global.dialogue_active && global.shop_menu_open == "" && !global.stat_menu_open && (!variable_global_exists("main_menu_open") || !global.main_menu_open)) {
     // Tombol Town-Guide di pojok kanan bawah GUI
     var _tg_x = _gui_w - 140;
     var _tg_y = _gui_h - 75;
@@ -345,7 +345,7 @@ if (global.stat_menu_open) {
             }
         }
         
-        if (keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_tab) || _hud_badge_clicked) {
+        if ((keyboard_check_pressed(ord("P")) || _hud_badge_clicked) && (!variable_global_exists("main_menu_open") || !global.main_menu_open)) {
             global.stat_menu_open = true;
             exit;
         }

@@ -38,6 +38,7 @@ if (global.player_hp <= 0) {
 
 // Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save/map/konfirmasi
 if ((variable_global_exists("dialogue_active") && global.dialogue_active) || 
+    (variable_global_exists("main_menu_open") && global.main_menu_open) ||
     (variable_global_exists("stat_menu_open") && global.stat_menu_open) || 
     (variable_global_exists("save_menu_open") && global.save_menu_open) || 
     (variable_global_exists("map_menu_open") && global.map_menu_open) || 

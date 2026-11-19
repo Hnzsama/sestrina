@@ -84,9 +84,15 @@ if (!variable_global_exists("game_initialized")) {
     global.goran_max_hp = 300;
     
     // State Menu UI & Dialog
+    global.main_menu_open = false;
     global.stat_menu_open = false;
     global.save_menu_open = false;
     global.shop_menu_open = "";
+    
+    // Auto-spawn JRPG Menu Manager jika belum ada
+    if (!instance_exists(oMenuManager)) {
+        instance_create_depth(0, 0, -10500, oMenuManager);
+    }
     
     // Multi-Ending & Demon Power (Prioritas 4 - Red Eyes Lore)
     global.demon_unsealed = false;

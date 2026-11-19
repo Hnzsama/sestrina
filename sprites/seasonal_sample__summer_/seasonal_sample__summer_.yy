@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"tile set",
-    "path":"folders/tile set.yy",
+    "name":"tilesets",
+    "path":"folders/tile set/tilesets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
