@@ -6,3 +6,4 @@ spell_damage = round(scr_get_magic_power() * 0.85);
 hit_list = ds_list_create();
 depth = -120;
 duration = 18;
+scr_play_sfx(snd_ice_barrage, 0.08, 0.9, 13);

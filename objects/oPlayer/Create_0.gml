@@ -100,6 +100,9 @@ counter_boost_timer = 0;
 hitstop_timer = 0;
 perfect_sparks = [];
 
+// Sistem Audio SFX
+footstep_timer = 0;
+
 // Sistem 3-Hit Combo Attack
 combo_step = 0;
 combo_timer = 0;

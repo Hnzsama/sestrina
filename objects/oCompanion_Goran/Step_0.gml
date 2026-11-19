@@ -48,6 +48,7 @@ if (state == "cleave") {
     // Hit frame (frame 2 sampai 4)
     if (image_index >= 2.0 && image_index <= 4.0 && !attack_has_hit) {
         attack_has_hit = true;
+        scr_play_sfx(snd_sword_attack_3, 0.08, 1.0, 12);
         var _cleave_x = x + (image_xscale > 0 ? 32 : -32);
         var _cleave_y = y;
         
@@ -73,6 +74,7 @@ else if (state == "earthshatter") {
     // Hentakan Gempa Menghantam Tanah (frame 3 sampai 5)
     if (image_index >= 3.0 && image_index <= 5.0 && !attack_has_hit) {
         attack_has_hit = true;
+        scr_play_sfx(snd_boss_stomp, 0.08, 1.0, 14);
         with (oEnemyParent) {
             if (hp > 0 && point_distance(x, y, other.x, other.y) <= 85) {
                 var _kdir = point_direction(other.x, other.y, x, y);
@@ -96,6 +98,7 @@ else if (state == "whirlwind") {
     var _cur_f = floor(image_index);
     if ((_cur_f == 1 || _cur_f == 3 || _cur_f == 5) && attack_frame_hit != _cur_f) {
         attack_frame_hit = _cur_f;
+        scr_play_sfx(snd_sword_attack_2, 0.08, 0.85, 11);
         with (oEnemyParent) {
             if (hp > 0 && point_distance(x, y, other.x, other.y) <= 72) {
                 var _kdir = point_direction(other.x, other.y, x, y);
@@ -117,6 +120,7 @@ else if (state == "warcry") {
     
     if (image_index >= 2.0 && !attack_has_hit) {
         attack_has_hit = true;
+        scr_play_sfx(snd_drink_potion, 0.06, 1.0, 13);
         // Buff Pemain & Goran
         if (instance_exists(oRoomTransition)) {
             oRoomTransition.banner_title = "GORAN WARCRY!";

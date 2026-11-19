@@ -13,6 +13,7 @@ if (transition_state == "fade_out") {
         
         transition_state = "fade_in";
         banner_timer = 160;
+        scr_play_sfx(snd_door_close, 0.05, 0.8, 10);
     }
 } else if (transition_state == "fade_in") {
     fade_alpha -= 0.06;
@@ -41,9 +42,11 @@ if (variable_global_exists("leave_confirm_active") && global.leave_confirm_activ
     // Navigasi Pilihan (Up/Down atau W/S)
     if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
         global.leave_confirm_selection = 0; // Leave
+        scr_play_ui("move");
     }
     if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
         global.leave_confirm_selection = 1; // Don't leave
+        scr_play_ui("move");
     }
     
     // Deteksi Hover Mouse pada Dua Tombol Opsi di Tengah Layar
@@ -65,10 +68,12 @@ if (variable_global_exists("leave_confirm_active") && global.leave_confirm_activ
     
     if (_cancel_pressed) {
         global.leave_confirm_active = false;
+        scr_play_ui("cancel");
         exit;
     }
     
     if (_confirm_pressed) {
+        scr_play_ui("confirm");
         if (global.leave_confirm_selection == 0) {
             // Pemain Memilih: "Leave"
             global.leave_confirm_active = false;
@@ -97,6 +102,7 @@ if (!global.dialogue_active && global.shop_menu_open == "" && !global.stat_menu_
     
     if (keyboard_check_pressed(ord("M")) || _tg_clicked) {
         global.map_menu_open = !global.map_menu_open;
+        scr_play_ui(global.map_menu_open ? "confirm" : "cancel");
     }
 }
 
@@ -104,6 +110,7 @@ if (!global.dialogue_active && global.shop_menu_open == "" && !global.stat_menu_
 if (variable_global_exists("map_menu_open") && global.map_menu_open) {
     if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.map_menu_open = false;
+        scr_play_ui("cancel");
         exit;
     }
     
@@ -112,9 +119,11 @@ if (variable_global_exists("map_menu_open") && global.map_menu_open) {
     // Navigasi Node dengan Keyboard
     if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
         map_selected_node = (map_selected_node - 1 + _node_count) mod _node_count;
+        scr_play_ui("move");
     }
     if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
         map_selected_node = (map_selected_node + 1) mod _node_count;
+        scr_play_ui("move");
     }
     
     // Pilih langsung dengan angka 1-6
@@ -148,6 +157,7 @@ if (variable_global_exists("map_menu_open") && global.map_menu_open) {
     
     if (_click_dont) {
         global.map_menu_open = false;
+        scr_play_ui("cancel");
         exit;
     }
     
@@ -157,8 +167,10 @@ if (variable_global_exists("map_menu_open") && global.map_menu_open) {
             banner_title = "AREA TERKUNCI!";
             banner_subtitle = "Selesaikan misi persiapan cerita sebelum menuju " + _cur_node.name;
             banner_timer = 150;
+            scr_play_ui("cancel");
         } else {
             global.map_menu_open = false;
+            scr_play_ui("confirm");
             start_transition(_cur_node.room_id, _cur_node.target_x, _cur_node.target_y, _cur_node.name, _cur_node.subname);
         }
         exit;
@@ -356,6 +368,7 @@ if (global.stat_menu_open) {
 if (global.shop_menu_open == "goran") {
     if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.shop_menu_open = "";
+        scr_play_ui("cancel");
     }
     
     // Tekan SPACE untuk Tempa Senjata
@@ -398,6 +411,8 @@ if (global.shop_menu_open == "goran") {
             banner_title = "SENJATA DITEMPA: " + global.weapon_name;
             banner_subtitle = "Kekuatan serangan dan jangkauan tebasan bertambah drastis!";
             banner_timer = 160;
+            scr_play_sfx(snd_sword_parry, 0.05, 1.1, 14);
+            scr_play_sfx(snd_mining_1, 0.08, 1.0, 12);
         }
     }
 }
@@ -406,6 +421,7 @@ if (global.shop_menu_open == "goran") {
 if (global.shop_menu_open == "elysia") {
     if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.shop_menu_open = "";
+        scr_play_ui("cancel");
     }
     
     // Tekan 1: Beli Ramuan (25 Gold)
@@ -416,6 +432,7 @@ if (global.shop_menu_open == "elysia") {
             banner_title = "MEMBELI RAMUAN DARAH";
             banner_subtitle = "Ramuan bertambah! Tekan [C] saat bertarung.";
             banner_timer = 120;
+            scr_play_sfx(snd_drink_potion, 0.05, 0.9, 11);
         }
     }
     
@@ -430,6 +447,7 @@ if (global.shop_menu_open == "elysia") {
             banner_title = "SIHIR BARU: FROST NOVA";
             banner_subtitle = "Ganti sihir dengan [Q], ledakkan es radial dengan [X]!";
             banner_timer = 180;
+            scr_play_sfx(snd_frost_nova, 0.06, 1.0, 13);
         }
     }
     
@@ -444,6 +462,7 @@ if (global.shop_menu_open == "elysia") {
             banner_title = "ELIXIR MANA DIMINUM!";
             banner_subtitle = "+3 INT permanen! Kapasitas Mana dan Magic Power meningkat.";
             banner_timer = 160;
+            scr_play_sfx(snd_drink_potion, 0.05, 1.0, 12);
         }
     }
 }
@@ -510,10 +529,12 @@ if (global.shop_menu_open == "material_trader") {
     
     if (_close) {
         global.shop_menu_open = "";
+        scr_play_ui("cancel");
     }
     
     // Eksekusi Pembelian
     if (_buy_item != -1) {
+        scr_play_ui("confirm");
         switch (_buy_item) {
             case 0: // Scrap Iron: 15 Gold
                 if (global.gold >= 15) {
@@ -589,6 +610,7 @@ if (global.shop_menu_open == "material_trader") {
     
     // Eksekusi Penjualan
     if (_sell_item != -1) {
+        scr_play_ui("confirm");
         switch (_sell_item) {
             case 0: // Scrap Iron: Jual 8 G
                 if (global.mat_scrap_iron > 0) {

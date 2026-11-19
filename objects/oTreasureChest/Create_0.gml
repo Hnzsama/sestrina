@@ -26,6 +26,7 @@ interact_action = function() {
     if (is_open) exit;
     is_open = true;
     image_index = 1; // Wood chest open
+    scr_play_sfx(snd_chest_open, 0.05, 1.0, 12);
     
     // Catat ke daftar peti terbuka
     if (variable_global_exists("opened_chests") && is_array(global.opened_chests)) {

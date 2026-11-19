@@ -21,6 +21,7 @@ if (instance_exists(oPlayer)) {
         y += lengthdir_y(_spd, _dir);
         
         if (_dist < 16) {
+            scr_play_sfx(snd_ui_confirm, 0.15, 0.75, 9);
             // Tambahkan ke inventory pemain
             switch (item_type) {
                 case "gold":

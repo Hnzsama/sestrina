@@ -6,6 +6,7 @@ if (!is_broken && instance_exists(oPlayerSlash)) {
         is_broken = true;
         image_index = 3; // Pecahan guci di tanah
         solid = false;
+        scr_play_sfx(snd_boss_rock, 0.12, 0.85, 10);
         
         // Pulihkan stamina pemain sebagai reward eksplorasi
         global.player_stamina = min(global.player_max_stamina, global.player_stamina + 20);

@@ -24,6 +24,9 @@ if (_key_toggle_menu) {
                 focus_column = 0;
                 detail_sub_index = 0;
                 refresh_save_slots();
+                scr_play_ui("confirm");
+            } else {
+                scr_play_ui("cancel");
             }
         }
     }
@@ -57,20 +60,24 @@ var _num_cmds = array_length(commands);
 if (focus_column == 0) {
     if (_key_up) {
         selected_cmd = (selected_cmd - 1 + _num_cmds) % _num_cmds;
+        scr_play_ui("move");
     }
     if (_key_down) {
         selected_cmd = (selected_cmd + 1) % _num_cmds;
+        scr_play_ui("move");
     }
     
     // Pindah fokus ke panel detail di kanan jika tombol kanan ditekan
     if (_key_right) {
         focus_column = 1;
         detail_sub_index = 0;
+        scr_play_ui("confirm");
     }
     
     // Aksi Tombol Konfirmasi [Z]
     if (_key_confirm) {
         var _cmd_id = commands[selected_cmd].id;
+        scr_play_ui("confirm");
         
         if (_cmd_id == "close") {
             global.main_menu_open = false;
@@ -92,6 +99,7 @@ if (focus_column == 0) {
     // Tombol Cancel [X] -> Tutup Menu
     if (_key_cancel) {
         global.main_menu_open = false;
+        scr_play_ui("cancel");
     }
 }
 // 5. Kolom Kanan: Navigasi Panel Detail
@@ -99,14 +107,15 @@ else if (focus_column == 1) {
     // Tombol Kiri atau Cancel [X] -> Kembali ke Kolom Perintah
     if (_key_left || _key_cancel) {
         focus_column = 0;
+        scr_play_ui("cancel");
     }
     
     var _active_id = commands[selected_cmd].id;
     
     // Sub-Navigasi 5.1: STATUS (Alokasi Atribut Poin)
     if (_active_id == "status") {
-        if (_key_up)   detail_sub_index = (detail_sub_index - 1 + 4) % 4;
-        if (_key_down) detail_sub_index = (detail_sub_index + 1) % 4;
+        if (_key_up)   { detail_sub_index = (detail_sub_index - 1 + 4) % 4; scr_play_ui("move"); }
+        if (_key_down) { detail_sub_index = (detail_sub_index + 1) % 4;     scr_play_ui("move"); }
         
         // Alokasi poin dengan [Z] pada baris atribut yang dipilih
         if (_key_confirm) {
@@ -116,32 +125,38 @@ else if (focus_column == 1) {
             
             if (global.stat_points > 0) {
                 scr_allocate_stat(_chosen);
+                scr_play_ui("confirm");
                 show_toast("+1 " + _stat_names[detail_sub_index] + "! Poin sisa: " + string(global.stat_points));
             } else {
+                scr_play_ui("cancel");
                 show_toast("Poin atribut habis!");
             }
         }
         
         // Shortcut angka 1, 2, 3, 4 untuk alokasi instan
-        if (keyboard_check_pressed(ord("1"))) { scr_allocate_stat("vit"); show_toast("+1 Vitalitas!"); }
-        if (keyboard_check_pressed(ord("2"))) { scr_allocate_stat("str"); show_toast("+1 Kekuatan!"); }
-        if (keyboard_check_pressed(ord("3"))) { scr_allocate_stat("int"); show_toast("+1 Kecerdasan!"); }
-        if (keyboard_check_pressed(ord("4"))) { scr_allocate_stat("agi"); show_toast("+1 Kelincahan!"); }
+        if (keyboard_check_pressed(ord("1"))) { scr_allocate_stat("vit"); scr_play_ui("confirm"); show_toast("+1 Vitalitas!"); }
+        if (keyboard_check_pressed(ord("2"))) { scr_allocate_stat("str"); scr_play_ui("confirm"); show_toast("+1 Kekuatan!"); }
+        if (keyboard_check_pressed(ord("3"))) { scr_allocate_stat("int"); scr_play_ui("confirm"); show_toast("+1 Kecerdasan!"); }
+        if (keyboard_check_pressed(ord("4"))) { scr_allocate_stat("agi"); scr_play_ui("confirm"); show_toast("+1 Kelincahan!"); }
     }
     
     // Sub-Navigasi 5.2: SIHIR (Ganti Mantra Aktif)
     else if (_active_id == "magic") {
         if (_key_up || _key_down) {
             detail_sub_index = (detail_sub_index == 0) ? 1 : 0;
+            scr_play_ui("move");
         }
         if (_key_confirm) {
             if (detail_sub_index == 0 && global.spell_unlocked_fireball) {
                 global.spell_selected = 1;
+                scr_play_ui("confirm");
                 show_toast("Mantra aktif: Fireball (20 MP)");
             } else if (detail_sub_index == 1 && global.spell_unlocked_frost) {
                 global.spell_selected = 2;
+                scr_play_ui("confirm");
                 show_toast("Mantra aktif: Frost Nova (35 MP)");
             } else {
+                scr_play_ui("cancel");
                 show_toast("Mantra ini belum dipelajari!");
             }
         }
@@ -150,8 +165,8 @@ else if (focus_column == 1) {
     // Sub-Navigasi 5.3: SIMPAN & MUAT (Save / Load Multi-Slot)
     else if (_active_id == "save") {
         var _num_slots = array_length(save_slots);
-        if (_key_up)   detail_sub_index = (detail_sub_index - 1 + _num_slots) % _num_slots;
-        if (_key_down) detail_sub_index = (detail_sub_index + 1) % _num_slots;
+        if (_key_up)   { detail_sub_index = (detail_sub_index - 1 + _num_slots) % _num_slots; scr_play_ui("move"); }
+        if (_key_down) { detail_sub_index = (detail_sub_index + 1) % _num_slots;             scr_play_ui("move"); }
         
         var _cur_slot = save_slots[detail_sub_index].id;
         
@@ -159,6 +174,7 @@ else if (focus_column == 1) {
         if (_key_confirm) {
             scr_save_game(_cur_slot);
             refresh_save_slots();
+            scr_play_ui("confirm");
             show_toast("Game Berhasil Disimpan ke " + string(save_slots[detail_sub_index].title) + "!");
         }
         

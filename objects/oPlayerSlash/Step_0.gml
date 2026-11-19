@@ -54,6 +54,7 @@ if (instance_exists(oEnemyParent)) {
             // Hitung arah dorongan
             var _kdir = (other.combo_index == 3) ? point_direction(other.x, other.y, x, y) : other.slash_dir;
             take_damage(other.slash_damage, _kdir, true);
+            scr_play_sword_hit(other.combo_index == 3 || other.is_counter);
             
             // Screen shake & hit sparks
             if (instance_exists(oRoomTransition)) {

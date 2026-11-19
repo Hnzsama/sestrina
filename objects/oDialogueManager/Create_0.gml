@@ -41,6 +41,7 @@ start_dialogue = function(_dialogue) {
     emote_timer = 0;
     global.dialogue_active = true;
     global.dialogue_cooldown = 0;
+    scr_play_ui("confirm");
 };
 
 /// @function next_line()
@@ -50,6 +51,7 @@ next_line = function() {
     current_line_index++;
     if (current_line_index >= array_length(current_dialogue.lines)) {
         // Selesai seluruh baris dialog
+        scr_play_ui("cancel");
         var _callback = current_dialogue.on_finish;
         current_dialogue = noone;
         current_line_index = 0;
@@ -72,5 +74,6 @@ next_line = function() {
         auto_timer = 0;
         emote_scale = 0.0;
         emote_timer = 0;
+        scr_play_ui("move");
     }
 };

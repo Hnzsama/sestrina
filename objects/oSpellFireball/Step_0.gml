@@ -55,6 +55,7 @@ if (!is_exploded) {
     if (_hit_enemy != noone || _hit_wall || _reached_max) {
         is_exploded = true;
         explode_timer = explode_max_timer;
+        scr_play_sfx(snd_fire_impact, 0.08, 1.0, 14);
         
         // Jika mengenai musuh, kunci koordinat ledakan tepat pada posisi musuh
         if (_hit_enemy != noone) {

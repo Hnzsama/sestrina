@@ -111,4 +111,5 @@ start_transition = function(_room, _x, _y, _title, _subtitle = "") {
     banner_title = _title;
     banner_subtitle = _subtitle;
     transition_state = "fade_out";
+    scr_play_sfx(snd_door_open, 0.05, 0.85, 10);
 };

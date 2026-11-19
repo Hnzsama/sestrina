@@ -52,6 +52,8 @@ if (instance_exists(oPlayer)) {
         if (_dist_switch < 42 && (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) && !global.dialogue_active) {
             gate_opened = true;
             global.catacombs_gate_opened = true;
+            scr_play_sfx(snd_lever_switch, 0.04, 1.0, 13);
+            scr_play_sfx(snd_gate_open, 0.06, 0.95, 12);
             if (instance_exists(oRoomTransition)) {
                 oRoomTransition.banner_title = "GERBANG JERUJI TERBUKA!";
                 oRoomTransition.banner_subtitle = "Tuas kuno berderit... Jeruji besi menuju sarang Panglima turun!";

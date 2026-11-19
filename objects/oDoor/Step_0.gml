@@ -33,6 +33,7 @@ if (_touching) {
             oRoomTransition.banner_title = "PINTU TERKUNCI";
             oRoomTransition.banner_subtitle = locked_message;
             oRoomTransition.banner_timer = 100;
+            scr_play_ui("cancel");
         }
         lock_prompt_timer = 40;
         // Blokir dan dorong mundur pemain agar tidak melewati pintu terkunci

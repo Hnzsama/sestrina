@@ -20,6 +20,7 @@ interact_action = function() {
     
     hits_left--;
     shake_timer = 8;
+    scr_play_sfx(choose(snd_mining_1, snd_mining_2), 0.1, 0.95, 11);
     
     // Drop item sesuai jenis nodus
     var _drop = instance_create_depth(x + irandom_range(-12, 12), y + irandom_range(-6, 6), depth - 10, oItemDrop);

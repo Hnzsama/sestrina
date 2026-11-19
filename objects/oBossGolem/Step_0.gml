@@ -64,6 +64,7 @@ if (boss_stage == 1) {
                     rot: 0
                 });
                 if (instance_exists(oRoomTransition)) oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 5);
+                scr_play_sfx(snd_boss_rock, 0.08, 1.0, 13);
             }
         }
         
@@ -74,6 +75,7 @@ if (boss_stage == 1) {
             is_stomping = true;
             stomp_shockwave_r = 10;
             if (instance_exists(oRoomTransition)) oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 8);
+            scr_play_sfx(snd_boss_stomp, 0.08, 1.1, 15);
             
             // Panggil 2 runtuhan batu dari langit-langit
             for (var _r = 0; _r < 2; _r++) {

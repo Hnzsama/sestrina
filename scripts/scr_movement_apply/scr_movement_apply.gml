@@ -217,8 +217,10 @@ function scr_player_trigger_perfect_dodge(_hazard_x, _hazard_y) {
         counter_boost_active = true;
         counter_boost_timer = 120; // 2 detik durasi buff serangan balasan
         
-        // 4. Hitstop Effect: Freeze mikro 4 frame dramatis
+        // 4. Hitstop Effect: Freeze mikro 4 frame dramatis & Audio SFX
         hitstop_timer = 4;
+        scr_play_sfx(snd_perfect_dodge, 0.04, 1.15, 15);
+        scr_play_sfx(snd_sword_parry, 0.06, 0.9, 14);
         
         // 5. Screen Shake halus yang tegas
         if (instance_exists(oRoomTransition)) {

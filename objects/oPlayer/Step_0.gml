@@ -70,6 +70,21 @@ if ((variable_global_exists("dialogue_active") && global.dialogue_active) ||
 
 scr_player_input();   // Input pengguna
 
+// Pemutaran Efek Suara Langkah Kaki Organik (Footsteps)
+if (inputMagnitude && !is_rolling && is_attacking <= 0 && is_drinking <= 0 && is_casting <= 0) {
+    footstep_timer--;
+    if (footstep_timer <= 0) {
+        footstep_timer = 20;
+        var _rname = room_get_name(room);
+        var _surf = "stone";
+        if (_rname == "Room1") _surf = "wood";
+        else if (_rname == "rm_outskirts") _surf = "dirt";
+        scr_play_footstep(_surf);
+    }
+} else {
+    footstep_timer = min(footstep_timer, 6);
+}
+
 // 1. Regenerasi Stamina & Mana Otomatis
 if (!is_rolling && attack_cooldown <= 0 && is_casting <= 0 && is_drinking <= 0 && global.player_stamina < global.player_max_stamina) {
     global.player_stamina = min(global.player_max_stamina, global.player_stamina + 0.65 + (global.stat_agi * 0.04));
@@ -244,8 +259,10 @@ if (is_rolling) {
         if (cast_type == 1) {
             var _fb = instance_create_depth(x + lengthdir_x(16, _cast_dir), y + lengthdir_y(16, _cast_dir), depth - 10, oSpellFireball);
             _fb.fire_dir = _cast_dir;
+            scr_play_sfx(snd_fireball, 0.08, 0.95, 12);
         } else if (cast_type == 2) {
             instance_create_depth(x, y, depth - 10, oSpellFrostNova);
+            scr_play_sfx(snd_frost_nova, 0.06, 1.0, 13);
         }
     }
 } else {
@@ -256,6 +273,7 @@ if (is_rolling) {
         roll_timer = 18;
         invincible_timer = 24; // Penuh kebal hitbox selama guling + 6 frame buffer
         roll_dir = inputMagnitude ? inputDirection : ((facingDir == "up") ? 90 : ((facingDir == "side") ? ((image_xscale >= 0) ? 180 : 0) : 270));
+        scr_play_sfx(snd_dodge_roll, 0.08, 0.9, 12);
         
         // Cek apakah pemain melakukan dodge saat berada dalam jarak bahaya musuh (Close-Call Evade)
         var _n_enemy = instance_nearest(x, y, oEnemyParent);
@@ -286,6 +304,7 @@ if (is_rolling) {
         sprite_index = (facingDir == "up") ? spr_drink.up : ((facingDir == "down") ? spr_drink.down : spr_drink.side);
         image_index = 0;
         image_speed = 0;
+        scr_play_sfx(snd_drink_potion, 0.05, 0.95, 11);
     }
     
     // Cek apakah pemain sedang dekat dengan objek interaksi (NPC, Peti, dsb.)
@@ -382,6 +401,11 @@ if (is_rolling) {
         _inst.combo_index = combo_step;
         _inst.slash_damage = _dmg;
         _inst.is_counter = _is_counter;
+        
+        scr_play_sword_slash(combo_step);
+        if (_is_counter) {
+            scr_play_sfx(snd_sword_parry, 0.08, 1.0, 14);
+        }
     }
     
     // Perbarui Animasi Serangan Kombo yang Sedang Berjalan
