@@ -659,6 +659,59 @@ else if (_cur_cmd_id == "save") {
 }
 
 // -------------------------------------------------------------------------
+// TAB 5.6B: PENGATURAN GAME (Settings)
+// -------------------------------------------------------------------------
+else if (_cur_cmd_id == "settings") {
+    var _sbox_h = 320;
+    draw_set_color(make_color_rgb(18, 25, 48));
+    draw_roundrect_ext(_det_x + 14, _body_y, _det_x + _det_w - 14, _body_y + _sbox_h, 8, 8, false);
+    draw_set_color(make_color_rgb(45, 65, 110));
+    draw_roundrect_ext(_det_x + 14, _body_y, _det_x + _det_w - 14, _body_y + _sbox_h, 8, 8, true);
+    
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    draw_set_color(make_color_rgb(255, 215, 80));
+    draw_text_transformed(_det_x + 30, _body_y + 24, "⚙ PENGATURAN SUARA & TAMPILAN", 0.95, 0.95, 0);
+
+    var _setting_items = [
+        ["Volume Musik (BGM)", string(round(global.bgm_volume * 100)) + " %"],
+        ["Volume Efek Suara (SFX)", string(round(global.sfx_volume * 100)) + " %"],
+        ["Mode Tampilan", global.is_fullscreen ? "[ Layar Penuh ]" : "[ Jendela (Windowed) ]"]
+    ];
+
+    for (var _si = 0; _si < array_length(_setting_items); _si++) {
+        var _s_y = _body_y + 70 + _si * 50;
+        var _is_s = (focus_column == 1 && detail_sub_index == _si);
+
+        if (_is_s) {
+            draw_set_alpha(0.35);
+            draw_set_color(make_color_rgb(80, 140, 240));
+            draw_roundrect_ext(_det_x + 24, _s_y - 18, _det_x + _det_w - 24, _s_y + 18, 6, 6, false);
+            draw_set_alpha(1.0);
+            draw_set_color(make_color_rgb(255, 215, 90));
+            draw_roundrect_ext(_det_x + 24, _s_y - 18, _det_x + _det_w - 24, _s_y + 18, 6, 6, true);
+        }
+
+        draw_set_alpha(1.0);
+        draw_set_color(_is_s ? make_color_rgb(255, 240, 180) : make_color_rgb(210, 225, 250));
+        draw_text_transformed(_det_x + 36, _s_y, (_is_s ? "▶ " : "  ") + _setting_items[_si][0], 0.85, 0.85, 0);
+
+        draw_set_halign(fa_right);
+        draw_set_color(_is_s ? make_color_rgb(255, 215, 90) : make_color_rgb(160, 205, 245));
+        if (_si < 2) {
+            draw_text_transformed(_det_x + _det_w - 36, _s_y, "◀  " + _setting_items[_si][1] + "  ▶", 0.85, 0.85, 0);
+        } else {
+            draw_text_transformed(_det_x + _det_w - 36, _s_y, _setting_items[_si][1], 0.85, 0.85, 0);
+        }
+        draw_set_halign(fa_left);
+    }
+
+    draw_set_halign(fa_center);
+    draw_set_color(make_color_rgb(160, 185, 220));
+    draw_text_transformed(_det_x + _det_w / 2, _body_y + 250, "[A/D/←/→] Ubah Nilai    •    [W/S/↑/↓] Pilih    •    [Tab/Esc] Kembali", 0.8, 0.8, 0);
+}
+
+// -------------------------------------------------------------------------
 // TAB 5.7: PANDUAN KONTROL & PENGATURAN
 // -------------------------------------------------------------------------
 else if (_cur_cmd_id == "controls") {

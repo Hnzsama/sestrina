@@ -217,25 +217,9 @@ if (_nearest_enemy != noone) {
 }
 
 // =========================================================================
-// 3. INTERAKSI DENGAN PEMAIN SAAT TIDAK SEDANG BERTARUNG
+// 3. INTERAKSI DENGAN PEMAIN (DINONAKTIFKAN SAAT GORAN MASUK PARTY)
+// Goran bertarung murni sebagai companion tanpa memblokir tombol serang [Z] pemain
 // =========================================================================
-is_player_near = (point_distance(x, y, oPlayer.x, oPlayer.y) <= interact_range && _nearest_enemy == noone && !global.dialogue_active && global.shop_menu_open == "");
+is_player_near = false;
 
-if (is_player_near && (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter))) {
-    var _d = dialogue_create();
-    _d.add("Goran", "Hahah! Tenang saja anak muda, palu dan kapak tempurku siap membelah monster apa pun di depan kita!", "goran", "protagonist", "left", "exclamation");
-    
-    if (global.player_potions > 0 && hp < max_hp) {
-        _d.add("Protagonist", "Paman Goran, minumlah ramuan herbal ini untuk memulihkan tenagamu.", "goran", "protagonist", "right");
-        _d.add("Goran", "Terima kasih banyak! Terasa segar sekali! Tenagaku pulih penuh!", "goran", "protagonist", "left");
-        _d.start(function() {
-            global.player_potions--;
-            hp = min(max_hp, hp + 120);
-        });
-    } else {
-        _d.add("Protagonist", "Kita harus waspada paman. Pertarungan di depan akan sangat sengit.", "goran", "protagonist", "right");
-        _d.add("Goran", "Jangan khawatir! Selama kita bertarung bersama, tak ada yang tak bisa kita hancurkan!", "goran", "protagonist", "left", "exclamation");
-        _d.start();
-    }
-}
 

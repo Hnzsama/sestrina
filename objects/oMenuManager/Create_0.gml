@@ -26,6 +26,7 @@ commands = [
     { id: "quest",    name: "Jurnal Quest",     icon: 3, desc: "Misi utama mencari The Lost Remedy & kondisi adik" },
     { id: "map",      name: "Peta Distrik",     icon: 4, desc: "Panduan wilayah Altdorf dan kuil purba" },
     { id: "save",     name: "Simpan & Muat",    icon: 7, desc: "Kelola file simpanan petualangan multi-slot" },
+    { id: "settings", name: "Pengaturan Game",  icon: 6, desc: "Volume musik BGM, efek suara SFX, dan tampilan layar" },
     { id: "controls", name: "Panduan Kontrol",  icon: 6, desc: "Daftar tombol aksi, serangan, dan sihir" },
     { id: "close",    name: "Kembali Main",     icon: 8, desc: "Tutup menu dan lanjutkan petualangan" }
 ];

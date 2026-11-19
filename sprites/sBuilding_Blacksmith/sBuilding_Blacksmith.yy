@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sBuilding_Blacksmith",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":237,
   "bbox_left":0,
-  "bbox_right":127,
+  "bbox_right":228,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":238,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1528ba48-a903-45e0-8b5a-8d7c91ea463d","blendMode":0,"displayName":"default","isLocked":false,"name":"1528ba48-a903-45e0-8b5a-8d7c91ea463d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":229,
 }

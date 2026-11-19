@@ -315,12 +315,7 @@ if (is_rolling) {
             _can_interact_target = true;
         }
     }
-    if (!_can_interact_target && instance_exists(oCompanion_Goran)) {
-        var _n_gor = instance_nearest(x, y, oCompanion_Goran);
-        if (_n_gor != noone && point_distance(x, y, _n_gor.x, _n_gor.y) <= _n_gor.interact_range && _n_gor.is_player_near) {
-            _can_interact_target = true;
-        }
-    }
+    // Catatan: oCompanion_Goran sengaja TIDAK dicek di sini agar pemain bisa bebas menyerang [Z] tanpa terganggu companion
     if (!_can_interact_target && instance_exists(oDecorCatacombs)) {
         var _n_dec = instance_nearest(x, y, oDecorCatacombs);
         if (_n_dec != noone && !_n_dec.gate_opened && point_distance(x, y, _n_dec.switch_x, _n_dec.switch_y) < 42) {

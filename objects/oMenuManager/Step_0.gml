@@ -198,7 +198,43 @@ else if (focus_column == 1) {
         }
     }
     
-    // Sub-Navigasi 5.4: PETA (Buka Peta Penuh dengan [Z])
+    // Sub-Navigasi 5.4: PENGATURAN GAME
+    else if (_active_id == "settings") {
+        var _num_rows = 3;
+        if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+            detail_sub_index = (detail_sub_index - 1 + _num_rows) % _num_rows;
+            scr_audio_play("ui", "move");
+        }
+        if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+            detail_sub_index = (detail_sub_index + 1) % _num_rows;
+            scr_audio_play("ui", "move");
+        }
+        if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"))) {
+            if (detail_sub_index == 0) {
+                global.bgm_volume = clamp(global.bgm_volume - 0.1, 0.0, 1.0);
+                scr_audio_play("ui", "move");
+            } else if (detail_sub_index == 1) {
+                global.sfx_volume = clamp(global.sfx_volume - 0.1, 0.0, 1.0);
+                scr_audio_play("ui", "confirm");
+            }
+        }
+        if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))) {
+            if (detail_sub_index == 0) {
+                global.bgm_volume = clamp(global.bgm_volume + 0.1, 0.0, 1.0);
+                scr_audio_play("ui", "move");
+            } else if (detail_sub_index == 1) {
+                global.sfx_volume = clamp(global.sfx_volume + 0.1, 0.0, 1.0);
+                scr_audio_play("ui", "confirm");
+            }
+        }
+        if (detail_sub_index == 2 && (_key_confirm || keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))) {
+            global.is_fullscreen = !global.is_fullscreen;
+            window_set_fullscreen(global.is_fullscreen);
+            scr_audio_play("ui", "confirm");
+        }
+    }
+    
+    // Sub-Navigasi 5.5: PETA (Buka Peta Penuh dengan [Z])
     else if (_active_id == "map") {
         if (_key_confirm) {
             global.main_menu_open = false;

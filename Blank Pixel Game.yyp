@@ -1,1542 +1,278 @@
 {
-  "$GMProject": "v1",
-  "%Name": "Blank Pixel Game",
-  "AudioGroups": [
-    {
-      "$GMAudioGroup": "v1",
-      "%Name": "audiogroup_default",
-      "exportDir": "",
-      "name": "audiogroup_default",
-      "resourceType": "GMAudioGroup",
-      "resourceVersion": "2.0",
-      "targets": -1
-    }
+  "$GMProject":"v1",
+  "%Name":"Blank Pixel Game",
+  "AudioGroups":[
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
-  "configs": {
-    "children": [],
-    "name": "Default"
+  "configs":{
+    "children":[],
+    "name":"Default",
   },
-  "defaultScriptType": 1,
-  "Folders": [
-    {
-      "$GMFolder": "",
-      "%Name": "font",
-      "folderPath": "folders/font.yy",
-      "name": "font",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "notes",
-      "folderPath": "folders/notes.yy",
-      "name": "notes",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "object",
-      "folderPath": "folders/object.yy",
-      "name": "object",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "patchs",
-      "folderPath": "folders/patchs.yy",
-      "name": "patchs",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "rooms",
-      "folderPath": "folders/rooms.yy",
-      "name": "rooms",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "script",
-      "folderPath": "folders/script.yy",
-      "name": "script",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "sounds",
-      "folderPath": "folders/sounds.yy",
-      "name": "sounds",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "sprite",
-      "folderPath": "folders/sprite.yy",
-      "name": "sprite",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "building",
-      "folderPath": "folders/sprite/building.yy",
-      "name": "building",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Sprites",
-      "folderPath": "folders/Sprites.yy",
-      "name": "Sprites",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "tile set",
-      "folderPath": "folders/tile set.yy",
-      "name": "tile set",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "building",
-      "folderPath": "folders/tile set/building.yy",
-      "name": "building",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "tilesets",
-      "folderPath": "folders/tile set/tilesets.yy",
-      "name": "tilesets",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "timelines",
-      "folderPath": "folders/timelines.yy",
-      "name": "timelines",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    }
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"font","folderPath":"folders/font.yy","name":"font","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"notes","folderPath":"folders/notes.yy","name":"notes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"object","folderPath":"folders/object.yy","name":"object","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"patchs","folderPath":"folders/patchs.yy","name":"patchs","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"script","folderPath":"folders/script.yy","name":"script","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sounds","folderPath":"folders/sounds.yy","name":"sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"sprite","folderPath":"folders/sprite.yy","name":"sprite","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"building","folderPath":"folders/sprite/building.yy","name":"building","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"tile set","folderPath":"folders/tile set.yy","name":"tile set","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"building","folderPath":"folders/tile set/building.yy","name":"building","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"tilesets","folderPath":"folders/tile set/tilesets.yy","name":"tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"timelines","folderPath":"folders/timelines.yy","name":"timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences": [],
-  "IncludedFiles": [],
-  "isEcma": false,
-  "LibraryEmitters": [],
-  "MetaData": {
-    "IDEVersion": "2026.1.0.27"
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2026.0.0.16",
   },
-  "name": "Blank Pixel Game",
-  "resources": [
-    {
-      "id": {
-        "name": "oBathhouseDoor",
-        "path": "objects/oBathhouseDoor/oBathhouseDoor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBuilding_AdventureGuild",
-        "path": "objects/oBuilding_AdventureGuild/oBuilding_AdventureGuild.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBuilding_Blacksmith",
-        "path": "objects/oBuilding_Blacksmith/oBuilding_Blacksmith.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBuilding_PotionShop",
-        "path": "objects/oBuilding_PotionShop/oBuilding_PotionShop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBuilding_RegularHouse",
-        "path": "objects/oBuilding_RegularHouse/oBuilding_RegularHouse.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBuilding_Tavern",
-        "path": "objects/oBuilding_Tavern/oBuilding_Tavern.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBedroomDecor",
-        "path": "objects/oBedroomDecor/oBedroomDecor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBossGolem",
-        "path": "objects/oBossGolem/oBossGolem.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oBreakablePot",
-        "path": "objects/oBreakablePot/oBreakablePot.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oCharacterParent",
-        "path": "objects/oCharacterParent/oCharacterParent.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oCompanion_Goran",
-        "path": "objects/oCompanion_Goran/oCompanion_Goran.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorBossChamber",
-        "path": "objects/oDecorBossChamber/oDecorBossChamber.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorCatacombs",
-        "path": "objects/oDecorCatacombs/oDecorCatacombs.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorOutskirts",
-        "path": "objects/oDecorOutskirts/oDecorOutskirts.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorPotionShop",
-        "path": "objects/oDecorPotionShop/oDecorPotionShop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorTown",
-        "path": "objects/oDecorTown/oDecorTown.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDecorWeaponShop",
-        "path": "objects/oDecorWeaponShop/oDecorWeaponShop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDialogueManager",
-        "path": "objects/oDialogueManager/oDialogueManager.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Bedroom_To_Town",
-        "path": "objects/oDoor_Bedroom_To_Town/oDoor_Bedroom_To_Town.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Boss_To_Bedroom",
-        "path": "objects/oDoor_Boss_To_Bedroom/oDoor_Boss_To_Bedroom.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Catacombs_To_Boss",
-        "path": "objects/oDoor_Catacombs_To_Boss/oDoor_Catacombs_To_Boss.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Catacombs_To_Outskirts",
-        "path": "objects/oDoor_Catacombs_To_Outskirts/oDoor_Catacombs_To_Outskirts.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Outskirts_To_Catacombs",
-        "path": "objects/oDoor_Outskirts_To_Catacombs/oDoor_Outskirts_To_Catacombs.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Outskirts_To_Town",
-        "path": "objects/oDoor_Outskirts_To_Town/oDoor_Outskirts_To_Town.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Potion_To_Town",
-        "path": "objects/oDoor_Potion_To_Town/oDoor_Potion_To_Town.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Town_To_Bedroom",
-        "path": "objects/oDoor_Town_To_Bedroom/oDoor_Town_To_Bedroom.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Town_To_Outskirts",
-        "path": "objects/oDoor_Town_To_Outskirts/oDoor_Town_To_Outskirts.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Town_To_Potion",
-        "path": "objects/oDoor_Town_To_Potion/oDoor_Town_To_Potion.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Town_To_Weapon",
-        "path": "objects/oDoor_Town_To_Weapon/oDoor_Town_To_Weapon.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor_Weapon_To_Town",
-        "path": "objects/oDoor_Weapon_To_Town/oDoor_Weapon_To_Town.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oDoor",
-        "path": "objects/oDoor/oDoor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oEnemyGoblin",
-        "path": "objects/oEnemyGoblin/oEnemyGoblin.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oEnemyParent",
-        "path": "objects/oEnemyParent/oEnemyParent.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oEnemySkeleton",
-        "path": "objects/oEnemySkeleton/oEnemySkeleton.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oEnemySkeletonBoss",
-        "path": "objects/oEnemySkeletonBoss/oEnemySkeletonBoss.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oEnemySlime",
-        "path": "objects/oEnemySlime/oEnemySlime.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oInteractableParent",
-        "path": "objects/oInteractableParent/oInteractableParent.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oItemDrop",
-        "path": "objects/oItemDrop/oItemDrop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oMiningNode",
-        "path": "objects/oMiningNode/oMiningNode.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oMenuManager",
-        "path": "objects/oMenuManager/oMenuManager.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_Alden",
-        "path": "objects/oNPC_Alden/oNPC_Alden.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_Elysia",
-        "path": "objects/oNPC_Elysia/oNPC_Elysia.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_Goran",
-        "path": "objects/oNPC_Goran/oNPC_Goran.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_NoticeBoard",
-        "path": "objects/oNPC_NoticeBoard/oNPC_NoticeBoard.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_ParkVisitor",
-        "path": "objects/oNPC_ParkVisitor/oNPC_ParkVisitor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oNPC_Sister_Bed",
-        "path": "objects/oNPC_Sister_Bed/oNPC_Sister_Bed.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oPlayer",
-        "path": "objects/oPlayer/oPlayer.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oPlayerSlash",
-        "path": "objects/oPlayerSlash/oPlayerSlash.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oRoomTransition",
-        "path": "objects/oRoomTransition/oRoomTransition.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oSolidParent",
-        "path": "objects/oSolidParent/oSolidParent.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oSpellFireball",
-        "path": "objects/oSpellFireball/oSpellFireball.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oSpellFrostNova",
-        "path": "objects/oSpellFrostNova/oSpellFrostNova.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "oTreasureChest",
-        "path": "objects/oTreasureChest/oTreasureChest.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_boss_chamber",
-        "path": "rooms/rm_boss_chamber/rm_boss_chamber.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_catacombs",
-        "path": "rooms/rm_catacombs/rm_catacombs.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_outskirts",
-        "path": "rooms/rm_outskirts/rm_outskirts.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_potion_shop",
-        "path": "rooms/rm_potion_shop/rm_potion_shop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_town_square",
-        "path": "rooms/rm_town_square/rm_town_square.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "rm_weapon_shop",
-        "path": "rooms/rm_weapon_shop/rm_weapon_shop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "Room1",
-        "path": "rooms/Room1/Room1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "Room8",
-        "path": "rooms/Room8/Room8.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_animation_update",
-        "path": "scripts/scr_animation_update/scr_animation_update.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_dialogue_system",
-        "path": "scripts/scr_dialogue_system/scr_dialogue_system.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_game_init",
-        "path": "scripts/scr_game_init/scr_game_init.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_movement_apply",
-        "path": "scripts/scr_movement_apply/scr_movement_apply.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_player_input",
-        "path": "scripts/scr_player_input/scr_player_input.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_progression_system",
-        "path": "scripts/scr_progression_system/scr_progression_system.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_audio_manager",
-        "path": "scripts/scr_audio_manager/scr_audio_manager.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_ui_renderer",
-        "path": "scripts/scr_ui_renderer/scr_ui_renderer.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_town_decor",
-        "path": "scripts/scr_town_decor/scr_town_decor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "adveture_guild",
-        "path": "sprites/adveture_guild/adveture_guild.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "blacksmith",
-        "path": "sprites/blacksmith/blacksmith.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "down",
-        "path": "sprites/down/down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "potion_shop",
-        "path": "sprites/potion_shop/potion_shop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "regular_house",
-        "path": "sprites/regular_house/regular_house.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBedroom_Diorama",
-        "path": "sprites/sBedroom_Diorama/sBedroom_Diorama.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBossGolem",
-        "path": "sprites/sBossGolem/sBossGolem.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBreakablePots",
-        "path": "sprites/sBreakablePots/sBreakablePots.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBuilding_Apothecary",
-        "path": "sprites/sBuilding_Apothecary/sBuilding_Apothecary.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBuilding_Blacksmith",
-        "path": "sprites/sBuilding_Blacksmith/sBuilding_Blacksmith.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBuilding_House_Amber",
-        "path": "sprites/sBuilding_House_Amber/sBuilding_House_Amber.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBuilding_House_Blue",
-        "path": "sprites/sBuilding_House_Blue/sBuilding_House_Blue.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sBuilding_House_Red",
-        "path": "sprites/sBuilding_House_Red/sBuilding_House_Red.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sCombatIcons",
-        "path": "sprites/sCombatIcons/sCombatIcons.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_ArmorDisplay",
-        "path": "sprites/sDecor_ArmorDisplay/sDecor_ArmorDisplay.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_CoalBunker",
-        "path": "sprites/sDecor_CoalBunker/sDecor_CoalBunker.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_GrandFurnace",
-        "path": "sprites/sDecor_GrandFurnace/sDecor_GrandFurnace.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_MasterAnvil",
-        "path": "sprites/sDecor_MasterAnvil/sDecor_MasterAnvil.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_ServiceCounter",
-        "path": "sprites/sDecor_ServiceCounter/sDecor_ServiceCounter.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_TrophyPlaque",
-        "path": "sprites/sDecor_TrophyPlaque/sDecor_TrophyPlaque.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_WeaponRacks",
-        "path": "sprites/sDecor_WeaponRacks/sDecor_WeaponRacks.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDecor_Workbench",
-        "path": "sprites/sDecor_Workbench/sDecor_Workbench.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sDungeon_Props",
-        "path": "sprites/sDungeon_Props/sDungeon_Props.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "seasonal_sample__spring_",
-        "path": "sprites/seasonal_sample__spring_/seasonal_sample__spring_.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "seasonal_sample__summer_",
-        "path": "sprites/seasonal_sample__summer_/seasonal_sample__summer_.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "seasonal_sample__winter_",
-        "path": "sprites/seasonal_sample__winter_/seasonal_sample__winter_.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sEnemyGoblin",
-        "path": "sprites/sEnemyGoblin/sEnemyGoblin.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sEnemySkeleton",
-        "path": "sprites/sEnemySkeleton/sEnemySkeleton.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sEnemySlime",
-        "path": "sprites/sEnemySlime/sEnemySlime.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sEquipmentSlots",
-        "path": "sprites/sEquipmentSlots/sEquipmentSlots.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sFurnishings",
-        "path": "sprites/sFurnishings/sFurnishings.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Cleave",
-        "path": "sprites/sGoran_Combat_Cleave/sGoran_Combat_Cleave.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Earthshatter",
-        "path": "sprites/sGoran_Combat_Earthshatter/sGoran_Combat_Earthshatter.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Idle",
-        "path": "sprites/sGoran_Combat_Idle/sGoran_Combat_Idle.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Walk",
-        "path": "sprites/sGoran_Combat_Walk/sGoran_Combat_Walk.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Warcry",
-        "path": "sprites/sGoran_Combat_Warcry/sGoran_Combat_Warcry.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Combat_Whirlwind",
-        "path": "sprites/sGoran_Combat_Whirlwind/sGoran_Combat_Whirlwind.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Workshop_Hammering",
-        "path": "sprites/sGoran_Workshop_Hammering/sGoran_Workshop_Hammering.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Workshop_Idle",
-        "path": "sprites/sGoran_Workshop_Idle/sGoran_Workshop_Idle.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Workshop_IdleSide",
-        "path": "sprites/sGoran_Workshop_IdleSide/sGoran_Workshop_IdleSide.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Workshop_Inspect",
-        "path": "sprites/sGoran_Workshop_Inspect/sGoran_Workshop_Inspect.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sGoran_Workshop_Walk",
-        "path": "sprites/sGoran_Workshop_Walk/sGoran_Workshop_Walk.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sHeroPortrait",
-        "path": "sprites/sHeroPortrait/sHeroPortrait.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sItemIcons",
-        "path": "sprites/sItemIcons/sItemIcons.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sNPC_Alden",
-        "path": "sprites/sNPC_Alden/sNPC_Alden.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sNPC_Elysia",
-        "path": "sprites/sNPC_Elysia/sNPC_Elysia.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sNPC_Goran",
-        "path": "sprites/sNPC_Goran/sNPC_Goran.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sNPC_Sister_Bed",
-        "path": "sprites/sNPC_Sister_Bed/sNPC_Sister_Bed.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPlayer_down",
-        "path": "sprites/sPlayer_down/sPlayer_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPlayer_side",
-        "path": "sprites/sPlayer_side/sPlayer_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPlayer_up",
-        "path": "sprites/sPlayer_up/sPlayer_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPlayerSlash",
-        "path": "sprites/sPlayerSlash/sPlayerSlash.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPortrait_Goran_Confident",
-        "path": "sprites/sPortrait_Goran_Confident/sPortrait_Goran_Confident.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPortrait_Goran_Warcry",
-        "path": "sprites/sPortrait_Goran_Warcry/sPortrait_Goran_Warcry.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sPortrait_Goran",
-        "path": "sprites/sPortrait_Goran/sPortrait_Goran.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_fireball_down",
-        "path": "sprites/spr_player_cast_fireball_down/spr_player_cast_fireball_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_fireball_side",
-        "path": "sprites/spr_player_cast_fireball_side/spr_player_cast_fireball_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_fireball_up",
-        "path": "sprites/spr_player_cast_fireball_up/spr_player_cast_fireball_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_fireball",
-        "path": "sprites/spr_player_cast_fireball/spr_player_cast_fireball.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_frostnova_down",
-        "path": "sprites/spr_player_cast_frostnova_down/spr_player_cast_frostnova_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_frostnova_side",
-        "path": "sprites/spr_player_cast_frostnova_side/spr_player_cast_frostnova_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_frostnova_up",
-        "path": "sprites/spr_player_cast_frostnova_up/spr_player_cast_frostnova_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_cast_frostnova",
-        "path": "sprites/spr_player_cast_frostnova/spr_player_cast_frostnova.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo1_quick_slash_down",
-        "path": "sprites/spr_player_combo1_quick_slash_down/spr_player_combo1_quick_slash_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo1_quick_slash_side",
-        "path": "sprites/spr_player_combo1_quick_slash_side/spr_player_combo1_quick_slash_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo1_quick_slash_up",
-        "path": "sprites/spr_player_combo1_quick_slash_up/spr_player_combo1_quick_slash_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo2_amber_cleave_down",
-        "path": "sprites/spr_player_combo2_amber_cleave_down/spr_player_combo2_amber_cleave_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo2_amber_cleave_side",
-        "path": "sprites/spr_player_combo2_amber_cleave_side/spr_player_combo2_amber_cleave_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo2_amber_cleave_up",
-        "path": "sprites/spr_player_combo2_amber_cleave_up/spr_player_combo2_amber_cleave_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_combo3_spin_finisher_360",
-        "path": "sprites/spr_player_combo3_spin_finisher_360/spr_player_combo3_spin_finisher_360.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_drink_potion_down",
-        "path": "sprites/spr_player_drink_potion_down/spr_player_drink_potion_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_drink_potion_side",
-        "path": "sprites/spr_player_drink_potion_side/spr_player_drink_potion_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_drink_potion_up",
-        "path": "sprites/spr_player_drink_potion_up/spr_player_drink_potion_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_drink_potion",
-        "path": "sprites/spr_player_drink_potion/spr_player_drink_potion.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_idle_down",
-        "path": "sprites/spr_player_idle_down/spr_player_idle_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_idle_side",
-        "path": "sprites/spr_player_idle_side/spr_player_idle_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_idle_up",
-        "path": "sprites/spr_player_idle_up/spr_player_idle_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_roll_down",
-        "path": "sprites/spr_player_roll_down/spr_player_roll_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_roll_side",
-        "path": "sprites/spr_player_roll_side/spr_player_roll_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_roll_up",
-        "path": "sprites/spr_player_roll_up/spr_player_roll_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_walk_down",
-        "path": "sprites/spr_player_walk_down/spr_player_walk_down.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_walk_side",
-        "path": "sprites/spr_player_walk_side/spr_player_walk_side.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_walk_up",
-        "path": "sprites/spr_player_walk_up/spr_player_walk_up.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "Sprite112",
-        "path": "sprites/Sprite112/Sprite112.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_Fences",
-        "path": "sprites/sProp_Fences/sProp_Fences.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_Fountain",
-        "path": "sprites/sProp_Fountain/sProp_Fountain.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_HouseBlue",
-        "path": "sprites/sProp_HouseBlue/sProp_HouseBlue.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_Market_Stall_Fruit",
-        "path": "sprites/sProp_Market_Stall_Fruit/sProp_Market_Stall_Fruit.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_NoticeBoard",
-        "path": "sprites/sProp_NoticeBoard/sProp_NoticeBoard.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_OakTree",
-        "path": "sprites/sProp_OakTree/sProp_OakTree.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_OutdoorDecor",
-        "path": "sprites/sProp_OutdoorDecor/sProp_OutdoorDecor.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_Trees_Pine",
-        "path": "sprites/sProp_Trees_Pine/sProp_Trees_Pine.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sProp_Trees",
-        "path": "sprites/sProp_Trees/sProp_Trees.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sStatBadges",
-        "path": "sprites/sStatBadges/sStatBadges.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sStation_Alchemy",
-        "path": "sprites/sStation_Alchemy/sStation_Alchemy.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sStation_Anvil",
-        "path": "sprites/sStation_Anvil/sStation_Anvil.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sStation_Cooking",
-        "path": "sprites/sStation_Cooking/sStation_Cooking.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sStation_Furnace",
-        "path": "sprites/sStation_Furnace/sStation_Furnace.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Autumn",
-        "path": "sprites/sTile_Autumn/sTile_Autumn.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Buildings_Props",
-        "path": "sprites/sTile_Buildings_Props/sTile_Buildings_Props.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Buildings_Roofs",
-        "path": "sprites/sTile_Buildings_Roofs/sTile_Buildings_Roofs.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Buildings_Walls",
-        "path": "sprites/sTile_Buildings_Walls/sTile_Buildings_Walls.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Floors",
-        "path": "sprites/sTile_Floors/sTile_Floors.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Interior_Props",
-        "path": "sprites/sTile_Interior_Props/sTile_Interior_Props.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Interior_Walls",
-        "path": "sprites/sTile_Interior_Walls/sTile_Interior_Walls.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Interior",
-        "path": "sprites/sTile_Interior/sTile_Interior.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Summer",
-        "path": "sprites/sTile_Summer/sTile_Summer.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTile_Timber",
-        "path": "sprites/sTile_Timber/sTile_Timber.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sTreasureChest",
-        "path": "sprites/sTreasureChest/sTreasureChest.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sUiButtonsTabs",
-        "path": "sprites/sUiButtonsTabs/sUiButtonsTabs.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sUiHeaderBanner",
-        "path": "sprites/sUiHeaderBanner/sUiHeaderBanner.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sUiIcons",
-        "path": "sprites/sUiIcons/sUiIcons.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sUiStatusBackground",
-        "path": "sprites/sUiStatusBackground/sUiStatusBackground.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sUiStatusBars",
-        "path": "sprites/sUiStatusBars/sUiStatusBars.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sWaterfall",
-        "path": "sprites/sWaterfall/sWaterfall.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sWaterSparkles",
-        "path": "sprites/sWaterSparkles/sWaterSparkles.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "tavern",
-        "path": "sprites/tavern/tavern.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "TileSet1",
-        "path": "tilesets/TileSet1/TileSet1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_attack_1",
-        "path": "sounds/snd_sword_attack_1/snd_sword_attack_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_attack_2",
-        "path": "sounds/snd_sword_attack_2/snd_sword_attack_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_attack_3",
-        "path": "sounds/snd_sword_attack_3/snd_sword_attack_3.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_hit_1",
-        "path": "sounds/snd_sword_hit_1/snd_sword_hit_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_hit_2",
-        "path": "sounds/snd_sword_hit_2/snd_sword_hit_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_sword_parry",
-        "path": "sounds/snd_sword_parry/snd_sword_parry.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_dodge_roll",
-        "path": "sounds/snd_dodge_roll/snd_dodge_roll.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_perfect_dodge",
-        "path": "sounds/snd_perfect_dodge/snd_perfect_dodge.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_fireball",
-        "path": "sounds/snd_fireball/snd_fireball.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_fire_impact",
-        "path": "sounds/snd_fire_impact/snd_fire_impact.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_frost_nova",
-        "path": "sounds/snd_frost_nova/snd_frost_nova.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_ice_barrage",
-        "path": "sounds/snd_ice_barrage/snd_ice_barrage.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_drink_potion",
-        "path": "sounds/snd_drink_potion/snd_drink_potion.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_mining_1",
-        "path": "sounds/snd_mining_1/snd_mining_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_mining_2",
-        "path": "sounds/snd_mining_2/snd_mining_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_chop_1",
-        "path": "sounds/snd_chop_1/snd_chop_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_door_open",
-        "path": "sounds/snd_door_open/snd_door_open.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_door_close",
-        "path": "sounds/snd_door_close/snd_door_close.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_chest_open",
-        "path": "sounds/snd_chest_open/snd_chest_open.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_chest_close",
-        "path": "sounds/snd_chest_close/snd_chest_close.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_gate_open",
-        "path": "sounds/snd_gate_open/snd_gate_open.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_lever_switch",
-        "path": "sounds/snd_lever_switch/snd_lever_switch.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_ui_move",
-        "path": "sounds/snd_ui_move/snd_ui_move.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_ui_confirm",
-        "path": "sounds/snd_ui_confirm/snd_ui_confirm.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_ui_cancel",
-        "path": "sounds/snd_ui_cancel/snd_ui_cancel.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_boss_rock",
-        "path": "sounds/snd_boss_rock/snd_boss_rock.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_boss_stomp",
-        "path": "sounds/snd_boss_stomp/snd_boss_stomp.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_stone_1",
-        "path": "sounds/snd_step_stone_1/snd_step_stone_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_stone_2",
-        "path": "sounds/snd_step_stone_2/snd_step_stone_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_dirt_1",
-        "path": "sounds/snd_step_dirt_1/snd_step_dirt_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_dirt_2",
-        "path": "sounds/snd_step_dirt_2/snd_step_dirt_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_wood_1",
-        "path": "sounds/snd_step_wood_1/snd_step_wood_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "snd_step_wood_2",
-        "path": "sounds/snd_step_wood_2/snd_step_wood_2.yy"
-      }
-    }
+  "name":"Blank Pixel Game",
+  "resources":[
+    {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"id":{"name":"oMainMenu","path":"objects/oMainMenu/oMainMenu.yy",},},
+    {"id":{"name":"oBathhouseDoor","path":"objects/oBathhouseDoor/oBathhouseDoor.yy",},},
+    {"id":{"name":"oBedroomDecor","path":"objects/oBedroomDecor/oBedroomDecor.yy",},},
+    {"id":{"name":"oBossGolem","path":"objects/oBossGolem/oBossGolem.yy",},},
+    {"id":{"name":"oBreakablePot","path":"objects/oBreakablePot/oBreakablePot.yy",},},
+    {"id":{"name":"oBuilding_AdventureGuild","path":"objects/oBuilding_AdventureGuild/oBuilding_AdventureGuild.yy",},},
+    {"id":{"name":"oBuilding_Blacksmith","path":"objects/oBuilding_Blacksmith/oBuilding_Blacksmith.yy",},},
+    {"id":{"name":"oBuilding_PotionShop","path":"objects/oBuilding_PotionShop/oBuilding_PotionShop.yy",},},
+    {"id":{"name":"oBuilding_RegularHouse","path":"objects/oBuilding_RegularHouse/oBuilding_RegularHouse.yy",},},
+    {"id":{"name":"oBuilding_Tavern","path":"objects/oBuilding_Tavern/oBuilding_Tavern.yy",},},
+    {"id":{"name":"oCharacterParent","path":"objects/oCharacterParent/oCharacterParent.yy",},},
+    {"id":{"name":"oCompanion_Goran","path":"objects/oCompanion_Goran/oCompanion_Goran.yy",},},
+    {"id":{"name":"oDecorBossChamber","path":"objects/oDecorBossChamber/oDecorBossChamber.yy",},},
+    {"id":{"name":"oDecorCatacombs","path":"objects/oDecorCatacombs/oDecorCatacombs.yy",},},
+    {"id":{"name":"oDecorOutskirts","path":"objects/oDecorOutskirts/oDecorOutskirts.yy",},},
+    {"id":{"name":"oDecorPotionShop","path":"objects/oDecorPotionShop/oDecorPotionShop.yy",},},
+    {"id":{"name":"oDecorTown","path":"objects/oDecorTown/oDecorTown.yy",},},
+    {"id":{"name":"oDecorWeaponShop","path":"objects/oDecorWeaponShop/oDecorWeaponShop.yy",},},
+    {"id":{"name":"oDialogueManager","path":"objects/oDialogueManager/oDialogueManager.yy",},},
+    {"id":{"name":"oDoor_Bedroom_To_Town","path":"objects/oDoor_Bedroom_To_Town/oDoor_Bedroom_To_Town.yy",},},
+    {"id":{"name":"oDoor_Boss_To_Bedroom","path":"objects/oDoor_Boss_To_Bedroom/oDoor_Boss_To_Bedroom.yy",},},
+    {"id":{"name":"oDoor_Catacombs_To_Boss","path":"objects/oDoor_Catacombs_To_Boss/oDoor_Catacombs_To_Boss.yy",},},
+    {"id":{"name":"oDoor_Catacombs_To_Outskirts","path":"objects/oDoor_Catacombs_To_Outskirts/oDoor_Catacombs_To_Outskirts.yy",},},
+    {"id":{"name":"oDoor_Outskirts_To_Catacombs","path":"objects/oDoor_Outskirts_To_Catacombs/oDoor_Outskirts_To_Catacombs.yy",},},
+    {"id":{"name":"oDoor_Outskirts_To_Town","path":"objects/oDoor_Outskirts_To_Town/oDoor_Outskirts_To_Town.yy",},},
+    {"id":{"name":"oDoor_Potion_To_Town","path":"objects/oDoor_Potion_To_Town/oDoor_Potion_To_Town.yy",},},
+    {"id":{"name":"oDoor_Town_To_Bedroom","path":"objects/oDoor_Town_To_Bedroom/oDoor_Town_To_Bedroom.yy",},},
+    {"id":{"name":"oDoor_Town_To_Outskirts","path":"objects/oDoor_Town_To_Outskirts/oDoor_Town_To_Outskirts.yy",},},
+    {"id":{"name":"oDoor_Town_To_Potion","path":"objects/oDoor_Town_To_Potion/oDoor_Town_To_Potion.yy",},},
+    {"id":{"name":"oDoor_Town_To_Weapon","path":"objects/oDoor_Town_To_Weapon/oDoor_Town_To_Weapon.yy",},},
+    {"id":{"name":"oDoor_Weapon_To_Town","path":"objects/oDoor_Weapon_To_Town/oDoor_Weapon_To_Town.yy",},},
+    {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
+    {"id":{"name":"oEnemyGoblin","path":"objects/oEnemyGoblin/oEnemyGoblin.yy",},},
+    {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},},
+    {"id":{"name":"oEnemySkeleton","path":"objects/oEnemySkeleton/oEnemySkeleton.yy",},},
+    {"id":{"name":"oEnemySkeletonBoss","path":"objects/oEnemySkeletonBoss/oEnemySkeletonBoss.yy",},},
+    {"id":{"name":"oEnemySlime","path":"objects/oEnemySlime/oEnemySlime.yy",},},
+    {"id":{"name":"oInteractableParent","path":"objects/oInteractableParent/oInteractableParent.yy",},},
+    {"id":{"name":"oItemDrop","path":"objects/oItemDrop/oItemDrop.yy",},},
+    {"id":{"name":"oMenuManager","path":"objects/oMenuManager/oMenuManager.yy",},},
+    {"id":{"name":"oMiningNode","path":"objects/oMiningNode/oMiningNode.yy",},},
+    {"id":{"name":"oNPC_Alden","path":"objects/oNPC_Alden/oNPC_Alden.yy",},},
+    {"id":{"name":"oNPC_Elysia","path":"objects/oNPC_Elysia/oNPC_Elysia.yy",},},
+    {"id":{"name":"oNPC_Goran","path":"objects/oNPC_Goran/oNPC_Goran.yy",},},
+    {"id":{"name":"oNPC_NoticeBoard","path":"objects/oNPC_NoticeBoard/oNPC_NoticeBoard.yy",},},
+    {"id":{"name":"oNPC_ParkVisitor","path":"objects/oNPC_ParkVisitor/oNPC_ParkVisitor.yy",},},
+    {"id":{"name":"oNPC_Sister_Bed","path":"objects/oNPC_Sister_Bed/oNPC_Sister_Bed.yy",},},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oPlayerSlash","path":"objects/oPlayerSlash/oPlayerSlash.yy",},},
+    {"id":{"name":"oRoomTransition","path":"objects/oRoomTransition/oRoomTransition.yy",},},
+    {"id":{"name":"oSolidParent","path":"objects/oSolidParent/oSolidParent.yy",},},
+    {"id":{"name":"oSpellFireball","path":"objects/oSpellFireball/oSpellFireball.yy",},},
+    {"id":{"name":"oSpellFrostNova","path":"objects/oSpellFrostNova/oSpellFrostNova.yy",},},
+    {"id":{"name":"oTreasureChest","path":"objects/oTreasureChest/oTreasureChest.yy",},},
+    {"id":{"name":"rm_boss_chamber","path":"rooms/rm_boss_chamber/rm_boss_chamber.yy",},},
+    {"id":{"name":"rm_catacombs","path":"rooms/rm_catacombs/rm_catacombs.yy",},},
+    {"id":{"name":"rm_outskirts","path":"rooms/rm_outskirts/rm_outskirts.yy",},},
+    {"id":{"name":"rm_potion_shop","path":"rooms/rm_potion_shop/rm_potion_shop.yy",},},
+    {"id":{"name":"rm_town_square","path":"rooms/rm_town_square/rm_town_square.yy",},},
+    {"id":{"name":"rm_weapon_shop","path":"rooms/rm_weapon_shop/rm_weapon_shop.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room8","path":"rooms/Room8/Room8.yy",},},
+    {"id":{"name":"scr_animation_update","path":"scripts/scr_animation_update/scr_animation_update.yy",},},
+    {"id":{"name":"scr_audio_manager","path":"scripts/scr_audio_manager/scr_audio_manager.yy",},},
+    {"id":{"name":"scr_dialogue_system","path":"scripts/scr_dialogue_system/scr_dialogue_system.yy",},},
+    {"id":{"name":"scr_game_init","path":"scripts/scr_game_init/scr_game_init.yy",},},
+    {"id":{"name":"scr_movement_apply","path":"scripts/scr_movement_apply/scr_movement_apply.yy",},},
+    {"id":{"name":"scr_player_input","path":"scripts/scr_player_input/scr_player_input.yy",},},
+    {"id":{"name":"scr_progression_system","path":"scripts/scr_progression_system/scr_progression_system.yy",},},
+    {"id":{"name":"scr_town_decor","path":"scripts/scr_town_decor/scr_town_decor.yy",},},
+    {"id":{"name":"scr_ui_renderer","path":"scripts/scr_ui_renderer/scr_ui_renderer.yy",},},
+    {"id":{"name":"snd_boss_rock","path":"sounds/snd_boss_rock/snd_boss_rock.yy",},},
+    {"id":{"name":"snd_boss_stomp","path":"sounds/snd_boss_stomp/snd_boss_stomp.yy",},},
+    {"id":{"name":"snd_chest_close","path":"sounds/snd_chest_close/snd_chest_close.yy",},},
+    {"id":{"name":"snd_chest_open","path":"sounds/snd_chest_open/snd_chest_open.yy",},},
+    {"id":{"name":"snd_chop_1","path":"sounds/snd_chop_1/snd_chop_1.yy",},},
+    {"id":{"name":"snd_dodge_roll","path":"sounds/snd_dodge_roll/snd_dodge_roll.yy",},},
+    {"id":{"name":"snd_door_close","path":"sounds/snd_door_close/snd_door_close.yy",},},
+    {"id":{"name":"snd_door_open","path":"sounds/snd_door_open/snd_door_open.yy",},},
+    {"id":{"name":"snd_drink_potion","path":"sounds/snd_drink_potion/snd_drink_potion.yy",},},
+    {"id":{"name":"snd_fire_impact","path":"sounds/snd_fire_impact/snd_fire_impact.yy",},},
+    {"id":{"name":"snd_fireball","path":"sounds/snd_fireball/snd_fireball.yy",},},
+    {"id":{"name":"snd_frost_nova","path":"sounds/snd_frost_nova/snd_frost_nova.yy",},},
+    {"id":{"name":"snd_gate_open","path":"sounds/snd_gate_open/snd_gate_open.yy",},},
+    {"id":{"name":"snd_ice_barrage","path":"sounds/snd_ice_barrage/snd_ice_barrage.yy",},},
+    {"id":{"name":"snd_lever_switch","path":"sounds/snd_lever_switch/snd_lever_switch.yy",},},
+    {"id":{"name":"snd_mining_1","path":"sounds/snd_mining_1/snd_mining_1.yy",},},
+    {"id":{"name":"snd_mining_2","path":"sounds/snd_mining_2/snd_mining_2.yy",},},
+    {"id":{"name":"snd_perfect_dodge","path":"sounds/snd_perfect_dodge/snd_perfect_dodge.yy",},},
+    {"id":{"name":"snd_step_dirt_1","path":"sounds/snd_step_dirt_1/snd_step_dirt_1.yy",},},
+    {"id":{"name":"snd_step_dirt_2","path":"sounds/snd_step_dirt_2/snd_step_dirt_2.yy",},},
+    {"id":{"name":"snd_step_stone_1","path":"sounds/snd_step_stone_1/snd_step_stone_1.yy",},},
+    {"id":{"name":"snd_step_stone_2","path":"sounds/snd_step_stone_2/snd_step_stone_2.yy",},},
+    {"id":{"name":"snd_step_wood_1","path":"sounds/snd_step_wood_1/snd_step_wood_1.yy",},},
+    {"id":{"name":"snd_step_wood_2","path":"sounds/snd_step_wood_2/snd_step_wood_2.yy",},},
+    {"id":{"name":"snd_sword_attack_1","path":"sounds/snd_sword_attack_1/snd_sword_attack_1.yy",},},
+    {"id":{"name":"snd_sword_attack_2","path":"sounds/snd_sword_attack_2/snd_sword_attack_2.yy",},},
+    {"id":{"name":"snd_sword_attack_3","path":"sounds/snd_sword_attack_3/snd_sword_attack_3.yy",},},
+    {"id":{"name":"snd_sword_hit_1","path":"sounds/snd_sword_hit_1/snd_sword_hit_1.yy",},},
+    {"id":{"name":"snd_sword_hit_2","path":"sounds/snd_sword_hit_2/snd_sword_hit_2.yy",},},
+    {"id":{"name":"snd_sword_parry","path":"sounds/snd_sword_parry/snd_sword_parry.yy",},},
+    {"id":{"name":"snd_ui_cancel","path":"sounds/snd_ui_cancel/snd_ui_cancel.yy",},},
+    {"id":{"name":"snd_ui_confirm","path":"sounds/snd_ui_confirm/snd_ui_confirm.yy",},},
+    {"id":{"name":"snd_ui_move","path":"sounds/snd_ui_move/snd_ui_move.yy",},},
+    {"id":{"name":"adveture_guild","path":"sprites/adveture_guild/adveture_guild.yy",},},
+    {"id":{"name":"blacksmith","path":"sprites/blacksmith/blacksmith.yy",},},
+    {"id":{"name":"down","path":"sprites/down/down.yy",},},
+    {"id":{"name":"potion_shop","path":"sprites/potion_shop/potion_shop.yy",},},
+    {"id":{"name":"regular_house","path":"sprites/regular_house/regular_house.yy",},},
+    {"id":{"name":"sBedroom_Diorama","path":"sprites/sBedroom_Diorama/sBedroom_Diorama.yy",},},
+    {"id":{"name":"sBossGolem","path":"sprites/sBossGolem/sBossGolem.yy",},},
+    {"id":{"name":"sBreakablePots","path":"sprites/sBreakablePots/sBreakablePots.yy",},},
+    {"id":{"name":"sBuilding_Apothecary","path":"sprites/sBuilding_Apothecary/sBuilding_Apothecary.yy",},},
+    {"id":{"name":"sBuilding_Blacksmith","path":"sprites/sBuilding_Blacksmith/sBuilding_Blacksmith.yy",},},
+    {"id":{"name":"sBuilding_House_Amber","path":"sprites/sBuilding_House_Amber/sBuilding_House_Amber.yy",},},
+    {"id":{"name":"sBuilding_House_Blue","path":"sprites/sBuilding_House_Blue/sBuilding_House_Blue.yy",},},
+    {"id":{"name":"sBuilding_House_Red","path":"sprites/sBuilding_House_Red/sBuilding_House_Red.yy",},},
+    {"id":{"name":"sCombatIcons","path":"sprites/sCombatIcons/sCombatIcons.yy",},},
+    {"id":{"name":"sDecor_ArmorDisplay","path":"sprites/sDecor_ArmorDisplay/sDecor_ArmorDisplay.yy",},},
+    {"id":{"name":"sDecor_CoalBunker","path":"sprites/sDecor_CoalBunker/sDecor_CoalBunker.yy",},},
+    {"id":{"name":"sDecor_GrandFurnace","path":"sprites/sDecor_GrandFurnace/sDecor_GrandFurnace.yy",},},
+    {"id":{"name":"sDecor_MasterAnvil","path":"sprites/sDecor_MasterAnvil/sDecor_MasterAnvil.yy",},},
+    {"id":{"name":"sDecor_ServiceCounter","path":"sprites/sDecor_ServiceCounter/sDecor_ServiceCounter.yy",},},
+    {"id":{"name":"sDecor_TrophyPlaque","path":"sprites/sDecor_TrophyPlaque/sDecor_TrophyPlaque.yy",},},
+    {"id":{"name":"sDecor_WeaponRacks","path":"sprites/sDecor_WeaponRacks/sDecor_WeaponRacks.yy",},},
+    {"id":{"name":"sDecor_Workbench","path":"sprites/sDecor_Workbench/sDecor_Workbench.yy",},},
+    {"id":{"name":"sDungeon_Props","path":"sprites/sDungeon_Props/sDungeon_Props.yy",},},
+    {"id":{"name":"seasonal_sample__spring_","path":"sprites/seasonal_sample__spring_/seasonal_sample__spring_.yy",},},
+    {"id":{"name":"seasonal_sample__summer_","path":"sprites/seasonal_sample__summer_/seasonal_sample__summer_.yy",},},
+    {"id":{"name":"seasonal_sample__winter_","path":"sprites/seasonal_sample__winter_/seasonal_sample__winter_.yy",},},
+    {"id":{"name":"sEnemyGoblin","path":"sprites/sEnemyGoblin/sEnemyGoblin.yy",},},
+    {"id":{"name":"sEnemySkeleton","path":"sprites/sEnemySkeleton/sEnemySkeleton.yy",},},
+    {"id":{"name":"sEnemySlime","path":"sprites/sEnemySlime/sEnemySlime.yy",},},
+    {"id":{"name":"sEquipmentSlots","path":"sprites/sEquipmentSlots/sEquipmentSlots.yy",},},
+    {"id":{"name":"sFurnishings","path":"sprites/sFurnishings/sFurnishings.yy",},},
+    {"id":{"name":"sGoran_Combat_Cleave","path":"sprites/sGoran_Combat_Cleave/sGoran_Combat_Cleave.yy",},},
+    {"id":{"name":"sGoran_Combat_Earthshatter","path":"sprites/sGoran_Combat_Earthshatter/sGoran_Combat_Earthshatter.yy",},},
+    {"id":{"name":"sGoran_Combat_Idle","path":"sprites/sGoran_Combat_Idle/sGoran_Combat_Idle.yy",},},
+    {"id":{"name":"sGoran_Combat_Walk","path":"sprites/sGoran_Combat_Walk/sGoran_Combat_Walk.yy",},},
+    {"id":{"name":"sGoran_Combat_Warcry","path":"sprites/sGoran_Combat_Warcry/sGoran_Combat_Warcry.yy",},},
+    {"id":{"name":"sGoran_Combat_Whirlwind","path":"sprites/sGoran_Combat_Whirlwind/sGoran_Combat_Whirlwind.yy",},},
+    {"id":{"name":"sGoran_Workshop_Hammering","path":"sprites/sGoran_Workshop_Hammering/sGoran_Workshop_Hammering.yy",},},
+    {"id":{"name":"sGoran_Workshop_Idle","path":"sprites/sGoran_Workshop_Idle/sGoran_Workshop_Idle.yy",},},
+    {"id":{"name":"sGoran_Workshop_IdleSide","path":"sprites/sGoran_Workshop_IdleSide/sGoran_Workshop_IdleSide.yy",},},
+    {"id":{"name":"sGoran_Workshop_Inspect","path":"sprites/sGoran_Workshop_Inspect/sGoran_Workshop_Inspect.yy",},},
+    {"id":{"name":"sGoran_Workshop_Walk","path":"sprites/sGoran_Workshop_Walk/sGoran_Workshop_Walk.yy",},},
+    {"id":{"name":"sHeroPortrait","path":"sprites/sHeroPortrait/sHeroPortrait.yy",},},
+    {"id":{"name":"sItemIcons","path":"sprites/sItemIcons/sItemIcons.yy",},},
+    {"id":{"name":"sNPC_Alden","path":"sprites/sNPC_Alden/sNPC_Alden.yy",},},
+    {"id":{"name":"sNPC_Elysia","path":"sprites/sNPC_Elysia/sNPC_Elysia.yy",},},
+    {"id":{"name":"sNPC_Goran","path":"sprites/sNPC_Goran/sNPC_Goran.yy",},},
+    {"id":{"name":"sNPC_Sister_Bed","path":"sprites/sNPC_Sister_Bed/sNPC_Sister_Bed.yy",},},
+    {"id":{"name":"sPlayer_down","path":"sprites/sPlayer_down/sPlayer_down.yy",},},
+    {"id":{"name":"sPlayer_side","path":"sprites/sPlayer_side/sPlayer_side.yy",},},
+    {"id":{"name":"sPlayer_up","path":"sprites/sPlayer_up/sPlayer_up.yy",},},
+    {"id":{"name":"sPlayerSlash","path":"sprites/sPlayerSlash/sPlayerSlash.yy",},},
+    {"id":{"name":"sPortrait_Goran_Confident","path":"sprites/sPortrait_Goran_Confident/sPortrait_Goran_Confident.yy",},},
+    {"id":{"name":"sPortrait_Goran_Warcry","path":"sprites/sPortrait_Goran_Warcry/sPortrait_Goran_Warcry.yy",},},
+    {"id":{"name":"sPortrait_Goran","path":"sprites/sPortrait_Goran/sPortrait_Goran.yy",},},
+    {"id":{"name":"spr_player_cast_fireball_down","path":"sprites/spr_player_cast_fireball_down/spr_player_cast_fireball_down.yy",},},
+    {"id":{"name":"spr_player_cast_fireball_side","path":"sprites/spr_player_cast_fireball_side/spr_player_cast_fireball_side.yy",},},
+    {"id":{"name":"spr_player_cast_fireball_up","path":"sprites/spr_player_cast_fireball_up/spr_player_cast_fireball_up.yy",},},
+    {"id":{"name":"spr_player_cast_fireball","path":"sprites/spr_player_cast_fireball/spr_player_cast_fireball.yy",},},
+    {"id":{"name":"spr_player_cast_frostnova_down","path":"sprites/spr_player_cast_frostnova_down/spr_player_cast_frostnova_down.yy",},},
+    {"id":{"name":"spr_player_cast_frostnova_side","path":"sprites/spr_player_cast_frostnova_side/spr_player_cast_frostnova_side.yy",},},
+    {"id":{"name":"spr_player_cast_frostnova_up","path":"sprites/spr_player_cast_frostnova_up/spr_player_cast_frostnova_up.yy",},},
+    {"id":{"name":"spr_player_cast_frostnova","path":"sprites/spr_player_cast_frostnova/spr_player_cast_frostnova.yy",},},
+    {"id":{"name":"spr_player_combo1_quick_slash_down","path":"sprites/spr_player_combo1_quick_slash_down/spr_player_combo1_quick_slash_down.yy",},},
+    {"id":{"name":"spr_player_combo1_quick_slash_side","path":"sprites/spr_player_combo1_quick_slash_side/spr_player_combo1_quick_slash_side.yy",},},
+    {"id":{"name":"spr_player_combo1_quick_slash_up","path":"sprites/spr_player_combo1_quick_slash_up/spr_player_combo1_quick_slash_up.yy",},},
+    {"id":{"name":"spr_player_combo2_amber_cleave_down","path":"sprites/spr_player_combo2_amber_cleave_down/spr_player_combo2_amber_cleave_down.yy",},},
+    {"id":{"name":"spr_player_combo2_amber_cleave_side","path":"sprites/spr_player_combo2_amber_cleave_side/spr_player_combo2_amber_cleave_side.yy",},},
+    {"id":{"name":"spr_player_combo2_amber_cleave_up","path":"sprites/spr_player_combo2_amber_cleave_up/spr_player_combo2_amber_cleave_up.yy",},},
+    {"id":{"name":"spr_player_combo3_spin_finisher_360","path":"sprites/spr_player_combo3_spin_finisher_360/spr_player_combo3_spin_finisher_360.yy",},},
+    {"id":{"name":"spr_player_drink_potion_down","path":"sprites/spr_player_drink_potion_down/spr_player_drink_potion_down.yy",},},
+    {"id":{"name":"spr_player_drink_potion_side","path":"sprites/spr_player_drink_potion_side/spr_player_drink_potion_side.yy",},},
+    {"id":{"name":"spr_player_drink_potion_up","path":"sprites/spr_player_drink_potion_up/spr_player_drink_potion_up.yy",},},
+    {"id":{"name":"spr_player_drink_potion","path":"sprites/spr_player_drink_potion/spr_player_drink_potion.yy",},},
+    {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},},
+    {"id":{"name":"spr_player_idle_side","path":"sprites/spr_player_idle_side/spr_player_idle_side.yy",},},
+    {"id":{"name":"spr_player_idle_up","path":"sprites/spr_player_idle_up/spr_player_idle_up.yy",},},
+    {"id":{"name":"spr_player_roll_down","path":"sprites/spr_player_roll_down/spr_player_roll_down.yy",},},
+    {"id":{"name":"spr_player_roll_side","path":"sprites/spr_player_roll_side/spr_player_roll_side.yy",},},
+    {"id":{"name":"spr_player_roll_up","path":"sprites/spr_player_roll_up/spr_player_roll_up.yy",},},
+    {"id":{"name":"spr_player_walk_down","path":"sprites/spr_player_walk_down/spr_player_walk_down.yy",},},
+    {"id":{"name":"spr_player_walk_side","path":"sprites/spr_player_walk_side/spr_player_walk_side.yy",},},
+    {"id":{"name":"spr_player_walk_up","path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},},
+    {"id":{"name":"Sprite112","path":"sprites/Sprite112/Sprite112.yy",},},
+    {"id":{"name":"sProp_Fences","path":"sprites/sProp_Fences/sProp_Fences.yy",},},
+    {"id":{"name":"sProp_Fountain","path":"sprites/sProp_Fountain/sProp_Fountain.yy",},},
+    {"id":{"name":"sProp_HouseBlue","path":"sprites/sProp_HouseBlue/sProp_HouseBlue.yy",},},
+    {"id":{"name":"sProp_Market_Stall_Fruit","path":"sprites/sProp_Market_Stall_Fruit/sProp_Market_Stall_Fruit.yy",},},
+    {"id":{"name":"sProp_NoticeBoard","path":"sprites/sProp_NoticeBoard/sProp_NoticeBoard.yy",},},
+    {"id":{"name":"sProp_OakTree","path":"sprites/sProp_OakTree/sProp_OakTree.yy",},},
+    {"id":{"name":"sProp_OutdoorDecor","path":"sprites/sProp_OutdoorDecor/sProp_OutdoorDecor.yy",},},
+    {"id":{"name":"sProp_Trees_Pine","path":"sprites/sProp_Trees_Pine/sProp_Trees_Pine.yy",},},
+    {"id":{"name":"sProp_Trees","path":"sprites/sProp_Trees/sProp_Trees.yy",},},
+    {"id":{"name":"sStatBadges","path":"sprites/sStatBadges/sStatBadges.yy",},},
+    {"id":{"name":"sStation_Alchemy","path":"sprites/sStation_Alchemy/sStation_Alchemy.yy",},},
+    {"id":{"name":"sStation_Anvil","path":"sprites/sStation_Anvil/sStation_Anvil.yy",},},
+    {"id":{"name":"sStation_Cooking","path":"sprites/sStation_Cooking/sStation_Cooking.yy",},},
+    {"id":{"name":"sStation_Furnace","path":"sprites/sStation_Furnace/sStation_Furnace.yy",},},
+    {"id":{"name":"sTile_Autumn","path":"sprites/sTile_Autumn/sTile_Autumn.yy",},},
+    {"id":{"name":"sTile_Buildings_Props","path":"sprites/sTile_Buildings_Props/sTile_Buildings_Props.yy",},},
+    {"id":{"name":"sTile_Buildings_Roofs","path":"sprites/sTile_Buildings_Roofs/sTile_Buildings_Roofs.yy",},},
+    {"id":{"name":"sTile_Buildings_Walls","path":"sprites/sTile_Buildings_Walls/sTile_Buildings_Walls.yy",},},
+    {"id":{"name":"sTile_Floors","path":"sprites/sTile_Floors/sTile_Floors.yy",},},
+    {"id":{"name":"sTile_Interior_Props","path":"sprites/sTile_Interior_Props/sTile_Interior_Props.yy",},},
+    {"id":{"name":"sTile_Interior_Walls","path":"sprites/sTile_Interior_Walls/sTile_Interior_Walls.yy",},},
+    {"id":{"name":"sTile_Interior","path":"sprites/sTile_Interior/sTile_Interior.yy",},},
+    {"id":{"name":"sTile_Summer","path":"sprites/sTile_Summer/sTile_Summer.yy",},},
+    {"id":{"name":"sTile_Timber","path":"sprites/sTile_Timber/sTile_Timber.yy",},},
+    {"id":{"name":"sTreasureChest","path":"sprites/sTreasureChest/sTreasureChest.yy",},},
+    {"id":{"name":"sUiButtonsTabs","path":"sprites/sUiButtonsTabs/sUiButtonsTabs.yy",},},
+    {"id":{"name":"sUiHeaderBanner","path":"sprites/sUiHeaderBanner/sUiHeaderBanner.yy",},},
+    {"id":{"name":"sUiIcons","path":"sprites/sUiIcons/sUiIcons.yy",},},
+    {"id":{"name":"sUiStatusBackground","path":"sprites/sUiStatusBackground/sUiStatusBackground.yy",},},
+    {"id":{"name":"sUiStatusBars","path":"sprites/sUiStatusBars/sUiStatusBars.yy",},},
+    {"id":{"name":"sWaterfall","path":"sprites/sWaterfall/sWaterfall.yy",},},
+    {"id":{"name":"sWaterSparkles","path":"sprites/sWaterSparkles/sWaterSparkles.yy",},},
+    {"id":{"name":"tavern","path":"sprites/tavern/tavern.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
-  "resourceType": "GMProject",
-  "resourceVersion": "2.0",
-  "RoomOrderNodes": [
-    {
-      "roomId": {
-        "name": "Room1",
-        "path": "rooms/Room1/Room1.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_town_square",
-        "path": "rooms/rm_town_square/rm_town_square.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_weapon_shop",
-        "path": "rooms/rm_weapon_shop/rm_weapon_shop.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_potion_shop",
-        "path": "rooms/rm_potion_shop/rm_potion_shop.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_outskirts",
-        "path": "rooms/rm_outskirts/rm_outskirts.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_catacombs",
-        "path": "rooms/rm_catacombs/rm_catacombs.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "rm_boss_chamber",
-        "path": "rooms/rm_boss_chamber/rm_boss_chamber.yy"
-      }
-    },
-    {
-      "roomId": {
-        "name": "Room8",
-        "path": "rooms/Room8/Room8.yy"
-      }
-    }
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_town_square","path":"rooms/rm_town_square/rm_town_square.yy",},},
+    {"roomId":{"name":"rm_weapon_shop","path":"rooms/rm_weapon_shop/rm_weapon_shop.yy",},},
+    {"roomId":{"name":"rm_potion_shop","path":"rooms/rm_potion_shop/rm_potion_shop.yy",},},
+    {"roomId":{"name":"rm_outskirts","path":"rooms/rm_outskirts/rm_outskirts.yy",},},
+    {"roomId":{"name":"rm_catacombs","path":"rooms/rm_catacombs/rm_catacombs.yy",},},
+    {"roomId":{"name":"rm_boss_chamber","path":"rooms/rm_boss_chamber/rm_boss_chamber.yy",},},
+    {"roomId":{"name":"Room8","path":"rooms/Room8/Room8.yy",},},
   ],
-  "templateType": "game",
-  "TextureGroups": [
-    {
-      "$GMTextureGroup": "",
-      "%Name": "Default",
-      "autocrop": true,
-      "border": 2,
-      "compressFormat": "bz2",
-      "customOptions": "",
-      "directory": "",
-      "groupParent": null,
-      "isScaled": true,
-      "loadType": "default",
-      "mipsToGenerate": 0,
-      "name": "Default",
-      "resourceType": "GMTextureGroup",
-      "resourceVersion": "2.0",
-      "targets": -1
-    }
-  ]
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
 }

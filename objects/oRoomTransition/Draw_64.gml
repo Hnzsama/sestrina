@@ -1867,10 +1867,106 @@ if (variable_global_exists("game_ending") && global.game_ending != "") {
     // Dismiss button
     var _btn_y = _ey + _eh - 44;
     draw_set_color(make_color_rgb(255, 230, 130));
-    draw_text(_gw / 2, _btn_y, "▶ [Tekan SPACE / ENTER untuk Lanjut Bermain] ◀");
+    draw_text(_gw / 2, _btn_y, "▶ [Tekan SPACE / ENTER untuk Melihat Ending & Kredit Pengembang] ◀");
     
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
+        credits_cached_ending = global.game_ending;
         global.game_ending = "";
+        showing_credits = true;
+        ending_credits_y = _gh;
+        scr_audio_play("ui", "confirm");
+    }
+}
+
+// =========================================================================
+// 11B. GRAND CINEMATIC ENDING & STAFF CREDITS ROLL
+// =========================================================================
+if (variable_instance_exists(id, "showing_credits") && showing_credits) {
+    draw_set_alpha(0.96);
+    draw_set_color(make_color_rgb(8, 12, 24));
+    draw_rectangle(0, 0, _gw, _gh, false);
+
+    ending_credits_y -= 0.8;
+
+    var _end_lines = [
+        "✦ SELAMAT! ✦",
+        "ANDA TELAH MENYELESAIKAN PETUALANGAN",
+        "S E S T R I N A",
+        "THE LOST REMEDY",
+        "",
+        (credits_cached_ending == "human") ? "✦ ENDING TERCAPAI: TETAP MANUSIA (THE PURE REMEDY) ✦" : "🩸 ENDING TERCAPAI: THE CRIMSON PACT 🩸",
+        "",
+        "\"Kekuatan cinta seorang kakak sanggup menembus takdir terkelam.\"",
+        "",
+        "========================================",
+        "KREDIT PENGEMBANGAN",
+        "========================================",
+        "",
+        "SUTRADARA & PRODUSER PROYEK",
+        "Luqman / Hnzsama",
+        "",
+        "DESAIN CERITA & SKENARIO",
+        "The Sestrina Chronicles",
+        "",
+        "SISTEM ARPG & GAMEPLAY",
+        "Antigravity GameMaker Engine",
+        "Kombo Pedang 3-Hit, Parry & Dodge Roll",
+        "Sistem Sihir Elemen Api & Es",
+        "Sistem Waktu Day/Night & Kondisi Adik",
+        "",
+        "DESAIN GRAFIS & PIXEL ART",
+        "Diorama Kamar: Medieval Blacksmith Studio",
+        "Arsitektur Kota: Fantasy RPG Town Tileset Collection",
+        "Desain Karakter Heroine & Sestrina 2D Visual",
+        "Monster & Boss Kuil Purba Atlas",
+        "",
+        "AUDIO & DESAIN SUARA",
+        "Category-Centric Modular Soundworks",
+        "",
+        "TERIMA KASIH KHUSUS",
+        "Untuk Anda yang telah berjuang dan menyelamatkan Sestrina!",
+        "",
+        "========================================",
+        "✧ TAMAT ~ THE END ✧",
+        "========================================"
+    ];
+
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+
+    var _cy = ending_credits_y;
+    for (var _ei = 0; _ei < array_length(_end_lines); _ei++) {
+        var _txt = _end_lines[_ei];
+        if (_txt != "") {
+            if (string_pos("SELAMAT", _txt) > 0 || string_pos("S E S T R I N A", _txt) > 0 || string_pos("TAMAT", _txt) > 0) {
+                draw_set_color(make_color_rgb(255, 235, 140));
+                draw_text_transformed(_gw / 2, _cy, _txt, 1.45, 1.45, 0);
+            } else if (string_pos("ENDING", _txt) > 0) {
+                draw_set_color((credits_cached_ending == "human") ? make_color_rgb(130, 215, 255) : make_color_rgb(255, 120, 140));
+                draw_text_transformed(_gw / 2, _cy, _txt, 1.15, 1.15, 0);
+            } else if (string_pos("===", _txt) > 0 || string_pos("KREDIT", _txt) > 0 || string_pos("SUTRADARA", _txt) > 0) {
+                draw_set_color(make_color_rgb(255, 215, 90));
+                draw_text_transformed(_gw / 2, _cy, _txt, 1.05, 1.05, 0);
+            } else {
+                draw_set_color(make_color_rgb(220, 230, 250));
+                draw_text(_gw / 2, _cy, _txt);
+            }
+        }
+        _cy += 36;
+    }
+
+    // Tombol Kembali ke Menu Utama
+    draw_set_alpha(0.92);
+    draw_set_color(make_color_rgb(18, 24, 45));
+    draw_rectangle(0, _gh - 55, _gw, _gh, false);
+    draw_set_color(make_color_rgb(255, 215, 90));
+    draw_line_width(0, _gh - 55, _gw, _gh - 55, 2);
+    draw_set_color(make_color_rgb(255, 235, 140));
+    draw_text(_gw / 2, _gh - 28, "▶ [Tekan SPACE / ENTER / ESC untuk Kembali ke Menu Utama] ◀");
+
+    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("Z"))) {
+        showing_credits = false;
+        room_goto(rm_main_menu);
     }
 }
 

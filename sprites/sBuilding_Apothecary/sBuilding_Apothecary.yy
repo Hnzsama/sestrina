@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sBuilding_Apothecary",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":230,
   "bbox_left":0,
-  "bbox_right":127,
+  "bbox_right":197,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":231,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"09ae03eb-4353-421c-a3f8-253fd0f25bbf","blendMode":0,"displayName":"default","isLocked":false,"name":"09ae03eb-4353-421c-a3f8-253fd0f25bbf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":198,
 }

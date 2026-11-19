@@ -35,24 +35,6 @@ if (_in_combat_room) {
     draw_set_valign(fa_top);
 }
 
-// 4. Prompt Interaksi [Z]
-if (is_player_near) {
-    var _py = y - 48 + sin(prompt_anim) * 3;
-    draw_set_alpha(0.92);
-    draw_set_color(make_color_rgb(20, 25, 38));
-    draw_roundrect_ext(x - 48, _py - 10, x + 48, _py + 8, 8, 8, false);
-    draw_set_color(make_color_rgb(180, 140, 70));
-    draw_roundrect_ext(x - 48, _py - 10, x + 48, _py + 8, 8, 8, true);
-    
-    draw_set_alpha(1.0);
-    draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_text(x, _py - 1, "[Z] Bicara dgn Goran");
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-}
-
 draw_set_color(c_white);
 draw_set_alpha(1.0);
 

@@ -171,7 +171,7 @@ scr_draw_street_lamp(1690, 614);
 // 5. DISTRIK PENGRAJIN & BENGKEL TEMPA GORAN (North-West Artisan Quarter)
 // =========================================================================
 // Toko & Bengkel Tempa Goran (Pintu presisi di x: 520, y: 380)
-draw_sprite_ext(sBuilding_Blacksmith, 0, 456, 220, 1.0, 1.0, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_Blacksmith, 0, 440, 200, 0.85, 0.85, 0, c_white, 1.0);
 
 // Halaman Khusus Bengkel Tempa Goran (Paved Forge Courtyard)
 scr_draw_cobblestone_road(310, 270, 456, 380, true, false, true, false);
@@ -186,18 +186,23 @@ for (var _fy = 270; _fy < 360; _fy += 32) {
     draw_sprite_part(sProp_Fences, 0, 0, 0, 32, 32, 304, _fy);
 }
 
-// Rumah Tukang Kayu / Carpenter di Sisi Paling Barat (x: 80) Berjarak Lega & Rapi
-draw_sprite_ext(sBuilding_House_Amber, 0, 80, 160, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 80, 440, 1.0, 1.0, 0, c_white, 1.0);
+// Rumah Tukang Kayu / Carpenter di Sisi Paling Barat Berjarak Lega & Rapi
+draw_sprite_ext(sBuilding_House_Amber, 0, 70, 140, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 70, 400, 0.85, 0.85, 0, c_white, 1.0);
 scr_draw_tree_with_shadow(100, 320); // Pohon pelindung di antara 2 rumah
 
 
 // =========================================================================
 // 6. DISTRIK ALKEMIS & APOTEK ELYSIA (North-East Scholar Quarter)
 // =========================================================================
+// Toko Roti / Bakery di Sisi Kiri Apotek Elysia
+draw_sprite_ext(sBuilding_Bakery, 0, 1740, 195, 0.82, 0.82, 0, c_white, 1.0);
+
 // Apotek Herbal & Lab Alkimia Elysia (Pintu presisi di x: 2040, y: 380)
-// Posisi di x: 1976, y: 220 -> RAPI, SEJAJAR DENGAN GORAN, TANPA OVERLAP!
-draw_sprite_ext(sBuilding_Apothecary, 0, 1976, 220, 1.0, 1.0, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_Apothecary, 0, 1960, 200, 0.85, 0.85, 0, c_white, 1.0);
+
+// Kincir Angin Batu di Area Perbukitan Timur Laut
+draw_sprite_ext(sBuilding_Windmill, 0, 2220, 110, 0.85, 0.85, 0, c_white, 1.0);
 
 // Teras Samping Lab Alkimia Luar Elysia (x: 2104..2220, y: 280..380)
 scr_draw_cobblestone_road(2104, 280, 2220, 380, true, false, false, true);
@@ -206,38 +211,36 @@ draw_sprite_part(sProp_OutdoorDecor, 0, 0, 64, 32, 32, 2130, 348);              
 
 
 // =========================================================================
-// 7. PEMUKIMAN WARGA UTARA & TENGGARA (100% BEBAS TABRAKAN RUMAH!)
+// 7. PEMUKIMAN WARGA UTARA & TENGGARA (Assets dari Fantasy RPG Town Collection)
 // =========================================================================
 
-// --- A. Rumah Deret Utara-Barat (x: 700..1170, y: 140) ---
-draw_sprite_ext(sBuilding_House_Red, 0, 700, 140, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Amber, 0, 870, 140, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 1040, 140, 1.0, 1.0, 0, c_white, 1.0);
+// --- A. Rumah Deret Utara-Barat (x: 690..1180, y: 130) ---
+draw_sprite_ext(sBuilding_House_Red, 0, 690, 130, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Amber, 0, 860, 130, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 1030, 130, 0.82, 0.82, 0, c_white, 1.0);
 
 // Jalan Setapak Rumah ke Trotoar Avenue (y: 300..380)
 scr_draw_cobblestone_road(748, 300, 780, 380, false, false, true, true);
 scr_draw_cobblestone_road(918, 300, 950, 380, false, false, true, true);
 scr_draw_cobblestone_road(1088, 300, 1120, 380, false, false, true, true);
 
-// --- B. Rumah Deret Utara-Timur (x: 1440..1760, y: 140) ---
-// Hanya 2 rumah di utara taman sehingga memberi jarak 216px ke Apotek Elysia! (TIDAK AKAN PERNAH MENABRAK!)
-draw_sprite_ext(sBuilding_House_Amber, 0, 1440, 140, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 1620, 140, 1.0, 1.0, 0, c_white, 1.0);
+// --- B. Rumah Deret Utara-Timur (x: 1440..1760, y: 130) ---
+draw_sprite_ext(sBuilding_House_Amber, 0, 1440, 130, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 1610, 130, 0.82, 0.82, 0, c_white, 1.0);
 
-// Pohon rindang pelindung alami di antara pemukiman dan Apotek Elysia
+// Pohon rindang pelindung alami di antara pemukiman dan Bakery
 scr_draw_tree_with_shadow(1820, 180);
-scr_draw_tree_with_shadow(1890, 220);
 
 // Jalan Setapak Rumah ke Trotoar Avenue (y: 300..380)
 scr_draw_cobblestone_road(1488, 300, 1520, 380, false, false, true, true);
 scr_draw_cobblestone_road(1668, 300, 1700, 380, false, false, true, true);
 
 // --- C. Kompleks Perumahan Tenggara (Baris Atas, Jalan Tengah, Baris Bawah) ---
-// 1. Baris Rumah Atas (y: 750, berada DI ATAS jalan y: 920..980!)
-draw_sprite_ext(sBuilding_House_Blue, 0, 1660, 750, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Amber, 0, 1820, 750, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Red, 0, 1980, 750, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 2140, 750, 1.0, 1.0, 0, c_white, 1.0);
+// 1. Baris Rumah Atas (y: 730)
+draw_sprite_ext(sBuilding_House_Blue, 0, 1660, 730, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Amber, 0, 1820, 730, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Red, 0, 1980, 730, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 2140, 730, 0.80, 0.80, 0, c_white, 1.0);
 
 // Jalan Setapak Rumah Baris Atas ke Jalan Pemukiman
 scr_draw_cobblestone_road(1710, 890, 1734, 920, false, false, true, true);
@@ -245,11 +248,11 @@ scr_draw_cobblestone_road(1870, 890, 1894, 920, false, false, true, true);
 scr_draw_cobblestone_road(2030, 890, 2054, 920, false, false, true, true);
 scr_draw_cobblestone_road(2190, 890, 2214, 920, false, false, true, true);
 
-// 2. Baris Rumah Bawah (y: 1010, berada DI BAWAH jalan y: 920..980!)
-draw_sprite_ext(sBuilding_House_Amber, 0, 1660, 1010, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Red, 0, 1820, 1010, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 1980, 1010, 1.0, 1.0, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Amber, 0, 2140, 1010, 1.0, 1.0, 0, c_white, 1.0);
+// 2. Baris Rumah Bawah (y: 990)
+draw_sprite_ext(sBuilding_House_Amber, 0, 1660, 990, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Red, 0, 1820, 990, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 1980, 990, 0.80, 0.80, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Amber, 0, 2140, 990, 0.80, 0.80, 0, c_white, 1.0);
 
 // Jalan Setapak Rumah Baris Bawah dari Jalan Pemukiman
 scr_draw_cobblestone_road(1710, 980, 1734, 1010, false, false, true, true);
@@ -257,27 +260,15 @@ scr_draw_cobblestone_road(1870, 980, 1894, 1010, false, false, true, true);
 scr_draw_cobblestone_road(2030, 980, 2054, 1010, false, false, true, true);
 scr_draw_cobblestone_road(2190, 980, 2214, 1010, false, false, true, true);
 
-// Sumur Batu Desa di Taman Samping Jalan Pemukiman (x: 1470, y: 950 - Bebas Dari Badan Jalan!)
-draw_set_color(make_color_rgb(195, 200, 208));
-draw_circle(1470, 950, 26, false);
-draw_set_color(make_color_rgb(55, 60, 68));
-draw_circle(1470, 950, 28, true);
-draw_set_color(make_color_rgb(222, 226, 235));
-draw_circle(1470, 950, 26, true);
-draw_set_color(make_color_rgb(85, 88, 96));
-draw_circle(1470, 950, 18, false);
-draw_set_color(make_color_rgb(45, 75, 115));
-draw_circle(1470, 950, 13, false);
-draw_set_color(make_color_rgb(115, 75, 45));
-draw_line_width(1460, 945, 1480, 945, 3); // Tiang kerekan timba air
+// Sumur Batu Desa Kuno di Taman Samping Jalan Pemukiman (Aset Asli Stone Water Well)
+draw_sprite_ext(sBuilding_WaterWell, 0, 1445, 905, 0.85, 0.85, 0, c_white, 1.0);
 
 
 // =========================================================================
 // 8. KEDAI TAVERN & TERAS KAFE LUAR RUANGAN (Outdoor Tavern Terrace)
 // =========================================================================
-// Bangunan Penginapan / Kedai Tavern di Sisi Barat
-draw_sprite_ext(sBuilding_House_Amber, 0, 180, 930, 1.25, 1.25, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Red, 0, 180, 1130, 1.15, 1.15, 0, c_white, 1.0);
+// Bangunan Penginapan / Kedai Tavern Baru (Aset Asli Inn & Tavern Building)
+draw_sprite_ext(sBuilding_Tavern, 0, 130, 910, 0.85, 0.85, 0, c_white, 1.0);
 
 // Teras Kafe Paving Batu Rapi (x: 340..560, y: 960..1060)
 scr_draw_curb_box(340, 960, 560, 1060);
@@ -311,20 +302,21 @@ for (var _my = 552; _my < 658; _my += 16) {
     draw_line(582, _my, 1058, _my);
 }
 
-// 3 Kios Pasar Buah & Sayur
-draw_sprite(sProp_Market_Stall_Fruit, 0, 620, 565);
-draw_sprite(sProp_Market_Stall_Fruit, 0, 760, 565);
-draw_sprite(sProp_Market_Stall_Fruit, 0, 900, 565);
+// 4 Kios Pasar Bazaar Koleksi Pixel Art Fantasi
+draw_sprite_ext(sBuilding_MarketStall, 0, 620, 545, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_MarketStall, 0, 730, 545, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_MarketStall, 0, 840, 545, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_MarketStall, 0, 950, 545, 0.85, 0.85, 0, c_white, 1.0);
 
 // Papan Nama BAZAAR Elegan Beratap Emas
 draw_set_color(make_color_rgb(32, 34, 40));
-draw_roundrect_ext(770, 530, 870, 550, 4, 4, false);
+draw_roundrect_ext(770, 520, 870, 540, 4, 4, false);
 draw_set_color(make_color_rgb(255, 215, 80));
-draw_roundrect_ext(770, 530, 870, 550, 4, 4, true);
+draw_roundrect_ext(770, 520, 870, 540, 4, 4, true);
 draw_set_font(-1);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(820, 540, "BAZAAR");
+draw_text(820, 530, "BAZAAR");
 
 // Peti & Karung Barang Dagangan
 draw_sprite_part(sProp_OutdoorDecor, 0, 0, 0, 32, 32, 600, 615);
@@ -415,6 +407,12 @@ scr_draw_street_lamp(430, 445);
 scr_draw_street_lamp(570, 445);
 scr_draw_street_lamp(1430, 445);
 scr_draw_street_lamp(2115, 445);
+
+// Tiang Penunjuk Arah & Lampu Jalan Vintage
+draw_sprite_ext(sBuilding_LampSignpost, 0, _cx - 68, 660, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_LampSignpost, 0, _cx + 56, 660, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_LampSignpost, 0, 545, 680, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_LampSignpost, 0, 2025, 680, 0.85, 0.85, 0, c_white, 1.0);
 
 
 // =========================================================================

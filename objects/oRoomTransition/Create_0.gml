@@ -11,6 +11,11 @@ banner_timer = 140;
 
 depth = -10000;
 
+// Ending & Staff Credits State
+showing_credits = false;
+ending_credits_y = 720;
+credits_cached_ending = "";
+
 // Data Peta Distrik Kota & Wilayah Kerajaan (Reference: map.png & choosing are.png)
 map_selected_node = 0;
 map_nodes = [

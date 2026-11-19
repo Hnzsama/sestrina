@@ -123,6 +123,70 @@ if (!variable_global_exists("game_initialized")) {
     // Status Lingkungan & Simpanan Objek
     global.opened_chests = [];
     global.catacombs_gate_opened = false;
+    
+    // Pengaturan Game (Audio BGM/SFX & Tampilan Layar)
+    global.bgm_volume = 1.0;
+    global.sfx_volume = 1.0;
+    global.is_fullscreen = false;
+}
+
+/// @function scr_start_new_game()
+/// @description Mereset seluruh variabel permainan dan memulai petualangan baru di Kamar Sestrina
+function scr_start_new_game() {
+    global.quest_stage = 0;
+    global.quest_title = "Pencarian The Lost Remedy";
+    global.quest_desc = "Periksa kondisi Sestrina di ranjang (Overclock Mana Leak)";
+    global.day_count = 1;
+    global.time_of_day = "Daytime";
+    global.sister_condition = 100;
+    
+    global.player_level = 1;
+    global.player_exp = 0;
+    global.player_max_exp = 60;
+    global.stat_points = 0;
+    global.stat_vit = 5;
+    global.stat_str = 5;
+    global.stat_int = 5;
+    global.stat_agi = 5;
+    scr_recalculate_stats();
+    
+    global.player_hp = global.player_max_hp;
+    global.player_mp = global.player_max_mp;
+    global.player_stamina = global.player_max_stamina;
+    global.player_potions = 1;
+    global.player_has_sword = false;
+    global.player_has_remedy = false;
+    global.gold = 50;
+    global.weapon_tier = 0;
+    global.weapon_name = "Tangan Kosong";
+    
+    global.mat_slime_jelly = 0;
+    global.mat_bone_shard = 0;
+    global.mat_scrap_iron = 0;
+    global.mat_iron_ore = 0;
+    global.mat_magic_crystal = 0;
+    
+    global.spell_unlocked_fireball = false;
+    global.spell_unlocked_frost = false;
+    global.spell_selected = 0;
+    
+    global.has_catacomb_key = false;
+    global.has_boss_key = false;
+    global.party_goran = false;
+    global.demon_unsealed = false;
+    global.game_ending = "";
+    global.spawn_x = -1;
+    global.spawn_y = -1;
+    global.dialogue_active = false;
+    global.shop_menu_open = "";
+    global.stat_menu_open = false;
+    global.save_menu_open = false;
+    global.map_menu_open = false;
+    global.leave_confirm_active = false;
+    global.opened_chests = [];
+    
+    // Pindah ke Kamar Sestrina
+    room_goto(Room1);
 }
 
 /// @function scr_set_quest(stage, title, desc)

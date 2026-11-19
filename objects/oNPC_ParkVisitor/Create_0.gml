@@ -19,6 +19,10 @@ if (!variable_instance_exists(id, "npc_role")) {
         npc_role = "cafe_patron";
     } else if (x > 2200) {
         npc_role = "fisherman";
+    } else if (x >= 1280 && x <= 1400 && y >= 650 && y <= 800) {
+        npc_role = "townsfolk";
+    } else if (x >= 1420 && x <= 1650 && y >= 650 && y <= 800) {
+        npc_role = "traveler";
     } else {
         npc_role = "elder";
     }
@@ -26,6 +30,34 @@ if (!variable_instance_exists(id, "npc_role")) {
 
 // Konfigurasi Spesifik Tiap Peran Warga
 switch (npc_role) {
+    case "townsfolk":
+        npc_name = "Claire Warga Kota";
+        prompt_text = "[Z] Bicara dgn Claire";
+        sprite_index = sNPC_Alden;
+        image_speed = 0.05;
+        image_xscale = 1.2;
+        image_yscale = 1.2;
+        interact_action = function() {
+            var _d = dialogue_create();
+            _d.add("Claire", "Altdorf hari ini cerah sekali! Semoga usahamu mencari obat untuk adikmu membuahkan hasil, ksatria muda.", "npc", "protagonist", "left", "happy");
+            _d.start();
+        };
+        break;
+
+    case "traveler":
+        npc_name = "Leo si Pengelana";
+        prompt_text = "[Z] Bicara dgn Leo";
+        sprite_index = sNPC_Goran;
+        image_speed = 0.05;
+        image_xscale = 1.2;
+        image_yscale = 1.2;
+        interact_action = function() {
+            var _d = dialogue_create();
+            _d.add("Leo", "Konon di dalam katakombe bawah tanah tersimpan peninggalan kuil purba. Hati-hati dengan monster batu penjaga di sana!", "npc", "protagonist", "left", "exclamation");
+            _d.start();
+        };
+        break;
+
     case "merchant":
         npc_name = "Marcus Pedagang Bahan & Mineral";
         prompt_text = "[Z] Kios Bahan & Mineral";
@@ -128,3 +160,16 @@ switch (npc_role) {
         };
         break;
 }
+
+// Parameter AI Mondar-mandir (Wandering System)
+home_x = x;
+home_y = y;
+wander_target_x = x;
+wander_target_y = y;
+wander_state = "idle";
+wander_timer = irandom_range(60, 180);
+wander_radius = (npc_role == "merchant" || npc_role == "elder") ? 40 : 130;
+wander_speed = 0.85;
+base_scale = abs(image_xscale);
+is_wandering = true;
+

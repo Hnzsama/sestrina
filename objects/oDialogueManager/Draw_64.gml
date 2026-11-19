@@ -18,8 +18,14 @@ var _line = _lines[current_line_index];
 
 // ==========================================
 // 1. Helper Render Full-Height Standing 2D Anime Character
+// Sesuai Permintaan User: Hanya Karakter Penting (Kakak / Protagonist & Adik / Sestrina)
+// NPC (Goran, Elysia, Alden, Warga Kota) TIDAK USAH muncul portrait-nya!
 // ==========================================
 var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh, _line_data = noone) {
+    if (_type != "protagonist" && _type != "sestrina") {
+        return; // Abaikan semua NPC - hanya Kakak & Adik yang ditampilkan
+    }
+
     var _base_y = _gh;
     var _sc = _is_active ? 1.0 : 0.95;
     var _cy = _base_y - 20;
@@ -372,10 +378,13 @@ var _draw_emotion_bubble = function(_bx, _by, _emote_type, _scale, _timer) {
 };
 
 if (variable_struct_exists(_line, "emote") && _line.emote != "") {
-    if (_line.side_active == "left") {
-        _draw_emotion_bubble(210 + 50, 75, _line.emote, emote_scale, emote_timer);
-    } else {
-        _draw_emotion_bubble(_gui_w - 210 - 50, 75, _line.emote, emote_scale, emote_timer);
+    var _active_port = (_line.side_active == "left") ? _line.left_portrait : _line.right_portrait;
+    if (_active_port == "protagonist" || _active_port == "sestrina") {
+        if (_line.side_active == "left") {
+            _draw_emotion_bubble(210 + 50, 75, _line.emote, emote_scale, emote_timer);
+        } else {
+            _draw_emotion_bubble(_gui_w - 210 - 50, 75, _line.emote, emote_scale, emote_timer);
+        }
     }
 }
 

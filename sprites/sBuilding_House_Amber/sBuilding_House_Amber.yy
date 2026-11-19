@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sBuilding_House_Amber",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":254,
   "bbox_left":0,
-  "bbox_right":127,
+  "bbox_right":178,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":255,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a80f2adf-9bef-4174-a948-75dd30f89b83","blendMode":0,"displayName":"default","isLocked":false,"name":"a80f2adf-9bef-4174-a948-75dd30f89b83","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":179,
 }

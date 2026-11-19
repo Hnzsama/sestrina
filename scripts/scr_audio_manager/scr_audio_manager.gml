@@ -8,7 +8,8 @@ function scr_play_sfx(_snd, _var = 0.08, _gain = 1.0, _prio = 10) {
     if (_var > 0) {
         audio_sound_pitch(_inst, random_range(1.0 - _var, 1.0 + _var));
     }
-    audio_sound_gain(_inst, _gain, 0);
+    var _master_sfx = variable_global_exists("sfx_volume") ? global.sfx_volume : 1.0;
+    audio_sound_gain(_inst, _gain * _master_sfx, 0);
     return _inst;
 }
 
