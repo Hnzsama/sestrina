@@ -52,7 +52,7 @@ if (wander_state == "walk") {
         var _dy = lengthdir_y(wander_speed, _dir);
         
         // Cek tabrakan solid dengan peta kota Altdorf
-        if (!scr_check_collision_point(x + _dx, y + _dy)) {
+        if (!scr_check_collision(x + _dx, y + _dy)) {
             x += _dx;
             y += _dy;
             

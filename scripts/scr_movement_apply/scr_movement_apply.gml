@@ -248,3 +248,9 @@ function scr_player_trigger_perfect_dodge(_hazard_x, _hazard_y) {
         }
     }
 }
+
+/// @function scr_check_collision_point(x, y)
+/// @description Alias global ke scr_check_collision untuk objek NPC dan entitas dinamis
+function scr_check_collision_point(_x, _y) {
+    return scr_check_collision(_x, _y);
+}
