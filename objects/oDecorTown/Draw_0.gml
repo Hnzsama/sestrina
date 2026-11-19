@@ -1,4 +1,4 @@
-/// @description Draw Event oDecorTown (Kota Altdorf - Tata Letak Artistik & Alami Medieval Fantasy)
+/// @description Draw Event oDecorTown (Kota Altdorf - Tata Letak Bersih, Artistik & Rapi Medieval Fantasy)
 
 var _cx = 1280;
 var _cy = 720;
@@ -12,12 +12,12 @@ var _h = room_height;
 draw_set_color(make_color_rgb(112, 168, 62));
 draw_rectangle(0, 0, _w, _h, false);
 
-// Aksen Hamparan Rumput Alami dari Asset Atlas di Area Terbuka
+// Aksen Hamparan Rumput Alami dari Asset Atlas di Area Terbuka Terpilih
 var _lawn_patches = [
     [120, 220], [240, 480], [380, 160], [580, 210], [920, 220], [1120, 210],
-    [1420, 220], [1780, 220], [2180, 210], [2240, 420], [2230, 680], [2220, 890],
+    [2180, 210], [2240, 420], [2230, 680], [2220, 890],
     [150, 720], [220, 840], [280, 1120], [420, 1180], [680, 1180], [920, 1190],
-    [1420, 1180], [1680, 1190], [1920, 1180], [2140, 1190], [1520, 680], [1760, 680]
+    [1420, 1180], [1680, 1190], [1920, 1180], [2140, 1190]
 ];
 
 for (var _lp = 0; _lp < array_length(_lawn_patches); _lp++) {
@@ -40,10 +40,9 @@ var _flora_spots = [
     [_cx - 150, _cy + 130, sTown_FloraClover], [_cx + 135, _cy + 130, sTown_FloraFlowers],
     [_cx - 75, 360, sTown_FloraGrass1], [_cx + 60, 360, sTown_FloraGrass2],
     [_cx - 75, 860, sTown_FloraGrass2], [_cx + 60, 860, sTown_FloraClover],
-    // Pemukiman & Taman
-    [1360, 440, sTown_FloraGrass1], [1930, 440, sTown_FloraFlowers],
-    [1450, 660, sTown_FloraClover], [1820, 660, sTown_FloraLavender],
-    [1620, 740, sTown_FloraGrass2], [2220, 740, sTown_FloraFlowers],
+    // Pemukiman Tenggara & Pekarangan
+    [1450, 750, sTown_FloraClover], [1820, 750, sTown_FloraLavender],
+    [1620, 850, sTown_FloraGrass2], [2220, 850, sTown_FloraFlowers],
     [1420, 960, sTown_FloraGrass1], [1460, 960, sTown_FloraLavender],
     [2270, 960, sTown_FloraClover], [2260, 1080, sTown_FloraGrass2]
 ];
@@ -88,7 +87,7 @@ for (var _pvx2 = _cx + 130; _pvx2 < 2220; _pvx2 += 95) {
 
 // --- C. Jalan Horizontal Utara (Artisan & Scholar Avenue di y: 380..440) ---
 scr_draw_cobblestone_road(440, 380, _cx - 48, 440, true, true, false, false);
-scr_draw_cobblestone_road(_cx + 48, 380, 2120, 440, true, true, false, false);
+scr_draw_cobblestone_road(_cx + 48, 380, 2240, 440, true, true, false, false);
 
 // --- D. Jalan Vertikal Distrik Barat (x: 480..560) ---
 scr_draw_cobblestone_road(480, 440, 560, 560, false, false, true, true);
@@ -155,54 +154,54 @@ draw_sprite_ext(sBuilding_LampSignpost, 0, _cx + 95,  _cy + 70, 0.85, 0.85, 0, c
 
 // =========================================================================
 // 4. TAMAN KOTA & KEBUN BOTANI (Lush Organic Gardens & Serene Ponds)
+// (Tertata Rapi, Asri, Tanpa Pohon Penghalang & Tanpa Grid Kaku)
 // =========================================================================
-// Pagar Semak Rapi di Tepi Atas Kebun
-draw_sprite_ext(sTown_ShrubHedge, 0, 1405, 435, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_ShrubHedge, 0, 1500, 435, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_ShrubHedge, 0, 1730, 435, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_ShrubHedge, 0, 1825, 435, 0.85, 0.85, 0, c_white, 1.0);
 
-// Barisan Pohon Oak Rindang Megah di Atas Taman
-var _tree_x = [1420, 1515, 1610, 1705, 1800, 1865];
-for (var _t = 0; _t < array_length(_tree_x); _t++) {
-    draw_sprite_ext(sTown_TreeOak, 0, _tree_x[_t] - 30, 320, 0.82, 0.82, 0, c_white, 1.0);
-}
+// A. Pagar Semak Rapi Manicured di Tepi Atas Taman (Batas Jalan Raya y=442)
+draw_sprite_ext(sTown_ShrubHedge, 0, 1395, 442, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_ShrubHedge, 0, 1490, 442, 0.85, 0.85, 0, c_white, 1.0);
+// Gerbang masuk taman di tengah terbuka di x: 1590..1675
+draw_sprite_ext(sTown_ShrubHedge, 0, 1695, 442, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_ShrubHedge, 0, 1790, 442, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_ShrubHedge, 0, 1885, 442, 0.85, 0.85, 0, c_white, 1.0);
 
-// Kolam Teratai Atas & Kolam Panjang Bawah dengan Jembatan Kayu
-scr_draw_park_pond(1415, 480, 1495, 560);
-scr_draw_park_pond(1510, 610, 1810, 660);
-scr_draw_wooden_bridge(1640, 604, 1680, 666);
+// B. Jalan Setapak Paving Tengah Taman (Masuk dari Boulevard y=442 ke Alun-Alun y=670)
+scr_draw_cobblestone_road(1600, 442, 1675, 670, false, false, true, true);
 
-// Petak Bunga Bergaya Kebun Raya Tertata Bersih
-scr_draw_flowerbed(1510, 485, 1630, 535, 1); // Lili putih
-scr_draw_flowerbed(1690, 485, 1810, 535, 0); // Marigold emas
-scr_draw_flowerbed(1840, 480, 1910, 580, 2); // Lavender ungu
+// C. Sisi Barat Taman: Kolam Teratai Asri & Tempat Bersantai (x: 1400..1590)
+scr_draw_park_pond(1405, 490, 1585, 610);
+scr_draw_park_bench(1495, 638, 48);
 
-// Jalan Setapak Batu Pijakan Alami (Stepping Stones) di Selasar Taman
-var _park_stepping = [
-    [1510, 565], [1570, 565], [1630, 565], [1690, 565], [1750, 565], [1810, 565],
-    [1650, 585], [1650, 550]
-];
-for (var _st = 0; _st < array_length(_park_stepping); _st++) {
-    draw_sprite_ext(sTown_SteppingStones, 0, _park_stepping[_st][0], _park_stepping[_st][1], 0.85, 0.85, 0, c_white, 0.88);
-}
+// Bunga Segar di Tepi Kolam
+draw_sprite_ext(sTown_FloraClover, 0, 1420, 630, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraFlowers, 0, 1560, 630, 0.85, 0.85, 0, c_white, 1.0);
 
-// Bangku Santai Pengunjung Taman di Tepi Jalan Setapak (Bukan di Dalam Kolam!)
-scr_draw_park_bench(1570, 575, 44);
-scr_draw_park_bench(1750, 575, 44);
+// D. Sisi Timur Taman: Kebun Bunga Kerajaan (x: 1680..1960)
+// Baris 1: Semak Rimbun Berbunga Mekar Indah
+draw_sprite_ext(sTown_ShrubFlowering, 0, 1715, 485, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_ShrubFlowering, 0, 1805, 485, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_ShrubFlowering, 0, 1895, 485, 0.85, 0.85, 0, c_white, 1.0);
 
-// Semak Bunga Mekar & Herbal di Sudut-Sudut Taman
-draw_sprite_ext(sTown_ShrubFlowering, 0, 1420, 585, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_ShrubFlowering, 0, 1845, 595, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_FloraLavender, 0, 1850, 450, 0.9, 0.9, 0, c_white, 1.0);
-draw_sprite_ext(sTown_FloraFlowers, 0, 1715, 450, 0.9, 0.9, 0, c_white, 1.0);
-draw_sprite_ext(sTown_FloraClover, 0, 1530, 450, 0.9, 0.9, 0, c_white, 1.0);
+// Baris 2: Hamparan Bunga Lavender Ungu Wangi
+draw_sprite_ext(sTown_FloraLavender, 0, 1715, 542, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraLavender, 0, 1775, 542, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraLavender, 0, 1835, 542, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraLavender, 0, 1895, 542, 0.9, 0.9, 0, c_white, 1.0);
+
+// Baris 3: Rumpun Bunga Liar Warna-Warni
+draw_sprite_ext(sTown_FloraFlowers, 0, 1720, 592, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraFlowers, 0, 1780, 592, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraFlowers, 0, 1840, 592, 0.9, 0.9, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraFlowers, 0, 1900, 592, 0.9, 0.9, 0, c_white, 1.0);
+
+// Bangku Santai Menikmati Kebun Bunga
+scr_draw_park_bench(1815, 638, 48);
 
 
 // =========================================================================
 // 5. DISTRIK PENGRAJIN & BENGKEL TEMPA GORAN (Artisan Props & Wood Fence)
 // =========================================================================
-draw_sprite_ext(sBuilding_Blacksmith, 0, 440, 200, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_Blacksmith, 0, 440, 180, 0.85, 0.85, 0, c_white, 1.0);
 scr_draw_cobblestone_road(310, 270, 456, 380, true, false, true, false);
 
 // Peralatan Bengkel Tempa Goran
@@ -215,69 +214,60 @@ draw_sprite_ext(sTown_PropBarrelSingle, 0, 420, 335, 0.75, 0.75, 0, c_white, 1.0
 draw_sprite_ext(sTown_PropFenceWood, 0, 305, 270, 0.82, 0.82, 0, c_white, 1.0);
 draw_sprite_ext(sTown_PropFenceWood, 0, 305, 315, 0.82, 0.82, 0, c_white, 1.0);
 
-// Rumah Pengrajin Barat (Carpenter)
+// Rumah Pengrajin Kayu Barat (Carpenter)
 draw_sprite_ext(sBuilding_House_Amber, 0, 70, 140, 0.85, 0.85, 0, c_white, 1.0);
 draw_sprite_ext(sBuilding_House_Blue, 0, 70, 400, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_TreeOak, 0, 80, 280, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_TreeOak, 0, 70, 270, 0.85, 0.85, 0, c_white, 1.0);
 
 
 // =========================================================================
-// 6. DISTRIK ALKEMIS & APOTEK ELYSIA (Apothecary Herbs, Pottery & Bakery)
-// =========================================================================
-draw_sprite_ext(sBuilding_Bakery, 0, 1740, 195, 0.82, 0.82, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_Apothecary, 0, 1960, 200, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_Windmill, 0, 2220, 110, 0.85, 0.85, 0, c_white, 1.0);
-
-// Teras Lab Alkimia Elysia
-scr_draw_cobblestone_road(2104, 280, 2220, 380, true, false, false, true);
-draw_sprite_part_ext(sStation_Alchemy, 0, 0, 0, 64, 64, 2125, 290, 1.0, 1.0, c_white, 1.0);
-
-// Barang-Barang Atlas: Guci Tembikar Herbal, Keranjang Roti & Tanaman Lavender
-draw_sprite_ext(sTown_PropPottery, 0, 2125, 345, 0.85, 0.85, 0, c_white, 1.0);
-draw_sprite_ext(sTown_FloraLavender, 0, 2170, 345, 0.9, 0.9, 0, c_white, 1.0);
-draw_sprite_ext(sTown_PropBreadBasket, 0, 1850, 335, 0.85, 0.85, 0, c_white, 1.0);
-
-
-// =========================================================================
-// 7. PEMUKIMAN WARGA UTARA & TENGGARA (Bersih, Rapi, Alami Tanpa Paving Kaku)
+// 6. DISTRIK UTARA-TIMUR: TOKO ROTI, APOTEK ELYSIA, KINCIR ANGIN & RUMAH
+// (Semua Bangunan Berdiri Tegak, Bersih, Pintu Menghadap Trotoar Bebas Pohon)
 // =========================================================================
 
-// --- A. Rumah Deret Utara-Barat (x: 690..1180, y: 130) ---
-draw_sprite_ext(sBuilding_House_Red, 0, 690, 130, 0.82, 0.82, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Amber, 0, 860, 130, 0.82, 0.82, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 1030, 130, 0.82, 0.82, 0, c_white, 1.0);
+// --- A. Rumah Warga Utara-Timur ---
+draw_sprite_ext(sBuilding_House_Amber, 0, 1400, 135, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 1575, 135, 0.82, 0.82, 0, c_white, 1.0);
 
-// Batu Pijakan Alami (Stepping Stones) Tepat di Depan Pintu
-draw_sprite_ext(sTown_SteppingStones, 0, 750, 335, 0.85, 0.85, 0, c_white, 0.9);
-draw_sprite_ext(sTown_SteppingStones, 0, 920, 335, 0.85, 0.85, 0, c_white, 0.9);
-draw_sprite_ext(sTown_SteppingStones, 0, 1090, 335, 0.85, 0.85, 0, c_white, 0.9);
+// Bunga Segar di Pekarangan Rumah
+draw_sprite_ext(sTown_FloraGrass2, 0, 1435, 350, 0.8, 0.8, 0, c_white, 0.9);
+draw_sprite_ext(sTown_FloraFlowers, 0, 1610, 350, 0.8, 0.8, 0, c_white, 0.9);
+
+// --- B. Toko Roti Wangi (Bakery) ---
+draw_sprite_ext(sBuilding_Bakery, 0, 1765, 165, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sTown_PropBreadBasket, 0, 1860, 345, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_PropBarrelSingle, 0, 1775, 345, 0.75, 0.75, 0, c_white, 1.0);
+
+// --- C. Apotek Ramuan Elysia (Apothecary) ---
+draw_sprite_ext(sBuilding_Apothecary, 0, 1985, 160, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_PropPottery, 0, 2010, 345, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_FloraLavender, 0, 2120, 345, 0.9, 0.9, 0, c_white, 1.0);
+
+// --- D. Kincir Angin Gandum (Windmill) ---
+draw_sprite_ext(sBuilding_Windmill, 0, 2195, 120, 0.85, 0.85, 0, c_white, 1.0);
+draw_sprite_ext(sTown_PropSacks, 0, 2225, 345, 0.78, 0.78, 0, c_white, 1.0);
+
+
+// =========================================================================
+// 7. PEMUKIMAN WARGA UTARA-BARAT & TENGGARA
+// =========================================================================
+
+// --- A. Rumah Deret Utara-Barat (x: 680..1180, y: 140) ---
+draw_sprite_ext(sBuilding_House_Red, 0, 680, 140, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Amber, 0, 860, 140, 0.82, 0.82, 0, c_white, 1.0);
+draw_sprite_ext(sBuilding_House_Blue, 0, 1040, 140, 0.82, 0.82, 0, c_white, 1.0);
 
 // Flora Cantik di Halaman Depan Rumah
-draw_sprite_ext(sTown_FloraGrass1, 0, 715, 345, 0.8, 0.8, 0, c_white, 0.9);
-draw_sprite_ext(sTown_FloraFlowers, 0, 885, 345, 0.8, 0.8, 0, c_white, 0.9);
-draw_sprite_ext(sTown_FloraClover, 0, 1055, 345, 0.8, 0.8, 0, c_white, 0.9);
+draw_sprite_ext(sTown_FloraGrass1, 0, 715, 350, 0.8, 0.8, 0, c_white, 0.9);
+draw_sprite_ext(sTown_FloraFlowers, 0, 895, 350, 0.8, 0.8, 0, c_white, 0.9);
+draw_sprite_ext(sTown_FloraClover, 0, 1075, 350, 0.8, 0.8, 0, c_white, 0.9);
 
-// --- B. Rumah Deret Utara-Timur (x: 1440..1760, y: 130) ---
-draw_sprite_ext(sBuilding_House_Amber, 0, 1440, 130, 0.82, 0.82, 0, c_white, 1.0);
-draw_sprite_ext(sBuilding_House_Blue, 0, 1610, 130, 0.82, 0.82, 0, c_white, 1.0);
-
-draw_sprite_ext(sTown_SteppingStones, 0, 1500, 335, 0.85, 0.85, 0, c_white, 0.9);
-draw_sprite_ext(sTown_SteppingStones, 0, 1670, 335, 0.85, 0.85, 0, c_white, 0.9);
-draw_sprite_ext(sTown_FloraGrass2, 0, 1465, 345, 0.8, 0.8, 0, c_white, 0.9);
-draw_sprite_ext(sTown_FloraFlowers, 0, 1635, 345, 0.8, 0.8, 0, c_white, 0.9);
-draw_sprite_ext(sTown_TreeOak, 0, 1800, 140, 0.85, 0.85, 0, c_white, 1.0);
-
-// --- C. Kompleks Perumahan Tenggara ---
+// --- B. Kompleks Perumahan Tenggara ---
 // Baris Rumah Atas (y: 730)
 draw_sprite_ext(sBuilding_House_Blue, 0, 1660, 730, 0.80, 0.80, 0, c_white, 1.0);
 draw_sprite_ext(sBuilding_House_Amber, 0, 1820, 730, 0.80, 0.80, 0, c_white, 1.0);
 draw_sprite_ext(sBuilding_House_Red, 0, 1980, 730, 0.80, 0.80, 0, c_white, 1.0);
 draw_sprite_ext(sBuilding_House_Blue, 0, 2140, 730, 0.80, 0.80, 0, c_white, 1.0);
-
-draw_sprite_ext(sTown_SteppingStones, 0, 1715, 890, 0.8, 0.8, 0, c_white, 0.85);
-draw_sprite_ext(sTown_SteppingStones, 0, 1875, 890, 0.8, 0.8, 0, c_white, 0.85);
-draw_sprite_ext(sTown_SteppingStones, 0, 2035, 890, 0.8, 0.8, 0, c_white, 0.85);
-draw_sprite_ext(sTown_SteppingStones, 0, 2195, 890, 0.8, 0.8, 0, c_white, 0.85);
 
 // Baris Rumah Bawah (y: 990)
 draw_sprite_ext(sBuilding_House_Amber, 0, 1660, 990, 0.80, 0.80, 0, c_white, 1.0);
@@ -430,12 +420,13 @@ draw_sprite_ext(sBuilding_LampSignpost, 0, 2110, 440, 0.85, 0.85, 0, c_white, 1.
 
 
 // =========================================================================
-// 13. PEPOHONAN LEBAT & PERIMETER HIASAN ALAMI (Grand Oak & Pine Atlas)
+// 13. PEPOHONAN LEBAT DI PERIMETER KOTA (Grand Oak & Pine Atlas di Batas Luar)
 // =========================================================================
-draw_sprite_ext(sTown_TreeOak, 0, 2240, 240, 0.88, 0.88, 0, c_white, 1.0);
-draw_sprite_ext(sTown_TreePine, 0, 2250, 500, 0.88, 0.88, 0, c_white, 1.0);
-draw_sprite_ext(sTown_TreeOak, 0, 2240, 760, 0.88, 0.88, 0, c_white, 1.0);
-draw_sprite_ext(sTown_TreePine, 0, 2250, 1160, 0.88, 0.88, 0, c_white, 1.0);
+// Pohon Rindang di Batas Timur Dekat Tanggul Sungai
+draw_sprite_ext(sTown_TreeOak, 0, 2260, 250, 0.88, 0.88, 0, c_white, 1.0);
+draw_sprite_ext(sTown_TreePine, 0, 2260, 500, 0.88, 0.88, 0, c_white, 1.0);
+draw_sprite_ext(sTown_TreeOak, 0, 2260, 750, 0.88, 0.88, 0, c_white, 1.0);
+draw_sprite_ext(sTown_TreePine, 0, 2260, 1150, 0.88, 0.88, 0, c_white, 1.0);
 
 draw_set_alpha(1.0);
 draw_set_color(c_white);
