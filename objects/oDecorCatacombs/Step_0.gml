@@ -15,9 +15,11 @@ if (_spikes_active && instance_exists(oPlayer)) {
     
     // Cek apakah pemain menginjak area jebakan duri
     if (_px >= spike_x1 && _px <= spike_x2 && _py >= spike_y1 && _py <= spike_y2) {
-        // JIKA PEMAIN MELAKUKAN DODGE ROLL -> KEBAL (i-frames traversal!)
+        // JIKA PEMAIN MELAKUKAN DODGE ROLL -> KEBAL (i-frames traversal & Perfect Dodge!)
         if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
-            // Berhasil menghindar dengan Dodge Roll!
+            with (oPlayer) {
+                scr_player_trigger_perfect_dodge(x, y);
+            }
         } else if (oPlayer.invincible_timer <= 0) {
             // Terkena tusukan duri lantai
             global.player_hp = max(0, global.player_hp - 14);

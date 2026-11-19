@@ -36,6 +36,26 @@ if (global.player_hp <= 0) {
     exit;
 }
 
+// 0.5. Micro Hitstop saat Perfect Dodge Terjadi (Sensasi Freeze-Frame Bayonetta/Zelda)
+if (hitstop_timer > 0) {
+    hitstop_timer--;
+    if (perfect_dodge_ring_alpha > 0) {
+        perfect_dodge_ring_rad += 4.5;
+        perfect_dodge_ring_alpha -= 0.08;
+    }
+    if (perfect_dodge_text_alpha > 0) {
+        perfect_dodge_text_y -= 0.9;
+        perfect_dodge_text_alpha -= 0.035;
+    }
+    for (var _sp = array_length(perfect_sparks) - 1; _sp >= 0; _sp--) {
+        perfect_sparks[_sp].xx += perfect_sparks[_sp].vx;
+        perfect_sparks[_sp].yy += perfect_sparks[_sp].vy;
+        perfect_sparks[_sp].alpha -= 0.07;
+        if (perfect_sparks[_sp].alpha <= 0) array_delete(perfect_sparks, _sp, 1);
+    }
+    exit;
+}
+
 // Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save/map/konfirmasi
 if ((variable_global_exists("dialogue_active") && global.dialogue_active) || 
     (variable_global_exists("main_menu_open") && global.main_menu_open) ||
@@ -58,8 +78,32 @@ if (global.player_mp < global.player_max_mp) {
     global.player_mp = min(global.player_max_mp, global.player_mp + 0.12 + (global.stat_int * 0.03));
 }
 
-// 2. Pengurangan Timer Status
+// 2. Pengurangan Timer Status & Efek Perfect Dodge
 if (invincible_timer > 0) invincible_timer--;
+if (perfect_dodge_cooldown > 0) perfect_dodge_cooldown--;
+if (perfect_dodge_timer > 0) perfect_dodge_timer--;
+if (perfect_dodge_flash > 0) perfect_dodge_flash--;
+if (counter_boost_timer > 0) {
+    counter_boost_timer--;
+    if (counter_boost_timer <= 0) counter_boost_active = false;
+}
+if (perfect_dodge_ring_alpha > 0) {
+    perfect_dodge_ring_rad += 3.8;
+    perfect_dodge_ring_alpha -= 0.055;
+}
+if (perfect_dodge_text_alpha > 0) {
+    perfect_dodge_text_y -= 0.85;
+    perfect_dodge_text_alpha -= 0.035;
+}
+for (var _sp = array_length(perfect_sparks) - 1; _sp >= 0; _sp--) {
+    perfect_sparks[_sp].xx += perfect_sparks[_sp].vx;
+    perfect_sparks[_sp].yy += perfect_sparks[_sp].vy;
+    perfect_sparks[_sp].vx *= 0.94;
+    perfect_sparks[_sp].vy *= 0.94;
+    perfect_sparks[_sp].alpha -= 0.05;
+    if (perfect_sparks[_sp].alpha <= 0) array_delete(perfect_sparks, _sp, 1);
+}
+
 if (attack_cooldown > 0) attack_cooldown--;
 if (spell_cooldown > 0) spell_cooldown--;
 if (is_attacking > 0) is_attacking--;
@@ -97,21 +141,23 @@ if (is_rolling) {
         image_xscale = -1.0; // Hadap kanan (mirror horizontal)
     }
     
-    // Sinkronisasi 6 frame animasi guling sempurna dengan durasi roll (16 step)
-    var _prog_roll = 1.0 - (roll_timer / 16);
+    // Sinkronisasi 6 frame animasi guling sempurna dengan durasi roll (18 step)
+    var _prog_roll = 1.0 - (roll_timer / 18);
     image_index = clamp(floor(_prog_roll * 6), 0, 5);
     image_speed = 0;
     
-    // Spawn jejak bayangan (ghost trail)
+    // Spawn jejak bayangan (ghost trail) dengan warna emas saat perfect dodge
     if (roll_timer mod 2 == 0) {
+        var _gcol = (perfect_dodge_timer > 0) ? make_color_rgb(255, 225, 80) : make_color_rgb(130, 220, 255);
         array_push(ghost_trail, {
             xx: x,
             yy: y,
-            alpha: 0.75,
+            alpha: 0.85,
             spr: sprite_index,
             sub: image_index,
             xsc: image_xscale,
-            ysc: image_yscale
+            ysc: image_yscale,
+            col: _gcol
         });
     }
     
@@ -203,13 +249,34 @@ if (is_rolling) {
         }
     }
 } else {
-    // 4. Pemicu Dodge Roll [Shift]
+    // 4. Pemicu Dodge Roll [Shift] (No Hitbox & Mekanik Perfect Dodge)
     if (keyActive && global.player_stamina >= 25 && is_attacking <= 0) {
         global.player_stamina -= 25;
         is_rolling = true;
-        roll_timer = 16;
-        invincible_timer = 16;
+        roll_timer = 18;
+        invincible_timer = 24; // Penuh kebal hitbox selama guling + 6 frame buffer
         roll_dir = inputMagnitude ? inputDirection : ((facingDir == "up") ? 90 : ((facingDir == "side") ? ((image_xscale >= 0) ? 180 : 0) : 270));
+        
+        // Cek apakah pemain melakukan dodge saat berada dalam jarak bahaya musuh (Close-Call Evade)
+        var _n_enemy = instance_nearest(x, y, oEnemyParent);
+        var _n_boss  = instance_nearest(x, y, oBossGolem);
+        var _danger_found = false;
+        var _hx = x;
+        var _hy = y;
+        
+        if (_n_enemy != noone && distance_to_object(_n_enemy) <= 45) {
+            _danger_found = true;
+            _hx = _n_enemy.x;
+            _hy = _n_enemy.y;
+        } else if (_n_boss != noone && distance_to_object(_n_boss) <= 75) {
+            _danger_found = true;
+            _hx = _n_boss.x;
+            _hy = _n_boss.y;
+        }
+        
+        if (_danger_found) {
+            scr_player_trigger_perfect_dodge(_hx, _hy);
+        }
     }
     
     // 4.5. Pemicu Minum Ramuan Pemulih [C]
@@ -301,10 +368,20 @@ if (is_rolling) {
         var _slash_x = x + lengthdir_x(_slash_dist, _dir);
         var _slash_y = y + lengthdir_y(_slash_dist, _dir);
         
+        // Bonus Serangan Balasan jika Counter Boost Aktif dari Perfect Dodge
+        var _is_counter = false;
+        if (counter_boost_active) {
+            _dmg = round(_dmg * 1.5); // +50% Bonus Kerusakan Pedang
+            counter_boost_active = false;
+            counter_boost_timer = 0;
+            _is_counter = true;
+        }
+        
         var _inst = instance_create_depth(_slash_x, _slash_y, depth - 10, oPlayerSlash);
         _inst.slash_dir = _dir;
         _inst.combo_index = combo_step;
         _inst.slash_damage = _dmg;
+        _inst.is_counter = _is_counter;
     }
     
     // Perbarui Animasi Serangan Kombo yang Sedang Berjalan

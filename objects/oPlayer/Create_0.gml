@@ -79,13 +79,26 @@ is_casting = 0;
 cast_type = 1;
 is_drinking = 0;
 
-// Sistem Dodge Roll & Invincibility Frames
+// Sistem Dodge Roll & Invincibility Frames (No Hitbox & Perfect Dodge)
 is_rolling = false;
 roll_timer = 0;
 roll_dir = 0;
-roll_speed = 5.6;
+roll_speed = 5.8;
 invincible_timer = 0;
 ghost_trail = [];
+
+// Sistem Mekanik Perfect Dodge & Counter Boost
+perfect_dodge_timer = 0;
+perfect_dodge_cooldown = 0;
+perfect_dodge_flash = 0;
+perfect_dodge_ring_rad = 0;
+perfect_dodge_ring_alpha = 0;
+perfect_dodge_text_alpha = 0;
+perfect_dodge_text_y = 0;
+counter_boost_active = false;
+counter_boost_timer = 0;
+hitstop_timer = 0;
+perfect_sparks = [];
 
 // Sistem 3-Hit Combo Attack
 combo_step = 0;

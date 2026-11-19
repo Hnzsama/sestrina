@@ -14,13 +14,14 @@ if (combo_index == 3) _hit_radius = 68;
 
 var _tier = variable_global_exists("weapon_tier") ? global.weapon_tier : 1;
 var _tier_mult = 1.0 + (_tier >= 3 ? 0.15 : 0.0) + (_tier >= 4 ? 0.15 : 0.0);
+if (is_counter) _tier_mult += 0.25; // Jangkauan tebasan serangan balasan 25% lebih lebar
 _hit_radius = round(_hit_radius * _tier_mult);
 
 // Spawn percikan pedang di lintasan ayunan
 var _prog = (max_life - life_timer) / max_life;
 var _spark_ang = slash_dir - 50 + (_prog * 100) + random_range(-15, 15);
 var _spark_spd = random_range(2, 5);
-var _s_col = (combo_index == 1) ? choose(c_white, make_color_rgb(180, 230, 255)) : ((combo_index == 2) ? choose(make_color_rgb(255, 235, 120), make_color_rgb(255, 160, 40)) : choose(c_white, make_color_rgb(140, 240, 255)));
+var _s_col = is_counter ? choose(make_color_rgb(255, 230, 80), make_color_rgb(255, 180, 40), c_white) : ((combo_index == 1) ? choose(c_white, make_color_rgb(180, 230, 255)) : ((combo_index == 2) ? choose(make_color_rgb(255, 235, 120), make_color_rgb(255, 160, 40)) : choose(c_white, make_color_rgb(140, 240, 255))));
 
 array_push(sparks, {
     xx: x + lengthdir_x(_hit_radius * 0.8, _spark_ang),

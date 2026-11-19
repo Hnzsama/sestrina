@@ -1,13 +1,32 @@
 /// @description Draw Event - Render Karakter Pemain & Bayangan
 
-// 1. Gambar Ghost Trail saat Dodge Roll
+// 1. Gambar Ghost Trail saat Dodge Roll (Berwarna Emas saat Perfect Dodge)
 for (var _i = 0; _i < array_length(ghost_trail); _i++) {
     var _g = ghost_trail[_i];
-    draw_set_alpha(_g.alpha * 0.5);
-    gpu_set_fog(true, make_color_rgb(130, 220, 255), 0, 0);
-    draw_sprite_ext(_g.spr, _g.sub, _g.xx, _g.yy, _g.xsc, _g.ysc, 0, c_white, _g.alpha * 0.5);
+    var _gcol = variable_struct_exists(_g, "col") ? _g.col : make_color_rgb(130, 220, 255);
+    draw_set_alpha(_g.alpha * 0.55);
+    gpu_set_fog(true, _gcol, 0, 0);
+    draw_sprite_ext(_g.spr, _g.sub, _g.xx, _g.yy, _g.xsc, _g.ysc, 0, c_white, _g.alpha * 0.55);
     gpu_set_fog(false, c_white, 0, 0);
 }
+
+// 1.5. Render Shockwave Ring & Percikan saat Perfect Dodge
+if (perfect_dodge_ring_alpha > 0) {
+    draw_set_alpha(perfect_dodge_ring_alpha * 0.85);
+    draw_set_color(make_color_rgb(255, 225, 80));
+    draw_circle(x, y - 12, perfect_dodge_ring_rad, true);
+    draw_set_color(make_color_rgb(100, 235, 255));
+    draw_circle(x, y - 12, max(2, perfect_dodge_ring_rad - 3), true);
+    draw_set_alpha(1.0);
+}
+
+for (var _ps = 0; _ps < array_length(perfect_sparks); _ps++) {
+    var _p_item = perfect_sparks[_ps];
+    draw_set_alpha(_p_item.alpha);
+    draw_set_color(_p_item.col);
+    draw_circle(_p_item.xx, _p_item.yy, _p_item.size, false);
+}
+draw_set_alpha(1.0);
 
 // 2. Bayangan Kaki Pemain (Grounded Drop Shadow di Origin Kaki)
 draw_set_alpha(0.35);
@@ -60,15 +79,50 @@ if (is_casting > 0) {
     draw_set_alpha(1.0);
 }
 
-// 4. Efek Shimmer / I-Frames saat Menghindar atau Terkena Serangan
-if (invincible_timer > 0 && (invincible_timer mod 4 < 2)) {
-    draw_set_alpha(0.65);
-} else {
+// C. Aura Pedang Counter-Attack Siap Digunakan (Buff Perfect Dodge)
+if (counter_boost_active && counter_boost_timer > 0) {
+    var _c_pulse = sin(current_time * 0.018);
+    draw_set_alpha(0.35 + _c_pulse * 0.2);
+    draw_set_color(make_color_rgb(255, 215, 60));
+    draw_circle(x, y - 18, 16 + _c_pulse * 4, false);
+    draw_set_color(c_white);
+    draw_circle(x, y - 18, 12, true);
     draw_set_alpha(1.0);
 }
 
-// 5. Gambar Karakter Utama (Animasi Resolusi Tinggi dari Sestrina Pack)
-draw_self();
+// 4. Efek Flash Putih/Emas atau Shimmer I-Frames saat Menghindar
+if (perfect_dodge_flash > 0) {
+    gpu_set_fog(true, (perfect_dodge_flash mod 4 < 2) ? make_color_rgb(255, 240, 140) : c_white, 0, 0);
+    draw_self();
+    gpu_set_fog(false, c_white, 0, 0);
+} else {
+    if (invincible_timer > 0 && (invincible_timer mod 4 < 2)) {
+        draw_set_alpha(0.65);
+    } else {
+        draw_set_alpha(1.0);
+    }
+    // 5. Gambar Karakter Utama (Animasi Resolusi Tinggi dari Sestrina Pack)
+    draw_self();
+}
+
+// 6. Floating Teks "PERFECT DODGE!"
+if (perfect_dodge_text_alpha > 0) {
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_alpha(perfect_dodge_text_alpha);
+    
+    // Shadow hitam tegas
+    draw_set_color(c_black);
+    draw_text_transformed(x + 1, perfect_dodge_text_y + 1, "PERFECT DODGE!", 0.88, 0.88, 0);
+    draw_text_transformed(x - 1, perfect_dodge_text_y - 1, "PERFECT DODGE!", 0.88, 0.88, 0);
+    
+    // Teks Emas Menyala
+    draw_set_color(make_color_rgb(255, 230, 80));
+    draw_text_transformed(x, perfect_dodge_text_y, "PERFECT DODGE!", 0.88, 0.88, 0);
+    
+    draw_set_alpha(1.0);
+    draw_set_halign(fa_left);
+}
 
 draw_set_alpha(1.0);
 draw_set_color(c_white);

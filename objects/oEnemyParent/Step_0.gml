@@ -20,23 +20,32 @@ if (_dist < 180 && _dist > 18) {
     }
 }
 
-// Serang pemain jika menabrak dan pemain tidak dalam kondisi kebal (i-frames)
+// Serang pemain jika menabrak dan pemain tidak dalam kondisi kebal (i-frames / dodge)
 if (_dist <= 20 && attack_cooldown <= 0) {
     attack_cooldown = 45;
     
     var _can_damage = true;
-    if (instance_exists(oPlayer) && oPlayer.invincible_timer > 0) {
-        _can_damage = false;
+    if (instance_exists(oPlayer)) {
+        if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
+            _can_damage = false;
+            // Berhasil menghindar saat serangan terjadi -> Picu Perfect Dodge!
+            with (oPlayer) {
+                scr_player_trigger_perfect_dodge(other.x, other.y);
+            }
+        } else if (oPlayer.invincible_timer > 0) {
+            _can_damage = false;
+        }
     }
     
     if (_can_damage) {
         global.player_hp = max(0, global.player_hp - attack_power);
         
-        // Player flinch
+        // Player flinch & beri i-frames sejenak agar tidak kena hit bertubi-tubi
         with (oPlayer) {
             var _kdir = point_direction(other.x, other.y, x, y);
             x += lengthdir_x(8, _kdir);
             y += lengthdir_y(8, _kdir);
+            invincible_timer = 20;
         }
     }
 }

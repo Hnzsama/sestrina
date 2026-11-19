@@ -190,3 +190,59 @@ function scr_movement_apply() {
     }
     y += vSpeed;
 }
+
+/// @description Trigger Mekanik Perfect Dodge Ksatria saat Berhasil Menghindar Serangan
+function scr_player_trigger_perfect_dodge(_hazard_x, _hazard_y) {
+    if (!instance_exists(oPlayer)) return;
+    
+    with (oPlayer) {
+        // Mencegah trigger dobel jika baru saja memicu perfect dodge
+        if (perfect_dodge_cooldown > 0) return;
+        
+        perfect_dodge_cooldown = 45;       // Jeda sebelum bisa perfect dodge lagi
+        perfect_dodge_timer = 24;          // Durasi visual state perfect dodge
+        perfect_dodge_flash = 12;          // Flash putih-emas karakter
+        perfect_dodge_ring_rad = 10;       // Radius awal gelombang kejut
+        perfect_dodge_ring_alpha = 1.0;    // Alpha lingkaran kejut
+        perfect_dodge_text_alpha = 1.0;    // Teks mengambang "PERFECT DODGE!"
+        perfect_dodge_text_y = y - 38;
+        
+        // 1. Invincibility diperpanjang agar terbebas dari combo serangan musuh
+        invincible_timer = max(invincible_timer, 28);
+        
+        // 2. Gameplay Reward: Refund Stamina Roll + Bonus +10 Stamina!
+        global.player_stamina = min(global.player_max_stamina, global.player_stamina + 35);
+        
+        // 3. Gameplay Reward: Counter-Attack Boost (+50% Damage & Bilah Emas)
+        counter_boost_active = true;
+        counter_boost_timer = 120; // 2 detik durasi buff serangan balasan
+        
+        // 4. Hitstop Effect: Freeze mikro 4 frame dramatis
+        hitstop_timer = 4;
+        
+        // 5. Screen Shake halus yang tegas
+        if (instance_exists(oRoomTransition)) {
+            oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 4);
+        }
+        
+        // 6. Spawn burst partikel percikan bintang emas & cyan
+        for (var _p = 0; _p < 14; _p++) {
+            var _ang = random(360);
+            var _spd = random_range(2.5, 6.5);
+            array_push(perfect_sparks, {
+                xx: x,
+                yy: y - 16,
+                vx: lengthdir_x(_spd, _ang),
+                vy: lengthdir_y(_spd, _ang),
+                alpha: 1.0,
+                size: random_range(2.2, 4.2),
+                col: choose(make_color_rgb(255, 230, 90), make_color_rgb(130, 240, 255), c_white)
+            });
+        }
+        
+        // 7. Ubah seluruh ghost trail aktif menjadi emas berkilau
+        for (var _g = 0; _g < array_length(ghost_trail); _g++) {
+            ghost_trail[_g].col = make_color_rgb(255, 225, 90);
+        }
+    }
+}

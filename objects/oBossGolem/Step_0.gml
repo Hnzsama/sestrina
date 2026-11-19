@@ -96,9 +96,16 @@ if (boss_stage == 1) {
         stomp_shockwave_r += 4.5;
         if (instance_exists(oPlayer)) {
             var _s_dist = point_distance(x, y, oPlayer.x, oPlayer.y);
-            if (abs(_s_dist - stomp_shockwave_r) < 16 && oPlayer.invincible_timer <= 0) {
-                global.player_hp = max(0, global.player_hp - 18);
-                if (instance_exists(oRoomTransition)) oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 6);
+            if (abs(_s_dist - stomp_shockwave_r) < 16) {
+                if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
+                    with (oPlayer) {
+                        scr_player_trigger_perfect_dodge(other.x, other.y);
+                    }
+                } else if (oPlayer.invincible_timer <= 0) {
+                    global.player_hp = max(0, global.player_hp - 18);
+                    oPlayer.invincible_timer = 25;
+                    if (instance_exists(oRoomTransition)) oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 6);
+                }
             }
         }
         if (stomp_shockwave_r > 130) {
@@ -119,7 +126,10 @@ if (boss_stage == 1) {
             var _b_pdist = point_distance(_bd.xx, _bd.yy, oPlayer.x, oPlayer.y);
             if (_b_pdist < _bd.radius + 14) {
                 if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
-                    // Berhasil roll melompati batu!
+                    // Berhasil roll melompati batu -> Picu Perfect Dodge!
+                    with (oPlayer) {
+                        scr_player_trigger_perfect_dodge(_bd.xx, _bd.yy);
+                    }
                 } else if (oPlayer.invincible_timer <= 0) {
                     global.player_hp = max(0, global.player_hp - 22);
                     oPlayer.invincible_timer = 28;
@@ -142,8 +152,15 @@ if (boss_stage == 1) {
             _rock.fell = true;
             if (instance_exists(oPlayer)) {
                 var _dist_rock = point_distance(_rock.xx, _rock.yy, oPlayer.x, oPlayer.y);
-                if (_dist_rock <= _rock.radius && oPlayer.invincible_timer <= 0) {
-                    global.player_hp = max(0, global.player_hp - 20);
+                if (_dist_rock <= _rock.radius) {
+                    if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
+                        with (oPlayer) {
+                            scr_player_trigger_perfect_dodge(_rock.xx, _rock.yy);
+                        }
+                    } else if (oPlayer.invincible_timer <= 0) {
+                        global.player_hp = max(0, global.player_hp - 20);
+                        oPlayer.invincible_timer = 25;
+                    }
                 }
             }
             if (instance_exists(oRoomTransition)) oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, 6);
@@ -208,7 +225,9 @@ else if (boss_stage == 2) {
         if (instance_exists(oPlayer)) {
             if (point_distance(_ps.xx, _ps.yy, oPlayer.x, oPlayer.y) < 18) {
                 if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
-                    // Dodged with roll
+                    with (oPlayer) {
+                        scr_player_trigger_perfect_dodge(_ps.xx, _ps.yy);
+                    }
                 } else if (oPlayer.invincible_timer <= 0) {
                     global.player_hp = max(0, global.player_hp - 16);
                     oPlayer.invincible_timer = 24;
@@ -241,9 +260,15 @@ else if (boss_stage == 2) {
         spirit_pulse_r += 5;
         if (instance_exists(oPlayer)) {
             var _pdist_sp = point_distance(x, y, oPlayer.x, oPlayer.y);
-            if (abs(_pdist_sp - spirit_pulse_r) < 14 && oPlayer.invincible_timer <= 0 && (!variable_instance_exists(oPlayer, "is_rolling") || !oPlayer.is_rolling)) {
-                global.player_hp = max(0, global.player_hp - 18);
-                oPlayer.invincible_timer = 25;
+            if (abs(_pdist_sp - spirit_pulse_r) < 14) {
+                if (variable_instance_exists(oPlayer, "is_rolling") && oPlayer.is_rolling) {
+                    with (oPlayer) {
+                        scr_player_trigger_perfect_dodge(other.x, other.y);
+                    }
+                } else if (oPlayer.invincible_timer <= 0) {
+                    global.player_hp = max(0, global.player_hp - 18);
+                    oPlayer.invincible_timer = 25;
+                }
             }
         }
         if (spirit_pulse_r > 120) spirit_pulse_r = 0;
