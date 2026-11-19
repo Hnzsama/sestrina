@@ -524,6 +524,7 @@ function scr_get_save_info(_slot = "quicksave") {
         room_name: _r_raw,
         room_title: _r_title,
         time_str: _t_str,
+        level: _lvl,
         level_str: "Lv " + string(_lvl) + " • " + _wpn + " • " + string(_hp) + "/" + string(_max_hp) + " HP • " + string(_gold) + " Gold",
         quest_str: "▶ " + _q_title
     };

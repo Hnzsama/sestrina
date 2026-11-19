@@ -32,8 +32,10 @@ has_save = scr_has_save_data("quicksave");
 save_info_str = "";
 if (has_save) {
     var _info = scr_get_save_info("quicksave");
-    if (is_struct(_info) && variable_struct_exists(_info, "time_str")) {
-        save_info_str = " (" + _info.time_str + " • Lv." + string(_info.level) + ")";
+    if (is_struct(_info) && variable_struct_exists(_info, "exists") && _info.exists) {
+        save_info_str = " (" + string(_info.time_str) + " - " + string(_info.room_title) + ")";
+    } else {
+        has_save = false;
     }
 }
 
