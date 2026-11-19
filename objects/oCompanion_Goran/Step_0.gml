@@ -217,7 +217,7 @@ if (_nearest_enemy != noone) {
 // =========================================================================
 is_player_near = (point_distance(x, y, oPlayer.x, oPlayer.y) <= interact_range && _nearest_enemy == noone && !global.dialogue_active && global.shop_menu_open == "");
 
-if (is_player_near && (keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_space))) {
+if (is_player_near && (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter))) {
     var _d = dialogue_create();
     _d.add("Goran", "Hahah! Tenang saja anak muda, palu dan kapak tempurku siap membelah monster apa pun di depan kita!", "goran", "protagonist", "left", "exclamation");
     

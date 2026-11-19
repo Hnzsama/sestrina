@@ -28,7 +28,7 @@ if (!variable_instance_exists(id, "npc_role")) {
 switch (npc_role) {
     case "merchant":
         npc_name = "Marcus Pedagang Bahan & Mineral";
-        prompt_text = "[E] Kios Bahan & Mineral";
+        prompt_text = "[Z] Kios Bahan & Mineral";
         sprite_index = sNPC_Alden;
         image_speed = 0.06;
         image_xscale = 1.25;
@@ -40,7 +40,7 @@ switch (npc_role) {
 
     case "guard_north":
         npc_name = "Pengawal Roland";
-        prompt_text = "[E] Bicara dgn Pengawal";
+        prompt_text = "[Z] Bicara dgn Pengawal";
         sprite_index = sNPC_Alden;
         image_speed = 0.05;
         image_xscale = 1.3;
@@ -55,7 +55,7 @@ switch (npc_role) {
 
     case "guard_south":
         npc_name = "Pengawal Thorne";
-        prompt_text = "[E] Bicara dgn Penjaga Benteng";
+        prompt_text = "[Z] Bicara dgn Penjaga Benteng";
         sprite_index = sNPC_Alden;
         image_speed = 0.05;
         image_xscale = 1.3;
@@ -70,7 +70,7 @@ switch (npc_role) {
 
     case "elder":
         npc_name = "Nenek Martha";
-        prompt_text = "[E] Bicara dgn Nenek Martha";
+        prompt_text = "[Z] Bicara dgn Nenek Martha";
         sprite_index = sNPC_Elysia;
         image_speed = 0.05;
         image_xscale = 1.25;
@@ -85,7 +85,7 @@ switch (npc_role) {
 
     case "flower_girl":
         npc_name = "Lily si Pemelihara Bunga";
-        prompt_text = "[E] Bicara dgn Lily";
+        prompt_text = "[Z] Bicara dgn Lily";
         sprite_index = sNPC_Elysia;
         image_speed = 0.06;
         image_xscale = 1.25;
@@ -100,7 +100,7 @@ switch (npc_role) {
 
     case "cafe_patron":
         npc_name = "Finn si Petualang";
-        prompt_text = "[E] Bicara dgn Finn";
+        prompt_text = "[Z] Bicara dgn Finn";
         sprite_index = sNPC_Goran;
         image_speed = 0.05;
         image_xscale = 1.25;
@@ -108,14 +108,14 @@ switch (npc_role) {
         interact_action = function() {
             var _d = dialogue_create();
             _d.add("Finn", "Ahh... Secangkir kopi hangat di teras Altdorf adalah hadiah terbaik setelah seharian bertarung!", "goran", "protagonist", "left", "happy");
-            _d.add("Finn", "Tips petualang dariku: jika musuh bersiap mengayunkan serangan kuat, gunakan tombol [Spasi] untuk Roll Menghindar di saat yang tepat!", "goran", "protagonist", "left", "exclamation");
+            _d.add("Finn", "Tips petualang dariku: jika musuh bersiap mengayunkan serangan kuat, gunakan tombol [Shift] untuk Roll Menghindar di saat yang tepat!", "goran", "protagonist", "left", "exclamation");
             _d.start();
         };
         break;
 
     case "fisherman":
         npc_name = "Kakek Tobias si Nelayan";
-        prompt_text = "[E] Bicara dgn Kakek Tobias";
+        prompt_text = "[Z] Bicara dgn Kakek Tobias";
         sprite_index = sNPC_Goran;
         image_speed = 0.05;
         image_xscale = 1.25;

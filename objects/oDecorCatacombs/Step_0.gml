@@ -47,7 +47,7 @@ if (instance_exists(oPlayer)) {
     // Interaksi dengan Tuas di Dinding Barat
     if (!gate_opened) {
         var _dist_switch = point_distance(_px, _py, switch_x, switch_y);
-        if (_dist_switch < 42 && keyboard_check_pressed(ord("E")) && !global.dialogue_active) {
+        if (_dist_switch < 42 && (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) && !global.dialogue_active) {
             gate_opened = true;
             global.catacombs_gate_opened = true;
             if (instance_exists(oRoomTransition)) {

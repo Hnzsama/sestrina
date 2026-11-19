@@ -2,13 +2,13 @@
 event_inherited();
 
 interact_range = 42;
-prompt_text = "[E] Tambang Bijih (3x)";
+prompt_text = "[Z] Tambang Bijih (3x)";
 prompt_y_offset = -32;
 
 ore_type = "iron_ore"; // "iron_ore" atau "magic_crystal"
 if (room == rm_catacombs && x < 600) {
     ore_type = "magic_crystal";
-    prompt_text = "[E] Tambang Kristal (3x)";
+    prompt_text = "[Z] Tambang Kristal (3x)";
 }
 
 hits_left = 3;
@@ -33,6 +33,6 @@ interact_action = function() {
         is_depleted = true;
         prompt_text = "Habis Ditambang";
     } else {
-        prompt_text = "[E] Tambang (" + string(hits_left) + "x)";
+        prompt_text = "[Z] Tambang (" + string(hits_left) + "x)";
     }
 };

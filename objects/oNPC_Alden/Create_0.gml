@@ -2,7 +2,7 @@
 
 event_inherited();
 interact_range = 45;
-prompt_text = "[E] Bicara dgn Kapten";
+prompt_text = "[Z] Bicara dgn Kapten";
 prompt_y_offset = -40;
 
 sprite_index = sNPC_Alden;

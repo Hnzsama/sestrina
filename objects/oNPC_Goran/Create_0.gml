@@ -2,7 +2,7 @@
 
 event_inherited();
 interact_range = 65;
-prompt_text = "[E] Tempa dgn Goran";
+prompt_text = "[Z] Tempa dgn Goran";
 prompt_y_offset = -48;
 
 sprite_index = sGoran_Workshop_Idle;

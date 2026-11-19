@@ -4,7 +4,7 @@ event_inherited();
 sprite_index = noone; // Ranjang sudah terpasang presisi di room background
 mask_index = sNPC_Sister_Bed;
 image_speed = 0.05;
-prompt_text = "[E] Cek Sestrina • [T] Istirahat Tidur";
+prompt_text = "[Z] Cek Sestrina • [T] Istirahat Tidur";
 interact_range = 65;
 auto_trigger_range = 55;
 has_auto_triggered = false;

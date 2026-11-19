@@ -4,7 +4,7 @@ event_inherited();
 is_open = false;
 image_speed = 0;
 image_index = 0;
-prompt_text = "[E] Buka Peti";
+prompt_text = "[Z] Buka Peti";
 interact_range = 36;
 chest_reward = "potion";
 

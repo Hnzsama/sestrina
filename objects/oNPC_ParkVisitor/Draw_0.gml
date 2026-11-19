@@ -86,5 +86,5 @@ switch (npc_role) {
 draw_set_alpha(1.0);
 draw_set_color(c_white);
 
-// 4. Floating Prompt [E] jika Pemain Mendekat (dari oInteractableParent)
+// 4. Floating Prompt [Z] jika Pemain Mendekat (dari oInteractableParent)
 event_inherited();

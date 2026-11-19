@@ -340,7 +340,7 @@ draw_sprite_ext(sUiIcons, 3, _c2_x + 38, _r6_y + 4, 0.5, 0.5, 0, c_white, 1.0);
 draw_set_color(_atk_fg);
 draw_text(_c2_x + 60, _r6_y + _chip_h / 2, _atk_tag);
 
-// Chip 3: Roll [Space]
+// Chip 3: Roll [Shift]
 var _c3_x = _c2_x + _chip_w + _chip_gap;
 var _can_roll = (_cur_sp >= 25);
 draw_set_alpha(0.9);
@@ -354,7 +354,7 @@ draw_sprite_ext(sUiIcons, 4, _c3_x + 8, _r6_y + 4, 0.5, 0.5, 0, _can_roll ? c_wh
 draw_set_color(_can_roll ? make_color_rgb(180, 230, 255) : make_color_rgb(110, 120, 135));
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_text(_c3_x + 30, _r6_y + _chip_h / 2, "[Space]");
+draw_text(_c3_x + 30, _r6_y + _chip_h / 2, "[Shift]");
 
 // Chip 4: Sihir [X]
 var _c4_x = _c3_x + _chip_w + _chip_gap;
@@ -972,7 +972,7 @@ if (global.stat_menu_open) {
     
     draw_set_halign(fa_right);
     draw_set_color(make_color_rgb(160, 175, 210));
-    draw_text_transformed(_mx + _mw - 24, _foot_y, "[ESC] / [P] Tutup Menu", 0.85, 0.85, 0);
+    draw_text_transformed(_mx + _mw - 24, _foot_y, "[X] / [ESC] Tutup Menu", 0.85, 0.85, 0);
     
     // Tooltip Hover Mouse Slot Perlengkapan
     var _hover_text = "";
@@ -1117,7 +1117,7 @@ if (global.shop_menu_open == "goran") {
 
     draw_set_halign(fa_center);
     draw_set_color(make_color_rgb(180, 190, 210));
-    draw_text(_gw / 2, _my + _mh - 30, "Tekan [SPACE] Tempa  •  Tekan [ESC] / [E] Keluar");
+    draw_text(_gw / 2, _my + _mh - 30, "Tekan [SPACE] Tempa  •  Tekan [X] Keluar");
 }
 
 // =========================================================================
@@ -1177,7 +1177,7 @@ if (global.shop_menu_open == "elysia") {
 
     draw_set_halign(fa_center);
     draw_set_color(make_color_rgb(175, 190, 210));
-    draw_text(_gw / 2, _my + _mh - 30, "Tekan tombol [1], [2], atau [3] untuk Membeli  •  Tekan [ESC] / [E] Keluar");
+    draw_text(_gw / 2, _my + _mh - 30, "Tekan tombol [1], [2], atau [3] untuk Membeli  •  Tekan [X] Keluar");
 }
 
 // =========================================================================
@@ -1341,7 +1341,7 @@ if (global.shop_menu_open == "material_trader") {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(make_color_rgb(180, 195, 220));
-    draw_text(_gw / 2, _my + _mh - 25, "Shortcut: [1]-[5] Beli Cepat  •  [6]-[0] Jual Cepat  •  Klik Tombol Mouse  •  [ESC] / [E] Tutup Kios");
+    draw_text(_gw / 2, _my + _mh - 25, "Shortcut: [1]-[5] Beli Cepat  •  [6]-[0] Jual Cepat  •  Klik Tombol Mouse  •  [X] Tutup Kios");
 }
 
 // =========================================================================
@@ -1520,7 +1520,7 @@ if (variable_global_exists("save_menu_open") && global.save_menu_open) {
     draw_set_color(make_color_rgb(150, 175, 215));
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(_mx + _mw / 2, _my + _mh - 24, "💡 Tips: Tekan [ESC] untuk Menutup • Tekan [F5] untuk Quick Save • Tekan [F6] untuk Quick Load");
+    draw_text(_mx + _mw / 2, _my + _mh - 24, "💡 Tips: Tekan [X] / [ESC] untuk Menutup • Tekan [F5] untuk Quick Save • Tekan [F6] untuk Quick Load");
 }
 
 // =========================================================================
@@ -1623,7 +1623,7 @@ if (variable_global_exists("leave_confirm_active") && global.leave_confirm_activ
     // Controls Hint
     draw_set_halign(fa_center);
     draw_set_color(make_color_rgb(140, 165, 210));
-    draw_text(_gw / 2, _b2_y + 46, "Gunakan [W]/[S] atau Panah untuk Memilih  •  [Enter] / [Space] / Klik Konfirmasi  •  [ESC] Batal");
+    draw_text(_gw / 2, _b2_y + 46, "Gunakan [W]/[S] atau Panah untuk Memilih  •  [Enter] / [Space] / [Z] Konfirmasi  •  [X] Batal");
 }
 
 // =========================================================================
@@ -1791,7 +1791,7 @@ if (variable_global_exists("map_menu_open") && global.map_menu_open) {
     // Hotkey Controls Hint
     draw_set_halign(fa_center);
     draw_set_color(make_color_rgb(150, 180, 225));
-    draw_text(_gw / 2, _gh - 30, "[A]/[D] Ganti Distrik  •  [1]-[6] Pilih Langsung  •  [Enter] Masuk  •  [ESC] Tutup Peta");
+    draw_text(_gw / 2, _gh - 30, "[A]/[D] Ganti Distrik  •  [1]-[6] Pilih Langsung  •  [Enter] / [Z] Masuk  •  [X] Tutup Peta");
 }
 
 // =========================================================================
@@ -1869,7 +1869,7 @@ if (variable_global_exists("game_ending") && global.game_ending != "") {
     draw_set_color(make_color_rgb(255, 230, 130));
     draw_text(_gw / 2, _btn_y, "▶ [Tekan SPACE / ENTER untuk Lanjut Bermain] ◀");
     
-    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
+    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
         global.game_ending = "";
     }
 }

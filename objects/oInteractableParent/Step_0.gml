@@ -21,9 +21,9 @@ if (auto_trigger_range > 0 && !has_auto_triggered && _dist <= auto_trigger_range
     exit;
 }
 
-// Manual trigger dengan tombol E atau Space
+// Manual trigger dengan tombol Z atau Space
 if (is_player_near) {
-    if (keyboard_check_pressed(ord("E")) || keyboard_check_pressed(vk_space)) {
+    if (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
         interact_action();
     }
 }

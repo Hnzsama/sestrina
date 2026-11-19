@@ -72,11 +72,10 @@ portrait_right_alpha = lerp(portrait_right_alpha, _target_right_alpha, 0.15);
 portrait_left_scale = lerp(portrait_left_scale, _target_left_scale, 0.15);
 portrait_right_scale = lerp(portrait_right_scale, _target_right_scale, 0.15);
 
-// Input handling (Space, E, Enter, Z, Klik Kiri)
-var _key_advance = keyboard_check_pressed(vk_space) || 
-                   keyboard_check_pressed(ord("E")) || 
+// Input handling (Z, Space, Enter, Klik Kiri)
+var _key_advance = keyboard_check_pressed(ord("Z")) || 
+                   keyboard_check_pressed(vk_space) || 
                    keyboard_check_pressed(vk_enter) || 
-                   keyboard_check_pressed(ord("Z")) ||
                    mouse_check_button_pressed(mb_left);
 
 if (_key_advance) {

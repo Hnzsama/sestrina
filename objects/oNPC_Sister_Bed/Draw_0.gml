@@ -116,5 +116,5 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-// 6. Floating prompt [E]
+// 6. Floating prompt [Z]
 event_inherited();

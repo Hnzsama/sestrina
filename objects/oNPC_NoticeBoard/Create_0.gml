@@ -2,7 +2,7 @@
 
 event_inherited();
 interact_range = 35;
-prompt_text = "[E] Baca Pengumuman";
+prompt_text = "[Z] Baca Pengumuman";
 prompt_y_offset = -32;
 
 interact_action = function() {

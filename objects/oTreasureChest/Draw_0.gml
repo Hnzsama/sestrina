@@ -8,4 +8,4 @@ draw_set_alpha(1.0);
 
 draw_self();
 
-event_inherited(); // Prompt [E] jika pemain dekat
+event_inherited(); // Prompt [Z] jika pemain dekat

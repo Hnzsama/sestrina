@@ -59,9 +59,9 @@ if (variable_global_exists("leave_confirm_active") && global.leave_confirm_activ
         if (_gui_my >= _b2_y1 && _gui_my <= _b2_y2) global.leave_confirm_selection = 1;
     }
     
-    // Eksekusi Konfirmasi (Enter, Space, E, Z, atau Klik Kiri)
-    var _confirm_pressed = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("Z")) || mouse_check_button_pressed(mb_left);
-    var _cancel_pressed = keyboard_check_pressed(vk_escape);
+    // Eksekusi Konfirmasi (Z, Enter, Space, atau Klik Kiri)
+    var _confirm_pressed = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left);
+    var _cancel_pressed = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape);
     
     if (_cancel_pressed) {
         global.leave_confirm_active = false;
@@ -102,7 +102,7 @@ if (!global.dialogue_active && global.shop_menu_open == "" && !global.stat_menu_
 
 // Kontrol Saat Menu Peta Terbuka
 if (variable_global_exists("map_menu_open") && global.map_menu_open) {
-    if (keyboard_check_pressed(vk_escape)) {
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.map_menu_open = false;
         exit;
     }
@@ -144,7 +144,7 @@ if (variable_global_exists("map_menu_open") && global.map_menu_open) {
     
     var _click_enter = mouse_check_button_pressed(mb_left) && (_gui_mx >= _enter_box_x && _gui_mx <= _enter_box_x + _enter_box_w && _gui_my >= _enter_box_y && _gui_my <= _enter_box_y + _enter_box_h);
     var _click_dont = mouse_check_button_pressed(mb_left) && (_gui_mx >= _enter_box_x && _gui_mx <= _enter_box_x + _enter_box_w && _gui_my >= _dont_box_y && _gui_my <= _dont_box_y + _enter_box_h);
-    var _key_confirm = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("E"));
+    var _key_confirm = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
     
     if (_click_dont) {
         global.map_menu_open = false;
@@ -205,8 +205,8 @@ if (variable_global_exists("save_menu_open") && global.save_menu_open) {
     var _smx = (display_get_gui_width() - _smw) / 2;
     var _smy = (display_get_gui_height() - _smh) / 2;
     
-    // Tombol ESC atau Klik [X] di pojok kanan atas modal
-    if (keyboard_check_pressed(vk_escape)) {
+    // Tombol X, ESC atau Klik [X] di pojok kanan atas modal
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.save_menu_open = false;
         exit;
     }
@@ -282,7 +282,7 @@ if (global.stat_menu_open) {
     var _mx = (display_get_gui_width() - _mw) / 2;
     var _my = (display_get_gui_height() - _mh) / 2;
     
-    // Tutup Menu dengan ESC, P, TAB, atau tombol Close [X]
+    // Tutup Menu dengan X, ESC, P, TAB, atau tombol Close [X]
     var _close_btn_clicked = false;
     if (mouse_check_button_pressed(mb_left)) {
         if (_gui_mx >= _mx + 806 && _gui_mx <= _mx + 842 && _gui_my >= _my + 14 && _gui_my <= _my + 50) {
@@ -290,7 +290,7 @@ if (global.stat_menu_open) {
         }
     }
     
-    if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_tab) || _close_btn_clicked) {
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_tab) || _close_btn_clicked) {
         global.stat_menu_open = false;
         exit;
     }
@@ -354,7 +354,7 @@ if (global.stat_menu_open) {
 
 // 4. Kontrol Input saat Toko Tempa Goran Terbuka
 if (global.shop_menu_open == "goran") {
-    if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"))) {
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.shop_menu_open = "";
     }
     
@@ -404,7 +404,7 @@ if (global.shop_menu_open == "goran") {
 
 // 5. Kontrol Input saat Toko Alkimia Elysia Terbuka
 if (global.shop_menu_open == "elysia") {
-    if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"))) {
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         global.shop_menu_open = "";
     }
     
@@ -451,7 +451,7 @@ if (global.shop_menu_open == "elysia") {
 // 6. Kontrol Input saat Kios Bahan Mentah & Mineral Marcus Terbuka
 if (global.shop_menu_open == "material_trader") {
     var _close = false;
-    if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"))) {
+    if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape)) {
         _close = true;
     }
     

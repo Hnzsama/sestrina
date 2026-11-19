@@ -84,5 +84,5 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-// Floating prompt inherited "[E] Tempa dgn Goran"
+// Floating prompt inherited "[Z] Tempa dgn Goran"
 event_inherited();

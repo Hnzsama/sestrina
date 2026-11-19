@@ -19,7 +19,7 @@ var _line = _lines[current_line_index];
 // ==========================================
 // 1. Helper Render Full-Height Standing 2D Anime Character
 // ==========================================
-var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh) {
+var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh, _line_data = noone) {
     var _base_y = _gh;
     var _sc = _is_active ? 1.0 : 0.95;
     var _cy = _base_y - 20;
@@ -99,8 +99,12 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
         // PANDAI BESI GORAN (Goran Blacksmith Masterpack Portrait)
         // ==========================================
         var _spr = sPortrait_Goran;
-        if (variable_struct_exists(_curr, "emote") && _curr.emote == "exclamation") {
-            _spr = sPortrait_Goran_Confident;
+        if (_line_data != noone && is_struct(_line_data) && variable_struct_exists(_line_data, "emote")) {
+            if (_line_data.emote == "exclamation") {
+                _spr = sPortrait_Goran_Confident;
+            } else if (_line_data.emote == "warcry" && sprite_exists(sPortrait_Goran_Warcry)) {
+                _spr = sPortrait_Goran_Warcry;
+            }
         }
         var _p_scale = 1.85;
         var _pw = 128 * _p_scale;
@@ -286,12 +290,12 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
 // ==========================================
 if (_line.left_portrait != noone) {
     var _is_left_active = (_line.side_active == "left");
-    _draw_full_standing_anime_character(_line.left_portrait, 210, _is_left_active, portrait_left_alpha, true, _gui_h);
+    _draw_full_standing_anime_character(_line.left_portrait, 210, _is_left_active, portrait_left_alpha, true, _gui_h, _line);
 }
 
 if (_line.right_portrait != noone) {
     var _is_right_active = (_line.side_active == "right");
-    _draw_full_standing_anime_character(_line.right_portrait, _gui_w - 210, _is_right_active, portrait_right_alpha, false, _gui_h);
+    _draw_full_standing_anime_character(_line.right_portrait, _gui_w - 210, _is_right_active, portrait_right_alpha, false, _gui_h, _line);
 }
 
 // ==========================================

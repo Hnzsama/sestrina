@@ -2,7 +2,7 @@
 
 event_inherited();
 interact_range = 55;
-prompt_text = "[E] Alkimia dgn Elysia";
+prompt_text = "[Z] Alkimia dgn Elysia";
 prompt_y_offset = -40;
 
 sprite_index = sNPC_Elysia;

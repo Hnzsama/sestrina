@@ -85,5 +85,16 @@ output/
 .warp/
 .windsurf/
 mcp-config.json
+
+# AI Agent skills, tools, workflows & graphs
+.agents/
+graphify-out/
+skills-lock.json
+anti-slop/
+node_modules/
+package-lock.json
+.rtk/
+*.log
+
 # Scratch directory
 scratch/

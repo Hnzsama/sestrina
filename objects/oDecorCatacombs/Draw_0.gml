@@ -131,7 +131,7 @@ if (gate_opened) {
         draw_set_color(make_color_rgb(255, 230, 120));
         draw_set_halign(fa_center);
         draw_set_valign(fa_bottom);
-        draw_text(switch_x, switch_y - 26, "[E] Tarik Tuas Gerbang");
+        draw_text(switch_x, switch_y - 26, "[Z] Tarik Tuas Gerbang");
     }
 }
 

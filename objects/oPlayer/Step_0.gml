@@ -36,10 +36,12 @@ if (global.player_hp <= 0) {
     exit;
 }
 
-// Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save
+// Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save/map/konfirmasi
 if ((variable_global_exists("dialogue_active") && global.dialogue_active) || 
     (variable_global_exists("stat_menu_open") && global.stat_menu_open) || 
     (variable_global_exists("save_menu_open") && global.save_menu_open) || 
+    (variable_global_exists("map_menu_open") && global.map_menu_open) || 
+    (variable_global_exists("leave_confirm_active") && global.leave_confirm_active) || 
     (variable_global_exists("shop_menu_open") && global.shop_menu_open != "")) {
     image_speed = 0;
     exit;
@@ -200,16 +202,8 @@ if (is_rolling) {
         }
     }
 } else {
-    // 4. Pemicu Dodge Roll [Space]
-    var _near_interact = false;
-    if (instance_exists(oInteractableParent)) {
-        var _nearest_int = instance_nearest(x, y, oInteractableParent);
-        if (_nearest_int != noone && point_distance(x, y, _nearest_int.x, _nearest_int.y) < 32) {
-            _near_interact = true;
-        }
-    }
-    
-    if (keyActive && !_near_interact && global.player_stamina >= 25 && is_attacking <= 0) {
+    // 4. Pemicu Dodge Roll [Shift]
+    if (keyActive && global.player_stamina >= 25 && is_attacking <= 0) {
         global.player_stamina -= 25;
         is_rolling = true;
         roll_timer = 16;
@@ -226,10 +220,31 @@ if (is_rolling) {
         image_speed = 0;
     }
     
+    // Cek apakah pemain sedang dekat dengan objek interaksi (NPC, Peti, dsb.)
+    var _can_interact_target = false;
+    if (instance_exists(oInteractableParent)) {
+        var _n_int = instance_nearest(x, y, oInteractableParent);
+        if (_n_int != noone && distance_to_object(_n_int) <= _n_int.interact_range) {
+            _can_interact_target = true;
+        }
+    }
+    if (!_can_interact_target && instance_exists(oCompanion_Goran)) {
+        var _n_gor = instance_nearest(x, y, oCompanion_Goran);
+        if (_n_gor != noone && point_distance(x, y, _n_gor.x, _n_gor.y) <= _n_gor.interact_range && _n_gor.is_player_near) {
+            _can_interact_target = true;
+        }
+    }
+    if (!_can_interact_target && instance_exists(oDecorCatacombs)) {
+        var _n_dec = instance_nearest(x, y, oDecorCatacombs);
+        if (_n_dec != noone && !_n_dec.gate_opened && point_distance(x, y, _n_dec.switch_x, _n_dec.switch_y) < 42) {
+            _can_interact_target = true;
+        }
+    }
+    
     // =========================================================================
     // 5. SERANG KOMBO 3-HIT PEDANG [Z] (Folder 03_attack_combo: spr_player_combo*)
     // =========================================================================
-    if (keyAttack && global.player_has_sword && attack_cooldown <= 0 && global.player_stamina >= 10 && is_drinking <= 0 && is_casting <= 0) {
+    if (keyAttack && !_can_interact_target && global.player_has_sword && attack_cooldown <= 0 && global.player_stamina >= 10 && is_drinking <= 0 && is_casting <= 0) {
         if (combo_timer > 0) {
             combo_step = (combo_step mod 3) + 1;
         } else {
