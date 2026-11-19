@@ -266,9 +266,28 @@ if (is_rolling) {
         }
     }
 } else {
-    // 4. Pemicu Dodge Roll [Shift] (No Hitbox & Mekanik Perfect Dodge)
-    if (keyActive && global.player_stamina >= 25 && is_attacking <= 0) {
-        global.player_stamina -= 25;
+    // Cek apakah pemain sedang dekat dengan objek interaksi (NPC, Peti, dsb.)
+    var _can_interact_target = false;
+    if (instance_exists(oInteractableParent)) {
+        var _n_int = instance_nearest(x, y, oInteractableParent);
+        if (_n_int != noone && distance_to_object(_n_int) <= _n_int.interact_range) {
+            _can_interact_target = true;
+        }
+    }
+    // Catatan: oCompanion_Goran sengaja TIDAK dicek di sini agar pemain bisa bebas bergerak/menyerang tanpa terganggu companion
+    if (!_can_interact_target && instance_exists(oDecorCatacombs)) {
+        var _n_dec = instance_nearest(x, y, oDecorCatacombs);
+        if (_n_dec != noone && !_n_dec.gate_opened && point_distance(x, y, _n_dec.switch_x, _n_dec.switch_y) < 42) {
+            _can_interact_target = true;
+        }
+    }
+
+    // 4. Pemicu Dodge Roll / Dash [Space] & [Shift] (No Hitbox & Mekanik Perfect Dodge)
+    var _is_shift_dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(vk_lshift) || keyboard_check_pressed(vk_rshift);
+    var _is_space_dash = (keyActive || keyboard_check_pressed(vk_space)) && !_can_interact_target;
+    
+    if ((_is_shift_dash || _is_space_dash) && global.player_stamina >= 15 && is_attacking <= 0 && is_drinking <= 0 && is_casting <= 0) {
+        global.player_stamina = max(0, global.player_stamina - 15);
         is_rolling = true;
         roll_timer = 18;
         invincible_timer = 24; // Penuh kebal hitbox selama guling + 6 frame buffer
@@ -305,22 +324,6 @@ if (is_rolling) {
         image_index = 0;
         image_speed = 0;
         scr_play_sfx(snd_drink_potion, 0.05, 0.95, 11);
-    }
-    
-    // Cek apakah pemain sedang dekat dengan objek interaksi (NPC, Peti, dsb.)
-    var _can_interact_target = false;
-    if (instance_exists(oInteractableParent)) {
-        var _n_int = instance_nearest(x, y, oInteractableParent);
-        if (_n_int != noone && distance_to_object(_n_int) <= _n_int.interact_range) {
-            _can_interact_target = true;
-        }
-    }
-    // Catatan: oCompanion_Goran sengaja TIDAK dicek di sini agar pemain bisa bebas menyerang [Z] tanpa terganggu companion
-    if (!_can_interact_target && instance_exists(oDecorCatacombs)) {
-        var _n_dec = instance_nearest(x, y, oDecorCatacombs);
-        if (_n_dec != noone && !_n_dec.gate_opened && point_distance(x, y, _n_dec.switch_x, _n_dec.switch_y) < 42) {
-            _can_interact_target = true;
-        }
     }
     
     // =========================================================================

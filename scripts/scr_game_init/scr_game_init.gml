@@ -421,6 +421,16 @@ function scr_load_game(_slot = "quicksave") {
     if (variable_struct_exists(_data, "opened_chests")) global.opened_chests = _data.opened_chests;
     if (variable_struct_exists(_data, "catacombs_gate_opened")) global.catacombs_gate_opened = _data.catacombs_gate_opened;
     
+    // Reset seluruh state menu dan dialog agar tidak terkunci saat memuat game
+    global.dialogue_active = false;
+    global.shop_menu_open = "";
+    global.stat_menu_open = false;
+    global.save_menu_open = false;
+    global.map_menu_open = false;
+    global.leave_confirm_active = false;
+    if (variable_global_exists("main_menu_open")) global.main_menu_open = false;
+    if (variable_global_exists("is_paused")) global.is_paused = false;
+    
     // 9. Pindah Ruangan & Posisikan Pemain
     if (variable_struct_exists(_data, "room_name")) {
         var _target_room = asset_get_index(_data.room_name);

@@ -119,6 +119,21 @@ if (variable_global_exists("spawn_x") && global.spawn_x != -1) {
     global.spawn_y = -1;
 }
 
+// Snap kamera instan ke pemain saat objek dibuat
+if (!view_enabled) {
+    view_enabled = true;
+    view_visible[0] = true;
+}
+var _cam = view_camera[0];
+if (_cam == -1) {
+    _cam = camera_create_view(0, 0, 1280, 720, 0, noone, -1, -1, -1, -1);
+    view_camera[0] = _cam;
+}
+camera_set_view_size(_cam, 1280, 720);
+var _snap_x = clamp(x - 640, 0, max(0, room_width - 1280));
+var _snap_y = clamp(y - 360, 0, max(0, room_height - 720));
+camera_set_view_pos(_cam, _snap_x, _snap_y);
+
 // Spawn Companion Goran jika sudah masuk party
 if (variable_global_exists("party_goran") && global.party_goran && !instance_exists(oCompanion_Goran)) {
     instance_create_depth(x - 30, y, -100, oCompanion_Goran);

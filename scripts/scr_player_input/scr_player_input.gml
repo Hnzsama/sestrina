@@ -19,7 +19,7 @@ function scr_player_input() {
     keyRight  = keyboard_check(vk_right) || keyboard_check(ord("D"));
     keyDown   = keyboard_check(vk_down)  || keyboard_check(ord("S"));
     keyUp     = keyboard_check(vk_up)    || keyboard_check(ord("W"));
-    keyActive = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(vk_lshift) || keyboard_check_pressed(vk_rshift);
+    keyActive = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_shift) || keyboard_check_pressed(vk_lshift) || keyboard_check_pressed(vk_rshift);
     keyAttack = keyboard_check_pressed(ord("Z"));
     keyMagic  = keyboard_check_pressed(ord("X"));
     keyItem   = keyboard_check_pressed(ord("C"));
