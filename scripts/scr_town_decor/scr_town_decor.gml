@@ -1,71 +1,61 @@
 /// @description Helper Rendering Arsitektur & Lingkungan Kota Altdorf (Tertata Rapi, Bersih, Artistik)
 
 // =========================================================================
-// 1. TROTOAR BATU TIMBUL PRESISI (Raised Stone Curb Line & Box)
+// 1. PEMBATAS BATU JALAN ALAMI (Natural Earthy Stone Edge)
 // =========================================================================
 
 function scr_draw_curb_line(_x1, _y1, _x2, _y2, _is_horiz) {
     if (_is_horiz) {
-        // Garis batas luar gelap
-        draw_set_color(make_color_rgb(55, 60, 68));
+        // Garis batas luar batu tanah menyatu ke rumput
+        draw_set_color(make_color_rgb(85, 78, 68));
         draw_line(_x1 - 1, _y1 - 1, _x2 + 1, _y1 - 1);
         
-        // Trotoar batu terang tebal 4px
-        draw_set_color(make_color_rgb(222, 226, 235));
-        draw_rectangle(_x1, _y1, _x2, _y1 + 3, false);
+        // Trotoar batu hangat tebal 2px
+        draw_set_color(make_color_rgb(142, 134, 122));
+        draw_rectangle(_x1, _y1, _x2, _y1 + 1, false);
         
-        // Highlight putih atas
-        draw_set_color(make_color_rgb(248, 250, 255));
-        draw_line(_x1 - 1, _y1, _x2 + 1, _y1);
+        // Highlight lembut atas batu
+        draw_set_color(make_color_rgb(168, 160, 148));
+        draw_line(_x1, _y1, _x2, _y1);
         
         // Bayangan bawah batu
-        draw_set_color(make_color_rgb(135, 140, 150));
-        draw_line(_x1, _y1 + 3, _x2, _y1 + 3);
+        draw_set_color(make_color_rgb(105, 98, 88));
+        draw_line(_x1, _y1 + 1, _x2, _y1 + 1);
     } else {
         // Vertikal
-        draw_set_color(make_color_rgb(55, 60, 68));
+        draw_set_color(make_color_rgb(85, 78, 68));
         draw_line(_x1 - 1, _y1 - 1, _x1 - 1, _y2 + 1);
         
-        draw_set_color(make_color_rgb(222, 226, 235));
-        draw_rectangle(_x1, _y1, _x1 + 3, _y2, false);
+        draw_set_color(make_color_rgb(142, 134, 122));
+        draw_rectangle(_x1, _y1, _x1 + 1, _y2, false);
         
-        draw_set_color(make_color_rgb(248, 250, 255));
-        draw_line(_x1, _y1 - 1, _x1, _y2 + 1);
+        draw_set_color(make_color_rgb(168, 160, 148));
+        draw_line(_x1, _y1, _x1, _y2);
         
-        draw_set_color(make_color_rgb(135, 140, 150));
-        draw_line(_x1 + 3, _y1, _x1 + 3, _y2);
+        draw_set_color(make_color_rgb(105, 98, 88));
+        draw_line(_x1 + 1, _y1, _x1 + 1, _y2);
     }
 }
 
 function scr_draw_curb_box(_x1, _y1, _x2, _y2) {
-    draw_set_color(make_color_rgb(55, 60, 68));
-    draw_rectangle(_x1 - 1, _y1 - 1, _x2 + 1, _y2 + 1, true);
+    draw_set_color(make_color_rgb(85, 78, 68));
+    draw_rectangle(_x1, _y1, _x2, _y2, true);
     
-    draw_set_color(make_color_rgb(222, 226, 235));
-    draw_line_width(_x1, _y1, _x2, _y1, 4); // Atas
-    draw_line_width(_x1, _y2, _x2, _y2, 4); // Bawah
-    draw_line_width(_x1, _y1, _x1, _y2, 4); // Kiri
-    draw_line_width(_x2, _y1, _x2, _y2, 4); // Kanan
-    
-    draw_set_color(make_color_rgb(248, 250, 255));
-    draw_line(_x1 - 1, _y1 - 1, _x2 + 1, _y1 - 1);
-    draw_line(_x1 - 1, _y1 - 1, _x1 - 1, _y2 + 1);
-
-    draw_set_color(make_color_rgb(135, 140, 150));
-    draw_rectangle(_x1 + 3, _y1 + 3, _x2 - 3, _y2 - 3, true);
+    draw_set_color(make_color_rgb(138, 130, 118));
+    draw_rectangle(_x1 + 1, _y1 + 1, _x2 - 1, _y2 - 1, true);
 }
 
 
 // =========================================================================
-// 2. JALAN BATU PAVING COBBLESTONE FLEKSIBEL (Seamless Junctions)
+// 2. JALAN BATU PAVING COBBLESTONE FLEKSIBEL (Natural Warm Medieval Cobblestone)
 // =========================================================================
 
 function scr_draw_cobblestone_road(_rx1, _ry1, _rx2, _ry2, _curb_t = true, _curb_b = true, _curb_l = true, _curb_r = true) {
-    // 1. Dasar abu-abu batu paving
-    draw_set_color(make_color_rgb(195, 200, 208));
+    // 1. Dasar hangat tanah batu pasir Altdorf
+    draw_set_color(make_color_rgb(155, 146, 132));
     draw_rectangle(_rx1, _ry1, _rx2, _ry2, false);
     
-    // 2. Pola balok paving batu berulang halus (16x16)
+    // 2. Pola balok paving batu alami berulang (16x16)
     var _step = 16;
     for (var _ry = _ry1; _ry < _ry2; _ry += _step) {
         var _row_idx = (_ry - _ry1) div _step;
@@ -73,17 +63,18 @@ function scr_draw_cobblestone_road(_rx1, _ry1, _rx2, _ry2, _curb_t = true, _curb
         
         for (var _rx = _rx1 + _x_offset; _rx < _rx2; _rx += _step) {
             var _hash = ((_rx * 374761393) ^ (_ry * 668265263)) & 255;
-            var _c_val = 190 + (_hash mod 14);
-            draw_set_color(make_color_rgb(_c_val, _c_val + 4, _c_val + 8));
+            var _c_val = 148 + (_hash mod 16);
+            draw_set_color(make_color_rgb(_c_val, _c_val - 4, _c_val - 12));
             draw_rectangle(_rx, _ry, min(_rx + _step - 2, _rx2 - 2), min(_ry + _step - 2, _ry2 - 2), false);
             
-            draw_set_color(make_color_rgb(228, 232, 240));
+            // Highlight lembut sudut batu alami
+            draw_set_color(make_color_rgb(_c_val + 12, _c_val + 8, _c_val));
             draw_point(_rx + 1, _ry + 1);
         }
     }
     
-    // 3. Garis nat semen halus antar batu
-    draw_set_color(make_color_rgb(155, 160, 168));
+    // 3. Garis nat semen alami antar batu
+    draw_set_color(make_color_rgb(122, 114, 102));
     for (var _ry = _ry1; _ry <= _ry2; _ry += _step) {
         draw_line(_rx1, _ry, _rx2, _ry);
     }
@@ -91,11 +82,11 @@ function scr_draw_cobblestone_road(_rx1, _ry1, _rx2, _ry2, _curb_t = true, _curb
         draw_line(_rx, _ry1, _rx, _ry2);
     }
     
-    // 4. Trotoar timbul hanya di sisi tepi yang diminta (bebas memotong persimpangan!)
+    // 4. Pembatas batu lembut di tepi jalan
     if (_curb_t) scr_draw_curb_line(_rx1, _ry1, _rx2, _ry1, true);
-    if (_curb_b) scr_draw_curb_line(_rx1, _ry2 - 3, _rx2, _ry2 - 3, true);
+    if (_curb_b) scr_draw_curb_line(_rx1, _ry2 - 2, _rx2, _ry2 - 2, true);
     if (_curb_l) scr_draw_curb_line(_rx1, _ry1, _rx1, _ry2, false);
-    if (_curb_r) scr_draw_curb_line(_rx2 - 3, _ry1, _rx2 - 3, _ry2, false);
+    if (_curb_r) scr_draw_curb_line(_rx2 - 2, _ry1, _rx2 - 2, _ry2, false);
 }
 
 
@@ -105,15 +96,15 @@ function scr_draw_cobblestone_road(_rx1, _ry1, _rx2, _ry2, _curb_t = true, _curb
 
 function scr_draw_flowerbed(_fx1, _fy1, _fx2, _fy2, _f_type = 0) {
     // Tanah humus kebun subur cokelat gelap
-    draw_set_color(make_color_rgb(58, 44, 32));
+    draw_set_color(make_color_rgb(52, 38, 26));
     draw_roundrect_ext(_fx1, _fy1, _fx2, _fy2, 6, 6, false);
-    draw_set_color(make_color_rgb(78, 58, 40));
+    draw_set_color(make_color_rgb(72, 52, 36));
     draw_roundrect_ext(_fx1 + 2, _fy1 + 2, _fx2 - 2, _fy2 - 2, 4, 4, false);
     
-    // Bingkai batu pembatas petak bunga
-    draw_set_color(make_color_rgb(165, 170, 180));
+    // Bingkai batu taman alami
+    draw_set_color(make_color_rgb(115, 102, 88));
     draw_roundrect_ext(_fx1, _fy1, _fx2, _fy2, 6, 6, true);
-    draw_set_color(make_color_rgb(215, 220, 230));
+    draw_set_color(make_color_rgb(148, 136, 120));
     draw_roundrect_ext(_fx1 - 1, _fy1 - 1, _fx2 + 1, _fy2 + 1, 8, 8, true);
     
     // Bunga-bunga mekar lebat tertata rapi
@@ -153,6 +144,43 @@ function scr_draw_flowerbed(_fx1, _fy1, _fx2, _fy2, _f_type = 0) {
         }
     }
 }
+    
+    // Bunga-bunga mekar lebat tertata rapi
+    for (var _by = _fy1 + 8; _by <= _fy2 - 8; _by += 14) {
+        for (var _bx = _fx1 + 8; _bx <= _fx2 - 8; _bx += 14) {
+            // Batang & Daun Hijau
+            draw_set_color(make_color_rgb(45, 115, 40));
+            draw_circle(_bx - 2, _by + 1, 2, false);
+            draw_circle(_bx + 2, _by + 1, 2, false);
+            
+            // Kelopak Bunga sesuai tipe
+            if (_f_type == 0) {
+                // Marigold Kuning Emas Cerah
+                draw_set_color(make_color_rgb(255, 205, 45));
+                draw_circle(_bx, _by, 3.5, false);
+                draw_set_color(make_color_rgb(255, 130, 25));
+                draw_circle(_bx, _by, 1.5, false);
+            } else if (_f_type == 1) {
+                // Lili / Melati Putih Murni
+                draw_set_color(make_color_rgb(248, 252, 255));
+                draw_circle(_bx, _by, 3.5, false);
+                draw_set_color(make_color_rgb(255, 235, 120));
+                draw_circle(_bx, _by, 1.5, false);
+            } else if (_f_type == 2) {
+                // Lavender Ungu Kerajaan
+                draw_set_color(make_color_rgb(165, 110, 225));
+                draw_ellipse(_bx - 2, _by - 4, _bx + 2, _by + 4, false);
+                draw_set_color(make_color_rgb(215, 175, 255));
+                draw_circle(_bx, _by - 1, 1.5, false);
+            } else {
+                // Mawar Merah Bergairah
+                draw_set_color(make_color_rgb(225, 45, 65));
+                draw_circle(_bx, _by, 3.5, false);
+                draw_set_color(make_color_rgb(255, 120, 140));
+                draw_circle(_bx, _by, 1.5, false);
+            }
+        }
+    }
 
 
 // =========================================================================
@@ -243,11 +271,11 @@ function scr_draw_park_bench(_bx, _by, _width = 48) {
 
 function scr_draw_park_pond(_px1, _py1, _px2, _py2) {
     // 1. Dinding Tanggul Batu Luar
-    draw_set_color(make_color_rgb(95, 102, 114));
+    draw_set_color(make_color_rgb(85, 78, 68));
     draw_roundrect_ext(_px1 - 4, _py1 - 4, _px2 + 4, _py2 + 4, 12, 12, false);
-    draw_set_color(make_color_rgb(168, 175, 188));
+    draw_set_color(make_color_rgb(142, 134, 122));
     draw_roundrect_ext(_px1 - 4, _py1 - 4, _px2 + 4, _py2 + 4, 12, 12, true);
-    draw_set_color(make_color_rgb(225, 230, 240));
+    draw_set_color(make_color_rgb(168, 160, 148));
     draw_line(_px1, _py1 - 4, _px2, _py1 - 4);
     
     // 2. Air Kolam Tenang (Gradasi Biru-Kehijauan Alami)
