@@ -144,43 +144,6 @@ function scr_draw_flowerbed(_fx1, _fy1, _fx2, _fy2, _f_type = 0) {
         }
     }
 }
-    
-    // Bunga-bunga mekar lebat tertata rapi
-    for (var _by = _fy1 + 8; _by <= _fy2 - 8; _by += 14) {
-        for (var _bx = _fx1 + 8; _bx <= _fx2 - 8; _bx += 14) {
-            // Batang & Daun Hijau
-            draw_set_color(make_color_rgb(45, 115, 40));
-            draw_circle(_bx - 2, _by + 1, 2, false);
-            draw_circle(_bx + 2, _by + 1, 2, false);
-            
-            // Kelopak Bunga sesuai tipe
-            if (_f_type == 0) {
-                // Marigold Kuning Emas Cerah
-                draw_set_color(make_color_rgb(255, 205, 45));
-                draw_circle(_bx, _by, 3.5, false);
-                draw_set_color(make_color_rgb(255, 130, 25));
-                draw_circle(_bx, _by, 1.5, false);
-            } else if (_f_type == 1) {
-                // Lili / Melati Putih Murni
-                draw_set_color(make_color_rgb(248, 252, 255));
-                draw_circle(_bx, _by, 3.5, false);
-                draw_set_color(make_color_rgb(255, 235, 120));
-                draw_circle(_bx, _by, 1.5, false);
-            } else if (_f_type == 2) {
-                // Lavender Ungu Kerajaan
-                draw_set_color(make_color_rgb(165, 110, 225));
-                draw_ellipse(_bx - 2, _by - 4, _bx + 2, _by + 4, false);
-                draw_set_color(make_color_rgb(215, 175, 255));
-                draw_circle(_bx, _by - 1, 1.5, false);
-            } else {
-                // Mawar Merah Bergairah
-                draw_set_color(make_color_rgb(225, 45, 65));
-                draw_circle(_bx, _by, 3.5, false);
-                draw_set_color(make_color_rgb(255, 120, 140));
-                draw_circle(_bx, _by, 1.5, false);
-            }
-        }
-    }
 
 
 // =========================================================================
