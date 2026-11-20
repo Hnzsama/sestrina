@@ -371,6 +371,27 @@ if (global.shop_menu_open == "goran") {
         scr_play_ui("cancel");
     }
     
+    // Opsi Rekrut / Lepas Goran dari Party (Bebas Dipilih Pemain [P])
+    if (keyboard_check_pressed(ord("P")) && variable_global_exists("has_boss_key") && global.has_boss_key) {
+        if (!variable_global_exists("party_goran")) global.party_goran = false;
+        global.party_goran = !global.party_goran;
+        
+        if (global.party_goran) {
+            if (!instance_exists(oCompanion_Goran) && instance_exists(oPlayer)) {
+                instance_create_depth(oPlayer.x - 30, oPlayer.y, -100, oCompanion_Goran);
+            }
+            banner_title = "GORAN BERGABUNG KE PARTY!";
+            banner_subtitle = "Ksatria veteran kini siap mengawalmu di pertempuran!";
+            banner_timer = 180;
+        } else {
+            with (oCompanion_Goran) instance_destroy();
+            banner_title = "GORAN KEMBALI KE BENGKEL";
+            banner_subtitle = "Goran beristirahat di bengkel pandai besi.";
+            banner_timer = 180;
+        }
+        scr_play_ui("confirm");
+    }
+    
     // Tekan SPACE untuk Tempa Senjata
     if (keyboard_check_pressed(vk_space)) {
         var _upgraded = false;

@@ -1117,7 +1117,18 @@ if (global.shop_menu_open == "goran") {
 
     draw_set_halign(fa_center);
     draw_set_color(make_color_rgb(180, 190, 210));
-    draw_text(_gw / 2, _my + _mh - 30, "Tekan [SPACE] Tempa  •  Tekan [X] Keluar");
+    draw_text(_gw / 2, _my + _mh - 36, "Tekan [SPACE] Tempa Senjata  •  Tekan [X] Keluar");
+    
+    // Opsi Party Opsional (Hanya Muncul jika Memiliki Kunci Sanctum / Boss Key)
+    if (variable_global_exists("has_boss_key") && global.has_boss_key) {
+        if (variable_global_exists("party_goran") && global.party_goran) {
+            draw_set_color(make_color_rgb(255, 130, 130));
+            draw_text(_gw / 2, _my + _mh - 16, "[P] Lepas Goran dari Party (Saat Ini: MENDAMPINGI)");
+        } else {
+            draw_set_color(make_color_rgb(130, 220, 255));
+            draw_text(_gw / 2, _my + _mh - 16, "[P] Rekrut Goran ke Party (Opsional: Rekan Tempur)");
+        }
+    }
 }
 
 // =========================================================================
