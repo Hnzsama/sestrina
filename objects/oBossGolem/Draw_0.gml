@@ -71,7 +71,7 @@ for (var _g = 0; _g < array_length(_guardians); _g++) {
     if (instance_exists(_gobj)) {
         _guardian_alive = true;
         with (_gobj) {
-            var _pulse = 0.5 + sin(other.anim_timer * 6 + id) * 0.3;
+            var _pulse = 0.5 + sin(other.anim_timer * 6 + _g * 2.0) * 0.3;
             draw_set_alpha(_pulse);
             draw_set_color(make_color_rgb(180, 50, 255));
             draw_line_width(other.x, other.y - 40, x, y - 30, 2);
