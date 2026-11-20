@@ -134,6 +134,16 @@ if (_time_str == "Nighttime") {
         _draw_lantern_glow(520, 240, 46);
         _draw_lantern_glow(760, 240, 46);
         
+    } else if (_rname == "rm_dungeon_floor2") {
+        // 4 Pilar Lentera Tambang Purba Lantai 2
+        _draw_lantern_glow(380, 220, 60, 1.1);
+        _draw_lantern_glow(900, 220, 60, 1.1);
+        _draw_lantern_glow(380, 420, 60, 1.1);
+        _draw_lantern_glow(900, 420, 60, 1.1);
+        
+        // Pendaran Kristal Biru Kereta Tambang & Suaka Runic
+        _draw_blue_glow(230, 240, 50, 0.9);
+        _draw_blue_glow(1080, 220, 55, 1.0);
     } else if (_rname == "rm_boss_chamber") {
         _draw_blue_glow(640, 344, 75, 1.2);
         _draw_blue_glow(420, 220, 50, 0.8);
