@@ -1,10 +1,19 @@
 /// @description Inisialisasi Mini-Boss: Panglima Tengkorak (Skeleton Warlord)
-event_inherited();
 
-sprite_index = sEnemySkeleton;
+event_inherited();
+base_xscale = 0.85;
+base_yscale = 0.85;
+image_xscale = 0.85;
+image_yscale = 0.85;
+
+spr_idle = sEnemy_Skeleton_Idle;
+spr_walk = sEnemy_Skeleton_Walk;
+spr_attack = sEnemy_Skeleton_Attack;
+spr_hurt = sEnemy_Skeleton_Hurt;
+spr_die = sEnemy_Skeleton_Die;
+
+sprite_index = spr_idle;
 image_speed = 0.14;
-image_xscale = 2.0;
-image_yscale = 2.0;
 
 max_hp = 220;
 hp = 220;

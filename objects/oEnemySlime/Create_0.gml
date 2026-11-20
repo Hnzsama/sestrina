@@ -1,9 +1,10 @@
 /// @description Inisialisasi Slime Katakombe (Atlas Floor 1)
 
 event_inherited();
-base_xscale = 1.0;
-image_xscale = 1.0;
-image_yscale = 1.0;
+base_xscale = 0.40;
+base_yscale = 0.40;
+image_xscale = 0.40;
+image_yscale = 0.40;
 
 spr_idle = sEnemy_Slime_Idle;
 spr_walk = sEnemy_Slime_Walk;

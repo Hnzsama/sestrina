@@ -1,9 +1,10 @@
 /// @description Inisialisasi Ksatria Tengkorak (Atlas Floor 1)
 
 event_inherited();
-base_xscale = 1.0;
-image_xscale = 1.0;
-image_yscale = 1.0;
+base_xscale = 0.45;
+base_yscale = 0.45;
+image_xscale = 0.45;
+image_yscale = 0.45;
 
 spr_idle = sEnemy_Skeleton_Idle;
 spr_walk = sEnemy_Skeleton_Walk;

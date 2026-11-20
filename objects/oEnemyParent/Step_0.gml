@@ -43,16 +43,17 @@ if (global.dialogue_active || !instance_exists(oPlayer)) {
 
 var _dist = distance_to_object(oPlayer);
 
-// Menghadap ke arah pemain
+// Menghadap ke arah pemain secara proporsional sesuai base_xscale
 if (oPlayer.x < x) {
     image_xscale = -abs(base_xscale);
 } else {
     image_xscale = abs(base_xscale);
 }
+image_yscale = base_yscale;
 
 // Deteksi pemain dalam jarak 220 pixel -> Kejar (Walk)
 var _is_moving = false;
-if (_dist < 220 && _dist > 22) {
+if (_dist < 220 && _dist > 16) {
     var _dir = point_direction(x, y, oPlayer.x, oPlayer.y);
     var _nx = x + lengthdir_x(move_speed, _dir);
     var _ny = y + lengthdir_y(move_speed, _dir);
@@ -80,7 +81,7 @@ if (_is_moving) {
 }
 
 // Serang pemain jika menempel dan attack_cooldown siap
-if (_dist <= 26 && attack_cooldown <= 0) {
+if (_dist <= 20 && attack_cooldown <= 0) {
     attack_cooldown = 50;
     state = "attack";
     attack_timer = 22;

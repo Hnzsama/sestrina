@@ -1,9 +1,9 @@
 /// @description Draw Event - Render Enemy Sprite, Bayangan, dan Health Bar
 
-// Bayangan di tanah
+// Bayangan di tanah yang proporsional dengan skala musuh
 draw_set_alpha(0.35);
 draw_set_color(c_black);
-draw_ellipse(x - 14, y + 10, x + 14, y + 18, false);
+draw_ellipse(x - 20 * base_xscale, y + 3, x + 20 * base_xscale, y + 8, false);
 draw_set_alpha(1.0);
 
 // Render Sprite dengan Flash jika terkena damage
@@ -17,10 +17,10 @@ if (flash_timer > 0) {
 
 // Gambar HP Bar di atas kepala jika terluka dan belum mati dan bukan boss
 if (hp < max_hp && !is_dead && !is_boss) {
-    var _bw = 32;
-    var _bh = 5;
+    var _bw = 24;
+    var _bh = 4;
     var _bx = x - _bw / 2;
-    var _by = y - sprite_yoffset - 6;
+    var _by = y - (sprite_yoffset * base_yscale) - 4;
     
     draw_set_color(c_black);
     draw_rectangle(_bx - 1, _by - 1, _bx + _bw + 1, _by + _bh + 1, false);

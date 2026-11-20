@@ -3,109 +3,141 @@
 var _time_str = variable_global_exists("time_of_day") ? global.time_of_day : "Daytime";
 
 // =========================================================================
-// 1. NIGHTTIME AMBIENT OVERLAY & LIGHT SOURCES (Reference: night outdoor bar.png)
+// 1. NIGHTTIME AMBIENT OVERLAY & LIGHT SOURCES (JRPG Soft Mood Lighting)
 // =========================================================================
 if (_time_str == "Nighttime") {
     var _rname = room_get_name(room);
     
-    // Lapisan Gelap Biru Malam (Deep Night Ambient Tint)
-    draw_set_alpha(0.48);
-    draw_set_color(make_color_rgb(8, 14, 32));
+    // Lapisan Gelap Biru Malam (Deep Moody Twilight Blue - Nyaman & Tidak Buta)
+    draw_set_alpha(0.38);
+    draw_set_color(make_color_rgb(14, 18, 42));
     draw_rectangle(0, 0, room_width, room_height, false);
     draw_set_alpha(1.0);
     
-    // Sistem Pencahayaan Additive (Lanterns, Fireplaces, Torches, Player Halo)
+    // Sistem Pencahayaan Additive Lembut & Natural (Multi-Step Soft Radial Falloff)
     gpu_set_blendmode(bm_add);
     
-    // A. Cahaya Obor / Lentera Pribadi Karakter Utama (Player Halo)
-    if (instance_exists(oPlayer)) {
-        var _px = oPlayer.x;
-        var _py = oPlayer.y;
-        var _hflick = sin(current_time * 0.008) * 3;
+    // Fungsi Pendaran Cahaya Lentera Hangat (Amber/Warm Glow)
+    var _draw_lantern_glow = function(_lx, _ly, _rad = 54, _intensity = 1.0) {
+        var _flick = sin(current_time * 0.005 + _lx) * 1.5;
+        var _r = _rad + _flick;
+        var _col_amber = make_color_rgb(255, 160, 60);
         
-        draw_set_alpha(0.24);
-        draw_set_color(make_color_rgb(255, 180, 80));
-        draw_circle(_px, _py - 10, 85 + _hflick, false);
+        // Ring 1: Pendaran terluar sangat tipis & berbaur lembut dengan malam
+        draw_set_alpha(0.04 * _intensity);
+        draw_set_color(_col_amber);
+        draw_circle(_lx, _ly, _r, false);
         
-        draw_set_alpha(0.38);
-        draw_set_color(make_color_rgb(255, 220, 130));
-        draw_circle(_px, _py - 10, 45 + _hflick * 0.5, false);
-    }
-    
-    // B. Cahaya Lentera & Perapian Berdasarkan Ruangan
-    var _draw_light_source = function(_lx, _ly, _rad, _col_inner, _col_outer, _alpha_mult = 1.0) {
-        var _lflick = sin(current_time * 0.006 + _lx) * 4;
-        draw_set_alpha(0.22 * _alpha_mult);
-        draw_set_color(_col_outer);
-        draw_circle(_lx, _ly, _rad + _lflick, false);
-        draw_set_alpha(0.42 * _alpha_mult);
-        draw_set_color(_col_inner);
-        draw_circle(_lx, _ly, _rad * 0.45 + _lflick * 0.5, false);
+        // Ring 2: Pendaran hangat sekunder
+        draw_set_alpha(0.09 * _intensity);
+        draw_circle(_lx, _ly, _r * 0.62, false);
+        
+        // Ring 3: Pendaran dekat sumber cahaya
+        draw_set_alpha(0.18 * _intensity);
+        draw_circle(_lx, _ly, _r * 0.32, false);
+        
+        // Ring 4: Titik fokus lentera hangat
+        draw_set_alpha(0.35 * _intensity);
+        draw_set_color(make_color_rgb(255, 240, 190));
+        draw_circle(_lx, _ly, max(2, _r * 0.12), false);
+    };
+
+    // Fungsi Pendaran Cahaya Mistis Biru (Soul Fire / Arcane Glow)
+    var _draw_blue_glow = function(_lx, _ly, _rad = 50, _intensity = 1.0) {
+        var _flick = sin(current_time * 0.006 + _lx) * 1.5;
+        var _r = _rad + _flick;
+        var _col_blue = make_color_rgb(45, 140, 255);
+        
+        draw_set_alpha(0.04 * _intensity);
+        draw_set_color(_col_blue);
+        draw_circle(_lx, _ly, _r, false);
+        
+        draw_set_alpha(0.10 * _intensity);
+        draw_circle(_lx, _ly, _r * 0.58, false);
+        
+        draw_set_alpha(0.24 * _intensity);
+        draw_set_color(make_color_rgb(180, 235, 255));
+        draw_circle(_lx, _ly, max(2, _r * 0.15), false);
     };
     
-    var _c_warm_inner = make_color_rgb(255, 235, 140);
-    var _c_warm_outer = make_color_rgb(255, 140, 40);
-    var _c_blue_inner = make_color_rgb(180, 230, 255);
-    var _c_blue_outer = make_color_rgb(40, 140, 255);
+    // A. Cahaya Lembut Sekitar Pemain (Ambient Self-Presence, bukan spotlight bulat tajam)
+    if (instance_exists(oPlayer)) {
+        var _px = oPlayer.x;
+        var _py = oPlayer.y - 12;
+        var _hflick = sin(current_time * 0.005) * 1.0;
+        
+        draw_set_alpha(0.03);
+        draw_set_color(make_color_rgb(255, 210, 140));
+        draw_circle(_px, _py, 45 + _hflick, false);
+        
+        draw_set_alpha(0.06);
+        draw_circle(_px, _py, 22 + _hflick * 0.5, false);
+    }
     
+    // B. Cahaya Titik Spesifik per Ruangan (HANYA pada Lentera/Obor yang Nyata)
     if (_rname == "rm_town_square") {
-        // Lentera Alun-Alun Pusat Plaza
-        _draw_light_source(1180, 620, 80, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(1380, 620, 80, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(1180, 820, 80, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(1380, 820, 80, _c_warm_inner, _c_warm_outer);
-
-        // Distrik Pengrajin & Pasar Barat
-        _draw_light_source(520, 390, 75, _c_warm_inner, _c_warm_outer);  // Toko Goran
-        _draw_light_source(700, 560, 65, _c_warm_inner, _c_warm_outer);  // Kios Pasar Atas
-        _draw_light_source(700, 680, 65, _c_warm_inner, _c_warm_outer);  // Kios Pasar Bawah
-
-        // Distrik Apotek Elysia & Kebun Botani
-        _draw_light_source(2040, 390, 75, _c_warm_inner, _c_warm_outer); // Apotek Elysia
-        _draw_light_source(1840, 520, 65, _c_warm_inner, _c_warm_outer); // Kebun Botani
-
-        // Teras Kafe / Outdoor Bar Barat Daya
-        _draw_light_source(540, 1030, 65, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(680, 1030, 65, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(800, 1030, 65, _c_warm_inner, _c_warm_outer);
-
-        // Dermaga Sungai Timur & Gerbang Kota
-        _draw_light_source(2360, 1000, 75, _c_warm_inner, _c_warm_outer); // Dermaga Nelayan
-        _draw_light_source(1280, 120, 85, _c_warm_inner, _c_warm_outer);   // Gerbang Utara
-        _draw_light_source(1280, 1345, 95, _c_warm_inner, _c_warm_outer);  // Gerbang Selatan Benteng
+        var _cx = 1280;
+        var _cy = 720;
+        
+        // 1. Empat Lentera Tiang di Sudut Alun-Alun Plaza
+        _draw_lantern_glow(_cx - 130, _cy - 128, 55);
+        _draw_lantern_glow(_cx + 110, _cy - 128, 55);
+        _draw_lantern_glow(_cx - 130, _cy + 32, 55);
+        _draw_lantern_glow(_cx + 110, _cy + 32, 55);
+        
+        // 2. Lentera Tiang Boulevard Utama (Jalan Utara & Selatan)
+        _draw_lantern_glow(_cx - 68, 352, 52);
+        _draw_lantern_glow(_cx + 52, 352, 52);
+        _draw_lantern_glow(_cx - 68, 832, 52);
+        _draw_lantern_glow(_cx + 52, 832, 52);
+        
+        // 3. Lentera Persimpangan Jalan Lingkungan
+        _draw_lantern_glow(460, 412, 50);
+        _draw_lantern_glow(1380, 412, 50);
+        _draw_lantern_glow(2110, 412, 50);
+        
+        // 4. Cahaya Hangat Jendela Toko yang Masih Buka di Malam Hari
+        _draw_lantern_glow(520, 235, 48, 0.7);   // Bengkel Goran
+        _draw_lantern_glow(2040, 235, 48, 0.7);  // Apotek Elysia
+        _draw_lantern_glow(1680, 235, 42, 0.6);  // Toko Roti
+        
+        // 5. Lentera Gerbang Benteng Utara & Selatan
+        _draw_lantern_glow(_cx - 65, 145, 46, 0.8);
+        _draw_lantern_glow(_cx + 65, 145, 46, 0.8);
+        
     } else if (_rname == "Room1") {
-        // Sayap Kiri: Ruang Tamu, Perapian & Dapur
-        _draw_light_source(250, 115, 110, _c_warm_inner, _c_warm_outer); // Kobaran Perapian Kayu Hangat Dapur
-        _draw_light_source(460, 290, 60, _c_warm_inner, _c_warm_outer);  // Lilin Meja Makan & Minum
-        _draw_light_source(280, 480, 60, _c_warm_inner, _c_warm_outer);  // Lilin Meja Kerja Adventurer
-
-        // Sayap Kanan: Kamar Pribadi Sestrina
-        _draw_light_source(920, 200, 75, _c_warm_inner, _c_warm_outer);  // Lilin Herbal Penenang Dekat Kasur Adik
-        _draw_light_source(990, 490, 50, _c_warm_inner, _c_warm_outer);  // Lilin Meja Rias Sestrina
+        // Pondok Sestrina: Perapian hangat & lilin kamar
+        _draw_lantern_glow(250, 115, 85, 1.2); // Perapian Dapur
+        _draw_lantern_glow(460, 290, 45, 0.8); // Lilin Meja Tengah
+        _draw_lantern_glow(920, 200, 48, 0.9); // Lilin Ranjang Sestrina
+        _draw_lantern_glow(990, 490, 38, 0.6); // Meja Rias
+        
     } else if (_rname == "rm_weapon_shop") {
-        // Tungku Tempa Raksasa Goran
-        _draw_light_source(640, 90, 130, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(82, 200, 60, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(1198, 200, 60, _c_warm_inner, _c_warm_outer);
+        _draw_lantern_glow(640, 90, 90, 1.3); // Tungku Tempa Bara Besi Goran
+        _draw_lantern_glow(82, 200, 45, 0.7);
+        _draw_lantern_glow(1198, 200, 45, 0.7);
+        
     } else if (_rname == "rm_potion_shop") {
-        // Lilin Riset & Lampu Alkemis Elysia
-        _draw_light_source(640, 265, 75, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(82, 200, 60, _c_warm_inner, _c_warm_outer);
-        _draw_light_source(1198, 200, 60, _c_warm_inner, _c_warm_outer);
+        _draw_lantern_glow(640, 265, 55, 0.9); // Meja Ramuan Alkemis Elysia
+        _draw_blue_glow(380, 180, 42, 0.8);    // Botol Eliksir Berpendar
+        _draw_blue_glow(900, 180, 42, 0.8);
+        
     } else if (_rname == "rm_catacombs") {
-        // Obor Api Jiwa Biru
-        _draw_light_source(120, 90, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(360, 90, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(640, 90, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(920, 90, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(1160, 90, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(120, 360, 70, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(1160, 360, 70, _c_blue_inner, _c_blue_outer);
+        // Obor Jiwa Biru di Sepanjang Dinding Utara Katakombe
+        _draw_blue_glow(160, 85, 55);
+        _draw_blue_glow(440, 85, 55);
+        _draw_blue_glow(640, 85, 55);
+        _draw_blue_glow(840, 85, 55);
+        _draw_blue_glow(1120, 85, 55);
+        
+        // Tungku Api Katakombe
+        _draw_lantern_glow(520, 240, 46);
+        _draw_lantern_glow(760, 240, 46);
+        
     } else if (_rname == "rm_boss_chamber") {
-        // Altar The Lost Remedy & Pilar Arcane
-        _draw_light_source(640, 344, 90, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(420, 220, 60, _c_blue_inner, _c_blue_outer);
-        _draw_light_source(860, 220, 60, _c_blue_inner, _c_blue_outer);
+        _draw_blue_glow(640, 344, 75, 1.2);
+        _draw_blue_glow(420, 220, 50, 0.8);
+        _draw_blue_glow(860, 220, 50, 0.8);
     }
     
     gpu_set_blendmode(bm_normal);

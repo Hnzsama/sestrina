@@ -1,9 +1,10 @@
 /// @description Inisialisasi Tikus Raksasa Katakombe (Atlas Floor 1)
 
 event_inherited();
-base_xscale = 1.0;
-image_xscale = 1.0;
-image_yscale = 1.0;
+base_xscale = 0.38;
+base_yscale = 0.38;
+image_xscale = 0.38;
+image_yscale = 0.38;
 
 spr_idle = sEnemy_Rat_Idle;
 spr_walk = sEnemy_Rat_Walk;

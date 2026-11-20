@@ -1,9 +1,10 @@
 /// @description Inisialisasi Laba-laba Raksasa Katakombe (Atlas Floor 1)
 
 event_inherited();
-base_xscale = 1.0;
-image_xscale = 1.0;
-image_yscale = 1.0;
+base_xscale = 0.42;
+base_yscale = 0.42;
+image_xscale = 0.42;
+image_yscale = 0.42;
 
 spr_idle = sEnemy_Spider_Idle;
 spr_walk = sEnemy_Spider_Walk;
