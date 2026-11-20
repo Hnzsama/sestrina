@@ -58,8 +58,10 @@ if (hitstop_timer > 0) {
     exit;
 }
 
-// Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save/map/konfirmasi
+// Hentikan pergerakan pemain jika sedang dalam dialog atau membuka menu status/toko/save/map/konfirmasi atau adegan ending
 if ((variable_global_exists("dialogue_active") && global.dialogue_active) || 
+    (variable_global_exists("game_ending") && global.game_ending != "") ||
+    (instance_exists(oRoomTransition) && oRoomTransition.showing_credits) ||
     (variable_global_exists("main_menu_open") && global.main_menu_open) ||
     (variable_global_exists("stat_menu_open") && global.stat_menu_open) || 
     (variable_global_exists("save_menu_open") && global.save_menu_open) || 

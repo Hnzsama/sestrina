@@ -9,10 +9,13 @@ interact_range = 65;
 // Auto trigger hanya sekali saat pertama kali main di awal quest (stage 0)
 auto_trigger_range = (global.quest_stage == 0 && (!variable_global_exists("sister_intro_done") || !global.sister_intro_done)) ? 55 : 0;
 has_auto_triggered = (variable_global_exists("sister_intro_done") && global.sister_intro_done);
+remedy_given = (variable_global_exists("game_ending") && global.game_ending != "");
 talk_count = 0;
 
 /// @function interact_action()
 interact_action = function() {
+    if (remedy_given || (variable_global_exists("game_ending") && global.game_ending != "")) exit;
+    if (instance_exists(oRoomTransition) && (oRoomTransition.showing_credits || (variable_instance_exists(oRoomTransition, "credits_cooldown") && oRoomTransition.credits_cooldown > 0))) exit;
     if (global.dialogue_active) exit;
     global.sister_intro_done = true;
     has_auto_triggered = true;
@@ -50,6 +53,13 @@ interact_action = function() {
     
     // CEK ENDING 1 & ENDING 2: The Lost Remedy Berhasil Dibawa Pulang
     if (global.player_has_remedy) {
+        remedy_given = true;
+        global.player_has_remedy = false; // Obat telah diserahkan, kunci agar tidak ter-trigger ulang
+        interact_range = 0;
+        auto_trigger_range = 0;
+        prompt_text = "";
+        global.dialogue_cooldown = 120;
+        
         if (variable_global_exists("demon_unsealed") && global.demon_unsealed) {
             // ENDING 2: Setengah Iblis (Half-Demon) - The Crimson Pact
             _d.add("Protagonis", "Sestrina! Aku membawa The Lost Remedy! Minumlah ini secepatnya!", "protagonist", "sestrina", "left", "exclamation")
@@ -58,13 +68,14 @@ interact_action = function() {
               .add("Protagonis", "Aku membuka segel darah iblis di kuil purba demi mengalahkan sang penjaga. Demi menyelamatkanmu, aku rela menanggalkan kemanusiaanku.", "protagonist", "sestrina", "left", "dots")
               .add("Sestrina", "Kakak... apa yang telah kau korbankan demi diriku...? (Air mata Sestrina menetes membasahi jubah kakaknya)", "protagonist", "sestrina", "right", "sweat");
             _d.start(function() {
+                global.dialogue_cooldown = 120;
                 global.game_ending = "half_demon";
                 scr_set_quest(5, "ENDING 2 - Meninggalkan Kemanusiaan", "Sestrina sembuh, namun kutukan darah iblis kini mengikat jiwa sang kakak.");
                 if (instance_exists(oRoomTransition)) {
                     with (oRoomTransition) {
                         credits_cached_ending = "half_demon";
-                        ending_card_cooldown = 45;
-                        credits_cooldown = 60;
+                        ending_card_cooldown = 75;
+                        credits_cooldown = 180;
                     }
                 }
             });
@@ -77,13 +88,14 @@ interact_action = function() {
               .add("Sestrina", "Terima kasih banyak, Kakak... Maafkan aku yang memaksakan diri saat kita ditinggalkan party di dungeon itu...", "protagonist", "sestrina", "right", "dots")
               .add("Protagonis", "Tidak ada yang perlu dimaafkan. Kita manusia biasa, tapi kita tidak akan pernah menyerah. Kita pulang bersama sekarang.", "protagonist", "sestrina", "left");
             _d.start(function() {
+                global.dialogue_cooldown = 120;
                 global.game_ending = "human";
                 scr_set_quest(5, "ENDING 1 - Tetap Manusia!", "Selamat! Sestrina pulih total dan kemanusiaanmu tetap terjaga!");
                 if (instance_exists(oRoomTransition)) {
                     with (oRoomTransition) {
                         credits_cached_ending = "human";
-                        ending_card_cooldown = 45;
-                        credits_cooldown = 60;
+                        ending_card_cooldown = 75;
+                        credits_cooldown = 180;
                     }
                 }
             });

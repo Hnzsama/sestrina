@@ -1894,7 +1894,7 @@ if (variable_global_exists("game_ending") && global.game_ending != "") {
             credits_cached_ending = global.game_ending;
             global.game_ending = "";
             showing_credits = true;
-            credits_cooldown = 45;
+            credits_cooldown = 180; // 3 detik penuh agar kredit tidak ter-skip instan
             ending_credits_y = _gh;
             scr_audio_play("ui", "confirm");
         }
@@ -1987,9 +1987,10 @@ if (variable_instance_exists(id, "showing_credits") && showing_credits) {
     draw_set_color(make_color_rgb(255, 215, 90));
     draw_line_width(0, _gh - 55, _gw, _gh - 55, 2);
     draw_set_color(make_color_rgb(255, 235, 140));
-    draw_text(_gw / 2, _gh - 28, "▶ [Tekan SPACE / ENTER / ESC untuk Kembali ke Menu Utama] ◀");
+    var _hint_text = (credits_cooldown > 0) ? "✦ KREDIT PENGEMBANG SEDANG BERJALAN ✦" : "▶ [Tekan ENTER atau ESC untuk Kembali ke Menu Utama] ◀";
+    draw_text(_gw / 2, _gh - 28, _hint_text);
 
-    if (credits_cooldown <= 0 && (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("Z")))) {
+    if (credits_cooldown <= 0 && (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_enter))) {
         showing_credits = false;
         room_goto(rm_main_menu);
     }
