@@ -19,29 +19,40 @@ var _line = _lines[current_line_index];
 // ==========================================
 // 1. Cek Apakah Percakapan Khusus Main Char & Sestrina
 // Sesuai Permintaan User: Tampilkan karakter 2D HANYA saat komunikasi Main Char sama Sestrina
-// NPC (Goran, Elysia, Alden, Boss, Warga Kota) TIDAK menampilkan karakter 2D
+// Dialog dengan Bos, NPC (Goran, Elysia, Alden, Warga Kota) TIDAK menampilkan karakter 2D
 // ==========================================
 var _is_main_and_sestrina = false;
 if (current_dialogue != noone && variable_struct_exists(current_dialogue, "lines")) {
     var _has_mc = false;
     var _has_ses = false;
+    var _has_other = false;
     for (var _k = 0; _k < array_length(current_dialogue.lines); _k++) {
         var _l = current_dialogue.lines[_k];
-        if (_l.left_portrait == "protagonist" || _l.right_portrait == "protagonist" || _l.speaker == "Protagonis" || _l.speaker == "Protagonist") _has_mc = true;
-        if (_l.left_portrait == "sestrina" || _l.right_portrait == "sestrina" || _l.speaker == "Sestrina") _has_ses = true;
+        var _spk = _l.speaker;
+        if (_spk == "Protagonis" || _spk == "Protagonist") {
+            _has_mc = true;
+        } else if (_spk == "Sestrina") {
+            _has_ses = true;
+        } else if (_spk != "") {
+            _has_other = true;
+        }
+        if (_l.left_portrait != "protagonist" && _l.left_portrait != "sestrina" && _l.left_portrait != noone) _has_other = true;
+        if (_l.right_portrait != "protagonist" && _l.right_portrait != "sestrina" && _l.right_portrait != noone) _has_other = true;
     }
-    _is_main_and_sestrina = (_has_mc && _has_ses);
+    _is_main_and_sestrina = (_has_mc && _has_ses && !_has_other);
 }
 
 var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh) {
     if (_type != "protagonist" && _type != "sestrina") return;
     
-    // Pilih Sprite Sesuai Karakter dan Sisi Berdiri (Kiri / Kanan)
+    // Pilih Sprite Sesuai Karakter dan Sisi Berdiri (Kiri / Kanan agar SALING BERHADAPAN)
+    // Karakter di sisi KIRI (_is_left == true) menghadap ke KANAN (ke arah lawan bicaranya)
+    // Karakter di sisi KANAN (_is_left == false) menghadap ke KIRI (ke arah lawan bicaranya)
     var _spr = noone;
     if (_type == "protagonist") {
-        _spr = _is_left ? sVN_Protagonist_Left : sVN_Protagonist_Right;
+        _spr = _is_left ? sVN_Protagonist_Right : sVN_Protagonist_Left;
     } else if (_type == "sestrina") {
-        _spr = _is_left ? sVN_Sestrina_Left : sVN_Sestrina_Right;
+        _spr = _is_left ? sVN_Sestrina_Right : sVN_Sestrina_Left;
     }
     if (_spr == noone || !sprite_exists(_spr)) return;
 

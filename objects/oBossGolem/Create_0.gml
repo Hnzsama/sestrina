@@ -201,15 +201,15 @@ trigger_plot_twist = function() {
         oRoomTransition.screen_shake = 22;
     }
     
-    // Dialog Plot Twist Spektakuler
+    // Dialog Plot Twist Spektakuler (Pertarungan Bos - Tanpa Karakter Anime Sestrina/Protagonis)
     var _d = dialogue_create();
-    _d.add("Protagonis", "Hancur sudah cangkang kegelapannya...! Tapi... di mana The Lost Remedy?! Altar singgasana ini kosong?!", "protagonist", "sestrina", "left", "exclamation")
-      .add("Suara Misterius", "Hahaha... Manusia malang. Kau tertipu oleh dongeng palsu para tetua Altdorf...", "guardian", "protagonist", "right", "dots")
-      .add("Protagonis", "Suara itu... Dari balik kristal ungu yang retak... Siapa kau sebenarnya?!", "protagonist", "sestrina", "left", "question")
-      .add("Dark Crystal Overlord", "Penyakit kebocoran mana adikmu, Sestrina... BUKAN kutukan biasa! Sestrina adalah wadah reinkarnasi dari Segel Jiwa Suaka ini!", "guardian", "protagonist", "right", "exclamation")
-      .add("Dark Crystal Overlord", "Tubuh zirah ini adalah penahan (SEAL CONTAINER) agar roh kutukan ini tidak melahap jiwa adikmu!", "guardian", "protagonist", "right", "dots")
-      .add("Dark Crystal Overlord", "Dengan menghancurkanku, kau justru MEMBEBASKAN roh kegelapan purba! Sekarang, jiwa adikmu akan kutarik untuk membangkitkan tubuh abadiku!", "guardian", "protagonist", "right", "exclamation")
-      .add("Protagonis", "TIDAK AKAN KUBIARKAN KAU MENYENTUH SESTRINA!! AKU AKAN MEMURNIKAN ROH BUSUKMU SEKALIPUN HARUS MEMBAKAR JIWAKU SENDIRI!!", "protagonist", "sestrina", "left", "exclamation");
+    _d.add("Protagonis", "Hancur sudah cangkang kegelapannya...! Tapi... di mana The Lost Remedy?! Altar singgasana ini kosong?!", "protagonist", "boss", "left", "exclamation")
+      .add("Suara Misterius", "Hahaha... Manusia malang. Kau tertipu oleh dongeng palsu para tetua Altdorf...", "boss", "protagonist", "right", "dots")
+      .add("Protagonis", "Suara itu... Dari balik kristal ungu yang retak... Siapa kau sebenarnya?!", "protagonist", "boss", "left", "question")
+      .add("Dark Crystal Overlord", "Penyakit kebocoran mana adikmu, Sestrina... BUKAN kutukan biasa! Sestrina adalah wadah reinkarnasi dari Segel Jiwa Suaka ini!", "boss", "protagonist", "right", "exclamation")
+      .add("Dark Crystal Overlord", "Tubuh zirah ini adalah penahan (SEAL CONTAINER) agar roh kutukan ini tidak melahap jiwa adikmu!", "boss", "protagonist", "right", "dots")
+      .add("Dark Crystal Overlord", "Dengan menghancurkanku, kau justru MEMBEBASKAN roh kegelapan purba! Sekarang, jiwa adikmu akan kutarik untuk membangkitkan tubuh abadiku!", "boss", "protagonist", "right", "exclamation")
+      .add("Protagonis", "TIDAK AKAN KUBIARKAN KAU MENYENTUH SESTRINA!! AKU AKAN MEMURNIKAN ROH BUSUKMU SEKALIPUN HARUS MEMBAKAR JIWAKU SENDIRI!!", "protagonist", "boss", "left", "exclamation");
       
     _d.start(function() {
         with (oBossGolem) {
