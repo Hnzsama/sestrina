@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":119,
+  "height":105,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ceb2502d-3d59-4cd3-8cab-c9dc1ac12bc7","blendMode":0,"displayName":"default","isLocked":false,"name":"ceb2502d-3d59-4cd3-8cab-c9dc1ac12bc7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -118,5 +118,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":60,
+  "width":41,
 }

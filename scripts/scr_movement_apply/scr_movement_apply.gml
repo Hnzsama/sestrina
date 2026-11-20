@@ -158,7 +158,26 @@ function scr_check_collision(_x, _y) {
     } else if (_rname == "rm_outskirts") {
         if (_x < _gx1 + 35 || _x > _gx2 - 35) return true; // Pohon Tebing Tepi
     } else if (_rname == "rm_catacombs") {
-        if (_x < _gx1 + 65 && _y > 150 && _y < 280) return true; // Sarkofagus
+        // Batas Dinding Samping Lurus & Dinding Batu Purba
+        if (_x < 110 || _x > 1170) return true;
+        if (_y < 125 && !(_x >= 580 && _x <= 700)) return true;
+        if (_y > 635 && !(_x >= 580 && _x <= 700)) return true;
+        
+        // 4 Pilar Kolonade Utama (Colonnade Pillars)
+        if (point_distance(_x, _y, 380, 260) < 24) return true;
+        if (point_distance(_x, _y, 900, 260) < 24) return true;
+        if (point_distance(_x, _y, 380, 450) < 24) return true;
+        if (point_distance(_x, _y, 900, 450) < 24) return true;
+        
+        // Sayap Barat: Makam Sarkofagus & Peti Kayu
+        if (_x >= 165 && _x <= 315 && _y >= 210 && _y <= 265) return true;
+        
+        // Sayap Timur: Batu Runic Monolit
+        if (_x >= 1030 && _x <= 1135 && _y >= 205 && _y <= 265) return true;
+        
+        // Patung Penjaga Gerbang Selatan
+        if (point_distance(_x, _y, 500, 630) < 20) return true;
+        if (point_distance(_x, _y, 780, 630) < 20) return true;
     } else if (_rname == "rm_boss_chamber") {
         if (point_distance(_x, _y, 640, 360) < 36) return true; // Pedestal Altar
     }

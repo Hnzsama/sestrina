@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":57,
+  "height":115,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9d64a939-51c0-4071-8cf1-e1352b2fb530","blendMode":0,"displayName":"default","isLocked":false,"name":"9d64a939-51c0-4071-8cf1-e1352b2fb530","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -118,5 +118,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":152,
+  "width":56,
 }

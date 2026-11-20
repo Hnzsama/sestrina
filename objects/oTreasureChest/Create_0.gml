@@ -7,6 +7,9 @@ image_index = 0;
 prompt_text = "[Z] Buka Peti";
 interact_range = 36;
 chest_reward = "potion";
+if (room == rm_catacombs) {
+    prompt_y_offset = -60;
+}
 
 // Identitas unik peti berdasarkan ruangan dan koordinat
 chest_id = "chest_" + room_get_name(room) + "_" + string(round(x)) + "_" + string(round(y));
