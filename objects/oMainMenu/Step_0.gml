@@ -19,8 +19,8 @@ if (fade_out) {
     if (fade_alpha >= 1.0) {
         if (target_action == "new_game") {
             scr_start_new_game();
-        } else if (target_action == "continue") {
-            scr_load_game("quicksave");
+        } else if (target_action == "load_slot" || target_action == "continue") {
+            scr_load_game(selected_load_slot);
         }
     }
     exit;
@@ -59,10 +59,17 @@ if (menu_state == "main") {
                 target_action = "new_game";
                 break;
                 
-            case 1: // Lanjutkan (Continue)
+            case 1: // Lanjutkan (Buka Manajemen Slot Simpanan)
                 if (has_save) {
-                    fade_out = true;
-                    target_action = "continue";
+                    refresh_save_slots();
+                    menu_state = "load_game";
+                    load_slot_selected = 0;
+                    for (var _s = 0; _s < array_length(save_slots_cache); _s++) {
+                        if (save_slots_cache[_s].exists) {
+                            load_slot_selected = _s;
+                            break;
+                        }
+                    }
                 }
                 break;
                 
@@ -79,6 +86,85 @@ if (menu_state == "main") {
             case 4: // Keluar
                 game_end();
                 break;
+        }
+    }
+}
+
+// =========================================================================
+// 1.5. STATE: LOAD GAME MULTI-SLOT
+// =========================================================================
+else if (menu_state == "load_game") {
+    var _key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
+    var _key_down = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+    var _key_confirm = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("Z"));
+    var _key_back = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("X"));
+
+    if (_key_up) {
+        load_slot_selected = (load_slot_selected - 1 + array_length(save_slots)) mod array_length(save_slots);
+        scr_audio_play("ui", "move");
+    }
+    if (_key_down) {
+        load_slot_selected = (load_slot_selected + 1) mod array_length(save_slots);
+        scr_audio_play("ui", "move");
+    }
+
+    if (_key_confirm) {
+        if (load_slot_selected < array_length(save_slots_cache) && save_slots_cache[load_slot_selected].exists) {
+            selected_load_slot = save_slots[load_slot_selected].id;
+            fade_out = true;
+            target_action = "load_slot";
+            scr_audio_play("ui", "confirm");
+        } else {
+            scr_audio_play("ui", "cancel");
+        }
+    }
+
+    if (_key_back) {
+        menu_state = "main";
+        scr_audio_play("ui", "cancel");
+    }
+    
+    // Mouse Support di Jendela Load Game
+    var _gmx = device_mouse_x_to_gui(0);
+    var _gmy = device_mouse_y_to_gui(0);
+    var _gw = display_get_gui_width();
+    var _gh = display_get_gui_height();
+    var _mw = 920;
+    var _mh = 570;
+    var _mx = (_gw - _mw) / 2;
+    var _my = (_gh - _mh) / 2;
+    
+    // Tombol Close [X]
+    if (mouse_check_button_pressed(mb_left)) {
+        if (_gmx >= _mx + _mw - 44 && _gmx <= _mx + _mw - 12 && _gmy >= _my + 12 && _gmy <= _my + 44) {
+            menu_state = "main";
+            scr_audio_play("ui", "cancel");
+        }
+    }
+    
+    // Klik Kartu Slot
+    var _card_y = _my + 68;
+    var _card_h = 102;
+    var _card_gap = 12;
+    var _cx = _mx + 24;
+    var _cw = _mw - 48;
+    
+    for (var _i = 0; _i < array_length(save_slots); _i++) {
+        var _cy = _card_y + _i * (_card_h + _card_gap);
+        var _card_hover = (_gmx >= _cx && _gmx <= _cx + _cw && _gmy >= _cy && _gmy <= _cy + _card_h);
+        
+        if (_card_hover) {
+            if (mouse_check_button_pressed(mb_left)) {
+                load_slot_selected = _i;
+                if (_i < array_length(save_slots_cache) && save_slots_cache[_i].exists) {
+                    selected_load_slot = save_slots[_i].id;
+                    fade_out = true;
+                    target_action = "load_slot";
+                    scr_audio_play("ui", "confirm");
+                } else {
+                    scr_audio_play("ui", "cancel");
+                }
+            }
         }
     }
 }

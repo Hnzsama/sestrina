@@ -118,6 +118,168 @@ if (menu_state == "main") {
 }
 
 // =========================================================================
+// STATE: LOAD GAME MULTI-SLOT (PILIH FILE SIMPANAN)
+// =========================================================================
+else if (menu_state == "load_game") {
+    var _gui_mx = device_mouse_x_to_gui(0);
+    var _gui_my = device_mouse_y_to_gui(0);
+    
+    // Dim background overlay
+    draw_set_alpha(0.75);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, _gw, _gh, false);
+    
+    var _mw = 920;
+    var _mh = 570;
+    var _mx = (_gw - _mw) / 2;
+    var _my = (_gh - _mh) / 2;
+    
+    // Panel Deep Indigo Frosted Glass
+    draw_set_alpha(0.96);
+    draw_set_color(make_color_rgb(16, 22, 40));
+    draw_roundrect_ext(_mx, _my, _mx + _mw, _my + _mh, 18, 18, false);
+    
+    // Double Glowing Golden / Lavender Border
+    draw_set_color(make_color_rgb(135, 165, 245));
+    draw_roundrect_ext(_mx, _my, _mx + _mw, _my + _mh, 18, 18, true);
+    draw_set_color(make_color_rgb(50, 70, 130));
+    draw_roundrect_ext(_mx + 2, _my + 2, _mx + _mw - 2, _my + _mh - 2, 16, 16, true);
+
+    // Diamond Corner Accents
+    var _draw_corner_diamond = function(_dx, _dy) {
+        draw_set_color(make_color_rgb(255, 220, 130));
+        draw_triangle(_dx - 4, _dy, _dx, _dy - 4, _dx + 4, _dy, false);
+        draw_triangle(_dx - 4, _dy, _dx, _dy + 4, _dx + 4, _dy, false);
+    };
+    _draw_corner_diamond(_mx + 6, _my + 6);
+    _draw_corner_diamond(_mx + _mw - 6, _my + 6);
+    _draw_corner_diamond(_mx + 6, _my + _mh - 6);
+    _draw_corner_diamond(_mx + _mw - 6, _my + _mh - 6);
+
+    // --- Header Modal ---
+    draw_set_alpha(1.0);
+    
+    // Tombol Close [X] (Pojok kanan atas)
+    var _close_hover = (_gui_mx >= _mx + _mw - 44 && _gui_mx <= _mx + _mw - 12 && _gui_my >= _my + 12 && _gui_my <= _my + 44);
+    draw_set_color(_close_hover ? make_color_rgb(220, 50, 60) : make_color_rgb(38, 48, 80));
+    draw_roundrect_ext(_mx + _mw - 44, _my + 12, _mx + _mw - 12, _my + 44, 8, 8, false);
+    draw_set_color(c_white);
+    draw_roundrect_ext(_mx + _mw - 44, _my + 12, _mx + _mw - 12, _my + 44, 8, 8, true);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(_mx + _mw - 28, _my + 28, "✕");
+
+    // Judul & Subjudul
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    draw_set_color(make_color_rgb(255, 225, 120));
+    draw_text(_mx + 24, _my + 28, "📂 PILIH FILE SIMPANAN (LOAD GAME)");
+    
+    draw_set_color(make_color_rgb(170, 195, 235));
+    draw_text(_mx + 440, _my + 28, "Pilih titik petualangan yang ingin Anda lanjutkan");
+
+    // Divider Line
+    draw_set_color(make_color_rgb(50, 70, 125));
+    draw_line(_mx + 20, _my + 54, _mx + _mw - 20, _my + 54);
+
+    // --- 4 Slot Cards ---
+    var _card_y = _my + 68;
+    var _card_h = 102;
+    var _card_gap = 12;
+    var _cx = _mx + 24;
+    var _cw = _mw - 48;
+    
+    for (var _i = 0; _i < array_length(save_slots); _i++) {
+        var _cy = _card_y + _i * (_card_h + _card_gap);
+        var _slot = save_slots[_i];
+        var _info = (_i < array_length(save_slots_cache)) ? save_slots_cache[_i] : scr_get_save_info(_slot.id);
+        
+        var _is_sel = (load_slot_selected == _i);
+        var _card_hover = (_gui_mx >= _cx && _gui_mx <= _cx + _cw && _gui_my >= _cy && _gui_my <= _cy + _card_h);
+        var _active_highlight = (_is_sel || _card_hover);
+        
+        // Card Background
+        draw_set_alpha(0.92);
+        draw_set_color(_active_highlight ? make_color_rgb(30, 42, 75) : make_color_rgb(20, 26, 48));
+        draw_roundrect_ext(_cx, _cy, _cx + _cw, _cy + _card_h, 12, 12, false);
+        
+        // Card Border Glow
+        draw_set_color(_active_highlight ? make_color_rgb(255, 215, 90) : (_info.exists ? make_color_rgb(70, 95, 155) : make_color_rgb(45, 55, 80)));
+        draw_roundrect_ext(_cx, _cy, _cx + _cw, _cy + _card_h, 12, 12, true);
+        
+        // Diamond Cursor saat Terpilih
+        if (_is_sel) {
+            draw_sprite_ext(sTitle_Icon_Cursor, 0, _cx - 10, _cy + _card_h / 2, 0.65, 0.65, 0, c_white, 1.0);
+        }
+        
+        // Slot Tag Pill (Kiri Atas)
+        var _pill_col = (_slot.id == "quicksave") ? make_color_rgb(220, 160, 40) : make_color_rgb(60, 120, 210);
+        draw_set_color(_pill_col);
+        draw_roundrect_ext(_cx + 12, _cy + 12, _cx + 124, _cy + 34, 6, 6, false);
+        draw_set_color(c_white);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_middle);
+        draw_text(_cx + 68, _cy + 23, _slot.title);
+        
+        draw_set_halign(fa_left);
+        if (_info.exists) {
+            // Judul Lokasi & Waktu
+            draw_set_color(make_color_rgb(255, 230, 140));
+            draw_text(_cx + 135, _cy + 23, _info.room_title);
+            
+            draw_set_color(make_color_rgb(130, 220, 245));
+            draw_text(_cx + 360, _cy + 23, "🕒 " + _info.time_str);
+            
+            // Detail Karakter (Level, Senjata, HP, Gold)
+            draw_set_color(make_color_rgb(220, 235, 255));
+            draw_text(_cx + 20, _cy + 52, _info.level_str);
+            
+            // Objektif Quest Aktif
+            draw_set_color(make_color_rgb(165, 185, 215));
+            draw_text(_cx + 20, _cy + 76, _info.quest_str);
+            
+            // --- Action Button Kanan: Muat File ---
+            var _bl_w = 150;
+            var _bl_h = 42;
+            var _bl_x = _cx + _cw - _bl_w - 18;
+            var _bl_y = _cy + (_card_h - _bl_h) / 2;
+            
+            var _hov_l = (_gui_mx >= _bl_x && _gui_mx <= _bl_x + _bl_w && _gui_my >= _bl_y && _gui_my <= _bl_y + _bl_h);
+            var _btn_active = (_is_sel || _hov_l);
+            
+            draw_set_color(_btn_active ? make_color_rgb(40, 130, 75) : make_color_rgb(25, 75, 45));
+            draw_roundrect_ext(_bl_x, _bl_y, _bl_x + _bl_w, _bl_y + _bl_h, 8, 8, false);
+            draw_set_color(_btn_active ? make_color_rgb(140, 255, 175) : make_color_rgb(60, 180, 100));
+            draw_roundrect_ext(_bl_x, _bl_y, _bl_x + _bl_w, _bl_y + _bl_h, 8, 8, true);
+            
+            draw_set_color(c_white);
+            draw_set_halign(fa_center);
+            draw_set_valign(fa_middle);
+            draw_text(_bl_x + _bl_w / 2, _bl_y + _bl_h / 2, "📂 Muat File Ini");
+        } else {
+            // Slot Kosong
+            draw_set_color(make_color_rgb(150, 160, 180));
+            draw_text(_cx + 135, _cy + 23, "[ SLOT KOSONG ]");
+            
+            draw_set_color(make_color_rgb(110, 125, 150));
+            draw_text(_cx + 20, _cy + 60, "Belum ada file simpanan petualangan di slot ini.");
+            
+            // Label Kosong di Kanan
+            draw_set_color(make_color_rgb(70, 85, 110));
+            draw_set_halign(fa_right);
+            draw_set_valign(fa_middle);
+            draw_text(_cx + _cw - 24, _cy + _card_h / 2, "Tidak Ada Data");
+        }
+    }
+    
+    // --- Footer Modal ---
+    draw_set_color(make_color_rgb(165, 190, 230));
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(_mx + _mw / 2, _my + _mh - 24, "▶ [W/S / Up/Down] Pilih Slot   •   [ENTER / SPACE / Z / Klik] Muat File   •   [ESC / X] Kembali ke Menu Utama ◀");
+}
+
+// =========================================================================
 // STATE: SETTINGS MENU
 // =========================================================================
 else if (menu_state == "settings") {
