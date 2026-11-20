@@ -1,167 +1,234 @@
 {
-  "$GMSprite":"v2",
-  "%Name":"sEnemy_Rat_Idle",
-  "bboxMode":0,
-  "bbox_bottom":71,
-  "bbox_left":0,
-  "bbox_right":103,
-  "bbox_top":0,
-  "collisionKind":1,
-  "collisionTolerance":0,
-  "DynamicTexturePage":false,
-  "edgeFiltering":false,
-  "For3D":false,
-  "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ea2fb0c4-5cd0-4745-aba9-138d6b7d844f","name":"ea2fb0c4-5cd0-4745-aba9-138d6b7d844f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"d64c2807-df19-4a5a-be27-3b8a31f14f6d","name":"d64c2807-df19-4a5a-be27-3b8a31f14f6d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"f06ef3ba-7c19-4a62-bd8e-6979e95e8dcb","name":"f06ef3ba-7c19-4a62-bd8e-6979e95e8dcb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"2ea41276-2f2f-4dd8-8c75-e89db4f93521","name":"2ea41276-2f2f-4dd8-8c75-e89db4f93521","resourceType":"GMSpriteFrame","resourceVersion":"2.0",}
+  "$GMSprite": "",
+  "%Name": "sEnemy_Rat_Idle",
+  "bboxMode": 0,
+  "bbox_bottom": 71,
+  "bbox_left": 0,
+  "bbox_right": 103,
+  "bbox_top": 0,
+  "collisionKind": 1,
+  "collisionTolerance": 0,
+  "DynamicTexturePage": false,
+  "edgeFiltering": false,
+  "For3D": false,
+  "frames": [
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "91d8be64-1d91-4563-90fa-0eaba24fcc5f",
+      "name": "91d8be64-1d91-4563-90fa-0eaba24fcc5f",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "b44e6a7c-d67d-4a94-9de5-1172eb8bde30",
+      "name": "b44e6a7c-d67d-4a94-9de5-1172eb8bde30",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "93e531ae-d802-41e5-a9fa-1a7959f187d9",
+      "name": "93e531ae-d802-41e5-a9fa-1a7959f187d9",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "2519ef35-7928-4e58-9889-a370b227cd42",
+      "name": "2519ef35-7928-4e58-9889-a370b227cd42",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    }
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":72,
-  "HTile":false,
-  "layers":[
-    {"$GMImageLayer":"","%Name":"24c6e7d8-323c-4086-82ce-be49b1d9fdba","blendMode":0,"displayName":"default","isLocked":false,"name":"24c6e7d8-323c-4086-82ce-be49b1d9fdba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+  "gridX": 0,
+  "gridY": 0,
+  "height": 72,
+  "HTile": false,
+  "layers": [
+    {
+      "$GMImageLayer": "",
+      "%Name": "cc61278f-d59d-4623-81eb-f6cc04976fc9",
+      "blendMode": 0,
+      "displayName": "default",
+      "isLocked": false,
+      "name": "cc61278f-d59d-4623-81eb-f6cc04976fc9",
+      "opacity": 100.0,
+      "resourceType": "GMImageLayer",
+      "resourceVersion": "2.0",
+      "visible": true
+    }
   ],
-  "name":"sEnemy_Rat_Idle",
-  "nineSlice":null,
-  "origin":9,
-  "parent":{
-    "name":"sprite",
-    "path":"folders/sprite.yy",
+  "name": "sEnemy_Rat_Idle",
+  "nineSlice": null,
+  "origin": 7,
+  "parent": {
+    "name": "sprite",
+    "path": "folders/sprite.yy"
   },
-  "preMultiplyAlpha":false,
-  "resourceType":"GMSprite",
-  "resourceVersion":"2.0",
-  "sequence":{
-    "$GMSequence":"v1",
-    "%Name":"sEnemy_Rat_Idle",
-    "autoRecord":true,
-    "backdropHeight":768,
-    "backdropImageOpacity":0.5,
-    "backdropImagePath":"",
-    "backdropWidth":1366,
-    "backdropXOffset":0.0,
-    "backdropYOffset":0.0,
-    "events":{
-      "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MessageEventKeyframe>",
-      "resourceVersion":"2.0",
+  "preMultiplyAlpha": false,
+  "resourceType": "GMSprite",
+  "resourceVersion": "2.0",
+  "sequence": {
+    "$GMSequence": "",
+    "%Name": "sEnemy_Rat_Idle",
+    "autoRecord": true,
+    "backdropHeight": 768,
+    "backdropImageOpacity": 0.5,
+    "backdropImagePath": "",
+    "backdropWidth": 1366,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "events": {
+      "$KeyframeStore<MessageEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "eventStubScript":null,
-    "eventToFunction":{},
-    "length":4.0,
-    "lockOrigin":false,
-    "moments":{
-      "$KeyframeStore<MomentsEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
-      "resourceVersion":"2.0",
+    "eventStubScript": null,
+    "eventToFunction": {},
+    "length": 4.0,
+    "lockOrigin": false,
+    "moments": {
+      "$KeyframeStore<MomentsEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "name":"sEnemy_Rat_Idle",
-    "playback":1,
-    "playbackSpeed":8.0,
-    "playbackSpeedType":0,
-    "resourceType":"GMSequence",
-    "resourceVersion":"2.0",
-    "showBackdrop":true,
-    "showBackdropImage":false,
-    "timeUnits":1,
-    "tracks":[
+    "name": "sEnemy_Rat_Idle",
+    "playback": 1,
+    "playbackSpeed": 6.0,
+    "playbackSpeedType": 0,
+    "resourceType": "GMSequence",
+    "resourceVersion": "2.0",
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "timeUnits": 1,
+    "tracks": [
       {
-        "$GMSpriteFramesTrack":"",
-        "builtinName":0,
-        "events":[],
-        "inheritsTrackColour":true,
-        "interpolation":1,
-        "isCreationTrack":false,
-        "keyframes":{
-          "$KeyframeStore<SpriteFrameKeyframe>":"",
-          "Keyframes":[
+        "$GMSpriteFramesTrack": "",
+        "builtinName": 0,
+        "events": [],
+        "inheritsTrackColour": true,
+        "interpolation": 1,
+        "isCreationTrack": false,
+        "keyframes": {
+          "$KeyframeStore<SpriteFrameKeyframe>": "",
+          "Keyframes": [
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea2fb0c4-5cd0-4745-aba9-138d6b7d844f","path":"sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "91d8be64-1d91-4563-90fa-0eaba24fcc5f",
+                    "path": "sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"6bc400a0-bea6-4704-b189-9a3781d05915",
-              "IsCreationKey":false,
-              "Key":0.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "f6fabb2e-1214-4809-8c6c-215f6bc5e6a1",
+              "IsCreationKey": false,
+              "Key": 0.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d64c2807-df19-4a5a-be27-3b8a31f14f6d","path":"sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "b44e6a7c-d67d-4a94-9de5-1172eb8bde30",
+                    "path": "sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"0f45ab50-ad3b-448c-9f0b-d0735d3e94eb",
-              "IsCreationKey":false,
-              "Key":1.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "5d1c580a-172a-4d7d-bd8d-4ae5f166d82f",
+              "IsCreationKey": false,
+              "Key": 1.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f06ef3ba-7c19-4a62-bd8e-6979e95e8dcb","path":"sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "93e531ae-d802-41e5-a9fa-1a7959f187d9",
+                    "path": "sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"30c3f700-fbcd-4b17-a073-f75bd5d713a0",
-              "IsCreationKey":false,
-              "Key":2.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "ecfbb08b-08d4-494e-9637-a26cebec7b89",
+              "IsCreationKey": false,
+              "Key": 2.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2ea41276-2f2f-4dd8-8c75-e89db4f93521","path":"sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "2519ef35-7928-4e58-9889-a370b227cd42",
+                    "path": "sprites/sEnemy_Rat_Idle/sEnemy_Rat_Idle.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"273b952d-bc93-4a0c-85a3-453109f30bee",
-              "IsCreationKey":false,
-              "Key":3.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "70dd3793-68a9-427c-a348-bc7279f59a1c",
+              "IsCreationKey": false,
+              "Key": 3.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             }
           ],
-          "resourceType":"KeyframeStore<SpriteFrameKeyframe>",
-          "resourceVersion":"2.0",
+          "resourceType": "KeyframeStore<SpriteFrameKeyframe>",
+          "resourceVersion": "2.0"
         },
-        "modifiers":[],
-        "name":"frames",
-        "resourceType":"GMSpriteFramesTrack",
-        "resourceVersion":"2.0",
-        "spriteId":null,
-        "trackColour":0,
-        "tracks":[],
-        "traits":0,
-      },
+        "modifiers": [],
+        "name": "frames",
+        "resourceType": "GMSpriteFramesTrack",
+        "resourceVersion": "2.0",
+        "spriteId": null,
+        "trackColour": 0,
+        "tracks": [],
+        "traits": 0
+      }
     ],
-    "visibleRange":null,
-    "volume":1.0,
-    "xorigin":52,
-    "yorigin":68,
+    "visibleRange": null,
+    "volume": 1.0,
+    "xorigin": 52,
+    "yorigin": 72
   },
-  "swatchColours":null,
-  "swfPrecision":0.5,
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+  "swatchColours": null,
+  "swfPrecision": 2.525,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default"
   },
-  "type":0,
-  "VTile":false,
-  "width":104,
+  "type": 0,
+  "VTile": false,
+  "width": 104
 }

@@ -1,152 +1,205 @@
 {
-  "$GMSprite":"v2",
-  "%Name":"sEnemy_Spider_Die",
-  "bboxMode":0,
-  "bbox_bottom":95,
-  "bbox_left":0,
-  "bbox_right":119,
-  "bbox_top":0,
-  "collisionKind":1,
-  "collisionTolerance":0,
-  "DynamicTexturePage":false,
-  "edgeFiltering":false,
-  "For3D":false,
-  "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"2d304234-8f4f-4252-921e-bd50ee3f597a","name":"2d304234-8f4f-4252-921e-bd50ee3f597a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"08ec6706-80b4-4405-a7b4-e5c55542a6d0","name":"08ec6706-80b4-4405-a7b4-e5c55542a6d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"b99c2bf2-8f36-4f27-86a2-d412a8f2dbfb","name":"b99c2bf2-8f36-4f27-86a2-d412a8f2dbfb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",}
+  "$GMSprite": "",
+  "%Name": "sEnemy_Spider_Die",
+  "bboxMode": 0,
+  "bbox_bottom": 95,
+  "bbox_left": 0,
+  "bbox_right": 119,
+  "bbox_top": 0,
+  "collisionKind": 1,
+  "collisionTolerance": 0,
+  "DynamicTexturePage": false,
+  "edgeFiltering": false,
+  "For3D": false,
+  "frames": [
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "de6579ba-9c0f-4efb-b2e9-95d6ecf905e5",
+      "name": "de6579ba-9c0f-4efb-b2e9-95d6ecf905e5",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "0049f9a3-616b-4a1a-89d9-819ef1b44ead",
+      "name": "0049f9a3-616b-4a1a-89d9-819ef1b44ead",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "78582c27-20e9-451a-870f-4c019beef495",
+      "name": "78582c27-20e9-451a-870f-4c019beef495",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    }
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":96,
-  "HTile":false,
-  "layers":[
-    {"$GMImageLayer":"","%Name":"199422a3-3383-4bb2-9367-db971d4df6a4","blendMode":0,"displayName":"default","isLocked":false,"name":"199422a3-3383-4bb2-9367-db971d4df6a4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+  "gridX": 0,
+  "gridY": 0,
+  "height": 96,
+  "HTile": false,
+  "layers": [
+    {
+      "$GMImageLayer": "",
+      "%Name": "ddd53bb1-4f89-4444-82c0-00c5a6116b7a",
+      "blendMode": 0,
+      "displayName": "default",
+      "isLocked": false,
+      "name": "ddd53bb1-4f89-4444-82c0-00c5a6116b7a",
+      "opacity": 100.0,
+      "resourceType": "GMImageLayer",
+      "resourceVersion": "2.0",
+      "visible": true
+    }
   ],
-  "name":"sEnemy_Spider_Die",
-  "nineSlice":null,
-  "origin":9,
-  "parent":{
-    "name":"sprite",
-    "path":"folders/sprite.yy",
+  "name": "sEnemy_Spider_Die",
+  "nineSlice": null,
+  "origin": 7,
+  "parent": {
+    "name": "sprite",
+    "path": "folders/sprite.yy"
   },
-  "preMultiplyAlpha":false,
-  "resourceType":"GMSprite",
-  "resourceVersion":"2.0",
-  "sequence":{
-    "$GMSequence":"v1",
-    "%Name":"sEnemy_Spider_Die",
-    "autoRecord":true,
-    "backdropHeight":768,
-    "backdropImageOpacity":0.5,
-    "backdropImagePath":"",
-    "backdropWidth":1366,
-    "backdropXOffset":0.0,
-    "backdropYOffset":0.0,
-    "events":{
-      "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MessageEventKeyframe>",
-      "resourceVersion":"2.0",
+  "preMultiplyAlpha": false,
+  "resourceType": "GMSprite",
+  "resourceVersion": "2.0",
+  "sequence": {
+    "$GMSequence": "",
+    "%Name": "sEnemy_Spider_Die",
+    "autoRecord": true,
+    "backdropHeight": 768,
+    "backdropImageOpacity": 0.5,
+    "backdropImagePath": "",
+    "backdropWidth": 1366,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "events": {
+      "$KeyframeStore<MessageEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "eventStubScript":null,
-    "eventToFunction":{},
-    "length":3.0,
-    "lockOrigin":false,
-    "moments":{
-      "$KeyframeStore<MomentsEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
-      "resourceVersion":"2.0",
+    "eventStubScript": null,
+    "eventToFunction": {},
+    "length": 3.0,
+    "lockOrigin": false,
+    "moments": {
+      "$KeyframeStore<MomentsEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "name":"sEnemy_Spider_Die",
-    "playback":1,
-    "playbackSpeed":10.0,
-    "playbackSpeedType":0,
-    "resourceType":"GMSequence",
-    "resourceVersion":"2.0",
-    "showBackdrop":true,
-    "showBackdropImage":false,
-    "timeUnits":1,
-    "tracks":[
+    "name": "sEnemy_Spider_Die",
+    "playback": 1,
+    "playbackSpeed": 8.0,
+    "playbackSpeedType": 0,
+    "resourceType": "GMSequence",
+    "resourceVersion": "2.0",
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "timeUnits": 1,
+    "tracks": [
       {
-        "$GMSpriteFramesTrack":"",
-        "builtinName":0,
-        "events":[],
-        "inheritsTrackColour":true,
-        "interpolation":1,
-        "isCreationTrack":false,
-        "keyframes":{
-          "$KeyframeStore<SpriteFrameKeyframe>":"",
-          "Keyframes":[
+        "$GMSpriteFramesTrack": "",
+        "builtinName": 0,
+        "events": [],
+        "inheritsTrackColour": true,
+        "interpolation": 1,
+        "isCreationTrack": false,
+        "keyframes": {
+          "$KeyframeStore<SpriteFrameKeyframe>": "",
+          "Keyframes": [
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2d304234-8f4f-4252-921e-bd50ee3f597a","path":"sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "de6579ba-9c0f-4efb-b2e9-95d6ecf905e5",
+                    "path": "sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"44beaa15-5f6e-4101-b824-1b01ca1e4870",
-              "IsCreationKey":false,
-              "Key":0.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "87eb8cdb-75a6-4fba-a387-28da9eb9d294",
+              "IsCreationKey": false,
+              "Key": 0.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"08ec6706-80b4-4405-a7b4-e5c55542a6d0","path":"sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "0049f9a3-616b-4a1a-89d9-819ef1b44ead",
+                    "path": "sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"fb6728fc-f9e2-4d20-83d5-5c6833126f13",
-              "IsCreationKey":false,
-              "Key":1.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "887c7119-acec-4c31-8877-4d8ee03e6679",
+              "IsCreationKey": false,
+              "Key": 1.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b99c2bf2-8f36-4f27-86a2-d412a8f2dbfb","path":"sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "78582c27-20e9-451a-870f-4c019beef495",
+                    "path": "sprites/sEnemy_Spider_Die/sEnemy_Spider_Die.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"a40bae81-9ac4-4866-b37e-6fd2034dd5c3",
-              "IsCreationKey":false,
-              "Key":2.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "27eab232-1b4b-4b6c-b76c-07b40e64c1ac",
+              "IsCreationKey": false,
+              "Key": 2.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             }
           ],
-          "resourceType":"KeyframeStore<SpriteFrameKeyframe>",
-          "resourceVersion":"2.0",
+          "resourceType": "KeyframeStore<SpriteFrameKeyframe>",
+          "resourceVersion": "2.0"
         },
-        "modifiers":[],
-        "name":"frames",
-        "resourceType":"GMSpriteFramesTrack",
-        "resourceVersion":"2.0",
-        "spriteId":null,
-        "trackColour":0,
-        "tracks":[],
-        "traits":0,
-      },
+        "modifiers": [],
+        "name": "frames",
+        "resourceType": "GMSpriteFramesTrack",
+        "resourceVersion": "2.0",
+        "spriteId": null,
+        "trackColour": 0,
+        "tracks": [],
+        "traits": 0
+      }
     ],
-    "visibleRange":null,
-    "volume":1.0,
-    "xorigin":60,
-    "yorigin":90,
+    "visibleRange": null,
+    "volume": 1.0,
+    "xorigin": 60,
+    "yorigin": 96
   },
-  "swatchColours":null,
-  "swfPrecision":0.5,
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+  "swatchColours": null,
+  "swfPrecision": 2.525,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default"
   },
-  "type":0,
-  "VTile":false,
-  "width":120,
+  "type": 0,
+  "VTile": false,
+  "width": 120
 }

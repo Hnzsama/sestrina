@@ -1,167 +1,205 @@
 {
-  "$GMSprite":"v2",
-  "%Name":"sEnemy_Skeleton_Hurt",
-  "bboxMode":0,
-  "bbox_bottom":95,
-  "bbox_left":0,
-  "bbox_right":111,
-  "bbox_top":0,
-  "collisionKind":1,
-  "collisionTolerance":0,
-  "DynamicTexturePage":false,
-  "edgeFiltering":false,
-  "For3D":false,
-  "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"0ccf8b72-44b4-4d4f-9ac0-ef5bbde7b897","name":"0ccf8b72-44b4-4d4f-9ac0-ef5bbde7b897","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"162eb318-19fb-47f6-b6e4-e851d6ad234e","name":"162eb318-19fb-47f6-b6e4-e851d6ad234e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"757a2b18-9006-441b-887d-d8d5e4adbdbb","name":"757a2b18-9006-441b-887d-d8d5e4adbdbb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"0ec4ac9b-46ae-42ad-bc46-8698cedc6109","name":"0ec4ac9b-46ae-42ad-bc46-8698cedc6109","resourceType":"GMSpriteFrame","resourceVersion":"2.0",}
+  "$GMSprite": "",
+  "%Name": "sEnemy_Skeleton_Hurt",
+  "bboxMode": 0,
+  "bbox_bottom": 95,
+  "bbox_left": 0,
+  "bbox_right": 111,
+  "bbox_top": 0,
+  "collisionKind": 1,
+  "collisionTolerance": 0,
+  "DynamicTexturePage": false,
+  "edgeFiltering": false,
+  "For3D": false,
+  "frames": [
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "919ddbe6-311b-4659-bf7b-bd142ad6b87b",
+      "name": "919ddbe6-311b-4659-bf7b-bd142ad6b87b",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "6105eced-fc64-43c4-8247-a6b4c0969202",
+      "name": "6105eced-fc64-43c4-8247-a6b4c0969202",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "",
+      "%Name": "468733f8-0a2a-4b99-9f31-72535b912c10",
+      "name": "468733f8-0a2a-4b99-9f31-72535b912c10",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    }
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":96,
-  "HTile":false,
-  "layers":[
-    {"$GMImageLayer":"","%Name":"9b287bf1-fda0-449c-a367-513ca673caf1","blendMode":0,"displayName":"default","isLocked":false,"name":"9b287bf1-fda0-449c-a367-513ca673caf1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+  "gridX": 0,
+  "gridY": 0,
+  "height": 96,
+  "HTile": false,
+  "layers": [
+    {
+      "$GMImageLayer": "",
+      "%Name": "cb9cbee8-9d9e-4e11-8171-e3a896a29371",
+      "blendMode": 0,
+      "displayName": "default",
+      "isLocked": false,
+      "name": "cb9cbee8-9d9e-4e11-8171-e3a896a29371",
+      "opacity": 100.0,
+      "resourceType": "GMImageLayer",
+      "resourceVersion": "2.0",
+      "visible": true
+    }
   ],
-  "name":"sEnemy_Skeleton_Hurt",
-  "nineSlice":null,
-  "origin":9,
-  "parent":{
-    "name":"sprite",
-    "path":"folders/sprite.yy",
+  "name": "sEnemy_Skeleton_Hurt",
+  "nineSlice": null,
+  "origin": 7,
+  "parent": {
+    "name": "sprite",
+    "path": "folders/sprite.yy"
   },
-  "preMultiplyAlpha":false,
-  "resourceType":"GMSprite",
-  "resourceVersion":"2.0",
-  "sequence":{
-    "$GMSequence":"v1",
-    "%Name":"sEnemy_Skeleton_Hurt",
-    "autoRecord":true,
-    "backdropHeight":768,
-    "backdropImageOpacity":0.5,
-    "backdropImagePath":"",
-    "backdropWidth":1366,
-    "backdropXOffset":0.0,
-    "backdropYOffset":0.0,
-    "events":{
-      "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MessageEventKeyframe>",
-      "resourceVersion":"2.0",
+  "preMultiplyAlpha": false,
+  "resourceType": "GMSprite",
+  "resourceVersion": "2.0",
+  "sequence": {
+    "$GMSequence": "",
+    "%Name": "sEnemy_Skeleton_Hurt",
+    "autoRecord": true,
+    "backdropHeight": 768,
+    "backdropImageOpacity": 0.5,
+    "backdropImagePath": "",
+    "backdropWidth": 1366,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "events": {
+      "$KeyframeStore<MessageEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "eventStubScript":null,
-    "eventToFunction":{},
-    "length":4.0,
-    "lockOrigin":false,
-    "moments":{
-      "$KeyframeStore<MomentsEventKeyframe>":"",
-      "Keyframes":[],
-      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
-      "resourceVersion":"2.0",
+    "eventStubScript": null,
+    "eventToFunction": {},
+    "length": 3.0,
+    "lockOrigin": false,
+    "moments": {
+      "$KeyframeStore<MomentsEventKeyframe>": "",
+      "Keyframes": [],
+      "resourceType": "KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion": "2.0"
     },
-    "name":"sEnemy_Skeleton_Hurt",
-    "playback":1,
-    "playbackSpeed":12.0,
-    "playbackSpeedType":0,
-    "resourceType":"GMSequence",
-    "resourceVersion":"2.0",
-    "showBackdrop":true,
-    "showBackdropImage":false,
-    "timeUnits":1,
-    "tracks":[
+    "name": "sEnemy_Skeleton_Hurt",
+    "playback": 1,
+    "playbackSpeed": 10.0,
+    "playbackSpeedType": 0,
+    "resourceType": "GMSequence",
+    "resourceVersion": "2.0",
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "timeUnits": 1,
+    "tracks": [
       {
-        "$GMSpriteFramesTrack":"",
-        "builtinName":0,
-        "events":[],
-        "inheritsTrackColour":true,
-        "interpolation":1,
-        "isCreationTrack":false,
-        "keyframes":{
-          "$KeyframeStore<SpriteFrameKeyframe>":"",
-          "Keyframes":[
+        "$GMSpriteFramesTrack": "",
+        "builtinName": 0,
+        "events": [],
+        "inheritsTrackColour": true,
+        "interpolation": 1,
+        "isCreationTrack": false,
+        "keyframes": {
+          "$KeyframeStore<SpriteFrameKeyframe>": "",
+          "Keyframes": [
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0ccf8b72-44b4-4d4f-9ac0-ef5bbde7b897","path":"sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "919ddbe6-311b-4659-bf7b-bd142ad6b87b",
+                    "path": "sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"f1a6aff6-4f5b-43c0-9542-f7f85fdeffae",
-              "IsCreationKey":false,
-              "Key":0.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "e30c0a18-5a58-4a76-9dc0-4d5c28a9c239",
+              "IsCreationKey": false,
+              "Key": 0.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"162eb318-19fb-47f6-b6e4-e851d6ad234e","path":"sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "6105eced-fc64-43c4-8247-a6b4c0969202",
+                    "path": "sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"027bb37d-e110-460a-ad84-365b3b7c7350",
-              "IsCreationKey":false,
-              "Key":1.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "a3839fb7-0ec4-4472-8011-64aafed4398f",
+              "IsCreationKey": false,
+              "Key": 1.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             },
             {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"757a2b18-9006-441b-887d-d8d5e4adbdbb","path":"sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "468733f8-0a2a-4b99-9f31-72535b912c10",
+                    "path": "sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
               },
-              "Disabled":false,
-              "id":"1778629a-dc3f-4715-a7b3-c6abe688222d",
-              "IsCreationKey":false,
-              "Key":2.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
-            },
-            {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0ec4ac9b-46ae-42ad-bc46-8698cedc6109","path":"sprites/sEnemy_Skeleton_Hurt/sEnemy_Skeleton_Hurt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },
-              "Disabled":false,
-              "id":"bc9cccdf-18cc-4952-8485-e62681f681da",
-              "IsCreationKey":false,
-              "Key":3.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
+              "Disabled": false,
+              "id": "96a51994-7d41-4548-86cc-2144151aac28",
+              "IsCreationKey": false,
+              "Key": 2.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
             }
           ],
-          "resourceType":"KeyframeStore<SpriteFrameKeyframe>",
-          "resourceVersion":"2.0",
+          "resourceType": "KeyframeStore<SpriteFrameKeyframe>",
+          "resourceVersion": "2.0"
         },
-        "modifiers":[],
-        "name":"frames",
-        "resourceType":"GMSpriteFramesTrack",
-        "resourceVersion":"2.0",
-        "spriteId":null,
-        "trackColour":0,
-        "tracks":[],
-        "traits":0,
-      },
+        "modifiers": [],
+        "name": "frames",
+        "resourceType": "GMSpriteFramesTrack",
+        "resourceVersion": "2.0",
+        "spriteId": null,
+        "trackColour": 0,
+        "tracks": [],
+        "traits": 0
+      }
     ],
-    "visibleRange":null,
-    "volume":1.0,
-    "xorigin":56,
-    "yorigin":92,
+    "visibleRange": null,
+    "volume": 1.0,
+    "xorigin": 56,
+    "yorigin": 96
   },
-  "swatchColours":null,
-  "swfPrecision":0.5,
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+  "swatchColours": null,
+  "swfPrecision": 2.525,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default"
   },
-  "type":0,
-  "VTile":false,
-  "width":112,
+  "type": 0,
+  "VTile": false,
+  "width": 112
 }

@@ -121,61 +121,55 @@ draw_sprite(sBreakablePots, 0, 185, 435);
 draw_sprite(sTreasureChest, 0, 160, 230);
 
 // =========================================================================
-// 6. GERBANG UTARA: PINTU MASUK KATAKOMBE PURBA (North Sanctum Crypt Portal)
+// =========================================================================
+// 6. GERBANG UTARA: PINTU MASUK KATAKOMBE PURBA (Floor 1 Ancient Portal)
 // =========================================================================
 var _gate_x = _cx;
-var _gate_y = _y1 + 18;
+var _gate_y = _y1 + 22;
 
 // Pelataran Batu Berundak Kuil Kuno
-for (var _gy = _gate_y - 12; _gy <= _gate_y + 40; _gy += 16) {
+for (var _gy = _gate_y - 10; _gy <= _gate_y + 42; _gy += 16) {
     for (var _gx = _gate_x - 72; _gx <= _gate_x + 72; _gx += 16) {
         draw_sprite_part(sTile_Summer, 0, 48, 48, 16, 16, _gx, _gy);
     }
 }
 
-// Pilar Batu Gerbang Kiri & Kanan dari sDungeon_Props
-draw_sprite_part(sDungeon_Props, 0, 0, 0, 32, 64, _gate_x - 64, _gate_y - 20);
-draw_sprite_part(sDungeon_Props, 0, 0, 0, 32, 64, _gate_x + 32, _gate_y - 20);
-
-// Relung Pintu Masuk Katakombe Hitam Gelap
-draw_set_color(make_color_rgb(18, 16, 24));
-draw_roundrect_ext(_gate_x - 30, _gate_y - 10, _gate_x + 30, _gate_y + 36, 12, 12, false);
+// Relung Pintu Masuk Katakombe Hitam Gelap Menuju Bawah Tanah
+draw_set_color(make_color_rgb(10, 12, 18));
+draw_roundrect_ext(_gate_x - 34, _gate_y - 8, _gate_x + 34, _gate_y + 36, 14, 14, false);
 
 // Anak Tangga Turun ke Kegelapan Bawah Tanah
-draw_set_color(make_color_rgb(42, 40, 52));
-draw_line_width(_gate_x - 24, _gate_y + 12, _gate_x + 24, _gate_y + 12, 3);
-draw_line_width(_gate_x - 20, _gate_y + 20, _gate_x + 20, _gate_y + 20, 3);
-draw_line_width(_gate_x - 16, _gate_y + 28, _gate_x + 16, _gate_y + 28, 3);
+draw_set_color(make_color_rgb(35, 38, 48));
+draw_line_width(_gate_x - 26, _gate_y + 10, _gate_x + 26, _gate_y + 10, 3);
+draw_line_width(_gate_x - 22, _gate_y + 18, _gate_x + 22, _gate_y + 18, 3);
+draw_line_width(_gate_x - 18, _gate_y + 26, _gate_x + 18, _gate_y + 26, 3);
 
-// Ambang Batu Lengkung Atas Portal (Stone Lintel Arch)
-draw_set_color(make_color_rgb(70, 75, 88));
-draw_roundrect_ext(_gate_x - 42, _gate_y - 18, _gate_x + 42, _gate_y - 4, 6, 6, false);
-draw_set_color(make_color_rgb(45, 48, 58));
-draw_roundrect_ext(_gate_x - 42, _gate_y - 18, _gate_x + 42, _gate_y - 4, 6, 6, true);
+// Lengkungan Kubah Portal Batu Kuno (Floor 1 Wall Arch Asset)
+draw_sprite_ext(sDungeon_Wall_Arch, 0, _gate_x, _gate_y - 6, 0.72, 0.72, 0, c_white, 1.0);
 
-// Runa Mistis Biru Bersinar di Ambang Pintu
-var _rune_pulse = 0.6 + sin(current_time * 0.005) * 0.4;
-draw_set_alpha(_rune_pulse);
-draw_set_color(make_color_rgb(95, 215, 255));
-draw_circle(_gate_x, _gate_y - 11, 2.5, false);
-draw_circle(_gate_x - 18, _gate_y - 11, 1.8, false);
-draw_circle(_gate_x + 18, _gate_y - 11, 1.8, false);
+// Sepasang Pilar Batu Kuno Pengapit Portal (Floor 1 Stone Pillars)
+draw_sprite_ext(sDungeon_Pillar_Stone, 0, _gate_x - 52, _gate_y + 6, 0.65, 0.65, 0, c_white, 1.0);
+draw_sprite_ext(sDungeon_Pillar_Stone, 0, _gate_x + 52, _gate_y + 6, 0.65, 0.65, 0, c_white, 1.0);
 
-// Lentera Api Jiwa Biru di Atas Pilar Kiri & Kanan
-var _flame_flicker = sin(current_time * 0.02) * 2;
-draw_set_color(make_color_rgb(110, 220, 255));
-draw_circle(_gate_x - 48, _gate_y - 24 + _flame_flicker, 3.5, false);
-draw_circle(_gate_x + 48, _gate_y - 24 - _flame_flicker, 3.5, false);
-draw_set_color(c_white);
-draw_circle(_gate_x - 48, _gate_y - 24 + _flame_flicker, 1.8, false);
-draw_circle(_gate_x + 48, _gate_y - 24 - _flame_flicker, 1.8, false);
+// Obor Api Jiwa Biru di Pilar Gerbang (Floor 1 Soul Torches)
+var _flick = sin(current_time * 0.008) * 1.5;
+draw_sprite_ext(sDungeon_Decor_WallTorch, 0, _gate_x - 52, _gate_y - 16, 0.55, 0.55, 0, c_white, 1.0);
+draw_sprite_ext(sDungeon_Decor_WallTorch, 0, _gate_x + 52, _gate_y - 16, 0.55, 0.55, 0, c_white, 1.0);
+draw_sprite_ext(sDungeon_Magic_SoulFlame, 0, _gate_x - 52, _gate_y - 30, 0.45, 0.45, 0, c_white, 0.9);
+draw_sprite_ext(sDungeon_Magic_SoulFlame, 0, _gate_x + 52, _gate_y - 30, 0.45, 0.45, 0, c_white, 0.9);
+
+// Pendaran Cahaya Biru Portal
+draw_set_alpha(0.22);
+draw_set_color(make_color_rgb(80, 180, 255));
+draw_circle(_gate_x - 52, _gate_y - 30, 24 + _flick, false);
+draw_circle(_gate_x + 52, _gate_y - 30, 24 - _flick, false);
 draw_set_alpha(1.0);
 
 // Label Pintu Masuk Katakombe
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(make_color_rgb(130, 220, 255));
-draw_text(_gate_x, _gate_y + 42, "▲ MASUK KATAKOMBE PURBA");
+draw_text(_gate_x, _gate_y + 42, "▲ MASUK KATAKOMBE PURBA (DUNGEON F1)");
 
 // =========================================================================
 // 7. GERBANG SELATAN: JALAN KELUAR MENUJU KOTA ALTDORF (South Altdorf Exit)
