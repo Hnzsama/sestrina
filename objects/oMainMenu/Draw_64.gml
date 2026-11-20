@@ -97,15 +97,16 @@ if (menu_state == "main") {
             _col = make_color_rgb(130, 130, 140);
         }
 
-        draw_sprite_ext(_btn_sprites[_i], 0, _gw / 2, _by, _sc, _sc, 0, _col, _alpha);
-        
-        // Info Simpanan Tambahan di Bawah Tombol Lanjutkan
-        if (_i == 1 && has_save && _is_sel) {
-            draw_set_halign(fa_center);
-            draw_set_valign(fa_top);
-            draw_set_color(make_color_rgb(255, 235, 140));
-            draw_text(_gw / 2, _by + 26, save_info_str);
-        }
+        draw_sprite_ext(_btn_sprites[_i], _is_sel ? 1 : 0, _gw / 2, _by, _sc, _sc, 0, _col, _alpha);
+    }
+
+    // Info Simpanan Save File (Muncul Elegan di Atas Footer saat Opsi Lanjutkan Dipilih)
+    if (selected_option == 1 && has_save) {
+        draw_set_alpha(0.92);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_bottom);
+        draw_set_color(make_color_rgb(255, 235, 140));
+        draw_text(_gw / 2, _gh - 58, "📁 " + save_info_str);
     }
 
     // Panduan Navigasi Bawah
@@ -113,7 +114,7 @@ if (menu_state == "main") {
     draw_set_halign(fa_center);
     draw_set_valign(fa_bottom);
     draw_set_color(make_color_rgb(180, 205, 245));
-    draw_text(_gw / 2, _gh - 38, "[W/S / Up/Down] Pilih Menu    •    [Z / ENTER / SPACE] Konfirmasi");
+    draw_text(_gw / 2, _gh - 34, "[W/S / Up/Down] Pilih Menu    •    [Z / ENTER / SPACE] Konfirmasi");
 }
 
 // =========================================================================

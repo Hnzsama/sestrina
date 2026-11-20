@@ -14,8 +14,15 @@
   "frames": [
     {
       "$GMSpriteFrame": "v1",
-      "%Name": "6d1912af-326f-4333-b4d7-d0bbcf08741d",
-      "name": "6d1912af-326f-4333-b4d7-d0bbcf08741d",
+      "%Name": "0ff20ac4-60cc-4f3f-b942-7113c9080c08",
+      "name": "0ff20ac4-60cc-4f3f-b942-7113c9080c08",
+      "resourceType": "GMSpriteFrame",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMSpriteFrame": "v1",
+      "%Name": "1ed06ae9-5d59-480f-bcb6-0e9326162c3d",
+      "name": "1ed06ae9-5d59-480f-bcb6-0e9326162c3d",
       "resourceType": "GMSpriteFrame",
       "resourceVersion": "2.0"
     }
@@ -27,11 +34,11 @@
   "layers": [
     {
       "$GMImageLayer": "",
-      "%Name": "d595f0fd-ec0e-4774-85ab-ada0c365bf84",
+      "%Name": "2afed9ed-65e4-4412-80be-e308c4208957",
       "blendMode": 0,
       "displayName": "default",
       "isLocked": false,
-      "name": "d595f0fd-ec0e-4774-85ab-ada0c365bf84",
+      "name": "2afed9ed-65e4-4412-80be-e308c4208957",
       "opacity": 100.0,
       "resourceType": "GMImageLayer",
       "resourceVersion": "2.0",
@@ -66,7 +73,7 @@
     },
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {
       "$KeyframeStore<MomentsEventKeyframe>": "",
@@ -76,7 +83,7 @@
     },
     "name": "sTitle_Btn_NewGame",
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "resourceType": "GMSequence",
     "resourceVersion": "2.0",
@@ -100,7 +107,7 @@
                 "0": {
                   "$SpriteFrameKeyframe": "",
                   "Id": {
-                    "name": "6d1912af-326f-4333-b4d7-d0bbcf08741d",
+                    "name": "0ff20ac4-60cc-4f3f-b942-7113c9080c08",
                     "path": "sprites/sTitle_Btn_NewGame/sTitle_Btn_NewGame.yy"
                   },
                   "resourceType": "SpriteFrameKeyframe",
@@ -108,9 +115,31 @@
                 }
               },
               "Disabled": false,
-              "id": "da8c761c-cf68-4219-b193-94263624bd95",
+              "id": "861c794e-8987-43b9-bec0-f526defd10e8",
               "IsCreationKey": false,
               "Key": 0.0,
+              "Length": 1.0,
+              "resourceType": "Keyframe<SpriteFrameKeyframe>",
+              "resourceVersion": "2.0",
+              "Stretch": false
+            },
+            {
+              "$Keyframe<SpriteFrameKeyframe>": "",
+              "Channels": {
+                "0": {
+                  "$SpriteFrameKeyframe": "",
+                  "Id": {
+                    "name": "1ed06ae9-5d59-480f-bcb6-0e9326162c3d",
+                    "path": "sprites/sTitle_Btn_NewGame/sTitle_Btn_NewGame.yy"
+                  },
+                  "resourceType": "SpriteFrameKeyframe",
+                  "resourceVersion": "2.0"
+                }
+              },
+              "Disabled": false,
+              "id": "6d07de3c-1e51-4b72-bdd0-312c1f946e55",
+              "IsCreationKey": false,
+              "Key": 1.0,
               "Length": 1.0,
               "resourceType": "Keyframe<SpriteFrameKeyframe>",
               "resourceVersion": "2.0",
