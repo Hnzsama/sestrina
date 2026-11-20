@@ -416,7 +416,9 @@
     {"id":{"name":"sVN_Protagonist_Right","path":"sprites/sVN_Protagonist_Right/sVN_Protagonist_Right.yy",},},
     {"id":{"name":"sVN_Sestrina_Left","path":"sprites/sVN_Sestrina_Left/sVN_Sestrina_Left.yy",},},
     {"id":{"name":"sVN_Sestrina_Right","path":"sprites/sVN_Sestrina_Right/sVN_Sestrina_Right.yy",},},
-  ],
+      {"id":{"name":"oGuardianKnight","path":"objects/oGuardianKnight/oGuardianKnight.yy",},},
+    {"id":{"name":"oGuardianMage","path":"objects/oGuardianMage/oGuardianMage.yy",},},
+],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[

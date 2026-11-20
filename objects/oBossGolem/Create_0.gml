@@ -54,6 +54,16 @@ meteor_timer = 160;
 magic_orbs = [];              // Peluru sihir gelap { xx, yy, vx, vy, radius, life }
 meteors = [];                 // Panggilan meteor langit { xx, yy, target_y, radius, timer, impact }
 scythe_active = false;
+summon_cooldown = 240;
+has_summoned_in_state = false;
+
+// Spawn Penjaga Suaka Kristal (Crystal Aegis Knight & Crystal Sorcerer)
+if (!instance_exists(oGuardianKnight)) {
+    instance_create_depth(x - 90, y + 20, depth + 5, oGuardianKnight);
+}
+if (!instance_exists(oGuardianMage)) {
+    instance_create_depth(x + 90, y + 20, depth + 5, oGuardianMage);
+}
 
 // =========================================================================
 // 4. MEKANIK TAHAP 2 (PLOT TWIST: THE TRUE CORRUPTED GUARDIAN)
@@ -74,6 +84,12 @@ shadow_trail = [];
 take_damage = function(_dmg, _dir, _is_melee = false) {
     if (is_plot_twisting) exit; // Kebal saat adegan transisi plot twist
     if (state == STATE_DEATH) exit;
+    
+    // Guardian Soul Link: Pertahanan Overlord diperkuat jika ada guardian hidup
+    var _guardian_alive = (instance_exists(oGuardianKnight) || instance_exists(oGuardianMage));
+    if (_guardian_alive) {
+        _dmg = max(1, round(_dmg * 0.60)); // Reduksi 40% damage
+    }
     
     // ---------------------------------------------------------------------
     // LOGIKA DAMAGE TAHAP 1: DARK CRYSTAL OVERLORD
@@ -174,9 +190,17 @@ start_phase_2 = function() {
     sprite_index = sBoss_Overlord_Walk;
     image_speed = 0.15;
     
+    // Bangkitkan kembali bala bantuan guardian kristal untuk pertempuran puncak
+    if (!instance_exists(oGuardianKnight)) {
+        instance_create_depth(x - 90, y + 20, depth + 5, oGuardianKnight);
+    }
+    if (!instance_exists(oGuardianMage)) {
+        instance_create_depth(x + 90, y + 20, depth + 5, oGuardianMage);
+    }
+    
     if (instance_exists(oRoomTransition)) {
         oRoomTransition.banner_title = "PLOT TWIST: ROH TERKUTUK BANGKIT!";
-        oRoomTransition.banner_subtitle = "Kalahkan wujud sejati Overlord untuk memurnikan The Lost Remedy!";
+        oRoomTransition.banner_subtitle = "Kalahkan wujud sejati Overlord & Penjaga untuk memurnikan The Lost Remedy!";
         oRoomTransition.banner_timer = 240;
         oRoomTransition.screen_shake = 20;
     }

@@ -71,6 +71,7 @@ if (boss_stage == 1) {
         if (melee_cooldown > 0) melee_cooldown--;
         if (magic_timer > 0) magic_timer--;
         if (meteor_timer > 0) meteor_timer--;
+        if (summon_cooldown > 0) summon_cooldown--;
         
         switch (state) {
             case STATE_IDLE:
@@ -85,6 +86,14 @@ if (boss_stage == 1) {
                         image_index = 0;
                         image_speed = 0.15;
                         state_timer = 40;
+                    } else if (summon_cooldown <= 0 && (!instance_exists(oGuardianKnight) || !instance_exists(oGuardianMage))) {
+                        state = STATE_SUMMON;
+                        sprite_index = sBoss_Overlord_Skill_Summon;
+                        image_index = 0;
+                        image_speed = 0.12;
+                        state_timer = 50;
+                        summon_cooldown = 420;
+                        has_summoned_in_state = false;
                     } else if (meteor_timer <= 0) {
                         state = STATE_METEOR;
                         sprite_index = sBoss_Overlord_Skill_Meteor;
@@ -201,6 +210,30 @@ if (boss_stage == 1) {
                 if (image_index >= image_number - 1) {
                     state = STATE_IDLE;
                     state_timer = 35;
+                }
+                break;
+                
+            case STATE_SUMMON:
+                // Ritual Pemanggilan Penjaga Kristal Suaka
+                if (floor(image_index) >= 1 && !has_summoned_in_state) {
+                    has_summoned_in_state = true;
+                    if (!instance_exists(oGuardianKnight)) {
+                        instance_create_depth(x - 85, y + 20, depth + 5, oGuardianKnight);
+                    } else if (!instance_exists(oGuardianMage)) {
+                        instance_create_depth(x + 85, y + 20, depth + 5, oGuardianMage);
+                    }
+                    if (instance_exists(oRoomTransition)) {
+                        oRoomTransition.banner_title = "BANGKITLAH PENJAGA KRISTAL!";
+                        oRoomTransition.banner_subtitle = "Overlord merapal pemanggilan penjaga suaka!";
+                        oRoomTransition.banner_timer = 90;
+                        oRoomTransition.screen_shake = 6;
+                    }
+                }
+                
+                if (image_index >= image_number - 1) {
+                    has_summoned_in_state = false;
+                    state = STATE_IDLE;
+                    state_timer = 30;
                 }
                 break;
                 

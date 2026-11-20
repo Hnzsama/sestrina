@@ -63,6 +63,25 @@ if (spirit_pulse_r > 0) {
 
 draw_set_alpha(1.0);
 
+// E. Garis Energi Guardian Soul Link
+var _guardian_alive = false;
+var _guardians = [oGuardianKnight, oGuardianMage];
+for (var _g = 0; _g < array_length(_guardians); _g++) {
+    var _gobj = _guardians[_g];
+    if (instance_exists(_gobj)) {
+        _guardian_alive = true;
+        with (_gobj) {
+            var _pulse = 0.5 + sin(other.anim_timer * 6 + id) * 0.3;
+            draw_set_alpha(_pulse);
+            draw_set_color(make_color_rgb(180, 50, 255));
+            draw_line_width(other.x, other.y - 40, x, y - 30, 2);
+            draw_set_color(make_color_rgb(255, 200, 255));
+            draw_line_width(other.x, other.y - 40, x, y - 30, 1);
+        }
+    }
+}
+draw_set_alpha(1.0);
+
 // =========================================================================
 // 2. RENDER TUBUH DARK CRYSTAL OVERLORD
 // =========================================================================
@@ -116,7 +135,11 @@ if (boss_stage == 1) {
         draw_set_color(make_color_rgb(220, 160, 255));
         draw_set_halign(fa_center);
         draw_set_valign(fa_bottom);
-        draw_text(x, y - 110, "🛡️ RUNIC BARRIER (Kebal Sihir - Tebas Melee: " + string(barrier_hp) + "/3)");
+        var _bar_info = "🛡️ RUNIC BARRIER (Kebal Sihir - Tebas Melee: " + string(barrier_hp) + "/3)";
+        if (_guardian_alive) {
+            _bar_info += "\n✦ SOUL LINK AKTIF: DILINDUNGI PENJAGA (-40% DMG) ✦";
+        }
+        draw_text(x, y - 110, _bar_info);
         draw_set_alpha(1.0);
     } else if (is_staggered && boss_stage == 1 && !is_plot_twisting) {
         // Indikator Terhuyung saat Barrier Pecah
