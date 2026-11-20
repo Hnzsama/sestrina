@@ -1,4 +1,4 @@
-/// @description Inisialisasi Enemy Parent
+/// @description Inisialisasi Enemy Parent (Dungeon Floor 1 Animation & Combat)
 
 hp = 25;
 max_hp = 25;
@@ -10,6 +10,22 @@ flash_timer = 0;
 anim_timer = 0;
 is_boss = false;
 
+// Sistem Animasi Sprite Multi-Frame
+state = "idle"; // "idle", "walk", "attack", "hurt", "die"
+base_xscale = 1.0;
+base_yscale = 1.0;
+spr_idle = noone;
+spr_walk = noone;
+spr_attack = noone;
+spr_hurt = noone;
+spr_die = noone;
+
+state_timer = 0;
+attack_timer = 0;
+hurt_timer = 0;
+die_timer = 0;
+is_dead = false;
+
 depth = -100;
 
 exp_reward = 15;
@@ -17,15 +33,32 @@ gold_reward = 8;
 
 /// @function take_damage(dmg, dir, [is_melee])
 take_damage = function(_dmg, _dir, _is_melee = false) {
+    if (is_dead) exit;
+    
     hp -= _dmg;
     flash_timer = 8;
     
     // Knockback
-    x += lengthdir_x(12, _dir);
-    y += lengthdir_y(12, _dir);
+    x += lengthdir_x(10, _dir);
+    y += lengthdir_y(10, _dir);
     
     if (hp <= 0) {
-        on_death();
+        is_dead = true;
+        state = "die";
+        die_timer = 32;
+        if (spr_die != noone) {
+            sprite_index = spr_die;
+            image_index = 0;
+            image_speed = 0.22;
+        }
+    } else {
+        state = "hurt";
+        hurt_timer = 14;
+        if (spr_hurt != noone) {
+            sprite_index = spr_hurt;
+            image_index = 0;
+            image_speed = 0.25;
+        }
     }
 };
 

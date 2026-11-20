@@ -1,17 +1,26 @@
-/// @description Inisialisasi Slime Hutan
+/// @description Inisialisasi Slime Katakombe (Atlas Floor 1)
 
 event_inherited();
-sprite_index = sEnemySlime;
+base_xscale = 1.0;
+image_xscale = 1.0;
+image_yscale = 1.0;
+
+spr_idle = sEnemy_Slime_Idle;
+spr_walk = sEnemy_Slime_Walk;
+spr_attack = sEnemy_Slime_Attack;
+spr_hurt = sEnemy_Slime_Hurt;
+spr_die = sEnemy_Slime_Die;
+
+sprite_index = spr_idle;
 image_speed = 0.15;
-image_xscale = 1.35;
-image_yscale = 1.35;
+
 max_hp = 30;
 hp = 30;
-enemy_name = "Slime Rawa";
+enemy_name = "Slime Katakombe";
 move_speed = 0.95;
 attack_power = 7;
 exp_reward = 18;
-gold_reward = 7;
+gold_reward = 8;
 
 drop_custom_loot = function() {
     var _drop = instance_create_depth(x + irandom_range(-6, 6), y + irandom_range(-6, 6), depth - 10, oItemDrop);
