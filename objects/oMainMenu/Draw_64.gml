@@ -1,18 +1,20 @@
-/// @description Draw GUI Event - Render Main Menu, Settings, Controls & Credits
+/// @description Draw GUI Event - Render Main Menu, Settings, Controls & Credits with Pixel Art UI Assets
 
 var _gw = display_get_gui_width();
 var _gh = display_get_gui_height();
 
-// 1. Latar Belakang Gradien Langit Malam Fantasi
+// 1. Latar Belakang Pemandangan Istana Kristal (sTitle_Background 905x455 -> 1280x720)
 draw_set_alpha(1.0);
-draw_rectangle_color(0, 0, _gw, _gh, 
-    make_color_rgb(12, 16, 32), 
-    make_color_rgb(12, 16, 32), 
-    make_color_rgb(26, 36, 68), 
-    make_color_rgb(26, 36, 68), 
-    false);
+draw_sprite_stretched(sTitle_Background, 0, 0, 0, _gw, _gh);
 
-// 2. Partikel Bintang Melayang
+// Vignette Atas & Bawah untuk Fokus UI
+draw_set_alpha(0.35);
+draw_set_color(make_color_rgb(10, 12, 26));
+draw_rectangle(0, 0, _gw, 130, false);
+draw_rectangle(0, _gh - 80, _gw, _gh, false);
+draw_set_alpha(1.0);
+
+// 2. Partikel Bintang Melayang di Angkasa
 for (var _i = 0; _i < array_length(particles); _i++) {
     var _p = particles[_i];
     draw_set_alpha(_p.alpha * (0.6 + sin(anim_time * 2 + _i) * 0.4));
@@ -21,98 +23,97 @@ for (var _i = 0; _i < array_length(particles); _i++) {
 }
 draw_set_alpha(1.0);
 
+// 3. Ornamen Klaster Kristal Ungu di Kedua Sudut Bawah
+draw_sprite_ext(sTitle_Crystal_Cluster, 0, 95, _gh + 10, 1.25, 1.25, 0, c_white, 0.92);
+draw_sprite_ext(sTitle_Crystal_Cluster, 0, _gw - 95, _gh + 10, -1.25, 1.25, 0, c_white, 0.92);
+
 // =========================================================================
 // STATE: MAIN MENU UTAMA
 // =========================================================================
 if (menu_state == "main") {
-    // A. Logo & Judul Game "SESTRINA"
-    var _title_y = 135 + sin(anim_time * 1.5) * 4;
+    // A. Logo Resmi "SESTRINA: THE LOST REMEDY" (sTitle_Logo 721x295)
+    var _logo_y = 125 + sin(anim_time * 1.5) * 4;
     
-    // Glow Aura Emas di Belakang Judul
-    draw_set_alpha(0.25);
-    draw_set_color(make_color_rgb(255, 200, 70));
-    draw_ellipse(_gw / 2 - 260, _title_y - 45, _gw / 2 + 260, _title_y + 45, false);
-    
-    // Drop Shadow Judul
-    draw_set_alpha(0.85);
-    draw_set_color(make_color_rgb(10, 14, 25));
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_text_transformed(_gw / 2 + 3, _title_y + 3, "S E S T R I N A", 2.8, 2.8, 0);
-    
-    // Teks Utama Judul
+    // Pendaran Ungu Halus di Belakang Logo
+    draw_set_alpha(0.28);
+    draw_set_color(make_color_rgb(180, 80, 255));
+    draw_ellipse(_gw / 2 - 250, _logo_y - 40, _gw / 2 + 250, _logo_y + 40, false);
     draw_set_alpha(1.0);
-    draw_set_color(make_color_rgb(255, 232, 140));
-    draw_text_transformed(_gw / 2, _title_y, "S E S T R I N A", 2.8, 2.8, 0);
     
-    // Subjudul
-    draw_set_color(make_color_rgb(160, 215, 255));
-    draw_text_transformed(_gw / 2, _title_y + 46, "✦ THE LOST REMEDY ✦", 1.25, 1.25, 0);
+    // Gambar Logo
+    draw_sprite_ext(sTitle_Logo, 0, _gw / 2, _logo_y, 0.68, 0.68, 0, c_white, 1.0);
     
-    draw_set_color(make_color_rgb(180, 195, 225));
-    draw_text_transformed(_gw / 2, _title_y + 74, "~ Sebuah Kisah Perjuangan Demi Adik Tercinta ~", 0.9, 0.9, 0);
+    // Garis Pembatas Kristal di Bawah Logo
+    draw_sprite_ext(sTitle_Divider, 0, _gw / 2, _logo_y + 108, 1.2, 1.0, 0, c_white, 0.85);
 
-    // B. Garis Hiasan Pembatas Emas
-    draw_set_color(make_color_rgb(255, 215, 90));
-    draw_line_width(_gw / 2 - 220, _title_y + 98, _gw / 2 + 220, _title_y + 98, 2);
-    draw_circle(_gw / 2, _title_y + 98, 4, false);
-
-    // C. Opsi Menu
-    var _options = [
-        "✦  MULAI PETUALANGAN BARU  ✦",
-        has_save ? ("⚔  LANJUTKAN" + save_info_str + "  ⚔") : "⚔  LANJUTKAN (Belum Ada Simpanan)  ⚔",
-        "⚙  PENGATURAN (Settings)  ⚙",
-        "📜  KREDIT PENGEMBANG (Credits)  📜",
-        "✕  KELUAR KE DESKTOP  ✕"
+    // B. Tombol Menu Pixel Art
+    var _btn_sprites = [
+        sTitle_Btn_NewGame,
+        sTitle_Btn_Continue,
+        sTitle_Btn_Settings,
+        sTitle_Btn_Credits,
+        sTitle_Btn_Exit
     ];
 
-    var _start_y = 310;
-    var _spacing = 64;
-    var _btn_w = 520;
-    var _btn_h = 48;
+    // Skala dasar agar lebar visual setiap tombol seimbang (~420px)
+    var _base_scales = [
+        0.75, // New Game (563px * 0.75 = 422px)
+        0.98, // Continue (427px * 0.98 = 418px)
+        0.98, // Settings (425px * 0.98 = 416px)
+        0.98, // Credits (425px * 0.98 = 416px)
+        0.98  // Exit (426px * 0.98 = 417px)
+    ];
 
-    for (var _i = 0; _i < array_length(_options); _i++) {
+    var _start_y = 305;
+    var _spacing = 62;
+
+    for (var _i = 0; _i < array_length(_btn_sprites); _i++) {
         var _by = _start_y + (_i * _spacing);
-        var _bx1 = (_gw - _btn_w) / 2;
-        var _bx2 = _bx1 + _btn_w;
-        var _by1 = _by - _btn_h / 2;
-        var _by2 = _by + _btn_h / 2;
-        
         var _is_sel = (selected_option == _i);
         var _is_disabled = (_i == 1 && !has_save);
         
-        // Kotak Tombol Frosted Glass
-        draw_set_alpha(_is_sel ? 0.95 : 0.65);
-        draw_set_color(_is_sel ? make_color_rgb(32, 45, 80) : make_color_rgb(18, 24, 45));
-        draw_roundrect_ext(_bx1, _by1, _bx2, _by2, 16, 16, false);
-        
-        // Border Neon Emas / Perak
-        draw_set_alpha(_is_sel ? 1.0 : 0.45);
-        var _border_col = _is_sel ? make_color_rgb(255, 215, 90) : make_color_rgb(80, 110, 160);
-        if (_is_disabled) _border_col = make_color_rgb(60, 65, 80);
-        draw_set_color(_border_col);
-        draw_roundrect_ext(_bx1, _by1, _bx2, _by2, 16, 16, true);
+        var _sc = _base_scales[_i];
+        var _alpha = 0.85;
+        var _col = c_white;
         
         if (_is_sel) {
-            // Indikator Panah Kiri & Kanan
-            draw_set_color(make_color_rgb(255, 235, 140));
-            var _bob = sin(anim_time * 5) * 4;
-            draw_text(_bx1 - 25 + _bob, _by, "▶");
-            draw_text(_bx2 + 25 - _bob, _by, "◀");
+            // Animasi Berdenyut Halus saat Terpilih
+            var _pulse = 1.0 + sin(anim_time * 6) * 0.04;
+            _sc *= _pulse;
+            _alpha = 1.0;
+            
+            // Pendaran Emas di Belakang Tombol Terpilih
+            draw_set_alpha(0.35);
+            draw_set_color(make_color_rgb(255, 205, 80));
+            draw_ellipse(_gw / 2 - 210, _by - 18, _gw / 2 + 210, _by + 18, false);
+            draw_set_alpha(1.0);
+            
+            // Kursor Kristal Intan Berkilau di Sisi Kiri & Kanan
+            var _cur_offset = 225 + sin(anim_time * 5) * 4;
+            draw_sprite_ext(sTitle_Icon_Cursor, 0, _gw / 2 - _cur_offset, _by, 0.75, 0.75, 0, c_white, 1.0);
+            draw_sprite_ext(sTitle_Icon_Cursor, 0, _gw / 2 + _cur_offset, _by, -0.75, 0.75, 0, c_white, 1.0);
+        } else if (_is_disabled) {
+            _alpha = 0.45;
+            _col = make_color_rgb(130, 130, 140);
         }
+
+        draw_sprite_ext(_btn_sprites[_i], 0, _gw / 2, _by, _sc, _sc, 0, _col, _alpha);
         
-        // Teks Opsi
-        draw_set_alpha(1.0);
-        var _text_col = _is_sel ? make_color_rgb(255, 245, 210) : make_color_rgb(200, 215, 240);
-        if (_is_disabled) _text_col = make_color_rgb(110, 115, 130);
-        draw_set_color(_text_col);
-        draw_text_transformed(_gw / 2, _by - 1, _options[_i], _is_sel ? 1.05 : 0.98, _is_sel ? 1.05 : 0.98, 0);
+        // Info Simpanan Tambahan di Bawah Tombol Lanjutkan
+        if (_i == 1 && has_save && _is_sel) {
+            draw_set_halign(fa_center);
+            draw_set_valign(fa_top);
+            draw_set_color(make_color_rgb(255, 235, 140));
+            draw_text(_gw / 2, _by + 26, save_info_str);
+        }
     }
 
     // Panduan Navigasi Bawah
     draw_set_alpha(0.85);
-    draw_set_color(make_color_rgb(150, 175, 215));
-    draw_text(_gw / 2, _gh - 45, "[↑/↓/W/S] Pilih Menu    •    [Z / ENTER / SPACE] Konfirmasi");
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+    draw_set_color(make_color_rgb(180, 205, 245));
+    draw_text(_gw / 2, _gh - 38, "[W/S / Up/Down] Pilih Menu    •    [Z / ENTER / SPACE] Konfirmasi");
 }
 
 // =========================================================================
@@ -126,7 +127,7 @@ else if (menu_state == "settings") {
     var _px2 = _px1 + _pw;
     var _py2 = _py1 + _ph;
 
-    // Panel Window
+    // Panel Window Frosted Glass
     draw_set_alpha(0.95);
     draw_set_color(make_color_rgb(18, 25, 48));
     draw_roundrect_ext(_px1, _py1, _px2, _py2, 20, 20, false);
@@ -139,8 +140,7 @@ else if (menu_state == "settings") {
     draw_set_valign(fa_top);
     draw_set_color(make_color_rgb(255, 235, 140));
     draw_text_transformed(_gw / 2, _py1 + 24, "⚙ PENGATURAN PERMAINAN ⚙", 1.4, 1.4, 0);
-    draw_set_color(make_color_rgb(255, 215, 90));
-    draw_line_width(_px1 + 40, _py1 + 68, _px2 - 40, _py1 + 68, 1.5);
+    draw_sprite_ext(sTitle_Divider, 0, _gw / 2, _py1 + 68, 1.1, 0.8, 0, c_white, 0.8);
 
     // Setting Rows
     var _items = [
@@ -212,8 +212,7 @@ else if (menu_state == "controls") {
     draw_set_valign(fa_top);
     draw_set_color(make_color_rgb(255, 235, 140));
     draw_text_transformed(_gw / 2, _py1 + 20, "🎮 PANDUAN KONTROL & TOMBOL AKSI 🎮", 1.3, 1.3, 0);
-    draw_set_color(make_color_rgb(255, 215, 90));
-    draw_line_width(_px1 + 40, _py1 + 60, _px2 - 40, _py1 + 60, 1.5);
+    draw_sprite_ext(sTitle_Divider, 0, _gw / 2, _py1 + 60, 1.2, 0.8, 0, c_white, 0.8);
 
     var _ctrls = [
         ["WASD / Tombol Arah", "Berjalan, Menjelajah & Navigasi Menu"],
