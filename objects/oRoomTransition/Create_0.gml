@@ -1,5 +1,10 @@
 /// @description Inisialisasi Room Transition & Global HUD Manager
 
+if (instance_number(oRoomTransition) > 1) {
+    instance_destroy();
+    exit;
+}
+
 transition_state = "idle"; // "idle", "fade_out", "fade_in"
 fade_alpha = 0.0;
 target_room = noone;

@@ -1,5 +1,10 @@
 /// @description Inisialisasi Dialogue Manager & Screen Config (VN Hybrid Engine)
 
+if (instance_number(oDialogueManager) > 1) {
+    instance_destroy();
+    exit;
+}
+
 current_dialogue = noone;
 current_line_index = 0;
 char_index = 0;

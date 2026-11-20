@@ -1,5 +1,10 @@
 /// @description Inisialisasi JRPG Modular Menu Manager (Adapted from MK_UICustomizer)
 
+if (instance_number(oMenuManager) > 1) {
+    instance_destroy();
+    exit;
+}
+
 depth = -10500;
 
 if (!variable_global_exists("main_menu_open")) {

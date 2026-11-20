@@ -35,6 +35,11 @@ var _gui_h = display_get_gui_height();
 var _gui_mx = device_mouse_x_to_gui(0);
 var _gui_my = device_mouse_y_to_gui(0);
 
+// Di Main Menu, jangan proses hotkey in-game atau menu status/peta/toko
+if (room == rm_main_menu) {
+    exit;
+}
+
 // =========================================================================
 // A. KONTROL KONFIRMASI BATAS AREA (Reference: leaving area option.png)
 // =========================================================================

@@ -4,6 +4,20 @@ var _gw = display_get_gui_width();
 var _gh = display_get_gui_height();
 
 // =========================================================================
+// Di Main Menu, jangan gambar HUD, stat plate, minimap atau menu apapun
+// Hanya gambar efek transisi fade jika sedang aktif
+// =========================================================================
+if (room == rm_main_menu) {
+    if (fade_alpha > 0) {
+        draw_set_alpha(fade_alpha);
+        draw_set_color(c_black);
+        draw_rectangle(0, 0, _gw, _gh, false);
+        draw_set_alpha(1.0);
+    }
+    exit;
+}
+
+// =========================================================================
 // Cek apakah dialog sedang berlangsung: jika ya, turunkan opacity seluruh HUD status utama agar karakter 2D tidak terhalang
 var _is_dialogue = (variable_global_exists("dialogue_active") && global.dialogue_active);
 var _hud_alpha = _is_dialogue ? 0.20 : 1.0;

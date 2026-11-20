@@ -1,5 +1,7 @@
 /// @description Draw Event oRoomTransition - Dynamic Day/Night World Lighting & Ambient Glow
 
+if (room == rm_main_menu) exit;
+
 var _time_str = variable_global_exists("time_of_day") ? global.time_of_day : "Daytime";
 
 // =========================================================================

@@ -2,6 +2,17 @@
 
 depth = -11000;
 
+// Pastikan persistent manager objects ada sejak awal boot game
+if (!instance_exists(oRoomTransition)) {
+    instance_create_depth(0, 0, -10000, oRoomTransition);
+}
+if (!instance_exists(oMenuManager)) {
+    instance_create_depth(0, 0, -10500, oMenuManager);
+}
+if (!instance_exists(oDialogueManager)) {
+    instance_create_depth(0, 0, -15000, oDialogueManager);
+}
+
 // State Menu
 menu_state = "main"; // "main", "load_game", "settings", "credits", "controls"
 selected_option = 0;

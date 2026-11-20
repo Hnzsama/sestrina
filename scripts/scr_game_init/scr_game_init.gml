@@ -185,6 +185,25 @@ function scr_start_new_game() {
     global.leave_confirm_active = false;
     global.opened_chests = [];
     
+    // Pastikan persistent manager objects selalu ada sejak New Game
+    if (!instance_exists(oRoomTransition)) {
+        instance_create_depth(0, 0, -10000, oRoomTransition);
+    }
+    var _tr = instance_find(oRoomTransition, 0);
+    _tr.transition_state = "fade_in";
+    _tr.fade_alpha = 1.0;
+    _tr.banner_title = "Kamar Tidur Kastil";
+    _tr.banner_subtitle = "Tempat peristirahatan Sestrina";
+    _tr.banner_timer = 160;
+    _tr.refresh_save_slots();
+    
+    if (!instance_exists(oDialogueManager)) {
+        instance_create_depth(0, 0, -15000, oDialogueManager);
+    }
+    if (!instance_exists(oMenuManager)) {
+        instance_create_depth(0, 0, -10500, oMenuManager);
+    }
+    
     // Pindah ke Kamar Sestrina
     room_goto(Room1);
 }
@@ -364,62 +383,76 @@ function scr_load_game(_slot = "quicksave") {
     
     if (is_undefined(_data) || !is_struct(_data)) return false;
     
+    // Pastikan persistent manager objects selalu ada saat memuat game
+    if (!instance_exists(oRoomTransition)) {
+        instance_create_depth(0, 0, -10000, oRoomTransition);
+    }
+    var _tr = instance_find(oRoomTransition, 0);
+    _tr.refresh_save_slots();
+    
+    if (!instance_exists(oDialogueManager)) {
+        instance_create_depth(0, 0, -15000, oDialogueManager);
+    }
+    if (!instance_exists(oMenuManager)) {
+        instance_create_depth(0, 0, -10500, oMenuManager);
+    }
+    
     // 1. Pulihkan Level & Exp
-    if (variable_struct_exists(_data, "player_level")) global.player_level = _data.player_level;
-    if (variable_struct_exists(_data, "player_exp")) global.player_exp = _data.player_exp;
-    if (variable_struct_exists(_data, "player_max_exp")) global.player_max_exp = _data.player_max_exp;
-    if (variable_struct_exists(_data, "stat_points")) global.stat_points = _data.stat_points;
+    global.player_level = variable_struct_exists(_data, "player_level") ? _data.player_level : 1;
+    global.player_exp = variable_struct_exists(_data, "player_exp") ? _data.player_exp : 0;
+    global.player_max_exp = variable_struct_exists(_data, "player_max_exp") ? _data.player_max_exp : 60;
+    global.stat_points = variable_struct_exists(_data, "stat_points") ? _data.stat_points : 0;
     
     // 2. Pulihkan Atribut
-    if (variable_struct_exists(_data, "stat_vit")) global.stat_vit = _data.stat_vit;
-    if (variable_struct_exists(_data, "stat_str")) global.stat_str = _data.stat_str;
-    if (variable_struct_exists(_data, "stat_int")) global.stat_int = _data.stat_int;
-    if (variable_struct_exists(_data, "stat_agi")) global.stat_agi = _data.stat_agi;
+    global.stat_vit = variable_struct_exists(_data, "stat_vit") ? _data.stat_vit : 5;
+    global.stat_str = variable_struct_exists(_data, "stat_str") ? _data.stat_str : 5;
+    global.stat_int = variable_struct_exists(_data, "stat_int") ? _data.stat_int : 5;
+    global.stat_agi = variable_struct_exists(_data, "stat_agi") ? _data.stat_agi : 5;
     
     scr_recalculate_stats();
     
     // 3. Pulihkan Resource Bar
-    if (variable_struct_exists(_data, "player_hp")) global.player_hp = _data.player_hp;
-    if (variable_struct_exists(_data, "player_mp")) global.player_mp = _data.player_mp;
-    if (variable_struct_exists(_data, "player_stamina")) global.player_stamina = _data.player_stamina;
+    global.player_hp = variable_struct_exists(_data, "player_hp") ? _data.player_hp : global.player_max_hp;
+    global.player_mp = variable_struct_exists(_data, "player_mp") ? _data.player_mp : global.player_max_mp;
+    global.player_stamina = variable_struct_exists(_data, "player_stamina") ? _data.player_stamina : global.player_max_stamina;
     
     // 4. Inventori & Peralatan
-    if (variable_struct_exists(_data, "gold")) global.gold = _data.gold;
-    if (variable_struct_exists(_data, "player_potions")) global.player_potions = _data.player_potions;
-    if (variable_struct_exists(_data, "player_has_sword")) global.player_has_sword = _data.player_has_sword;
-    if (variable_struct_exists(_data, "weapon_tier")) global.weapon_tier = _data.weapon_tier;
-    if (variable_struct_exists(_data, "weapon_name")) global.weapon_name = _data.weapon_name;
-    if (variable_struct_exists(_data, "player_has_remedy")) global.player_has_remedy = _data.player_has_remedy;
-    if (variable_struct_exists(_data, "has_catacomb_key")) global.has_catacomb_key = _data.has_catacomb_key;
-    if (variable_struct_exists(_data, "has_boss_key")) global.has_boss_key = _data.has_boss_key;
-    if (variable_struct_exists(_data, "party_goran")) global.party_goran = _data.party_goran;
-    if (variable_struct_exists(_data, "goran_hp")) global.goran_hp = _data.goran_hp;
-    if (variable_struct_exists(_data, "demon_unsealed")) global.demon_unsealed = _data.demon_unsealed;
-    if (variable_struct_exists(_data, "game_ending")) global.game_ending = _data.game_ending;
+    global.gold = variable_struct_exists(_data, "gold") ? _data.gold : 50;
+    global.player_potions = variable_struct_exists(_data, "player_potions") ? _data.player_potions : 1;
+    global.player_has_sword = variable_struct_exists(_data, "player_has_sword") ? _data.player_has_sword : false;
+    global.weapon_tier = variable_struct_exists(_data, "weapon_tier") ? _data.weapon_tier : 0;
+    global.weapon_name = variable_struct_exists(_data, "weapon_name") ? _data.weapon_name : "Tangan Kosong";
+    global.player_has_remedy = variable_struct_exists(_data, "player_has_remedy") ? _data.player_has_remedy : false;
+    global.has_catacomb_key = variable_struct_exists(_data, "has_catacomb_key") ? _data.has_catacomb_key : false;
+    global.has_boss_key = variable_struct_exists(_data, "has_boss_key") ? _data.has_boss_key : false;
+    global.party_goran = variable_struct_exists(_data, "party_goran") ? _data.party_goran : false;
+    global.goran_hp = variable_struct_exists(_data, "goran_hp") ? _data.goran_hp : 300;
+    global.demon_unsealed = variable_struct_exists(_data, "demon_unsealed") ? _data.demon_unsealed : false;
+    global.game_ending = variable_struct_exists(_data, "game_ending") ? _data.game_ending : "";
     
     // 5. Material
-    if (variable_struct_exists(_data, "mat_slime_jelly")) global.mat_slime_jelly = _data.mat_slime_jelly;
-    if (variable_struct_exists(_data, "mat_bone_shard")) global.mat_bone_shard = _data.mat_bone_shard;
-    if (variable_struct_exists(_data, "mat_scrap_iron")) global.mat_scrap_iron = _data.mat_scrap_iron;
-    if (variable_struct_exists(_data, "mat_iron_ore")) global.mat_iron_ore = _data.mat_iron_ore;
-    if (variable_struct_exists(_data, "mat_magic_crystal")) global.mat_magic_crystal = _data.mat_magic_crystal;
+    global.mat_slime_jelly = variable_struct_exists(_data, "mat_slime_jelly") ? _data.mat_slime_jelly : 0;
+    global.mat_bone_shard = variable_struct_exists(_data, "mat_bone_shard") ? _data.mat_bone_shard : 0;
+    global.mat_scrap_iron = variable_struct_exists(_data, "mat_scrap_iron") ? _data.mat_scrap_iron : 0;
+    global.mat_iron_ore = variable_struct_exists(_data, "mat_iron_ore") ? _data.mat_iron_ore : 0;
+    global.mat_magic_crystal = variable_struct_exists(_data, "mat_magic_crystal") ? _data.mat_magic_crystal : 0;
     
     // 6. Sihir
-    if (variable_struct_exists(_data, "spell_unlocked_fireball")) global.spell_unlocked_fireball = _data.spell_unlocked_fireball;
-    if (variable_struct_exists(_data, "spell_unlocked_frost")) global.spell_unlocked_frost = _data.spell_unlocked_frost;
-    if (variable_struct_exists(_data, "spell_selected")) global.spell_selected = _data.spell_selected;
+    global.spell_unlocked_fireball = variable_struct_exists(_data, "spell_unlocked_fireball") ? _data.spell_unlocked_fireball : false;
+    global.spell_unlocked_frost = variable_struct_exists(_data, "spell_unlocked_frost") ? _data.spell_unlocked_frost : false;
+    global.spell_selected = variable_struct_exists(_data, "spell_selected") ? _data.spell_selected : 0;
     
     // 7. Quest & Waktu
-    if (variable_struct_exists(_data, "quest_stage")) global.quest_stage = _data.quest_stage;
-    if (variable_struct_exists(_data, "quest_title")) global.quest_title = _data.quest_title;
-    if (variable_struct_exists(_data, "quest_desc")) global.quest_desc = _data.quest_desc;
-    if (variable_struct_exists(_data, "day_count")) global.day_count = _data.day_count;
-    if (variable_struct_exists(_data, "time_of_day")) global.time_of_day = _data.time_of_day;
-    if (variable_struct_exists(_data, "sister_condition")) global.sister_condition = _data.sister_condition;
+    global.quest_stage = variable_struct_exists(_data, "quest_stage") ? _data.quest_stage : 0;
+    global.quest_title = variable_struct_exists(_data, "quest_title") ? _data.quest_title : "Pencarian The Lost Remedy";
+    global.quest_desc = variable_struct_exists(_data, "quest_desc") ? _data.quest_desc : "Periksa kondisi Sestrina di ranjang (Overclock Mana Leak)";
+    global.day_count = variable_struct_exists(_data, "day_count") ? _data.day_count : 1;
+    global.time_of_day = variable_struct_exists(_data, "time_of_day") ? _data.time_of_day : "Daytime";
+    global.sister_condition = variable_struct_exists(_data, "sister_condition") ? _data.sister_condition : 100;
     
     // 8. Status Lingkungan
-    if (variable_struct_exists(_data, "opened_chests")) global.opened_chests = _data.opened_chests;
-    if (variable_struct_exists(_data, "catacombs_gate_opened")) global.catacombs_gate_opened = _data.catacombs_gate_opened;
+    global.opened_chests = variable_struct_exists(_data, "opened_chests") ? _data.opened_chests : [];
+    global.catacombs_gate_opened = variable_struct_exists(_data, "catacombs_gate_opened") ? _data.catacombs_gate_opened : false;
     
     // Reset seluruh state menu dan dialog agar tidak terkunci saat memuat game
     global.dialogue_active = false;
@@ -432,41 +465,52 @@ function scr_load_game(_slot = "quicksave") {
     if (variable_global_exists("is_paused")) global.is_paused = false;
     
     // 9. Pindah Ruangan & Posisikan Pemain
+    var _target_room = Room1;
     if (variable_struct_exists(_data, "room_name")) {
-        var _target_room = asset_get_index(_data.room_name);
-        if (_target_room == rm_outskirts) {
-            _target_room = rm_catacombs;
-            _data.player_x = 640;
-            _data.player_y = 120;
+        var _parsed_room = asset_get_index(_data.room_name);
+        if (_parsed_room != -1 && room_exists(_parsed_room)) {
+            _target_room = _parsed_room;
         }
-        if (room_exists(_target_room)) {
-            global.spawn_x = _data.player_x;
-            global.spawn_y = _data.player_y;
-            
-            if (room == _target_room) {
-                if (instance_exists(oPlayer)) {
-                    oPlayer.x = _data.player_x;
-                    oPlayer.y = _data.player_y;
-                    if (variable_struct_exists(_data, "player_facing") && variable_instance_exists(oPlayer, "facingDir")) {
-                        oPlayer.facingDir = _data.player_facing;
-                    }
-                }
-            } else {
-                if (instance_exists(oRoomTransition)) {
-                    var _tr = instance_find(oRoomTransition, 0);
-                    _tr.start_transition(_target_room, _data.player_x, _data.player_y, "GAME DIMUAT", "Melanjutkan petualangan...");
-                } else {
-                    room_goto(_target_room);
-                }
+    }
+    if (_target_room == rm_outskirts) {
+        _target_room = rm_catacombs;
+        _data.player_x = 640;
+        _data.player_y = 120;
+    }
+    
+    var _px = variable_struct_exists(_data, "player_x") ? _data.player_x : 405;
+    var _py = variable_struct_exists(_data, "player_y") ? _data.player_y : 285;
+    global.spawn_x = _px;
+    global.spawn_y = _py;
+    
+    if (room == _target_room) {
+        if (instance_exists(oPlayer)) {
+            oPlayer.x = _px;
+            oPlayer.y = _py;
+            if (variable_struct_exists(_data, "player_facing") && variable_instance_exists(oPlayer, "facingDir")) {
+                oPlayer.facingDir = _data.player_facing;
             }
+        }
+        _tr.banner_title = "GAME DIMUAT! [F6]";
+        _tr.banner_subtitle = "Progres petualangan berhasil dimuat!";
+        _tr.banner_timer = 160;
+    } else {
+        if (room == rm_main_menu) {
+            // Karena Main Menu sudah fade out ke hitam, atur fade_in di target_room
+            _tr.transition_state = "fade_in";
+            _tr.fade_alpha = 1.0;
+            _tr.target_room = _target_room;
+            _tr.target_x = _px;
+            _tr.target_y = _py;
+            _tr.banner_title = "GAME DIMUAT!";
+            _tr.banner_subtitle = "Melanjutkan petualangan...";
+            _tr.banner_timer = 160;
+            room_goto(_target_room);
+        } else {
+            _tr.start_transition(_target_room, _px, _py, "GAME DIMUAT", "Melanjutkan petualangan...");
         }
     }
     
-    if (instance_exists(oRoomTransition)) {
-        oRoomTransition.banner_title = "GAME DIMUAT! [F6]";
-        oRoomTransition.banner_subtitle = "Progres petualangan berhasil dimuat!";
-        oRoomTransition.banner_timer = 160;
-    }
     return true;
 }
 
@@ -520,6 +564,7 @@ function scr_get_save_info(_slot = "quicksave") {
     if (_r_raw == "rm_town_square") _r_title = "Alun-Alun Kota Altdorf";
     else if (_r_raw == "rm_outskirts") _r_title = "Pelataran Kuil Purba";
     else if (_r_raw == "rm_catacombs") _r_title = "Katakombe Bawah Tanah";
+    else if (_r_raw == "rm_dungeon_floor2") _r_title = "Dungeon Lantai 2 (Kuil Kuno)";
     else if (_r_raw == "rm_boss_chamber") _r_title = "Sanctum Core (Altar Lost Remedy)";
     else if (_r_raw == "rm_potion_shop") _r_title = "Apotek Herbal Elysia";
     else if (_r_raw == "rm_weapon_shop") _r_title = "Bengkel Tempa Goran";

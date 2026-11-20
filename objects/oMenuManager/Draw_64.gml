@@ -1,6 +1,6 @@
 /// @description Draw GUI Event - JRPG Modular Custom Menu (Adapted from MK_UICustomizer)
 
-if (menu_alpha <= 0.01) exit;
+if (room == rm_main_menu || menu_alpha <= 0.01) exit;
 
 var _gw = display_get_gui_width();
 var _gh = display_get_gui_height();

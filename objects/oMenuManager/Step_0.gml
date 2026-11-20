@@ -1,5 +1,11 @@
 /// @description Input & Navigation Handler untuk JRPG Modular Menu
 
+if (room == rm_main_menu) {
+    global.main_menu_open = false;
+    menu_alpha = 0.0;
+    exit;
+}
+
 // 1. Tombol Buka / Tutup Menu Utama (Pause / Main Menu)
 var _key_toggle_menu = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_tab);
 
