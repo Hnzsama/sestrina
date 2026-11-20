@@ -95,7 +95,7 @@ if (_boss_defeated) {
     draw_set_color(make_color_rgb(255, 240, 160));
     draw_text(640, 140, "✦ PORTAL SUCI FORGOTTEN SANCTUM ✦");
     draw_set_color(make_color_rgb(255, 255, 220));
-    draw_text(640, 160, "[TEKAN E UNTUK KEMBALI KE KAMAR SESTRINA]");
+    draw_text(640, 160, "[TEKAN E / Z / ENTER UNTUK KEMBALI KE KAMAR SESTRINA]");
 }
 
 // 6. Label Navigasi Gerbang Bawah

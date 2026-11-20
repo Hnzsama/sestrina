@@ -17,291 +17,63 @@ if (current_line_index >= array_length(_lines)) exit;
 var _line = _lines[current_line_index];
 
 // ==========================================
-// 1. Helper Render Full-Height Standing 2D Anime Character
-// Sesuai Permintaan User: Hanya Karakter Penting (Kakak / Protagonist & Adik / Sestrina)
-// NPC (Goran, Elysia, Alden, Warga Kota) TIDAK USAH muncul portrait-nya!
+// 1. Cek Apakah Percakapan Khusus Main Char & Sestrina
+// Sesuai Permintaan User: Tampilkan karakter 2D HANYA saat komunikasi Main Char sama Sestrina
+// NPC (Goran, Elysia, Alden, Boss, Warga Kota) TIDAK menampilkan karakter 2D
 // ==========================================
-var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh, _line_data = noone) {
-    if (_type != "protagonist" && _type != "sestrina") {
-        return; // Abaikan semua NPC - hanya Kakak & Adik yang ditampilkan
+var _is_main_and_sestrina = false;
+if (current_dialogue != noone && variable_struct_exists(current_dialogue, "lines")) {
+    var _has_mc = false;
+    var _has_ses = false;
+    for (var _k = 0; _k < array_length(current_dialogue.lines); _k++) {
+        var _l = current_dialogue.lines[_k];
+        if (_l.left_portrait == "protagonist" || _l.right_portrait == "protagonist" || _l.speaker == "Protagonis" || _l.speaker == "Protagonist") _has_mc = true;
+        if (_l.left_portrait == "sestrina" || _l.right_portrait == "sestrina" || _l.speaker == "Sestrina") _has_ses = true;
     }
+    _is_main_and_sestrina = (_has_mc && _has_ses);
+}
 
-    var _base_y = _gh;
-    var _sc = _is_active ? 1.0 : 0.95;
-    var _cy = _base_y - 20;
-
-    // Glow aura jika aktif
-    if (_is_active) {
-        draw_set_alpha(0.35 * _alpha);
-        draw_set_color((_type == "protagonist") ? make_color_rgb(80, 160, 255) : make_color_rgb(255, 140, 180));
-        draw_ellipse(_cx - 150, 40, _cx + 150, _gh, false);
-    }
-
-    draw_set_alpha(_alpha);
-
+var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alpha, _is_left, _gh) {
+    if (_type != "protagonist" && _type != "sestrina") return;
+    
+    // Pilih Sprite Sesuai Karakter dan Sisi Berdiri (Kiri / Kanan)
+    var _spr = noone;
     if (_type == "protagonist") {
-        // ==========================================
-        // KARAKTER KIRI: BLUE-HAIRED KNIGHT HEROINE
-        // ==========================================
-        var _c_cloak = _is_active ? make_color_rgb(42, 68, 125) : make_color_rgb(24, 38, 70);
-        var _c_armor = _is_active ? make_color_rgb(230, 235, 245) : make_color_rgb(140, 145, 155);
-        var _c_hair  = _is_active ? make_color_rgb(85, 165, 240) : make_color_rgb(50, 95, 140);
-        var _c_skin  = _is_active ? make_color_rgb(255, 226, 210) : make_color_rgb(170, 145, 130);
-        var _c_gold  = _is_active ? make_color_rgb(225, 190, 80) : make_color_rgb(130, 110, 45);
-
-        // 1. Jubah Biru Panjang (Flowing Cape)
-        draw_set_color(_c_cloak);
-        draw_triangle(_cx - 130, 280, _cx - 180, _gh, _cx - 40, _gh, false);
-        draw_triangle(_cx + 80, 280, _cx + 160, _gh, _cx + 30, _gh, false);
-
-        // 2. Kaki & Stockings Putih (White Thigh Highs)
-        draw_set_color(_is_active ? make_color_rgb(245, 248, 255) : make_color_rgb(160, 165, 175));
-        draw_roundrect_ext(_cx - 50, 460, _cx - 15, _gh, 12, 12, false);
-        draw_roundrect_ext(_cx + 10, 460, _cx + 45, _gh, 12, 12, false);
-
-        // Garter Straps Hitam
-        draw_set_color(make_color_rgb(30, 30, 40));
-        draw_rectangle(_cx - 48, 480, _cx - 17, 488, false);
-        draw_rectangle(_cx + 12, 480, _cx + 43, 488, false);
-
-        // 3. Rok Mini & Korset Armor
-        draw_set_color(_is_active ? make_color_rgb(25, 30, 45) : make_color_rgb(15, 18, 28));
-        draw_roundrect_ext(_cx - 65, 390, _cx + 65, 470, 14, 14, false);
-
-        // Armor Dada & Kerah
-        draw_set_color(_c_armor);
-        draw_ellipse(_cx - 55, 270, _cx + 55, 390, false);
-        draw_set_color(_c_cloak);
-        draw_rectangle(_cx - 40, 340, _cx + 40, 410, false);
-        draw_set_color(_c_gold);
-        draw_rectangle(_cx - 42, 375, _cx + 42, 385, false);
-
-        // Tangan Bersarung Tangan Hitam Melipat (Crossed Arms)
-        draw_set_color(make_color_rgb(40, 40, 50));
-        draw_roundrect_ext(_cx - 75, 300, _cx + 75, 345, 12, 12, false);
-
-        // 4. Leher & Wajah
-        draw_set_color(_c_skin);
-        draw_ellipse(_cx - 38, 140, _cx + 38, 220, false);
-
-        // Mata Anime Amber/Orange
-        draw_set_color(_is_active ? make_color_rgb(255, 160, 40) : make_color_rgb(150, 90, 20));
-        draw_circle(_cx - 15, 175, 5, false);
-        draw_circle(_cx + 15, 175, 5, false);
-        draw_set_color(c_black);
-        draw_circle(_cx - 15, 175, 2.5, false);
-        draw_circle(_cx + 15, 175, 2.5, false);
-
-        // 5. Rambut Biru Menjuntai
-        draw_set_color(_c_hair);
-        draw_circle(_cx, 130, 52, false);
-        draw_triangle(_cx - 55, 130, _cx - 65, 270, _cx - 20, 200, false);
-        draw_triangle(_cx + 55, 130, _cx + 65, 270, _cx + 20, 200, false);
-        draw_triangle(_cx - 30, 130, _cx, 170, _cx - 10, 130, false);
-        draw_triangle(_cx + 10, 130, _cx + 25, 165, _cx + 30, 130, false);
-
-    } else if (_type == "goran") {
-        // ==========================================
-        // PANDAI BESI GORAN (Goran Blacksmith Masterpack Portrait)
-        // ==========================================
-        var _spr = sPortrait_Goran;
-        if (_line_data != noone && is_struct(_line_data) && variable_struct_exists(_line_data, "emote")) {
-            if (_line_data.emote == "exclamation") {
-                _spr = sPortrait_Goran_Confident;
-            } else if (_line_data.emote == "warcry" && sprite_exists(sPortrait_Goran_Warcry)) {
-                _spr = sPortrait_Goran_Warcry;
-            }
-        }
-        var _p_scale = 1.85;
-        var _pw = 128 * _p_scale;
-        var _ph = 128 * _p_scale;
-        var _px = _cx - _pw / 2;
-        var _py = 145;
-        
-        // Bayangan lembut potret
-        draw_set_alpha(0.35);
-        draw_set_color(c_black);
-        draw_ellipse(_px - 10, _py + _ph - 20, _px + _pw + 10, _py + _ph + 15, false);
-        draw_set_alpha(1.0);
-        
-        // Gambar sprite potret VN asli Goran
-        var _col = _is_active ? c_white : make_color_rgb(140, 145, 160);
-        draw_sprite_ext(_spr, 0, _px, _py, _p_scale, _p_scale, 0, _col, 1.0);
-        
-    } else if (_type == "elysia") {
-        // ==========================================
-        // ALKEMIS ELYSIA (Mystic Herbalist in Emerald Cloak)
-        // ==========================================
-        var _c_cloak = _is_active ? make_color_rgb(35, 120, 85) : make_color_rgb(20, 70, 50);
-        var _c_gold  = _is_active ? make_color_rgb(230, 200, 90) : make_color_rgb(130, 110, 50);
-        var _c_hair  = _is_active ? make_color_rgb(180, 120, 210) : make_color_rgb(100, 65, 120);
-        var _c_skin  = _is_active ? make_color_rgb(255, 230, 215) : make_color_rgb(170, 150, 140);
-        
-        // Jubah Emerald Panjang
-        draw_set_color(_c_cloak);
-        draw_triangle(_cx - 70, 270, _cx - 130, _gh, _cx + 110, _gh, false);
-        draw_triangle(_cx + 50, 270, _cx + 130, _gh, _cx - 110, _gh, false);
-        
-        // Hiasan Emas Jubah
-        draw_set_color(_c_gold);
-        draw_roundrect_ext(_cx - 30, 280, _cx + 30, 390, 8, 8, false);
-        
-        // Botol Ramuan di Tangan
-        draw_set_color(make_color_rgb(120, 240, 200));
-        draw_circle(_cx + 40, 360, 14, false);
-        
-        // Wajah & Kacamata Alkemis
-        draw_set_color(_c_skin);
-        draw_ellipse(_cx - 34, 145, _cx + 34, 220, false);
-        draw_set_color(_c_gold);
-        draw_circle(_cx - 14, 176, 8, true);
-        draw_circle(_cx + 14, 176, 8, true);
-        draw_line(_cx - 6, 176, _cx + 6, 176);
-        
-        // Rambut Ungu Lavender & Topi Penyihir
-        draw_set_color(_c_hair);
-        draw_circle(_cx, 140, 48, false);
-        draw_triangle(_cx - 50, 140, _cx - 70, 320, _cx - 20, 200, false);
-        draw_triangle(_cx + 50, 140, _cx + 70, 320, _cx + 20, 200, false);
-        
-        // Topi Runcing Hijau Emerald
-        draw_set_color(_c_cloak);
-        draw_triangle(_cx - 80, 145, _cx + 80, 145, _cx, 30, false);
-        draw_set_color(_c_gold);
-        draw_ellipse(_cx - 80, 140, _cx + 80, 152, false);
-        
-    } else if (_type == "alden") {
-        // ==========================================
-        // KAPTEN ALDEN (Silver Armored Knight)
-        // ==========================================
-        var _c_plate = _is_active ? make_color_rgb(210, 220, 235) : make_color_rgb(120, 130, 145);
-        var _c_red   = _is_active ? make_color_rgb(210, 45, 45) : make_color_rgb(120, 25, 25);
-        
-        // Zirah Baja Seluruh Tubuh
-        draw_set_color(_c_plate);
-        draw_roundrect_ext(_cx - 65, 260, _cx + 65, _gh, 14, 14, false);
-        
-        // Selempang Merah Kerajaan
-        draw_set_color(_c_red);
-        draw_line_width(_cx - 60, 265, _cx + 50, 420, 18);
-        
-        // Helm Ksatria Tertutup dengan Bulu Merah
-        draw_set_color(_c_plate);
-        draw_roundrect_ext(_cx - 40, 130, _cx + 40, 230, 14, 14, false);
-        draw_set_color(make_color_rgb(30, 35, 45));
-        draw_rectangle(_cx - 30, 175, _cx + 30, 185, false);
-        
-        // Bulu Helm Merah
-        draw_set_color(_c_red);
-        draw_triangle(_cx - 15, 130, _cx + 15, 130, _cx, 60, false);
-        
-    } else {
-        // ==========================================
-        // ==========================================
-        // KARAKTER KANAN: ADIK SESTRINA (White Hair, Red Ribbons & Pinafore Dress)
-        // ==========================================
-        var _c_blouse = _is_active ? make_color_rgb(248, 248, 255) : make_color_rgb(170, 175, 185);
-        var _c_dress  = _is_active ? make_color_rgb(52, 38, 54) : make_color_rgb(32, 22, 34);
-        var _c_ribbon = _is_active ? make_color_rgb(215, 30, 50) : make_color_rgb(130, 20, 32);
-        var _c_hair   = _is_active ? make_color_rgb(235, 238, 248) : make_color_rgb(160, 165, 180);
-        var _c_skin   = _is_active ? make_color_rgb(255, 238, 232) : make_color_rgb(180, 160, 155);
-        var _c_eye    = _is_active ? make_color_rgb(220, 25, 45) : make_color_rgb(120, 15, 25);
-
-        // 1. Rok Lipit Plum Tua (Pleated Pinafore Skirt)
-        draw_set_color(_c_dress);
-        draw_triangle(_cx - 65, 340, _cx - 120, _gh, _cx + 100, _gh, false);
-        draw_triangle(_cx + 45, 340, _cx + 130, _gh, _cx - 45, _gh, false);
-
-        // Korset Pinggang Tinggi (High Corset Waist)
-        draw_set_color(_c_dress);
-        draw_roundrect_ext(_cx - 42, 310, _cx + 42, 370, 8, 8, false);
-        // Kancing Ganda Mawar
-        draw_set_color(make_color_rgb(245, 180, 195));
-        draw_circle(_cx - 16, 330, 3, false);
-        draw_circle(_cx + 16, 330, 3, false);
-        draw_circle(_cx - 16, 350, 3, false);
-        draw_circle(_cx + 16, 350, 3, false);
-
-        // 2. Blus Putih Berenda & Tali Suspender Ruffle
-        draw_set_color(_c_blouse);
-        draw_ellipse(_cx - 40, 250, _cx + 40, 330, false);
-        // Tali Suspender Gaun
-        draw_set_color(_c_dress);
-        draw_line_width(_cx - 24, 250, _cx - 20, 320, 6);
-        draw_line_width(_cx + 24, 250, _cx + 20, 320, 6);
-
-        // Pita Merah Besar di Leher
-        draw_set_color(_c_ribbon);
-        draw_triangle(_cx - 30, 235, _cx, 248, _cx - 15, 260, false);
-        draw_triangle(_cx + 30, 235, _cx, 248, _cx + 15, 260, false);
-        draw_circle(_cx, 246, 6, false);
-        draw_line_width(_cx - 10, 250, _cx - 18, 280, 3);
-        draw_line_width(_cx + 10, 250, _cx + 18, 280, 3);
-
-        // Lengan Putih Mengembang & Tangan Menempel di Depan
-        draw_set_color(_c_blouse);
-        draw_roundrect_ext(_cx - 55, 260, _cx - 25, 350, 10, 10, false);
-        draw_roundrect_ext(_cx + 25, 260, _cx + 55, 350, 10, 10, false);
-        draw_set_color(_c_skin);
-        draw_circle(_cx - 15, 345, 7, false);
-        draw_circle(_cx + 15, 345, 7, false);
-
-        // 3. Leher & Wajah Cantik Melankolis
-        draw_set_color(_c_skin);
-        draw_ellipse(_cx - 32, 145, _cx + 32, 225, false);
-
-        // Mata Anime Merah Rubi (Ruby Eyes)
-        draw_set_color(_c_eye);
-        draw_circle(_cx - 13, 178, 5.5, false);
-        draw_circle(_cx + 13, 178, 5.5, false);
-        draw_set_color(c_black);
-        draw_circle(_cx - 13, 178, 2.5, false);
-        draw_circle(_cx + 13, 178, 2.5, false);
-        draw_set_color(c_white);
-        draw_circle(_cx - 11, 176, 1.8, false); // kilau mata
-        draw_circle(_cx + 15, 176, 1.8, false);
-
-        // Rona Pipi Lembut
-        draw_set_color(make_color_rgb(255, 170, 180));
-        draw_ellipse(_cx - 24, 188, _cx - 10, 196, false);
-        draw_ellipse(_cx + 10, 188, _cx + 24, 196, false);
-
-        // 4. Rambut Perak Putih & Kuncir Kuda Kembar (Twintails)
-        // Kuncir Kiri
-        draw_set_color(_c_hair);
-        draw_triangle(_cx - 35, 140, _cx - 95, _gh - 50, _cx - 30, 320, false);
-        // Kuncir Kanan
-        draw_triangle(_cx + 35, 140, _cx + 95, _gh - 50, _cx + 30, 320, false);
-
-        // Kubah Rambut Atas & Poni
-        draw_circle(_cx, 135, 46, false);
-        // Poni Tengah & Samping dengan Aksen Merah di Ujung Dalam
-        draw_triangle(_cx - 30, 135, _cx - 36, 195, _cx - 15, 150, false);
-        draw_triangle(_cx + 30, 135, _cx + 36, 195, _cx + 15, 150, false);
-        draw_set_color(_c_ribbon);
-        draw_circle(_cx - 33, 192, 3, false); // aksen merah ujung poni
-        draw_circle(_cx + 33, 192, 3, false);
-
-        // Pita Merah Kuncir Kiri & Kanan
-        draw_set_color(_c_ribbon);
-        draw_ellipse(_cx - 44, 130, _cx - 28, 148, false);
-        draw_line_width(_cx - 38, 144, _cx - 52, 175, 3);
-        draw_ellipse(_cx + 28, 130, _cx + 44, 148, false);
-        draw_line_width(_cx + 38, 144, _cx + 52, 175, 3);
+        _spr = _is_left ? sVN_Protagonist_Left : sVN_Protagonist_Right;
+    } else if (_type == "sestrina") {
+        _spr = _is_left ? sVN_Sestrina_Left : sVN_Sestrina_Right;
     }
+    if (_spr == noone || !sprite_exists(_spr)) return;
+
+    var _sc = _is_active ? 1.02 : 0.94;
+    var _blend = _is_active ? c_white : make_color_rgb(135, 140, 160);
+    var _final_alpha = _is_active ? min(1.0, _alpha * 1.05) : (_alpha * 0.65);
+
+    // Glow Aura di belakang karakter aktif
+    if (_is_active) {
+        var _glow_col = (_type == "protagonist") ? make_color_rgb(180, 45, 65) : make_color_rgb(255, 175, 205);
+        draw_set_alpha(0.28 * _alpha);
+        draw_set_color(_glow_col);
+        draw_ellipse(_cx - 150, 60, _cx + 150, _gh, false);
+    }
+
+    // Gambar Sprite Karakter 2D Resmi Beresolusi Tinggi
+    draw_sprite_ext(_spr, 0, _cx, _gh, _sc, _sc, 0, _blend, _final_alpha);
 };
 
 // ==========================================
-// 2. Render Standing Character Portraits di Kiri & Kanan
+// 2. Render Standing Character Portraits di Kiri & Kanan (Hanya untuk Main Char & Sestrina)
 // ==========================================
-if (_line.left_portrait != noone) {
-    var _is_left_active = (_line.side_active == "left");
-    _draw_full_standing_anime_character(_line.left_portrait, 210, _is_left_active, portrait_left_alpha, true, _gui_h, _line);
-}
+if (_is_main_and_sestrina) {
+    if (_line.left_portrait != noone) {
+        var _is_left_active = (_line.side_active == "left");
+        _draw_full_standing_anime_character(_line.left_portrait, 220, _is_left_active, portrait_left_alpha, true, _gui_h);
+    }
 
-if (_line.right_portrait != noone) {
-    var _is_right_active = (_line.side_active == "right");
-    _draw_full_standing_anime_character(_line.right_portrait, _gui_w - 210, _is_right_active, portrait_right_alpha, false, _gui_h, _line);
+    if (_line.right_portrait != noone) {
+        var _is_right_active = (_line.side_active == "right");
+        _draw_full_standing_anime_character(_line.right_portrait, _gui_w - 220, _is_right_active, portrait_right_alpha, false, _gui_h);
+    }
 }
 
 // ==========================================
@@ -377,13 +149,13 @@ var _draw_emotion_bubble = function(_bx, _by, _emote_type, _scale, _timer) {
     }
 };
 
-if (variable_struct_exists(_line, "emote") && _line.emote != "") {
+if (variable_struct_exists(_line, "emote") && _line.emote != "" && _is_main_and_sestrina) {
     var _active_port = (_line.side_active == "left") ? _line.left_portrait : _line.right_portrait;
     if (_active_port == "protagonist" || _active_port == "sestrina") {
         if (_line.side_active == "left") {
-            _draw_emotion_bubble(210 + 50, 75, _line.emote, emote_scale, emote_timer);
+            _draw_emotion_bubble(220 + 50, 75, _line.emote, emote_scale, emote_timer);
         } else {
-            _draw_emotion_bubble(_gui_w - 210 - 50, 75, _line.emote, emote_scale, emote_timer);
+            _draw_emotion_bubble(_gui_w - 220 - 50, 75, _line.emote, emote_scale, emote_timer);
         }
     }
 }
