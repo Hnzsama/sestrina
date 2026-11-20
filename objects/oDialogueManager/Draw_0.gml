@@ -19,16 +19,28 @@ if (_line.side_active == "left") {
         _found_target = true;
     }
 } else {
-    // Sisi kanan: cari NPC terdekat dari player
-    var _npc = instance_nearest(oPlayer.x, oPlayer.y, oInteractableParent);
-    if (_npc != noone) {
-        _target_x = _npc.x;
-        _target_y = _npc.y - 32;
-        _found_target = true;
-    } else if (instance_exists(oNPC_Sister_Bed)) {
-        _target_x = oNPC_Sister_Bed.x;
-        _target_y = oNPC_Sister_Bed.y - 28;
-        _found_target = true;
+    // Sisi kanan: cari NPC atau Bos terdekat dari player
+    if (instance_exists(oPlayer)) {
+        if (instance_exists(oInteractableParent)) {
+            var _npc = instance_nearest(oPlayer.x, oPlayer.y, oInteractableParent);
+            if (_npc != noone) {
+                _target_x = _npc.x;
+                _target_y = _npc.y - 32;
+                _found_target = true;
+            }
+        }
+        
+        if (!_found_target && instance_exists(oBossGolem)) {
+            _target_x = oBossGolem.x;
+            _target_y = oBossGolem.y - 55;
+            _found_target = true;
+        }
+        
+        if (!_found_target && instance_exists(oNPC_Sister_Bed)) {
+            _target_x = oNPC_Sister_Bed.x;
+            _target_y = oNPC_Sister_Bed.y - 28;
+            _found_target = true;
+        }
     }
 }
 

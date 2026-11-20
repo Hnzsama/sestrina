@@ -297,8 +297,8 @@ if (is_rolling) {
         scr_play_sfx(snd_dodge_roll, 0.08, 0.9, 12);
         
         // Cek apakah pemain melakukan dodge saat berada dalam jarak bahaya musuh (Close-Call Evade)
-        var _n_enemy = instance_nearest(x, y, oEnemyParent);
-        var _n_boss  = instance_nearest(x, y, oBossGolem);
+        var _n_enemy = instance_exists(oEnemyParent) ? instance_nearest(x, y, oEnemyParent) : noone;
+        var _n_boss  = instance_exists(oBossGolem) ? instance_nearest(x, y, oBossGolem) : noone;
         var _danger_found = false;
         var _hx = x;
         var _hy = y;
