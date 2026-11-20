@@ -8,30 +8,32 @@ if (room_get_name(room) == "Room1" && (x < 210 || x > 1070 || y < 165 || y > 645
 if (global.player_hp <= 0) {
     if (!is_defeated) {
         is_defeated = true;
-        defeat_timer = 100;
+        defeat_timer = 60;
         image_blend = c_gray;
         image_speed = 0;
         if (instance_exists(oRoomTransition)) {
             oRoomTransition.banner_title = "KAMU TERKAPAR!";
-            oRoomTransition.banner_subtitle = "Daya tahanmu runtuh... Kembali sadar di ranjang Sestrina.";
+            oRoomTransition.banner_subtitle = "Daya tahanmu runtuh... Terbangun kembali di gubuk.";
             oRoomTransition.banner_timer = 180;
             oRoomTransition.screen_shake = 8;
         }
     }
     
     defeat_timer--;
-    if (defeat_timer == 25) {
-        if (instance_exists(oRoomTransition)) {
-            var _tr = instance_find(oRoomTransition, 0);
-            _tr.start_transition(Room1, 345, 225, "Kamar Sestrina", "Kembali Sadar Setelah Terkapar");
-        }
-    } else if (defeat_timer <= 0) {
+    if (defeat_timer <= 0) {
+        // Pulihkan status penuh sebelum transisi ruangan agar TIDAK TERJADI DEATH LOOP
         global.player_hp = global.player_max_hp;
         global.player_mp = global.player_max_mp;
         global.player_stamina = global.player_max_stamina;
         is_defeated = false;
         image_blend = c_white;
-        scr_advance_time(); // Memajukan siklus hari/malam sebagai konsekuensi waktu
+        scr_advance_time(); // Memajukan siklus waktu
+        
+        if (instance_exists(oRoomTransition)) {
+            var _tr = instance_find(oRoomTransition, 0);
+            // Respawn di tengah lantai kamar (x: 520, y: 380), aman & jauh dari trigger ranjang Sestrina
+            _tr.start_transition(Room1, 520, 380, "Kamar Tidur Sestrina", "Kembali Sadar Setelah Terkapar");
+        }
     }
     exit;
 }

@@ -6,13 +6,16 @@ mask_index = sNPC_Sister_Bed;
 image_speed = 0.05;
 prompt_text = "[Z] Cek Sestrina • [T] Istirahat Tidur";
 interact_range = 65;
-auto_trigger_range = 55;
-has_auto_triggered = false;
+// Auto trigger hanya sekali saat pertama kali main di awal quest (stage 0)
+auto_trigger_range = (global.quest_stage == 0 && (!variable_global_exists("sister_intro_done") || !global.sister_intro_done)) ? 55 : 0;
+has_auto_triggered = (variable_global_exists("sister_intro_done") && global.sister_intro_done);
 talk_count = 0;
 
 /// @function interact_action()
 interact_action = function() {
     if (global.dialogue_active) exit;
+    global.sister_intro_done = true;
+    has_auto_triggered = true;
     
     // Jika menekan tombol T saat dekat ranjang -> Fitur Bed Rest (Reference: rest bed option.png)
     if (keyboard_check_pressed(ord("T"))) {
