@@ -434,6 +434,11 @@ function scr_load_game(_slot = "quicksave") {
     // 9. Pindah Ruangan & Posisikan Pemain
     if (variable_struct_exists(_data, "room_name")) {
         var _target_room = asset_get_index(_data.room_name);
+        if (_target_room == rm_outskirts) {
+            _target_room = rm_catacombs;
+            _data.player_x = 640;
+            _data.player_y = 120;
+        }
         if (room_exists(_target_room)) {
             global.spawn_x = _data.player_x;
             global.spawn_y = _data.player_y;

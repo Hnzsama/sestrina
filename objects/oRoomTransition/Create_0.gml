@@ -54,15 +54,15 @@ map_nodes = [
         map_y: 280
     },
     {
-        name: "Sanctum Outskirts",
-        subname: "Pelataran Kuil Purba",
-        room_id: rm_outskirts,
+        name: "Forbidden Catacombs",
+        subname: "Dungeon Lantai 1 (Katakombe Purba)",
+        room_id: rm_catacombs,
         target_x: 640,
-        target_y: 580,
+        target_y: 120,
         req_stage: 2,
-        lore: "Hutan rimbun di luar perbatasan kota Altdorf. Reruntuhan gerbang kuil purba dijaga oleh kawanan Slime dan Skeleton liar.",
-        map_x: 770,
-        map_y: 210
+        lore: "Lorong bawah tanah purba yang diselimuti kobaran jiwa api biru dan sarkofagus terkutuk. Tempat berkeliarannya monster tengkorak, laba-laba, dan tikus raksasa.",
+        map_x: 850,
+        map_y: 220
     },
     {
         name: "Forgotten Catacombs",

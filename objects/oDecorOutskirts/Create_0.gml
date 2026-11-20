@@ -1,4 +1,9 @@
-/// @description Inisialisasi Ancient Forest Outskirts Decor
+/// @description Inisialisasi Outskirts Decor & Auto-Redirect ke Katakombe
+
+if (room == rm_outskirts) {
+    room_goto(rm_catacombs);
+    exit;
+}
 
 depth = 10;
 mist_anim = 0;

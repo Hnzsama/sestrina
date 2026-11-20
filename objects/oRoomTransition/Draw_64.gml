@@ -1063,7 +1063,7 @@ if (global.shop_menu_open == "goran") {
         var _can_forge = (global.mat_scrap_iron >= 4 && global.mat_iron_ore >= 2 && global.gold >= 40);
         draw_set_halign(fa_center);
         draw_set_color(_can_forge ? make_color_rgb(255, 220, 80) : make_color_rgb(160, 160, 160));
-        draw_text(_gw / 2, _my + _mh - 75, _can_forge ? "★ SIAP DITEMPA! Tekan [SPACE] Sekarang ★" : "✕ Bahan belum mencukupi. Farming di Hutan Reruntuhan!");
+        draw_text(_gw / 2, _my + _mh - 75, _can_forge ? "★ SIAP DITEMPA! Tekan [SPACE] Sekarang ★" : "✕ Bahan belum mencukupi. Farming di Katakombe Lantai 1!");
     } else if (global.weapon_tier == 2) {
         draw_set_color(make_color_rgb(255, 185, 90));
         draw_text(_tx, _ty + 30, "Peningkatan Berikutnya: Tier 3 (Pedang Baja Damaskus) -> ATK +14");

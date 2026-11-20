@@ -1,5 +1,10 @@
 /// @description Draw Event oDecorOutskirts (Pelataran Hutan Kuil Purba - Full 1280x720)
 
+if (room == rm_outskirts) {
+    room_goto(rm_catacombs);
+    exit;
+}
+
 var _x1 = 40;
 var _y1 = 40;
 var _x2 = 1240;

@@ -27,7 +27,7 @@ interact_action = function() {
             global.spell_selected = 1;
             
             if (global.weapon_tier > 0) {
-                scr_set_quest(2, "Kumpulkan Bahan & Tempa Senjata", "Farming di Hutan, tempa senjata di Goran");
+                scr_set_quest(2, "Kumpulkan Bahan & Tempa Senjata", "Farming di Katakombe F1, tempa senjata di Goran");
             } else {
                 scr_set_quest(1, "Persiapan Perjalanan", "Temui Goran di Toko Senjata (Barat Kota)");
             }

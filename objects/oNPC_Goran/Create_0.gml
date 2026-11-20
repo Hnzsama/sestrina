@@ -46,15 +46,15 @@ interact_action = function() {
     
     // 3. Quest Pertama - Ambil Pedang Karat
     if (global.weapon_tier == 0) {
-        _d.add("Goran", "Hahah! Butuh senjata untuk menembus hutan reruntuhan? Aku punya pedang tua di sudut bengkel.", "goran", "protagonist", "left", "exclamation");
+        _d.add("Goran", "Hahah! Butuh senjata untuk menembus Dungeon Lantai 1? Aku punya pedang tua di sudut bengkel.", "goran", "protagonist", "left", "exclamation");
         _d.add("Protagonist", "Paman Goran, pedang ini berkarat dan tumpul...", "goran", "protagonist", "right", "sweat");
-        _d.add("Goran", "Pedang Karat ini masih cukup tajam untuk menebas slime! Kumpulkan Besi Bekas, Bijih Besi, dan Tulang Monster, lalu bawa kemari agar kutempa menjadi pedang perang sejati!", "goran", "protagonist", "left", "exclamation");
+        _d.add("Goran", "Pedang Karat ini masih cukup tajam untuk menebas monster! Kumpulkan Besi Bekas, Bijih Besi, dan Tulang Monster di Katakombe, lalu bawa kemari agar kutempa menjadi pedang perang sejati!", "goran", "protagonist", "left", "exclamation");
         _d.start(function() {
             global.player_has_sword = true;
             global.weapon_tier = 1;
             global.weapon_name = "Pedang Karat";
             if (global.player_potions >= 2) {
-                scr_set_quest(2, "Kumpulkan Bahan & Tempa Senjata", "Farming di Hutan, tempa senjata di Goran");
+                scr_set_quest(2, "Kumpulkan Bahan & Tempa Senjata", "Farming di Katakombe F1, tempa senjata di Goran");
             } else {
                 scr_set_quest(1, "Persiapan Perjalanan", "Temui Elysia di Apotek Herbal (Timur Kota)");
             }
