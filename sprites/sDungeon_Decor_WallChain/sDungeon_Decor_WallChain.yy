@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sDungeon_Decor_WallChain",
   "bboxMode":0,
-  "bbox_bottom":161,
+  "bbox_bottom":129,
   "bbox_left":0,
-  "bbox_right":56,
+  "bbox_right":33,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"d935747c-7766-4b67-aa3f-508de7881dac","name":"d935747c-7766-4b67-aa3f-508de7881dac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",}
+    {"$GMSpriteFrame":"v1","%Name":"d935747c-7766-4b67-aa3f-508de7881dac","name":"d935747c-7766-4b67-aa3f-508de7881dac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -67,43 +67,11 @@
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
-      {
-        "$GMSpriteFramesTrack":"",
-        "builtinName":0,
-        "events":[],
-        "inheritsTrackColour":true,
-        "interpolation":1,
-        "isCreationTrack":false,
-        "keyframes":{
-          "$KeyframeStore<SpriteFrameKeyframe>":"",
-          "Keyframes":[
-            {
-              "$Keyframe<SpriteFrameKeyframe>":"",
-              "Channels":{
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d935747c-7766-4b67-aa3f-508de7881dac","path":"sprites/sDungeon_Decor_WallChain/sDungeon_Decor_WallChain.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },
-              "Disabled":false,
-              "id":"d35698d0-fcd5-4662-b1d0-65bcd24a461a",
-              "IsCreationKey":false,
-              "Key":0.0,
-              "Length":1.0,
-              "resourceType":"Keyframe<SpriteFrameKeyframe>",
-              "resourceVersion":"2.0",
-              "Stretch":false,
-            }
-          ],
-          "resourceType":"KeyframeStore<SpriteFrameKeyframe>",
-          "resourceVersion":"2.0",
-        },
-        "modifiers":[],
-        "name":"frames",
-        "resourceType":"GMSpriteFramesTrack",
-        "resourceVersion":"2.0",
-        "spriteId":null,
-        "trackColour":0,
-        "tracks":[],
-        "traits":0,
-      },
+              },"Disabled":false,"id":"d35698d0-fcd5-4662-b1d0-65bcd24a461a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,

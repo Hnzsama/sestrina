@@ -6,7 +6,7 @@ prompt_text = "[Z] Tambang Bijih (3x)";
 prompt_y_offset = -32;
 
 ore_type = "iron_ore"; // "iron_ore" atau "magic_crystal"
-if (room == rm_catacombs && x > 600) {
+if ((room == rm_catacombs || room == rm_dungeon_floor2) && x > 600) {
     ore_type = "magic_crystal";
     prompt_text = "[Z] Tambang Kristal (3x)";
 }

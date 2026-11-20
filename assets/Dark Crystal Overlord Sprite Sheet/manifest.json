@@ -1,0 +1,582 @@
+{
+  "sheet_name": "Dark Crystal Overlord Sprite Sheet.png",
+  "total_sprites": 64,
+  "sprites": [
+    {
+      "id": 1,
+      "name": "001_boss_dark_crystal_overlord_portrait.png",
+      "category": "Boss Portrait",
+      "x": 18,
+      "y": 15,
+      "width": 382,
+      "height": 365
+    },
+    {
+      "id": 2,
+      "name": "002_boss_idle_frame_01.png",
+      "category": "Boss Idle",
+      "x": 460,
+      "y": 104,
+      "width": 90,
+      "height": 104
+    },
+    {
+      "id": 3,
+      "name": "003_boss_idle_frame_02.png",
+      "category": "Boss Idle",
+      "x": 563,
+      "y": 104,
+      "width": 87,
+      "height": 105
+    },
+    {
+      "id": 4,
+      "name": "004_boss_idle_frame_03.png",
+      "category": "Boss Idle",
+      "x": 665,
+      "y": 104,
+      "width": 86,
+      "height": 105
+    },
+    {
+      "id": 5,
+      "name": "005_boss_idle_frame_04.png",
+      "category": "Boss Idle",
+      "x": 766,
+      "y": 103,
+      "width": 85,
+      "height": 106
+    },
+    {
+      "id": 6,
+      "name": "006_boss_idle_frame_05.png",
+      "category": "Boss Idle",
+      "x": 863,
+      "y": 104,
+      "width": 79,
+      "height": 105
+    },
+    {
+      "id": 7,
+      "name": "007_boss_walk_frame_01.png",
+      "category": "Boss Walk",
+      "x": 1010,
+      "y": 100,
+      "width": 128,
+      "height": 109
+    },
+    {
+      "id": 8,
+      "name": "008_boss_walk_frame_02.png",
+      "category": "Boss Walk",
+      "x": 1149,
+      "y": 99,
+      "width": 80,
+      "height": 109
+    },
+    {
+      "id": 9,
+      "name": "009_boss_walk_frame_03.png",
+      "category": "Boss Walk",
+      "x": 1243,
+      "y": 108,
+      "width": 80,
+      "height": 101
+    },
+    {
+      "id": 10,
+      "name": "010_boss_walk_frame_04.png",
+      "category": "Boss Walk",
+      "x": 1338,
+      "y": 99,
+      "width": 76,
+      "height": 109
+    },
+    {
+      "id": 11,
+      "name": "011_boss_walk_frame_05.png",
+      "category": "Boss Walk",
+      "x": 1428,
+      "y": 100,
+      "width": 75,
+      "height": 108
+    },
+    {
+      "id": 12,
+      "name": "012_boss_attack_magic_frame_01.png",
+      "category": "Boss Attack Magic",
+      "x": 462,
+      "y": 271,
+      "width": 94,
+      "height": 110
+    },
+    {
+      "id": 13,
+      "name": "013_boss_attack_magic_frame_02.png",
+      "category": "Boss Attack Magic",
+      "x": 567,
+      "y": 268,
+      "width": 89,
+      "height": 112
+    },
+    {
+      "id": 14,
+      "name": "014_boss_attack_magic_frame_03.png",
+      "category": "Boss Attack Magic",
+      "x": 660,
+      "y": 273,
+      "width": 96,
+      "height": 107
+    },
+    {
+      "id": 15,
+      "name": "015_boss_attack_magic_frame_04_summon_circle.png",
+      "category": "Boss Attack Magic",
+      "x": 764,
+      "y": 265,
+      "width": 205,
+      "height": 138
+    },
+    {
+      "id": 16,
+      "name": "016_boss_attack_magic_frame_05_portal_blast.png",
+      "category": "Boss Attack Magic",
+      "x": 993,
+      "y": 265,
+      "width": 209,
+      "height": 118
+    },
+    {
+      "id": 17,
+      "name": "017_boss_attack_melee_frame_01.png",
+      "category": "Boss Attack Melee",
+      "x": 1217,
+      "y": 278,
+      "width": 90,
+      "height": 109
+    },
+    {
+      "id": 18,
+      "name": "018_boss_attack_melee_frame_02.png",
+      "category": "Boss Attack Melee",
+      "x": 1317,
+      "y": 283,
+      "width": 92,
+      "height": 103
+    },
+    {
+      "id": 19,
+      "name": "019_boss_attack_melee_frame_03_scythe_slash.png",
+      "category": "Boss Attack Melee",
+      "x": 1403,
+      "y": 267,
+      "width": 105,
+      "height": 136
+    },
+    {
+      "id": 20,
+      "name": "020_boss_skill_meteor_frame_01_raise_staff.png",
+      "category": "Boss Skill Meteor",
+      "x": 43,
+      "y": 446,
+      "width": 111,
+      "height": 154
+    },
+    {
+      "id": 21,
+      "name": "021_boss_skill_meteor_frame_02_cast_down.png",
+      "category": "Boss Skill Meteor",
+      "x": 161,
+      "y": 490,
+      "width": 94,
+      "height": 103
+    },
+    {
+      "id": 22,
+      "name": "022_boss_skill_meteor_frame_03_impact.png",
+      "category": "Boss Skill Meteor",
+      "x": 262,
+      "y": 490,
+      "width": 87,
+      "height": 103
+    },
+    {
+      "id": 23,
+      "name": "023_boss_skill_meteor_frame_04_eruption.png",
+      "category": "Boss Skill Meteor",
+      "x": 366,
+      "y": 467,
+      "width": 224,
+      "height": 133
+    },
+    {
+      "id": 24,
+      "name": "024_boss_skill_summon_frame_01.png",
+      "category": "Boss Skill Summon",
+      "x": 608,
+      "y": 496,
+      "width": 93,
+      "height": 93
+    },
+    {
+      "id": 25,
+      "name": "025_boss_skill_summon_frame_02.png",
+      "category": "Boss Skill Summon",
+      "x": 707,
+      "y": 497,
+      "width": 82,
+      "height": 92
+    },
+    {
+      "id": 26,
+      "name": "026_boss_skill_summon_frame_03_shadow_legion.png",
+      "category": "Boss Skill Summon",
+      "x": 795,
+      "y": 458,
+      "width": 222,
+      "height": 141
+    },
+    {
+      "id": 27,
+      "name": "027_boss_hurt_frame_01.png",
+      "category": "Boss Hurt",
+      "x": 1046,
+      "y": 491,
+      "width": 65,
+      "height": 86
+    },
+    {
+      "id": 28,
+      "name": "028_boss_hurt_frame_02.png",
+      "category": "Boss Hurt",
+      "x": 1127,
+      "y": 491,
+      "width": 59,
+      "height": 87
+    },
+    {
+      "id": 29,
+      "name": "029_boss_hurt_frame_03.png",
+      "category": "Boss Hurt",
+      "x": 1201,
+      "y": 500,
+      "width": 72,
+      "height": 84
+    },
+    {
+      "id": 30,
+      "name": "030_boss_death_frame_01.png",
+      "category": "Boss Death",
+      "x": 1298,
+      "y": 499,
+      "width": 65,
+      "height": 77
+    },
+    {
+      "id": 31,
+      "name": "031_boss_death_frame_02.png",
+      "category": "Boss Death",
+      "x": 1373,
+      "y": 505,
+      "width": 68,
+      "height": 72
+    },
+    {
+      "id": 32,
+      "name": "032_boss_death_frame_03_dissolve.png",
+      "category": "Boss Death",
+      "x": 1450,
+      "y": 510,
+      "width": 67,
+      "height": 67
+    },
+    {
+      "id": 33,
+      "name": "033_guardian_crystal_knight_portrait.png",
+      "category": "Knight Portrait",
+      "x": 25,
+      "y": 660,
+      "width": 183,
+      "height": 252
+    },
+    {
+      "id": 34,
+      "name": "034_knight_idle_frame_01.png",
+      "category": "Knight Idle",
+      "x": 240,
+      "y": 722,
+      "width": 53,
+      "height": 82
+    },
+    {
+      "id": 35,
+      "name": "035_knight_idle_frame_02.png",
+      "category": "Knight Idle",
+      "x": 301,
+      "y": 722,
+      "width": 52,
+      "height": 82
+    },
+    {
+      "id": 36,
+      "name": "036_knight_idle_frame_03.png",
+      "category": "Knight Idle",
+      "x": 365,
+      "y": 721,
+      "width": 49,
+      "height": 83
+    },
+    {
+      "id": 37,
+      "name": "037_knight_idle_frame_04.png",
+      "category": "Knight Idle",
+      "x": 426,
+      "y": 721,
+      "width": 50,
+      "height": 83
+    },
+    {
+      "id": 38,
+      "name": "038_knight_walk_frame_01.png",
+      "category": "Knight Walk",
+      "x": 509,
+      "y": 721,
+      "width": 50,
+      "height": 83
+    },
+    {
+      "id": 39,
+      "name": "039_knight_walk_frame_02.png",
+      "category": "Knight Walk",
+      "x": 570,
+      "y": 721,
+      "width": 43,
+      "height": 84
+    },
+    {
+      "id": 40,
+      "name": "040_knight_walk_frame_03.png",
+      "category": "Knight Walk",
+      "x": 628,
+      "y": 722,
+      "width": 37,
+      "height": 83
+    },
+    {
+      "id": 41,
+      "name": "041_knight_walk_frame_04.png",
+      "category": "Knight Walk",
+      "x": 676,
+      "y": 723,
+      "width": 45,
+      "height": 82
+    },
+    {
+      "id": 42,
+      "name": "042_knight_attack_frame_01.png",
+      "category": "Knight Attack",
+      "x": 230,
+      "y": 874,
+      "width": 127,
+      "height": 86
+    },
+    {
+      "id": 43,
+      "name": "043_knight_attack_frame_02.png",
+      "category": "Knight Attack",
+      "x": 364,
+      "y": 876,
+      "width": 67,
+      "height": 85
+    },
+    {
+      "id": 44,
+      "name": "044_knight_attack_frame_03.png",
+      "category": "Knight Attack",
+      "x": 433,
+      "y": 873,
+      "width": 88,
+      "height": 85
+    },
+    {
+      "id": 45,
+      "name": "045_knight_hurt_frame_01.png",
+      "category": "Knight Hurt",
+      "x": 540,
+      "y": 874,
+      "width": 59,
+      "height": 88
+    },
+    {
+      "id": 46,
+      "name": "046_knight_hurt_frame_02.png",
+      "category": "Knight Hurt",
+      "x": 615,
+      "y": 875,
+      "width": 53,
+      "height": 87
+    },
+    {
+      "id": 47,
+      "name": "047_knight_die_frame_03_defeated.png",
+      "category": "Knight Die",
+      "x": 679,
+      "y": 907,
+      "width": 74,
+      "height": 46
+    },
+    {
+      "id": 48,
+      "name": "048_guardian_crystal_mage_portrait.png",
+      "category": "Mage Portrait",
+      "x": 766,
+      "y": 681,
+      "width": 214,
+      "height": 234
+    },
+    {
+      "id": 49,
+      "name": "049_mage_idle_frame_01.png",
+      "category": "Mage Idle",
+      "x": 1030,
+      "y": 722,
+      "width": 39,
+      "height": 80
+    },
+    {
+      "id": 50,
+      "name": "050_mage_idle_frame_02.png",
+      "category": "Mage Idle",
+      "x": 1083,
+      "y": 723,
+      "width": 41,
+      "height": 79
+    },
+    {
+      "id": 51,
+      "name": "051_mage_idle_frame_03.png",
+      "category": "Mage Idle",
+      "x": 1137,
+      "y": 723,
+      "width": 40,
+      "height": 79
+    },
+    {
+      "id": 52,
+      "name": "052_mage_idle_frame_04.png",
+      "category": "Mage Idle",
+      "x": 1192,
+      "y": 725,
+      "width": 38,
+      "height": 77
+    },
+    {
+      "id": 53,
+      "name": "053_mage_walk_frame_01.png",
+      "category": "Mage Walk",
+      "x": 1271,
+      "y": 717,
+      "width": 41,
+      "height": 86
+    },
+    {
+      "id": 54,
+      "name": "054_mage_walk_frame_02.png",
+      "category": "Mage Walk",
+      "x": 1323,
+      "y": 719,
+      "width": 48,
+      "height": 84
+    },
+    {
+      "id": 55,
+      "name": "055_mage_walk_frame_03.png",
+      "category": "Mage Walk",
+      "x": 1388,
+      "y": 720,
+      "width": 44,
+      "height": 83
+    },
+    {
+      "id": 56,
+      "name": "056_mage_walk_frame_04.png",
+      "category": "Mage Walk",
+      "x": 1453,
+      "y": 716,
+      "width": 43,
+      "height": 87
+    },
+    {
+      "id": 57,
+      "name": "057_mage_attack_frame_01.png",
+      "category": "Mage Attack",
+      "x": 985,
+      "y": 866,
+      "width": 55,
+      "height": 84
+    },
+    {
+      "id": 58,
+      "name": "058_mage_attack_frame_02.png",
+      "category": "Mage Attack",
+      "x": 1049,
+      "y": 866,
+      "width": 57,
+      "height": 85
+    },
+    {
+      "id": 59,
+      "name": "059_mage_attack_frame_03.png",
+      "category": "Mage Attack",
+      "x": 1121,
+      "y": 871,
+      "width": 51,
+      "height": 80
+    },
+    {
+      "id": 60,
+      "name": "060_mage_attack_frame_04_orb_projectile.png",
+      "category": "Mage Attack",
+      "x": 1183,
+      "y": 883,
+      "width": 68,
+      "height": 65
+    },
+    {
+      "id": 61,
+      "name": "061_mage_hurt_frame_01.png",
+      "category": "Mage Hurt",
+      "x": 1274,
+      "y": 870,
+      "width": 56,
+      "height": 81
+    },
+    {
+      "id": 62,
+      "name": "062_mage_hurt_frame_02.png",
+      "category": "Mage Hurt",
+      "x": 1335,
+      "y": 879,
+      "width": 46,
+      "height": 72
+    },
+    {
+      "id": 63,
+      "name": "063_mage_hurt_frame_03.png",
+      "category": "Mage Hurt",
+      "x": 1390,
+      "y": 888,
+      "width": 49,
+      "height": 59
+    },
+    {
+      "id": 64,
+      "name": "064_mage_die_frame_04_defeated.png",
+      "category": "Mage Die",
+      "x": 1450,
+      "y": 907,
+      "width": 67,
+      "height": 37
+    }
+  ]
+}

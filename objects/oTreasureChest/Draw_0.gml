@@ -1,6 +1,6 @@
 /// @description Draw Event oTreasureChest
 
-if (room != rm_catacombs) {
+if (room != rm_catacombs && room != rm_dungeon_floor2) {
     // Bayangan Peti
     draw_set_alpha(0.35);
     draw_set_color(c_black);

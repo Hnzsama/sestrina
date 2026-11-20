@@ -132,7 +132,7 @@ function scr_check_collision(_x, _y) {
     var _is_door = false;
     if (_rname == "rm_weapon_shop" || _rname == "rm_potion_shop" || _rname == "rm_boss_chamber") {
         if (_x >= 600 && _x <= 680 && _y >= _gy2 - 25) _is_door = true;
-    } else if (_rname == "rm_outskirts" || _rname == "rm_catacombs") {
+    } else if (_rname == "rm_outskirts" || _rname == "rm_catacombs" || _rname == "rm_dungeon_floor2") {
         if (_x >= 570 && _x <= 710 && _y <= _gy1 + 55) _is_door = true;
         if (_x >= 570 && _x <= 710 && _y >= _gy2 - 40) _is_door = true;
     }
@@ -176,6 +176,27 @@ function scr_check_collision(_x, _y) {
         if (_x >= 1030 && _x <= 1135 && _y >= 205 && _y <= 265) return true;
         
         // Patung Penjaga Gerbang Selatan
+        if (point_distance(_x, _y, 500, 630) < 20) return true;
+        if (point_distance(_x, _y, 780, 630) < 20) return true;
+    } else if (_rname == "rm_dungeon_floor2") {
+        // Batas Dinding Samping Masif & Dinding Stalaktit
+        if (_x < 110 || _x > 1170) return true;
+        if (_y < 125 && !(_x >= 580 && _x <= 700)) return true;
+        if (_y > 635 && !(_x >= 580 && _x <= 700)) return true;
+        
+        // 4 Pilar Kayu Tambang & Lentera (Mine Timber Hoists)
+        if (point_distance(_x, _y, 380, 260) < 24) return true;
+        if (point_distance(_x, _y, 900, 260) < 24) return true;
+        if (point_distance(_x, _y, 380, 460) < 24) return true;
+        if (point_distance(_x, _y, 900, 460) < 24) return true;
+        
+        // Sayap Barat: Gerobak Tambang Kristal & Rel
+        if (_x >= 180 && _x <= 320 && _y >= 210 && _y <= 275) return true;
+        
+        // Sayap Timur: Batu Runic Monolit
+        if (_x >= 1030 && _x <= 1135 && _y >= 205 && _y <= 265) return true;
+        
+        // Gargoyle Penjaga Gerbang Bos
         if (point_distance(_x, _y, 500, 630) < 20) return true;
         if (point_distance(_x, _y, 780, 630) < 20) return true;
     } else if (_rname == "rm_boss_chamber") {

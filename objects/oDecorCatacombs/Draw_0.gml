@@ -169,7 +169,7 @@ draw_set_color(make_color_rgb(255, 230, 140));
 draw_text(640, 32, "▲ KOTA ALTDORF");
 
 draw_set_color(make_color_rgb(255, 120, 120));
-draw_text(640, 672, "☠ GERBANG FORGOTTEN SANCTUM");
+draw_text(640, 672, "▼ LANTAI 2: GUA KRISTAL & TAMBANG [PEDANG LV 2]");
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

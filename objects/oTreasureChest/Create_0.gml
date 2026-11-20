@@ -7,7 +7,7 @@ image_index = 0;
 prompt_text = "[Z] Buka Peti";
 interact_range = 36;
 chest_reward = "potion";
-if (room == rm_catacombs) {
+if (room == rm_catacombs || room == rm_dungeon_floor2) {
     prompt_y_offset = -60;
 }
 
