@@ -1,4 +1,4 @@
-/// @description Step Event - Animasi Rune Arcane & Bunga Cahaya Abadi
-
+/// @description Step Event Animasi Boss Chamber
 rune_glow += 0.05;
-flower_anim += 0.08;
+flame_anim += 0.08;
+portal_anim += 0.04;

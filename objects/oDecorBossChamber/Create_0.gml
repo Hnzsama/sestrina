@@ -1,5 +1,6 @@
-/// @description Inisialisasi Boss Sanctum Arena Decor
+/// @description Inisialisasi oDecorBossChamber (The Forgotten Sanctum of Dark Crystal Overlord)
 
 depth = 10;
 rune_glow = 0;
-flower_anim = 0;
+flame_anim = 0;
+portal_anim = 0;

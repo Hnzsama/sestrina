@@ -200,7 +200,24 @@ function scr_check_collision(_x, _y) {
         if (point_distance(_x, _y, 500, 630) < 20) return true;
         if (point_distance(_x, _y, 780, 630) < 20) return true;
     } else if (_rname == "rm_boss_chamber") {
-        if (point_distance(_x, _y, 640, 360) < 36) return true; // Pedestal Altar
+        // Rintangan Padat Singgasana Bos di Paling Atas
+        if (_y < 210) return true;
+        
+        // Obor Api Ungu & Patung Gargoyle Tangga Selatan
+        if (point_distance(_x, _y, 485, 560) < 22) return true;
+        if (point_distance(_x, _y, 795, 560) < 22) return true;
+        if (point_distance(_x, _y, 575, 625) < 20) return true;
+        if (point_distance(_x, _y, 705, 625) < 20) return true;
+        
+        // Batas Platform Melingkar Arena Bos & Jurang Kehampaan (Void Abyss)
+        var _norm_arena = sqr((_x - 640) / 270) + sqr((_y - 448) / 165);
+        var _is_throne_steps = (_x >= 540 && _x <= 740 && _y >= 210 && _y <= 310);
+        var _is_south_steps = (_x >= 580 && _x <= 700 && _y >= 610 && _y <= 680);
+        
+        // Pemain hanya bisa bergerak di atas platform arena, tangga singgasana, atau tangga masuk
+        if (_norm_arena > 1.0 && !_is_throne_steps && !_is_south_steps) {
+            return true; // Dinding Jurang Kehampaan
+        }
     }
 
     if (instance_exists(oSolidParent) && place_meeting(_x, _y, oSolidParent)) return true;
