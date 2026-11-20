@@ -45,9 +45,9 @@ var _draw_full_standing_anime_character = function(_type, _cx, _is_active, _alph
     }
     if (_spr == noone || !sprite_exists(_spr)) return;
 
-    var _sc = _is_active ? 1.02 : 0.94;
-    var _blend = _is_active ? c_white : make_color_rgb(135, 140, 160);
-    var _final_alpha = _is_active ? min(1.0, _alpha * 1.05) : (_alpha * 0.65);
+    var _sc = _is_active ? 1.02 : 0.95;
+    var _blend = _is_active ? c_white : make_color_rgb(160, 165, 185);
+    var _final_alpha = _is_active ? min(1.0, _alpha * 1.05) : (_alpha * 0.85);
 
     // Glow Aura di belakang karakter aktif
     if (_is_active) {

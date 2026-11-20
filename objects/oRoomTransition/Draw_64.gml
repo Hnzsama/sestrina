@@ -4,6 +4,10 @@ var _gw = display_get_gui_width();
 var _gh = display_get_gui_height();
 
 // =========================================================================
+// Cek apakah dialog sedang berlangsung: jika ya, turunkan opacity seluruh HUD status utama agar karakter 2D tidak terhalang
+var _is_dialogue = (variable_global_exists("dialogue_active") && global.dialogue_active);
+var _hud_alpha = _is_dialogue ? 0.20 : 1.0;
+
 // 0. DAY / NIGHT HUD BADGE (Pojok Kiri Atas - Reference: importantNPCdialog.png & night outdoor bar.png)
 // =========================================================================
 var _dn_x = 24;
@@ -16,19 +20,19 @@ var _time_str = variable_global_exists("time_of_day") ? global.time_of_day : "Da
 var _is_day = (_time_str == "Daytime");
 
 // Background Hexagonal/Pill Badge Translucent Indigo
-draw_set_alpha(0.92);
+draw_set_alpha((0.92) * _hud_alpha);
 draw_set_color(make_color_rgb(22, 34, 65));
 draw_roundrect_ext(_dn_x, _dn_y, _dn_x + _dn_w, _dn_y + _dn_h, 16, 16, false);
 
 // Double Glowing Lavender / Cyan Border
-draw_set_alpha(0.95);
+draw_set_alpha((0.95) * _hud_alpha);
 draw_set_color(_is_day ? make_color_rgb(90, 170, 255) : make_color_rgb(150, 130, 240));
 draw_roundrect_ext(_dn_x, _dn_y, _dn_x + _dn_w, _dn_y + _dn_h, 16, 16, true);
 draw_set_color(make_color_rgb(45, 65, 120));
 draw_roundrect_ext(_dn_x + 2, _dn_y + 2, _dn_x + _dn_w - 2, _dn_y + _dn_h - 2, 14, 14, true);
 
 // Teks Waktu (Day X - Daytime / Nighttime)
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -72,38 +76,38 @@ var _hov_load  = (_gmx >= _sv_x + 96 && _gmx < _sv_x + 192 && _gmy >= _sv_y && _
 var _hov_slots = (_gmx >= _sv_x + 196 && _gmx <= _sv_x + 300 && _gmy >= _sv_y && _gmy <= _sv_y + _sv_h);
 
 // 1. Tombol: [F5] Save
-draw_set_alpha(0.92);
+draw_set_alpha((0.92) * _hud_alpha);
 draw_set_color(_hov_save ? make_color_rgb(38, 55, 95) : make_color_rgb(22, 34, 65));
 draw_roundrect_ext(_sv_x, _sv_y, _sv_x + 92, _sv_y + _sv_h, 12, 12, false);
 draw_set_color(_hov_save ? make_color_rgb(120, 220, 160) : make_color_rgb(75, 120, 195));
 draw_roundrect_ext(_sv_x, _sv_y, _sv_x + 92, _sv_y + _sv_h, 12, 12, true);
 
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(_sv_x + 46, _sv_y + _sv_h / 2, "💾 [F5]");
 
 // 2. Tombol: [F6] Load
-draw_set_alpha(0.92);
+draw_set_alpha((0.92) * _hud_alpha);
 draw_set_color(_hov_load ? make_color_rgb(38, 55, 95) : make_color_rgb(22, 34, 65));
 draw_roundrect_ext(_sv_x + 96, _sv_y, _sv_x + 192, _sv_y + _sv_h, 12, 12, false);
 draw_set_color(_hov_load ? make_color_rgb(255, 210, 100) : make_color_rgb(75, 120, 195));
 draw_roundrect_ext(_sv_x + 96, _sv_y, _sv_x + 192, _sv_y + _sv_h, 12, 12, true);
 
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 draw_set_color(c_white);
 draw_text(_sv_x + 96 + 48, _sv_y + _sv_h / 2, "📂 [F6]");
 
 // 3. Tombol: [F7] Slots
 var _is_slots_open = (variable_global_exists("save_menu_open") && global.save_menu_open);
-draw_set_alpha(0.92);
+draw_set_alpha((0.92) * _hud_alpha);
 draw_set_color(_is_slots_open ? make_color_rgb(50, 80, 145) : (_hov_slots ? make_color_rgb(38, 55, 95) : make_color_rgb(22, 34, 65)));
 draw_roundrect_ext(_sv_x + 196, _sv_y, _sv_x + 300, _sv_y + _sv_h, 12, 12, false);
 draw_set_color(_is_slots_open ? make_color_rgb(255, 220, 120) : (_hov_slots ? make_color_rgb(170, 200, 255) : make_color_rgb(75, 120, 195)));
 draw_roundrect_ext(_sv_x + 196, _sv_y, _sv_x + 300, _sv_y + _sv_h, 12, 12, true);
 
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 draw_set_color(c_white);
 draw_text(_sv_x + 196 + 52, _sv_y + _sv_h / 2, "🗂️ [F7] Slots");
 
@@ -119,12 +123,12 @@ var _hud_w = 448;
 var _hud_h = 120;
 
 // Background Plate Deep Translucent Indigo
-draw_set_alpha(0.92);
+draw_set_alpha((0.92) * _hud_alpha);
 draw_set_color(make_color_rgb(20, 26, 46));
 draw_roundrect_ext(_hud_x, _hud_y, _hud_x + _hud_w, _hud_y + _hud_h, 14, 14, false);
 
 // Double Neon Lavender Glow Border & Diamond Corners
-draw_set_alpha(0.95);
+draw_set_alpha((0.95) * _hud_alpha);
 draw_set_color(make_color_rgb(135, 160, 245));
 draw_roundrect_ext(_hud_x, _hud_y, _hud_x + _hud_w, _hud_y + _hud_h, 14, 14, true);
 draw_set_color(make_color_rgb(55, 75, 135));
@@ -145,34 +149,34 @@ _draw_corner_diamond(_hud_x + _hud_w - 6, _hud_y + _hud_h - 6);
 var _r1_y = _hud_y + 14;
 
 // Level Badge Pill
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 draw_set_color(make_color_rgb(34, 44, 78));
 draw_roundrect_ext(_hud_x + 10, _r1_y - 6, _hud_x + 102, _r1_y + 11, 6, 6, false);
 draw_set_color(make_color_rgb(140, 175, 255));
 draw_roundrect_ext(_hud_x + 10, _r1_y - 6, _hud_x + 102, _r1_y + 11, 6, 6, true);
 
-draw_set_alpha(1.0);
-draw_sprite_ext(sUiIcons, 8, _hud_x + 14, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0);
+draw_set_alpha((1.0) * _hud_alpha);
+draw_sprite_ext(sUiIcons, 8, _hud_x + 14, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 draw_set_color(make_color_rgb(220, 235, 255));
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(_hud_x + 62, _r1_y + 2, "Lv " + string(global.player_level));
 
 // Gold Badge Pill
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 draw_set_color(make_color_rgb(48, 40, 22));
 draw_roundrect_ext(_hud_x + 110, _r1_y - 6, _hud_x + 225, _r1_y + 11, 6, 6, false);
 draw_set_color(make_color_rgb(240, 190, 65));
 draw_roundrect_ext(_hud_x + 110, _r1_y - 6, _hud_x + 225, _r1_y + 11, 6, 6, true);
 
-draw_set_alpha(1.0);
-draw_sprite_ext(sUiIcons, 6, _hud_x + 116, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0);
+draw_set_alpha((1.0) * _hud_alpha);
+draw_sprite_ext(sUiIcons, 6, _hud_x + 116, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 draw_set_color(make_color_rgb(255, 220, 85));
 draw_set_halign(fa_center);
 draw_text(_hud_x + 172, _r1_y + 2, string(global.gold) + " G");
 
 // Status Menu [P] Badge Button (Interactive Shield Icon & Points Alert)
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 var _pts = variable_global_exists("stat_points") ? global.stat_points : 0;
 var _gui_mx = device_mouse_x_to_gui(0);
 var _gui_my = device_mouse_y_to_gui(0);
@@ -186,9 +190,9 @@ draw_roundrect_ext(_p_btn_x1, _r1_y - 6, _p_btn_x2, _r1_y + 11, 6, 6, false);
 draw_set_color((_pts > 0) ? make_color_rgb(255, 160, 100) : (_p_hover ? make_color_rgb(180, 215, 255) : make_color_rgb(110, 160, 255)));
 draw_roundrect_ext(_p_btn_x1, _r1_y - 6, _p_btn_x2, _r1_y + 11, 6, 6, true);
 
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 // Gunakan ikon Crest/Shield (index 5) jika tidak ada poin, atau sparkle (index 9) jika ada poin
-draw_sprite_ext(sUiIcons, (_pts > 0 ? 9 : 5), _p_btn_x1 + 8, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, (_pts > 0 ? 9 : 5), _p_btn_x1 + 8, _r1_y - 8, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 draw_set_color((_pts > 0) ? make_color_rgb(255, 240, 180) : make_color_rgb(205, 230, 255));
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -202,7 +206,7 @@ var _text_x = _hud_x + _hud_w - 12;
 
 // --- Row 2: Health Bar (HP) dengan Icon Hati Pixel Asli ---
 var _r2_y = _hud_y + 32;
-draw_sprite_ext(sUiIcons, 0, _hud_x + 10, _r2_y - 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 0, _hud_x + 10, _r2_y - 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 
 draw_set_color(make_color_rgb(42, 18, 22));
 draw_rectangle(_bar_x, _r2_y, _bar_x + _bar_w, _r2_y + _bar_h, false);
@@ -223,7 +227,7 @@ draw_text(_text_x, _r2_y + _bar_h / 2, string(round(global.player_hp)) + "/" + s
 
 // --- Row 3: Mana Bar (MP) dengan Icon Kristal Mana Asli ---
 var _r3_y = _hud_y + 46;
-draw_sprite_ext(sUiIcons, 1, _hud_x + 10, _r3_y - 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 1, _hud_x + 10, _r3_y - 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 
 draw_set_color(make_color_rgb(15, 30, 55));
 draw_rectangle(_bar_x, _r3_y, _bar_x + _bar_w, _r3_y + _bar_h, false);
@@ -244,7 +248,7 @@ draw_text(_text_x, _r3_y + _bar_h / 2, string(round(global.player_mp)) + "/" + s
 
 // --- Row 4: Stamina / TP Bar (SP) dengan Icon Sepatu Sayap Asli ---
 var _r4_y = _hud_y + 60;
-draw_sprite_ext(sUiIcons, 4, _hud_x + 10, _r4_y - 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 4, _hud_x + 10, _r4_y - 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 
 draw_set_color(make_color_rgb(15, 40, 28));
 draw_rectangle(_bar_x, _r4_y, _bar_x + _bar_w, _r4_y + _bar_h, false);
@@ -267,7 +271,7 @@ draw_text(_text_x, _r4_y + _bar_h / 2, string(round(_cur_sp)) + "/" + string(rou
 
 // --- Row 5: Experience Bar (XP) dengan Icon Bintang Asli ---
 var _r5_y = _hud_y + 74;
-draw_sprite_ext(sUiIcons, 8, _hud_x + 10, _r5_y - 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 8, _hud_x + 10, _r5_y - 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 
 draw_set_color(make_color_rgb(32, 22, 50));
 draw_rectangle(_bar_x, _r5_y, _bar_x + _bar_w, _r5_y + 6, false);
@@ -291,24 +295,24 @@ var _chip_gap = 8;
 
 // Chip 1: Ramuan [C]
 var _c1_x = _hud_x + 10;
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 draw_set_color(make_color_rgb(20, 42, 35));
 draw_roundrect_ext(_c1_x, _r6_y, _c1_x + _chip_w, _r6_y + _chip_h, 6, 6, false);
 draw_set_color(make_color_rgb(70, 190, 130));
 draw_roundrect_ext(_c1_x, _r6_y, _c1_x + _chip_w, _r6_y + _chip_h, 6, 6, true);
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 
 draw_set_color(make_color_rgb(110, 240, 170));
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(_c1_x + 8, _r6_y + _chip_h / 2, "[C]");
-draw_sprite_ext(sUiIcons, 7, _c1_x + 38, _r6_y + 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 7, _c1_x + 38, _r6_y + 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 draw_set_color(make_color_rgb(220, 255, 230));
 draw_text(_c1_x + 60, _r6_y + _chip_h / 2, "x" + string(global.player_potions));
 
 // Chip 2: Serangan [Z]
 var _c2_x = _c1_x + _chip_w + _chip_gap;
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 
 var _cstep = (instance_exists(oPlayer)) ? oPlayer.combo_step : 0;
 var _atk_tag = "ATK";
@@ -330,27 +334,27 @@ draw_set_color(_atk_bg);
 draw_roundrect_ext(_c2_x, _r6_y, _c2_x + _chip_w, _r6_y + _chip_h, 6, 6, false);
 draw_set_color(_atk_bd);
 draw_roundrect_ext(_c2_x, _r6_y, _c2_x + _chip_w, _r6_y + _chip_h, 6, 6, true);
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 
 draw_set_color(_atk_fg);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(_c2_x + 8, _r6_y + _chip_h / 2, "[Z]");
-draw_sprite_ext(sUiIcons, 3, _c2_x + 38, _r6_y + 4, 0.5, 0.5, 0, c_white, 1.0);
+draw_sprite_ext(sUiIcons, 3, _c2_x + 38, _r6_y + 4, 0.5, 0.5, 0, c_white, 1.0 * _hud_alpha);
 draw_set_color(_atk_fg);
 draw_text(_c2_x + 60, _r6_y + _chip_h / 2, _atk_tag);
 
 // Chip 3: Roll [Shift]
 var _c3_x = _c2_x + _chip_w + _chip_gap;
 var _can_roll = (_cur_sp >= 25);
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 draw_set_color(_can_roll ? make_color_rgb(20, 40, 68) : make_color_rgb(28, 32, 42));
 draw_roundrect_ext(_c3_x, _r6_y, _c3_x + _chip_w, _r6_y + _chip_h, 6, 6, false);
 draw_set_color(_can_roll ? make_color_rgb(85, 170, 245) : make_color_rgb(70, 80, 100));
 draw_roundrect_ext(_c3_x, _r6_y, _c3_x + _chip_w, _r6_y + _chip_h, 6, 6, true);
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 
-draw_sprite_ext(sUiIcons, 4, _c3_x + 8, _r6_y + 4, 0.5, 0.5, 0, _can_roll ? c_white : c_dkgray, 1.0);
+draw_sprite_ext(sUiIcons, 4, _c3_x + 8, _r6_y + 4, 0.5, 0.5, 0, _can_roll ? c_white : c_dkgray, 1.0 * _hud_alpha);
 draw_set_color(_can_roll ? make_color_rgb(180, 230, 255) : make_color_rgb(110, 120, 135));
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -358,7 +362,7 @@ draw_text(_c3_x + 30, _r6_y + _chip_h / 2, "[Shift]");
 
 // Chip 4: Sihir [X]
 var _c4_x = _c3_x + _chip_w + _chip_gap;
-draw_set_alpha(0.9);
+draw_set_alpha((0.9) * _hud_alpha);
 
 var _sp_tag = "--";
 var _sp_icon = 10;
@@ -384,13 +388,13 @@ draw_set_color(_sp_bg);
 draw_roundrect_ext(_c4_x, _r6_y, _c4_x + _chip_w, _r6_y + _chip_h, 6, 6, false);
 draw_set_color(_sp_bd);
 draw_roundrect_ext(_c4_x, _r6_y, _c4_x + _chip_w, _r6_y + _chip_h, 6, 6, true);
-draw_set_alpha(1.0);
+draw_set_alpha((1.0) * _hud_alpha);
 
 draw_set_color(_sp_fg);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(_c4_x + 8, _r6_y + _chip_h / 2, "[X]");
-draw_sprite_ext(sUiIcons, _sp_icon, _c4_x + 36, _r6_y + 4, 0.5, 0.5, 0, (global.spell_selected > 0) ? c_white : c_dkgray, 1.0);
+draw_sprite_ext(sUiIcons, _sp_icon, _c4_x + 36, _r6_y + 4, 0.5, 0.5, 0, (global.spell_selected > 0) ? c_white : c_dkgray, 1.0 * _hud_alpha);
 draw_set_color(_sp_fg);
 draw_text(_c4_x + 58, _r6_y + _chip_h / 2, _sp_tag);
 
@@ -406,12 +410,12 @@ if (variable_global_exists("quest_title")) {
     var _qy = 16;
 
     // Background Scroll Deep Indigo Glass
-    draw_set_alpha(0.92);
+    draw_set_alpha((0.92) * _hud_alpha);
     draw_set_color(make_color_rgb(20, 26, 46));
     draw_roundrect_ext(_qx, _qy, _qx + _qw, _qy + _qh, 14, 14, false);
 
     // Glowing Lavender Border
-    draw_set_alpha(0.95);
+    draw_set_alpha((0.95) * _hud_alpha);
     draw_set_color(make_color_rgb(135, 160, 245));
     draw_roundrect_ext(_qx, _qy, _qx + _qw, _qy + _qh, 14, 14, true);
     draw_set_color(make_color_rgb(55, 75, 135));
@@ -424,26 +428,26 @@ if (variable_global_exists("quest_title")) {
 
     // Header Pill: Quest Utama
     var _qr1_y = _qy + 14;
-    draw_set_alpha(0.9);
+    draw_set_alpha((0.9) * _hud_alpha);
     draw_set_color(make_color_rgb(45, 38, 22));
     draw_roundrect_ext(_qx + 10, _qr1_y - 6, _qx + 140, _qr1_y + 11, 6, 6, false);
     draw_set_color(make_color_rgb(240, 195, 70));
     draw_roundrect_ext(_qx + 10, _qr1_y - 6, _qx + 140, _qr1_y + 11, 6, 6, true);
 
-    draw_set_alpha(1.0);
+    draw_set_alpha((1.0) * _hud_alpha);
     draw_set_color(make_color_rgb(255, 225, 100));
     draw_set_halign(fa_left);
     draw_set_valign(fa_middle);
     draw_text(_qx + 16, _qr1_y + 2, "★ QUEST UTAMA");
 
     // Stage Pill Indicator (Kanan Atas)
-    draw_set_alpha(0.9);
+    draw_set_alpha((0.9) * _hud_alpha);
     draw_set_color(make_color_rgb(28, 44, 75));
     draw_roundrect_ext(_qx + _qw - 95, _qr1_y - 6, _qx + _qw - 10, _qr1_y + 11, 6, 6, false);
     draw_set_color(make_color_rgb(110, 180, 255));
     draw_roundrect_ext(_qx + _qw - 95, _qr1_y - 6, _qx + _qw - 10, _qr1_y + 11, 6, 6, true);
 
-    draw_set_alpha(1.0);
+    draw_set_alpha((1.0) * _hud_alpha);
     draw_set_color(make_color_rgb(180, 230, 255));
     draw_set_halign(fa_center);
     draw_text(_qx + _qw - 52, _qr1_y + 2, "✦ Aktif");
@@ -460,6 +464,8 @@ if (variable_global_exists("quest_title")) {
 }
 
 // =========================================================================
+draw_set_alpha(1.0);
+
 // 3. ROOM LOCATION BANNER (Saat Masuk Ruangan Baru)
 // =========================================================================
 if (banner_timer > 0) {
@@ -1922,14 +1928,13 @@ if (variable_instance_exists(id, "showing_credits") && showing_credits) {
         "KREDIT PENGEMBANGAN",
         "========================================",
         "",
-        "SUTRADARA & PRODUSER PROYEK",
-        "Luqman / Hnzsama",
+        "SUTRADARA & TIM PENGEMBANG",
+        "Luqman • Pileyo • Elvira",
         "",
         "DESAIN CERITA & SKENARIO",
         "The Sestrina Chronicles",
         "",
         "SISTEM ARPG & GAMEPLAY",
-        "Antigravity GameMaker Engine",
         "Kombo Pedang 3-Hit, Parry & Dodge Roll",
         "Sistem Sihir Elemen Api & Es",
         "Sistem Waktu Day/Night & Kondisi Adik",

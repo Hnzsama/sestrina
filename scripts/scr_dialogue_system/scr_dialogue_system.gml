@@ -34,8 +34,9 @@ function dialogue_create() {
             if (instance_exists(oDialogueManager)) {
                 _mgr = instance_find(oDialogueManager, 0);
             } else {
-                _mgr = instance_create_depth(0, 0, -9999, oDialogueManager);
+                _mgr = instance_create_depth(0, 0, -15000, oDialogueManager);
             }
+            _mgr.depth = -15000;
             _mgr.start_dialogue(self);
         }
     };

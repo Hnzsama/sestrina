@@ -18,11 +18,13 @@ global.dialogue_cooldown = 0;
 // Set Resolusi GUI ke HD 1280x720 agar luas dan proporsional
 display_set_gui_size(1280, 720);
 
+depth = -15000; // Prioritas tertinggi di atas seluruh HUD
+
 // Animasi & Visual VN
 portrait_left_scale = 1.0;
 portrait_right_scale = 1.0;
-portrait_left_alpha = 0.5;
-portrait_right_alpha = 0.5;
+portrait_left_alpha = 1.0;
+portrait_right_alpha = 0.85;
 
 // Emotion Bubble Animasi (Reference: reactionbubble.png)
 emote_scale = 0.0;

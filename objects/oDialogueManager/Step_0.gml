@@ -1,5 +1,7 @@
 /// @description Step Event Dialogue Manager (VN Controls & Text Engine)
 
+depth = -15000;
+
 // Hitung mundur cooldown
 if (variable_global_exists("dialogue_cooldown") && global.dialogue_cooldown > 0) {
     global.dialogue_cooldown--;
@@ -61,11 +63,11 @@ if (auto_mode && is_finished_typing) {
     }
 }
 
-// Visual portrait transition smoothly
-var _target_left_alpha = (_line.side_active == "left") ? 1.0 : 0.45;
-var _target_right_alpha = (_line.side_active == "right") ? 1.0 : 0.45;
-var _target_left_scale = (_line.side_active == "left") ? 1.05 : 0.95;
-var _target_right_scale = (_line.side_active == "right") ? 1.05 : 0.95;
+// Visual portrait transition smoothly (Karakter tidak aktif tetap jelas terlihat dengan alpha 0.85)
+var _target_left_alpha = (_line.side_active == "left") ? 1.0 : 0.85;
+var _target_right_alpha = (_line.side_active == "right") ? 1.0 : 0.85;
+var _target_left_scale = (_line.side_active == "left") ? 1.05 : 0.96;
+var _target_right_scale = (_line.side_active == "right") ? 1.05 : 0.96;
 
 portrait_left_alpha = lerp(portrait_left_alpha, _target_left_alpha, 0.15);
 portrait_right_alpha = lerp(portrait_right_alpha, _target_right_alpha, 0.15);
