@@ -118,7 +118,7 @@ if (boss_stage == 1) {
         draw_set_valign(fa_bottom);
         draw_text(x, y - 110, "🛡️ RUNIC BARRIER (Kebal Sihir - Tebas Melee: " + string(barrier_hp) + "/3)");
         draw_set_alpha(1.0);
-    } else if (is_staggered) {
+    } else if (is_staggered && boss_stage == 1 && !is_plot_twisting) {
         // Indikator Terhuyung saat Barrier Pecah
         draw_set_alpha(0.85 + sin(anim_timer * 8) * 0.15);
         draw_set_color(make_color_rgb(255, 235, 100));

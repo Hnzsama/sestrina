@@ -60,6 +60,7 @@ scythe_active = false;
 // =========================================================================
 is_plot_twisting = false;
 twist_dialogue_done = false;
+twist_timer = 0;
 
 phantom_swords = [];          // Pedang roh meluncur { xx, yy, vx, vy, ang, life }
 sword_barrage_timer = 80;
@@ -155,13 +156,46 @@ take_damage = function(_dmg, _dir, _is_melee = false) {
     }
 };
 
+/// @function start_phase_2()
+/// @description Memulai Fase 2: Wujud Sejati True Corrupted Overlord
+start_phase_2 = function() {
+    if (boss_stage == 2) exit;
+    boss_stage = 2;
+    max_hp = 350;
+    hp = 350;
+    enemy_name = "True Corrupted Overlord";
+    move_speed = 1.6;
+    is_plot_twisting = false;
+    runic_barrier = false;
+    is_staggered = false;
+    stagger_timer = 0;
+    flash_timer = 0;
+    image_blend = c_white;
+    sprite_index = sBoss_Overlord_Walk;
+    image_speed = 0.15;
+    
+    if (instance_exists(oRoomTransition)) {
+        oRoomTransition.banner_title = "PLOT TWIST: ROH TERKUTUK BANGKIT!";
+        oRoomTransition.banner_subtitle = "Kalahkan wujud sejati Overlord untuk memurnikan The Lost Remedy!";
+        oRoomTransition.banner_timer = 240;
+        oRoomTransition.screen_shake = 20;
+    }
+};
+
 /// @function trigger_plot_twist()
 /// @description Memicu cutscene plot twist saat Dark Crystal Overlord hancur
 trigger_plot_twist = function() {
+    if (is_plot_twisting || boss_stage == 2) exit;
     is_plot_twisting = true;
     hp = 0;
+    flash_timer = 0;
+    is_staggered = false;
+    stagger_timer = 0;
+    twist_timer = 0;
     state = STATE_IDLE;
     sprite_index = sBoss_Overlord_Skill_Summon;
+    image_speed = 0.12;
+    image_blend = c_white;
     
     if (instance_exists(oRoomTransition)) {
         oRoomTransition.screen_shake = 22;
@@ -179,21 +213,7 @@ trigger_plot_twist = function() {
       
     _d.start(function() {
         with (oBossGolem) {
-            boss_stage = 2;
-            max_hp = 350;
-            hp = 350;
-            enemy_name = "True Corrupted Overlord";
-            move_speed = 1.6;
-            is_plot_twisting = false;
-            runic_barrier = false;
-            sprite_index = sBoss_Overlord_Walk;
-            
-            if (instance_exists(oRoomTransition)) {
-                oRoomTransition.banner_title = "PLOT TWIST: ROH TERKUTUK BANGKIT!";
-                oRoomTransition.banner_subtitle = "Kalahkan wujud sejati Overlord untuk memurnikan The Lost Remedy!";
-                oRoomTransition.banner_timer = 240;
-                oRoomTransition.screen_shake = 20;
-            }
+            start_phase_2();
         }
     });
 };

@@ -63,9 +63,7 @@ next_line = function() {
         global.dialogue_active = false;
         global.dialogue_cooldown = 20; // Cooldown 20 frame
         
-        if (is_callable(_callback)) {
-            _callback();
-        } else if (is_method(_callback)) {
+        if (_callback != noone) {
             _callback();
         }
     } else {

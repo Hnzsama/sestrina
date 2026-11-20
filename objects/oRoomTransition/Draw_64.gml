@@ -1876,16 +1876,22 @@ if (variable_global_exists("game_ending") && global.game_ending != "") {
     draw_text_ext(_gw / 2, _ey + 108, _story_txt, 26, _ew - 80);
     
     // Dismiss button
+    if (variable_instance_exists(id, "ending_card_cooldown") && ending_card_cooldown > 0) {
+        ending_card_cooldown--;
+    }
     var _btn_y = _ey + _eh - 44;
     draw_set_color(make_color_rgb(255, 230, 130));
-    draw_text(_gw / 2, _btn_y, "▶ [Tekan SPACE / ENTER untuk Melihat Ending & Kredit Pengembang] ◀");
+    draw_text(_gw / 2, _btn_y, "▶ [Tekan SPACE / ENTER / Z untuk Melihat Ending & Kredit Pengembang] ◀");
     
-    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
-        credits_cached_ending = global.game_ending;
-        global.game_ending = "";
-        showing_credits = true;
-        ending_credits_y = _gh;
-        scr_audio_play("ui", "confirm");
+    if (ending_card_cooldown <= 0) {
+        if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_escape) || mouse_check_button_pressed(mb_left)) {
+            credits_cached_ending = global.game_ending;
+            global.game_ending = "";
+            showing_credits = true;
+            credits_cooldown = 45;
+            ending_credits_y = _gh;
+            scr_audio_play("ui", "confirm");
+        }
     }
 }
 
@@ -1893,6 +1899,9 @@ if (variable_global_exists("game_ending") && global.game_ending != "") {
 // 11B. GRAND CINEMATIC ENDING & STAFF CREDITS ROLL
 // =========================================================================
 if (variable_instance_exists(id, "showing_credits") && showing_credits) {
+    if (variable_instance_exists(id, "credits_cooldown") && credits_cooldown > 0) {
+        credits_cooldown--;
+    }
     draw_set_alpha(0.96);
     draw_set_color(make_color_rgb(8, 12, 24));
     draw_rectangle(0, 0, _gw, _gh, false);
@@ -1975,7 +1984,7 @@ if (variable_instance_exists(id, "showing_credits") && showing_credits) {
     draw_set_color(make_color_rgb(255, 235, 140));
     draw_text(_gw / 2, _gh - 28, "▶ [Tekan SPACE / ENTER / ESC untuk Kembali ke Menu Utama] ◀");
 
-    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("Z"))) {
+    if (credits_cooldown <= 0 && (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("Z")))) {
         showing_credits = false;
         room_goto(rm_main_menu);
     }

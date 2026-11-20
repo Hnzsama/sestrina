@@ -1,9 +1,16 @@
 /// @description Step Event - State Machine Dark Crystal Overlord & Phase 2 Guardian
 
-if (is_plot_twisting) exit;
-
 if (flash_timer > 0) flash_timer--;
 if (barrier_reflect_flash > 0) barrier_reflect_flash--;
+
+if (is_plot_twisting) {
+    twist_timer++;
+    // Fallback otomatis jika dialog telah selesai atau dilewati pemain
+    if (!global.dialogue_active && twist_timer > 30) {
+        start_phase_2();
+    }
+    exit;
+}
 
 // =========================================================================
 // ADEGAN KEMATIAN BOS (DISSOLVE SEQUENCE)

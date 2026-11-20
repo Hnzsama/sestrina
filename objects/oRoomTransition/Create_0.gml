@@ -16,6 +16,8 @@ screen_shake = 0;
 showing_credits = false;
 ending_credits_y = 720;
 credits_cached_ending = "";
+ending_card_cooldown = 0;
+credits_cooldown = 0;
 
 // Data Peta Distrik Kota & Wilayah Kerajaan (Reference: map.png & choosing are.png)
 map_selected_node = 0;

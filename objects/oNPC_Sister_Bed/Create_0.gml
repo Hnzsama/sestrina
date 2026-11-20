@@ -60,6 +60,13 @@ interact_action = function() {
             _d.start(function() {
                 global.game_ending = "half_demon";
                 scr_set_quest(5, "ENDING 2 - Meninggalkan Kemanusiaan", "Sestrina sembuh, namun kutukan darah iblis kini mengikat jiwa sang kakak.");
+                if (instance_exists(oRoomTransition)) {
+                    with (oRoomTransition) {
+                        credits_cached_ending = "half_demon";
+                        ending_card_cooldown = 45;
+                        credits_cooldown = 60;
+                    }
+                }
             });
             exit;
         } else {
@@ -72,6 +79,13 @@ interact_action = function() {
             _d.start(function() {
                 global.game_ending = "human";
                 scr_set_quest(5, "ENDING 1 - Tetap Manusia!", "Selamat! Sestrina pulih total dan kemanusiaanmu tetap terjaga!");
+                if (instance_exists(oRoomTransition)) {
+                    with (oRoomTransition) {
+                        credits_cached_ending = "human";
+                        ending_card_cooldown = 45;
+                        credits_cooldown = 60;
+                    }
+                }
             });
             exit;
         }
