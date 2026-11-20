@@ -10,6 +10,7 @@ banner_subtitle = "Tempat peristirahatan Sestrina";
 banner_timer = 140;
 
 depth = -10000;
+screen_shake = 0;
 
 // Ending & Staff Credits State
 showing_credits = false;

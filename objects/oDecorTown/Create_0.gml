@@ -16,3 +16,5 @@ draw_park_pond = scr_draw_park_pond;
 draw_wooden_bridge = scr_draw_wooden_bridge;
 draw_tree_with_shadow = scr_draw_tree_with_shadow;
 draw_cafe_table = scr_draw_cafe_table;
+draw_circular_plaza = scr_draw_circular_plaza;
+draw_tiled_terrain = scr_draw_tiled_terrain;

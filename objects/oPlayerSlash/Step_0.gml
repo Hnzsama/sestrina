@@ -59,7 +59,8 @@ if (instance_exists(oEnemyParent)) {
             // Screen shake & hit sparks
             if (instance_exists(oRoomTransition)) {
                 var _shake = (other.combo_index == 3) ? 5 : ((other.combo_index == 2) ? 3 : 2);
-                oRoomTransition.screen_shake = max(oRoomTransition.screen_shake, _shake);
+                var _current_shake = variable_instance_exists(oRoomTransition, "screen_shake") ? oRoomTransition.screen_shake : 0;
+                oRoomTransition.screen_shake = max(_current_shake, _shake);
             }
             
             // Tambah percikan ledakan saat pedang mengenai tubuh musuh

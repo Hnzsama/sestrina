@@ -384,3 +384,103 @@ function scr_draw_cafe_table(_tx, _ty) {
     draw_circle(_tx + 3, _ty - 2, 1.2, false); // Teh/Kopi
 }
 
+
+// =========================================================================
+// 10. ALUN-ALUN PUSAT LINGKARAN & BUSUR CURB HALUS (Smooth Circular Plaza & Arcs)
+// =========================================================================
+
+function scr_draw_circular_plaza(_cx, _cy, _radius = 155, _half_w = 55, _half_h = 45) {
+    // 1. Dasar hangat tanah batu pasir Altdorf berbentuk lingkaran
+    draw_set_color(make_color_rgb(155, 146, 132));
+    draw_circle(_cx, _cy, _radius, false);
+    
+    // 2. Pola balok paving batu alami berulang di dalam lingkaran
+    var _step = 16;
+    for (var _py = _cy - _radius; _py < _cy + _radius; _py += _step) {
+        var _row = (_py - (_cy - _radius)) div _step;
+        var _xoff = (_row mod 2 == 1) ? 8 : 0;
+        for (var _px = _cx - _radius + _xoff; _px < _cx + _radius; _px += _step) {
+            if (point_distance(_px + 8, _py + 8, _cx, _cy) < _radius - 4) {
+                var _hash = ((_px * 374761393) ^ (_py * 668265263)) & 255;
+                var _c_val = 148 + (_hash mod 16);
+                draw_set_color(make_color_rgb(_c_val, _c_val - 4, _c_val - 12));
+                draw_rectangle(_px, _py, min(_px + _step - 2, _cx + _radius), min(_py + _step - 2, _cy + _radius), false);
+                
+                draw_set_color(make_color_rgb(_c_val + 12, _c_val + 8, _c_val));
+                draw_point(_px + 1, _py + 1);
+            }
+        }
+    }
+    
+    // 3. Overlay Tekstur Paving Atlas di Area Plaza (Bila Ada)
+    if (sprite_exists(sTown_TerrainCobble)) {
+        for (var _py2 = _cy - _radius + 20; _py2 < _cy + _radius - 20; _py2 += 80) {
+            for (var _px2 = _cx - _radius + 20; _px2 < _cx + _radius - 20; _px2 += 80) {
+                if (point_distance(_px2 + 40, _py2 + 40, _cx, _cy) < _radius - 30) {
+                    draw_sprite_ext(sTown_TerrainCobble, 0, _px2, _py2, 0.85, 0.85, 0, c_white, 0.28);
+                }
+            }
+        }
+    }
+    
+    // 4. Hitung titik temu matematis antara jalan dan lingkaran plaza
+    var _y_int = round(sqrt(max(0, _radius * _radius - _half_w * _half_w)));
+    var _x_int = round(sqrt(max(0, _radius * _radius - _half_h * _half_h)));
+    
+    var _a1 = darctan2(_half_h, _x_int);
+    var _a2 = 90 - darctan2(_half_w, _y_int);
+    
+    // Warna curb tepi batu
+    var _curb_col_dark = make_color_rgb(60, 55, 68);
+    var _curb_col_light = make_color_rgb(165, 160, 175);
+    
+    // 5. Helper untuk menggambar busur lingkaran halus
+    var _draw_arc = function(_center_x, _center_y, _r, _ang_start, _ang_end, _col) {
+        draw_set_color(_col);
+        var _prev_x = _center_x + lengthdir_x(_r, _ang_start);
+        var _prev_y = _center_y + lengthdir_y(_r, _ang_start);
+        var _steps = 12;
+        var _d_ang = (_ang_end - _ang_start) / _steps;
+        for (var _i = 1; _i <= _steps; _i++) {
+            var _cur_ang = _ang_start + _i * _d_ang;
+            var _cur_x = _center_x + lengthdir_x(_r, _cur_ang);
+            var _cur_y = _center_y + lengthdir_y(_r, _cur_ang);
+            draw_line_width(_prev_x, _prev_y, _cur_x, _cur_y, 2);
+            _prev_x = _cur_x;
+            _prev_y = _cur_y;
+        }
+    };
+    
+    // Arc 1: Top-Right (antara North Road dan East Road)
+    _draw_arc(_cx, _cy, _radius, _a1, _a2, _curb_col_dark);
+    // Arc 2: Top-Left (antara North Road dan West Road)
+    _draw_arc(_cx, _cy, _radius, 180 - _a2, 180 - _a1, _curb_col_dark);
+    // Arc 3: Bottom-Left (antara West Road dan South Road)
+    _draw_arc(_cx, _cy, _radius, 180 + _a1, 180 + _a2, _curb_col_dark);
+    // Arc 4: Bottom-Right (antara South Road dan East Road)
+    _draw_arc(_cx, _cy, _radius, 360 - _a2, 360 - _a1, _curb_col_dark);
+    
+    // Highlight bagian dalam busur
+    _draw_arc(_cx, _cy, _radius - 2, _a1, _a2, _curb_col_light);
+    _draw_arc(_cx, _cy, _radius - 2, 180 - _a2, 180 - _a1, _curb_col_light);
+    _draw_arc(_cx, _cy, _radius - 2, 180 + _a1, 180 + _a2, _curb_col_light);
+    _draw_arc(_cx, _cy, _radius - 2, 360 - _a2, 360 - _a1, _curb_col_light);
+}
+
+
+// =========================================================================
+// 11. HAMPARAN TERRAIN ATLAS BERULANG (Tiled Atlas Terrain Helper)
+// =========================================================================
+
+function scr_draw_tiled_terrain(_spr, _x1, _y1, _x2, _y2, _scale = 0.85, _alpha = 1.0) {
+    if (!sprite_exists(_spr)) return;
+    var _tw = sprite_get_width(_spr) * _scale;
+    var _th = sprite_get_height(_spr) * _scale;
+    for (var _ty = _y1; _ty < _y2; _ty += _th - 4) {
+        for (var _tx = _x1; _tx < _x2; _tx += _tw - 4) {
+            draw_sprite_ext(_spr, 0, _tx, _ty, _scale, _scale, 0, c_white, _alpha);
+        }
+    }
+}
+
+
